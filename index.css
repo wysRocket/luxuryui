@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --color-primary: #000000;
@@ -19,13 +20,24 @@
 }
 
 @layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  :root.dark {
+    color-scheme: dark;
+  }
+
   body {
     @apply font-sans;
     background-color: #f9fafb;
+    color: #111827;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
+
   .dark body {
     background-color: #030712;
+    color: #f9fafb;
   }
 }
 

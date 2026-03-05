@@ -112,12 +112,14 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
             translateZ: "30px",
           }}
         >
-            <motion.div 
-              className="w-full h-full bg-cover bg-center"
-              style={{ 
-                backgroundImage: `url(${app.image})`,
-                filter: "brightness(0.95)"
-              }}
+            <motion.img
+              src={app.image}
+              alt={`${app.name} preview`}
+              loading="lazy"
+              decoding="async"
+              fetchPriority="low"
+              className="w-full h-full object-cover"
+              style={{ filter: "brightness(0.95)" }}
             />
         </motion.div>
 
@@ -168,6 +170,9 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
             <motion.img 
               src={app.logo} 
               alt={app.name} 
+              loading="lazy"
+              decoding="async"
+              fetchPriority="low"
               className="w-12 h-12 rounded-xl border border-gray-100 dark:border-gray-800 object-cover shadow-sm transition-shadow group-hover:shadow-lg"
             />
         </motion.div>

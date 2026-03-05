@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { 
   ArrowRight, 
   Check, 
@@ -102,6 +103,8 @@ interface FooterCTASectionProps {
 
 // Adding isDarkMode to the component to fix 'Cannot find name isDarkMode'
 const FooterCTASection: React.FC<FooterCTASectionProps> = ({ isDarkMode }) => {
+  const MotionLink = motion(Link);
+
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
@@ -153,26 +156,26 @@ const FooterCTASection: React.FC<FooterCTASectionProps> = ({ isDarkMode }) => {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
           variants={itemVariants}
         >
-          <motion.button 
+          <MotionLink
+            to="/signup"
             className="px-8 py-4 bg-black dark:bg-white text-white dark:text-black text-base font-bold rounded-full shadow-xl w-full sm:w-auto"
-            // fix: using isDarkMode prop
             whileHover={{ scale: 1.05, backgroundColor: isDarkMode ? '#f3f4f6' : '#1a1a1a' }}
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
             Join for free
-          </motion.button>
+          </MotionLink>
           
-          <motion.button 
+          <MotionLink
+            to="/pricing"
             className="px-8 py-4 bg-white dark:bg-gray-900 text-gray-900 dark:text-white border border-gray-200 dark:border-gray-800 text-base font-bold rounded-full flex items-center justify-center gap-2 group w-full sm:w-auto"
-            // fix: using isDarkMode prop
             whileHover={{ scale: 1.05, borderColor: isDarkMode ? '#4b5563' : '#d1d5db', backgroundColor: isDarkMode ? '#1f2937' : '#f9fafb' }}
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
             See our plans
             <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
-          </motion.button>
+          </MotionLink>
         </motion.div>
       </motion.div>
 
