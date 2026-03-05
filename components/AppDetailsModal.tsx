@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Smartphone, Monitor, LayoutGrid, Calendar, Share2, Bookmark, Info } from 'lucide-react';
+import { X, Smartphone, Monitor, LayoutGrid, Share2, Bookmark, Info } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { AppItem } from '../types';
 
 interface AppDetailsModalProps {
@@ -11,6 +12,7 @@ interface AppDetailsModalProps {
 
 const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose }) => {
   const [showPlatformTooltip, setShowPlatformTooltip] = useState(false);
+  const navigate = useNavigate();
 
   if (!app) return null;
 
@@ -153,7 +155,13 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
               </div>
 
               <div className="mt-auto pt-8 border-t border-gray-100 dark:border-gray-800 flex items-center gap-3">
-                <button className="flex-1 py-4 bg-black dark:bg-white text-white dark:text-black font-bold rounded-2xl hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors shadow-lg shadow-gray-200 dark:shadow-none">
+                <button
+                  onClick={() => {
+                    onClose();
+                    navigate(`/apps/${app.id}/screens`);
+                  }}
+                  className="flex-1 py-4 bg-black dark:bg-white text-white dark:text-black font-bold rounded-2xl hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors shadow-lg shadow-gray-200 dark:shadow-none"
+                >
                   View all screens
                 </button>
                 <button className="p-4 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-2xl hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">

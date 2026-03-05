@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Search, Bell, Sparkles, Sun, Moon, X, ArrowLeft, TrendingUp, Zap, Clock } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { MOCK_APPS, FILTER_TAGS } from '../constants';
 
 interface HeaderProps {
@@ -55,7 +56,7 @@ const Header: React.FC<HeaderProps> = ({
         
         {/* Left Side: Brand (Mobile) and Desktop Search */}
         <div className="flex items-center flex-1 min-w-0">
-          <div className="lg:hidden font-black text-2xl tracking-tighter dark:text-white shrink-0 mr-6">LuxuryUI</div>
+          <Link to="/" className="lg:hidden font-black text-2xl tracking-tighter dark:text-white shrink-0 mr-6">LuxuryUI</Link>
           
           {/* Desktop Search Bar: Optimized to occupy all free space */}
           <div className="hidden md:flex flex-1 max-w-5xl items-center relative" ref={searchRef}>
@@ -202,10 +203,10 @@ const Header: React.FC<HeaderProps> = ({
           
           <div className="w-px h-8 bg-gray-200 dark:bg-gray-800 mx-1 hidden sm:block"></div>
           
-          <button className="hidden sm:block text-[15px] font-bold text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white px-3 transition-colors">Log in</button>
-          <button className="hidden sm:block px-6 py-3 bg-black dark:bg-white text-white dark:text-black text-[15px] font-black rounded-full hover:bg-gray-800 dark:hover:bg-gray-100 transition-all active:scale-95 shadow-xl shadow-black/10 dark:shadow-white/5 tracking-tight">
+          <Link to="/login" className="hidden sm:block text-[15px] font-bold text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white px-3 transition-colors">Log in</Link>
+          <Link to="/signup" className="hidden sm:block px-6 py-3 bg-black dark:bg-white text-white dark:text-black text-[15px] font-black rounded-full hover:bg-gray-800 dark:hover:bg-gray-100 transition-all active:scale-95 shadow-xl shadow-black/10 dark:shadow-white/5 tracking-tight">
             Sign Up
-          </button>
+          </Link>
         </div>
       </div>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { generateAvatarAsset } from '../services/assetFactory';
 
 interface Testimonial {
   id: string;
@@ -16,7 +17,7 @@ const TESTIMONIALS: Testimonial[] = [
     name: 'Sebastian Speier',
     role: 'Designer',
     company: 'Shop',
-    avatar: 'https://i.pravatar.cc/150?u=Sebastian',
+    avatar: generateAvatarAsset('Sebastian Speier', 1),
     text: "LuxuryUI is a great resource and it always comes in handy to see what the best practices or standards are for mobile patterns in our current landscape."
   },
   {
@@ -24,7 +25,7 @@ const TESTIMONIALS: Testimonial[] = [
     name: 'Meng To',
     role: 'Founder',
     company: 'DesignCode',
-    avatar: 'https://i.pravatar.cc/150?u=Meng',
+    avatar: generateAvatarAsset('Meng To', 2),
     text: "LuxuryUI is a game-changer for designers looking to step up their understanding of UX and UI design patterns. It’s so massive, meticulously organized, has deep user flows and even a figma plugin! It’s indispensable in the modern designer’s toolbox."
   },
   {
@@ -32,7 +33,7 @@ const TESTIMONIALS: Testimonial[] = [
     name: 'Marco Cornacchia',
     role: 'Designer',
     company: 'Figma',
-    avatar: 'https://i.pravatar.cc/150?u=Marco',
+    avatar: generateAvatarAsset('Marco Cornacchia', 3),
     text: "LuxuryUI is one of my favorite resources for product design and ui inspo. I love having access to a ton of “real world examples” to see how different apps and companies handle specific UI patterns and flows."
   },
   {
@@ -40,7 +41,7 @@ const TESTIMONIALS: Testimonial[] = [
     name: 'Daryl Ginn',
     role: 'Founder',
     company: 'Endless',
-    avatar: 'https://i.pravatar.cc/150?u=Daryl',
+    avatar: generateAvatarAsset('Daryl Ginn', 4),
     text: "LuxuryUI has quickly become our favourite inspiration resource for designing mobile apps at endless.design, their advanced filtering is unmatched in the inspiration space."
   },
   {
@@ -48,7 +49,7 @@ const TESTIMONIALS: Testimonial[] = [
     name: 'Taha Hossain',
     role: 'Designer',
     company: 'Daybreak',
-    avatar: 'https://i.pravatar.cc/150?u=Taha',
+    avatar: generateAvatarAsset('Taha Hossain', 5),
     text: "We can’t imagine a product design process without LuxuryUI. The quality, clarity and precision it provides make it just as valuable as it is intuitive."
   },
   {
@@ -56,7 +57,7 @@ const TESTIMONIALS: Testimonial[] = [
     name: 'Haerin Song',
     role: 'Designer',
     company: 'Visa',
-    avatar: 'https://i.pravatar.cc/150?u=Haerin',
+    avatar: generateAvatarAsset('Haerin Song', 6),
     text: "By using the LuxuryUI app, I save both my research time and space in my photo galleries filled with random screenshots. I love how easy it is to search for different patterns and copy and paste flows into Figma. It is a wonderful design tool you cannot live without."
   },
   {
@@ -64,7 +65,7 @@ const TESTIMONIALS: Testimonial[] = [
     name: 'John Bai',
     role: 'Designer',
     company: 'Plaid',
-    avatar: 'https://i.pravatar.cc/150?u=John',
+    avatar: generateAvatarAsset('John Bai', 7),
     text: "All my homies love LuxuryUI. I mean that. I finally deleted that folder of 1,866 unorganized screenshots and haven’t looked back since. Shoutout to Jiho and the team for doing God’s work."
   },
   {
@@ -72,7 +73,7 @@ const TESTIMONIALS: Testimonial[] = [
     name: 'Axel Lindmarker',
     role: 'Designer',
     company: 'Light',
-    avatar: 'https://i.pravatar.cc/150?u=Axel',
+    avatar: generateAvatarAsset('Axel Lindmarker', 8),
     text: "LuxuryUI is one of my main tools for finding flows to gain UX and UI insights from. Going there saves me a lot of time from having to do it myself."
   },
   {
@@ -80,7 +81,7 @@ const TESTIMONIALS: Testimonial[] = [
     name: 'Josiah Gulden',
     role: 'Designer',
     company: 'Compound Labs',
-    avatar: 'https://i.pravatar.cc/150?u=Josiah',
+    avatar: generateAvatarAsset('Josiah Gulden', 9),
     text: "LuxuryUI has been an essential part of my workflow for years. It's the first place I look when I need inspiration for a specific flow or interaction."
   }
 ];

@@ -14,7 +14,7 @@ export interface AppItem {
 export interface NavItem {
   label: string;
   icon: React.ReactNode;
-  active?: boolean;
+  path: string;
 }
 
 export interface FilterTag {

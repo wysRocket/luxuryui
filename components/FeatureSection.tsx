@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Check, Plus, Bookmark, LayoutGrid, Download } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { generateAvatarAsset } from '../services/assetFactory';
 
 interface FeatureCardProps {
   title: string;
@@ -138,6 +140,8 @@ const SaveToCollectionUI: React.FC = () => {
 };
 
 const LeaveCommentsUI: React.FC = () => {
+    const avatar = generateAvatarAsset('You', 77);
+
     return (
        <div className="flex items-center justify-center h-full w-full p-6">
            <motion.div
@@ -149,7 +153,7 @@ const LeaveCommentsUI: React.FC = () => {
            >
                <div className="flex items-start gap-4 mb-4">
                    <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-100 dark:bg-gray-800 border border-gray-100 dark:border-gray-800 flex-shrink-0">
-                        <img src="https://i.pravatar.cc/150?u=a042581f4e29026704d" alt="User" className="w-full h-full object-cover" />
+                        <img src={avatar} alt="User" className="w-full h-full object-cover" />
                    </div>
                    <div>
                        <div className="flex items-baseline gap-2 mb-1">
@@ -189,7 +193,7 @@ const FeatureSection: React.FC = () => {
           title="Copy to Figma"
           description={
             <span>
-              Download designs you like or copy it straight into Figma with our new <a href="#" className="underline decoration-gray-300 dark:decoration-gray-700 underline-offset-4 hover:text-black dark:hover:text-white hover:decoration-black dark:hover:decoration-white transition-all">Figma plugin</a>.
+              Download designs you like or copy it straight into Figma with our new <Link to="/figma-plugin" className="underline decoration-gray-300 dark:decoration-gray-700 underline-offset-4 hover:text-black dark:hover:text-white hover:decoration-black dark:hover:decoration-white transition-all">Figma plugin</Link>.
             </span>
           }
           delay={0}
