@@ -1,0 +1,4267 @@
+{
+  "schema": "2",
+  "generatedAt": "2026-03-31T09:17:12.858Z",
+  "summary": {
+    "totalProducts": 76,
+    "publishedProducts": 33,
+    "blockedProducts": 43,
+    "flowsRepresented": 5
+  },
+  "products": [
+    {
+      "id": "figma-kit:monzo",
+      "slug": "monzo-figma-kit",
+      "title": "Monzo Onboarding Figma Flow Kit",
+      "sourceAppSlug": "monzo",
+      "sourceAppName": "Monzo",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/onboarding/monzo/v1",
+      "thumbnail": "/assets/apps/monzo/screen-1.png",
+      "gallery": [
+        "/assets/apps/monzo/screen-1.png",
+        "/assets/apps/monzo/screen-2.png",
+        "/assets/apps/monzo/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Neutral finance palette",
+        "Data-heavy typography scale",
+        "Tight 8pt spacing grid"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-finance"
+      ],
+      "transformationNotes": [
+        "Transform Monzo reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/monzo-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:revolut",
+      "slug": "revolut-figma-kit",
+      "title": "Revolut Onboarding Figma Flow Kit",
+      "sourceAppSlug": "revolut",
+      "sourceAppName": "Revolut",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/revolut/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/revolut/screen-1.jpg",
+        "/assets/apps/revolut/screen-2.jpg",
+        "/assets/apps/revolut/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Neutral finance palette",
+        "Data-heavy typography scale",
+        "Tight 8pt spacing grid"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-finance"
+      ],
+      "transformationNotes": [
+        "Transform Revolut reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/revolut-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:mint",
+      "slug": "mint-figma-kit",
+      "title": "Mint Onboarding Figma Flow Kit",
+      "sourceAppSlug": "mint",
+      "sourceAppName": "Mint",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/mint/screen-1.png",
+      "gallery": [
+        "/assets/apps/mint/screen-1.png",
+        "/assets/apps/mint/screen-2.png",
+        "/assets/apps/mint/screen-3.png"
+      ],
+      "includedScreens": 7,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Neutral finance palette",
+        "Data-heavy typography scale",
+        "Tight 8pt spacing grid"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-finance"
+      ],
+      "transformationNotes": [
+        "Transform Mint reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 69,
+      "completenessScore": 68,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/mint-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:robinhood",
+      "slug": "robinhood-figma-kit",
+      "title": "Robinhood Onboarding Figma Flow Kit",
+      "sourceAppSlug": "robinhood",
+      "sourceAppName": "Robinhood",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/onboarding/robinhood/v1",
+      "thumbnail": "/assets/apps/robinhood/screen-1.png",
+      "gallery": [
+        "/assets/apps/robinhood/screen-1.png",
+        "/assets/apps/robinhood/screen-2.png",
+        "/assets/apps/robinhood/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Neutral finance palette",
+        "Data-heavy typography scale",
+        "Tight 8pt spacing grid"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-finance"
+      ],
+      "transformationNotes": [
+        "Transform Robinhood reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/robinhood-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:paypal",
+      "slug": "paypal-figma-kit",
+      "title": "PayPal Onboarding Figma Flow Kit",
+      "sourceAppSlug": "paypal",
+      "sourceAppName": "PayPal",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/paypal/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/paypal/screen-1.jpg",
+        "/assets/apps/paypal/screen-2.jpg",
+        "/assets/apps/paypal/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Neutral finance palette",
+        "Data-heavy typography scale",
+        "Tight 8pt spacing grid"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-finance"
+      ],
+      "transformationNotes": [
+        "Transform PayPal reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/paypal-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:wallet",
+      "slug": "wallet-figma-kit",
+      "title": "Wallet Onboarding Figma Flow Kit",
+      "sourceAppSlug": "wallet",
+      "sourceAppName": "Wallet",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/onboarding/wallet/v1",
+      "thumbnail": "/assets/apps/wallet/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/wallet/screen-1.jpg",
+        "/assets/apps/wallet/screen-2.jpg",
+        "/assets/apps/wallet/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Neutral finance palette",
+        "Data-heavy typography scale",
+        "Tight 8pt spacing grid"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-finance"
+      ],
+      "transformationNotes": [
+        "Transform Wallet reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/wallet-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:wealthfront",
+      "slug": "wealthfront-figma-kit",
+      "title": "Wealthfront Onboarding Figma Flow Kit",
+      "sourceAppSlug": "wealthfront",
+      "sourceAppName": "Wealthfront",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/onboarding/wealthfront/v1",
+      "thumbnail": "/assets/apps/wealthfront/screen-1.png",
+      "gallery": [
+        "/assets/apps/wealthfront/screen-1.png",
+        "/assets/apps/wealthfront/screen-2.png",
+        "/assets/apps/wealthfront/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Neutral finance palette",
+        "Data-heavy typography scale",
+        "Tight 8pt spacing grid"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-finance"
+      ],
+      "transformationNotes": [
+        "Transform Wealthfront reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/wealthfront-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:n26",
+      "slug": "n26-figma-kit",
+      "title": "N26 Onboarding Figma Flow Kit",
+      "sourceAppSlug": "n26",
+      "sourceAppName": "N26",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/n26/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/n26/screen-1.jpg",
+        "/assets/apps/n26/screen-2.jpg",
+        "/assets/apps/n26/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Neutral finance palette",
+        "Data-heavy typography scale",
+        "Tight 8pt spacing grid"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-finance"
+      ],
+      "transformationNotes": [
+        "Transform N26 reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/n26-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:coinbase",
+      "slug": "coinbase-figma-kit",
+      "title": "Coinbase Account & Settings Figma Flow Kit",
+      "sourceAppSlug": "coinbase",
+      "sourceAppName": "Coinbase",
+      "primaryFlowId": "account-settings",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/coinbase/screen-1.png",
+      "gallery": [
+        "/assets/apps/coinbase/screen-1.png",
+        "/assets/apps/coinbase/screen-2.png",
+        "/assets/apps/coinbase/screen-3.png"
+      ],
+      "includedScreens": 7,
+      "includedComponents": [
+        "Profile header",
+        "Settings list",
+        "Security action tile",
+        "Success toast"
+      ],
+      "includedTokens": [
+        "High-contrast market palette",
+        "Compact metric typography",
+        "Dense dashboard spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-account-settings",
+        "category-crypto"
+      ],
+      "transformationNotes": [
+        "Transform Coinbase reference patterns into an original account & settings kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 69,
+      "completenessScore": 68,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/coinbase-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:binance",
+      "slug": "binance-figma-kit",
+      "title": "Binance Account & Settings Figma Flow Kit",
+      "sourceAppSlug": "binance",
+      "sourceAppName": "Binance",
+      "primaryFlowId": "account-settings",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/binance/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/binance/screen-1.jpg",
+        "/assets/apps/binance/screen-2.jpg",
+        "/assets/apps/binance/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Profile header",
+        "Settings list",
+        "Security action tile",
+        "Success toast"
+      ],
+      "includedTokens": [
+        "High-contrast market palette",
+        "Compact metric typography",
+        "Dense dashboard spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-account-settings",
+        "category-crypto"
+      ],
+      "transformationNotes": [
+        "Transform Binance reference patterns into an original account & settings kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/binance-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:metamask",
+      "slug": "metamask-figma-kit",
+      "title": "MetaMask Account & Settings Figma Flow Kit",
+      "sourceAppSlug": "metamask",
+      "sourceAppName": "MetaMask",
+      "primaryFlowId": "account-settings",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/metamask/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/metamask/screen-1.jpg",
+        "/assets/apps/metamask/screen-2.jpg",
+        "/assets/apps/metamask/screen-3.jpg"
+      ],
+      "includedScreens": 7,
+      "includedComponents": [
+        "Profile header",
+        "Settings list",
+        "Security action tile",
+        "Success toast"
+      ],
+      "includedTokens": [
+        "High-contrast market palette",
+        "Compact metric typography",
+        "Dense dashboard spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-account-settings",
+        "category-crypto"
+      ],
+      "transformationNotes": [
+        "Transform MetaMask reference patterns into an original account & settings kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 69,
+      "completenessScore": 68,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/metamask-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:kraken",
+      "slug": "kraken-figma-kit",
+      "title": "Kraken Account & Settings Figma Flow Kit",
+      "sourceAppSlug": "kraken",
+      "sourceAppName": "Kraken",
+      "primaryFlowId": "account-settings",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/account-settings/kraken/v1",
+      "thumbnail": "/assets/apps/kraken/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/kraken/screen-1.jpg",
+        "/assets/apps/kraken/screen-2.jpg",
+        "/assets/apps/kraken/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Profile header",
+        "Settings list",
+        "Security action tile",
+        "Success toast"
+      ],
+      "includedTokens": [
+        "High-contrast market palette",
+        "Compact metric typography",
+        "Dense dashboard spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-account-settings",
+        "category-crypto"
+      ],
+      "transformationNotes": [
+        "Transform Kraken reference patterns into an original account & settings kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/kraken-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:phantom",
+      "slug": "phantom-figma-kit",
+      "title": "Phantom Account & Settings Figma Flow Kit",
+      "sourceAppSlug": "phantom",
+      "sourceAppName": "Phantom",
+      "primaryFlowId": "account-settings",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/phantom/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/phantom/screen-1.jpg",
+        "/assets/apps/phantom/screen-2.jpg",
+        "/assets/apps/phantom/screen-3.jpg"
+      ],
+      "includedScreens": 7,
+      "includedComponents": [
+        "Profile header",
+        "Settings list",
+        "Security action tile",
+        "Success toast"
+      ],
+      "includedTokens": [
+        "High-contrast market palette",
+        "Compact metric typography",
+        "Dense dashboard spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-account-settings",
+        "category-crypto"
+      ],
+      "transformationNotes": [
+        "Transform Phantom reference patterns into an original account & settings kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 69,
+      "completenessScore": 68,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/phantom-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:uniswap",
+      "slug": "uniswap-figma-kit",
+      "title": "Uniswap Account & Settings Figma Flow Kit",
+      "sourceAppSlug": "uniswap",
+      "sourceAppName": "Uniswap",
+      "primaryFlowId": "account-settings",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/account-settings/uniswap/v1",
+      "thumbnail": "/assets/apps/uniswap/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/uniswap/screen-1.jpg",
+        "/assets/apps/uniswap/screen-2.jpg",
+        "/assets/apps/uniswap/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Profile header",
+        "Settings list",
+        "Security action tile",
+        "Success toast"
+      ],
+      "includedTokens": [
+        "High-contrast market palette",
+        "Compact metric typography",
+        "Dense dashboard spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-account-settings",
+        "category-crypto"
+      ],
+      "transformationNotes": [
+        "Transform Uniswap reference patterns into an original account & settings kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/uniswap-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:ledger",
+      "slug": "ledger-figma-kit",
+      "title": "Ledger Account & Settings Figma Flow Kit",
+      "sourceAppSlug": "ledger",
+      "sourceAppName": "Ledger",
+      "primaryFlowId": "account-settings",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/ledger/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/ledger/screen-1.jpg",
+        "/assets/apps/ledger/screen-2.jpg",
+        "/assets/apps/ledger/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Profile header",
+        "Settings list",
+        "Security action tile",
+        "Success toast"
+      ],
+      "includedTokens": [
+        "High-contrast market palette",
+        "Compact metric typography",
+        "Dense dashboard spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-account-settings",
+        "category-crypto"
+      ],
+      "transformationNotes": [
+        "Transform Ledger reference patterns into an original account & settings kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/ledger-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:amazon",
+      "slug": "amazon-figma-kit",
+      "title": "Amazon Checkout Figma Flow Kit",
+      "sourceAppSlug": "amazon",
+      "sourceAppName": "Amazon",
+      "primaryFlowId": "checkout",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/checkout/amazon/v1",
+      "thumbnail": "/assets/apps/amazon/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/amazon/screen-1.jpg",
+        "/assets/apps/amazon/screen-2.jpg",
+        "/assets/apps/amazon/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Cart summary",
+        "Line item row",
+        "Payment selector",
+        "Confirmation state"
+      ],
+      "includedTokens": [
+        "Merchandising accent palette",
+        "Commerce hierarchy styles",
+        "Responsive card spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-checkout",
+        "category-shopping"
+      ],
+      "transformationNotes": [
+        "Transform Amazon reference patterns into an original checkout kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/amazon-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:ebay",
+      "slug": "ebay-figma-kit",
+      "title": "eBay Checkout Figma Flow Kit",
+      "sourceAppSlug": "ebay",
+      "sourceAppName": "eBay",
+      "primaryFlowId": "checkout",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/ebay/screen-1.png",
+      "gallery": [
+        "/assets/apps/ebay/screen-1.png",
+        "/assets/apps/ebay/screen-2.png",
+        "/assets/apps/ebay/screen-3.png"
+      ],
+      "includedScreens": 6,
+      "includedComponents": [
+        "Cart summary",
+        "Line item row",
+        "Payment selector",
+        "Confirmation state"
+      ],
+      "includedTokens": [
+        "Merchandising accent palette",
+        "Commerce hierarchy styles",
+        "Responsive card spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 80,
+      "bundleIds": [
+        "flow-checkout",
+        "category-shopping"
+      ],
+      "transformationNotes": [
+        "Transform eBay reference patterns into an original checkout kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 68,
+      "completenessScore": 66,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/ebay-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:shopify",
+      "slug": "shopify-figma-kit",
+      "title": "Shopify Checkout Figma Flow Kit",
+      "sourceAppSlug": "shopify",
+      "sourceAppName": "Shopify",
+      "primaryFlowId": "checkout",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/shopify/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/shopify/screen-1.jpg",
+        "/assets/apps/shopify/screen-2.jpg",
+        "/assets/apps/shopify/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Cart summary",
+        "Line item row",
+        "Payment selector",
+        "Confirmation state"
+      ],
+      "includedTokens": [
+        "Merchandising accent palette",
+        "Commerce hierarchy styles",
+        "Responsive card spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-checkout",
+        "category-shopping"
+      ],
+      "transformationNotes": [
+        "Transform Shopify reference patterns into an original checkout kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/shopify-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:etsy",
+      "slug": "etsy-figma-kit",
+      "title": "Etsy Checkout Figma Flow Kit",
+      "sourceAppSlug": "etsy",
+      "sourceAppName": "Etsy",
+      "primaryFlowId": "checkout",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/checkout/etsy/v1",
+      "thumbnail": "/assets/apps/etsy/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/etsy/screen-1.jpg",
+        "/assets/apps/etsy/screen-2.jpg",
+        "/assets/apps/etsy/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Cart summary",
+        "Line item row",
+        "Payment selector",
+        "Confirmation state"
+      ],
+      "includedTokens": [
+        "Merchandising accent palette",
+        "Commerce hierarchy styles",
+        "Responsive card spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-checkout",
+        "category-shopping"
+      ],
+      "transformationNotes": [
+        "Transform Etsy reference patterns into an original checkout kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/etsy-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:zara",
+      "slug": "zara-figma-kit",
+      "title": "Zara Checkout Figma Flow Kit",
+      "sourceAppSlug": "zara",
+      "sourceAppName": "Zara",
+      "primaryFlowId": "checkout",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/zara/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/zara/screen-1.jpg",
+        "/assets/apps/zara/screen-2.jpg",
+        "/assets/apps/zara/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Cart summary",
+        "Line item row",
+        "Payment selector",
+        "Confirmation state"
+      ],
+      "includedTokens": [
+        "Merchandising accent palette",
+        "Commerce hierarchy styles",
+        "Responsive card spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-checkout",
+        "category-shopping"
+      ],
+      "transformationNotes": [
+        "Transform Zara reference patterns into an original checkout kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/zara-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:asos",
+      "slug": "asos-figma-kit",
+      "title": "ASOS Checkout Figma Flow Kit",
+      "sourceAppSlug": "asos",
+      "sourceAppName": "ASOS",
+      "primaryFlowId": "checkout",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/asos/screen-1.png",
+      "gallery": [
+        "/assets/apps/asos/screen-1.png",
+        "/assets/apps/asos/screen-2.png",
+        "/assets/apps/asos/screen-3.png"
+      ],
+      "includedScreens": 6,
+      "includedComponents": [
+        "Cart summary",
+        "Line item row",
+        "Payment selector",
+        "Confirmation state"
+      ],
+      "includedTokens": [
+        "Merchandising accent palette",
+        "Commerce hierarchy styles",
+        "Responsive card spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 80,
+      "bundleIds": [
+        "flow-checkout",
+        "category-shopping"
+      ],
+      "transformationNotes": [
+        "Transform ASOS reference patterns into an original checkout kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 68,
+      "completenessScore": 66,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/asos-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:nike",
+      "slug": "nike-figma-kit",
+      "title": "Nike Checkout Figma Flow Kit",
+      "sourceAppSlug": "nike",
+      "sourceAppName": "Nike",
+      "primaryFlowId": "checkout",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/checkout/nike/v1",
+      "thumbnail": "/assets/apps/nike/screen-1.png",
+      "gallery": [
+        "/assets/apps/nike/screen-1.png",
+        "/assets/apps/nike/screen-2.png",
+        "/assets/apps/nike/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Cart summary",
+        "Line item row",
+        "Payment selector",
+        "Confirmation state"
+      ],
+      "includedTokens": [
+        "Merchandising accent palette",
+        "Commerce hierarchy styles",
+        "Responsive card spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-checkout",
+        "category-shopping"
+      ],
+      "transformationNotes": [
+        "Transform Nike reference patterns into an original checkout kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/nike-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:stockx",
+      "slug": "stockx-figma-kit",
+      "title": "StockX Checkout Figma Flow Kit",
+      "sourceAppSlug": "stockx",
+      "sourceAppName": "StockX",
+      "primaryFlowId": "checkout",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/stockx/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/stockx/screen-1.jpg",
+        "/assets/apps/stockx/screen-2.jpg",
+        "/assets/apps/stockx/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Cart summary",
+        "Line item row",
+        "Payment selector",
+        "Confirmation state"
+      ],
+      "includedTokens": [
+        "Merchandising accent palette",
+        "Commerce hierarchy styles",
+        "Responsive card spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-checkout",
+        "category-shopping"
+      ],
+      "transformationNotes": [
+        "Transform StockX reference patterns into an original checkout kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/stockx-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:instagram",
+      "slug": "instagram-figma-kit",
+      "title": "Instagram Social Engagement Figma Flow Kit",
+      "sourceAppSlug": "instagram",
+      "sourceAppName": "Instagram",
+      "primaryFlowId": "social-engagement",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/instagram/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/instagram/screen-1.jpg",
+        "/assets/apps/instagram/screen-2.jpg",
+        "/assets/apps/instagram/screen-3.jpg"
+      ],
+      "includedScreens": 7,
+      "includedComponents": [
+        "Feed card",
+        "Reaction rail",
+        "Composer sheet",
+        "Notification prompt"
+      ],
+      "includedTokens": [
+        "Expressive social accent palette",
+        "Feed-first text styles",
+        "Engagement spacing system"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-social-engagement",
+        "category-social"
+      ],
+      "transformationNotes": [
+        "Transform Instagram reference patterns into an original social engagement kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 69,
+      "completenessScore": 68,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/instagram-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:twitter",
+      "slug": "twitter-figma-kit",
+      "title": "Twitter Social Engagement Figma Flow Kit",
+      "sourceAppSlug": "twitter",
+      "sourceAppName": "Twitter",
+      "primaryFlowId": "social-engagement",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/twitter/screen-1.png",
+      "gallery": [
+        "/assets/apps/twitter/screen-1.png",
+        "/assets/apps/twitter/screen-2.png"
+      ],
+      "includedScreens": 5,
+      "includedComponents": [
+        "Feed card",
+        "Reaction rail",
+        "Composer sheet",
+        "Notification prompt"
+      ],
+      "includedTokens": [
+        "Expressive social accent palette",
+        "Feed-first text styles",
+        "Engagement spacing system"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 80,
+      "bundleIds": [
+        "flow-social-engagement",
+        "category-social"
+      ],
+      "transformationNotes": [
+        "Transform Twitter reference patterns into an original social engagement kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 32,
+      "completenessScore": 25,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/twitter-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:linkedin",
+      "slug": "linkedin-figma-kit",
+      "title": "LinkedIn Social Engagement Figma Flow Kit",
+      "sourceAppSlug": "linkedin",
+      "sourceAppName": "LinkedIn",
+      "primaryFlowId": "social-engagement",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/social-engagement/linkedin/v1",
+      "thumbnail": "/assets/apps/linkedin/screen-1.png",
+      "gallery": [
+        "/assets/apps/linkedin/screen-1.png",
+        "/assets/apps/linkedin/screen-2.png",
+        "/assets/apps/linkedin/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Feed card",
+        "Reaction rail",
+        "Composer sheet",
+        "Notification prompt"
+      ],
+      "includedTokens": [
+        "Expressive social accent palette",
+        "Feed-first text styles",
+        "Engagement spacing system"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-social-engagement",
+        "category-social"
+      ],
+      "transformationNotes": [
+        "Transform LinkedIn reference patterns into an original social engagement kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/linkedin-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:tiktok",
+      "slug": "tiktok-figma-kit",
+      "title": "TikTok Social Engagement Figma Flow Kit",
+      "sourceAppSlug": "tiktok",
+      "sourceAppName": "TikTok",
+      "primaryFlowId": "social-engagement",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/social-engagement/tiktok/v1",
+      "thumbnail": "/assets/apps/tiktok/screen-1.png",
+      "gallery": [
+        "/assets/apps/tiktok/screen-1.png",
+        "/assets/apps/tiktok/screen-2.png",
+        "/assets/apps/tiktok/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Feed card",
+        "Reaction rail",
+        "Composer sheet",
+        "Notification prompt"
+      ],
+      "includedTokens": [
+        "Expressive social accent palette",
+        "Feed-first text styles",
+        "Engagement spacing system"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-social-engagement",
+        "category-social"
+      ],
+      "transformationNotes": [
+        "Transform TikTok reference patterns into an original social engagement kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/tiktok-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:snapchat",
+      "slug": "snapchat-figma-kit",
+      "title": "Snapchat Social Engagement Figma Flow Kit",
+      "sourceAppSlug": "snapchat",
+      "sourceAppName": "Snapchat",
+      "primaryFlowId": "social-engagement",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/social-engagement/snapchat/v1",
+      "thumbnail": "/assets/apps/snapchat/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/snapchat/screen-1.jpg",
+        "/assets/apps/snapchat/screen-2.jpg",
+        "/assets/apps/snapchat/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Feed card",
+        "Reaction rail",
+        "Composer sheet",
+        "Notification prompt"
+      ],
+      "includedTokens": [
+        "Expressive social accent palette",
+        "Feed-first text styles",
+        "Engagement spacing system"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-social-engagement",
+        "category-social"
+      ],
+      "transformationNotes": [
+        "Transform Snapchat reference patterns into an original social engagement kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/snapchat-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:whatsapp",
+      "slug": "whatsapp-figma-kit",
+      "title": "WhatsApp Social Engagement Figma Flow Kit",
+      "sourceAppSlug": "whatsapp",
+      "sourceAppName": "WhatsApp",
+      "primaryFlowId": "social-engagement",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/whatsapp/screen-1.png",
+      "gallery": [
+        "/assets/apps/whatsapp/screen-1.png",
+        "/assets/apps/whatsapp/screen-2.png",
+        "/assets/apps/whatsapp/screen-3.png"
+      ],
+      "includedScreens": 5,
+      "includedComponents": [
+        "Feed card",
+        "Reaction rail",
+        "Composer sheet",
+        "Notification prompt"
+      ],
+      "includedTokens": [
+        "Expressive social accent palette",
+        "Feed-first text styles",
+        "Engagement spacing system"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 80,
+      "bundleIds": [
+        "flow-social-engagement",
+        "category-social"
+      ],
+      "transformationNotes": [
+        "Transform WhatsApp reference patterns into an original social engagement kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 38,
+      "completenessScore": 33,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/whatsapp-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:threads",
+      "slug": "threads-figma-kit",
+      "title": "Threads Social Engagement Figma Flow Kit",
+      "sourceAppSlug": "threads",
+      "sourceAppName": "Threads",
+      "primaryFlowId": "social-engagement",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/threads/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/threads/screen-1.jpg",
+        "/assets/apps/threads/screen-2.jpg",
+        "/assets/apps/threads/screen-3.jpg"
+      ],
+      "includedScreens": 6,
+      "includedComponents": [
+        "Feed card",
+        "Reaction rail",
+        "Composer sheet",
+        "Notification prompt"
+      ],
+      "includedTokens": [
+        "Expressive social accent palette",
+        "Feed-first text styles",
+        "Engagement spacing system"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 80,
+      "bundleIds": [
+        "flow-social-engagement",
+        "category-social"
+      ],
+      "transformationNotes": [
+        "Transform Threads reference patterns into an original social engagement kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 68,
+      "completenessScore": 66,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/threads-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:bereal",
+      "slug": "bereal-figma-kit",
+      "title": "BeReal Social Engagement Figma Flow Kit",
+      "sourceAppSlug": "bereal",
+      "sourceAppName": "BeReal",
+      "primaryFlowId": "social-engagement",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/bereal/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/bereal/screen-1.jpg",
+        "/assets/apps/bereal/screen-2.jpg",
+        "/assets/apps/bereal/screen-3.jpg"
+      ],
+      "includedScreens": 6,
+      "includedComponents": [
+        "Feed card",
+        "Reaction rail",
+        "Composer sheet",
+        "Notification prompt"
+      ],
+      "includedTokens": [
+        "Expressive social accent palette",
+        "Feed-first text styles",
+        "Engagement spacing system"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 80,
+      "bundleIds": [
+        "flow-social-engagement",
+        "category-social"
+      ],
+      "transformationNotes": [
+        "Transform BeReal reference patterns into an original social engagement kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 68,
+      "completenessScore": 66,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/bereal-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:airbnb",
+      "slug": "airbnb-figma-kit",
+      "title": "Airbnb Checkout Figma Flow Kit",
+      "sourceAppSlug": "airbnb",
+      "sourceAppName": "Airbnb",
+      "primaryFlowId": "checkout",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/airbnb/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/airbnb/screen-1.jpg",
+        "/assets/apps/airbnb/screen-2.jpg",
+        "/assets/apps/airbnb/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Cart summary",
+        "Line item row",
+        "Payment selector",
+        "Confirmation state"
+      ],
+      "includedTokens": [
+        "Editorial travel palette",
+        "Search and booking typography",
+        "Comfort-first spacing scale"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-checkout",
+        "category-travel"
+      ],
+      "transformationNotes": [
+        "Transform Airbnb reference patterns into an original checkout kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/airbnb-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:expedia",
+      "slug": "expedia-figma-kit",
+      "title": "Expedia Checkout Figma Flow Kit",
+      "sourceAppSlug": "expedia",
+      "sourceAppName": "Expedia",
+      "primaryFlowId": "checkout",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/expedia/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/expedia/screen-1.jpg",
+        "/assets/apps/expedia/screen-2.jpg",
+        "/assets/apps/expedia/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Cart summary",
+        "Line item row",
+        "Payment selector",
+        "Confirmation state"
+      ],
+      "includedTokens": [
+        "Editorial travel palette",
+        "Search and booking typography",
+        "Comfort-first spacing scale"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-checkout",
+        "category-travel"
+      ],
+      "transformationNotes": [
+        "Transform Expedia reference patterns into an original checkout kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/expedia-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:hopper",
+      "slug": "hopper-figma-kit",
+      "title": "Hopper Checkout Figma Flow Kit",
+      "sourceAppSlug": "hopper",
+      "sourceAppName": "Hopper",
+      "primaryFlowId": "checkout",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/hopper/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/hopper/screen-1.jpg",
+        "/assets/apps/hopper/screen-2.jpg",
+        "/assets/apps/hopper/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Cart summary",
+        "Line item row",
+        "Payment selector",
+        "Confirmation state"
+      ],
+      "includedTokens": [
+        "Editorial travel palette",
+        "Search and booking typography",
+        "Comfort-first spacing scale"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-checkout",
+        "category-travel"
+      ],
+      "transformationNotes": [
+        "Transform Hopper reference patterns into an original checkout kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/hopper-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:booking-com",
+      "slug": "booking-com-figma-kit",
+      "title": "Booking.com Checkout Figma Flow Kit",
+      "sourceAppSlug": "booking-com",
+      "sourceAppName": "Booking.com",
+      "primaryFlowId": "checkout",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/checkout/booking-com/v1",
+      "thumbnail": "/assets/apps/booking-com/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/booking-com/screen-1.jpg",
+        "/assets/apps/booking-com/screen-2.jpg",
+        "/assets/apps/booking-com/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Cart summary",
+        "Line item row",
+        "Payment selector",
+        "Confirmation state"
+      ],
+      "includedTokens": [
+        "Editorial travel palette",
+        "Search and booking typography",
+        "Comfort-first spacing scale"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-checkout",
+        "category-travel"
+      ],
+      "transformationNotes": [
+        "Transform Booking.com reference patterns into an original checkout kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/booking-com-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:skyscanner",
+      "slug": "skyscanner-figma-kit",
+      "title": "Skyscanner Checkout Figma Flow Kit",
+      "sourceAppSlug": "skyscanner",
+      "sourceAppName": "Skyscanner",
+      "primaryFlowId": "checkout",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/checkout/skyscanner/v1",
+      "thumbnail": "/assets/apps/skyscanner/screen-1.png",
+      "gallery": [
+        "/assets/apps/skyscanner/screen-1.png",
+        "/assets/apps/skyscanner/screen-2.png",
+        "/assets/apps/skyscanner/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Cart summary",
+        "Line item row",
+        "Payment selector",
+        "Confirmation state"
+      ],
+      "includedTokens": [
+        "Editorial travel palette",
+        "Search and booking typography",
+        "Comfort-first spacing scale"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-checkout",
+        "category-travel"
+      ],
+      "transformationNotes": [
+        "Transform Skyscanner reference patterns into an original checkout kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/skyscanner-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:tripadvisor",
+      "slug": "tripadvisor-figma-kit",
+      "title": "TripAdvisor Checkout Figma Flow Kit",
+      "sourceAppSlug": "tripadvisor",
+      "sourceAppName": "TripAdvisor",
+      "primaryFlowId": "checkout",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/checkout/tripadvisor/v1",
+      "thumbnail": "/assets/apps/tripadvisor/screen-1.png",
+      "gallery": [
+        "/assets/apps/tripadvisor/screen-1.png",
+        "/assets/apps/tripadvisor/screen-2.png",
+        "/assets/apps/tripadvisor/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Cart summary",
+        "Line item row",
+        "Payment selector",
+        "Confirmation state"
+      ],
+      "includedTokens": [
+        "Editorial travel palette",
+        "Search and booking typography",
+        "Comfort-first spacing scale"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-checkout",
+        "category-travel"
+      ],
+      "transformationNotes": [
+        "Transform TripAdvisor reference patterns into an original checkout kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/tripadvisor-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:kayak",
+      "slug": "kayak-figma-kit",
+      "title": "Kayak Checkout Figma Flow Kit",
+      "sourceAppSlug": "kayak",
+      "sourceAppName": "Kayak",
+      "primaryFlowId": "checkout",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/kayak/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/kayak/screen-1.jpg",
+        "/assets/apps/kayak/screen-2.jpg",
+        "/assets/apps/kayak/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Cart summary",
+        "Line item row",
+        "Payment selector",
+        "Confirmation state"
+      ],
+      "includedTokens": [
+        "Editorial travel palette",
+        "Search and booking typography",
+        "Comfort-first spacing scale"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-checkout",
+        "category-travel"
+      ],
+      "transformationNotes": [
+        "Transform Kayak reference patterns into an original checkout kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/kayak-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:hoteltonight",
+      "slug": "hoteltonight-figma-kit",
+      "title": "HotelTonight Checkout Figma Flow Kit",
+      "sourceAppSlug": "hoteltonight",
+      "sourceAppName": "HotelTonight",
+      "primaryFlowId": "checkout",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/hoteltonight/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/hoteltonight/screen-1.jpg",
+        "/assets/apps/hoteltonight/screen-2.jpg",
+        "/assets/apps/hoteltonight/screen-3.jpg"
+      ],
+      "includedScreens": 7,
+      "includedComponents": [
+        "Cart summary",
+        "Line item row",
+        "Payment selector",
+        "Confirmation state"
+      ],
+      "includedTokens": [
+        "Editorial travel palette",
+        "Search and booking typography",
+        "Comfort-first spacing scale"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-checkout",
+        "category-travel"
+      ],
+      "transformationNotes": [
+        "Transform HotelTonight reference patterns into an original checkout kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 69,
+      "completenessScore": 68,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/hoteltonight-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:slack",
+      "slug": "slack-figma-kit",
+      "title": "Slack Onboarding Figma Flow Kit",
+      "sourceAppSlug": "slack",
+      "sourceAppName": "Slack",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/slack/screen-1.png",
+      "gallery": [
+        "/assets/apps/slack/screen-1.png",
+        "/assets/apps/slack/screen-2.png",
+        "/assets/apps/slack/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Productivity neutral palette",
+        "Enterprise text hierarchy",
+        "Operational spacing rhythm"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-business"
+      ],
+      "transformationNotes": [
+        "Transform Slack reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/slack-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:zoom",
+      "slug": "zoom-figma-kit",
+      "title": "Zoom Onboarding Figma Flow Kit",
+      "sourceAppSlug": "zoom",
+      "sourceAppName": "Zoom",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/zoom/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/zoom/screen-1.jpg",
+        "/assets/apps/zoom/screen-2.jpg",
+        "/assets/apps/zoom/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Productivity neutral palette",
+        "Enterprise text hierarchy",
+        "Operational spacing rhythm"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-business"
+      ],
+      "transformationNotes": [
+        "Transform Zoom reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/zoom-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:trello",
+      "slug": "trello-figma-kit",
+      "title": "Trello Onboarding Figma Flow Kit",
+      "sourceAppSlug": "trello",
+      "sourceAppName": "Trello",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/trello/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/trello/screen-1.jpg",
+        "/assets/apps/trello/screen-2.jpg",
+        "/assets/apps/trello/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Productivity neutral palette",
+        "Enterprise text hierarchy",
+        "Operational spacing rhythm"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-business"
+      ],
+      "transformationNotes": [
+        "Transform Trello reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/trello-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:notion",
+      "slug": "notion-figma-kit",
+      "title": "Notion Onboarding Figma Flow Kit",
+      "sourceAppSlug": "notion",
+      "sourceAppName": "Notion",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/notion/screen-1.png",
+      "gallery": [
+        "/assets/apps/notion/screen-1.png",
+        "/assets/apps/notion/screen-2.png",
+        "/assets/apps/notion/screen-3.png"
+      ],
+      "includedScreens": 7,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Productivity neutral palette",
+        "Enterprise text hierarchy",
+        "Operational spacing rhythm"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-business"
+      ],
+      "transformationNotes": [
+        "Transform Notion reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 69,
+      "completenessScore": 68,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/notion-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:asana",
+      "slug": "asana-figma-kit",
+      "title": "Asana Onboarding Figma Flow Kit",
+      "sourceAppSlug": "asana",
+      "sourceAppName": "Asana",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/asana/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/asana/screen-1.jpg",
+        "/assets/apps/asana/screen-2.jpg",
+        "/assets/apps/asana/screen-3.jpg"
+      ],
+      "includedScreens": 7,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Productivity neutral palette",
+        "Enterprise text hierarchy",
+        "Operational spacing rhythm"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-business"
+      ],
+      "transformationNotes": [
+        "Transform Asana reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 69,
+      "completenessScore": 68,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/asana-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:monday-com",
+      "slug": "monday-com-figma-kit",
+      "title": "Monday.com Onboarding Figma Flow Kit",
+      "sourceAppSlug": "monday-com",
+      "sourceAppName": "Monday.com",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/monday-com/screen-1.png",
+      "gallery": [
+        "/assets/apps/monday-com/screen-1.png",
+        "/assets/apps/monday-com/screen-2.png",
+        "/assets/apps/monday-com/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Productivity neutral palette",
+        "Enterprise text hierarchy",
+        "Operational spacing rhythm"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-business"
+      ],
+      "transformationNotes": [
+        "Transform Monday.com reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/monday-com-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:linear",
+      "slug": "linear-figma-kit",
+      "title": "Linear Onboarding Figma Flow Kit",
+      "sourceAppSlug": "linear",
+      "sourceAppName": "Linear",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/linear/screen-1.png",
+      "gallery": [
+        "/assets/apps/linear/screen-1.png",
+        "/assets/apps/linear/screen-2.png",
+        "/assets/apps/linear/screen-3.png"
+      ],
+      "includedScreens": 6,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Productivity neutral palette",
+        "Enterprise text hierarchy",
+        "Operational spacing rhythm"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 80,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-business"
+      ],
+      "transformationNotes": [
+        "Transform Linear reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 68,
+      "completenessScore": 66,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/linear-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:loom",
+      "slug": "loom-figma-kit",
+      "title": "Loom Onboarding Figma Flow Kit",
+      "sourceAppSlug": "loom",
+      "sourceAppName": "Loom",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/loom/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/loom/screen-1.jpg",
+        "/assets/apps/loom/screen-2.jpg",
+        "/assets/apps/loom/screen-3.jpg"
+      ],
+      "includedScreens": 7,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Productivity neutral palette",
+        "Enterprise text hierarchy",
+        "Operational spacing rhythm"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-business"
+      ],
+      "transformationNotes": [
+        "Transform Loom reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 69,
+      "completenessScore": 68,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/loom-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:headspace",
+      "slug": "headspace-figma-kit",
+      "title": "Headspace Onboarding Figma Flow Kit",
+      "sourceAppSlug": "headspace",
+      "sourceAppName": "Headspace",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/onboarding/headspace/v1",
+      "thumbnail": "/assets/apps/headspace/screen-1.png",
+      "gallery": [
+        "/assets/apps/headspace/screen-1.png",
+        "/assets/apps/headspace/screen-2.png",
+        "/assets/apps/headspace/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Calm wellness palette",
+        "Soft onboarding typography",
+        "Breathing room spacing scale"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-health"
+      ],
+      "transformationNotes": [
+        "Transform Headspace reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/headspace-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:calm",
+      "slug": "calm-figma-kit",
+      "title": "Calm Onboarding Figma Flow Kit",
+      "sourceAppSlug": "calm",
+      "sourceAppName": "Calm",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/onboarding/calm/v1",
+      "thumbnail": "/assets/apps/calm/screen-1.png",
+      "gallery": [
+        "/assets/apps/calm/screen-1.png",
+        "/assets/apps/calm/screen-2.png",
+        "/assets/apps/calm/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Calm wellness palette",
+        "Soft onboarding typography",
+        "Breathing room spacing scale"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-health"
+      ],
+      "transformationNotes": [
+        "Transform Calm reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/calm-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:strava",
+      "slug": "strava-figma-kit",
+      "title": "Strava Onboarding Figma Flow Kit",
+      "sourceAppSlug": "strava",
+      "sourceAppName": "Strava",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/onboarding/strava/v1",
+      "thumbnail": "/assets/apps/strava/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/strava/screen-1.jpg",
+        "/assets/apps/strava/screen-2.jpg",
+        "/assets/apps/strava/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Calm wellness palette",
+        "Soft onboarding typography",
+        "Breathing room spacing scale"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-health"
+      ],
+      "transformationNotes": [
+        "Transform Strava reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/strava-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:nike-run-club",
+      "slug": "nike-run-club-figma-kit",
+      "title": "Nike Run Club Onboarding Figma Flow Kit",
+      "sourceAppSlug": "nike-run-club",
+      "sourceAppName": "Nike Run Club",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/onboarding/nike-run-club/v1",
+      "thumbnail": "/assets/apps/nike-run-club/screen-1.png",
+      "gallery": [
+        "/assets/apps/nike-run-club/screen-1.png",
+        "/assets/apps/nike-run-club/screen-2.png",
+        "/assets/apps/nike-run-club/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Calm wellness palette",
+        "Soft onboarding typography",
+        "Breathing room spacing scale"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-health"
+      ],
+      "transformationNotes": [
+        "Transform Nike Run Club reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/nike-run-club-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:myfitnesspal",
+      "slug": "myfitnesspal-figma-kit",
+      "title": "MyFitnessPal Onboarding Figma Flow Kit",
+      "sourceAppSlug": "myfitnesspal",
+      "sourceAppName": "MyFitnessPal",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/myfitnesspal/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/myfitnesspal/screen-1.jpg",
+        "/assets/apps/myfitnesspal/screen-2.jpg",
+        "/assets/apps/myfitnesspal/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Calm wellness palette",
+        "Soft onboarding typography",
+        "Breathing room spacing scale"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-health"
+      ],
+      "transformationNotes": [
+        "Transform MyFitnessPal reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/myfitnesspal-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:fitbit",
+      "slug": "fitbit-figma-kit",
+      "title": "Fitbit Onboarding Figma Flow Kit",
+      "sourceAppSlug": "fitbit",
+      "sourceAppName": "Fitbit",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/fitbit/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/fitbit/screen-1.jpg",
+        "/assets/apps/fitbit/screen-2.jpg",
+        "/assets/apps/fitbit/screen-3.jpg"
+      ],
+      "includedScreens": 6,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Calm wellness palette",
+        "Soft onboarding typography",
+        "Breathing room spacing scale"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 80,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-health"
+      ],
+      "transformationNotes": [
+        "Transform Fitbit reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 68,
+      "completenessScore": 66,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/fitbit-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:flo",
+      "slug": "flo-figma-kit",
+      "title": "Flo Onboarding Figma Flow Kit",
+      "sourceAppSlug": "flo",
+      "sourceAppName": "Flo",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/onboarding/flo/v1",
+      "thumbnail": "/assets/apps/flo/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/flo/screen-1.jpg",
+        "/assets/apps/flo/screen-2.jpg",
+        "/assets/apps/flo/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Calm wellness palette",
+        "Soft onboarding typography",
+        "Breathing room spacing scale"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-health"
+      ],
+      "transformationNotes": [
+        "Transform Flo reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/flo-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:sleep-cycle",
+      "slug": "sleep-cycle-figma-kit",
+      "title": "Sleep Cycle Onboarding Figma Flow Kit",
+      "sourceAppSlug": "sleep-cycle",
+      "sourceAppName": "Sleep Cycle",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/sleep-cycle/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/sleep-cycle/screen-1.jpg",
+        "/assets/apps/sleep-cycle/screen-2.jpg",
+        "/assets/apps/sleep-cycle/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Calm wellness palette",
+        "Soft onboarding typography",
+        "Breathing room spacing scale"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-health"
+      ],
+      "transformationNotes": [
+        "Transform Sleep Cycle reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/sleep-cycle-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:spotify",
+      "slug": "spotify-figma-kit",
+      "title": "Spotify Search & Discovery Figma Flow Kit",
+      "sourceAppSlug": "spotify",
+      "sourceAppName": "Spotify",
+      "primaryFlowId": "search-discovery",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/search-discovery/spotify/v1",
+      "thumbnail": "/assets/apps/spotify/screen-1.png",
+      "gallery": [
+        "/assets/apps/spotify/screen-1.png",
+        "/assets/apps/spotify/screen-2.png",
+        "/assets/apps/spotify/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Search header",
+        "Suggestion chip row",
+        "Result card",
+        "Filter bottom sheet"
+      ],
+      "includedTokens": [
+        "Media-dark palette",
+        "Subscription typography",
+        "Immersive content spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-search-discovery",
+        "category-music"
+      ],
+      "transformationNotes": [
+        "Transform Spotify reference patterns into an original search & discovery kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/spotify-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:apple-music",
+      "slug": "apple-music-figma-kit",
+      "title": "Apple Music Search & Discovery Figma Flow Kit",
+      "sourceAppSlug": "apple-music",
+      "sourceAppName": "Apple Music",
+      "primaryFlowId": "search-discovery",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/apple-music/screen-1.png",
+      "gallery": [
+        "/assets/apps/apple-music/screen-1.png",
+        "/assets/apps/apple-music/screen-2.png",
+        "/assets/apps/apple-music/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Search header",
+        "Suggestion chip row",
+        "Result card",
+        "Filter bottom sheet"
+      ],
+      "includedTokens": [
+        "Media-dark palette",
+        "Subscription typography",
+        "Immersive content spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-search-discovery",
+        "category-music"
+      ],
+      "transformationNotes": [
+        "Transform Apple Music reference patterns into an original search & discovery kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/apple-music-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:soundcloud",
+      "slug": "soundcloud-figma-kit",
+      "title": "SoundCloud Search & Discovery Figma Flow Kit",
+      "sourceAppSlug": "soundcloud",
+      "sourceAppName": "SoundCloud",
+      "primaryFlowId": "search-discovery",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/search-discovery/soundcloud/v1",
+      "thumbnail": "/assets/apps/soundcloud/screen-1.png",
+      "gallery": [
+        "/assets/apps/soundcloud/screen-1.png",
+        "/assets/apps/soundcloud/screen-2.png",
+        "/assets/apps/soundcloud/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Search header",
+        "Suggestion chip row",
+        "Result card",
+        "Filter bottom sheet"
+      ],
+      "includedTokens": [
+        "Media-dark palette",
+        "Subscription typography",
+        "Immersive content spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-search-discovery",
+        "category-music"
+      ],
+      "transformationNotes": [
+        "Transform SoundCloud reference patterns into an original search & discovery kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/soundcloud-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:tidal",
+      "slug": "tidal-figma-kit",
+      "title": "Tidal Subscription Upgrade Figma Flow Kit",
+      "sourceAppSlug": "tidal",
+      "sourceAppName": "Tidal",
+      "primaryFlowId": "subscription-upgrade",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/tidal/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/tidal/screen-1.jpg",
+        "/assets/apps/tidal/screen-2.jpg",
+        "/assets/apps/tidal/screen-3.jpg"
+      ],
+      "includedScreens": 5,
+      "includedComponents": [
+        "Plan comparison card",
+        "Feature checklist",
+        "Billing selector",
+        "Upgrade confirmation"
+      ],
+      "includedTokens": [
+        "Media-dark palette",
+        "Subscription typography",
+        "Immersive content spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 80,
+      "bundleIds": [
+        "flow-subscription-upgrade",
+        "category-music"
+      ],
+      "transformationNotes": [
+        "Transform Tidal reference patterns into an original subscription upgrade kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 36,
+      "completenessScore": 30,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/tidal-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:deezer",
+      "slug": "deezer-figma-kit",
+      "title": "Deezer Search & Discovery Figma Flow Kit",
+      "sourceAppSlug": "deezer",
+      "sourceAppName": "Deezer",
+      "primaryFlowId": "search-discovery",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/deezer/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/deezer/screen-1.jpg",
+        "/assets/apps/deezer/screen-2.jpg",
+        "/assets/apps/deezer/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Search header",
+        "Suggestion chip row",
+        "Result card",
+        "Filter bottom sheet"
+      ],
+      "includedTokens": [
+        "Media-dark palette",
+        "Subscription typography",
+        "Immersive content spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-search-discovery",
+        "category-music"
+      ],
+      "transformationNotes": [
+        "Transform Deezer reference patterns into an original search & discovery kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/deezer-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:pandora",
+      "slug": "pandora-figma-kit",
+      "title": "Pandora Search & Discovery Figma Flow Kit",
+      "sourceAppSlug": "pandora",
+      "sourceAppName": "Pandora",
+      "primaryFlowId": "search-discovery",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/search-discovery/pandora/v1",
+      "thumbnail": "/assets/apps/pandora/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/pandora/screen-1.jpg",
+        "/assets/apps/pandora/screen-2.jpg",
+        "/assets/apps/pandora/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Search header",
+        "Suggestion chip row",
+        "Result card",
+        "Filter bottom sheet"
+      ],
+      "includedTokens": [
+        "Media-dark palette",
+        "Subscription typography",
+        "Immersive content spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-search-discovery",
+        "category-music"
+      ],
+      "transformationNotes": [
+        "Transform Pandora reference patterns into an original search & discovery kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/pandora-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:shazam",
+      "slug": "shazam-figma-kit",
+      "title": "Shazam Search & Discovery Figma Flow Kit",
+      "sourceAppSlug": "shazam",
+      "sourceAppName": "Shazam",
+      "primaryFlowId": "search-discovery",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/search-discovery/shazam/v1",
+      "thumbnail": "/assets/apps/shazam/screen-1.png",
+      "gallery": [
+        "/assets/apps/shazam/screen-1.png",
+        "/assets/apps/shazam/screen-2.png",
+        "/assets/apps/shazam/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Search header",
+        "Suggestion chip row",
+        "Result card",
+        "Filter bottom sheet"
+      ],
+      "includedTokens": [
+        "Media-dark palette",
+        "Subscription typography",
+        "Immersive content spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-search-discovery",
+        "category-music"
+      ],
+      "transformationNotes": [
+        "Transform Shazam reference patterns into an original search & discovery kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/shazam-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:duolingo",
+      "slug": "duolingo-figma-kit",
+      "title": "Duolingo Onboarding Figma Flow Kit",
+      "sourceAppSlug": "duolingo",
+      "sourceAppName": "Duolingo",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/duolingo/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/duolingo/screen-1.jpg",
+        "/assets/apps/duolingo/screen-2.jpg",
+        "/assets/apps/duolingo/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Learning accent palette",
+        "Structured lesson typography",
+        "Guided flow spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-education"
+      ],
+      "transformationNotes": [
+        "Transform Duolingo reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/duolingo-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:coursera",
+      "slug": "coursera-figma-kit",
+      "title": "Coursera Onboarding Figma Flow Kit",
+      "sourceAppSlug": "coursera",
+      "sourceAppName": "Coursera",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/coursera/screen-1.png",
+      "gallery": [
+        "/assets/apps/coursera/screen-1.png",
+        "/assets/apps/coursera/screen-2.png",
+        "/assets/apps/coursera/screen-3.png"
+      ],
+      "includedScreens": 5,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Learning accent palette",
+        "Structured lesson typography",
+        "Guided flow spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 80,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-education"
+      ],
+      "transformationNotes": [
+        "Transform Coursera reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 38,
+      "completenessScore": 33,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/coursera-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:masterclass",
+      "slug": "masterclass-figma-kit",
+      "title": "MasterClass Onboarding Figma Flow Kit",
+      "sourceAppSlug": "masterclass",
+      "sourceAppName": "MasterClass",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/onboarding/masterclass/v1",
+      "thumbnail": "/assets/apps/masterclass/screen-1.png",
+      "gallery": [
+        "/assets/apps/masterclass/screen-1.png",
+        "/assets/apps/masterclass/screen-2.png",
+        "/assets/apps/masterclass/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Learning accent palette",
+        "Structured lesson typography",
+        "Guided flow spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-education"
+      ],
+      "transformationNotes": [
+        "Transform MasterClass reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/masterclass-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:udemy",
+      "slug": "udemy-figma-kit",
+      "title": "Udemy Onboarding Figma Flow Kit",
+      "sourceAppSlug": "udemy",
+      "sourceAppName": "Udemy",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/onboarding/udemy/v1",
+      "thumbnail": "/assets/apps/udemy/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/udemy/screen-1.jpg",
+        "/assets/apps/udemy/screen-2.jpg",
+        "/assets/apps/udemy/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Learning accent palette",
+        "Structured lesson typography",
+        "Guided flow spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-education"
+      ],
+      "transformationNotes": [
+        "Transform Udemy reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/udemy-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:khan-academy",
+      "slug": "khan-academy-figma-kit",
+      "title": "Khan Academy Onboarding Figma Flow Kit",
+      "sourceAppSlug": "khan-academy",
+      "sourceAppName": "Khan Academy",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/onboarding/khan-academy/v1",
+      "thumbnail": "/assets/apps/khan-academy/screen-1.png",
+      "gallery": [
+        "/assets/apps/khan-academy/screen-1.png",
+        "/assets/apps/khan-academy/screen-2.png",
+        "/assets/apps/khan-academy/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Learning accent palette",
+        "Structured lesson typography",
+        "Guided flow spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-education"
+      ],
+      "transformationNotes": [
+        "Transform Khan Academy reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/khan-academy-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:skillshare",
+      "slug": "skillshare-figma-kit",
+      "title": "Skillshare Onboarding Figma Flow Kit",
+      "sourceAppSlug": "skillshare",
+      "sourceAppName": "Skillshare",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/onboarding/skillshare/v1",
+      "thumbnail": "/assets/apps/skillshare/screen-1.png",
+      "gallery": [
+        "/assets/apps/skillshare/screen-1.png",
+        "/assets/apps/skillshare/screen-2.png",
+        "/assets/apps/skillshare/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Learning accent palette",
+        "Structured lesson typography",
+        "Guided flow spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-education"
+      ],
+      "transformationNotes": [
+        "Transform Skillshare reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/skillshare-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:babbel",
+      "slug": "babbel-figma-kit",
+      "title": "Babbel Onboarding Figma Flow Kit",
+      "sourceAppSlug": "babbel",
+      "sourceAppName": "Babbel",
+      "primaryFlowId": "onboarding",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/onboarding/babbel/v1",
+      "thumbnail": "/assets/apps/babbel/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/babbel/screen-1.jpg",
+        "/assets/apps/babbel/screen-2.jpg",
+        "/assets/apps/babbel/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Welcome hero",
+        "Preference picker",
+        "Progress tracker",
+        "Primary CTA footer"
+      ],
+      "includedTokens": [
+        "Learning accent palette",
+        "Structured lesson typography",
+        "Guided flow spacing"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-onboarding",
+        "category-education"
+      ],
+      "transformationNotes": [
+        "Transform Babbel reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/babbel-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:the-new-york-times",
+      "slug": "the-new-york-times-figma-kit",
+      "title": "The New York Times Search & Discovery Figma Flow Kit",
+      "sourceAppSlug": "the-new-york-times",
+      "sourceAppName": "The New York Times",
+      "primaryFlowId": "search-discovery",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/search-discovery/the-new-york-times/v1",
+      "thumbnail": "/assets/apps/the-new-york-times/screen-1.png",
+      "gallery": [
+        "/assets/apps/the-new-york-times/screen-1.png",
+        "/assets/apps/the-new-york-times/screen-2.png",
+        "/assets/apps/the-new-york-times/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Search header",
+        "Suggestion chip row",
+        "Result card",
+        "Filter bottom sheet"
+      ],
+      "includedTokens": [
+        "Editorial mono accents",
+        "Scanning typography",
+        "Reading-friendly rhythm"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-search-discovery",
+        "category-news"
+      ],
+      "transformationNotes": [
+        "Transform The New York Times reference patterns into an original search & discovery kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/the-new-york-times-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:bbc-news",
+      "slug": "bbc-news-figma-kit",
+      "title": "BBC News Search & Discovery Figma Flow Kit",
+      "sourceAppSlug": "bbc-news",
+      "sourceAppName": "BBC News",
+      "primaryFlowId": "search-discovery",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/search-discovery/bbc-news/v1",
+      "thumbnail": "/assets/apps/bbc-news/screen-1.png",
+      "gallery": [
+        "/assets/apps/bbc-news/screen-1.png",
+        "/assets/apps/bbc-news/screen-2.png",
+        "/assets/apps/bbc-news/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Search header",
+        "Suggestion chip row",
+        "Result card",
+        "Filter bottom sheet"
+      ],
+      "includedTokens": [
+        "Editorial mono accents",
+        "Scanning typography",
+        "Reading-friendly rhythm"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-search-discovery",
+        "category-news"
+      ],
+      "transformationNotes": [
+        "Transform BBC News reference patterns into an original search & discovery kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/bbc-news-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:cnn",
+      "slug": "cnn-figma-kit",
+      "title": "CNN Search & Discovery Figma Flow Kit",
+      "sourceAppSlug": "cnn",
+      "sourceAppName": "CNN",
+      "primaryFlowId": "search-discovery",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/cnn/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/cnn/screen-1.jpg",
+        "/assets/apps/cnn/screen-2.jpg",
+        "/assets/apps/cnn/screen-3.jpg"
+      ],
+      "includedScreens": 5,
+      "includedComponents": [
+        "Search header",
+        "Suggestion chip row",
+        "Result card",
+        "Filter bottom sheet"
+      ],
+      "includedTokens": [
+        "Editorial mono accents",
+        "Scanning typography",
+        "Reading-friendly rhythm"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 80,
+      "bundleIds": [
+        "flow-search-discovery",
+        "category-news"
+      ],
+      "transformationNotes": [
+        "Transform CNN reference patterns into an original search & discovery kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 38,
+      "completenessScore": 33,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/cnn-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:reuters",
+      "slug": "reuters-figma-kit",
+      "title": "Reuters Search & Discovery Figma Flow Kit",
+      "sourceAppSlug": "reuters",
+      "sourceAppName": "Reuters",
+      "primaryFlowId": "search-discovery",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/reuters/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/reuters/screen-1.jpg",
+        "/assets/apps/reuters/screen-2.jpg",
+        "/assets/apps/reuters/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Search header",
+        "Suggestion chip row",
+        "Result card",
+        "Filter bottom sheet"
+      ],
+      "includedTokens": [
+        "Editorial mono accents",
+        "Scanning typography",
+        "Reading-friendly rhythm"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-search-discovery",
+        "category-news"
+      ],
+      "transformationNotes": [
+        "Transform Reuters reference patterns into an original search & discovery kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/reuters-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:flipboard",
+      "slug": "flipboard-figma-kit",
+      "title": "Flipboard Search & Discovery Figma Flow Kit",
+      "sourceAppSlug": "flipboard",
+      "sourceAppName": "Flipboard",
+      "primaryFlowId": "search-discovery",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/search-discovery/flipboard/v1",
+      "thumbnail": "/assets/apps/flipboard/screen-1.png",
+      "gallery": [
+        "/assets/apps/flipboard/screen-1.png",
+        "/assets/apps/flipboard/screen-2.png",
+        "/assets/apps/flipboard/screen-3.png"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Search header",
+        "Suggestion chip row",
+        "Result card",
+        "Filter bottom sheet"
+      ],
+      "includedTokens": [
+        "Editorial mono accents",
+        "Scanning typography",
+        "Reading-friendly rhythm"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-search-discovery",
+        "category-news"
+      ],
+      "transformationNotes": [
+        "Transform Flipboard reference patterns into an original search & discovery kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/flipboard-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:substack",
+      "slug": "substack-figma-kit",
+      "title": "Substack Search & Discovery Figma Flow Kit",
+      "sourceAppSlug": "substack",
+      "sourceAppName": "Substack",
+      "primaryFlowId": "search-discovery",
+      "type": "flow-kit",
+      "status": "published",
+      "figmaFileKey": "luxuryui/search-discovery/substack/v1",
+      "thumbnail": "/assets/apps/substack/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/substack/screen-1.jpg",
+        "/assets/apps/substack/screen-2.jpg",
+        "/assets/apps/substack/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Search header",
+        "Suggestion chip row",
+        "Result card",
+        "Filter bottom sheet"
+      ],
+      "includedTokens": [
+        "Editorial mono accents",
+        "Scanning typography",
+        "Reading-friendly rhythm"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 140,
+      "bundleIds": [
+        "flow-search-discovery",
+        "category-news"
+      ],
+      "transformationNotes": [
+        "Transform Substack reference patterns into an original search & discovery kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/substack-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    },
+    {
+      "id": "figma-kit:pocket",
+      "slug": "pocket-figma-kit",
+      "title": "Pocket Search & Discovery Figma Flow Kit",
+      "sourceAppSlug": "pocket",
+      "sourceAppName": "Pocket",
+      "primaryFlowId": "search-discovery",
+      "type": "flow-kit",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/apps/pocket/screen-1.jpg",
+      "gallery": [
+        "/assets/apps/pocket/screen-1.jpg",
+        "/assets/apps/pocket/screen-2.jpg",
+        "/assets/apps/pocket/screen-3.jpg"
+      ],
+      "includedScreens": 8,
+      "includedComponents": [
+        "Search header",
+        "Suggestion chip row",
+        "Result card",
+        "Filter bottom sheet"
+      ],
+      "includedTokens": [
+        "Editorial mono accents",
+        "Scanning typography",
+        "Reading-friendly rhythm"
+      ],
+      "licenseTier": "Commercial",
+      "creditCost": 110,
+      "bundleIds": [
+        "flow-search-discovery",
+        "category-news"
+      ],
+      "transformationNotes": [
+        "Transform Pocket reference patterns into an original search & discovery kit with renamed UI copy and generalized components.",
+        "Do not mirror source branding, iconography, or raw layout one-for-one.",
+        "Package the result as an editable Figma file with tokens, component variants, and usage notes."
+      ],
+      "qualityScore": 70,
+      "completenessScore": 70,
+      "lastReviewedAt": "2026-03-31T09:17:12.858Z",
+      "previewPath": "/kits/pocket-figma-kit",
+      "purchasePath": "/pricing",
+      "delivery": {
+        "format": "Figma file",
+        "fulfillment": "Own-site delivery pack",
+        "includes": [
+          "Editable Figma flow file",
+          "Cover and usage page",
+          "Core component section",
+          "Color and text style tokens",
+          "Commercial license summary"
+        ]
+      }
+    }
+  ]
+}

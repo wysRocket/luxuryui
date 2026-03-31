@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Smartphone, Monitor, LayoutGrid, Share2, Bookmark, Info } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { formatCreditCost, getPublishedKitForAppSlug } from '../data/figmaKits';
+import { REAL_APP_ASSETS } from '../data/realAppAssets';
 import { AppItem } from '../types';
+import { useAppSession } from '../contexts/AppSessionContext';
 
 interface AppDetailsModalProps {
   app: AppItem | null;
@@ -12,7 +15,27 @@ interface AppDetailsModalProps {
 
 const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose }) => {
   const [showPlatformTooltip, setShowPlatformTooltip] = useState(false);
+  const [activeScreenshot, setActiveScreenshot] = useState('');
   const navigate = useNavigate();
+  const { isAuthenticated, wallet, hasUnlocked } = useAppSession();
+  const realScreenshots = app ? REAL_APP_ASSETS[app.name]?.screenshots : undefined;
+  const screenshots = app
+    ? realScreenshots?.length
+      ? realScreenshots
+      : [app.image]
+    : [];
+  const relatedKit = app ? getPublishedKitForAppSlug(app.slug) : undefined;
+  const kitUnlocked = relatedKit ? hasUnlocked(relatedKit.id) : false;
+  const hasEnoughCredits = relatedKit ? (wallet?.balance ?? 0) >= relatedKit.creditCost : false;
+
+  useEffect(() => {
+    if (!app) {
+      setActiveScreenshot('');
+      return;
+    }
+
+    setActiveScreenshot(realScreenshots?.[0] ?? app.image);
+  }, [app, realScreenshots]);
 
   if (!app) return null;
 
@@ -47,25 +70,94 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
             layoutId={`app-card-container-${app.id}`}
             className="bg-white dark:bg-gray-900 w-full max-w-5xl h-[90vh] rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row transition-colors duration-300 relative z-10"
           >
-            {/* Image Section - The "Larger View" */}
+            {/* Image Section */}
             <motion.div 
-              layoutId={`app-image-container-${app.id}`}
-              className="w-full md:w-3/5 h-[400px] md:h-auto relative bg-gray-100 dark:bg-gray-800 overflow-hidden"
+              className="w-full md:w-3/5 h-[420px] md:h-auto relative overflow-hidden bg-[#0b0b0f]"
             >
-              <motion.div 
-                layoutId={`app-image-${app.id}`}
-                className="w-full h-full bg-cover bg-center"
-                style={{ backgroundImage: `url(${app.image})` }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
+              <div className="absolute inset-0">
+                <img
+                  src={activeScreenshot}
+                  alt=""
+                  aria-hidden="true"
+                  className="w-full h-full object-cover scale-110 opacity-35 blur-3xl"
+                />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.12),transparent_38%),linear-gradient(180deg,rgba(12,12,14,0.3),rgba(12,12,14,0.92))]" />
+              </div>
+
+              <div className="relative z-10 flex h-full flex-col p-5 md:p-8">
+                <div className="flex items-start justify-between gap-3">
+                  <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/80 backdrop-blur-md">
+                    <span>Curated Preview</span>
+                    <span className="h-1 w-1 rounded-full bg-white/50" />
+                    <span>{screenshots.length} shots</span>
+                  </div>
+                  
+                  {/* Close Button Mobile */}
+                  <button 
+                    onClick={onClose}
+                    className="md:hidden p-2 bg-white/12 backdrop-blur-md rounded-full text-white hover:bg-white/25 transition-colors"
+                  >
+                    <X size={20} />
+                  </button>
+                </div>
+
+                <div className="flex flex-1 items-center justify-center py-6 md:py-10">
+                  <div className="w-full max-w-[260px] md:max-w-[360px]">
+                    <div className="rounded-[2rem] border border-white/10 bg-black/55 p-3 shadow-[0_30px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl">
+                      <div className="mb-3 flex justify-center">
+                        <div className="h-1.5 w-20 rounded-full bg-white/18" />
+                      </div>
+                      <div className="overflow-hidden rounded-[1.55rem] bg-black ring-1 ring-white/8">
+                        <motion.img
+                          key={activeScreenshot}
+                          initial={{ opacity: 0.7, scale: 0.985 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.22, ease: 'easeOut' }}
+                          src={activeScreenshot}
+                          alt={`${app.name} screenshot preview`}
+                          className="aspect-[9/19.5] w-full bg-black object-contain"
+                          draggable={false}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {screenshots.length > 1 && (
+                  <div className="-mx-1 flex gap-3 overflow-x-auto px-1 pb-1">
+                    {screenshots.slice(0, 8).map((screenshot, index) => {
+                      const isActive = screenshot === activeScreenshot;
+
+                      return (
+                        <button
+                          key={screenshot}
+                          type="button"
+                          onClick={() => setActiveScreenshot(screenshot)}
+                          className={`group relative shrink-0 overflow-hidden rounded-[1.15rem] border transition-all ${
+                            isActive
+                              ? 'border-white/60 shadow-[0_10px_30px_rgba(0,0,0,0.35)]'
+                              : 'border-white/10 hover:border-white/30'
+                          }`}
+                          aria-label={`Show screenshot ${index + 1}`}
+                        >
+                          <img
+                            src={screenshot}
+                            alt={`${app.name} screenshot ${index + 1}`}
+                            className={`h-24 w-[4.4rem] bg-black object-cover transition-transform duration-300 ${
+                              isActive ? 'scale-[1.03]' : 'group-hover:scale-[1.03]'
+                            }`}
+                            draggable={false}
+                          />
+                          <div className={`absolute inset-0 ring-1 ring-inset transition-colors ${
+                            isActive ? 'ring-white/35' : 'ring-white/0 group-hover:ring-white/20'
+                          }`} />
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
               
-              {/* Close Button Mobile */}
-              <button 
-                onClick={onClose}
-                className="md:hidden absolute top-4 right-4 p-2 bg-white/20 backdrop-blur-md rounded-full text-white hover:bg-white/40 transition-colors"
-              >
-                <X size={20} />
-              </button>
             </motion.div>
 
             {/* Details Section */}
@@ -141,8 +233,8 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
                     <LayoutGrid size={20} />
                   </div>
                   <div>
-                    <p className="text-[10px] uppercase tracking-wider font-bold text-gray-400 dark:text-gray-500">Screens</p>
-                    <p className="text-sm font-semibold dark:text-gray-200">{app.screenCount} items</p>
+                    <p className="text-[10px] uppercase tracking-wider font-bold text-gray-400 dark:text-gray-500">Preview Set</p>
+                    <p className="text-sm font-semibold dark:text-gray-200">{screenshots.length} curated shots</p>
                   </div>
                 </div>
               </div>
@@ -150,8 +242,51 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
               <div className="mb-8">
                 <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-3">About this app</h4>
                 <p className="text-gray-600 dark:text-gray-400 text-[15px] leading-relaxed">
-                  Explore the complete user journey and design patterns of {app.name}. This curated collection features {app.screenCount} high-resolution screens covering critical flows like onboarding, checkout, and profile settings.
+                  Explore the user journey and design patterns of {app.name}. This preview focuses on curated reference screens that help you study navigation, visual tone, and core product flows without stretching low-resolution assets beyond their comfort zone.
                 </p>
+              </div>
+
+              <div className="mb-8 rounded-2xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-950/40 p-5">
+                <p className="text-[10px] font-black uppercase tracking-[0.18em] text-gray-400 dark:text-gray-500 mb-2">Commercial Status</p>
+                {relatedKit ? (
+                  <>
+                    <h4 className="text-lg font-black tracking-tight text-gray-900 dark:text-white mb-2">Editable Figma kit available</h4>
+                    <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400 mb-4">
+                      This app has an approved transformed flow kit in the commercial catalog. Use the screenshots for research, then jump to the editable file package when you need production-ready assets. Current unlock cost: {formatCreditCost(relatedKit.creditCost)}.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <Link
+                        to={relatedKit.previewPath}
+                        onClick={onClose}
+                        className="inline-flex items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 px-4 py-2 text-sm font-bold text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                      >
+                        View what’s included
+                      </Link>
+                      <Link
+                        to={
+                          kitUnlocked
+                            ? `/kits/${relatedKit.slug}/delivery`
+                            : !isAuthenticated
+                              ? `/login?redirect=${encodeURIComponent(relatedKit.previewPath)}`
+                              : hasEnoughCredits
+                                ? relatedKit.previewPath
+                                : relatedKit.purchasePath
+                        }
+                        onClick={onClose}
+                        className="inline-flex items-center justify-center rounded-full bg-black dark:bg-white px-4 py-2 text-sm font-black text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
+                      >
+                        {kitUnlocked ? 'Open delivery' : !isAuthenticated ? 'Sign in to buy' : hasEnoughCredits ? 'Use credits' : 'Top up credits'}
+                      </Link>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <h4 className="text-lg font-black tracking-tight text-gray-900 dark:text-white mb-2">Research-only reference</h4>
+                    <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+                      This source set is still useful for inspiration, but it has not passed the commercial gate required for a sellable Figma kit yet.
+                    </p>
+                  </>
+                )}
               </div>
 
               <div className="mt-auto pt-8 border-t border-gray-100 dark:border-gray-800 flex items-center gap-3">

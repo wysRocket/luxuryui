@@ -17,6 +17,7 @@ import {
   Box, 
   Disc,
 } from 'lucide-react';
+import { useAppSession } from '../contexts/AppSessionContext';
 
 // Brand Data Definition
 const LOGO_SIZE = 20;
@@ -104,6 +105,7 @@ interface FooterCTASectionProps {
 // Adding isDarkMode to the component to fix 'Cannot find name isDarkMode'
 const FooterCTASection: React.FC<FooterCTASectionProps> = ({ isDarkMode }) => {
   const MotionLink = motion(Link);
+  const { isAuthenticated } = useAppSession();
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -149,7 +151,7 @@ const FooterCTASection: React.FC<FooterCTASectionProps> = ({ isDarkMode }) => {
           className="text-lg md:text-xl text-gray-500 dark:text-gray-400 mb-10 max-w-xl mx-auto leading-relaxed"
           variants={itemVariants}
         >
-          Use LuxuryUI for free as long as you like or get full access with any of our paid plans.
+          Browse the research library for free, then top up credits whenever you want an editable Figma kit.
         </motion.p>
         
         <motion.div 
@@ -157,13 +159,13 @@ const FooterCTASection: React.FC<FooterCTASectionProps> = ({ isDarkMode }) => {
           variants={itemVariants}
         >
           <MotionLink
-            to="/signup"
+            to={isAuthenticated ? '/account' : '/signup'}
             className="px-8 py-4 bg-black dark:bg-white text-white dark:text-black text-base font-bold rounded-full shadow-xl w-full sm:w-auto"
             whileHover={{ scale: 1.05, backgroundColor: isDarkMode ? '#f3f4f6' : '#1a1a1a' }}
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
-            Join for free
+            {isAuthenticated ? 'Open account' : 'Join for free'}
           </MotionLink>
           
           <MotionLink
@@ -173,7 +175,7 @@ const FooterCTASection: React.FC<FooterCTASectionProps> = ({ isDarkMode }) => {
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
-            See our plans
+            Top up credits
             <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
           </MotionLink>
         </motion.div>

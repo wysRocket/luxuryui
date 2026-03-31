@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { motion, useScroll, useTransform, useSpring, useMotionValue } from 'framer-motion';
 import { AppItem } from '../types';
 import { Smartphone, Monitor, Maximize2, Bookmark } from 'lucide-react';
+import { getPublishedKitForAppSlug } from '../data/figmaKits';
 
 interface AppCardProps {
   app: AppItem;
@@ -33,6 +34,7 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
 
   // 3. Quality Score Logic (Simulated unique score per app)
   const qualityScore = 90 + (parseInt(app.id.split('-')[1]) % 10);
+  const hasKit = Boolean(getPublishedKitForAppSlug(app.slug));
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
     if (!cardRef.current) return;
@@ -141,6 +143,15 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
         >
           {app.screenCount} screens
         </motion.div>
+
+        {hasKit && (
+          <div
+            className="absolute bottom-5 left-5 rounded-full border border-white/15 bg-emerald-400/15 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.18em] text-white z-40"
+            style={{ transform: "translateZ(70px)" }}
+          >
+            Figma kit
+          </div>
+        )}
 
         {/* NEW: Design Quality Progress Bar (Fills on hover) */}
         <div className="absolute bottom-0 left-0 right-0 z-40" style={{ transform: "translateZ(100px)" }}>

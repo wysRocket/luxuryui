@@ -1,0 +1,396 @@
+{
+  "source": "https://screensdesign.com",
+  "fetchedAt": "2026-03-20T19:09:38.791Z",
+  "policy": {
+    "mode": "shallow-discovery",
+    "note": "This script is an initial route-intake scaffold. Add policy checks before deep crawling."
+  },
+  "pages": [
+    {
+      "url": "https://screensdesign.com",
+      "status": 200,
+      "fetchedAt": "2026-03-20T19:09:38.790Z",
+      "links": [
+        "https://screensdesign.com/img/favicon.svg",
+        "https://screensdesign.com/",
+        "https://screensdesign.com/img/gradientIcon/Screen.svg",
+        "https://screensdesign.com/img/gradientIcon/WebOnboarding.svg",
+        "https://screensdesign.com/img/gradientIcon/AnimationExplorer.svg",
+        "https://screensdesign.com/img/Lens.svg",
+        "https://screensdesign.com/img/gradientIcon/Save.svg",
+        "https://screensdesign.com/img/gradientIcon/Statisti.svg",
+        "https://screensdesign.com/img/gradientIcon/Grid.svg",
+        "https://screensdesign.com/img/gradientIcon/Search.svg",
+        "https://screensdesign.com/img/gradientIcon/MagicWand.svg",
+        "https://screensdesign.com/img/blackIcon/EnterButton.svg",
+        "https://screensdesign.com/img/blackIcon/smart-phone-01.svg",
+        "https://screensdesign.com/img/blackIcon/motion-01.svg",
+        "https://screensdesign.com/img/blackIcon/smart-phone-01-1.svg",
+        "https://screensdesign.com/img/blackIcon/browser.svg",
+        "https://screensdesign.com/img/blackIcon/filter-icon.svg",
+        "https://screensdesign.com/img/blackIcon/analysis-text-link.svg",
+        "https://screensdesign.com/img/blackIcon/searching.svg",
+        "https://screensdesign.com/img/blackIcon/search-status.svg",
+        "https://screensdesign.com/img/blackIcon/ai-content-generator-01.svg",
+        "https://screensdesign.com/img/blackIcon/Grid.svg",
+        "https://screensdesign.com/img/blackIcon/Categorie.svg",
+        "https://screensdesign.com/img/blackIcon/Install.svg",
+        "https://screensdesign.com/img/blackIcon/Revenue.svg",
+        "https://screensdesign.com/img/blackIcon/PaywallType.svg",
+        "https://screensdesign.com/img/blackIcon/OnboardingStep.svg",
+        "https://screensdesign.com/img/blackIcon/Rocket.svg",
+        "https://screensdesign.com/img/blackIcon/LastUpdated.svg",
+        "https://screensdesign.com/img/blackIcon/Star.svg",
+        "https://screensdesign.com/img/blackIcon/MagicWand.svg",
+        "https://screensdesign.com/img/blackIcon/Sort.svg",
+        "https://screensdesign.com/img/blackIcon/SmartSearch.svg",
+        "https://screensdesign.com/img/blackIcon/Search.svg",
+        "https://screensdesign.com/img/blackIcon/Screen.svg",
+        "https://screensdesign.com/img/blackIcon/Screen2.svg",
+        "https://screensdesign.com/img/blackIcon/UI.svg",
+        "https://screensdesign.com/img/saved-groups-gradient.svg",
+        "https://screensdesign.com/img/saved-groups-grey.svg",
+        "https://screensdesign.com/img/smart-phone-gradient.svg",
+        "https://screensdesign.com/img/smart-phone-grey.svg",
+        "https://screensdesign.com/img/smart-phone-black.svg",
+        "https://screensdesign.com/img/star-gradient.svg",
+        "https://screensdesign.com/img/star-grey.svg",
+        "https://screensdesign.com/img/message-add-menu.svg",
+        "https://screensdesign.com/img/message-add.svg",
+        "https://screensdesign.com/img/showcase-icon.svg",
+        "https://screensdesign.com/img/similar-icon.svg",
+        "https://screensdesign.com/img/see-video-icon.svg",
+        "https://screensdesign.com/img/blackIcon/Bookmark.svg",
+        "https://screensdesign.com/img/whiteIcon/Bookmark.svg",
+        "https://screensdesign.com/img/whiteIcon/BookmarkFilled.svg",
+        "https://screensdesign.com/img/blackIcon/Download.svg",
+        "https://screensdesign.com/img/LimitIcon.svg",
+        "https://screensdesign.com/img/blackIcon/BookmarkUnsaved.svg",
+        "https://screensdesign.com/img/whiteIcon/PlusBold.svg",
+        "https://screensdesign.com/img/whiteIcon/NewGroup.svg",
+        "https://screensdesign.com/img/SearchIcon.svg",
+        "https://screensdesign.com/img/ArrowIcon.svg",
+        "https://screensdesign.com/img/SmartSearchGrey.svg",
+        "https://screensdesign.com/img/apps-icon-gradient.svg",
+        "https://screensdesign.com/img/apps-icon.svg",
+        "https://screensdesign.com/img/flows-icon.svg",
+        "https://screensdesign.com/img/screens-black-icon.svg",
+        "https://screensdesign.com/img/screens-grey-icon.svg",
+        "https://screensdesign.com/img/groups-black-icon.svg",
+        "https://screensdesign.com/img/groups-grey-icon.svg",
+        "https://screensdesign.com/img/app-store-icon.svg",
+        "https://screensdesign.com/fonts/RethinkSans-Regular.ttf",
+        "https://screensdesign.com/fonts/RethinkSans-Medium.ttf",
+        "https://screensdesign.com/fonts/RethinkSans-SemiBold.ttf",
+        "https://screensdesign.com/fonts/RethinkSans-Bold.ttf",
+        "https://screensdesign.com/img/starFilterSidebarIconActive.svg",
+        "https://screensdesign.com/assets/index-DpohJsr1.css"
+      ]
+    }
+  ],
+  "routeCandidates": [
+    {
+      "url": "https://screensdesign.com/img/favicon.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/gradientIcon/Screen.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/gradientIcon/WebOnboarding.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/gradientIcon/AnimationExplorer.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/Lens.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/gradientIcon/Save.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/gradientIcon/Statisti.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/gradientIcon/Grid.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/gradientIcon/Search.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/gradientIcon/MagicWand.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/EnterButton.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/smart-phone-01.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/motion-01.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/smart-phone-01-1.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/browser.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/filter-icon.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/analysis-text-link.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/searching.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/search-status.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/ai-content-generator-01.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/Grid.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/Categorie.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/Install.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/Revenue.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/PaywallType.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/OnboardingStep.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/Rocket.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/LastUpdated.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/Star.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/MagicWand.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/Sort.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/SmartSearch.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/Search.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/Screen.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/Screen2.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/UI.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/saved-groups-gradient.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/saved-groups-grey.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/smart-phone-gradient.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/smart-phone-grey.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/smart-phone-black.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/star-gradient.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/star-grey.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/message-add-menu.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/message-add.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/showcase-icon.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/similar-icon.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/see-video-icon.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/Bookmark.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/whiteIcon/Bookmark.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/whiteIcon/BookmarkFilled.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/Download.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/LimitIcon.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/blackIcon/BookmarkUnsaved.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/whiteIcon/PlusBold.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/whiteIcon/NewGroup.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/SearchIcon.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/ArrowIcon.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/SmartSearchGrey.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/apps-icon-gradient.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/apps-icon.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/flows-icon.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/screens-black-icon.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/screens-grey-icon.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/groups-black-icon.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/groups-grey-icon.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/app-store-icon.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/fonts/RethinkSans-Regular.ttf",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/fonts/RethinkSans-Medium.ttf",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/fonts/RethinkSans-SemiBold.ttf",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/fonts/RethinkSans-Bold.ttf",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/img/starFilterSidebarIconActive.svg",
+      "type": "other"
+    },
+    {
+      "url": "https://screensdesign.com/assets/index-DpohJsr1.css",
+      "type": "other"
+    }
+  ],
+  "counts": {
+    "discoveredLinks": 74,
+    "appDetailCandidates": 0,
+    "categoryCandidates": 0,
+    "tagCandidates": 0,
+    "collectionCandidates": 0
+  }
+}

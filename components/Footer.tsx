@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Twitter, Instagram, Linkedin, Dribbble, ArrowRight, Github } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useAppSession } from '../contexts/AppSessionContext';
 
 interface FooterLink {
   label: string;
@@ -35,7 +36,7 @@ const FOOTER_SECTIONS: { title: string; links: FooterLink[] }[] = [
     title: 'Company',
     links: [
       { label: 'About Us', to: '/about' },
-      { label: 'Pricing', to: '/pricing' },
+      { label: 'Top Up Credits', to: '/pricing' },
       { label: 'Careers', to: '/careers' },
       { label: 'Contact', to: '/contact' },
       { label: 'Privacy Policy', to: '/privacy' },
@@ -46,6 +47,7 @@ const FOOTER_SECTIONS: { title: string; links: FooterLink[] }[] = [
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
+  const { isAuthenticated } = useAppSession();
 
   const socialLinks = [
     { icon: Twitter, href: 'https://x.com', label: 'X' },
@@ -65,8 +67,7 @@ const Footer: React.FC = () => {
               <span className="text-2xl font-black tracking-tighter dark:text-white">LuxuryUI</span>
             </Link>
             <p className="text-gray-500 dark:text-gray-400 max-w-xs text-[15px] leading-relaxed mb-8">
-              The world's largest mobile and web design library.
-              Join 500,000+ designers and product managers using LuxuryUI to build better products.
+              Browse the research library, then unlock transformed Figma kits with credits when you need editable assets.
             </p>
             <div className="flex items-center gap-4">
               {socialLinks.map((social) => {
@@ -109,21 +110,14 @@ const Footer: React.FC = () => {
 
           <div className="lg:col-span-1">
             <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-6 uppercase tracking-widest">Stay Updated</h4>
-            <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">Get the latest design trends and patterns in your inbox.</p>
-            <form className="relative group" onSubmit={(event) => event.preventDefault()}>
-              <input
-                type="email"
-                placeholder="Email address"
-                className="w-full bg-gray-50 dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white transition-all pr-12 dark:text-white"
-              />
-              <button
-                type="submit"
-                className="absolute right-2 top-1.5 p-1.5 bg-black dark:bg-white text-white dark:text-black rounded-lg hover:opacity-80 transition-opacity"
-                aria-label="Subscribe"
-              >
-                <ArrowRight size={18} />
-              </button>
-            </form>
+            <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">Account access and kit delivery are now handled directly inside LuxuryUI.</p>
+            <Link
+              to={isAuthenticated ? '/account' : '/signup'}
+              className="inline-flex items-center gap-2 rounded-full bg-black dark:bg-white px-5 py-3 text-sm font-black text-white dark:text-black"
+            >
+              {isAuthenticated ? 'Open account' : 'Create account'}
+              <ArrowRight size={16} />
+            </Link>
           </div>
         </div>
 

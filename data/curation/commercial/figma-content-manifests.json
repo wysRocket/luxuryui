@@ -1,0 +1,4916 @@
+{
+  "schema": "1",
+  "generatedAt": "2026-03-31T09:17:12.858Z",
+  "summary": {
+    "totalProducts": 76,
+    "publishedProducts": 33,
+    "blockedProducts": 43,
+    "flowsRepresented": 5
+  },
+  "manifests": [
+    {
+      "productId": "figma-kit:monzo",
+      "productSlug": "monzo-figma-kit",
+      "figmaFileKey": "luxuryui/onboarding/monzo/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Neutral finance palette",
+            "Data-heavy typography scale",
+            "Tight 8pt spacing grid"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "monzo-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:revolut",
+      "productSlug": "revolut-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Neutral finance palette",
+            "Data-heavy typography scale",
+            "Tight 8pt spacing grid"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "revolut-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:mint",
+      "productSlug": "mint-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Neutral finance palette",
+            "Data-heavy typography scale",
+            "Tight 8pt spacing grid"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "mint-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:robinhood",
+      "productSlug": "robinhood-figma-kit",
+      "figmaFileKey": "luxuryui/onboarding/robinhood/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Neutral finance palette",
+            "Data-heavy typography scale",
+            "Tight 8pt spacing grid"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "robinhood-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:paypal",
+      "productSlug": "paypal-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Neutral finance palette",
+            "Data-heavy typography scale",
+            "Tight 8pt spacing grid"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "paypal-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:wallet",
+      "productSlug": "wallet-figma-kit",
+      "figmaFileKey": "luxuryui/onboarding/wallet/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Neutral finance palette",
+            "Data-heavy typography scale",
+            "Tight 8pt spacing grid"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "wallet-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:wealthfront",
+      "productSlug": "wealthfront-figma-kit",
+      "figmaFileKey": "luxuryui/onboarding/wealthfront/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Neutral finance palette",
+            "Data-heavy typography scale",
+            "Tight 8pt spacing grid"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "wealthfront-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:n26",
+      "productSlug": "n26-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Neutral finance palette",
+            "Data-heavy typography scale",
+            "Tight 8pt spacing grid"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "n26-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:coinbase",
+      "productSlug": "coinbase-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Profile header",
+            "Settings list",
+            "Security action tile",
+            "Success toast"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "High-contrast market palette",
+            "Compact metric typography",
+            "Dense dashboard spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "coinbase-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:binance",
+      "productSlug": "binance-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Profile header",
+            "Settings list",
+            "Security action tile",
+            "Success toast"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "High-contrast market palette",
+            "Compact metric typography",
+            "Dense dashboard spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "binance-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:metamask",
+      "productSlug": "metamask-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Profile header",
+            "Settings list",
+            "Security action tile",
+            "Success toast"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "High-contrast market palette",
+            "Compact metric typography",
+            "Dense dashboard spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "metamask-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:kraken",
+      "productSlug": "kraken-figma-kit",
+      "figmaFileKey": "luxuryui/account-settings/kraken/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Profile header",
+            "Settings list",
+            "Security action tile",
+            "Success toast"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "High-contrast market palette",
+            "Compact metric typography",
+            "Dense dashboard spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "kraken-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:phantom",
+      "productSlug": "phantom-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Profile header",
+            "Settings list",
+            "Security action tile",
+            "Success toast"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "High-contrast market palette",
+            "Compact metric typography",
+            "Dense dashboard spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "phantom-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:uniswap",
+      "productSlug": "uniswap-figma-kit",
+      "figmaFileKey": "luxuryui/account-settings/uniswap/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Profile header",
+            "Settings list",
+            "Security action tile",
+            "Success toast"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "High-contrast market palette",
+            "Compact metric typography",
+            "Dense dashboard spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "uniswap-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:ledger",
+      "productSlug": "ledger-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Profile header",
+            "Settings list",
+            "Security action tile",
+            "Success toast"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "High-contrast market palette",
+            "Compact metric typography",
+            "Dense dashboard spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "ledger-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:amazon",
+      "productSlug": "amazon-figma-kit",
+      "figmaFileKey": "luxuryui/checkout/amazon/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Cart summary",
+            "Line item row",
+            "Payment selector",
+            "Confirmation state"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Merchandising accent palette",
+            "Commerce hierarchy styles",
+            "Responsive card spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "amazon-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:ebay",
+      "productSlug": "ebay-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Cart summary",
+            "Line item row",
+            "Payment selector",
+            "Confirmation state"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Merchandising accent palette",
+            "Commerce hierarchy styles",
+            "Responsive card spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "ebay-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:shopify",
+      "productSlug": "shopify-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Cart summary",
+            "Line item row",
+            "Payment selector",
+            "Confirmation state"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Merchandising accent palette",
+            "Commerce hierarchy styles",
+            "Responsive card spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "shopify-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:etsy",
+      "productSlug": "etsy-figma-kit",
+      "figmaFileKey": "luxuryui/checkout/etsy/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Cart summary",
+            "Line item row",
+            "Payment selector",
+            "Confirmation state"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Merchandising accent palette",
+            "Commerce hierarchy styles",
+            "Responsive card spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "etsy-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:zara",
+      "productSlug": "zara-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Cart summary",
+            "Line item row",
+            "Payment selector",
+            "Confirmation state"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Merchandising accent palette",
+            "Commerce hierarchy styles",
+            "Responsive card spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "zara-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:asos",
+      "productSlug": "asos-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Cart summary",
+            "Line item row",
+            "Payment selector",
+            "Confirmation state"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Merchandising accent palette",
+            "Commerce hierarchy styles",
+            "Responsive card spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "asos-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:nike",
+      "productSlug": "nike-figma-kit",
+      "figmaFileKey": "luxuryui/checkout/nike/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Cart summary",
+            "Line item row",
+            "Payment selector",
+            "Confirmation state"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Merchandising accent palette",
+            "Commerce hierarchy styles",
+            "Responsive card spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "nike-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:stockx",
+      "productSlug": "stockx-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Cart summary",
+            "Line item row",
+            "Payment selector",
+            "Confirmation state"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Merchandising accent palette",
+            "Commerce hierarchy styles",
+            "Responsive card spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "stockx-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:instagram",
+      "productSlug": "instagram-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Feed card",
+            "Reaction rail",
+            "Composer sheet",
+            "Notification prompt"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Expressive social accent palette",
+            "Feed-first text styles",
+            "Engagement spacing system"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "instagram-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:twitter",
+      "productSlug": "twitter-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Feed card",
+            "Reaction rail",
+            "Composer sheet",
+            "Notification prompt"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Expressive social accent palette",
+            "Feed-first text styles",
+            "Engagement spacing system"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "twitter-figma-kit.fig",
+        "previewCount": 2,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:linkedin",
+      "productSlug": "linkedin-figma-kit",
+      "figmaFileKey": "luxuryui/social-engagement/linkedin/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Feed card",
+            "Reaction rail",
+            "Composer sheet",
+            "Notification prompt"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Expressive social accent palette",
+            "Feed-first text styles",
+            "Engagement spacing system"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "linkedin-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:tiktok",
+      "productSlug": "tiktok-figma-kit",
+      "figmaFileKey": "luxuryui/social-engagement/tiktok/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Feed card",
+            "Reaction rail",
+            "Composer sheet",
+            "Notification prompt"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Expressive social accent palette",
+            "Feed-first text styles",
+            "Engagement spacing system"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "tiktok-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:snapchat",
+      "productSlug": "snapchat-figma-kit",
+      "figmaFileKey": "luxuryui/social-engagement/snapchat/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Feed card",
+            "Reaction rail",
+            "Composer sheet",
+            "Notification prompt"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Expressive social accent palette",
+            "Feed-first text styles",
+            "Engagement spacing system"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "snapchat-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:whatsapp",
+      "productSlug": "whatsapp-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Feed card",
+            "Reaction rail",
+            "Composer sheet",
+            "Notification prompt"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Expressive social accent palette",
+            "Feed-first text styles",
+            "Engagement spacing system"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "whatsapp-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:threads",
+      "productSlug": "threads-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Feed card",
+            "Reaction rail",
+            "Composer sheet",
+            "Notification prompt"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Expressive social accent palette",
+            "Feed-first text styles",
+            "Engagement spacing system"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "threads-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:bereal",
+      "productSlug": "bereal-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Feed card",
+            "Reaction rail",
+            "Composer sheet",
+            "Notification prompt"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Expressive social accent palette",
+            "Feed-first text styles",
+            "Engagement spacing system"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "bereal-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:airbnb",
+      "productSlug": "airbnb-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Cart summary",
+            "Line item row",
+            "Payment selector",
+            "Confirmation state"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Editorial travel palette",
+            "Search and booking typography",
+            "Comfort-first spacing scale"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "airbnb-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:expedia",
+      "productSlug": "expedia-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Cart summary",
+            "Line item row",
+            "Payment selector",
+            "Confirmation state"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Editorial travel palette",
+            "Search and booking typography",
+            "Comfort-first spacing scale"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "expedia-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:hopper",
+      "productSlug": "hopper-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Cart summary",
+            "Line item row",
+            "Payment selector",
+            "Confirmation state"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Editorial travel palette",
+            "Search and booking typography",
+            "Comfort-first spacing scale"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "hopper-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:booking-com",
+      "productSlug": "booking-com-figma-kit",
+      "figmaFileKey": "luxuryui/checkout/booking-com/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Cart summary",
+            "Line item row",
+            "Payment selector",
+            "Confirmation state"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Editorial travel palette",
+            "Search and booking typography",
+            "Comfort-first spacing scale"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "booking-com-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:skyscanner",
+      "productSlug": "skyscanner-figma-kit",
+      "figmaFileKey": "luxuryui/checkout/skyscanner/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Cart summary",
+            "Line item row",
+            "Payment selector",
+            "Confirmation state"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Editorial travel palette",
+            "Search and booking typography",
+            "Comfort-first spacing scale"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "skyscanner-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:tripadvisor",
+      "productSlug": "tripadvisor-figma-kit",
+      "figmaFileKey": "luxuryui/checkout/tripadvisor/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Cart summary",
+            "Line item row",
+            "Payment selector",
+            "Confirmation state"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Editorial travel palette",
+            "Search and booking typography",
+            "Comfort-first spacing scale"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "tripadvisor-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:kayak",
+      "productSlug": "kayak-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Cart summary",
+            "Line item row",
+            "Payment selector",
+            "Confirmation state"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Editorial travel palette",
+            "Search and booking typography",
+            "Comfort-first spacing scale"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "kayak-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:hoteltonight",
+      "productSlug": "hoteltonight-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Cart summary",
+            "Line item row",
+            "Payment selector",
+            "Confirmation state"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Editorial travel palette",
+            "Search and booking typography",
+            "Comfort-first spacing scale"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "hoteltonight-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:slack",
+      "productSlug": "slack-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Productivity neutral palette",
+            "Enterprise text hierarchy",
+            "Operational spacing rhythm"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "slack-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:zoom",
+      "productSlug": "zoom-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Productivity neutral palette",
+            "Enterprise text hierarchy",
+            "Operational spacing rhythm"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "zoom-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:trello",
+      "productSlug": "trello-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Productivity neutral palette",
+            "Enterprise text hierarchy",
+            "Operational spacing rhythm"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "trello-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:notion",
+      "productSlug": "notion-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Productivity neutral palette",
+            "Enterprise text hierarchy",
+            "Operational spacing rhythm"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "notion-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:asana",
+      "productSlug": "asana-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Productivity neutral palette",
+            "Enterprise text hierarchy",
+            "Operational spacing rhythm"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "asana-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:monday-com",
+      "productSlug": "monday-com-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Productivity neutral palette",
+            "Enterprise text hierarchy",
+            "Operational spacing rhythm"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "monday-com-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:linear",
+      "productSlug": "linear-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Productivity neutral palette",
+            "Enterprise text hierarchy",
+            "Operational spacing rhythm"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "linear-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:loom",
+      "productSlug": "loom-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Productivity neutral palette",
+            "Enterprise text hierarchy",
+            "Operational spacing rhythm"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "loom-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:headspace",
+      "productSlug": "headspace-figma-kit",
+      "figmaFileKey": "luxuryui/onboarding/headspace/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Calm wellness palette",
+            "Soft onboarding typography",
+            "Breathing room spacing scale"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "headspace-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:calm",
+      "productSlug": "calm-figma-kit",
+      "figmaFileKey": "luxuryui/onboarding/calm/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Calm wellness palette",
+            "Soft onboarding typography",
+            "Breathing room spacing scale"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "calm-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:strava",
+      "productSlug": "strava-figma-kit",
+      "figmaFileKey": "luxuryui/onboarding/strava/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Calm wellness palette",
+            "Soft onboarding typography",
+            "Breathing room spacing scale"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "strava-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:nike-run-club",
+      "productSlug": "nike-run-club-figma-kit",
+      "figmaFileKey": "luxuryui/onboarding/nike-run-club/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Calm wellness palette",
+            "Soft onboarding typography",
+            "Breathing room spacing scale"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "nike-run-club-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:myfitnesspal",
+      "productSlug": "myfitnesspal-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Calm wellness palette",
+            "Soft onboarding typography",
+            "Breathing room spacing scale"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "myfitnesspal-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:fitbit",
+      "productSlug": "fitbit-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Calm wellness palette",
+            "Soft onboarding typography",
+            "Breathing room spacing scale"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "fitbit-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:flo",
+      "productSlug": "flo-figma-kit",
+      "figmaFileKey": "luxuryui/onboarding/flo/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Calm wellness palette",
+            "Soft onboarding typography",
+            "Breathing room spacing scale"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "flo-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:sleep-cycle",
+      "productSlug": "sleep-cycle-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Calm wellness palette",
+            "Soft onboarding typography",
+            "Breathing room spacing scale"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "sleep-cycle-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:spotify",
+      "productSlug": "spotify-figma-kit",
+      "figmaFileKey": "luxuryui/search-discovery/spotify/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Search header",
+            "Suggestion chip row",
+            "Result card",
+            "Filter bottom sheet"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Media-dark palette",
+            "Subscription typography",
+            "Immersive content spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "spotify-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:apple-music",
+      "productSlug": "apple-music-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Search header",
+            "Suggestion chip row",
+            "Result card",
+            "Filter bottom sheet"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Media-dark palette",
+            "Subscription typography",
+            "Immersive content spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "apple-music-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:soundcloud",
+      "productSlug": "soundcloud-figma-kit",
+      "figmaFileKey": "luxuryui/search-discovery/soundcloud/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Search header",
+            "Suggestion chip row",
+            "Result card",
+            "Filter bottom sheet"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Media-dark palette",
+            "Subscription typography",
+            "Immersive content spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "soundcloud-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:tidal",
+      "productSlug": "tidal-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Plan comparison card",
+            "Feature checklist",
+            "Billing selector",
+            "Upgrade confirmation"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Media-dark palette",
+            "Subscription typography",
+            "Immersive content spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "tidal-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:deezer",
+      "productSlug": "deezer-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Search header",
+            "Suggestion chip row",
+            "Result card",
+            "Filter bottom sheet"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Media-dark palette",
+            "Subscription typography",
+            "Immersive content spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "deezer-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:pandora",
+      "productSlug": "pandora-figma-kit",
+      "figmaFileKey": "luxuryui/search-discovery/pandora/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Search header",
+            "Suggestion chip row",
+            "Result card",
+            "Filter bottom sheet"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Media-dark palette",
+            "Subscription typography",
+            "Immersive content spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "pandora-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:shazam",
+      "productSlug": "shazam-figma-kit",
+      "figmaFileKey": "luxuryui/search-discovery/shazam/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Search header",
+            "Suggestion chip row",
+            "Result card",
+            "Filter bottom sheet"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Media-dark palette",
+            "Subscription typography",
+            "Immersive content spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "shazam-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:duolingo",
+      "productSlug": "duolingo-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Learning accent palette",
+            "Structured lesson typography",
+            "Guided flow spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "duolingo-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:coursera",
+      "productSlug": "coursera-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Learning accent palette",
+            "Structured lesson typography",
+            "Guided flow spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "coursera-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:masterclass",
+      "productSlug": "masterclass-figma-kit",
+      "figmaFileKey": "luxuryui/onboarding/masterclass/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Learning accent palette",
+            "Structured lesson typography",
+            "Guided flow spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "masterclass-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:udemy",
+      "productSlug": "udemy-figma-kit",
+      "figmaFileKey": "luxuryui/onboarding/udemy/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Learning accent palette",
+            "Structured lesson typography",
+            "Guided flow spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "udemy-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:khan-academy",
+      "productSlug": "khan-academy-figma-kit",
+      "figmaFileKey": "luxuryui/onboarding/khan-academy/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Learning accent palette",
+            "Structured lesson typography",
+            "Guided flow spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "khan-academy-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:skillshare",
+      "productSlug": "skillshare-figma-kit",
+      "figmaFileKey": "luxuryui/onboarding/skillshare/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Learning accent palette",
+            "Structured lesson typography",
+            "Guided flow spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "skillshare-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:babbel",
+      "productSlug": "babbel-figma-kit",
+      "figmaFileKey": "luxuryui/onboarding/babbel/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Welcome hero",
+            "Preference picker",
+            "Progress tracker",
+            "Primary CTA footer"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Learning accent palette",
+            "Structured lesson typography",
+            "Guided flow spacing"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "babbel-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:the-new-york-times",
+      "productSlug": "the-new-york-times-figma-kit",
+      "figmaFileKey": "luxuryui/search-discovery/the-new-york-times/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Search header",
+            "Suggestion chip row",
+            "Result card",
+            "Filter bottom sheet"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Editorial mono accents",
+            "Scanning typography",
+            "Reading-friendly rhythm"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "the-new-york-times-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:bbc-news",
+      "productSlug": "bbc-news-figma-kit",
+      "figmaFileKey": "luxuryui/search-discovery/bbc-news/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Search header",
+            "Suggestion chip row",
+            "Result card",
+            "Filter bottom sheet"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Editorial mono accents",
+            "Scanning typography",
+            "Reading-friendly rhythm"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "bbc-news-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:cnn",
+      "productSlug": "cnn-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Search header",
+            "Suggestion chip row",
+            "Result card",
+            "Filter bottom sheet"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Editorial mono accents",
+            "Scanning typography",
+            "Reading-friendly rhythm"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "cnn-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:reuters",
+      "productSlug": "reuters-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Search header",
+            "Suggestion chip row",
+            "Result card",
+            "Filter bottom sheet"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Editorial mono accents",
+            "Scanning typography",
+            "Reading-friendly rhythm"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "reuters-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    },
+    {
+      "productId": "figma-kit:flipboard",
+      "productSlug": "flipboard-figma-kit",
+      "figmaFileKey": "luxuryui/search-discovery/flipboard/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Search header",
+            "Suggestion chip row",
+            "Result card",
+            "Filter bottom sheet"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Editorial mono accents",
+            "Scanning typography",
+            "Reading-friendly rhythm"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "flipboard-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:substack",
+      "productSlug": "substack-figma-kit",
+      "figmaFileKey": "luxuryui/search-discovery/substack/v1",
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Search header",
+            "Suggestion chip row",
+            "Result card",
+            "Filter bottom sheet"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Editorial mono accents",
+            "Scanning typography",
+            "Reading-friendly rhythm"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "substack-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": true
+      }
+    },
+    {
+      "productId": "figma-kit:pocket",
+      "productSlug": "pocket-figma-kit",
+      "figmaFileKey": null,
+      "pageOrder": [
+        "Cover",
+        "Flow",
+        "Components",
+        "Tokens",
+        "License"
+      ],
+      "pageBlueprints": [
+        {
+          "name": "Cover",
+          "contents": [
+            "Hero frame",
+            "What is included",
+            "Transformation notes"
+          ]
+        },
+        {
+          "name": "Flow",
+          "contents": [
+            "Screen 1",
+            "Screen 2",
+            "Screen 3",
+            "Screen 4",
+            "Screen 5",
+            "Screen 6",
+            "Screen 7",
+            "Screen 8"
+          ]
+        },
+        {
+          "name": "Components",
+          "contents": [
+            "Search header",
+            "Suggestion chip row",
+            "Result card",
+            "Filter bottom sheet"
+          ]
+        },
+        {
+          "name": "Tokens",
+          "contents": [
+            "Editorial mono accents",
+            "Scanning typography",
+            "Reading-friendly rhythm"
+          ]
+        },
+        {
+          "name": "License",
+          "contents": [
+            "Usage guidance",
+            "Commercial terms",
+            "Support links"
+          ]
+        }
+      ],
+      "exportPackage": {
+        "fileName": "pocket-figma-kit.fig",
+        "previewCount": 3,
+        "commercialReady": false
+      }
+    }
+  ]
+}

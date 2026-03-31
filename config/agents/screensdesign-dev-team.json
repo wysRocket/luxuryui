@@ -1,0 +1,209 @@
+{
+  "version": 1,
+  "target": "screensdesign-style-ingestion",
+  "mission": "Build a robust, legal, and repeatable ingestion pipeline for premium mobile UI references inspired by Screensdesign workflows.",
+  "orchestrator": {
+    "agent": "pipeline-orchestrator",
+    "mode": "claude-code-style",
+    "responsibility": "Own task breakdown, handoff order, and merge gates for all specialist development agents."
+  },
+  "workflow": [
+    "source-policy",
+    "source-discovery",
+    "scraper-engineering",
+    "normalization",
+    "asset-integrity",
+    "metadata-enrichment",
+    "flow-tagging",
+    "frontend-integration",
+    "ci-observability"
+  ],
+  "agents": [
+    {
+      "id": "pipeline-orchestrator",
+      "name": "Pipeline Orchestrator Agent",
+      "objective": "Plan and coordinate implementation tasks, sequencing specialist agents and enforcing quality gates.",
+      "owns": [
+        "Execution plan",
+        "Agent handoff contract",
+        "Release gate checklists"
+      ],
+      "outputs": [
+        "Sprint-ready plan",
+        "Task graph",
+        "Blocker and risk log"
+      ],
+      "definitionOfDone": [
+        "Every stage has input/output contract",
+        "No stage bypasses QA",
+        "Deployment gate criteria are explicit"
+      ]
+    },
+    {
+      "id": "source-policy",
+      "name": "Source Policy Agent",
+      "objective": "Encode legal, robots, and attribution constraints before crawling starts.",
+      "owns": [
+        "Allowed route policy",
+        "Rate-limit policy",
+        "Attribution and provenance policy"
+      ],
+      "outputs": [
+        "Policy file and denylist",
+        "Compliance checklist"
+      ],
+      "definitionOfDone": [
+        "Crawl scope and block scope are explicit",
+        "Attribution fields are mandatory",
+        "Policy is referenced in crawler code"
+      ]
+    },
+    {
+      "id": "source-discovery",
+      "name": "Source Discovery Agent",
+      "objective": "Discover candidate listing and detail pages from public route surfaces.",
+      "owns": [
+        "Seed URL set",
+        "Route pattern discovery",
+        "Pagination discovery"
+      ],
+      "outputs": [
+        "Discovered URLs manifest",
+        "Discovery telemetry"
+      ],
+      "definitionOfDone": [
+        "Deterministic crawl frontier",
+        "No out-of-scope routes in manifest"
+      ]
+    },
+    {
+      "id": "scraper-engineering",
+      "name": "Scraper Engineering Agent",
+      "objective": "Build resilient crawler and fetcher jobs with retries, throttling, and structured outputs.",
+      "owns": [
+        "HTTP fetcher",
+        "Retry and backoff",
+        "Raw extraction layer"
+      ],
+      "outputs": [
+        "Intake JSON snapshots",
+        "Fetcher logs"
+      ],
+      "definitionOfDone": [
+        "Idempotent output",
+        "Respectful request pacing",
+        "Errors are non-fatal and logged"
+      ]
+    },
+    {
+      "id": "normalization",
+      "name": "Normalization Agent",
+      "objective": "Transform raw scraped records into canonical app-level entities and stable slugs.",
+      "owns": [
+        "Canonical schema",
+        "Slug mapping",
+        "Deduplication logic"
+      ],
+      "outputs": [
+        "Canonical JSON dataset",
+        "Normalization report"
+      ],
+      "definitionOfDone": [
+        "Entity IDs are stable",
+        "Duplicates merged with trace",
+        "Schema validation passes"
+      ]
+    },
+    {
+      "id": "asset-integrity",
+      "name": "Asset Integrity Agent",
+      "objective": "Validate asset dimensions, format integrity, and duplicate hashes.",
+      "owns": [
+        "Dimension checks",
+        "Broken file detection",
+        "Duplicate hash checks"
+      ],
+      "outputs": [
+        "Quality pass/fail decisions",
+        "Rejected asset report"
+      ],
+      "definitionOfDone": [
+        "Only valid assets pass",
+        "Every rejection has machine-readable reason"
+      ]
+    },
+    {
+      "id": "metadata-enrichment",
+      "name": "Metadata Enrichment Agent",
+      "objective": "Add structured tags, platform labels, and provenance records for each entity.",
+      "owns": [
+        "Tag taxonomy mapping",
+        "Platform normalization",
+        "Provenance metadata"
+      ],
+      "outputs": [
+        "Enriched records",
+        "Coverage matrix"
+      ],
+      "definitionOfDone": [
+        "Required metadata is complete",
+        "Provenance links are preserved"
+      ]
+    },
+    {
+      "id": "flow-tagging",
+      "name": "Flow Tagging Agent",
+      "objective": "Infer journey steps and attach consistent flow labels for browse and search.",
+      "owns": [
+        "Flow taxonomy",
+        "Step labels",
+        "Confidence scoring"
+      ],
+      "outputs": [
+        "Flow pack JSON",
+        "Low-confidence queue"
+      ],
+      "definitionOfDone": [
+        "High-confidence flows are structured",
+        "Low-confidence items are quarantined"
+      ]
+    },
+    {
+      "id": "frontend-integration",
+      "name": "Frontend Integration Agent",
+      "objective": "Integrate approved records into existing pages and route surfaces without regressions.",
+      "owns": [
+        "Data adapters",
+        "Page binding",
+        "Fallback behavior"
+      ],
+      "outputs": [
+        "UI integration PR",
+        "Snapshot diffs"
+      ],
+      "definitionOfDone": [
+        "Pages render with curated data",
+        "No hardcoded temporary values"
+      ]
+    },
+    {
+      "id": "ci-observability",
+      "name": "CI and Observability Agent",
+      "objective": "Gate releases and surface data-quality regressions quickly.",
+      "owns": [
+        "CI checks",
+        "Data drift alerts",
+        "Runtime metrics"
+      ],
+      "outputs": [
+        "Pipeline checks",
+        "Alerting rules",
+        "Ops dashboard notes"
+      ],
+      "definitionOfDone": [
+        "Strict checks block bad merges",
+        "Errors are discoverable within one run"
+      ]
+    }
+  ]
+}

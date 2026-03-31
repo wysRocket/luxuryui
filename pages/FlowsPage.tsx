@@ -4,6 +4,7 @@ import { ArrowRight, LayoutGrid, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { AppItem } from '../types';
 import { FLOW_DEFINITIONS, getFlowApps, getFlowScreens } from '../data/flows';
+import { getPublishedKitsForFlow } from '../data/figmaKits';
 
 interface FlowsPageProps {
   apps: AppItem[];
@@ -14,11 +15,13 @@ const FlowsPage: React.FC<FlowsPageProps> = ({ apps }) => {
     return FLOW_DEFINITIONS.map((flow) => {
       const flowApps = getFlowApps(apps, flow, 7);
       const screens = getFlowScreens(flowApps, 8);
+      const kits = getPublishedKitsForFlow(flow.id);
 
       return {
         flow,
         flowApps,
         screens,
+        kits,
       };
     });
   }, [apps]);
@@ -42,7 +45,7 @@ const FlowsPage: React.FC<FlowsPageProps> = ({ apps }) => {
       </motion.section>
 
       <section className="mt-10 grid grid-cols-1 xl:grid-cols-2 gap-7">
-        {flowCards.map(({ flow, flowApps, screens }, index) => (
+        {flowCards.map(({ flow, flowApps, screens, kits }, index) => (
           <motion.article
             key={flow.id}
             initial={{ opacity: 0, y: 16 }}
@@ -91,6 +94,11 @@ const FlowsPage: React.FC<FlowsPageProps> = ({ apps }) => {
                   Open flow <ArrowRight size={14} />
                 </Link>
               </div>
+              {kits.length > 0 && (
+                <div className="mt-4 inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1.5 text-[11px] font-black uppercase tracking-[0.16em] text-emerald-700 dark:border-emerald-900/50 dark:bg-emerald-950/30 dark:text-emerald-300">
+                  {kits.length} approved Figma kits
+                </div>
+              )}
             </div>
 
             <div className="p-4 md:p-5 bg-gray-50/80 dark:bg-gray-950/60">

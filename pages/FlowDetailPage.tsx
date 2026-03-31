@@ -1,9 +1,11 @@
 import React, { useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ArrowRight, Layers } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Layers, PackageCheck } from 'lucide-react';
 import { Link, useParams } from 'react-router-dom';
 import { AppItem } from '../types';
 import { FLOW_DEFINITIONS, getFlowApps, getFlowScreens } from '../data/flows';
+import { getPublishedKitsForFlow } from '../data/figmaKits';
+import FigmaKitCard from '../components/FigmaKitCard';
 
 interface FlowDetailPageProps {
   apps: AppItem[];
@@ -22,6 +24,7 @@ const FlowDetailPage: React.FC<FlowDetailPageProps> = ({ apps }) => {
   const flowScreens = useMemo(() => {
     return getFlowScreens(flowApps, 24);
   }, [flowApps]);
+  const relatedKits = useMemo(() => (flow ? getPublishedKitsForFlow(flow.id).slice(0, 4) : []), [flow]);
 
   if (!flow) {
     return (
@@ -70,6 +73,29 @@ const FlowDetailPage: React.FC<FlowDetailPageProps> = ({ apps }) => {
       </section>
 
       <section className="mb-12">
+        {relatedKits.length > 0 && (
+          <div className="rounded-3xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 md:p-7 mb-8">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5">
+              <div>
+                <p className="text-xs font-black uppercase tracking-[0.2em] text-gray-400 dark:text-gray-500 mb-3">Sellable Kits</p>
+                <h2 className="text-2xl md:text-3xl font-black tracking-tight text-gray-900 dark:text-white mb-3">
+                  Unlock transformed Figma kits for this flow family
+                </h2>
+                <p className="text-[15px] leading-relaxed text-gray-600 dark:text-gray-400 max-w-3xl">
+                  This flow has approved commercial kits built from the strongest source apps in the library. Use the research below to compare patterns, then top up credits when you want the editable file package.
+                </p>
+              </div>
+              <Link
+                to="/pricing"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-black dark:bg-white px-5 py-3 text-sm font-black text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
+              >
+                <PackageCheck size={16} />
+                Top up credits
+              </Link>
+            </div>
+          </div>
+        )}
+
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl md:text-3xl font-black tracking-tight text-gray-900 dark:text-white">Flow Steps</h2>
           <div className="text-xs font-semibold text-gray-500 dark:text-gray-400">
@@ -121,6 +147,26 @@ const FlowDetailPage: React.FC<FlowDetailPageProps> = ({ apps }) => {
           })}
         </div>
       </section>
+
+      {relatedKits.length > 0 && (
+        <section className="mb-12">
+          <div className="mb-6 flex items-center justify-between gap-4">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.2em] text-gray-400 dark:text-gray-500 mb-3">Commercial Picks</p>
+              <h2 className="text-2xl md:text-3xl font-black tracking-tight text-gray-900 dark:text-white">Approved kits mapped to this flow</h2>
+            </div>
+            <Link to="/kits" className="inline-flex items-center gap-2 text-sm font-black text-blue-600 dark:text-blue-400">
+              Browse all kits
+              <ArrowRight size={14} />
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 2xl:grid-cols-2 gap-6">
+            {relatedKits.map((kit) => (
+              <FigmaKitCard key={kit.id} kit={kit} />
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="mb-4">
         <div className="flex items-center justify-between mb-6">

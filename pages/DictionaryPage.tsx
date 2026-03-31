@@ -45,7 +45,7 @@ const TERMS: DictionaryTerm[] = [
     term: 'Single Primary Action',
     category: 'Conversion',
     definition: 'One clear dominant CTA per decision block.',
-    whenToUse: 'Pricing, plan upgrades, checkout, subscription prompts.',
+    whenToUse: 'Credit top-ups, checkout, and unlock prompts.',
     avoid: 'Multiple equal-emphasis CTAs competing for attention.',
     exampleApps: ['PayPal', 'Booking.com', 'Coursera'],
   },
