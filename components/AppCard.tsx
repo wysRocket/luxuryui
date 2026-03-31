@@ -10,20 +10,17 @@ interface AppCardProps {
 }
 
 const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
-  if (!app) {
-    return null;
-  }
-
   const cardRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
-  const sourceQuality = app.sourceQuality ?? 'unknown';
-  const isVerified = sourceQuality === 'pass' && app.assetOrigin === 'real';
+  const sourceQuality = app?.sourceQuality ?? 'unknown';
+  const assetOrigin = app?.assetOrigin ?? 'generated';
+  const isVerified = sourceQuality === 'pass' && assetOrigin === 'real';
   const isWarn = sourceQuality === 'warn';
   const qualityLabel = isVerified
     ? 'Verified set'
     : isWarn
       ? 'Mixed quality'
-      : app.assetOrigin === 'generated'
+      : assetOrigin === 'generated'
         ? 'Generated preview'
         : 'Preview set';
   const qualityIcon = isVerified ? BadgeCheck : isWarn ? AlertTriangle : Sparkles;
@@ -48,7 +45,11 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
   const yRange = useTransform(scrollYProgress, [0, 1], ["-12%", "12%"]);
   const imageY = useSpring(yRange, { stiffness: 100, damping: 30 });
 
-  const hasKit = Boolean(getPublishedKitForAppSlug(app.slug));
+  const hasKit = Boolean(app && getPublishedKitForAppSlug(app.slug));
+
+  if (!app) {
+    return null;
+  }
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
     if (!cardRef.current) return;
@@ -210,7 +211,7 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
                   {isVerified ? 'Premium preview' : 'Reference preview'}
                 </span>
                 <span className="text-[10px] font-black text-white/85">
-                  {isVerified ? 'High-confidence source' : app.assetOrigin === 'generated' ? 'Generated fallback' : 'Use for research'}
+                  {isVerified ? 'High-confidence source' : assetOrigin === 'generated' ? 'Generated fallback' : 'Use for research'}
                 </span>
               </div>
               <div className="h-[3px] w-full bg-white/20 rounded-full overflow-hidden backdrop-blur-sm">
