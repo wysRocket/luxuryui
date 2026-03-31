@@ -55,14 +55,14 @@ const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className="sticky top-0 z-30 w-full bg-white/80 dark:bg-gray-950/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
-      <div className="flex items-center justify-between h-20 px-4 md:px-8 gap-6 md:gap-12">
+      <div className="flex items-center justify-between h-16 lg:h-20 px-4 sm:px-6 lg:px-8 gap-3 sm:gap-4 lg:gap-10">
         
         {/* Left Side: Brand (Mobile) and Desktop Search */}
         <div className="flex items-center flex-1 min-w-0">
-          <Link to="/" className="lg:hidden font-black text-2xl tracking-tighter dark:text-white shrink-0 mr-6">LuxuryUI</Link>
+          <Link to="/" className="lg:hidden font-black text-xl sm:text-2xl tracking-tighter dark:text-white shrink-0 mr-3 sm:mr-5">LuxuryUI</Link>
           
           {/* Desktop Search Bar: Optimized to occupy all free space */}
-          <div className="hidden md:flex flex-1 max-w-5xl items-center relative" ref={searchRef}>
+          <div className="hidden xl:flex flex-1 max-w-4xl items-center relative" ref={searchRef}>
             <div className={`relative w-full transition-all duration-500 ease-out ${isSearchFocused ? 'scale-[1.005]' : ''}`}>
               <Search 
                 className={`absolute left-5 top-1/2 -translate-y-1/2 transition-colors duration-300 pointer-events-none ${isSearchFocused ? 'text-black dark:text-white' : 'text-gray-400'}`} 
@@ -101,7 +101,7 @@ const Header: React.FC<HeaderProps> = ({
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 15, scale: 0.99 }}
                   transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                  className="absolute top-full left-0 mt-3 w-full bg-white dark:bg-gray-900 rounded-[24px] shadow-2xl shadow-black/10 dark:shadow-white/5 border border-gray-100 dark:border-gray-800 p-6 z-50 overflow-hidden"
+                  className="absolute top-full left-0 mt-3 w-full max-w-[min(56rem,calc(100vw-8rem))] bg-white dark:bg-gray-900 rounded-[24px] shadow-2xl shadow-black/10 dark:shadow-white/5 border border-gray-100 dark:border-gray-800 p-6 z-50 overflow-hidden"
                 >
                   <div className="space-y-8">
                     {/* Trending Categories */}
@@ -173,34 +173,34 @@ const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Right Side Actions: compact and shrink-resistant */}
-        <div className="flex items-center gap-2 md:gap-4 shrink-0">
+        <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 shrink-0">
           {/* Mobile Search Toggle */}
           <button 
             onClick={() => setIsMobileSearchOpen(true)}
-            className="md:hidden p-2.5 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors"
+            className="xl:hidden p-2 sm:p-2.5 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors"
             aria-label="Open Search"
           >
-            <Search size={22} />
+            <Search size={20} className="sm:w-[22px] sm:h-[22px]" />
           </button>
 
           <button 
             onClick={toggleDarkMode}
-            className="p-2.5 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors"
+            className="p-2 sm:p-2.5 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors"
             aria-label="Toggle dark mode"
           >
-            {isDarkMode ? <Sun size={22} /> : <Moon size={22} />}
+            {isDarkMode ? <Sun size={20} className="sm:w-[22px] sm:h-[22px]" /> : <Moon size={20} className="sm:w-[22px] sm:h-[22px]" />}
           </button>
 
           <button 
               onClick={onOpenAssistant}
-              className="hidden md:flex items-center gap-2.5 px-5 py-2.5 bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600 text-white rounded-full text-[11px] font-black shadow-lg shadow-blue-500/10 hover:shadow-blue-500/30 transition-all hover:scale-[1.03] active:scale-95 tracking-widest uppercase"
+              className="hidden xl:flex items-center gap-2.5 px-5 py-2.5 bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600 text-white rounded-full text-[11px] font-black shadow-lg shadow-blue-500/10 hover:shadow-blue-500/30 transition-all hover:scale-[1.03] active:scale-95 tracking-widest uppercase"
           >
               <Sparkles size={16} />
               Kit Concierge
           </button>
             
-          <button className="p-2.5 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors relative">
-            <Bell size={22} />
+          <button className="hidden sm:block p-2 sm:p-2.5 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors relative">
+            <Bell size={20} className="sm:w-[22px] sm:h-[22px]" />
             <span className="absolute top-2.5 right-2.5 w-2.5 h-2.5 bg-blue-500 rounded-full border-2 border-white dark:border-gray-950"></span>
           </button>
           
@@ -210,11 +210,11 @@ const Header: React.FC<HeaderProps> = ({
             <>
               <Link
                 to="/account"
-                className="hidden lg:flex items-center gap-2 rounded-full border border-gray-200 dark:border-gray-700 px-4 py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200"
+                className="hidden 2xl:flex items-center gap-2 rounded-full border border-gray-200 dark:border-gray-700 px-4 py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200"
               >
                 <span>{wallet?.balance ?? 0} credits</span>
               </Link>
-              <Link to="/account" className="hidden sm:block text-[15px] font-bold text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white px-3 transition-colors">
+              <Link to="/account" className="hidden md:block text-sm lg:text-[15px] font-bold text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white px-2 lg:px-3 transition-colors">
                 {user?.displayName ?? 'Account'}
               </Link>
               <button
@@ -223,15 +223,15 @@ const Header: React.FC<HeaderProps> = ({
                   await signOut();
                   navigate('/');
                 }}
-                className="hidden sm:block px-6 py-3 bg-black dark:bg-white text-white dark:text-black text-[15px] font-black rounded-full hover:bg-gray-800 dark:hover:bg-gray-100 transition-all active:scale-95 shadow-xl shadow-black/10 dark:shadow-white/5 tracking-tight"
+                className="hidden md:block px-4 lg:px-6 py-2.5 lg:py-3 bg-black dark:bg-white text-white dark:text-black text-sm lg:text-[15px] font-black rounded-full hover:bg-gray-800 dark:hover:bg-gray-100 transition-all active:scale-95 shadow-xl shadow-black/10 dark:shadow-white/5 tracking-tight"
               >
                 Sign out
               </button>
             </>
           ) : (
             <>
-              <Link to="/login" className="hidden sm:block text-[15px] font-bold text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white px-3 transition-colors">Log in</Link>
-              <Link to="/signup" className="hidden sm:block px-6 py-3 bg-black dark:bg-white text-white dark:text-black text-[15px] font-black rounded-full hover:bg-gray-800 dark:hover:bg-gray-100 transition-all active:scale-95 shadow-xl shadow-black/10 dark:shadow-white/5 tracking-tight">
+              <Link to="/login" className="hidden md:block text-sm lg:text-[15px] font-bold text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white px-2 lg:px-3 transition-colors">Log in</Link>
+              <Link to="/signup" className="hidden md:block px-4 lg:px-6 py-2.5 lg:py-3 bg-black dark:bg-white text-white dark:text-black text-sm lg:text-[15px] font-black rounded-full hover:bg-gray-800 dark:hover:bg-gray-100 transition-all active:scale-95 shadow-xl shadow-black/10 dark:shadow-white/5 tracking-tight">
                 Sign Up
               </Link>
             </>
@@ -246,7 +246,7 @@ const Header: React.FC<HeaderProps> = ({
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute inset-0 z-50 bg-white dark:bg-gray-950 px-4 flex items-center gap-4 md:hidden"
+            className="absolute inset-0 z-50 bg-white dark:bg-gray-950 px-4 flex items-center gap-4 xl:hidden"
           >
             <button 
               onClick={() => setIsMobileSearchOpen(false)}
