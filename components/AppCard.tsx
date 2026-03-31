@@ -5,11 +5,15 @@ import { Smartphone, Monitor, Maximize2, Bookmark, AlertTriangle, BadgeCheck, Sp
 import { getPublishedKitForAppSlug } from '../data/figmaKits';
 
 interface AppCardProps {
-  app: AppItem;
+  app: AppItem | null;
   onClick: (app: AppItem) => void;
 }
 
 const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
+  if (!app) {
+    return null;
+  }
+
   const cardRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
   const sourceQuality = app.sourceQuality ?? 'unknown';
