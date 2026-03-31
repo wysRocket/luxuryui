@@ -32,13 +32,13 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
   const relatedKit = app ? getPublishedKitForAppSlug(app.slug) : undefined;
   const kitUnlocked = relatedKit ? hasUnlocked(relatedKit.id) : false;
   const hasEnoughCredits = relatedKit ? (wallet?.balance ?? 0) >= relatedKit.creditCost : false;
-  const sourceQuality = app.sourceQuality ?? 'unknown';
+  const sourceQuality = app?.sourceQuality ?? 'unknown';
   const qualityMessage =
     sourceQuality === 'pass'
       ? 'This source set meets the current premium preview bar.'
       : sourceQuality === 'warn'
         ? 'This source set is useful for research, but some screenshots are mixed-resolution.'
-        : app.assetOrigin === 'generated'
+        : app?.assetOrigin === 'generated'
           ? 'This app currently uses generated preview imagery instead of a fully verified source set.'
           : 'This source set is still in preview mode.';
 
