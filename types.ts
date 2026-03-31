@@ -10,6 +10,9 @@ export interface AppItem {
   image: string; // URL for the cover image
   logo: string; // URL for the app logo
   lastUpdated: string;
+  sourceQuality?: 'pass' | 'warn' | 'fail' | 'unknown';
+  qualityWarnings?: string[];
+  assetOrigin?: 'real' | 'generated';
 }
 
 export interface NavItem {

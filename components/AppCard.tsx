@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { motion, useScroll, useTransform, useSpring, useMotionValue } from 'framer-motion';
 import { AppItem } from '../types';
-import { Smartphone, Monitor, Maximize2, Bookmark } from 'lucide-react';
+import { Smartphone, Monitor, Maximize2, Bookmark, AlertTriangle, BadgeCheck, Sparkles } from 'lucide-react';
 import { getPublishedKitForAppSlug } from '../data/figmaKits';
 
 interface AppCardProps {
@@ -12,6 +12,18 @@ interface AppCardProps {
 const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
+  const sourceQuality = app.sourceQuality ?? 'unknown';
+  const isVerified = sourceQuality === 'pass' && app.assetOrigin === 'real';
+  const isWarn = sourceQuality === 'warn';
+  const qualityLabel = isVerified
+    ? 'Verified set'
+    : isWarn
+      ? 'Mixed quality'
+      : app.assetOrigin === 'generated'
+        ? 'Generated preview'
+        : 'Preview set';
+  const qualityIcon = isVerified ? BadgeCheck : isWarn ? AlertTriangle : Sparkles;
+  const QualityIcon = qualityIcon;
   
   // 1. Interactive 3D Tilt Logic
   const x = useMotionValue(0);
@@ -32,8 +44,6 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
   const yRange = useTransform(scrollYProgress, [0, 1], ["-12%", "12%"]);
   const imageY = useSpring(yRange, { stiffness: 100, damping: 30 });
 
-  // 3. Quality Score Logic (Simulated unique score per app)
-  const qualityScore = 90 + (parseInt(app.id.split('-')[1]) % 10);
   const hasKit = Boolean(getPublishedKitForAppSlug(app.slug));
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -92,7 +102,9 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
             initial={{ opacity: 0 }}
             whileHover={{ opacity: 1 }}
         >
-            <div className="absolute inset-[-100%] bg-gradient-to-tr from-transparent via-white/10 to-transparent rotate-45 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out" />
+            <div className={`absolute inset-[-100%] rotate-45 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out ${
+              isVerified ? 'bg-gradient-to-tr from-transparent via-white/10 to-transparent' : 'bg-gradient-to-tr from-transparent via-white/5 to-transparent'
+            }`} />
         </motion.div>
 
         {/* NEW: Quick Save Bookmark Button */}
@@ -108,22 +120,41 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
 
         {/* Parallax Image Layer */}
         <motion.div 
-          className="absolute inset-[-15%] w-[130%] h-[130%] pointer-events-none"
+          className={`absolute pointer-events-none ${isVerified ? 'inset-[-15%] w-[130%] h-[130%]' : 'inset-0 w-full h-full p-5'}`}
           style={{ 
             y: imageY, 
             translateZ: "30px",
           }}
         >
-            <motion.img
-              src={app.image}
-              alt={`${app.name} preview`}
-              loading="lazy"
-              decoding="async"
-              fetchPriority="low"
-              className="w-full h-full object-cover"
-              style={{ filter: "brightness(0.95)" }}
-            />
+            {isVerified ? (
+              <motion.img
+                src={app.image}
+                alt={`${app.name} preview`}
+                loading="lazy"
+                decoding="async"
+                fetchPriority="low"
+                className="w-full h-full object-cover"
+                style={{ filter: "brightness(0.95)" }}
+              />
+            ) : (
+              <div className="flex h-full items-center justify-center rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(17,24,39,0.92),rgba(3,7,18,0.98))] p-3 shadow-[0_24px_80px_rgba(0,0,0,0.35)]">
+                <div className="mb-3 absolute top-8 left-1/2 h-1.5 w-20 -translate-x-1/2 rounded-full bg-white/12" />
+                <motion.img
+                  src={app.image}
+                  alt={`${app.name} preview`}
+                  loading="lazy"
+                  decoding="async"
+                  fetchPriority="low"
+                  className="h-full w-full rounded-[1.5rem] bg-black object-contain"
+                  style={{ filter: 'brightness(0.98)' }}
+                />
+              </div>
+            )}
         </motion.div>
+
+        {!isVerified && (
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0.08),rgba(2,6,23,0.36))] z-10 pointer-events-none" />
+        )}
 
         {/* Hover Controls */}
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 flex items-center justify-center z-30" style={{ transform: "translateZ(60px)" }}>
@@ -144,6 +175,20 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
           {app.screenCount} screens
         </motion.div>
 
+        <div
+          className={`absolute right-5 ${hasKit ? 'bottom-[4.3rem]' : 'bottom-5'} rounded-full border px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.18em] z-40 ${
+            isVerified
+              ? 'border-emerald-300/20 bg-emerald-400/15 text-white'
+              : 'border-amber-200/15 bg-black/35 text-white/92'
+          }`}
+          style={{ transform: 'translateZ(74px)' }}
+        >
+          <span className="inline-flex items-center gap-1.5">
+            <QualityIcon size={11} />
+            {qualityLabel}
+          </span>
+        </div>
+
         {hasKit && (
           <div
             className="absolute bottom-5 left-5 rounded-full border border-white/15 bg-emerald-400/15 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.18em] text-white z-40"
@@ -153,18 +198,22 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
           </div>
         )}
 
-        {/* NEW: Design Quality Progress Bar (Fills on hover) */}
+        {/* Source Quality Footer */}
         <div className="absolute bottom-0 left-0 right-0 z-40" style={{ transform: "translateZ(100px)" }}>
            <div className="px-5 pb-5">
               <div className="flex justify-between items-end mb-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <span className="text-[10px] font-black text-white uppercase tracking-tighter">Design Score</span>
-                <span className="text-[10px] font-black text-white">{qualityScore}%</span>
+                <span className="text-[10px] font-black text-white uppercase tracking-tighter">
+                  {isVerified ? 'Premium preview' : 'Reference preview'}
+                </span>
+                <span className="text-[10px] font-black text-white/85">
+                  {isVerified ? 'High-confidence source' : app.assetOrigin === 'generated' ? 'Generated fallback' : 'Use for research'}
+                </span>
               </div>
               <div className="h-[3px] w-full bg-white/20 rounded-full overflow-hidden backdrop-blur-sm">
                 <motion.div 
-                  className="h-full bg-white shadow-[0_0_10px_rgba(255,255,255,0.8)]"
+                  className={`h-full shadow-[0_0_10px_rgba(255,255,255,0.45)] ${isVerified ? 'bg-white' : 'bg-amber-300'}`}
                   initial={{ width: 0 }}
-                  animate={{ width: isHovered ? `${qualityScore}%` : "0%" }}
+                  animate={{ width: isHovered ? (isVerified ? '100%' : '62%') : "0%" }}
                   transition={{ type: "spring", stiffness: 50, damping: 15, delay: 0.1 }}
                 />
               </div>

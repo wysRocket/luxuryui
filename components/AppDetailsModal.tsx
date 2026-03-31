@@ -32,6 +32,15 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
   const relatedKit = app ? getPublishedKitForAppSlug(app.slug) : undefined;
   const kitUnlocked = relatedKit ? hasUnlocked(relatedKit.id) : false;
   const hasEnoughCredits = relatedKit ? (wallet?.balance ?? 0) >= relatedKit.creditCost : false;
+  const sourceQuality = app.sourceQuality ?? 'unknown';
+  const qualityMessage =
+    sourceQuality === 'pass'
+      ? 'This source set meets the current premium preview bar.'
+      : sourceQuality === 'warn'
+        ? 'This source set is useful for research, but some screenshots are mixed-resolution.'
+        : app.assetOrigin === 'generated'
+          ? 'This app currently uses generated preview imagery instead of a fully verified source set.'
+          : 'This source set is still in preview mode.';
 
   useEffect(() => {
     if (!app) {
@@ -249,6 +258,17 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
                 <p className="text-gray-600 dark:text-gray-400 text-[15px] leading-relaxed">
                   Explore the user journey and design patterns of {app.name}. This preview focuses on curated reference screens that help you study navigation, visual tone, and core product flows without stretching low-resolution assets beyond their comfort zone.
                 </p>
+              </div>
+
+              <div className={`mb-8 rounded-2xl border px-5 py-4 ${
+                sourceQuality === 'pass'
+                  ? 'border-emerald-200 bg-emerald-50 text-emerald-900 dark:border-emerald-900/30 dark:bg-emerald-950/20 dark:text-emerald-100'
+                  : 'border-amber-200 bg-amber-50 text-amber-900 dark:border-amber-900/30 dark:bg-amber-950/20 dark:text-amber-100'
+              }`}>
+                <p className="text-[10px] font-black uppercase tracking-[0.18em] mb-2">
+                  {sourceQuality === 'pass' ? 'Verified preview quality' : 'Reference quality note'}
+                </p>
+                <p className="text-sm leading-relaxed">{qualityMessage}</p>
               </div>
 
               <div className="mb-8 rounded-2xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-950/40 p-5">

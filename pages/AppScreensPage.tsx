@@ -15,6 +15,7 @@ const AppScreensPage: React.FC = () => {
   const relatedKit = useMemo(() => (app ? getPublishedKitForAppSlug(app.slug) : undefined), [app]);
   const kitUnlocked = relatedKit ? hasUnlocked(relatedKit.id) : false;
   const hasEnoughCredits = relatedKit ? (wallet?.balance ?? 0) >= relatedKit.creditCost : false;
+  const sourceQuality = app?.sourceQuality ?? 'unknown';
 
   const screens = useMemo(() => {
     if (!app) return [];
@@ -71,6 +72,13 @@ const AppScreensPage: React.FC = () => {
               <LayoutGrid size={15} />
               {screens.length} screens
             </span>
+            <span className={`inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-black ${
+              sourceQuality === 'pass'
+                ? 'border border-emerald-200 bg-emerald-50 text-emerald-800 dark:border-emerald-900/30 dark:bg-emerald-950/20 dark:text-emerald-200'
+                : 'border border-amber-200 bg-amber-50 text-amber-800 dark:border-amber-900/30 dark:bg-amber-950/20 dark:text-amber-200'
+            }`}>
+              {sourceQuality === 'pass' ? 'Verified preview set' : 'Research-grade preview'}
+            </span>
             {relatedKit ? (
               <>
                 <Link
@@ -102,6 +110,15 @@ const AppScreensPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {sourceQuality !== 'pass' && (
+        <section className="rounded-3xl border border-amber-200 bg-amber-50 dark:border-amber-900/30 dark:bg-amber-950/20 px-6 py-5 mb-10">
+          <p className="text-[10px] font-black uppercase tracking-[0.18em] text-amber-700 dark:text-amber-300 mb-2">Quality note</p>
+          <p className="text-sm leading-relaxed text-amber-900 dark:text-amber-100">
+            These screens are still useful for reference work, but the source set is not visually consistent enough to present as a premium asset preview. We keep the full gallery available for research while reserving the highest-gloss treatment for verified sets.
+          </p>
+        </section>
+      )}
 
       <section className="rounded-3xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 md:p-7 mb-10">
         {relatedKit ? (
