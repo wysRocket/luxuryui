@@ -84,7 +84,7 @@ const BrowsePage: React.FC<BrowsePageProps> = ({ isDarkMode, searchQuery, onSear
         <StatsHero />
         <FeatureSection />
 
-        <div className="sticky top-20 z-20 bg-white/95 dark:bg-gray-950/95 backdrop-blur-xl border-b border-gray-100 dark:border-gray-800 mb-8 -mx-4 px-4 md:-mx-8 md:px-8">
+        <div className="sticky top-16 lg:top-20 z-20 bg-white/95 dark:bg-gray-950/95 backdrop-blur-xl border-b border-gray-100 dark:border-gray-800 mb-8 -mx-4 px-4 md:-mx-8 md:px-8">
           <div className="py-4 flex items-center gap-3">
             <div className="relative" ref={filterRef}>
               <button
