@@ -25,3 +25,21 @@ export const CATEGORIES = [
 ];
 
 export const PLATFORMS = ['iOS', 'Android', 'Web'];
+
+export const slugify = (value) =>
+  value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+
+export const CATALOG_ENTRIES = Object.entries(APP_NAMES_BY_CATEGORY).flatMap(([category, names]) =>
+  names.map((name) => ({
+    name,
+    category,
+    slug: slugify(name),
+  }))
+);
+
+export const CATEGORY_BY_APP_NAME = Object.fromEntries(
+  CATALOG_ENTRIES.map((entry) => [entry.name, entry.category])
+);

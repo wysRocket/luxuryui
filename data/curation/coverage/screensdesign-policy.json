@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "source": "screensdesign.com",
+  "baseUrl": "https://screensdesign.com",
+  "policyVerifiedAt": "2026-03-20",
+  "robots": {
+    "fetchedAt": "2026-03-20",
+    "result": "User-Agent: * Allow: /",
+    "crawlingPermitted": true,
+    "notes": "No crawl restrictions. Full allow for all user agents."
+  },
+  "terms": {
+    "url": "https://screensdesign.com/terms",
+    "copyrightUrl": "https://screensdesign.com/copyright/",
+    "note": "Review before any commercial redistribution. Assets are used for reference and design inspiration under research/editorial context. Do not republish raw screensdesign.com screenshots as a direct substitute for their product."
+  },
+  "crawlScope": {
+    "allowedRoutePatterns": [
+      "/apps/{slug}/",
+      "/categories/{slug}",
+      "/showcase/{slug}/",
+      "/search/?q={query}&smode={mode}"
+    ],
+    "blockedRoutePatterns": [
+      "/register",
+      "/login",
+      "/create",
+      "/user/",
+      "/account/",
+      "/billing/",
+      "/admin/"
+    ],
+    "sitemapUrl": "https://screensdesign.com/sitemap.xml",
+    "sitemapPermitted": true,
+    "notes": "Sitemap discovery preferred over HTML-link crawling. The site is a SPA; static HTML href extraction yields no app routes."
+  },
+  "requestPolicy": {
+    "userAgent": "LuxuryUI Source Intake Bot/1.0 (+https://luxuryuilib.com)",
+    "delayBetweenRequestsMs": 1000,
+    "maxConcurrentRequests": 2,
+    "maxRetriesPerUrl": 3,
+    "retryBackoffMs": 2000,
+    "respectRetryAfterHeader": true
+  },
+  "assetPolicy": {
+    "allowedAssetTypes": ["screenshots", "app-icons"],
+    "blockedAssetTypes": ["user-generated-content", "profile-photos"],
+    "preserveProvenance": true,
+    "requiredProvenanceFields": ["sourceUrl", "sourceType", "fetchedAt", "appIdentifier"],
+    "attributionDisplay": "Source: screensdesign.com"
+  },
+  "denylist": [
+    "https://screensdesign.com/register",
+    "https://screensdesign.com/login",
+    "https://screensdesign.com/create"
+  ],
+  "complianceChecklist": [
+    "robots.txt allows crawling",
+    "Rate limiting applied (1 req/s, max 2 concurrent)",
+    "Provenance attached to every fetched asset",
+    "Auth-gated routes blocked",
+    "No raw assets republished without review",
+    "Attribution preserved in UI layer"
+  ]
+}

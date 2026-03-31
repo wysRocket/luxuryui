@@ -1,0 +1,2979 @@
+{
+  "schema": "1",
+  "generatedAt": "2026-03-20T19:47:53.528Z",
+  "source": "local-assets",
+  "note": "Flow packs are built from locally verified assets. Screenshot-level step labeling requires scraper detail data (Phase 3 scraper run).",
+  "summary": {
+    "totalFlows": 6,
+    "ready": 6,
+    "insufficientCoverage": 0
+  },
+  "packs": [
+    {
+      "flowId": "onboarding",
+      "title": "Onboarding Flow",
+      "description": "How leading apps introduce value, collect intent, and drive first successful action.",
+      "objective": "Reduce time-to-value in the first session.",
+      "categories": [
+        "Finance",
+        "Health",
+        "Education",
+        "Business"
+      ],
+      "steps": [
+        "Welcome & Value Proposition",
+        "Permission Setup",
+        "Personalization",
+        "Activation Event",
+        "Completion State"
+      ],
+      "apps": [
+        {
+          "name": "Mint",
+          "slug": "mint",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 7,
+          "logo": "/assets/apps/mint/logo.jpg",
+          "screenshots": [
+            "/assets/apps/mint/screen-1.png",
+            "/assets/apps/mint/screen-2.png",
+            "/assets/apps/mint/screen-3.png",
+            "/assets/apps/mint/screen-4.png",
+            "/assets/apps/mint/screen-5.png",
+            "/assets/apps/mint/screen-6.png",
+            "/assets/apps/mint/screen-7.png"
+          ]
+        },
+        {
+          "name": "Monzo",
+          "slug": "monzo",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/monzo/logo.jpg",
+          "screenshots": [
+            "/assets/apps/monzo/screen-1.png",
+            "/assets/apps/monzo/screen-2.png",
+            "/assets/apps/monzo/screen-3.png",
+            "/assets/apps/monzo/screen-4.png",
+            "/assets/apps/monzo/screen-5.png",
+            "/assets/apps/monzo/screen-6.png",
+            "/assets/apps/monzo/screen-7.png",
+            "/assets/apps/monzo/screen-8.png"
+          ]
+        },
+        {
+          "name": "N26",
+          "slug": "n26",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/n26/logo.jpg",
+          "screenshots": [
+            "/assets/apps/n26/screen-1.jpg",
+            "/assets/apps/n26/screen-2.jpg",
+            "/assets/apps/n26/screen-3.jpg",
+            "/assets/apps/n26/screen-4.jpg",
+            "/assets/apps/n26/screen-5.jpg",
+            "/assets/apps/n26/screen-6.jpg",
+            "/assets/apps/n26/screen-7.jpg",
+            "/assets/apps/n26/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "PayPal",
+          "slug": "paypal",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/paypal/logo.jpg",
+          "screenshots": [
+            "/assets/apps/paypal/screen-1.jpg",
+            "/assets/apps/paypal/screen-2.jpg",
+            "/assets/apps/paypal/screen-3.jpg",
+            "/assets/apps/paypal/screen-4.jpg",
+            "/assets/apps/paypal/screen-5.jpg",
+            "/assets/apps/paypal/screen-6.jpg",
+            "/assets/apps/paypal/screen-7.jpg",
+            "/assets/apps/paypal/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Revolut",
+          "slug": "revolut",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/revolut/logo.jpg",
+          "screenshots": [
+            "/assets/apps/revolut/screen-1.jpg",
+            "/assets/apps/revolut/screen-2.jpg",
+            "/assets/apps/revolut/screen-3.jpg",
+            "/assets/apps/revolut/screen-4.jpg",
+            "/assets/apps/revolut/screen-5.jpg",
+            "/assets/apps/revolut/screen-6.jpg",
+            "/assets/apps/revolut/screen-7.jpg",
+            "/assets/apps/revolut/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Robinhood",
+          "slug": "robinhood",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/robinhood/logo.jpg",
+          "screenshots": [
+            "/assets/apps/robinhood/screen-1.png",
+            "/assets/apps/robinhood/screen-2.png",
+            "/assets/apps/robinhood/screen-3.png",
+            "/assets/apps/robinhood/screen-4.png",
+            "/assets/apps/robinhood/screen-5.png",
+            "/assets/apps/robinhood/screen-6.png",
+            "/assets/apps/robinhood/screen-7.png",
+            "/assets/apps/robinhood/screen-8.png"
+          ]
+        },
+        {
+          "name": "Wallet",
+          "slug": "wallet",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/wallet/logo.jpg",
+          "screenshots": [
+            "/assets/apps/wallet/screen-1.jpg",
+            "/assets/apps/wallet/screen-2.jpg",
+            "/assets/apps/wallet/screen-3.jpg",
+            "/assets/apps/wallet/screen-4.jpg",
+            "/assets/apps/wallet/screen-5.jpg",
+            "/assets/apps/wallet/screen-6.jpg",
+            "/assets/apps/wallet/screen-7.jpg",
+            "/assets/apps/wallet/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Wealthfront",
+          "slug": "wealthfront",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/wealthfront/logo.jpg",
+          "screenshots": [
+            "/assets/apps/wealthfront/screen-1.png",
+            "/assets/apps/wealthfront/screen-2.png",
+            "/assets/apps/wealthfront/screen-3.png",
+            "/assets/apps/wealthfront/screen-4.png",
+            "/assets/apps/wealthfront/screen-5.png",
+            "/assets/apps/wealthfront/screen-6.png",
+            "/assets/apps/wealthfront/screen-7.png",
+            "/assets/apps/wealthfront/screen-8.png"
+          ]
+        },
+        {
+          "name": "Calm",
+          "slug": "calm",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/calm/logo.jpg",
+          "screenshots": [
+            "/assets/apps/calm/screen-1.png",
+            "/assets/apps/calm/screen-2.png",
+            "/assets/apps/calm/screen-3.png",
+            "/assets/apps/calm/screen-4.png",
+            "/assets/apps/calm/screen-5.png",
+            "/assets/apps/calm/screen-6.png",
+            "/assets/apps/calm/screen-7.png",
+            "/assets/apps/calm/screen-8.png"
+          ]
+        },
+        {
+          "name": "Fitbit",
+          "slug": "fitbit",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 6,
+          "logo": "/assets/apps/fitbit/logo.jpg",
+          "screenshots": [
+            "/assets/apps/fitbit/screen-1.jpg",
+            "/assets/apps/fitbit/screen-2.jpg",
+            "/assets/apps/fitbit/screen-3.jpg",
+            "/assets/apps/fitbit/screen-4.jpg",
+            "/assets/apps/fitbit/screen-5.jpg",
+            "/assets/apps/fitbit/screen-6.jpg"
+          ]
+        },
+        {
+          "name": "Flo",
+          "slug": "flo",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/flo/logo.jpg",
+          "screenshots": [
+            "/assets/apps/flo/screen-1.jpg",
+            "/assets/apps/flo/screen-2.jpg",
+            "/assets/apps/flo/screen-3.jpg",
+            "/assets/apps/flo/screen-4.jpg",
+            "/assets/apps/flo/screen-5.jpg",
+            "/assets/apps/flo/screen-6.jpg",
+            "/assets/apps/flo/screen-7.jpg",
+            "/assets/apps/flo/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Headspace",
+          "slug": "headspace",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/headspace/logo.jpg",
+          "screenshots": [
+            "/assets/apps/headspace/screen-1.png",
+            "/assets/apps/headspace/screen-2.png",
+            "/assets/apps/headspace/screen-3.png",
+            "/assets/apps/headspace/screen-4.png",
+            "/assets/apps/headspace/screen-5.png",
+            "/assets/apps/headspace/screen-6.png",
+            "/assets/apps/headspace/screen-7.png",
+            "/assets/apps/headspace/screen-8.png"
+          ]
+        },
+        {
+          "name": "MyFitnessPal",
+          "slug": "myfitnesspal",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/myfitnesspal/logo.jpg",
+          "screenshots": [
+            "/assets/apps/myfitnesspal/screen-1.jpg",
+            "/assets/apps/myfitnesspal/screen-2.jpg",
+            "/assets/apps/myfitnesspal/screen-3.jpg",
+            "/assets/apps/myfitnesspal/screen-4.jpg",
+            "/assets/apps/myfitnesspal/screen-5.jpg",
+            "/assets/apps/myfitnesspal/screen-6.jpg",
+            "/assets/apps/myfitnesspal/screen-7.jpg",
+            "/assets/apps/myfitnesspal/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Nike Run Club",
+          "slug": "nike-run-club",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/nike-run-club/logo.jpg",
+          "screenshots": [
+            "/assets/apps/nike-run-club/screen-1.png",
+            "/assets/apps/nike-run-club/screen-2.png",
+            "/assets/apps/nike-run-club/screen-3.png",
+            "/assets/apps/nike-run-club/screen-4.png",
+            "/assets/apps/nike-run-club/screen-5.png",
+            "/assets/apps/nike-run-club/screen-6.png",
+            "/assets/apps/nike-run-club/screen-7.png",
+            "/assets/apps/nike-run-club/screen-8.png"
+          ]
+        },
+        {
+          "name": "Sleep Cycle",
+          "slug": "sleep-cycle",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/sleep-cycle/logo.jpg",
+          "screenshots": [
+            "/assets/apps/sleep-cycle/screen-1.jpg",
+            "/assets/apps/sleep-cycle/screen-2.jpg",
+            "/assets/apps/sleep-cycle/screen-3.jpg",
+            "/assets/apps/sleep-cycle/screen-4.jpg",
+            "/assets/apps/sleep-cycle/screen-5.jpg",
+            "/assets/apps/sleep-cycle/screen-6.jpg",
+            "/assets/apps/sleep-cycle/screen-7.jpg",
+            "/assets/apps/sleep-cycle/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Strava",
+          "slug": "strava",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/strava/logo.jpg",
+          "screenshots": [
+            "/assets/apps/strava/screen-1.jpg",
+            "/assets/apps/strava/screen-2.jpg",
+            "/assets/apps/strava/screen-3.jpg",
+            "/assets/apps/strava/screen-4.jpg",
+            "/assets/apps/strava/screen-5.jpg",
+            "/assets/apps/strava/screen-6.jpg",
+            "/assets/apps/strava/screen-7.jpg",
+            "/assets/apps/strava/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Babbel",
+          "slug": "babbel",
+          "category": "Education",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/babbel/logo.jpg",
+          "screenshots": [
+            "/assets/apps/babbel/screen-1.jpg",
+            "/assets/apps/babbel/screen-2.jpg",
+            "/assets/apps/babbel/screen-3.jpg",
+            "/assets/apps/babbel/screen-4.jpg",
+            "/assets/apps/babbel/screen-5.jpg",
+            "/assets/apps/babbel/screen-6.jpg",
+            "/assets/apps/babbel/screen-7.jpg",
+            "/assets/apps/babbel/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Duolingo",
+          "slug": "duolingo",
+          "category": "Education",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/duolingo/logo.jpg",
+          "screenshots": [
+            "/assets/apps/duolingo/screen-1.jpg",
+            "/assets/apps/duolingo/screen-2.jpg",
+            "/assets/apps/duolingo/screen-3.jpg",
+            "/assets/apps/duolingo/screen-4.jpg",
+            "/assets/apps/duolingo/screen-5.jpg",
+            "/assets/apps/duolingo/screen-6.jpg",
+            "/assets/apps/duolingo/screen-7.jpg",
+            "/assets/apps/duolingo/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Khan Academy",
+          "slug": "khan-academy",
+          "category": "Education",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/khan-academy/logo.jpg",
+          "screenshots": [
+            "/assets/apps/khan-academy/screen-1.png",
+            "/assets/apps/khan-academy/screen-2.png",
+            "/assets/apps/khan-academy/screen-3.png",
+            "/assets/apps/khan-academy/screen-4.png",
+            "/assets/apps/khan-academy/screen-5.png",
+            "/assets/apps/khan-academy/screen-6.png",
+            "/assets/apps/khan-academy/screen-7.png",
+            "/assets/apps/khan-academy/screen-8.png"
+          ]
+        },
+        {
+          "name": "MasterClass",
+          "slug": "masterclass",
+          "category": "Education",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/masterclass/logo.jpg",
+          "screenshots": [
+            "/assets/apps/masterclass/screen-1.png",
+            "/assets/apps/masterclass/screen-2.png",
+            "/assets/apps/masterclass/screen-3.png",
+            "/assets/apps/masterclass/screen-4.png",
+            "/assets/apps/masterclass/screen-5.png",
+            "/assets/apps/masterclass/screen-6.png",
+            "/assets/apps/masterclass/screen-7.png",
+            "/assets/apps/masterclass/screen-8.png"
+          ]
+        },
+        {
+          "name": "Skillshare",
+          "slug": "skillshare",
+          "category": "Education",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/skillshare/logo.jpg",
+          "screenshots": [
+            "/assets/apps/skillshare/screen-1.png",
+            "/assets/apps/skillshare/screen-2.png",
+            "/assets/apps/skillshare/screen-3.png",
+            "/assets/apps/skillshare/screen-4.png",
+            "/assets/apps/skillshare/screen-5.png",
+            "/assets/apps/skillshare/screen-6.png",
+            "/assets/apps/skillshare/screen-7.png",
+            "/assets/apps/skillshare/screen-8.png"
+          ]
+        },
+        {
+          "name": "Udemy",
+          "slug": "udemy",
+          "category": "Education",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/udemy/logo.jpg",
+          "screenshots": [
+            "/assets/apps/udemy/screen-1.jpg",
+            "/assets/apps/udemy/screen-2.jpg",
+            "/assets/apps/udemy/screen-3.jpg",
+            "/assets/apps/udemy/screen-4.jpg",
+            "/assets/apps/udemy/screen-5.jpg",
+            "/assets/apps/udemy/screen-6.jpg",
+            "/assets/apps/udemy/screen-7.jpg",
+            "/assets/apps/udemy/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Asana",
+          "slug": "asana",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 7,
+          "logo": "/assets/apps/asana/logo.jpg",
+          "screenshots": [
+            "/assets/apps/asana/screen-1.jpg",
+            "/assets/apps/asana/screen-2.jpg",
+            "/assets/apps/asana/screen-3.jpg",
+            "/assets/apps/asana/screen-4.jpg",
+            "/assets/apps/asana/screen-5.jpg",
+            "/assets/apps/asana/screen-6.jpg",
+            "/assets/apps/asana/screen-7.jpg"
+          ]
+        },
+        {
+          "name": "Linear",
+          "slug": "linear",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 6,
+          "logo": "/assets/apps/linear/logo.jpg",
+          "screenshots": [
+            "/assets/apps/linear/screen-1.png",
+            "/assets/apps/linear/screen-2.png",
+            "/assets/apps/linear/screen-3.png",
+            "/assets/apps/linear/screen-4.png",
+            "/assets/apps/linear/screen-5.png",
+            "/assets/apps/linear/screen-6.png"
+          ]
+        },
+        {
+          "name": "Loom",
+          "slug": "loom",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 7,
+          "logo": "/assets/apps/loom/logo.jpg",
+          "screenshots": [
+            "/assets/apps/loom/screen-1.jpg",
+            "/assets/apps/loom/screen-2.jpg",
+            "/assets/apps/loom/screen-3.jpg",
+            "/assets/apps/loom/screen-4.jpg",
+            "/assets/apps/loom/screen-5.jpg",
+            "/assets/apps/loom/screen-6.jpg",
+            "/assets/apps/loom/screen-7.jpg"
+          ]
+        },
+        {
+          "name": "Monday.com",
+          "slug": "monday-com",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/monday-com/logo.jpg",
+          "screenshots": [
+            "/assets/apps/monday-com/screen-1.png",
+            "/assets/apps/monday-com/screen-2.png",
+            "/assets/apps/monday-com/screen-3.png",
+            "/assets/apps/monday-com/screen-4.png",
+            "/assets/apps/monday-com/screen-5.png",
+            "/assets/apps/monday-com/screen-6.png",
+            "/assets/apps/monday-com/screen-7.png",
+            "/assets/apps/monday-com/screen-8.png"
+          ]
+        },
+        {
+          "name": "Notion",
+          "slug": "notion",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 7,
+          "logo": "/assets/apps/notion/logo.jpg",
+          "screenshots": [
+            "/assets/apps/notion/screen-1.png",
+            "/assets/apps/notion/screen-2.png",
+            "/assets/apps/notion/screen-3.png",
+            "/assets/apps/notion/screen-4.png",
+            "/assets/apps/notion/screen-5.png",
+            "/assets/apps/notion/screen-6.png",
+            "/assets/apps/notion/screen-7.png"
+          ]
+        },
+        {
+          "name": "Slack",
+          "slug": "slack",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/slack/logo.jpg",
+          "screenshots": [
+            "/assets/apps/slack/screen-1.png",
+            "/assets/apps/slack/screen-2.png",
+            "/assets/apps/slack/screen-3.png",
+            "/assets/apps/slack/screen-4.png",
+            "/assets/apps/slack/screen-5.png",
+            "/assets/apps/slack/screen-6.png",
+            "/assets/apps/slack/screen-7.png",
+            "/assets/apps/slack/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Trello",
+          "slug": "trello",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/trello/logo.jpg",
+          "screenshots": [
+            "/assets/apps/trello/screen-1.jpg",
+            "/assets/apps/trello/screen-2.jpg",
+            "/assets/apps/trello/screen-3.jpg",
+            "/assets/apps/trello/screen-4.jpg",
+            "/assets/apps/trello/screen-5.jpg",
+            "/assets/apps/trello/screen-6.jpg",
+            "/assets/apps/trello/screen-7.jpg",
+            "/assets/apps/trello/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Zoom",
+          "slug": "zoom",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/zoom/logo.jpg",
+          "screenshots": [
+            "/assets/apps/zoom/screen-1.jpg",
+            "/assets/apps/zoom/screen-2.jpg",
+            "/assets/apps/zoom/screen-3.jpg",
+            "/assets/apps/zoom/screen-4.jpg",
+            "/assets/apps/zoom/screen-5.jpg",
+            "/assets/apps/zoom/screen-6.jpg",
+            "/assets/apps/zoom/screen-7.jpg",
+            "/assets/apps/zoom/screen-8.jpg"
+          ]
+        }
+      ],
+      "coverage": {
+        "appCount": 30,
+        "screenshotCount": 232,
+        "highConfidence": 30,
+        "lowConfidenceQuarantined": 0
+      },
+      "status": "ready"
+    },
+    {
+      "flowId": "checkout",
+      "title": "Checkout Flow",
+      "description": "Browse-to-buy progression with cart clarity, payment confidence, and low-friction confirmation.",
+      "objective": "Increase conversion while minimizing abandonment.",
+      "categories": [
+        "Shopping",
+        "Travel",
+        "Finance"
+      ],
+      "steps": [
+        "Cart Review",
+        "Shipping & Contact",
+        "Payment Selection",
+        "Order Summary",
+        "Confirmation"
+      ],
+      "apps": [
+        {
+          "name": "Amazon",
+          "slug": "amazon",
+          "category": "Shopping",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/amazon/logo.jpg",
+          "screenshots": [
+            "/assets/apps/amazon/screen-1.jpg",
+            "/assets/apps/amazon/screen-2.jpg",
+            "/assets/apps/amazon/screen-3.jpg",
+            "/assets/apps/amazon/screen-4.jpg",
+            "/assets/apps/amazon/screen-5.jpg",
+            "/assets/apps/amazon/screen-6.jpg",
+            "/assets/apps/amazon/screen-7.jpg",
+            "/assets/apps/amazon/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "ASOS",
+          "slug": "asos",
+          "category": "Shopping",
+          "confidence": "high",
+          "screenshotCount": 6,
+          "logo": "/assets/apps/asos/logo.jpg",
+          "screenshots": [
+            "/assets/apps/asos/screen-1.png",
+            "/assets/apps/asos/screen-2.png",
+            "/assets/apps/asos/screen-3.png",
+            "/assets/apps/asos/screen-4.png",
+            "/assets/apps/asos/screen-5.png",
+            "/assets/apps/asos/screen-6.png"
+          ]
+        },
+        {
+          "name": "eBay",
+          "slug": "ebay",
+          "category": "Shopping",
+          "confidence": "high",
+          "screenshotCount": 6,
+          "logo": "/assets/apps/ebay/logo.jpg",
+          "screenshots": [
+            "/assets/apps/ebay/screen-1.png",
+            "/assets/apps/ebay/screen-2.png",
+            "/assets/apps/ebay/screen-3.png",
+            "/assets/apps/ebay/screen-4.png",
+            "/assets/apps/ebay/screen-5.png",
+            "/assets/apps/ebay/screen-6.png"
+          ]
+        },
+        {
+          "name": "Etsy",
+          "slug": "etsy",
+          "category": "Shopping",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/etsy/logo.jpg",
+          "screenshots": [
+            "/assets/apps/etsy/screen-1.jpg",
+            "/assets/apps/etsy/screen-2.jpg",
+            "/assets/apps/etsy/screen-3.jpg",
+            "/assets/apps/etsy/screen-4.jpg",
+            "/assets/apps/etsy/screen-5.jpg",
+            "/assets/apps/etsy/screen-6.jpg",
+            "/assets/apps/etsy/screen-7.jpg",
+            "/assets/apps/etsy/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Nike",
+          "slug": "nike",
+          "category": "Shopping",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/nike/logo.jpg",
+          "screenshots": [
+            "/assets/apps/nike/screen-1.png",
+            "/assets/apps/nike/screen-2.png",
+            "/assets/apps/nike/screen-3.png",
+            "/assets/apps/nike/screen-4.png",
+            "/assets/apps/nike/screen-5.png",
+            "/assets/apps/nike/screen-6.png",
+            "/assets/apps/nike/screen-7.png",
+            "/assets/apps/nike/screen-8.png"
+          ]
+        },
+        {
+          "name": "Shopify",
+          "slug": "shopify",
+          "category": "Shopping",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/shopify/logo.jpg",
+          "screenshots": [
+            "/assets/apps/shopify/screen-1.jpg",
+            "/assets/apps/shopify/screen-2.jpg",
+            "/assets/apps/shopify/screen-3.jpg",
+            "/assets/apps/shopify/screen-4.jpg",
+            "/assets/apps/shopify/screen-5.jpg",
+            "/assets/apps/shopify/screen-6.jpg",
+            "/assets/apps/shopify/screen-7.jpg",
+            "/assets/apps/shopify/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "StockX",
+          "slug": "stockx",
+          "category": "Shopping",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/stockx/logo.jpg",
+          "screenshots": [
+            "/assets/apps/stockx/screen-1.jpg",
+            "/assets/apps/stockx/screen-2.jpg",
+            "/assets/apps/stockx/screen-3.jpg",
+            "/assets/apps/stockx/screen-4.jpg",
+            "/assets/apps/stockx/screen-5.jpg",
+            "/assets/apps/stockx/screen-6.jpg",
+            "/assets/apps/stockx/screen-7.jpg",
+            "/assets/apps/stockx/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Zara",
+          "slug": "zara",
+          "category": "Shopping",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/zara/logo.jpg",
+          "screenshots": [
+            "/assets/apps/zara/screen-1.jpg",
+            "/assets/apps/zara/screen-2.jpg",
+            "/assets/apps/zara/screen-3.jpg",
+            "/assets/apps/zara/screen-4.jpg",
+            "/assets/apps/zara/screen-5.jpg",
+            "/assets/apps/zara/screen-6.jpg",
+            "/assets/apps/zara/screen-7.jpg",
+            "/assets/apps/zara/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Airbnb",
+          "slug": "airbnb",
+          "category": "Travel",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/airbnb/logo.jpg",
+          "screenshots": [
+            "/assets/apps/airbnb/screen-1.jpg",
+            "/assets/apps/airbnb/screen-2.jpg",
+            "/assets/apps/airbnb/screen-3.jpg",
+            "/assets/apps/airbnb/screen-4.jpg",
+            "/assets/apps/airbnb/screen-5.jpg",
+            "/assets/apps/airbnb/screen-6.jpg",
+            "/assets/apps/airbnb/screen-7.jpg",
+            "/assets/apps/airbnb/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Booking.com",
+          "slug": "booking-com",
+          "category": "Travel",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/booking-com/logo.jpg",
+          "screenshots": [
+            "/assets/apps/booking-com/screen-1.jpg",
+            "/assets/apps/booking-com/screen-2.jpg",
+            "/assets/apps/booking-com/screen-3.jpg",
+            "/assets/apps/booking-com/screen-4.jpg",
+            "/assets/apps/booking-com/screen-5.png",
+            "/assets/apps/booking-com/screen-6.jpg",
+            "/assets/apps/booking-com/screen-7.jpg",
+            "/assets/apps/booking-com/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Expedia",
+          "slug": "expedia",
+          "category": "Travel",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/expedia/logo.jpg",
+          "screenshots": [
+            "/assets/apps/expedia/screen-1.jpg",
+            "/assets/apps/expedia/screen-2.jpg",
+            "/assets/apps/expedia/screen-3.jpg",
+            "/assets/apps/expedia/screen-4.jpg",
+            "/assets/apps/expedia/screen-5.jpg",
+            "/assets/apps/expedia/screen-6.jpg",
+            "/assets/apps/expedia/screen-7.jpg",
+            "/assets/apps/expedia/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Hopper",
+          "slug": "hopper",
+          "category": "Travel",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/hopper/logo.jpg",
+          "screenshots": [
+            "/assets/apps/hopper/screen-1.jpg",
+            "/assets/apps/hopper/screen-2.jpg",
+            "/assets/apps/hopper/screen-3.jpg",
+            "/assets/apps/hopper/screen-4.jpg",
+            "/assets/apps/hopper/screen-5.jpg",
+            "/assets/apps/hopper/screen-6.jpg",
+            "/assets/apps/hopper/screen-7.jpg",
+            "/assets/apps/hopper/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "HotelTonight",
+          "slug": "hoteltonight",
+          "category": "Travel",
+          "confidence": "high",
+          "screenshotCount": 7,
+          "logo": "/assets/apps/hoteltonight/logo.jpg",
+          "screenshots": [
+            "/assets/apps/hoteltonight/screen-1.jpg",
+            "/assets/apps/hoteltonight/screen-2.jpg",
+            "/assets/apps/hoteltonight/screen-3.jpg",
+            "/assets/apps/hoteltonight/screen-4.jpg",
+            "/assets/apps/hoteltonight/screen-5.jpg",
+            "/assets/apps/hoteltonight/screen-6.jpg",
+            "/assets/apps/hoteltonight/screen-7.jpg"
+          ]
+        },
+        {
+          "name": "Kayak",
+          "slug": "kayak",
+          "category": "Travel",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/kayak/logo.jpg",
+          "screenshots": [
+            "/assets/apps/kayak/screen-1.jpg",
+            "/assets/apps/kayak/screen-2.jpg",
+            "/assets/apps/kayak/screen-3.jpg",
+            "/assets/apps/kayak/screen-4.jpg",
+            "/assets/apps/kayak/screen-5.jpg",
+            "/assets/apps/kayak/screen-6.jpg",
+            "/assets/apps/kayak/screen-7.jpg",
+            "/assets/apps/kayak/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Skyscanner",
+          "slug": "skyscanner",
+          "category": "Travel",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/skyscanner/logo.jpg",
+          "screenshots": [
+            "/assets/apps/skyscanner/screen-1.png",
+            "/assets/apps/skyscanner/screen-2.png",
+            "/assets/apps/skyscanner/screen-3.png",
+            "/assets/apps/skyscanner/screen-4.png",
+            "/assets/apps/skyscanner/screen-5.png",
+            "/assets/apps/skyscanner/screen-6.png",
+            "/assets/apps/skyscanner/screen-7.png",
+            "/assets/apps/skyscanner/screen-8.png"
+          ]
+        },
+        {
+          "name": "TripAdvisor",
+          "slug": "tripadvisor",
+          "category": "Travel",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/tripadvisor/logo.jpg",
+          "screenshots": [
+            "/assets/apps/tripadvisor/screen-1.png",
+            "/assets/apps/tripadvisor/screen-2.png",
+            "/assets/apps/tripadvisor/screen-3.png",
+            "/assets/apps/tripadvisor/screen-4.png",
+            "/assets/apps/tripadvisor/screen-5.png",
+            "/assets/apps/tripadvisor/screen-6.png",
+            "/assets/apps/tripadvisor/screen-7.png",
+            "/assets/apps/tripadvisor/screen-8.png"
+          ]
+        },
+        {
+          "name": "Mint",
+          "slug": "mint",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 7,
+          "logo": "/assets/apps/mint/logo.jpg",
+          "screenshots": [
+            "/assets/apps/mint/screen-1.png",
+            "/assets/apps/mint/screen-2.png",
+            "/assets/apps/mint/screen-3.png",
+            "/assets/apps/mint/screen-4.png",
+            "/assets/apps/mint/screen-5.png",
+            "/assets/apps/mint/screen-6.png",
+            "/assets/apps/mint/screen-7.png"
+          ]
+        },
+        {
+          "name": "Monzo",
+          "slug": "monzo",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/monzo/logo.jpg",
+          "screenshots": [
+            "/assets/apps/monzo/screen-1.png",
+            "/assets/apps/monzo/screen-2.png",
+            "/assets/apps/monzo/screen-3.png",
+            "/assets/apps/monzo/screen-4.png",
+            "/assets/apps/monzo/screen-5.png",
+            "/assets/apps/monzo/screen-6.png",
+            "/assets/apps/monzo/screen-7.png",
+            "/assets/apps/monzo/screen-8.png"
+          ]
+        },
+        {
+          "name": "N26",
+          "slug": "n26",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/n26/logo.jpg",
+          "screenshots": [
+            "/assets/apps/n26/screen-1.jpg",
+            "/assets/apps/n26/screen-2.jpg",
+            "/assets/apps/n26/screen-3.jpg",
+            "/assets/apps/n26/screen-4.jpg",
+            "/assets/apps/n26/screen-5.jpg",
+            "/assets/apps/n26/screen-6.jpg",
+            "/assets/apps/n26/screen-7.jpg",
+            "/assets/apps/n26/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "PayPal",
+          "slug": "paypal",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/paypal/logo.jpg",
+          "screenshots": [
+            "/assets/apps/paypal/screen-1.jpg",
+            "/assets/apps/paypal/screen-2.jpg",
+            "/assets/apps/paypal/screen-3.jpg",
+            "/assets/apps/paypal/screen-4.jpg",
+            "/assets/apps/paypal/screen-5.jpg",
+            "/assets/apps/paypal/screen-6.jpg",
+            "/assets/apps/paypal/screen-7.jpg",
+            "/assets/apps/paypal/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Revolut",
+          "slug": "revolut",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/revolut/logo.jpg",
+          "screenshots": [
+            "/assets/apps/revolut/screen-1.jpg",
+            "/assets/apps/revolut/screen-2.jpg",
+            "/assets/apps/revolut/screen-3.jpg",
+            "/assets/apps/revolut/screen-4.jpg",
+            "/assets/apps/revolut/screen-5.jpg",
+            "/assets/apps/revolut/screen-6.jpg",
+            "/assets/apps/revolut/screen-7.jpg",
+            "/assets/apps/revolut/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Robinhood",
+          "slug": "robinhood",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/robinhood/logo.jpg",
+          "screenshots": [
+            "/assets/apps/robinhood/screen-1.png",
+            "/assets/apps/robinhood/screen-2.png",
+            "/assets/apps/robinhood/screen-3.png",
+            "/assets/apps/robinhood/screen-4.png",
+            "/assets/apps/robinhood/screen-5.png",
+            "/assets/apps/robinhood/screen-6.png",
+            "/assets/apps/robinhood/screen-7.png",
+            "/assets/apps/robinhood/screen-8.png"
+          ]
+        },
+        {
+          "name": "Wallet",
+          "slug": "wallet",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/wallet/logo.jpg",
+          "screenshots": [
+            "/assets/apps/wallet/screen-1.jpg",
+            "/assets/apps/wallet/screen-2.jpg",
+            "/assets/apps/wallet/screen-3.jpg",
+            "/assets/apps/wallet/screen-4.jpg",
+            "/assets/apps/wallet/screen-5.jpg",
+            "/assets/apps/wallet/screen-6.jpg",
+            "/assets/apps/wallet/screen-7.jpg",
+            "/assets/apps/wallet/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Wealthfront",
+          "slug": "wealthfront",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/wealthfront/logo.jpg",
+          "screenshots": [
+            "/assets/apps/wealthfront/screen-1.png",
+            "/assets/apps/wealthfront/screen-2.png",
+            "/assets/apps/wealthfront/screen-3.png",
+            "/assets/apps/wealthfront/screen-4.png",
+            "/assets/apps/wealthfront/screen-5.png",
+            "/assets/apps/wealthfront/screen-6.png",
+            "/assets/apps/wealthfront/screen-7.png",
+            "/assets/apps/wealthfront/screen-8.png"
+          ]
+        }
+      ],
+      "coverage": {
+        "appCount": 24,
+        "screenshotCount": 186,
+        "highConfidence": 24,
+        "lowConfidenceQuarantined": 0
+      },
+      "status": "ready"
+    },
+    {
+      "flowId": "search-discovery",
+      "title": "Search & Discovery Flow",
+      "description": "Pattern sequence for query entry, filtering, ranking, and result confidence.",
+      "objective": "Improve findability with fewer query reformulations.",
+      "categories": [
+        "Shopping",
+        "News",
+        "Travel",
+        "Music"
+      ],
+      "steps": [
+        "Query Entry",
+        "Contextual Suggestions",
+        "Filter & Sort",
+        "Result Scanning",
+        "Detail Drilldown"
+      ],
+      "apps": [
+        {
+          "name": "Amazon",
+          "slug": "amazon",
+          "category": "Shopping",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/amazon/logo.jpg",
+          "screenshots": [
+            "/assets/apps/amazon/screen-1.jpg",
+            "/assets/apps/amazon/screen-2.jpg",
+            "/assets/apps/amazon/screen-3.jpg",
+            "/assets/apps/amazon/screen-4.jpg",
+            "/assets/apps/amazon/screen-5.jpg",
+            "/assets/apps/amazon/screen-6.jpg",
+            "/assets/apps/amazon/screen-7.jpg",
+            "/assets/apps/amazon/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "ASOS",
+          "slug": "asos",
+          "category": "Shopping",
+          "confidence": "high",
+          "screenshotCount": 6,
+          "logo": "/assets/apps/asos/logo.jpg",
+          "screenshots": [
+            "/assets/apps/asos/screen-1.png",
+            "/assets/apps/asos/screen-2.png",
+            "/assets/apps/asos/screen-3.png",
+            "/assets/apps/asos/screen-4.png",
+            "/assets/apps/asos/screen-5.png",
+            "/assets/apps/asos/screen-6.png"
+          ]
+        },
+        {
+          "name": "eBay",
+          "slug": "ebay",
+          "category": "Shopping",
+          "confidence": "high",
+          "screenshotCount": 6,
+          "logo": "/assets/apps/ebay/logo.jpg",
+          "screenshots": [
+            "/assets/apps/ebay/screen-1.png",
+            "/assets/apps/ebay/screen-2.png",
+            "/assets/apps/ebay/screen-3.png",
+            "/assets/apps/ebay/screen-4.png",
+            "/assets/apps/ebay/screen-5.png",
+            "/assets/apps/ebay/screen-6.png"
+          ]
+        },
+        {
+          "name": "Etsy",
+          "slug": "etsy",
+          "category": "Shopping",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/etsy/logo.jpg",
+          "screenshots": [
+            "/assets/apps/etsy/screen-1.jpg",
+            "/assets/apps/etsy/screen-2.jpg",
+            "/assets/apps/etsy/screen-3.jpg",
+            "/assets/apps/etsy/screen-4.jpg",
+            "/assets/apps/etsy/screen-5.jpg",
+            "/assets/apps/etsy/screen-6.jpg",
+            "/assets/apps/etsy/screen-7.jpg",
+            "/assets/apps/etsy/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Nike",
+          "slug": "nike",
+          "category": "Shopping",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/nike/logo.jpg",
+          "screenshots": [
+            "/assets/apps/nike/screen-1.png",
+            "/assets/apps/nike/screen-2.png",
+            "/assets/apps/nike/screen-3.png",
+            "/assets/apps/nike/screen-4.png",
+            "/assets/apps/nike/screen-5.png",
+            "/assets/apps/nike/screen-6.png",
+            "/assets/apps/nike/screen-7.png",
+            "/assets/apps/nike/screen-8.png"
+          ]
+        },
+        {
+          "name": "Shopify",
+          "slug": "shopify",
+          "category": "Shopping",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/shopify/logo.jpg",
+          "screenshots": [
+            "/assets/apps/shopify/screen-1.jpg",
+            "/assets/apps/shopify/screen-2.jpg",
+            "/assets/apps/shopify/screen-3.jpg",
+            "/assets/apps/shopify/screen-4.jpg",
+            "/assets/apps/shopify/screen-5.jpg",
+            "/assets/apps/shopify/screen-6.jpg",
+            "/assets/apps/shopify/screen-7.jpg",
+            "/assets/apps/shopify/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "StockX",
+          "slug": "stockx",
+          "category": "Shopping",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/stockx/logo.jpg",
+          "screenshots": [
+            "/assets/apps/stockx/screen-1.jpg",
+            "/assets/apps/stockx/screen-2.jpg",
+            "/assets/apps/stockx/screen-3.jpg",
+            "/assets/apps/stockx/screen-4.jpg",
+            "/assets/apps/stockx/screen-5.jpg",
+            "/assets/apps/stockx/screen-6.jpg",
+            "/assets/apps/stockx/screen-7.jpg",
+            "/assets/apps/stockx/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Zara",
+          "slug": "zara",
+          "category": "Shopping",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/zara/logo.jpg",
+          "screenshots": [
+            "/assets/apps/zara/screen-1.jpg",
+            "/assets/apps/zara/screen-2.jpg",
+            "/assets/apps/zara/screen-3.jpg",
+            "/assets/apps/zara/screen-4.jpg",
+            "/assets/apps/zara/screen-5.jpg",
+            "/assets/apps/zara/screen-6.jpg",
+            "/assets/apps/zara/screen-7.jpg",
+            "/assets/apps/zara/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "BBC News",
+          "slug": "bbc-news",
+          "category": "News",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/bbc-news/logo.jpg",
+          "screenshots": [
+            "/assets/apps/bbc-news/screen-1.png",
+            "/assets/apps/bbc-news/screen-2.png",
+            "/assets/apps/bbc-news/screen-3.png",
+            "/assets/apps/bbc-news/screen-4.png",
+            "/assets/apps/bbc-news/screen-5.png",
+            "/assets/apps/bbc-news/screen-6.png",
+            "/assets/apps/bbc-news/screen-7.png",
+            "/assets/apps/bbc-news/screen-8.png"
+          ]
+        },
+        {
+          "name": "Flipboard",
+          "slug": "flipboard",
+          "category": "News",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/flipboard/logo.jpg",
+          "screenshots": [
+            "/assets/apps/flipboard/screen-1.png",
+            "/assets/apps/flipboard/screen-2.png",
+            "/assets/apps/flipboard/screen-3.png",
+            "/assets/apps/flipboard/screen-4.png",
+            "/assets/apps/flipboard/screen-5.png",
+            "/assets/apps/flipboard/screen-6.png",
+            "/assets/apps/flipboard/screen-7.png",
+            "/assets/apps/flipboard/screen-8.png"
+          ]
+        },
+        {
+          "name": "Pocket",
+          "slug": "pocket",
+          "category": "News",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/pocket/logo.jpg",
+          "screenshots": [
+            "/assets/apps/pocket/screen-1.jpg",
+            "/assets/apps/pocket/screen-2.jpg",
+            "/assets/apps/pocket/screen-3.jpg",
+            "/assets/apps/pocket/screen-4.jpg",
+            "/assets/apps/pocket/screen-5.jpg",
+            "/assets/apps/pocket/screen-6.jpg",
+            "/assets/apps/pocket/screen-7.jpg",
+            "/assets/apps/pocket/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Reuters",
+          "slug": "reuters",
+          "category": "News",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/reuters/logo.jpg",
+          "screenshots": [
+            "/assets/apps/reuters/screen-1.jpg",
+            "/assets/apps/reuters/screen-2.jpg",
+            "/assets/apps/reuters/screen-3.jpg",
+            "/assets/apps/reuters/screen-4.jpg",
+            "/assets/apps/reuters/screen-5.jpg",
+            "/assets/apps/reuters/screen-6.jpg",
+            "/assets/apps/reuters/screen-7.jpg",
+            "/assets/apps/reuters/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Substack",
+          "slug": "substack",
+          "category": "News",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/substack/logo.jpg",
+          "screenshots": [
+            "/assets/apps/substack/screen-1.jpg",
+            "/assets/apps/substack/screen-2.jpg",
+            "/assets/apps/substack/screen-3.jpg",
+            "/assets/apps/substack/screen-4.jpg",
+            "/assets/apps/substack/screen-5.jpg",
+            "/assets/apps/substack/screen-6.jpg",
+            "/assets/apps/substack/screen-7.jpg",
+            "/assets/apps/substack/screen-8.png"
+          ]
+        },
+        {
+          "name": "The New York Times",
+          "slug": "the-new-york-times",
+          "category": "News",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/the-new-york-times/logo.jpg",
+          "screenshots": [
+            "/assets/apps/the-new-york-times/screen-1.png",
+            "/assets/apps/the-new-york-times/screen-2.png",
+            "/assets/apps/the-new-york-times/screen-3.png",
+            "/assets/apps/the-new-york-times/screen-4.png",
+            "/assets/apps/the-new-york-times/screen-5.png",
+            "/assets/apps/the-new-york-times/screen-6.png",
+            "/assets/apps/the-new-york-times/screen-7.png",
+            "/assets/apps/the-new-york-times/screen-8.png"
+          ]
+        },
+        {
+          "name": "Airbnb",
+          "slug": "airbnb",
+          "category": "Travel",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/airbnb/logo.jpg",
+          "screenshots": [
+            "/assets/apps/airbnb/screen-1.jpg",
+            "/assets/apps/airbnb/screen-2.jpg",
+            "/assets/apps/airbnb/screen-3.jpg",
+            "/assets/apps/airbnb/screen-4.jpg",
+            "/assets/apps/airbnb/screen-5.jpg",
+            "/assets/apps/airbnb/screen-6.jpg",
+            "/assets/apps/airbnb/screen-7.jpg",
+            "/assets/apps/airbnb/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Booking.com",
+          "slug": "booking-com",
+          "category": "Travel",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/booking-com/logo.jpg",
+          "screenshots": [
+            "/assets/apps/booking-com/screen-1.jpg",
+            "/assets/apps/booking-com/screen-2.jpg",
+            "/assets/apps/booking-com/screen-3.jpg",
+            "/assets/apps/booking-com/screen-4.jpg",
+            "/assets/apps/booking-com/screen-5.png",
+            "/assets/apps/booking-com/screen-6.jpg",
+            "/assets/apps/booking-com/screen-7.jpg",
+            "/assets/apps/booking-com/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Expedia",
+          "slug": "expedia",
+          "category": "Travel",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/expedia/logo.jpg",
+          "screenshots": [
+            "/assets/apps/expedia/screen-1.jpg",
+            "/assets/apps/expedia/screen-2.jpg",
+            "/assets/apps/expedia/screen-3.jpg",
+            "/assets/apps/expedia/screen-4.jpg",
+            "/assets/apps/expedia/screen-5.jpg",
+            "/assets/apps/expedia/screen-6.jpg",
+            "/assets/apps/expedia/screen-7.jpg",
+            "/assets/apps/expedia/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Hopper",
+          "slug": "hopper",
+          "category": "Travel",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/hopper/logo.jpg",
+          "screenshots": [
+            "/assets/apps/hopper/screen-1.jpg",
+            "/assets/apps/hopper/screen-2.jpg",
+            "/assets/apps/hopper/screen-3.jpg",
+            "/assets/apps/hopper/screen-4.jpg",
+            "/assets/apps/hopper/screen-5.jpg",
+            "/assets/apps/hopper/screen-6.jpg",
+            "/assets/apps/hopper/screen-7.jpg",
+            "/assets/apps/hopper/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "HotelTonight",
+          "slug": "hoteltonight",
+          "category": "Travel",
+          "confidence": "high",
+          "screenshotCount": 7,
+          "logo": "/assets/apps/hoteltonight/logo.jpg",
+          "screenshots": [
+            "/assets/apps/hoteltonight/screen-1.jpg",
+            "/assets/apps/hoteltonight/screen-2.jpg",
+            "/assets/apps/hoteltonight/screen-3.jpg",
+            "/assets/apps/hoteltonight/screen-4.jpg",
+            "/assets/apps/hoteltonight/screen-5.jpg",
+            "/assets/apps/hoteltonight/screen-6.jpg",
+            "/assets/apps/hoteltonight/screen-7.jpg"
+          ]
+        },
+        {
+          "name": "Kayak",
+          "slug": "kayak",
+          "category": "Travel",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/kayak/logo.jpg",
+          "screenshots": [
+            "/assets/apps/kayak/screen-1.jpg",
+            "/assets/apps/kayak/screen-2.jpg",
+            "/assets/apps/kayak/screen-3.jpg",
+            "/assets/apps/kayak/screen-4.jpg",
+            "/assets/apps/kayak/screen-5.jpg",
+            "/assets/apps/kayak/screen-6.jpg",
+            "/assets/apps/kayak/screen-7.jpg",
+            "/assets/apps/kayak/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Skyscanner",
+          "slug": "skyscanner",
+          "category": "Travel",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/skyscanner/logo.jpg",
+          "screenshots": [
+            "/assets/apps/skyscanner/screen-1.png",
+            "/assets/apps/skyscanner/screen-2.png",
+            "/assets/apps/skyscanner/screen-3.png",
+            "/assets/apps/skyscanner/screen-4.png",
+            "/assets/apps/skyscanner/screen-5.png",
+            "/assets/apps/skyscanner/screen-6.png",
+            "/assets/apps/skyscanner/screen-7.png",
+            "/assets/apps/skyscanner/screen-8.png"
+          ]
+        },
+        {
+          "name": "TripAdvisor",
+          "slug": "tripadvisor",
+          "category": "Travel",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/tripadvisor/logo.jpg",
+          "screenshots": [
+            "/assets/apps/tripadvisor/screen-1.png",
+            "/assets/apps/tripadvisor/screen-2.png",
+            "/assets/apps/tripadvisor/screen-3.png",
+            "/assets/apps/tripadvisor/screen-4.png",
+            "/assets/apps/tripadvisor/screen-5.png",
+            "/assets/apps/tripadvisor/screen-6.png",
+            "/assets/apps/tripadvisor/screen-7.png",
+            "/assets/apps/tripadvisor/screen-8.png"
+          ]
+        },
+        {
+          "name": "Apple Music",
+          "slug": "apple-music",
+          "category": "Music",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/apple-music/logo.jpg",
+          "screenshots": [
+            "/assets/apps/apple-music/screen-1.png",
+            "/assets/apps/apple-music/screen-2.png",
+            "/assets/apps/apple-music/screen-3.png",
+            "/assets/apps/apple-music/screen-4.png",
+            "/assets/apps/apple-music/screen-5.png",
+            "/assets/apps/apple-music/screen-6.png",
+            "/assets/apps/apple-music/screen-7.png",
+            "/assets/apps/apple-music/screen-8.png"
+          ]
+        },
+        {
+          "name": "Deezer",
+          "slug": "deezer",
+          "category": "Music",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/deezer/logo.jpg",
+          "screenshots": [
+            "/assets/apps/deezer/screen-1.jpg",
+            "/assets/apps/deezer/screen-2.jpg",
+            "/assets/apps/deezer/screen-3.jpg",
+            "/assets/apps/deezer/screen-4.jpg",
+            "/assets/apps/deezer/screen-5.jpg",
+            "/assets/apps/deezer/screen-6.jpg",
+            "/assets/apps/deezer/screen-7.jpg",
+            "/assets/apps/deezer/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Pandora",
+          "slug": "pandora",
+          "category": "Music",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/pandora/logo.jpg",
+          "screenshots": [
+            "/assets/apps/pandora/screen-1.jpg",
+            "/assets/apps/pandora/screen-2.jpg",
+            "/assets/apps/pandora/screen-3.jpg",
+            "/assets/apps/pandora/screen-4.jpg",
+            "/assets/apps/pandora/screen-5.jpg",
+            "/assets/apps/pandora/screen-6.jpg",
+            "/assets/apps/pandora/screen-7.jpg",
+            "/assets/apps/pandora/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Shazam",
+          "slug": "shazam",
+          "category": "Music",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/shazam/logo.jpg",
+          "screenshots": [
+            "/assets/apps/shazam/screen-1.png",
+            "/assets/apps/shazam/screen-2.png",
+            "/assets/apps/shazam/screen-3.png",
+            "/assets/apps/shazam/screen-4.png",
+            "/assets/apps/shazam/screen-5.png",
+            "/assets/apps/shazam/screen-6.png",
+            "/assets/apps/shazam/screen-7.png",
+            "/assets/apps/shazam/screen-8.png"
+          ]
+        },
+        {
+          "name": "SoundCloud",
+          "slug": "soundcloud",
+          "category": "Music",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/soundcloud/logo.jpg",
+          "screenshots": [
+            "/assets/apps/soundcloud/screen-1.png",
+            "/assets/apps/soundcloud/screen-2.png",
+            "/assets/apps/soundcloud/screen-3.png",
+            "/assets/apps/soundcloud/screen-4.png",
+            "/assets/apps/soundcloud/screen-5.png",
+            "/assets/apps/soundcloud/screen-6.png",
+            "/assets/apps/soundcloud/screen-7.png",
+            "/assets/apps/soundcloud/screen-8.png"
+          ]
+        },
+        {
+          "name": "Spotify",
+          "slug": "spotify",
+          "category": "Music",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/spotify/logo.jpg",
+          "screenshots": [
+            "/assets/apps/spotify/screen-1.png",
+            "/assets/apps/spotify/screen-2.png",
+            "/assets/apps/spotify/screen-3.png",
+            "/assets/apps/spotify/screen-4.png",
+            "/assets/apps/spotify/screen-5.png",
+            "/assets/apps/spotify/screen-6.png",
+            "/assets/apps/spotify/screen-7.png",
+            "/assets/apps/spotify/screen-8.png"
+          ]
+        }
+      ],
+      "coverage": {
+        "appCount": 28,
+        "screenshotCount": 219,
+        "highConfidence": 28,
+        "lowConfidenceQuarantined": 0
+      },
+      "status": "ready"
+    },
+    {
+      "flowId": "social-engagement",
+      "title": "Social Engagement Flow",
+      "description": "Interaction loops for feed browsing, content creation, reactions, and retention touchpoints.",
+      "objective": "Maximize meaningful engagement per session.",
+      "categories": [
+        "Social",
+        "Music",
+        "News"
+      ],
+      "steps": [
+        "Feed Entry",
+        "Post Consumption",
+        "Reaction / Reply",
+        "Creation Prompt",
+        "Notification Return"
+      ],
+      "apps": [
+        {
+          "name": "BeReal",
+          "slug": "bereal",
+          "category": "Social",
+          "confidence": "high",
+          "screenshotCount": 6,
+          "logo": "/assets/apps/bereal/logo.jpg",
+          "screenshots": [
+            "/assets/apps/bereal/screen-1.jpg",
+            "/assets/apps/bereal/screen-2.jpg",
+            "/assets/apps/bereal/screen-3.jpg",
+            "/assets/apps/bereal/screen-4.jpg",
+            "/assets/apps/bereal/screen-5.jpg",
+            "/assets/apps/bereal/screen-6.jpg"
+          ]
+        },
+        {
+          "name": "Instagram",
+          "slug": "instagram",
+          "category": "Social",
+          "confidence": "high",
+          "screenshotCount": 7,
+          "logo": "/assets/apps/instagram/logo.jpg",
+          "screenshots": [
+            "/assets/apps/instagram/screen-1.jpg",
+            "/assets/apps/instagram/screen-2.jpg",
+            "/assets/apps/instagram/screen-3.jpg",
+            "/assets/apps/instagram/screen-4.jpg",
+            "/assets/apps/instagram/screen-5.jpg",
+            "/assets/apps/instagram/screen-6.jpg",
+            "/assets/apps/instagram/screen-7.jpg"
+          ]
+        },
+        {
+          "name": "LinkedIn",
+          "slug": "linkedin",
+          "category": "Social",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/linkedin/logo.jpg",
+          "screenshots": [
+            "/assets/apps/linkedin/screen-1.png",
+            "/assets/apps/linkedin/screen-2.png",
+            "/assets/apps/linkedin/screen-3.png",
+            "/assets/apps/linkedin/screen-4.png",
+            "/assets/apps/linkedin/screen-5.png",
+            "/assets/apps/linkedin/screen-6.png",
+            "/assets/apps/linkedin/screen-7.png",
+            "/assets/apps/linkedin/screen-8.png"
+          ]
+        },
+        {
+          "name": "Snapchat",
+          "slug": "snapchat",
+          "category": "Social",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/snapchat/logo.jpg",
+          "screenshots": [
+            "/assets/apps/snapchat/screen-1.jpg",
+            "/assets/apps/snapchat/screen-2.jpg",
+            "/assets/apps/snapchat/screen-3.jpg",
+            "/assets/apps/snapchat/screen-4.jpg",
+            "/assets/apps/snapchat/screen-5.jpg",
+            "/assets/apps/snapchat/screen-6.jpg",
+            "/assets/apps/snapchat/screen-7.jpg",
+            "/assets/apps/snapchat/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Threads",
+          "slug": "threads",
+          "category": "Social",
+          "confidence": "high",
+          "screenshotCount": 6,
+          "logo": "/assets/apps/threads/logo.jpg",
+          "screenshots": [
+            "/assets/apps/threads/screen-1.jpg",
+            "/assets/apps/threads/screen-2.jpg",
+            "/assets/apps/threads/screen-3.jpg",
+            "/assets/apps/threads/screen-4.jpg",
+            "/assets/apps/threads/screen-5.jpg",
+            "/assets/apps/threads/screen-6.jpg"
+          ]
+        },
+        {
+          "name": "TikTok",
+          "slug": "tiktok",
+          "category": "Social",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/tiktok/logo.jpg",
+          "screenshots": [
+            "/assets/apps/tiktok/screen-1.png",
+            "/assets/apps/tiktok/screen-2.png",
+            "/assets/apps/tiktok/screen-3.png",
+            "/assets/apps/tiktok/screen-4.png",
+            "/assets/apps/tiktok/screen-5.png",
+            "/assets/apps/tiktok/screen-6.png",
+            "/assets/apps/tiktok/screen-7.png",
+            "/assets/apps/tiktok/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Apple Music",
+          "slug": "apple-music",
+          "category": "Music",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/apple-music/logo.jpg",
+          "screenshots": [
+            "/assets/apps/apple-music/screen-1.png",
+            "/assets/apps/apple-music/screen-2.png",
+            "/assets/apps/apple-music/screen-3.png",
+            "/assets/apps/apple-music/screen-4.png",
+            "/assets/apps/apple-music/screen-5.png",
+            "/assets/apps/apple-music/screen-6.png",
+            "/assets/apps/apple-music/screen-7.png",
+            "/assets/apps/apple-music/screen-8.png"
+          ]
+        },
+        {
+          "name": "Deezer",
+          "slug": "deezer",
+          "category": "Music",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/deezer/logo.jpg",
+          "screenshots": [
+            "/assets/apps/deezer/screen-1.jpg",
+            "/assets/apps/deezer/screen-2.jpg",
+            "/assets/apps/deezer/screen-3.jpg",
+            "/assets/apps/deezer/screen-4.jpg",
+            "/assets/apps/deezer/screen-5.jpg",
+            "/assets/apps/deezer/screen-6.jpg",
+            "/assets/apps/deezer/screen-7.jpg",
+            "/assets/apps/deezer/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Pandora",
+          "slug": "pandora",
+          "category": "Music",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/pandora/logo.jpg",
+          "screenshots": [
+            "/assets/apps/pandora/screen-1.jpg",
+            "/assets/apps/pandora/screen-2.jpg",
+            "/assets/apps/pandora/screen-3.jpg",
+            "/assets/apps/pandora/screen-4.jpg",
+            "/assets/apps/pandora/screen-5.jpg",
+            "/assets/apps/pandora/screen-6.jpg",
+            "/assets/apps/pandora/screen-7.jpg",
+            "/assets/apps/pandora/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Shazam",
+          "slug": "shazam",
+          "category": "Music",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/shazam/logo.jpg",
+          "screenshots": [
+            "/assets/apps/shazam/screen-1.png",
+            "/assets/apps/shazam/screen-2.png",
+            "/assets/apps/shazam/screen-3.png",
+            "/assets/apps/shazam/screen-4.png",
+            "/assets/apps/shazam/screen-5.png",
+            "/assets/apps/shazam/screen-6.png",
+            "/assets/apps/shazam/screen-7.png",
+            "/assets/apps/shazam/screen-8.png"
+          ]
+        },
+        {
+          "name": "SoundCloud",
+          "slug": "soundcloud",
+          "category": "Music",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/soundcloud/logo.jpg",
+          "screenshots": [
+            "/assets/apps/soundcloud/screen-1.png",
+            "/assets/apps/soundcloud/screen-2.png",
+            "/assets/apps/soundcloud/screen-3.png",
+            "/assets/apps/soundcloud/screen-4.png",
+            "/assets/apps/soundcloud/screen-5.png",
+            "/assets/apps/soundcloud/screen-6.png",
+            "/assets/apps/soundcloud/screen-7.png",
+            "/assets/apps/soundcloud/screen-8.png"
+          ]
+        },
+        {
+          "name": "Spotify",
+          "slug": "spotify",
+          "category": "Music",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/spotify/logo.jpg",
+          "screenshots": [
+            "/assets/apps/spotify/screen-1.png",
+            "/assets/apps/spotify/screen-2.png",
+            "/assets/apps/spotify/screen-3.png",
+            "/assets/apps/spotify/screen-4.png",
+            "/assets/apps/spotify/screen-5.png",
+            "/assets/apps/spotify/screen-6.png",
+            "/assets/apps/spotify/screen-7.png",
+            "/assets/apps/spotify/screen-8.png"
+          ]
+        },
+        {
+          "name": "BBC News",
+          "slug": "bbc-news",
+          "category": "News",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/bbc-news/logo.jpg",
+          "screenshots": [
+            "/assets/apps/bbc-news/screen-1.png",
+            "/assets/apps/bbc-news/screen-2.png",
+            "/assets/apps/bbc-news/screen-3.png",
+            "/assets/apps/bbc-news/screen-4.png",
+            "/assets/apps/bbc-news/screen-5.png",
+            "/assets/apps/bbc-news/screen-6.png",
+            "/assets/apps/bbc-news/screen-7.png",
+            "/assets/apps/bbc-news/screen-8.png"
+          ]
+        },
+        {
+          "name": "Flipboard",
+          "slug": "flipboard",
+          "category": "News",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/flipboard/logo.jpg",
+          "screenshots": [
+            "/assets/apps/flipboard/screen-1.png",
+            "/assets/apps/flipboard/screen-2.png",
+            "/assets/apps/flipboard/screen-3.png",
+            "/assets/apps/flipboard/screen-4.png",
+            "/assets/apps/flipboard/screen-5.png",
+            "/assets/apps/flipboard/screen-6.png",
+            "/assets/apps/flipboard/screen-7.png",
+            "/assets/apps/flipboard/screen-8.png"
+          ]
+        },
+        {
+          "name": "Pocket",
+          "slug": "pocket",
+          "category": "News",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/pocket/logo.jpg",
+          "screenshots": [
+            "/assets/apps/pocket/screen-1.jpg",
+            "/assets/apps/pocket/screen-2.jpg",
+            "/assets/apps/pocket/screen-3.jpg",
+            "/assets/apps/pocket/screen-4.jpg",
+            "/assets/apps/pocket/screen-5.jpg",
+            "/assets/apps/pocket/screen-6.jpg",
+            "/assets/apps/pocket/screen-7.jpg",
+            "/assets/apps/pocket/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Reuters",
+          "slug": "reuters",
+          "category": "News",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/reuters/logo.jpg",
+          "screenshots": [
+            "/assets/apps/reuters/screen-1.jpg",
+            "/assets/apps/reuters/screen-2.jpg",
+            "/assets/apps/reuters/screen-3.jpg",
+            "/assets/apps/reuters/screen-4.jpg",
+            "/assets/apps/reuters/screen-5.jpg",
+            "/assets/apps/reuters/screen-6.jpg",
+            "/assets/apps/reuters/screen-7.jpg",
+            "/assets/apps/reuters/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Substack",
+          "slug": "substack",
+          "category": "News",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/substack/logo.jpg",
+          "screenshots": [
+            "/assets/apps/substack/screen-1.jpg",
+            "/assets/apps/substack/screen-2.jpg",
+            "/assets/apps/substack/screen-3.jpg",
+            "/assets/apps/substack/screen-4.jpg",
+            "/assets/apps/substack/screen-5.jpg",
+            "/assets/apps/substack/screen-6.jpg",
+            "/assets/apps/substack/screen-7.jpg",
+            "/assets/apps/substack/screen-8.png"
+          ]
+        },
+        {
+          "name": "The New York Times",
+          "slug": "the-new-york-times",
+          "category": "News",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/the-new-york-times/logo.jpg",
+          "screenshots": [
+            "/assets/apps/the-new-york-times/screen-1.png",
+            "/assets/apps/the-new-york-times/screen-2.png",
+            "/assets/apps/the-new-york-times/screen-3.png",
+            "/assets/apps/the-new-york-times/screen-4.png",
+            "/assets/apps/the-new-york-times/screen-5.png",
+            "/assets/apps/the-new-york-times/screen-6.png",
+            "/assets/apps/the-new-york-times/screen-7.png",
+            "/assets/apps/the-new-york-times/screen-8.png"
+          ]
+        }
+      ],
+      "coverage": {
+        "appCount": 18,
+        "screenshotCount": 139,
+        "highConfidence": 18,
+        "lowConfidenceQuarantined": 0
+      },
+      "status": "ready"
+    },
+    {
+      "flowId": "account-settings",
+      "title": "Account & Settings Flow",
+      "description": "Secure profile management, privacy controls, and account maintenance states.",
+      "objective": "Make account control clear and trustworthy.",
+      "categories": [
+        "Business",
+        "Finance",
+        "Social",
+        "Health"
+      ],
+      "steps": [
+        "Profile Overview",
+        "Personal Data Edit",
+        "Privacy Controls",
+        "Security Action",
+        "Saved Success State"
+      ],
+      "apps": [
+        {
+          "name": "Asana",
+          "slug": "asana",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 7,
+          "logo": "/assets/apps/asana/logo.jpg",
+          "screenshots": [
+            "/assets/apps/asana/screen-1.jpg",
+            "/assets/apps/asana/screen-2.jpg",
+            "/assets/apps/asana/screen-3.jpg",
+            "/assets/apps/asana/screen-4.jpg",
+            "/assets/apps/asana/screen-5.jpg",
+            "/assets/apps/asana/screen-6.jpg",
+            "/assets/apps/asana/screen-7.jpg"
+          ]
+        },
+        {
+          "name": "Linear",
+          "slug": "linear",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 6,
+          "logo": "/assets/apps/linear/logo.jpg",
+          "screenshots": [
+            "/assets/apps/linear/screen-1.png",
+            "/assets/apps/linear/screen-2.png",
+            "/assets/apps/linear/screen-3.png",
+            "/assets/apps/linear/screen-4.png",
+            "/assets/apps/linear/screen-5.png",
+            "/assets/apps/linear/screen-6.png"
+          ]
+        },
+        {
+          "name": "Loom",
+          "slug": "loom",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 7,
+          "logo": "/assets/apps/loom/logo.jpg",
+          "screenshots": [
+            "/assets/apps/loom/screen-1.jpg",
+            "/assets/apps/loom/screen-2.jpg",
+            "/assets/apps/loom/screen-3.jpg",
+            "/assets/apps/loom/screen-4.jpg",
+            "/assets/apps/loom/screen-5.jpg",
+            "/assets/apps/loom/screen-6.jpg",
+            "/assets/apps/loom/screen-7.jpg"
+          ]
+        },
+        {
+          "name": "Monday.com",
+          "slug": "monday-com",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/monday-com/logo.jpg",
+          "screenshots": [
+            "/assets/apps/monday-com/screen-1.png",
+            "/assets/apps/monday-com/screen-2.png",
+            "/assets/apps/monday-com/screen-3.png",
+            "/assets/apps/monday-com/screen-4.png",
+            "/assets/apps/monday-com/screen-5.png",
+            "/assets/apps/monday-com/screen-6.png",
+            "/assets/apps/monday-com/screen-7.png",
+            "/assets/apps/monday-com/screen-8.png"
+          ]
+        },
+        {
+          "name": "Notion",
+          "slug": "notion",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 7,
+          "logo": "/assets/apps/notion/logo.jpg",
+          "screenshots": [
+            "/assets/apps/notion/screen-1.png",
+            "/assets/apps/notion/screen-2.png",
+            "/assets/apps/notion/screen-3.png",
+            "/assets/apps/notion/screen-4.png",
+            "/assets/apps/notion/screen-5.png",
+            "/assets/apps/notion/screen-6.png",
+            "/assets/apps/notion/screen-7.png"
+          ]
+        },
+        {
+          "name": "Slack",
+          "slug": "slack",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/slack/logo.jpg",
+          "screenshots": [
+            "/assets/apps/slack/screen-1.png",
+            "/assets/apps/slack/screen-2.png",
+            "/assets/apps/slack/screen-3.png",
+            "/assets/apps/slack/screen-4.png",
+            "/assets/apps/slack/screen-5.png",
+            "/assets/apps/slack/screen-6.png",
+            "/assets/apps/slack/screen-7.png",
+            "/assets/apps/slack/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Trello",
+          "slug": "trello",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/trello/logo.jpg",
+          "screenshots": [
+            "/assets/apps/trello/screen-1.jpg",
+            "/assets/apps/trello/screen-2.jpg",
+            "/assets/apps/trello/screen-3.jpg",
+            "/assets/apps/trello/screen-4.jpg",
+            "/assets/apps/trello/screen-5.jpg",
+            "/assets/apps/trello/screen-6.jpg",
+            "/assets/apps/trello/screen-7.jpg",
+            "/assets/apps/trello/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Zoom",
+          "slug": "zoom",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/zoom/logo.jpg",
+          "screenshots": [
+            "/assets/apps/zoom/screen-1.jpg",
+            "/assets/apps/zoom/screen-2.jpg",
+            "/assets/apps/zoom/screen-3.jpg",
+            "/assets/apps/zoom/screen-4.jpg",
+            "/assets/apps/zoom/screen-5.jpg",
+            "/assets/apps/zoom/screen-6.jpg",
+            "/assets/apps/zoom/screen-7.jpg",
+            "/assets/apps/zoom/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Mint",
+          "slug": "mint",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 7,
+          "logo": "/assets/apps/mint/logo.jpg",
+          "screenshots": [
+            "/assets/apps/mint/screen-1.png",
+            "/assets/apps/mint/screen-2.png",
+            "/assets/apps/mint/screen-3.png",
+            "/assets/apps/mint/screen-4.png",
+            "/assets/apps/mint/screen-5.png",
+            "/assets/apps/mint/screen-6.png",
+            "/assets/apps/mint/screen-7.png"
+          ]
+        },
+        {
+          "name": "Monzo",
+          "slug": "monzo",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/monzo/logo.jpg",
+          "screenshots": [
+            "/assets/apps/monzo/screen-1.png",
+            "/assets/apps/monzo/screen-2.png",
+            "/assets/apps/monzo/screen-3.png",
+            "/assets/apps/monzo/screen-4.png",
+            "/assets/apps/monzo/screen-5.png",
+            "/assets/apps/monzo/screen-6.png",
+            "/assets/apps/monzo/screen-7.png",
+            "/assets/apps/monzo/screen-8.png"
+          ]
+        },
+        {
+          "name": "N26",
+          "slug": "n26",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/n26/logo.jpg",
+          "screenshots": [
+            "/assets/apps/n26/screen-1.jpg",
+            "/assets/apps/n26/screen-2.jpg",
+            "/assets/apps/n26/screen-3.jpg",
+            "/assets/apps/n26/screen-4.jpg",
+            "/assets/apps/n26/screen-5.jpg",
+            "/assets/apps/n26/screen-6.jpg",
+            "/assets/apps/n26/screen-7.jpg",
+            "/assets/apps/n26/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "PayPal",
+          "slug": "paypal",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/paypal/logo.jpg",
+          "screenshots": [
+            "/assets/apps/paypal/screen-1.jpg",
+            "/assets/apps/paypal/screen-2.jpg",
+            "/assets/apps/paypal/screen-3.jpg",
+            "/assets/apps/paypal/screen-4.jpg",
+            "/assets/apps/paypal/screen-5.jpg",
+            "/assets/apps/paypal/screen-6.jpg",
+            "/assets/apps/paypal/screen-7.jpg",
+            "/assets/apps/paypal/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Revolut",
+          "slug": "revolut",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/revolut/logo.jpg",
+          "screenshots": [
+            "/assets/apps/revolut/screen-1.jpg",
+            "/assets/apps/revolut/screen-2.jpg",
+            "/assets/apps/revolut/screen-3.jpg",
+            "/assets/apps/revolut/screen-4.jpg",
+            "/assets/apps/revolut/screen-5.jpg",
+            "/assets/apps/revolut/screen-6.jpg",
+            "/assets/apps/revolut/screen-7.jpg",
+            "/assets/apps/revolut/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Robinhood",
+          "slug": "robinhood",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/robinhood/logo.jpg",
+          "screenshots": [
+            "/assets/apps/robinhood/screen-1.png",
+            "/assets/apps/robinhood/screen-2.png",
+            "/assets/apps/robinhood/screen-3.png",
+            "/assets/apps/robinhood/screen-4.png",
+            "/assets/apps/robinhood/screen-5.png",
+            "/assets/apps/robinhood/screen-6.png",
+            "/assets/apps/robinhood/screen-7.png",
+            "/assets/apps/robinhood/screen-8.png"
+          ]
+        },
+        {
+          "name": "Wallet",
+          "slug": "wallet",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/wallet/logo.jpg",
+          "screenshots": [
+            "/assets/apps/wallet/screen-1.jpg",
+            "/assets/apps/wallet/screen-2.jpg",
+            "/assets/apps/wallet/screen-3.jpg",
+            "/assets/apps/wallet/screen-4.jpg",
+            "/assets/apps/wallet/screen-5.jpg",
+            "/assets/apps/wallet/screen-6.jpg",
+            "/assets/apps/wallet/screen-7.jpg",
+            "/assets/apps/wallet/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Wealthfront",
+          "slug": "wealthfront",
+          "category": "Finance",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/wealthfront/logo.jpg",
+          "screenshots": [
+            "/assets/apps/wealthfront/screen-1.png",
+            "/assets/apps/wealthfront/screen-2.png",
+            "/assets/apps/wealthfront/screen-3.png",
+            "/assets/apps/wealthfront/screen-4.png",
+            "/assets/apps/wealthfront/screen-5.png",
+            "/assets/apps/wealthfront/screen-6.png",
+            "/assets/apps/wealthfront/screen-7.png",
+            "/assets/apps/wealthfront/screen-8.png"
+          ]
+        },
+        {
+          "name": "BeReal",
+          "slug": "bereal",
+          "category": "Social",
+          "confidence": "high",
+          "screenshotCount": 6,
+          "logo": "/assets/apps/bereal/logo.jpg",
+          "screenshots": [
+            "/assets/apps/bereal/screen-1.jpg",
+            "/assets/apps/bereal/screen-2.jpg",
+            "/assets/apps/bereal/screen-3.jpg",
+            "/assets/apps/bereal/screen-4.jpg",
+            "/assets/apps/bereal/screen-5.jpg",
+            "/assets/apps/bereal/screen-6.jpg"
+          ]
+        },
+        {
+          "name": "Instagram",
+          "slug": "instagram",
+          "category": "Social",
+          "confidence": "high",
+          "screenshotCount": 7,
+          "logo": "/assets/apps/instagram/logo.jpg",
+          "screenshots": [
+            "/assets/apps/instagram/screen-1.jpg",
+            "/assets/apps/instagram/screen-2.jpg",
+            "/assets/apps/instagram/screen-3.jpg",
+            "/assets/apps/instagram/screen-4.jpg",
+            "/assets/apps/instagram/screen-5.jpg",
+            "/assets/apps/instagram/screen-6.jpg",
+            "/assets/apps/instagram/screen-7.jpg"
+          ]
+        },
+        {
+          "name": "LinkedIn",
+          "slug": "linkedin",
+          "category": "Social",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/linkedin/logo.jpg",
+          "screenshots": [
+            "/assets/apps/linkedin/screen-1.png",
+            "/assets/apps/linkedin/screen-2.png",
+            "/assets/apps/linkedin/screen-3.png",
+            "/assets/apps/linkedin/screen-4.png",
+            "/assets/apps/linkedin/screen-5.png",
+            "/assets/apps/linkedin/screen-6.png",
+            "/assets/apps/linkedin/screen-7.png",
+            "/assets/apps/linkedin/screen-8.png"
+          ]
+        },
+        {
+          "name": "Snapchat",
+          "slug": "snapchat",
+          "category": "Social",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/snapchat/logo.jpg",
+          "screenshots": [
+            "/assets/apps/snapchat/screen-1.jpg",
+            "/assets/apps/snapchat/screen-2.jpg",
+            "/assets/apps/snapchat/screen-3.jpg",
+            "/assets/apps/snapchat/screen-4.jpg",
+            "/assets/apps/snapchat/screen-5.jpg",
+            "/assets/apps/snapchat/screen-6.jpg",
+            "/assets/apps/snapchat/screen-7.jpg",
+            "/assets/apps/snapchat/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Threads",
+          "slug": "threads",
+          "category": "Social",
+          "confidence": "high",
+          "screenshotCount": 6,
+          "logo": "/assets/apps/threads/logo.jpg",
+          "screenshots": [
+            "/assets/apps/threads/screen-1.jpg",
+            "/assets/apps/threads/screen-2.jpg",
+            "/assets/apps/threads/screen-3.jpg",
+            "/assets/apps/threads/screen-4.jpg",
+            "/assets/apps/threads/screen-5.jpg",
+            "/assets/apps/threads/screen-6.jpg"
+          ]
+        },
+        {
+          "name": "TikTok",
+          "slug": "tiktok",
+          "category": "Social",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/tiktok/logo.jpg",
+          "screenshots": [
+            "/assets/apps/tiktok/screen-1.png",
+            "/assets/apps/tiktok/screen-2.png",
+            "/assets/apps/tiktok/screen-3.png",
+            "/assets/apps/tiktok/screen-4.png",
+            "/assets/apps/tiktok/screen-5.png",
+            "/assets/apps/tiktok/screen-6.png",
+            "/assets/apps/tiktok/screen-7.png",
+            "/assets/apps/tiktok/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Calm",
+          "slug": "calm",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/calm/logo.jpg",
+          "screenshots": [
+            "/assets/apps/calm/screen-1.png",
+            "/assets/apps/calm/screen-2.png",
+            "/assets/apps/calm/screen-3.png",
+            "/assets/apps/calm/screen-4.png",
+            "/assets/apps/calm/screen-5.png",
+            "/assets/apps/calm/screen-6.png",
+            "/assets/apps/calm/screen-7.png",
+            "/assets/apps/calm/screen-8.png"
+          ]
+        },
+        {
+          "name": "Fitbit",
+          "slug": "fitbit",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 6,
+          "logo": "/assets/apps/fitbit/logo.jpg",
+          "screenshots": [
+            "/assets/apps/fitbit/screen-1.jpg",
+            "/assets/apps/fitbit/screen-2.jpg",
+            "/assets/apps/fitbit/screen-3.jpg",
+            "/assets/apps/fitbit/screen-4.jpg",
+            "/assets/apps/fitbit/screen-5.jpg",
+            "/assets/apps/fitbit/screen-6.jpg"
+          ]
+        },
+        {
+          "name": "Flo",
+          "slug": "flo",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/flo/logo.jpg",
+          "screenshots": [
+            "/assets/apps/flo/screen-1.jpg",
+            "/assets/apps/flo/screen-2.jpg",
+            "/assets/apps/flo/screen-3.jpg",
+            "/assets/apps/flo/screen-4.jpg",
+            "/assets/apps/flo/screen-5.jpg",
+            "/assets/apps/flo/screen-6.jpg",
+            "/assets/apps/flo/screen-7.jpg",
+            "/assets/apps/flo/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Headspace",
+          "slug": "headspace",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/headspace/logo.jpg",
+          "screenshots": [
+            "/assets/apps/headspace/screen-1.png",
+            "/assets/apps/headspace/screen-2.png",
+            "/assets/apps/headspace/screen-3.png",
+            "/assets/apps/headspace/screen-4.png",
+            "/assets/apps/headspace/screen-5.png",
+            "/assets/apps/headspace/screen-6.png",
+            "/assets/apps/headspace/screen-7.png",
+            "/assets/apps/headspace/screen-8.png"
+          ]
+        },
+        {
+          "name": "MyFitnessPal",
+          "slug": "myfitnesspal",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/myfitnesspal/logo.jpg",
+          "screenshots": [
+            "/assets/apps/myfitnesspal/screen-1.jpg",
+            "/assets/apps/myfitnesspal/screen-2.jpg",
+            "/assets/apps/myfitnesspal/screen-3.jpg",
+            "/assets/apps/myfitnesspal/screen-4.jpg",
+            "/assets/apps/myfitnesspal/screen-5.jpg",
+            "/assets/apps/myfitnesspal/screen-6.jpg",
+            "/assets/apps/myfitnesspal/screen-7.jpg",
+            "/assets/apps/myfitnesspal/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Nike Run Club",
+          "slug": "nike-run-club",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/nike-run-club/logo.jpg",
+          "screenshots": [
+            "/assets/apps/nike-run-club/screen-1.png",
+            "/assets/apps/nike-run-club/screen-2.png",
+            "/assets/apps/nike-run-club/screen-3.png",
+            "/assets/apps/nike-run-club/screen-4.png",
+            "/assets/apps/nike-run-club/screen-5.png",
+            "/assets/apps/nike-run-club/screen-6.png",
+            "/assets/apps/nike-run-club/screen-7.png",
+            "/assets/apps/nike-run-club/screen-8.png"
+          ]
+        },
+        {
+          "name": "Sleep Cycle",
+          "slug": "sleep-cycle",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/sleep-cycle/logo.jpg",
+          "screenshots": [
+            "/assets/apps/sleep-cycle/screen-1.jpg",
+            "/assets/apps/sleep-cycle/screen-2.jpg",
+            "/assets/apps/sleep-cycle/screen-3.jpg",
+            "/assets/apps/sleep-cycle/screen-4.jpg",
+            "/assets/apps/sleep-cycle/screen-5.jpg",
+            "/assets/apps/sleep-cycle/screen-6.jpg",
+            "/assets/apps/sleep-cycle/screen-7.jpg",
+            "/assets/apps/sleep-cycle/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Strava",
+          "slug": "strava",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/strava/logo.jpg",
+          "screenshots": [
+            "/assets/apps/strava/screen-1.jpg",
+            "/assets/apps/strava/screen-2.jpg",
+            "/assets/apps/strava/screen-3.jpg",
+            "/assets/apps/strava/screen-4.jpg",
+            "/assets/apps/strava/screen-5.jpg",
+            "/assets/apps/strava/screen-6.jpg",
+            "/assets/apps/strava/screen-7.jpg",
+            "/assets/apps/strava/screen-8.jpg"
+          ]
+        }
+      ],
+      "coverage": {
+        "appCount": 30,
+        "screenshotCount": 227,
+        "highConfidence": 30,
+        "lowConfidenceQuarantined": 0
+      },
+      "status": "ready"
+    },
+    {
+      "flowId": "subscription-upgrade",
+      "title": "Subscription Upgrade Flow",
+      "description": "Monetization journey from plan discovery to successful upgrade completion.",
+      "objective": "Increase plan upgrade conversion with transparent value framing.",
+      "categories": [
+        "Business",
+        "Music",
+        "Education",
+        "Health"
+      ],
+      "steps": [
+        "Plan Comparison",
+        "Feature Value Reinforcement",
+        "Billing Selection",
+        "Payment & Confirmation",
+        "Post-Upgrade State"
+      ],
+      "apps": [
+        {
+          "name": "Asana",
+          "slug": "asana",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 7,
+          "logo": "/assets/apps/asana/logo.jpg",
+          "screenshots": [
+            "/assets/apps/asana/screen-1.jpg",
+            "/assets/apps/asana/screen-2.jpg",
+            "/assets/apps/asana/screen-3.jpg",
+            "/assets/apps/asana/screen-4.jpg",
+            "/assets/apps/asana/screen-5.jpg",
+            "/assets/apps/asana/screen-6.jpg",
+            "/assets/apps/asana/screen-7.jpg"
+          ]
+        },
+        {
+          "name": "Linear",
+          "slug": "linear",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 6,
+          "logo": "/assets/apps/linear/logo.jpg",
+          "screenshots": [
+            "/assets/apps/linear/screen-1.png",
+            "/assets/apps/linear/screen-2.png",
+            "/assets/apps/linear/screen-3.png",
+            "/assets/apps/linear/screen-4.png",
+            "/assets/apps/linear/screen-5.png",
+            "/assets/apps/linear/screen-6.png"
+          ]
+        },
+        {
+          "name": "Loom",
+          "slug": "loom",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 7,
+          "logo": "/assets/apps/loom/logo.jpg",
+          "screenshots": [
+            "/assets/apps/loom/screen-1.jpg",
+            "/assets/apps/loom/screen-2.jpg",
+            "/assets/apps/loom/screen-3.jpg",
+            "/assets/apps/loom/screen-4.jpg",
+            "/assets/apps/loom/screen-5.jpg",
+            "/assets/apps/loom/screen-6.jpg",
+            "/assets/apps/loom/screen-7.jpg"
+          ]
+        },
+        {
+          "name": "Monday.com",
+          "slug": "monday-com",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/monday-com/logo.jpg",
+          "screenshots": [
+            "/assets/apps/monday-com/screen-1.png",
+            "/assets/apps/monday-com/screen-2.png",
+            "/assets/apps/monday-com/screen-3.png",
+            "/assets/apps/monday-com/screen-4.png",
+            "/assets/apps/monday-com/screen-5.png",
+            "/assets/apps/monday-com/screen-6.png",
+            "/assets/apps/monday-com/screen-7.png",
+            "/assets/apps/monday-com/screen-8.png"
+          ]
+        },
+        {
+          "name": "Notion",
+          "slug": "notion",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 7,
+          "logo": "/assets/apps/notion/logo.jpg",
+          "screenshots": [
+            "/assets/apps/notion/screen-1.png",
+            "/assets/apps/notion/screen-2.png",
+            "/assets/apps/notion/screen-3.png",
+            "/assets/apps/notion/screen-4.png",
+            "/assets/apps/notion/screen-5.png",
+            "/assets/apps/notion/screen-6.png",
+            "/assets/apps/notion/screen-7.png"
+          ]
+        },
+        {
+          "name": "Slack",
+          "slug": "slack",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/slack/logo.jpg",
+          "screenshots": [
+            "/assets/apps/slack/screen-1.png",
+            "/assets/apps/slack/screen-2.png",
+            "/assets/apps/slack/screen-3.png",
+            "/assets/apps/slack/screen-4.png",
+            "/assets/apps/slack/screen-5.png",
+            "/assets/apps/slack/screen-6.png",
+            "/assets/apps/slack/screen-7.png",
+            "/assets/apps/slack/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Trello",
+          "slug": "trello",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/trello/logo.jpg",
+          "screenshots": [
+            "/assets/apps/trello/screen-1.jpg",
+            "/assets/apps/trello/screen-2.jpg",
+            "/assets/apps/trello/screen-3.jpg",
+            "/assets/apps/trello/screen-4.jpg",
+            "/assets/apps/trello/screen-5.jpg",
+            "/assets/apps/trello/screen-6.jpg",
+            "/assets/apps/trello/screen-7.jpg",
+            "/assets/apps/trello/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Zoom",
+          "slug": "zoom",
+          "category": "Business",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/zoom/logo.jpg",
+          "screenshots": [
+            "/assets/apps/zoom/screen-1.jpg",
+            "/assets/apps/zoom/screen-2.jpg",
+            "/assets/apps/zoom/screen-3.jpg",
+            "/assets/apps/zoom/screen-4.jpg",
+            "/assets/apps/zoom/screen-5.jpg",
+            "/assets/apps/zoom/screen-6.jpg",
+            "/assets/apps/zoom/screen-7.jpg",
+            "/assets/apps/zoom/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Apple Music",
+          "slug": "apple-music",
+          "category": "Music",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/apple-music/logo.jpg",
+          "screenshots": [
+            "/assets/apps/apple-music/screen-1.png",
+            "/assets/apps/apple-music/screen-2.png",
+            "/assets/apps/apple-music/screen-3.png",
+            "/assets/apps/apple-music/screen-4.png",
+            "/assets/apps/apple-music/screen-5.png",
+            "/assets/apps/apple-music/screen-6.png",
+            "/assets/apps/apple-music/screen-7.png",
+            "/assets/apps/apple-music/screen-8.png"
+          ]
+        },
+        {
+          "name": "Deezer",
+          "slug": "deezer",
+          "category": "Music",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/deezer/logo.jpg",
+          "screenshots": [
+            "/assets/apps/deezer/screen-1.jpg",
+            "/assets/apps/deezer/screen-2.jpg",
+            "/assets/apps/deezer/screen-3.jpg",
+            "/assets/apps/deezer/screen-4.jpg",
+            "/assets/apps/deezer/screen-5.jpg",
+            "/assets/apps/deezer/screen-6.jpg",
+            "/assets/apps/deezer/screen-7.jpg",
+            "/assets/apps/deezer/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Pandora",
+          "slug": "pandora",
+          "category": "Music",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/pandora/logo.jpg",
+          "screenshots": [
+            "/assets/apps/pandora/screen-1.jpg",
+            "/assets/apps/pandora/screen-2.jpg",
+            "/assets/apps/pandora/screen-3.jpg",
+            "/assets/apps/pandora/screen-4.jpg",
+            "/assets/apps/pandora/screen-5.jpg",
+            "/assets/apps/pandora/screen-6.jpg",
+            "/assets/apps/pandora/screen-7.jpg",
+            "/assets/apps/pandora/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Shazam",
+          "slug": "shazam",
+          "category": "Music",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/shazam/logo.jpg",
+          "screenshots": [
+            "/assets/apps/shazam/screen-1.png",
+            "/assets/apps/shazam/screen-2.png",
+            "/assets/apps/shazam/screen-3.png",
+            "/assets/apps/shazam/screen-4.png",
+            "/assets/apps/shazam/screen-5.png",
+            "/assets/apps/shazam/screen-6.png",
+            "/assets/apps/shazam/screen-7.png",
+            "/assets/apps/shazam/screen-8.png"
+          ]
+        },
+        {
+          "name": "SoundCloud",
+          "slug": "soundcloud",
+          "category": "Music",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/soundcloud/logo.jpg",
+          "screenshots": [
+            "/assets/apps/soundcloud/screen-1.png",
+            "/assets/apps/soundcloud/screen-2.png",
+            "/assets/apps/soundcloud/screen-3.png",
+            "/assets/apps/soundcloud/screen-4.png",
+            "/assets/apps/soundcloud/screen-5.png",
+            "/assets/apps/soundcloud/screen-6.png",
+            "/assets/apps/soundcloud/screen-7.png",
+            "/assets/apps/soundcloud/screen-8.png"
+          ]
+        },
+        {
+          "name": "Spotify",
+          "slug": "spotify",
+          "category": "Music",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/spotify/logo.jpg",
+          "screenshots": [
+            "/assets/apps/spotify/screen-1.png",
+            "/assets/apps/spotify/screen-2.png",
+            "/assets/apps/spotify/screen-3.png",
+            "/assets/apps/spotify/screen-4.png",
+            "/assets/apps/spotify/screen-5.png",
+            "/assets/apps/spotify/screen-6.png",
+            "/assets/apps/spotify/screen-7.png",
+            "/assets/apps/spotify/screen-8.png"
+          ]
+        },
+        {
+          "name": "Babbel",
+          "slug": "babbel",
+          "category": "Education",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/babbel/logo.jpg",
+          "screenshots": [
+            "/assets/apps/babbel/screen-1.jpg",
+            "/assets/apps/babbel/screen-2.jpg",
+            "/assets/apps/babbel/screen-3.jpg",
+            "/assets/apps/babbel/screen-4.jpg",
+            "/assets/apps/babbel/screen-5.jpg",
+            "/assets/apps/babbel/screen-6.jpg",
+            "/assets/apps/babbel/screen-7.jpg",
+            "/assets/apps/babbel/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Duolingo",
+          "slug": "duolingo",
+          "category": "Education",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/duolingo/logo.jpg",
+          "screenshots": [
+            "/assets/apps/duolingo/screen-1.jpg",
+            "/assets/apps/duolingo/screen-2.jpg",
+            "/assets/apps/duolingo/screen-3.jpg",
+            "/assets/apps/duolingo/screen-4.jpg",
+            "/assets/apps/duolingo/screen-5.jpg",
+            "/assets/apps/duolingo/screen-6.jpg",
+            "/assets/apps/duolingo/screen-7.jpg",
+            "/assets/apps/duolingo/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Khan Academy",
+          "slug": "khan-academy",
+          "category": "Education",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/khan-academy/logo.jpg",
+          "screenshots": [
+            "/assets/apps/khan-academy/screen-1.png",
+            "/assets/apps/khan-academy/screen-2.png",
+            "/assets/apps/khan-academy/screen-3.png",
+            "/assets/apps/khan-academy/screen-4.png",
+            "/assets/apps/khan-academy/screen-5.png",
+            "/assets/apps/khan-academy/screen-6.png",
+            "/assets/apps/khan-academy/screen-7.png",
+            "/assets/apps/khan-academy/screen-8.png"
+          ]
+        },
+        {
+          "name": "MasterClass",
+          "slug": "masterclass",
+          "category": "Education",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/masterclass/logo.jpg",
+          "screenshots": [
+            "/assets/apps/masterclass/screen-1.png",
+            "/assets/apps/masterclass/screen-2.png",
+            "/assets/apps/masterclass/screen-3.png",
+            "/assets/apps/masterclass/screen-4.png",
+            "/assets/apps/masterclass/screen-5.png",
+            "/assets/apps/masterclass/screen-6.png",
+            "/assets/apps/masterclass/screen-7.png",
+            "/assets/apps/masterclass/screen-8.png"
+          ]
+        },
+        {
+          "name": "Skillshare",
+          "slug": "skillshare",
+          "category": "Education",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/skillshare/logo.jpg",
+          "screenshots": [
+            "/assets/apps/skillshare/screen-1.png",
+            "/assets/apps/skillshare/screen-2.png",
+            "/assets/apps/skillshare/screen-3.png",
+            "/assets/apps/skillshare/screen-4.png",
+            "/assets/apps/skillshare/screen-5.png",
+            "/assets/apps/skillshare/screen-6.png",
+            "/assets/apps/skillshare/screen-7.png",
+            "/assets/apps/skillshare/screen-8.png"
+          ]
+        },
+        {
+          "name": "Udemy",
+          "slug": "udemy",
+          "category": "Education",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/udemy/logo.jpg",
+          "screenshots": [
+            "/assets/apps/udemy/screen-1.jpg",
+            "/assets/apps/udemy/screen-2.jpg",
+            "/assets/apps/udemy/screen-3.jpg",
+            "/assets/apps/udemy/screen-4.jpg",
+            "/assets/apps/udemy/screen-5.jpg",
+            "/assets/apps/udemy/screen-6.jpg",
+            "/assets/apps/udemy/screen-7.jpg",
+            "/assets/apps/udemy/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Calm",
+          "slug": "calm",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/calm/logo.jpg",
+          "screenshots": [
+            "/assets/apps/calm/screen-1.png",
+            "/assets/apps/calm/screen-2.png",
+            "/assets/apps/calm/screen-3.png",
+            "/assets/apps/calm/screen-4.png",
+            "/assets/apps/calm/screen-5.png",
+            "/assets/apps/calm/screen-6.png",
+            "/assets/apps/calm/screen-7.png",
+            "/assets/apps/calm/screen-8.png"
+          ]
+        },
+        {
+          "name": "Fitbit",
+          "slug": "fitbit",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 6,
+          "logo": "/assets/apps/fitbit/logo.jpg",
+          "screenshots": [
+            "/assets/apps/fitbit/screen-1.jpg",
+            "/assets/apps/fitbit/screen-2.jpg",
+            "/assets/apps/fitbit/screen-3.jpg",
+            "/assets/apps/fitbit/screen-4.jpg",
+            "/assets/apps/fitbit/screen-5.jpg",
+            "/assets/apps/fitbit/screen-6.jpg"
+          ]
+        },
+        {
+          "name": "Flo",
+          "slug": "flo",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/flo/logo.jpg",
+          "screenshots": [
+            "/assets/apps/flo/screen-1.jpg",
+            "/assets/apps/flo/screen-2.jpg",
+            "/assets/apps/flo/screen-3.jpg",
+            "/assets/apps/flo/screen-4.jpg",
+            "/assets/apps/flo/screen-5.jpg",
+            "/assets/apps/flo/screen-6.jpg",
+            "/assets/apps/flo/screen-7.jpg",
+            "/assets/apps/flo/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Headspace",
+          "slug": "headspace",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/headspace/logo.jpg",
+          "screenshots": [
+            "/assets/apps/headspace/screen-1.png",
+            "/assets/apps/headspace/screen-2.png",
+            "/assets/apps/headspace/screen-3.png",
+            "/assets/apps/headspace/screen-4.png",
+            "/assets/apps/headspace/screen-5.png",
+            "/assets/apps/headspace/screen-6.png",
+            "/assets/apps/headspace/screen-7.png",
+            "/assets/apps/headspace/screen-8.png"
+          ]
+        },
+        {
+          "name": "MyFitnessPal",
+          "slug": "myfitnesspal",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/myfitnesspal/logo.jpg",
+          "screenshots": [
+            "/assets/apps/myfitnesspal/screen-1.jpg",
+            "/assets/apps/myfitnesspal/screen-2.jpg",
+            "/assets/apps/myfitnesspal/screen-3.jpg",
+            "/assets/apps/myfitnesspal/screen-4.jpg",
+            "/assets/apps/myfitnesspal/screen-5.jpg",
+            "/assets/apps/myfitnesspal/screen-6.jpg",
+            "/assets/apps/myfitnesspal/screen-7.jpg",
+            "/assets/apps/myfitnesspal/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Nike Run Club",
+          "slug": "nike-run-club",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/nike-run-club/logo.jpg",
+          "screenshots": [
+            "/assets/apps/nike-run-club/screen-1.png",
+            "/assets/apps/nike-run-club/screen-2.png",
+            "/assets/apps/nike-run-club/screen-3.png",
+            "/assets/apps/nike-run-club/screen-4.png",
+            "/assets/apps/nike-run-club/screen-5.png",
+            "/assets/apps/nike-run-club/screen-6.png",
+            "/assets/apps/nike-run-club/screen-7.png",
+            "/assets/apps/nike-run-club/screen-8.png"
+          ]
+        },
+        {
+          "name": "Sleep Cycle",
+          "slug": "sleep-cycle",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/sleep-cycle/logo.jpg",
+          "screenshots": [
+            "/assets/apps/sleep-cycle/screen-1.jpg",
+            "/assets/apps/sleep-cycle/screen-2.jpg",
+            "/assets/apps/sleep-cycle/screen-3.jpg",
+            "/assets/apps/sleep-cycle/screen-4.jpg",
+            "/assets/apps/sleep-cycle/screen-5.jpg",
+            "/assets/apps/sleep-cycle/screen-6.jpg",
+            "/assets/apps/sleep-cycle/screen-7.jpg",
+            "/assets/apps/sleep-cycle/screen-8.jpg"
+          ]
+        },
+        {
+          "name": "Strava",
+          "slug": "strava",
+          "category": "Health",
+          "confidence": "high",
+          "screenshotCount": 8,
+          "logo": "/assets/apps/strava/logo.jpg",
+          "screenshots": [
+            "/assets/apps/strava/screen-1.jpg",
+            "/assets/apps/strava/screen-2.jpg",
+            "/assets/apps/strava/screen-3.jpg",
+            "/assets/apps/strava/screen-4.jpg",
+            "/assets/apps/strava/screen-5.jpg",
+            "/assets/apps/strava/screen-6.jpg",
+            "/assets/apps/strava/screen-7.jpg",
+            "/assets/apps/strava/screen-8.jpg"
+          ]
+        }
+      ],
+      "coverage": {
+        "appCount": 28,
+        "screenshotCount": 217,
+        "highConfidence": 28,
+        "lowConfidenceQuarantined": 0
+      },
+      "status": "ready"
+    }
+  ]
+}

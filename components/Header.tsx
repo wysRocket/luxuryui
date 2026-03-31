@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Search, Bell, Sparkles, Sun, Moon, X, ArrowLeft, TrendingUp, Zap, Clock } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { MOCK_APPS, FILTER_TAGS } from '../constants';
+import { useAppSession } from '../contexts/AppSessionContext';
 
 interface HeaderProps {
   onOpenAssistant: () => void;
@@ -19,6 +20,8 @@ const Header: React.FC<HeaderProps> = ({
   searchQuery,
   onSearchChange
 }) => {
+  const navigate = useNavigate();
+  const { isAuthenticated, user, wallet, signOut } = useAppSession();
   const [isMobileSearchOpen, setIsMobileSearchOpen] = useState(false);
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   const searchRef = useRef<HTMLDivElement>(null);
@@ -193,7 +196,7 @@ const Header: React.FC<HeaderProps> = ({
               className="hidden md:flex items-center gap-2.5 px-5 py-2.5 bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600 text-white rounded-full text-[11px] font-black shadow-lg shadow-blue-500/10 hover:shadow-blue-500/30 transition-all hover:scale-[1.03] active:scale-95 tracking-widest uppercase"
           >
               <Sparkles size={16} />
-              AI Studio
+              Kit Concierge
           </button>
             
           <button className="p-2.5 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors relative">
@@ -202,11 +205,37 @@ const Header: React.FC<HeaderProps> = ({
           </button>
           
           <div className="w-px h-8 bg-gray-200 dark:bg-gray-800 mx-1 hidden sm:block"></div>
-          
-          <Link to="/login" className="hidden sm:block text-[15px] font-bold text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white px-3 transition-colors">Log in</Link>
-          <Link to="/signup" className="hidden sm:block px-6 py-3 bg-black dark:bg-white text-white dark:text-black text-[15px] font-black rounded-full hover:bg-gray-800 dark:hover:bg-gray-100 transition-all active:scale-95 shadow-xl shadow-black/10 dark:shadow-white/5 tracking-tight">
-            Sign Up
-          </Link>
+
+          {isAuthenticated ? (
+            <>
+              <Link
+                to="/account"
+                className="hidden lg:flex items-center gap-2 rounded-full border border-gray-200 dark:border-gray-700 px-4 py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200"
+              >
+                <span>{wallet?.balance ?? 0} credits</span>
+              </Link>
+              <Link to="/account" className="hidden sm:block text-[15px] font-bold text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white px-3 transition-colors">
+                {user?.displayName ?? 'Account'}
+              </Link>
+              <button
+                type="button"
+                onClick={async () => {
+                  await signOut();
+                  navigate('/');
+                }}
+                className="hidden sm:block px-6 py-3 bg-black dark:bg-white text-white dark:text-black text-[15px] font-black rounded-full hover:bg-gray-800 dark:hover:bg-gray-100 transition-all active:scale-95 shadow-xl shadow-black/10 dark:shadow-white/5 tracking-tight"
+              >
+                Sign out
+              </button>
+            </>
+          ) : (
+            <>
+              <Link to="/login" className="hidden sm:block text-[15px] font-bold text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white px-3 transition-colors">Log in</Link>
+              <Link to="/signup" className="hidden sm:block px-6 py-3 bg-black dark:bg-white text-white dark:text-black text-[15px] font-black rounded-full hover:bg-gray-800 dark:hover:bg-gray-100 transition-all active:scale-95 shadow-xl shadow-black/10 dark:shadow-white/5 tracking-tight">
+                Sign Up
+              </Link>
+            </>
+          )}
         </div>
       </div>
 

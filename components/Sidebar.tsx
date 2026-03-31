@@ -2,9 +2,11 @@ import React from 'react';
 import { Monitor, Smartphone } from 'lucide-react';
 import { Link, NavLink } from 'react-router-dom';
 import { NAV_ITEMS } from '../constants';
+import { useAppSession } from '../contexts/AppSessionContext';
 import { NavItem } from '../types';
 
 const Sidebar: React.FC = () => {
+  const { isAuthenticated, wallet } = useAppSession();
   const libraryLinkClassName = ({ isActive }: { isActive: boolean }) =>
     `flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
       isActive
@@ -66,10 +68,12 @@ const Sidebar: React.FC = () => {
       {/* Footer / CTA */}
       <div className="p-4 border-t border-gray-100 dark:border-gray-900">
         <div className="bg-gray-900 dark:bg-gray-800 rounded-xl p-4 text-white">
-          <p className="text-sm font-semibold mb-1">Get full access</p>
-          <p className="text-xs text-gray-400 dark:text-gray-500 mb-3">Unlock all features and patterns.</p>
-          <Link to="/pricing" className="block w-full py-2 text-center bg-white dark:bg-white text-black text-xs font-bold rounded-lg hover:bg-gray-100 transition-colors">
-            Upgrade to Pro
+          <p className="text-sm font-semibold mb-1">{isAuthenticated ? `${wallet?.balance ?? 0} credits available` : 'Top up credits'}</p>
+          <p className="text-xs text-gray-400 dark:text-gray-500 mb-3">
+            {isAuthenticated ? 'Open your account to manage unlocked kits and wallet activity.' : 'Keep credits ready for transformed Figma kits.'}
+          </p>
+          <Link to={isAuthenticated ? '/account' : '/pricing'} className="block w-full py-2 text-center bg-white dark:bg-white text-black text-xs font-bold rounded-lg hover:bg-gray-100 transition-colors">
+            {isAuthenticated ? 'Open account' : 'Open credits'}
           </Link>
         </div>
       </div>

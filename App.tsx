@@ -2,19 +2,27 @@ import React, { Suspense, lazy, useEffect, useMemo, useState } from 'react';
 import { Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import ProtectedRoute from './components/ProtectedRoute';
 import Sidebar from './components/Sidebar';
 import { MOCK_APPS } from './constants';
 
 const DesignAssistant = lazy(() => import('./components/DesignAssistant'));
 const BrowsePage = lazy(() => import('./pages/BrowsePage'));
+const AccountPage = lazy(() => import('./pages/AccountPage'));
 const CollectionPage = lazy(() => import('./pages/CollectionPage'));
 const ContentPage = lazy(() => import('./pages/ContentPage'));
+const CreditsPage = lazy(() => import('./pages/CreditsPage'));
 const DesignSystemsPage = lazy(() => import('./pages/DesignSystemsPage'));
 const DictionaryPage = lazy(() => import('./pages/DictionaryPage'));
+const FigmaKitDetailPage = lazy(() => import('./pages/FigmaKitDetailPage'));
+const FigmaKitsPage = lazy(() => import('./pages/FigmaKitsPage'));
+const KitDeliveryPage = lazy(() => import('./pages/KitDeliveryPage'));
+const LoginPage = lazy(() => import('./pages/LoginPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 const AppScreensPage = lazy(() => import('./pages/AppScreensPage'));
 const FlowsPage = lazy(() => import('./pages/FlowsPage'));
 const FlowDetailPage = lazy(() => import('./pages/FlowDetailPage'));
+const SignupPage = lazy(() => import('./pages/SignupPage'));
 
 interface ContentPageConfig {
   path: string;
@@ -49,32 +57,32 @@ const CONTENT_PAGES: ContentPageConfig[] = [
     path: '/documentation',
     eyebrow: 'Docs',
     title: 'Product Documentation',
-    description: 'Everything needed to integrate LuxuryUI into your design workflow, from searching references to team collaboration.',
+    description: 'Everything needed to move from reference browsing to editable Figma delivery, including catalog rules, kit packaging, and team workflows.',
     sections: [
-      { title: 'Getting Started', description: 'Quick setup for teams and individual designers, including workspace and saved collections.' },
-      { title: 'Search & Filters', description: 'Advanced query examples for platform, category, and flow-specific discoveries.' },
-      { title: 'Collaboration', description: 'Guidance for comments, curation, and sharing references with product squads.' },
-      { title: 'Integrations', description: 'How to connect workflows with Figma and internal documentation systems.' },
+      { title: 'Reference Workflow', description: 'How to search apps, flows, and pattern families before deciding what deserves a sellable kit.' },
+      { title: 'Kit Packaging', description: 'Standards for Figma-ready files, naming rules, cover pages, token systems, and delivery manifests.' },
+      { title: 'Commercial Review', description: 'Guidance for originality, transformation, and readiness checks before a kit can be listed for sale.' },
+      { title: 'Workflow Handoffs', description: 'How research, design, and publishing roles hand off work from source curation to storefront launch.' },
     ],
-    primaryCtaLabel: 'Open Figma Plugin',
-    primaryCtaPath: '/figma-plugin',
+    primaryCtaLabel: 'Browse Figma Kits',
+    primaryCtaPath: '/kits',
     secondaryCtaLabel: 'Contact Support',
     secondaryCtaPath: '/contact',
   },
   {
     path: '/figma-plugin',
     eyebrow: 'Integrations',
-    title: 'Figma Plugin',
-    description: 'Copy references directly into Figma and annotate them for your next product iteration.',
+    title: 'Figma Kit Delivery',
+    description: 'Turn curated references into original, editable Figma flow kits with packaging, license metadata, and commercial-ready file structure.',
     sections: [
-      { title: 'One-Click Import', description: 'Send selected references into a Figma board with metadata preserved.' },
-      { title: 'Contextual Notes', description: 'Attach rationale and comments so future edits keep product intent intact.' },
-      { title: 'Flow Grouping', description: 'Import grouped screens to compare multi-step journeys side by side.' },
-      { title: 'Team Ready', description: 'Share imported references across product squads without rebuilding boards manually.' },
+      { title: 'Transformed Kits', description: 'Ship original Figma files inspired by strong reference sets, without selling screenshots as the product.' },
+      { title: 'Component Pages', description: 'Bundle reusable sections, token styles, and notes so each kit works like a proper file handoff.' },
+      { title: 'Delivery Manifests', description: 'Track what is included, how it is organized, and how commercial-use terms are attached to the file.' },
+      { title: 'Own-Site Commerce', description: 'Use LuxuryUI as the storefront for kit discovery, packaging, and purchase intent before deeper plugin work.' },
     ],
-    primaryCtaLabel: 'Explore Screens',
-    primaryCtaPath: '/screens',
-    secondaryCtaLabel: 'See Pricing',
+    primaryCtaLabel: 'Explore Kits',
+    primaryCtaPath: '/kits',
+    secondaryCtaLabel: 'Top Up Credits',
     secondaryCtaPath: '/pricing',
   },
   {
@@ -97,33 +105,17 @@ const CONTENT_PAGES: ContentPageConfig[] = [
     path: '/about',
     eyebrow: 'Company',
     title: 'About LuxuryUI',
-    description: 'LuxuryUI helps product teams move from inspiration to implementation with high-signal references.',
+    description: 'LuxuryUI helps product teams move from UI research to original Figma assets they can actually ship, adapt, and sell.',
     sections: [
-      { title: 'Mission', description: 'Replace random screenshot folders with structured, searchable design intelligence.' },
-      { title: 'Audience', description: 'Built for designers, PMs, and engineers who collaborate on UX and product outcomes.' },
-      { title: 'Method', description: 'Curate production examples, annotate patterns, and organize flows for practical reuse.' },
-      { title: 'Quality', description: 'Every collection prioritizes clarity, real-world behavior, and repeatable design decisions.' },
+      { title: 'Mission', description: 'Replace random screenshot folders with a pipeline that turns research into structured, sellable Figma kits.' },
+      { title: 'Audience', description: 'Built for designers, studios, and product teams who need both inspiration and editable commercial assets.' },
+      { title: 'Method', description: 'Curate production examples, extract reusable flows, and package transformed UI systems for real delivery.' },
+      { title: 'Quality', description: 'Every product must pass research QA, transformation rules, and storefront readiness before it becomes commercial inventory.' },
     ],
-    primaryCtaLabel: 'Explore Library',
-    primaryCtaPath: '/apps',
-    secondaryCtaLabel: 'Contact Team',
-    secondaryCtaPath: '/contact',
-  },
-  {
-    path: '/pricing',
-    eyebrow: 'Plans',
-    title: 'Pricing for Teams and Individuals',
-    description: 'Choose a plan that matches your product workflow, from solo exploration to multi-team collaboration.',
-    sections: [
-      { title: 'Free', description: 'Browse a core subset of apps and save limited collections for lightweight research.' },
-      { title: 'Pro', description: 'Unlock complete library access, deep filtering, and Figma-ready exports for daily use.' },
-      { title: 'Team', description: 'Add shared workspaces, permission controls, and collaboration workflows for squads.' },
-      { title: 'Enterprise', description: 'Advanced governance, onboarding support, and custom controls for large organizations.' },
-    ],
-    primaryCtaLabel: 'Start Free',
-    primaryCtaPath: '/signup',
-    secondaryCtaLabel: 'Contact Sales',
-    secondaryCtaPath: '/contact',
+    primaryCtaLabel: 'Explore Kits',
+    primaryCtaPath: '/kits',
+    secondaryCtaLabel: 'Top Up Credits',
+    secondaryCtaPath: '/pricing',
   },
   {
     path: '/careers',
@@ -145,10 +137,10 @@ const CONTENT_PAGES: ContentPageConfig[] = [
     path: '/contact',
     eyebrow: 'Support',
     title: 'Contact LuxuryUI',
-    description: 'Reach out for product questions, enterprise requests, partnership discussions, or support.',
+    description: 'Reach out for product questions, credit purchase questions, partnership discussions, or support.',
     sections: [
       { title: 'General Inquiries', description: 'Ask about platform capabilities, roadmaps, and onboarding suggestions.' },
-      { title: 'Sales Questions', description: 'Get guidance on plan fit, seat sizing, and procurement requirements.' },
+      { title: 'Credit Questions', description: 'Get guidance on credit top-ups, kit unlock costs, and purchase flow details.' },
       { title: 'Technical Support', description: 'Troubleshoot access, billing, or integration issues with quick turnaround.' },
       { title: 'Partnerships', description: 'Collaborate on educational programs, events, and ecosystem opportunities.' },
     ],
@@ -177,10 +169,10 @@ const CONTENT_PAGES: ContentPageConfig[] = [
     path: '/terms',
     eyebrow: 'Legal',
     title: 'Terms of Service',
-    description: 'Usage terms governing account access, subscriptions, and permitted use of LuxuryUI content.',
+    description: 'Usage terms governing account access, one-time credit purchases, and permitted use of LuxuryUI content.',
     sections: [
       { title: 'Account Responsibilities', description: 'Rules for account security, sharing, and responsible platform usage.' },
-      { title: 'Subscription Terms', description: 'Billing cycles, renewal behavior, cancellations, and plan changes.' },
+      { title: 'Credit Terms', description: 'How one-time credit purchases, kit unlocks, and delivery access are handled.' },
       { title: 'Acceptable Use', description: 'Restrictions related to scraping, redistribution, or misuse of content.' },
       { title: 'Liability', description: 'Service limitations, disclaimers, and dispute resolution framing.' },
     ],
@@ -211,8 +203,8 @@ const CONTENT_PAGES: ContentPageConfig[] = [
     title: 'Welcome Back',
     description: 'Sign in to continue browsing saved collections, comments, and team workspaces.',
     sections: [
-      { title: 'Email Login', description: 'Use your registered email to access your personal or team workspace.' },
-      { title: 'SSO Support', description: 'Team accounts can connect single sign-on for secure access management.' },
+      { title: 'Email Login', description: 'Use your registered email to access your personal workspace.' },
+      { title: 'SSO Support', description: 'Workspace accounts can connect single sign-on for secure access management.' },
       { title: 'Security', description: 'Session safeguards and authentication checks protect account integrity.' },
       { title: 'Account Recovery', description: 'Restore account access with secure verification when needed.' },
     ],
@@ -230,9 +222,9 @@ const CONTENT_PAGES: ContentPageConfig[] = [
       { title: 'Starter Workspace', description: 'Create your workspace and begin saving high-signal references immediately.' },
       { title: 'Collections', description: 'Organize by feature, platform, or release scope to keep design work actionable.' },
       { title: 'Comments', description: 'Capture context and rationale so your team understands why references matter.' },
-      { title: 'Upgrade Path', description: 'Move to Pro or Team plans anytime when your workflow grows.' },
+      { title: 'Credit Workflow', description: 'Top up credits only when you want to unlock transformed Figma kits from the storefront.' },
     ],
-    primaryCtaLabel: 'See Pricing',
+    primaryCtaLabel: 'Top Up Credits',
     primaryCtaPath: '/pricing',
     secondaryCtaLabel: 'Browse Library',
     secondaryCtaPath: '/',
@@ -329,6 +321,27 @@ const App: React.FC = () => {
               />
               <Route path="/flows" element={<FlowsPage apps={MOCK_APPS} />} />
               <Route path="/flows/:flowId" element={<FlowDetailPage apps={MOCK_APPS} />} />
+              <Route path="/kits" element={<FigmaKitsPage />} />
+              <Route path="/kits/:kitSlug" element={<FigmaKitDetailPage />} />
+              <Route
+                path="/kits/:kitSlug/delivery"
+                element={
+                  <ProtectedRoute>
+                    <KitDeliveryPage />
+                  </ProtectedRoute>
+                }
+              />
+              <Route path="/pricing" element={<CreditsPage />} />
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/signup" element={<SignupPage />} />
+              <Route
+                path="/account"
+                element={
+                  <ProtectedRoute>
+                    <AccountPage />
+                  </ProtectedRoute>
+                }
+              />
               <Route path="/user-flows" element={<Navigate to="/flows" replace />} />
               <Route path="/dictionary" element={<DictionaryPage apps={MOCK_APPS} />} />
               <Route path="/design-systems" element={<DesignSystemsPage apps={MOCK_APPS} />} />
@@ -373,7 +386,7 @@ const App: React.FC = () => {
                 }
               />
               <Route path="/apps/:appId/screens" element={<AppScreensPage />} />
-              {CONTENT_PAGES.map((page) => (
+              {CONTENT_PAGES.filter((page) => !['/login', '/signup'].includes(page.path)).map((page) => (
                 <Route key={page.path} path={page.path} element={<ContentPage {...page} />} />
               ))}
               <Route path="/browse" element={<Navigate to="/" replace />} />

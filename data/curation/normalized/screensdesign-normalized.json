@@ -1,0 +1,922 @@
+{
+  "schema": "1",
+  "source": "screensdesign",
+  "normalizedAt": "2026-03-20T19:32:42.440Z",
+  "sourceDescription": "discovery-seeds",
+  "summary": {
+    "inputRoutes": 50,
+    "entitiesProduced": 50,
+    "duplicatesMerged": 0,
+    "rejected": 0,
+    "validationErrors": 0
+  },
+  "entities": [
+    {
+      "id": "screensdesign:photo-collage-makerpic-layout",
+      "canonicalSlug": "photo-collage-makerpic-layout",
+      "displayName": "Photo Collage Makerpic Layout",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/photo-collage-makerpic-layout/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/photo-collage-makerpic-layout/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "photo-collage-makerpic-layout"
+      }
+    },
+    {
+      "id": "screensdesign:gym-wp-workout-planner-log",
+      "canonicalSlug": "gym-wp-workout-planner-log",
+      "displayName": "Gym Wp Workout Planner Log",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/gym-wp-workout-planner-log/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/gym-wp-workout-planner-log/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "gym-wp-workout-planner-log"
+      }
+    },
+    {
+      "id": "screensdesign:bible-daily-bible-verse-kjv",
+      "canonicalSlug": "bible-daily-bible-verse-kjv",
+      "displayName": "Bible Daily Bible Verse Kjv",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/bible-daily-bible-verse-kjv/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/bible-daily-bible-verse-kjv/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "bible-daily-bible-verse-kjv"
+      }
+    },
+    {
+      "id": "screensdesign:lyfta-gym-workout-tracker-log",
+      "canonicalSlug": "lyfta-gym-workout-tracker-log",
+      "displayName": "Lyfta Gym Workout Tracker Log",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/lyfta-gym-workout-tracker-log/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/lyfta-gym-workout-tracker-log/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "lyfta-gym-workout-tracker-log"
+      }
+    },
+    {
+      "id": "screensdesign:radarbot-speed-cameras-gps",
+      "canonicalSlug": "radarbot-speed-cameras-gps",
+      "displayName": "Radarbot Speed Cameras Gps",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/radarbot-speed-cameras-gps/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/radarbot-speed-cameras-gps/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "radarbot-speed-cameras-gps"
+      }
+    },
+    {
+      "id": "screensdesign:photo-collage-maker-incollage",
+      "canonicalSlug": "photo-collage-maker-incollage",
+      "displayName": "Photo Collage Maker Incollage",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/photo-collage-maker-incollage/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/photo-collage-maker-incollage/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "photo-collage-maker-incollage"
+      }
+    },
+    {
+      "id": "screensdesign:freepik-ai-video-generator",
+      "canonicalSlug": "freepik-ai-video-generator",
+      "displayName": "Freepik Ai Video Generator",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/freepik-ai-video-generator/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/freepik-ai-video-generator/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "freepik-ai-video-generator"
+      }
+    },
+    {
+      "id": "screensdesign:1111-faster-internet",
+      "canonicalSlug": "1111-faster-internet",
+      "displayName": "1111 Faster Internet",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/1111-faster-internet/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/1111-faster-internet/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "1111-faster-internet"
+      }
+    },
+    {
+      "id": "screensdesign:free-vpn-fast-secure-proxy",
+      "canonicalSlug": "free-vpn-fast-secure-proxy",
+      "displayName": "Free Vpn Fast Secure Proxy",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/free-vpn-fast-secure-proxy/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/free-vpn-fast-secure-proxy/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "free-vpn-fast-secure-proxy"
+      }
+    },
+    {
+      "id": "screensdesign:vpn-fast-vpn-proxy",
+      "canonicalSlug": "vpn-fast-vpn-proxy",
+      "displayName": "Vpn Fast Vpn Proxy",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/vpn-fast-vpn-proxy/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/vpn-fast-vpn-proxy/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "vpn-fast-vpn-proxy"
+      }
+    },
+    {
+      "id": "screensdesign:tolan-alien-best-friend",
+      "canonicalSlug": "tolan-alien-best-friend",
+      "displayName": "Tolan Alien Best Friend",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/tolan-alien-best-friend/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/tolan-alien-best-friend/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "tolan-alien-best-friend"
+      }
+    },
+    {
+      "id": "screensdesign:muslim-ramadan-2026-azan",
+      "canonicalSlug": "muslim-ramadan-2026-azan",
+      "displayName": "Muslim Ramadan 2026 Azan",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/muslim-ramadan-2026-azan/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/muslim-ramadan-2026-azan/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "muslim-ramadan-2026-azan"
+      }
+    },
+    {
+      "id": "screensdesign:fontmaker-font-keyboard-app",
+      "canonicalSlug": "fontmaker-font-keyboard-app",
+      "displayName": "Fontmaker Font Keyboard App",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/fontmaker-font-keyboard-app/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/fontmaker-font-keyboard-app/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "fontmaker-font-keyboard-app"
+      }
+    },
+    {
+      "id": "screensdesign:bring-grocery-shopping-list",
+      "canonicalSlug": "bring-grocery-shopping-list",
+      "displayName": "Bring Grocery Shopping List",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/bring-grocery-shopping-list/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/bring-grocery-shopping-list/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "bring-grocery-shopping-list"
+      }
+    },
+    {
+      "id": "screensdesign:running-tracker-app-fitapp",
+      "canonicalSlug": "running-tracker-app-fitapp",
+      "displayName": "Running Tracker App Fitapp",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/running-tracker-app-fitapp/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/running-tracker-app-fitapp/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "running-tracker-app-fitapp"
+      }
+    },
+    {
+      "id": "screensdesign:happy-scale",
+      "canonicalSlug": "happy-scale",
+      "displayName": "Happy Scale",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/happy-scale/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/happy-scale/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "happy-scale"
+      }
+    },
+    {
+      "id": "screensdesign:themie-wallpapers-theme",
+      "canonicalSlug": "themie-wallpapers-theme",
+      "displayName": "Themie Wallpapers Theme",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/themie-wallpapers-theme/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/themie-wallpapers-theme/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "themie-wallpapers-theme"
+      }
+    },
+    {
+      "id": "screensdesign:triprank-speed-tracker",
+      "canonicalSlug": "triprank-speed-tracker",
+      "displayName": "Triprank Speed Tracker",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/triprank-speed-tracker/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/triprank-speed-tracker/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "triprank-speed-tracker"
+      }
+    },
+    {
+      "id": "screensdesign:asvab-practice-test-2026-prep",
+      "canonicalSlug": "asvab-practice-test-2026-prep",
+      "displayName": "Asvab Practice Test 2026 Prep",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/asvab-practice-test-2026-prep/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/asvab-practice-test-2026-prep/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "asvab-practice-test-2026-prep"
+      }
+    },
+    {
+      "id": "screensdesign:looseloop-craft-companion",
+      "canonicalSlug": "looseloop-craft-companion",
+      "displayName": "Looseloop Craft Companion",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/looseloop-craft-companion/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/looseloop-craft-companion/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "looseloop-craft-companion"
+      }
+    },
+    {
+      "id": "screensdesign:menufit-healthy-eating-out",
+      "canonicalSlug": "menufit-healthy-eating-out",
+      "displayName": "Menufit Healthy Eating Out",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/menufit-healthy-eating-out/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/menufit-healthy-eating-out/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "menufit-healthy-eating-out"
+      }
+    },
+    {
+      "id": "screensdesign:health-tracker-heartrate-bp",
+      "canonicalSlug": "health-tracker-heartrate-bp",
+      "displayName": "Health Tracker Heartrate Bp",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/health-tracker-heartrate-bp/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/health-tracker-heartrate-bp/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "health-tracker-heartrate-bp"
+      }
+    },
+    {
+      "id": "screensdesign:v0",
+      "canonicalSlug": "v0",
+      "displayName": "V0",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/v0/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/v0/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "v0"
+      }
+    },
+    {
+      "id": "screensdesign:song-ai-maker-generate-music",
+      "canonicalSlug": "song-ai-maker-generate-music",
+      "displayName": "Song Ai Maker Generate Music",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/song-ai-maker-generate-music/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/song-ai-maker-generate-music/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "song-ai-maker-generate-music"
+      }
+    },
+    {
+      "id": "screensdesign:guma-ai-photo-video-editor",
+      "canonicalSlug": "guma-ai-photo-video-editor",
+      "displayName": "Guma Ai Photo Video Editor",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/guma-ai-photo-video-editor/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/guma-ai-photo-video-editor/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "guma-ai-photo-video-editor"
+      }
+    },
+    {
+      "id": "screensdesign:sondo-ai-music-video-ai-mv",
+      "canonicalSlug": "sondo-ai-music-video-ai-mv",
+      "displayName": "Sondo Ai Music Video Ai Mv",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/sondo-ai-music-video-ai-mv/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/sondo-ai-music-video-ai-mv/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "sondo-ai-music-video-ai-mv"
+      }
+    },
+    {
+      "id": "screensdesign:rockin-rock-mineral-identify",
+      "canonicalSlug": "rockin-rock-mineral-identify",
+      "displayName": "Rockin Rock Mineral Identify",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/rockin-rock-mineral-identify/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/rockin-rock-mineral-identify/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "rockin-rock-mineral-identify"
+      }
+    },
+    {
+      "id": "screensdesign:blow-up-go-viral-with-ai",
+      "canonicalSlug": "blow-up-go-viral-with-ai",
+      "displayName": "Blow Up Go Viral With Ai",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/blow-up-go-viral-with-ai/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/blow-up-go-viral-with-ai/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "blow-up-go-viral-with-ai"
+      }
+    },
+    {
+      "id": "screensdesign:cleansound-speaker-cleaner",
+      "canonicalSlug": "cleansound-speaker-cleaner",
+      "displayName": "Cleansound Speaker Cleaner",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/cleansound-speaker-cleaner/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/cleansound-speaker-cleaner/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "cleansound-speaker-cleaner"
+      }
+    },
+    {
+      "id": "screensdesign:plantaididentifiercare-guide",
+      "canonicalSlug": "plantaididentifiercare-guide",
+      "displayName": "Plantaididentifiercare Guide",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/plantaididentifiercare-guide/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/plantaididentifiercare-guide/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "plantaididentifiercare-guide"
+      }
+    },
+    {
+      "id": "screensdesign:daily-bible-verseshome-widget",
+      "canonicalSlug": "daily-bible-verseshome-widget",
+      "displayName": "Daily Bible Verseshome Widget",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/daily-bible-verseshome-widget/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/daily-bible-verseshome-widget/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "daily-bible-verseshome-widget"
+      }
+    },
+    {
+      "id": "screensdesign:inflow-adhd-cbt-based-program",
+      "canonicalSlug": "inflow-adhd-cbt-based-program",
+      "displayName": "Inflow Adhd Cbt Based Program",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/inflow-adhd-cbt-based-program/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/inflow-adhd-cbt-based-program/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "inflow-adhd-cbt-based-program"
+      }
+    },
+    {
+      "id": "screensdesign:zetto",
+      "canonicalSlug": "zetto",
+      "displayName": "Zetto",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/zetto/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/zetto/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "zetto"
+      }
+    },
+    {
+      "id": "screensdesign:learn-anything-befreed",
+      "canonicalSlug": "learn-anything-befreed",
+      "displayName": "Learn Anything Befreed",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/learn-anything-befreed/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/learn-anything-befreed/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "learn-anything-befreed"
+      }
+    },
+    {
+      "id": "screensdesign:lyricfluent-learn-languages",
+      "canonicalSlug": "lyricfluent-learn-languages",
+      "displayName": "Lyricfluent Learn Languages",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/lyricfluent-learn-languages/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/lyricfluent-learn-languages/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "lyricfluent-learn-languages"
+      }
+    },
+    {
+      "id": "screensdesign:language-reactor-sounter",
+      "canonicalSlug": "language-reactor-sounter",
+      "displayName": "Language Reactor Sounter",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/language-reactor-sounter/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/language-reactor-sounter/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "language-reactor-sounter"
+      }
+    },
+    {
+      "id": "screensdesign:psl-looksmax-ascend",
+      "canonicalSlug": "psl-looksmax-ascend",
+      "displayName": "Psl Looksmax Ascend",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/psl-looksmax-ascend/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/psl-looksmax-ascend/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "psl-looksmax-ascend"
+      }
+    },
+    {
+      "id": "screensdesign:ai-calorie-counter-meal-plan",
+      "canonicalSlug": "ai-calorie-counter-meal-plan",
+      "displayName": "Ai Calorie Counter Meal Plan",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/ai-calorie-counter-meal-plan/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/ai-calorie-counter-meal-plan/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "ai-calorie-counter-meal-plan"
+      }
+    },
+    {
+      "id": "screensdesign:stem-splitter-voice-isolation",
+      "canonicalSlug": "stem-splitter-voice-isolation",
+      "displayName": "Stem Splitter Voice Isolation",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/stem-splitter-voice-isolation/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/stem-splitter-voice-isolation/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "stem-splitter-voice-isolation"
+      }
+    },
+    {
+      "id": "screensdesign:ai-cal-calorie-counter",
+      "canonicalSlug": "ai-cal-calorie-counter",
+      "displayName": "Ai Cal Calorie Counter",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/ai-cal-calorie-counter/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/ai-cal-calorie-counter/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "ai-cal-calorie-counter"
+      }
+    },
+    {
+      "id": "screensdesign:plan-joyto-do-list-reminder",
+      "canonicalSlug": "plan-joyto-do-list-reminder",
+      "displayName": "Plan Joyto Do List Reminder",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/plan-joyto-do-list-reminder/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/plan-joyto-do-list-reminder/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "plan-joyto-do-list-reminder"
+      }
+    },
+    {
+      "id": "screensdesign:ai-antique-identifier-antiqo",
+      "canonicalSlug": "ai-antique-identifier-antiqo",
+      "displayName": "Ai Antique Identifier Antiqo",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/ai-antique-identifier-antiqo/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/ai-antique-identifier-antiqo/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "ai-antique-identifier-antiqo"
+      }
+    },
+    {
+      "id": "screensdesign:payout-claim-class-actions",
+      "canonicalSlug": "payout-claim-class-actions",
+      "displayName": "Payout Claim Class Actions",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/payout-claim-class-actions/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/payout-claim-class-actions/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "payout-claim-class-actions"
+      }
+    },
+    {
+      "id": "screensdesign:bookcast-15-minute-insights",
+      "canonicalSlug": "bookcast-15-minute-insights",
+      "displayName": "Bookcast 15 Minute Insights",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/bookcast-15-minute-insights/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/bookcast-15-minute-insights/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "bookcast-15-minute-insights"
+      }
+    },
+    {
+      "id": "screensdesign:critique-ai",
+      "canonicalSlug": "critique-ai",
+      "displayName": "Critique Ai",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/critique-ai/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/critique-ai/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "critique-ai"
+      }
+    },
+    {
+      "id": "screensdesign:learn-pythonocean-ai-compile",
+      "canonicalSlug": "learn-pythonocean-ai-compile",
+      "displayName": "Learn Pythonocean Ai Compile",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/learn-pythonocean-ai-compile/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/learn-pythonocean-ai-compile/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "learn-pythonocean-ai-compile"
+      }
+    },
+    {
+      "id": "screensdesign:interior-ai-ai-home-designer",
+      "canonicalSlug": "interior-ai-ai-home-designer",
+      "displayName": "Interior Ai Ai Home Designer",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/interior-ai-ai-home-designer/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/interior-ai-ai-home-designer/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "interior-ai-ai-home-designer"
+      }
+    },
+    {
+      "id": "screensdesign:monoboost-cancel-subscriptions",
+      "canonicalSlug": "monoboost-cancel-subscriptions",
+      "displayName": "Monoboost Cancel Subscriptions",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/monoboost-cancel-subscriptions/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/monoboost-cancel-subscriptions/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "monoboost-cancel-subscriptions"
+      }
+    },
+    {
+      "id": "screensdesign:macrofactor-workouts-tracker",
+      "canonicalSlug": "macrofactor-workouts-tracker",
+      "displayName": "Macrofactor Workouts Tracker",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/macrofactor-workouts-tracker/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/macrofactor-workouts-tracker/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "macrofactor-workouts-tracker"
+      }
+    },
+    {
+      "id": "screensdesign:mynoise-focus-sleep-relax",
+      "canonicalSlug": "mynoise-focus-sleep-relax",
+      "displayName": "Mynoise Focus Sleep Relax",
+      "platform": [
+        "iOS"
+      ],
+      "normalizationStatus": "slug-only",
+      "sourceRoutes": [
+        "https://screensdesign.com/apps/mynoise-focus-sleep-relax/"
+      ],
+      "provenance": {
+        "sourceUrl": "https://screensdesign.com/apps/mynoise-focus-sleep-relax/",
+        "sourceType": "screensdesign",
+        "fetchedAt": "2026-03-20T19:09:38.000Z",
+        "appIdentifier": "mynoise-focus-sleep-relax"
+      }
+    }
+  ],
+  "report": {
+    "validationErrors": [],
+    "rejectedRoutes": [],
+    "warnings": [
+      "Normalized from discovery seeds only. Run with --full to normalize the complete sitemap (2369 apps). Detail-page enrichment (screenshots, category, platform) is pending until scraper runs."
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "assets": {
+    "logo": {
+      "required": true,
+      "minWidth": 96,
+      "minHeight": 96
+    },
+    "screenshots": {
+      "required": true,
+      "minimumCount": 6,
+      "targetCount": 8,
+      "minWidth": 320,
+      "minHeight": 480,
+      "allowExactDuplicates": false
+    }
+  },
+  "provenance": {
+    "required": true,
+    "requiredFields": [
+      "sourceUrl",
+      "sourceType",
+      "fetchedAt",
+      "appIdentifier"
+    ]
+  },
+  "publishing": {
+    "preserveOriginals": true,
+    "optimizeInPlace": false,
+    "publishOnlyApprovedAssets": true
+  },
+  "editorial": {
+    "allowPlaceholderAssetsInPremiumViews": false,
+    "requireEvidenceBackedClaims": true
+  }
+}

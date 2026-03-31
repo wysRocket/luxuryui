@@ -1,0 +1,6108 @@
+{
+  "schema": "1",
+  "auditedAt": "2026-03-20T19:47:48.589Z",
+  "rubricVersion": "1",
+  "summary": {
+    "total": 77,
+    "passed": 33,
+    "warned": 38,
+    "failed": 6,
+    "passRate": "42.9%"
+  },
+  "failedApps": [
+    "cnn",
+    "coursera",
+    "kaykay",
+    "tidal",
+    "twitter",
+    "whatsapp"
+  ],
+  "warnedApps": [
+    "airbnb",
+    "apple-music",
+    "asana",
+    "asos",
+    "bereal",
+    "binance",
+    "coinbase",
+    "deezer",
+    "duolingo",
+    "ebay",
+    "expedia",
+    "fitbit",
+    "hopper",
+    "hoteltonight",
+    "instagram",
+    "kayak",
+    "ledger",
+    "linear",
+    "loom",
+    "metamask",
+    "mint",
+    "monday-com",
+    "myfitnesspal",
+    "n26",
+    "notion",
+    "paypal",
+    "phantom",
+    "pocket",
+    "reuters",
+    "revolut",
+    "shopify",
+    "slack",
+    "sleep-cycle",
+    "stockx",
+    "threads",
+    "trello",
+    "zara",
+    "zoom"
+  ],
+  "apps": [
+    {
+      "slug": "airbnb",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "3c68e9f4e32749de7df614dede88604a8d397a3b87bf1e43962290ded100f8d3",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "0a403d9edee268d3ce8237c255805d23ed246b1c2fe13b230b8abc7ddf2310e7",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "ef271053f50b5dda853c14f34f3bd5d2dbf7b764bce41fc6e63e5d008445dbe2",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "88445c9a665f2c5190fc89a05bfb744207c2acc303424bc339e1c451bc1fceb7",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "a0b8dccffb85f08a93c48146ea7f4f3c0a76bba01aead0fc78458c06e217d942",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "12829a6cabf8a5202d14004244eb67f0b9c04626e3c1e7d86c3435b07cde7860",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "7ca4a9eb081c5d942dd64aeaef90f4b88e9bf47456f9986ee6e168e043444bc1",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 384,
+            "height": 512,
+            "hash": "037f5789c33a9e9fc88593c00bee0a0e59534fa208a454a7839fbf97bf7cebc2",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 288×512",
+        "screen-2.jpg under min 320×480: 288×512",
+        "screen-3.jpg under min 320×480: 288×512",
+        "screen-4.jpg under min 320×480: 288×512",
+        "screen-5.jpg under min 320×480: 288×512",
+        "screen-6.jpg under min 320×480: 288×512",
+        "screen-7.jpg under min 320×480: 288×512"
+      ]
+    },
+    {
+      "slug": "amazon",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "88239fd65d0ccc6178bca78fde827eaa0d0b59d4a55e8b24d422d3984a31d8f6",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "e0777bf786f29be6d58255b2693b8311dbf8d4d0bded6505bffbf9d6a1d1067a",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "34be64ecb33ff7842289718f4fe99013d8f4229dd0d4c1c7daf3cbfed5c2a22b",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "d1995d081ebd76b2fa2560c93ea2e94dfbf19fe7e4a648e3cf0d8073072f358a",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "56327fccb2ce47906dc79c58dfe23a5677ac35887dd0ecc049eb8a98b3052642",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "77be93caaccbf404e810e13915d9fd3965c0dd977f13dfde6ac2020874416d2e",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "1bde37c78a461f7420ce6e0d514d9e9d21d008bde909546f55b42ce9f5c0d5f9",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 576,
+            "height": 768,
+            "hash": "aedf14e112f6f903032921c550db207553bc52540117b064c6e9955272408518",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "apple-music",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "f288f9741fbe83bbb3b5c1a4258fdaf871e6a7b1ae5d31c5f15cf1a16a454c93",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "05c00b24c764f1503f3477e4309a3333c6b0fa027f68bf3c5a9ee04c7af57aec",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "59a2943a1256fb9fe85d13bb7871069e4bff81c92f305ca23846648371f65efa",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "0208a05f8bc410fbce9cb7a3e137950242ac22cbf02cde82dce83c941a5a6d2c",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "e8b60fa961906e1afe337e442a28692e10e51b6ad72876b035bf4252c949db8b",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 552,
+            "height": 414,
+            "hash": "1205b2d25002b7f01d6e6355f2f2c8a9086a2a63a580f118554e16796ed9a291",
+            "status": "warn",
+            "reason": "under min 320×480: 552×414"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 552,
+            "height": 414,
+            "hash": "a91ad8eec7cead4f59b6f7b094f6839a0a42e24773759368d84d909a5847cade",
+            "status": "warn",
+            "reason": "under min 320×480: 552×414"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 552,
+            "height": 414,
+            "hash": "586d0cd090a30c5f641063f48bbe9be379b2fdcda734225138080da5be5f0654",
+            "status": "warn",
+            "reason": "under min 320×480: 552×414"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-6.png under min 320×480: 552×414",
+        "screen-7.png under min 320×480: 552×414",
+        "screen-8.png under min 320×480: 552×414"
+      ]
+    },
+    {
+      "slug": "asana",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 7,
+        "validCount": 7,
+        "countStatus": "warn",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "ccd6e3beae323bab821a1a7577a8f07a68e5538e99cd2f3d15a2f1a3d3356804",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "8ec2da4a39ed9d8d76bf52a73311ef1a21564672d41d34f557906d296298653f",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "f525d0698c115199e696aa28d7396a11d6c2cdec4f09a24d88187f9a3412f1dc",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "449e6f3f01b037695f30e2d1d078a4daa0f4009bb0fb8670ed76ef185a4c1ae0",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "62b2577df946210a9bf538fe0726e2ce2419a68294746190b2a7cd5f7e8d9807",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "951274bfdea76c5f1f4985cf64f696392bc7afed2bac64367da669a8d4d1e940",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "74281aa9f437f3443a193d552aaabb94ab2348fc9757b7d0e860ed3bbd90884c",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 288×512",
+        "screen-2.jpg under min 320×480: 288×512",
+        "screen-3.jpg under min 320×480: 288×512",
+        "screen-4.jpg under min 320×480: 288×512",
+        "screen-5.jpg under min 320×480: 288×512",
+        "screen-6.jpg under min 320×480: 288×512",
+        "screen-7.jpg under min 320×480: 288×512",
+        "below target: 7 < 8 target"
+      ]
+    },
+    {
+      "slug": "asos",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 6,
+        "validCount": 6,
+        "countStatus": "warn",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 576,
+            "height": 768,
+            "hash": "1dcfe5a7904ddff5c5a4c631a71112fec464d4f5e8528e0f997f63b97a5aa6c9",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 576,
+            "height": 768,
+            "hash": "d4bdf96bbcd2be0a9beb4aced8b02c6b7fa8086a4af666523b1b764a8641d119",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 576,
+            "height": 768,
+            "hash": "2f8708d22b14f022f665a5ccdc0e30caf98eda9011f195fe8be1f2afdc9efc9f",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 576,
+            "height": 768,
+            "hash": "e6e3a9c9ae3fa5b33dd4669de93af56c0d51774a822aaa887b18ac97ac12366e",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 576,
+            "height": 768,
+            "hash": "34de7f86435bd98a44ebe4beabbbfe98b06320d0a95cfd96e50a9e6dd7b78e96",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 576,
+            "height": 768,
+            "hash": "65a896835e44f8dd2c9e08817364551446fc71d707abb6f38c232852864ce06b",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "below target: 6 < 8 target"
+      ]
+    },
+    {
+      "slug": "babbel",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "79777ae6b63b843bfc588d2435f2f2334e1f7481c6a24cbbaf2793c421a07cfb",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "c9d797a31c4bfb7c8b5d54a869b51e5930a4bb1c3a9be0ca59ef262633d2cfd8",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "2f5adefaaf3834b74dd658bedac5215c22b4dfe2b39bdcc9da405978b2277ca3",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "20fc98b88374664a75af12e09c959b6a368752aa75bfaaae64e3da6c7114795c",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "e89d518bdb7208f80fd036706f2528ddc7a98df08ed6bffe0b96ff30d5072aa5",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "9eb355cadd5760c1adc24737815c1019f278a4d3d9fdf998803af79d6096b701",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "ffeb9d4efb36a1c0d56efa73998521007e992f5b1afa1ec30c092e8234a5e7a4",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "0ccf59171e54e7e47591537a7261d474036e9a673be7fdff2c8204e66bdc2988",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "bbc-news",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "244c3200a323b7ceb8c858b794f9aa1b10f2d4756bbd1e579d685541dc92a86d",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "565ee21a643e2f7a1205666621059aa6100627ea0611dd14339ea76a8042a2bf",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "31d63f987b6ff890bf39c9cc6facc433158dcb114b69058f177840f093e2403c",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "84e00d95e16cbac7641eab10b08610ea17133643786a90261adf4716ae44ec01",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "1036bcf92bd7511d29c0b765402a46dfe63628434ac95b1a9e19d13d5135b328",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 392,
+            "height": 696,
+            "hash": "c3199d1f9506bf6acd58d8073f2ec1ac3b0a4ba40b608fc6aa77192fbb289563",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 392,
+            "height": 696,
+            "hash": "f2678298cb2386a256b61e8529285da7181bd34dddf86a3f47886bf22b0e592b",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 392,
+            "height": 696,
+            "hash": "3d872a836c6cff4ab521b065a74c563b1fd2942168c4c23ff9c61d11dc32f381",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "bereal",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 6,
+        "validCount": 6,
+        "countStatus": "warn",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 236,
+            "height": 512,
+            "hash": "a8984108a7e4b44d7f8449aec83710f42a573111888a79b647bb203badaffe10",
+            "status": "warn",
+            "reason": "under min 320×480: 236×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 236,
+            "height": 512,
+            "hash": "fad6ed84b82691d7d792daac08d78d512524267f112e102fa016ef0fa0c8fb90",
+            "status": "warn",
+            "reason": "under min 320×480: 236×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 236,
+            "height": 512,
+            "hash": "c2b19afddd64182c011c8a1a319294653ce47bc2ab3f7dca91cad10a9d7de18f",
+            "status": "warn",
+            "reason": "under min 320×480: 236×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 236,
+            "height": 512,
+            "hash": "c1e496ead9bb6c94b902909052fb37234667788e21717a756623a601d39aa71b",
+            "status": "warn",
+            "reason": "under min 320×480: 236×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 236,
+            "height": 512,
+            "hash": "591325ac5cd9b2601c8140f6b2de8c178a56ac1db4bb13f3650335b33c87d2af",
+            "status": "warn",
+            "reason": "under min 320×480: 236×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 236,
+            "height": 512,
+            "hash": "e0b626cfe36f05097928dc644fbedf4e693d0127002ccba19cb698d7f86be253",
+            "status": "warn",
+            "reason": "under min 320×480: 236×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 236×512",
+        "screen-2.jpg under min 320×480: 236×512",
+        "screen-3.jpg under min 320×480: 236×512",
+        "screen-4.jpg under min 320×480: 236×512",
+        "screen-5.jpg under min 320×480: 236×512",
+        "screen-6.jpg under min 320×480: 236×512",
+        "below target: 6 < 8 target"
+      ]
+    },
+    {
+      "slug": "binance",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 512,
+            "height": 288,
+            "hash": "8339ac1eeb730973bc3a2fb5c63bc454f951cde5aa7b2e025b79832581063fb4",
+            "status": "warn",
+            "reason": "under min 320×480: 512×288"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 512,
+            "height": 288,
+            "hash": "8efec27e0a6e8a9823e4a75440efbaef985228355ed4092b5d607b944124c2bf",
+            "status": "warn",
+            "reason": "under min 320×480: 512×288"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 512,
+            "height": 288,
+            "hash": "7610757bc4ca453cba57fc745a498a3e8b83aedee79fc6f6302475b10f735541",
+            "status": "warn",
+            "reason": "under min 320×480: 512×288"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 512,
+            "height": 288,
+            "hash": "917cb3fd9f884189efc255411605db03bd5cd8e175ad67dfc43d2f719ac1871c",
+            "status": "warn",
+            "reason": "under min 320×480: 512×288"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 512,
+            "height": 288,
+            "hash": "6d3c72a481738b1e09ea7e12b663e657b65fdb27e8dbd0781fc431ff2dbdc445",
+            "status": "warn",
+            "reason": "under min 320×480: 512×288"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 512,
+            "height": 288,
+            "hash": "07f7c8a1056bd09248025ca819239830d9929468e637452797c48a68fbad295c",
+            "status": "warn",
+            "reason": "under min 320×480: 512×288"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 512,
+            "height": 288,
+            "hash": "c9cf3395fc36569abe4cc941d1380491925db14fc44ee6d6039090cfef2cb69e",
+            "status": "warn",
+            "reason": "under min 320×480: 512×288"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 512,
+            "height": 286,
+            "hash": "b2fcec534256ee02b09968cd6de7a38fda177fff4ae6dff55bda10548db301a6",
+            "status": "warn",
+            "reason": "under min 320×480: 512×286"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 512×288",
+        "screen-2.jpg under min 320×480: 512×288",
+        "screen-3.jpg under min 320×480: 512×288",
+        "screen-4.jpg under min 320×480: 512×288",
+        "screen-5.jpg under min 320×480: 512×288",
+        "screen-6.jpg under min 320×480: 512×288",
+        "screen-7.jpg under min 320×480: 512×288",
+        "screen-8.jpg under min 320×480: 512×286"
+      ]
+    },
+    {
+      "slug": "booking-com",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "983cdde43364752d0af6c3fa6b3fe60b218c10938167daa48f71dca80a645dca",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "6839fd395f8b260457062efaf1db7b46c6c045403b325fa09c557acd7d5a75d2",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "c5e6ec17f3fe7b07ad07e29e5f636b5ce3311a84bd915c8891efd2c9643ea4bf",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "4fe70f7d62ef51d867532036a00f6f5c974252f17ea5b3955e24934b5c7cfdc5",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "6ed137786739b0aadf2c820ac409c6732ba005ae3f1de56a3d8d82d082c0736b",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "adb8a089393487ac754cb17c568e5efe56a3906497167472fc948d5a60310970",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "9ba1e1e730f0e7993066a497798c0cb17861155d151b3d55bd717fa0fc01e52b",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "1a1105a65cfe81a80a77e7abca592f9687a81a9176151c3b37b0ab94eae3b44f",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "calm",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "8e45bb34d769c02cdc0de94574a9add793f170b4b6c067a5e6b66fb6adc1df02",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "f2536fe169519ecb42edeca6dbfbf3733c7712788100025b73c3573cb188eb9c",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "c236eb573af67e780cb4506c33ef0e306e6f6cdcbbbc43aa60f3d606c54ccc10",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "6a38a30c2081ca90d2fd6e1c4c593a804ad6ee9b12c9e8795c1d2147a94304b0",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "fb2d7207b013f6eaedee89daa38335b675a30142dfc4bfb547b0b132e71de5b9",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 392,
+            "height": 696,
+            "hash": "2bc8a45177c392e1c2bdaf995ef15573685ccb8b31aac137445f2a6740307bac",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 576,
+            "height": 768,
+            "hash": "ea1ba699fa1f7fb37a7afc1add09ca7cb804dbcdbeaa2756e110839742d6fa5f",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 576,
+            "height": 768,
+            "hash": "133907033472f538cacce1eb4808a801d3cf9534ce9a0efdc5b7a07bc85d5a9b",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "cnn",
+      "status": "fail",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 5,
+        "validCount": 5,
+        "countStatus": "fail",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 512,
+            "height": 288,
+            "hash": "b844a9175777dba502ac426a2d6802f7e7f51a70e9154a290552bddcb6f26500",
+            "status": "warn",
+            "reason": "under min 320×480: 512×288"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 512,
+            "height": 288,
+            "hash": "cb861e1d60f595e9f81cf53410a3fb0b87d9998c0286b8204f5caa7a73711e9f",
+            "status": "warn",
+            "reason": "under min 320×480: 512×288"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 512,
+            "height": 288,
+            "hash": "4d8bf8e9db492cfe06088a9499122198cb61331658586cc413bf76c48efc8ef2",
+            "status": "warn",
+            "reason": "under min 320×480: 512×288"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 512,
+            "height": 288,
+            "hash": "b2241b254e3de8ea1d2de2b59401453f354a4b5dab150ccc09a6e8b2f19170ea",
+            "status": "warn",
+            "reason": "under min 320×480: 512×288"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 512,
+            "height": 288,
+            "hash": "8048783243f08e32d4b6d3d043f2aaf32c53b65f79c2c4e9fb23ab3111ec12c9",
+            "status": "warn",
+            "reason": "under min 320×480: 512×288"
+          }
+        ]
+      },
+      "issues": [
+        "insufficient screenshots: 5 < 6 required"
+      ],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 512×288",
+        "screen-2.jpg under min 320×480: 512×288",
+        "screen-3.jpg under min 320×480: 512×288",
+        "screen-4.jpg under min 320×480: 512×288",
+        "screen-5.jpg under min 320×480: 512×288"
+      ]
+    },
+    {
+      "slug": "coinbase",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 7,
+        "validCount": 7,
+        "countStatus": "warn",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "22ea7f959df06ecb5ea004f6ac1206f35db7e22aac9810837ef044ff2e60ccce",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "84b1c5645531b532a2157172ab0302f93cdd8dd64b534ef9ecf0dbc461672302",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "52e0f7ed3ea30c0b04323ad896537e1dc5b01138de41fe16b2f8f22c047110b4",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "328e81d86f2a829bac17a92624e59282f6358d705c8db0f18a2c620b57dfb223",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "5d8e854a53eba4cdd284118ea594920618f948d2bfaf2d0f35cdc8de0fa2f5fc",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 392,
+            "height": 696,
+            "hash": "ab3a7c8e53d4f904c5deda32b1c465527d0d1507887f6383bce795bc60034d41",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 392,
+            "height": 696,
+            "hash": "282c96e38a7eefb7835fdd3ea917013858870befb5327d4793bf53eb601bfbf7",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "below target: 7 < 8 target"
+      ]
+    },
+    {
+      "slug": "coursera",
+      "status": "fail",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 5,
+        "validCount": 5,
+        "countStatus": "fail",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 576,
+            "height": 768,
+            "hash": "1e61b2ef0b75450b9bc34b3d1f62c46cdc83b1d1b945c139eb4213a4cd658cdd",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 576,
+            "height": 768,
+            "hash": "9b14e2e740d83702847246eeeb3e7441d8f498de11867fb7fce790e68df0810e",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 576,
+            "height": 768,
+            "hash": "ce0c65b4f012eee22aa9b693288b008a17006d24cfc251a61d2cefc3f9d25a3d",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 576,
+            "height": 768,
+            "hash": "957505618f8913915af99f8181e9eb4769f67984bacc1f23407716136978c716",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 576,
+            "height": 768,
+            "hash": "58720d4ea0ba5ce203f4c34863c48437e6b57ce897074c0935faba303cef454e",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [
+        "insufficient screenshots: 5 < 6 required"
+      ],
+      "warnings": []
+    },
+    {
+      "slug": "deezer",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 236,
+            "height": 512,
+            "hash": "e08fd202ff71990017b35fdbf343486deb858ccdd0d74429fef48b1ce75f09a4",
+            "status": "warn",
+            "reason": "under min 320×480: 236×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 236,
+            "height": 512,
+            "hash": "a234197f2cd2775db7f13dc95e93730c11014d017343cfd99f5492c86a6f7d4f",
+            "status": "warn",
+            "reason": "under min 320×480: 236×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 236,
+            "height": 512,
+            "hash": "abcbb7fcb5621c2f3e127132de68f08ff550419ed63df71e63f9f9a12ff3fabd",
+            "status": "warn",
+            "reason": "under min 320×480: 236×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 236,
+            "height": 512,
+            "hash": "95968b715543c166a22357f2b244d5ad6cf054da356b05ae61ced8d2be6e86bc",
+            "status": "warn",
+            "reason": "under min 320×480: 236×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 236,
+            "height": 512,
+            "hash": "26727cbd450f51e89146aa1cc2cbf6fabafc1678b9f8705df680ef0ef700b27f",
+            "status": "warn",
+            "reason": "under min 320×480: 236×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 236,
+            "height": 512,
+            "hash": "bed15ce51bc8e645cc509e1f6a33a4da579c411fb424fddad0edaa6554d3db53",
+            "status": "warn",
+            "reason": "under min 320×480: 236×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 236,
+            "height": 512,
+            "hash": "dc0c88b91e4657f3181637306e8076246c8adade32a4558eb1fec2f5d945b1f0",
+            "status": "warn",
+            "reason": "under min 320×480: 236×512"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 236,
+            "height": 512,
+            "hash": "4c92b1c5c2623bb4e624e4d89806b6d56b02b6eb4d0aee405b71f1a4bbfe3b91",
+            "status": "warn",
+            "reason": "under min 320×480: 236×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 236×512",
+        "screen-2.jpg under min 320×480: 236×512",
+        "screen-3.jpg under min 320×480: 236×512",
+        "screen-4.jpg under min 320×480: 236×512",
+        "screen-5.jpg under min 320×480: 236×512",
+        "screen-6.jpg under min 320×480: 236×512",
+        "screen-7.jpg under min 320×480: 236×512",
+        "screen-8.jpg under min 320×480: 236×512"
+      ]
+    },
+    {
+      "slug": "duolingo",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "7b6d3d347f81e29fbc50e66c6fad2e2dc89f081e19dc1abe39ff5074df329a84",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "95053f889e9eb7d033b24614584acd0adecd1328f95feaa2d707162283ea351a",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "f88bd92b0b4ac1d0b63033602f0502daebf9d0d1523be315c2a46c399da8b778",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "ad5f8453fd2ebf74eb01c18290d5bb8ab79acafb50013263b0fc82852f529833",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "7722141dbce622f0c88ba5b6c9f60e25686877b9f11064c95a40952f4df94676",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "1afe81888c6da5331dfc0f1fb5696da994563a3175dc6c3ca00e3f6d6e2fa6b7",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "a331edee9b28e1463bc6e66f19e491f8a44f93e70e4eda092974cd5b62cbdabe",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "a9ca8c036f8cb6d1d5f7072c40b379e550adf9eaec17077138448dc42718b7ee",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 288×512",
+        "screen-2.jpg under min 320×480: 288×512",
+        "screen-3.jpg under min 320×480: 288×512",
+        "screen-4.jpg under min 320×480: 288×512",
+        "screen-5.jpg under min 320×480: 288×512",
+        "screen-6.jpg under min 320×480: 288×512",
+        "screen-7.jpg under min 320×480: 288×512",
+        "screen-8.jpg under min 320×480: 288×512"
+      ]
+    },
+    {
+      "slug": "ebay",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 6,
+        "validCount": 6,
+        "countStatus": "warn",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "ec1b8af36be2d882601afaaf8191220b8b34c3377f7c94d379cb053a6818b533",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "d4118266f70b6d7e94187a9857457d9999b00c6cddd8691182baaa751d5d377c",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "0b6d0b5fe877641c92c9c3467fb737b2cb01359609ba452aa632a50af4717118",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 576,
+            "height": 768,
+            "hash": "31629dc4ac6620855f4cd047b7b335def46fc4d43c342cf9a6c6309dafcb7cc5",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 576,
+            "height": 768,
+            "hash": "d73f6f75e26494da1d11bc7c0b560837e0a9679f3ded140c9eba49eb866b1504",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 576,
+            "height": 768,
+            "hash": "469c991db13c66dca1a5d96e61e87420c3efee1bca49b235c0641f031e19e475",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "below target: 6 < 8 target"
+      ]
+    },
+    {
+      "slug": "etsy",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "d07fbc749cef36fe313d947e4288fd71459b6bdbc359967b3d2f5afdabc7ea59",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "b7d9e0840d85fcd0f5d1005b3f105363b0ffc62dace83f3e538359fe2a5f7069",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "0d2172b3f6bda02de620f0f1f4ed39ab2eea189c45ffd9f52cf268e53a1ee3ae",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "fd9d25da7e93a3727523904c0daa6e72600b0c988f0612b7d997f95f002da0d2",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "d56ce5faea012512e3a32f307aa005bd8734540bb9ce96ab6e2f40cee5f10985",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "5ee6d9461908e50a9666f758e2cf6325d04fbee8f861ab1a5594f3ae7a39414d",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "eb3e7e13e7f2c5dc834eeb3442324978269e8db9ba31272b6c6efdfa728ddb11",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "a8b40c5c453ad86ae50d6bc9365566bf270260ff862c81da4d32d0f3a7e869ad",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "expedia",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 256,
+            "height": 512,
+            "hash": "b35c40a729bab6c1ff9e6c4634d9140eb6d8d2f2e86f04f5ecb19c1f6ada1595",
+            "status": "warn",
+            "reason": "under min 320×480: 256×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 256,
+            "height": 512,
+            "hash": "094cf99737ab0fa9f807a5937199550fa003371a3f812575c12c9e7e1ce074ba",
+            "status": "warn",
+            "reason": "under min 320×480: 256×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 256,
+            "height": 512,
+            "hash": "44d7fde890d990dc5928ef776d5ae1f006b466a90360b8f4fb4fafd41bdb612a",
+            "status": "warn",
+            "reason": "under min 320×480: 256×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 256,
+            "height": 512,
+            "hash": "7b0fc0d9c11dc89850126b4783f40f2ad85bb6446b93785a11f6cdd6ea7aa7a6",
+            "status": "warn",
+            "reason": "under min 320×480: 256×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 256,
+            "height": 512,
+            "hash": "097a5f9e6f328c859eb3417b36b90c4105d5b314455eb0c8f1d6101080566720",
+            "status": "warn",
+            "reason": "under min 320×480: 256×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 256,
+            "height": 512,
+            "hash": "7b6d2bdbb1ba0dcba28922f244145271051d6e110cb96f7209cf93aeb68ba769",
+            "status": "warn",
+            "reason": "under min 320×480: 256×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 256,
+            "height": 512,
+            "hash": "69832b3e843628df3a09317b7ffa10cea74b83e3645511969e91a2229dc75e36",
+            "status": "warn",
+            "reason": "under min 320×480: 256×512"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 256,
+            "height": 512,
+            "hash": "62714bd36c65c7e265fb261172f5c931fd766bbf5920d2b21c085714f10aab73",
+            "status": "warn",
+            "reason": "under min 320×480: 256×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 256×512",
+        "screen-2.jpg under min 320×480: 256×512",
+        "screen-3.jpg under min 320×480: 256×512",
+        "screen-4.jpg under min 320×480: 256×512",
+        "screen-5.jpg under min 320×480: 256×512",
+        "screen-6.jpg under min 320×480: 256×512",
+        "screen-7.jpg under min 320×480: 256×512",
+        "screen-8.jpg under min 320×480: 256×512"
+      ]
+    },
+    {
+      "slug": "fitbit",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 6,
+        "validCount": 6,
+        "countStatus": "warn",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "45264a3ae12f77a0a20e50d943da8c204e4cc843d13a8110781299e260e1daa2",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "333905b503aa46cebc4c72da0bd211aad70dfe38f9634793d30e2a41146962f3",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "022eb3176e3a8f30b620bc4def20e62db3d1b14376d3c40137abc3675c3bc4d0",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "1ed527943c67479d639fb4ec02c3ee64483e6c01d64f0398fa39b228d092d280",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "f231ba83fad96758b285689ad4aef0975eb335319e48227642d680a7e3069292",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "587e5e0fe8807c632a01b8235a92e4c755f25d7562e75f94bd77455b0873ca3b",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "below target: 6 < 8 target"
+      ]
+    },
+    {
+      "slug": "flipboard",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "a8ef15d7edc422cf980ebd679b52a5b06a14593f637f5dc09d98e89769ef980e",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "69e10570d69918290b7c0fd3a342b542d5a156dd897406067ecb9db4c315bd1d",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "3dbb367bc05c2a405e96a3b270db38cfac3037ccbe5fd934c41e89968d57b042",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "43a83ef4bfc5c4aff6dee80cab77446e7d3588650f496d86bcec1c848badf3c8",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "6260eb793947f5e4a991437e0d04c017cf0cbb3cec9eb409a4fff1a93238a87e",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 576,
+            "height": 768,
+            "hash": "59d563362a7e9ee700e3f8d1e55fcceda53d31b6b9dd475ed122216d5a05270a",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 576,
+            "height": 768,
+            "hash": "cd5c59572bbe0f16dad01396120edb3ac2fa88dd738e70dbb8d80612b1bb8d74",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 576,
+            "height": 768,
+            "hash": "03a6274c67e9926ce989337f2310f760cd30581a5a42bd62896227506b407a4a",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "flo",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "40cac5cb8891b973120b43f9b2b9b753cd2f83bfe55c82ca2e7ed4e89656050e",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "c602a62110ee667956abf692c01920337a7ea900c7564b6ffd9a06dbb3528af3",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "1c7b3fa5ac9ae8eabeb2e8d3eedd6dcbf010e1608a0dc6def928b4c4e0f610e3",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "4542b61ad682dc374c68d105c8da3de1ecc54f58267860ac6996ad239af82488",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "9917d348269753cea4805020065fb53ab7e97cf47fde90ef9fcbd26ae6d9b074",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "ef0cc36b1e5790801754550e67acc1de5ed37d5e5de7862b5541a7925bd94a22",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "d8f072de70c79f375154b0c1b7df58d5c9af1433d84db7d7be932c603de4f3bd",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "5eea8574bd1e577e6205d565aaa5e088969e1a8e787a74e9e19901b2a90c869d",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "headspace",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "a4912cbb68e3346dcbe01a5f64d4c7d6be707f42f1a04874de51c1a295c4d8b7",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "2c0e9c215122c038a16083fb06fc3675bc970283580101ad6f02500d5e414ee0",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "5fe861a31911c35ce212c5fc7865e336e12b68aed6e68f5b182a274f80c867a3",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "a69876bb07961e55ce5d143b9855ab7d59366aba5f2ffa6738ab2f13b4cd8c42",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "8bf351547e7cae162b302ba69b000ac32fec6c1e9586f6f2f57fba942b5cf96b",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 392,
+            "height": 696,
+            "hash": "f5639a95d68fec0d5e577fffcaca054c29e2b46cea45be05cc8741d3b1cd2922",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 392,
+            "height": 696,
+            "hash": "41adf8ca51c0d22bf6bf3dd89c3fa88a7319c625971a8639918eb9b219e78d0a",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 392,
+            "height": 696,
+            "hash": "4fdc417184edac5a25c165c855aa56f1a38b2634b1e7fc4d073d4c9702c3c2f5",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "hopper",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "24e91a53e85337ff48005a54f93f8e0be5eccd2810674c86eead07fee9cfeef8",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "fd21043da0492594874c5b6636a08c830bb9ed255326159957b8296c11860413",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "bc66ffdb456702442f5d215b14caac6275bb53afc7a046be9759792978168b74",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "8056de21e14aff0dbd2ee066b6edcfa7d3ada1f26e28d7c1dd1a4878bc0267ca",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "1c4e0232c3f80bc4e7b377eb645c26bd7cce9b8e7698e1e7f73d360573599b33",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "7ee54085bd55176edc805ad096351c2390f9e7f1748023055a5ab64326133ea8",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "95a00b7f3e4359bfdb596eb5cd99193022be23718433faa10ed0460f715345bd",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "c9429aa34f2285116b6f405a280603eec72117619eae5a4e1d77dc05ca91f2f3",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 288×512",
+        "screen-2.jpg under min 320×480: 288×512",
+        "screen-3.jpg under min 320×480: 288×512",
+        "screen-4.jpg under min 320×480: 288×512",
+        "screen-5.jpg under min 320×480: 288×512",
+        "screen-6.jpg under min 320×480: 288×512",
+        "screen-7.jpg under min 320×480: 288×512",
+        "screen-8.jpg under min 320×480: 288×512"
+      ]
+    },
+    {
+      "slug": "hoteltonight",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 7,
+        "validCount": 7,
+        "countStatus": "warn",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "3b46a885f982ca3c39d6420562f7abea42eb4d8f003950f3dd3286f7c276bab5",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "add2094ed6eb86d27c8efca2a4cdd2fb1b6ef297a64160dc7e3289de82183793",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "8200c478e1eb96121ccf116e980589646f7093100e8d3eb352e6057b7caee7fa",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "9cad5a0e4fad7b9d89beab41b2625184f66e902b0617ecbb5866b218f82133e2",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "43db8e6cc0cdaf1d36bd045940ce3ad02d0129435904aa727b14961484d468bc",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "9cfb64a02af43c9aa23e6d6829fc47ba6baae4f71619ca2675d05bc57a94b83c",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "9786e127ed576c96776b01affe5d5ac35ffbbcfd51de10746a7ccc451b277553",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 288×512",
+        "screen-2.jpg under min 320×480: 288×512",
+        "screen-3.jpg under min 320×480: 288×512",
+        "screen-4.jpg under min 320×480: 288×512",
+        "screen-5.jpg under min 320×480: 288×512",
+        "screen-6.jpg under min 320×480: 288×512",
+        "screen-7.jpg under min 320×480: 288×512",
+        "below target: 7 < 8 target"
+      ]
+    },
+    {
+      "slug": "instagram",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 7,
+        "validCount": 7,
+        "countStatus": "warn",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "a3ff8366d08f393f23c2776cb14379086cbc85c6e42541162c29911bdd200db9",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "259b0bc936d86a2f6f0c486098a9a5d7946d55bb391a9e409ce6ad70b7448d48",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "8cfdb84d70dd1ca07f9f242479045467291bb09a2c924c8ce2ea454ada875b7d",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "ae9dfeb3bf4d5288dfdc36b2b71dc4c80121ebccf37a9f3a51ac504c423777d0",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "f3410b2bef2a2306b34372ae5511c228548d830e877fbab974d55b25f0479723",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "f133a5d5935ad323a5bb6bd6da2e82ed821e6e8dc27adc18193003cbe45ed904",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "4fb37721616c2e8687fbf36af45a964fb5863fec9c57ae66e9226e511fe72690",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "below target: 7 < 8 target"
+      ]
+    },
+    {
+      "slug": "kayak",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "f05567d772b00d75026d6d3c0ba8178d42bfdba43ec1cec4799070b0453fc1aa",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "e62a113b86c84b24745403d48355d745976303487eae48748b68b226d9e7fc41",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "a44efb69e0b56ffa0cec6172e51343684d22ac43adaca8494fc406b75fed504c",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "f13dd8e4ce2c0567049b81929db27421e32fdd125a93350fe0bb868b1413d405",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "b2bdc286601d037124dd4c2003e430c06d19d59a76ff1a899a64bfe3b727ecfc",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "7fcd8451a256ce348f6834e5da30dd35e94294b229dee8389b3944e84db681f9",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "2a8b4e265937675dc323b2d25de732adf5cb5092524e8fa3fea4817ab36e61e2",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "ae9d887f1b15ce710f2f8e95ecd0b56a5d01769f944f42fd4cc625ccf05256c9",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 288×512",
+        "screen-2.jpg under min 320×480: 288×512",
+        "screen-3.jpg under min 320×480: 288×512",
+        "screen-4.jpg under min 320×480: 288×512",
+        "screen-5.jpg under min 320×480: 288×512",
+        "screen-6.jpg under min 320×480: 288×512",
+        "screen-7.jpg under min 320×480: 288×512",
+        "screen-8.jpg under min 320×480: 288×512"
+      ]
+    },
+    {
+      "slug": "kaykay",
+      "status": "fail",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 5,
+        "validCount": 5,
+        "countStatus": "fail",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "7851d1020094cdac57f9a8b77edbd44b0a1aff39ed6deeb5e416bee0ddef312b",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "dfe4e6024bce177bcd485cba2c9344fbaca55d302caaf1a4a243e3fc7b761196",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "c6313a3c5583752492dfea3a3e9feb02552af594e79ea22003219659ce1204ef",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "f61469d87e153ebacae217f5c3e8e4716b7aa69cc06afe75782b7c75df600f20",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "77d1757ca4459860b201c2e1d748b69cfe7ec87d4bb02069f543ce470bab5eca",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          }
+        ]
+      },
+      "issues": [
+        "insufficient screenshots: 5 < 6 required"
+      ],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 288×512",
+        "screen-2.jpg under min 320×480: 288×512",
+        "screen-3.jpg under min 320×480: 288×512",
+        "screen-4.jpg under min 320×480: 288×512",
+        "screen-5.jpg under min 320×480: 288×512"
+      ]
+    },
+    {
+      "slug": "khan-academy",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "ee8c48072f33d85ffe3163e0708615cae3b760d0221355c938a3282f21374f0c",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "3a19e5413e7ece5891416f0b159e5552ba6c8ae0bd226350be36f26e0e8702c6",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "7510280de2291d66acbff1c346517a27335871658fe18198a9c0526203c32be1",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "0ffc8e85e088c9a593569b813d59d4f1bf1153b9d6a218279449dc4db5c118b1",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "4c5966026b265c8e4663c5c079824df4580ef75a8c60530cb151da93319f6495",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 392,
+            "height": 696,
+            "hash": "dcbdaeced1b5eed31fe001df922cd2cc011fb9aa5b66cea6c7701ce81003c688",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 576,
+            "height": 768,
+            "hash": "1e85f1b6ebc348e88848ab6c08fdcea200110f0a931314929b53eff57f78e875",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 576,
+            "height": 768,
+            "hash": "66a91d36279e049de6acca99ed0186a0109dc875ab53590412d60b8cbbaa10c3",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "kraken",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "5d6bf9b725b0419f20ed549ac8c662a97a69a537ca059a77f2294b51914ac81f",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "d94245683a3f5134a18eaf83e286afb859c146c969acd0e8f1a39cab257ffff4",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "add1e6cf4804cd6e42fcbb8d936f63f408d24e0231ec3be0e19814fb9d9b033f",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "55868017e7daf754e10f196f2a82ced927399cc4a1e14938ea4c8388d3aa7d78",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "0bf8736a8334ff86894fec143c6422299ee51988154c3b5e82c86fd202099c17",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "fb799a2aa023c8fd0c3253d3869f94ce76a267623ca56dcc8537b70495db40a1",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "7946c1807af52d563e31de5264ff484da73d4ac423fee999483889594b59082a",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "f7da6b311866051efcf1a2f5fd9d8cc57d05279fb0a0e72f0d1986913fce02ea",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "ledger",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "850537c012ff67ab00b20bbf96198021116612de4604d78d08e98c6a705eb799",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "35b28f8d658feac119df18453c9a09b9eda25e535e52d39b306e158a39299a91",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "3f0639b5f52d7241bc2a3527aa088b7d872813f4feacb1917be8884a9fec866e",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "e9cc1b9a48ec9e2680272780ec22cd0cfc156a0f20300a1aa8bccf6c7fa6a7da",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "145342e241c495cb7d1d68c4d39fccd76f3e1a540f41fa15e79b5918c08f698f",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "b75eb8ccfef16dce525e6cf8e80d8395ab411d9ea6fc79706089fc91a5846a24",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "60641d6c20f71bb8b3a10e6138f5d0df846b22fb45c33c4078f5ff0c54e5fd7f",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "ee10e6ed4baeeecdc1687b680a317711fe774d917ac54f542210082fdb7b7657",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 288×512",
+        "screen-2.jpg under min 320×480: 288×512",
+        "screen-3.jpg under min 320×480: 288×512",
+        "screen-4.jpg under min 320×480: 288×512",
+        "screen-5.jpg under min 320×480: 288×512",
+        "screen-6.jpg under min 320×480: 288×512",
+        "screen-7.jpg under min 320×480: 288×512",
+        "screen-8.jpg under min 320×480: 288×512"
+      ]
+    },
+    {
+      "slug": "linear",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 6,
+        "validCount": 6,
+        "countStatus": "warn",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 576,
+            "height": 768,
+            "hash": "cc5d85549c8c92a3dbfbaa87d2a144a657457ac130439b7b926a1ab516b34d4a",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 576,
+            "height": 768,
+            "hash": "8f6480a202867fc037a2a5c5afcaf22c357eebeb6a9ece46c91e4a9b836c9550",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 576,
+            "height": 768,
+            "hash": "c74fbeed872ab60e98026ceabc650279377548909314bfa2298667d71ec348dc",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 576,
+            "height": 768,
+            "hash": "d554580e487c51e970258a307b652ad5a2b3a5a82f0c2c40e9e151b4abf99880",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 576,
+            "height": 768,
+            "hash": "efce3c616b13239b2aea159b3e07eaa4ced5ce853757cd1e3a598b44f281f574",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 576,
+            "height": 768,
+            "hash": "2f9b8560babf4768f10ed06a1acc69342a84e6145bfd6430e829e7abf19c33ef",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "below target: 6 < 8 target"
+      ]
+    },
+    {
+      "slug": "linkedin",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "31438b8efeef4c3315de3d382381db8969393648f88f0894b159aa3173082914",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "9bdf8a85aa81b07b3df98192cf63d50251ae3a3c47dc38772b64e4de1cbe39e9",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "c85a7163a869ab65d36478ca8d4d8e028c4e70ffd69d49406e3f324f1964e178",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "55fa3513e2361258f7f6f5f2f3cb9edcd3927033a86d1f44ce746b3b4c1fd475",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "fea6ea2e3efcd4f46725464fdca2b3da004dadc9c200e613e358ec71e5504157",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 392,
+            "height": 696,
+            "hash": "5d284411ca121bf8d0b72ef0e9ee214b4b4aa4c4cfa2bd14fed348970e389809",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 576,
+            "height": 768,
+            "hash": "8d4900a055b34e731f20162e7f6445fe62276391d2d5636a0cb43c1c9169c835",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 576,
+            "height": 768,
+            "hash": "dbe488d65c3067756c7c1f306a8f5a0a1df8b1c091b21cade9c821bd92d3c794",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "loom",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 7,
+        "validCount": 7,
+        "countStatus": "warn",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "9f93b474cb825b37b80fcda19230402e099dfff9da095796a206f54794de6028",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "f95dab00ef20bb18433508f40ebf3f3142cc2157ce01628663d1693958bf2b1e",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "d6012b9f188ab1df2b8a0253f212f14cb2c0bd1e87d67dd7ec451ed14248740d",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "d59e06780d4e035c28abc228abb207119e6bd2a431afa265164167b7f96a0fdc",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "7e732dfe441d48d47adb3858ff0b1740ba15a7eed520a4c3b9b02bf9a1e8fd23",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "8707c5fcbd50ee05ff6d3f3d177cb0683a8a3001a76dae2c0dcee00b5d64c152",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "a0556205a7db8b1756273e93a6fe468f695ed956680ec2bdcb4a92020802b46c",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 288×512",
+        "screen-2.jpg under min 320×480: 288×512",
+        "screen-3.jpg under min 320×480: 288×512",
+        "screen-4.jpg under min 320×480: 288×512",
+        "screen-5.jpg under min 320×480: 288×512",
+        "screen-6.jpg under min 320×480: 288×512",
+        "screen-7.jpg under min 320×480: 288×512",
+        "below target: 7 < 8 target"
+      ]
+    },
+    {
+      "slug": "masterclass",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "3ac62a6f98d0d2e07c8d1205c4d661cf1b275c56560af289495445c3854afa0c",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "2b47f4e1827505de224d774b681bd41509eb8f085e1dbf74f968e72713e1aa7d",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "74c82644487b32fb333396581dcb8b6ed2a812652c1f77eee569c42cc02e6685",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "316c007f924aac051bef6610652f3a87e81a5d212fe2a0d70d623247e776fa30",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "881a3e4ec3743212a03b6f712fa5f67fcfe86881889344146d899c39cee33979",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 392,
+            "height": 696,
+            "hash": "ad7d6057caa3a31482b17d99f5abebdf46ebc55ed20a624e38d72026f6e8979b",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 576,
+            "height": 768,
+            "hash": "1da32ed33509ffa65219c2c287a54f754026a40d186fb5a0a832fe0c6f95972e",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 576,
+            "height": 768,
+            "hash": "724a18b293e6fe3910ef28bc5a609e701b847ca916c35ba3b7ca0eb47d6d2c18",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "metamask",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 7,
+        "validCount": 7,
+        "countStatus": "warn",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "99da3455a830616ac5a6ee595a1031141491d27564ec266c1214a5e409ce3c8f",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 237,
+            "height": 512,
+            "hash": "407625f238b47f0aa568032a98b53e4223d3750c1c1c7ad419688ef069390e9e",
+            "status": "warn",
+            "reason": "under min 320×480: 237×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "40e84f7a2cfdf7d23f1f2cd20b8e8d21137b85b44a2a2fdf9d2195a3c526b524",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "223ba22677a1a1af2d4559d4e13db76968d21004107be33b2f77a152b255b73b",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "86784fb5d4b7d1e794287e925caab30ac3701734ca932326e601f179dc1a84dc",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "dfb2a24ab04a934861b19458397de4a8b4df0e396a158cadee78d5c7122d319d",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "08fd56536b604a2330e224eed4d788070c300689ed9aade6cf56576e099ecd07",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 288×512",
+        "screen-2.jpg under min 320×480: 237×512",
+        "screen-3.jpg under min 320×480: 288×512",
+        "screen-4.jpg under min 320×480: 288×512",
+        "screen-5.jpg under min 320×480: 288×512",
+        "screen-6.jpg under min 320×480: 288×512",
+        "screen-7.jpg under min 320×480: 288×512",
+        "below target: 7 < 8 target"
+      ]
+    },
+    {
+      "slug": "mint",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 7,
+        "validCount": 7,
+        "countStatus": "warn",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "ba326550beebe6c44c3752f94c719690ed2c263c4971a2e6ec31abbdd4d49279",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "71c92170f5e5f8ee394e43ae332f14f6ac7268061c6f301a47bac5c5dfb8ddb9",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "6619aa50bd7e8b8fbdc18a5e7aa0afe0f674dd9e50c0832d23db786c0f4c439f",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "6356e745c2068c7a0e013018823795455e478a2699c482eb80f90f6330514f58",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "5e0b809b6af7e877e50b7ff45cac395a6ed639678876f55b44b4871e7ef2c4fe",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 392,
+            "height": 696,
+            "hash": "6a12bf5fd21f32fd6ba6a261e0a1b6e2ce502ca43fabef59864c19e2f499de86",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 392,
+            "height": 696,
+            "hash": "165c797eaa38d6e287ecc012f1ca00967eb238f8ab4e201e2edea006fee4ffd6",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "below target: 7 < 8 target"
+      ]
+    },
+    {
+      "slug": "monday-com",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "54ff5aa9d92a0dc359dc4f176827ef854b51f91b1c6fd20b8020285d429d2df8",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "38521eeaf4a4b30bc048d7f1862ac5e834fe7315cc84f8d9c808b3d7b7620080",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "1baa7ec94d6e9c74b07eaa19cc7eff0a8ef6d7393339c26191cc8ac7bcfdd898",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "d9c2b4dd85b776f3b101472e716eadc8c19501ab8e57f5bcfbcf4f3b10e32ee0",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "ddaac80ec18929c1d788201ec1829e2828301f21c9e6e78bb2a6e6ce4a493890",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 392,
+            "height": 696,
+            "hash": "cb419e38723f9dd18937faabc8f287ee6c4bf2bde52e60ff48b788d7f1790419",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 552,
+            "height": 414,
+            "hash": "0d4c832ffcbf187a2e7d68f37bc2fc6ea34ef13cf9871a08c73371783471138a",
+            "status": "warn",
+            "reason": "under min 320×480: 552×414"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 552,
+            "height": 414,
+            "hash": "3dd28374c2a1063dd7233aad37d2b8325e099ac8f90947790d920cb3984fe6e0",
+            "status": "warn",
+            "reason": "under min 320×480: 552×414"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-7.png under min 320×480: 552×414",
+        "screen-8.png under min 320×480: 552×414"
+      ]
+    },
+    {
+      "slug": "monzo",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "952a1817294e95cea915d83774980922676d932fb65872f579a1c6f067601eb1",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "c8fbd88f8e9542856c3dc8029cd1231014f7cc880fb7fe127baaf87d5de295ad",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "609d6d05d4caba58130c2f195c154bd3264a8f3c91832bed1e80bbee1a3e001c",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "997812659fceb78401ea9c85bb3b20d1b1be335b3f79cc831ddc9f4e7f730ddf",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "017765f45e2da9c4a6491d5e28fb549f94174b783e0e7ba3aaccf42b2317eefa",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 392,
+            "height": 696,
+            "hash": "0bf6c3c8decc1e48888fc534b6aeee0bcc8bd1ea7c17ca24f0cb540e572a0ab9",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 392,
+            "height": 696,
+            "hash": "19a428bc8eca00976e646815f8bb78b95ce5de782fe8401a8f426254a43e25d7",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 392,
+            "height": 696,
+            "hash": "9b121b9b77feafcec3f71109d7021ce1aaf0020adaf0b64f713817fc08244ac3",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "myfitnesspal",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "c70e8e7677b2769591b1d2b974b4949b5831d146260855298d60f6373fa8558e",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "6ece9376b9d9cfd3819a411b787d0b88baeb975c0cb26c5cec68ff511ce41ab2",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "768420c5602a067ddf505cff63751b8b854cd6d4dcaae8210e8cafafc6e74bc5",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "280e029b2da1a7d479edf2ad9828b35148a32b4327ba677e92ff08ba02af091a",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "060bc5e438b82ac886a79672604a07978e12ab03d46d08b841b936b84a62ed51",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "a780effbf68589037d2874128c461e972f7c22a706f5ecc9a659b8da555d8c6f",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "fccd4254617430fa3856e4027b42802771a285cb6af99ab3c8c55bacf37189e0",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "67fdefb9b5403b3806e69881b757189210b178cad510239d44721d8aaddc6d65",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 288×512",
+        "screen-2.jpg under min 320×480: 288×512",
+        "screen-3.jpg under min 320×480: 288×512",
+        "screen-4.jpg under min 320×480: 288×512",
+        "screen-5.jpg under min 320×480: 288×512",
+        "screen-6.jpg under min 320×480: 288×512",
+        "screen-7.jpg under min 320×480: 288×512",
+        "screen-8.jpg under min 320×480: 288×512"
+      ]
+    },
+    {
+      "slug": "n26",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 236,
+            "height": 512,
+            "hash": "c0fe5836a81f8850b9a2c7356515d56f7745c6b24712f3cdf26fa875cb4a64f0",
+            "status": "warn",
+            "reason": "under min 320×480: 236×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 237,
+            "height": 512,
+            "hash": "1064cd4f083a6684e71be174111d11e9f9a9742c8c4560a5bcc2724db08e8f0c",
+            "status": "warn",
+            "reason": "under min 320×480: 237×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 237,
+            "height": 512,
+            "hash": "8e443c61579bb1947bd8dafddd43f191e8b58363bb4e0860cd31967686e80ef0",
+            "status": "warn",
+            "reason": "under min 320×480: 237×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 236,
+            "height": 512,
+            "hash": "be66299ba154e68a09fa98a40b0ad962626ac0dfdba4599cec723b12af768b8b",
+            "status": "warn",
+            "reason": "under min 320×480: 236×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 236,
+            "height": 512,
+            "hash": "f5ce48ab14b96e9f1e77d54e3376ccbbe5105d9902e7a4119fac781d5a15b7eb",
+            "status": "warn",
+            "reason": "under min 320×480: 236×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 237,
+            "height": 512,
+            "hash": "94b83eb28b1032a128c524774ac0a4d71bc92165f74b5d05312930d0377f5071",
+            "status": "warn",
+            "reason": "under min 320×480: 237×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 237,
+            "height": 512,
+            "hash": "5f68bb7193b62fc39e1478c52c452208d6f3fc9f681d32cbbe7ba9469d9240c2",
+            "status": "warn",
+            "reason": "under min 320×480: 237×512"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 237,
+            "height": 512,
+            "hash": "2d070d131aff363c7f4f8c179bcd3b4678b8e1564d7fc0cb516a772755a009be",
+            "status": "warn",
+            "reason": "under min 320×480: 237×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 236×512",
+        "screen-2.jpg under min 320×480: 237×512",
+        "screen-3.jpg under min 320×480: 237×512",
+        "screen-4.jpg under min 320×480: 236×512",
+        "screen-5.jpg under min 320×480: 236×512",
+        "screen-6.jpg under min 320×480: 237×512",
+        "screen-7.jpg under min 320×480: 237×512",
+        "screen-8.jpg under min 320×480: 237×512"
+      ]
+    },
+    {
+      "slug": "nike",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "d82228d7228f966475018a8603dfed422a052450ea5277581e7a1777dabd7ddb",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "3064aea7f290fcbcee173d413f2b0581da1cc228e9aac67db702b307c75a9144",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "ad3d8a5f4dd1bc5b8c679840eaa68839f022551e43b1885388791a2bbc77fab3",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "decd0d971b9fa04029a30edbfd2703eef7a97e037ab431dfa9aceeb1850d1e44",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "7cc95e8901c7dd4a1b1eed3ba7e6d2765773081a74b489efc233f26ec8ff34a3",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 392,
+            "height": 696,
+            "hash": "b61d8c6690efa00f8fe5eed0905a86c93d2c9b81a772756eee0b7ee964f8027e",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 392,
+            "height": 696,
+            "hash": "24916049f083873aea0a41956db5349a1064810cd1708f0b473604542695ac8a",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 392,
+            "height": 696,
+            "hash": "effc5433a23d53d833c6402f66573c2a8bd7727e7bbd023ccafa5e795b6511a0",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "nike-run-club",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "173c95096e334832d7fc21e1f5b90ed51800e4d7b2de757db822e75f1c65185b",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "7ea48440aada73dc3b7c87f0cd3d961f143d0c4ff89e6ccd9c1da41e1228126d",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "4f54753e4972ea8682c811466086318a0b6286cd7855420e27d4b3a9dca43f11",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "b7ee714d418c7ed3672e441f46dbc7a02ef289bfa32b920c20be081373709461",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "3b87150b92ab7d23618401fbf01d21ec3d660a2d069f338748d64bf2b5ef0935",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 392,
+            "height": 696,
+            "hash": "fa287da2b4c709f252aaf8d295c671d970f67050da36f0c5d0b82ceaafa4b5a2",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 392,
+            "height": 696,
+            "hash": "42a298469c8300f15ad3a5e717d382310f20008cbd882b551c8db947015140e3",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 392,
+            "height": 696,
+            "hash": "a34e749a8b7ac2c572e148039274e75f0901cc06b60a702ebb206c87aba17738",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "notion",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 7,
+        "validCount": 7,
+        "countStatus": "warn",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 576,
+            "height": 768,
+            "hash": "fe2d59fe3c665a6a44d8695d82da082171b4d4e91ecd3bd20d784cca799fd662",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 576,
+            "height": 768,
+            "hash": "571975393233be474ee2550426439edbd05e57496a89ee96d8930ce9b2d23d94",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 576,
+            "height": 768,
+            "hash": "47d035fcc52048d41c1bf4b1d110453c109920df508cb1a9bb064a0e34ac3ee2",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 576,
+            "height": 768,
+            "hash": "c1a0a8c45a4e2fdb370ab3406ce6abb623d1332777473c0f7d840f3424a90915",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 576,
+            "height": 768,
+            "hash": "a191b97c42028e6d93cf7574b51801f67b15b70235252569d6bb07cd8024ee7f",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 576,
+            "height": 768,
+            "hash": "28e4ce20a0380d1e99e2a8b6de4186cbd3dca40e38a50c20e46ef099e9c2aed0",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 576,
+            "height": 768,
+            "hash": "9edc153f92ac04882d6746cebd0ca9ce6d4eafd61d8706be33cc823bb4f075f1",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "below target: 7 < 8 target"
+      ]
+    },
+    {
+      "slug": "pandora",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "887fa6a6416f19c36e955d4c29d64639fdcc64d3e9f687b3b6872bffd09a31f4",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "7b572e547588344054b4c88c4ce053263a9a908f2b524b3d2b65d8d4908d1a16",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "5ab8a7f1f345b81355016221e3316b24f7b8cba8434a375ecb559d97fad20ea2",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "29ea5db8bb071db5ced8618a72cbaf10899b61aea58ad12495ecc28dd7d18328",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "d4fa23052f908715f9342ef044b7a4125c88e2b1d6a6fcea9e635aec7a2af968",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "1a52422e7f695a4f852b68fb9021868ac9f47a4a93486c96b519dde51359c68c",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "4be19d64016990cb2c35112e1b3651feb1aa6e8489e83d6db311e59ea2806e4e",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 576,
+            "height": 768,
+            "hash": "16e42c3ad4684b36c4f352ab5d5302cdebb4831a75a1c9fdeb60c4fc1193f394",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "paypal",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "c4362c1c0ca73c70dd6709506b44d9cf0fa9393bcce9de42c5e213b1767c1890",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "636a2ba41d027b90627e977d754a15191d2e11807d91adf131d949144a1b6c02",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "53d0b7ac883bc4a3fb24f0a928a86987a2e993de0ec1c2f25038c43c3935649c",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "64fb3ba9ae613fb5793e8e826bf62df46aa70fa1d6893fc0b5754ed0edf8c4ba",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "9f4fdc42c1436ba3c876ac98f45ac2e9a944ff49701a408808cd67ee946e2cf4",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "7be6610384dd3e74c096c7d221de1b610f6fb5dec3dee0afe868ef027b774dd6",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "559650b04b4d1358b2f813b5cc91808b62db0229b4ca76fcdca2dacec5437a9a",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "63fc2a1cf6f72ae77fa264c9d800f5031120f641be37d76e6de0eb03f44fbe66",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 288×512",
+        "screen-2.jpg under min 320×480: 288×512",
+        "screen-3.jpg under min 320×480: 288×512",
+        "screen-4.jpg under min 320×480: 288×512",
+        "screen-5.jpg under min 320×480: 288×512",
+        "screen-6.jpg under min 320×480: 288×512",
+        "screen-7.jpg under min 320×480: 288×512",
+        "screen-8.jpg under min 320×480: 288×512"
+      ]
+    },
+    {
+      "slug": "phantom",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 7,
+        "validCount": 7,
+        "countStatus": "warn",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "423b934792404524c8d3a4992a17b50bd38bbbf9f3947b2abd293ce5a17bb116",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "26027ce14c75b6e89a4cec94f6b00d75421169161e3167578416431f81a6911e",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "f23d4090777338ce8ff231ba617a9c64b00d19f25ed65849d1fbfc1d55bddab5",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "399b831db366c1007a423e2aa6537e8c97b6050e3d96cf0644267e1c0a8e7f79",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "334a8a12128df66fcc45491eb187e6fb2165e4d1306dfee27d1cf4fd70b55524",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "4925d634a62afa8879ceb9e5b5d0f5ebd4e6e73a38765777cb1f1859eb805974",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "0228c94b3ad8567279c77837c4128255f846acf5e222e7ebe0ddbd0a3e4081aa",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "below target: 7 < 8 target"
+      ]
+    },
+    {
+      "slug": "pocket",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "959baaa93278ee58adeac19eca1bfe467f198b93ff125161916252e1f26188e4",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "48e59c694877c39d2517387ab02247953a0f7aa8061bc52bcea7df8c68c4b765",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "7b2e80d82589d241fd3228737993acb46c63d48f4c2cf111937fbe7e0a9a6511",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "f2f73e72f51b47dd90552d2107c6bf6b819b03fda02083148373e33c0724f561",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "d4a3ac7e37a365fb52653eebc36f0df5b26a01376ea84d164d3db82786fb8cc8",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "d268f91c38d8fcd525c1e79e6eccc6c65bc572e89e46906a25506e3bb698e530",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "1a99c9c1a0e0791ded7e5108ef4ed5dab34dc2097bf04c9d098e80e88f11b5fe",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "14cb2ac1ca553972b9c4fbd4e551a0040f3bc7474868fb86c34212dbe6b1a596",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 288×512",
+        "screen-2.jpg under min 320×480: 288×512",
+        "screen-3.jpg under min 320×480: 288×512",
+        "screen-4.jpg under min 320×480: 288×512",
+        "screen-5.jpg under min 320×480: 288×512",
+        "screen-6.jpg under min 320×480: 288×512",
+        "screen-7.jpg under min 320×480: 288×512",
+        "screen-8.jpg under min 320×480: 288×512"
+      ]
+    },
+    {
+      "slug": "reuters",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "6f541933a381b5ae5010d81c94f0381b79710e8fc94acdc236d13e0076d91bb5",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "9090e78478683702433cea5ba79c47ebce00434d49cfcf1bfa231170b8d316d6",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "54b1d7f47302366bc8c76e0a9bc290f8e5dd46b0dbfc9a1357fd311cda9ff0da",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "8db43706c7e3f71432ab7398d77ff4ee603e5cd4b87fe52c5040028759970a22",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "5c1855906822bb2aa6ca16fce89b2c7682741a6d907acb1200f56546366ece18",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "f63caad786cc2c2663c58c4033cfd7ff4bdf27e25f4530c3dc81fbf2ef953787",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "53913f5cda734803bd46e0ee84fc264de158d2d9ccda53b5c7d05bd4b47a3421",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "41eca20324c8c73a181e3e75ed2d92f6c5e15850aba8902a94df9ce3c2dd99c6",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 288×512",
+        "screen-2.jpg under min 320×480: 288×512",
+        "screen-3.jpg under min 320×480: 288×512",
+        "screen-4.jpg under min 320×480: 288×512",
+        "screen-5.jpg under min 320×480: 288×512",
+        "screen-6.jpg under min 320×480: 288×512",
+        "screen-7.jpg under min 320×480: 288×512",
+        "screen-8.jpg under min 320×480: 288×512"
+      ]
+    },
+    {
+      "slug": "revolut",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "950e103e5d1282d1a58be23baa62db3e7374c23e75688c0b8ab7626c221b0012",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "6e18530c1ef500c608f5453784b4fea6ff5e52df1a5425f6046867d640656ce2",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "7a6f33170e2b5aedefb51d001947fa7ec7081b88b6f593e56a1254866ac27c72",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "070c4e4b412c7e70d5147f3e732f236464e6ac964e6de9bae2fdbb5f9a6865ca",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "08e046b98d9167aa382cd98c10d5c9f36d6d21637390009916b41324b639171a",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "788aaae2ca521d80f88c287549a81acded6d97752935f69aea5d6e509a78c601",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "e2d607b5f82db829b35cf6ef05cfe3bb68eccc9387272cf5033f784efb040429",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "175b1a579a79dfbbe9e22a717ebaa3a55f0f3c04bd4c22f4c47da5c09449910a",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 288×512",
+        "screen-2.jpg under min 320×480: 288×512",
+        "screen-3.jpg under min 320×480: 288×512",
+        "screen-4.jpg under min 320×480: 288×512",
+        "screen-5.jpg under min 320×480: 288×512",
+        "screen-6.jpg under min 320×480: 288×512",
+        "screen-7.jpg under min 320×480: 288×512",
+        "screen-8.jpg under min 320×480: 288×512"
+      ]
+    },
+    {
+      "slug": "robinhood",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "0087ea5b0d0a7c438ba9da39cfe046a10a9aadd0312668ca68dc2299ab6e43e9",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "9690e60d3b0380b3fe268a0ab4a48bbba0b00eefe3226819f922ff51562a3824",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "4a45a47ef2cae8642ab0a5854d5a2445b63e75cd94fae63f4a9ceb885392fd58",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "af58619662823477b416350b50863f8cf9eb1e739b2f3c93baf6e159de39ad8a",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "a2d721a2fd35866f0a411af9b87efdf79c8e05a8d3a6c0de33778de8120014d7",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 392,
+            "height": 696,
+            "hash": "b1994f446f90a4192e4586a1a748592f5e2e183dd178253212af21b19d5ad4ea",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 392,
+            "height": 696,
+            "hash": "c372aeeda0f842388bfc714df90bf02060e26dd3fad41c9b9d10b35792eb716e",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 392,
+            "height": 696,
+            "hash": "212176cd97d30df86c1347ddb378d37b821f9cd2de7361cdff250771a445e20f",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "shazam",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "00dfd3fd3a4c39866c80b108382f3d2658fe9391030b6416ac12befcc6f6410c",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "dc67d2b21bc7764e332fbe874278a25a8213a20542e283c3dfcd19201994c7a9",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "35947cac4caff6f375810c698fd6840a7b6aa7c304162d5a934924109f6ced68",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "01b748fed88ef6da822f283b14ba10c46d051b54d3ad3ebe22f422341f1f6d86",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "f9513f5925df239123fc9dee7d55c8a1c8c5535d5bc3535d79ff6c2192134218",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 392,
+            "height": 696,
+            "hash": "c9b13a1bfb13923376474c278cce3643f8a42ebb9db9f466255c9cf752c38abf",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 392,
+            "height": 696,
+            "hash": "17e6dec8c3b6a6d374417bb99186a0791f34383627cd47f64ba630643b032e46",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 392,
+            "height": 696,
+            "hash": "6bb3e854105256e2dfde258819c0727127c6a5242db811b82c9331a7e392e5e1",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "shopify",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "34d3a7163674ff298237d7079a390754e74ea7aa5102defc0e814c2be10a06c0",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "431d69bc5070835ceb0f48717048b2c29cc1da8cc909d05ed8da0746a152c698",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "3c3745411134c2d66cd5a8d3179ea7514cdf3debb6ca6431f6cef595ae6b8ced",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "bb637068e611818366ffd42b8a882a117f0d6888a7b1615e1563eb13df4dfd09",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "a682c307a576d1f8ae41f71419e4284a13290cb6483873883fae5b865d3ef08c",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "3d021001cdfcf1d25bff2da53fc9e6e3b2d8ce51ae0f2420b1995964318c0c87",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "ae6f97c30f7c77f4db92edf3f19ea6b8895cecd5f035bbf1b22ee18350e5aef3",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "1359fba5747da0e81125bd5b9f29a3988da73e60b0b1e00cb7bc0a850652dc8f",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 288×512",
+        "screen-2.jpg under min 320×480: 288×512",
+        "screen-3.jpg under min 320×480: 288×512",
+        "screen-4.jpg under min 320×480: 288×512",
+        "screen-5.jpg under min 320×480: 288×512",
+        "screen-6.jpg under min 320×480: 288×512",
+        "screen-7.jpg under min 320×480: 288×512",
+        "screen-8.jpg under min 320×480: 288×512"
+      ]
+    },
+    {
+      "slug": "skillshare",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "d336183b6ee160146cb4df4f75db4e205069fc26c4845d62ac2b9460faba7d25",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "1c4f38fd71f5575d638c31e696a0e35734554e630e7482bbd2aac86826edf282",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "0691e75433273d0bba4ff7d6cbb87db7bdb6b28195235f0bbf190f27fb6d869b",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "b51be04468ca1f9e1053ba8ff12d07a70b59eba712844b96b6866fd62c06432a",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "7bf7092e757d89b3fc82c9578a5a2f0782e2aa205200d9756f595a5f666a44ae",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 392,
+            "height": 696,
+            "hash": "c9e629d29406cb199265f868413c19cb4c86c1e4f2eb24e794200649eefc8091",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 392,
+            "height": 696,
+            "hash": "0338d98231df5c0f124889f243a98026fb939d796795c214822cbaf31eb3a8ba",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 576,
+            "height": 768,
+            "hash": "086094995d31eeba8bdec5b88b43c607409c1869dd487fce131a8a49e14e4490",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "skyscanner",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "c0341e01b80f8a76b36eab0f3a6cc7fab79a6a9db8337f386f609b39bafb46a6",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "45359727c05c5892a0d698871dd923b600dbc32463c6286b4793f6764fc09b50",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "7c8c79b1edc0afc902c1a5bc4bc4038fc61d0b492f6fea018d0a654b5143e7a6",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "12fab74d0eb84759108690ca2c6621a741d976eda124c119c41ba9f349dcbf1c",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "9db47dd17c1f0cc476d8d4a2e757a5d18d071cd31c8234922097187d056a84db",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 392,
+            "height": 696,
+            "hash": "e84a279c20b26597c2dbb41c6a4450869b1ba82a8ec284b4d1523e8bb43591db",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 392,
+            "height": 696,
+            "hash": "e2608e54bd2c508fbc3c03112bb6746193ecc880a70caa4a78ec1cd8f44e6deb",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 392,
+            "height": 696,
+            "hash": "c9fe94dc84411a4bcfb7ab3e597b9044d4370ed3b9225b7eb10c337a4ba1bc69",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "slack",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "30ce06371c743c5e35efb052731881a859ee040e14a147432f994f0dcf7819c0",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "cd86d42bc718000b247f2942d5c72f59f845865690ceeb630d47422e503682d6",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "9739446bf6c42c515472f908fa42ff9e16861aa031835106c46bc13974ab1498",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "c335d2f0faaefb957430f1cb70e5af6c11379ae716778e41b2b0a53a7d1765dc",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "0e42da866d039e383a06e491f0df5c306dee95200ef055a53c209428267f4f17",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 392,
+            "height": 696,
+            "hash": "dc0de951ce4a4ff57ad1215bea2fa01ff3aa72105c1ef536d7ae0c5177cb362d",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 392,
+            "height": 696,
+            "hash": "cb2e4d88a788b95b32f75b6144dd6403637802c47dfbf399bb9f91d0560c1cc7",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 552,
+            "height": 414,
+            "hash": "6d97a7c0fc921db7ac3d2c57428e82d25740ab64fd1507c142f595ee835eb83e",
+            "status": "warn",
+            "reason": "under min 320×480: 552×414"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-8.jpg under min 320×480: 552×414"
+      ]
+    },
+    {
+      "slug": "sleep-cycle",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "88fdb0a4b69c369a417e9cc7c6e26a22d1e122c32598219d7152649ad8eaef96",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "ec58cc664693f5c1279d97793fa1982f23af87d920d08bbf6c71d76374c93181",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "cdb73ff83beec6261453d449348786e54813f1e4ad924be5f83420406dab6b07",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "66379793e4b86c9c19cd5f0eccb4bcc43f1bc9c4c30016d33dd9d69c48aefd0a",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "828028dce1c91ff0eab91f76f6da561cb31acb3fb635d6b921471d738daceb23",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "98bfc9b1575bcaf76ba040a350d13c9307378e969d1b44ce347e041ee8574211",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "dc7c81d0fd6b55c8af6ca8e96b71f592ab162e0ca0070a8b2d381b0be2c15d2c",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "d5227fb723af59149599566a6673b6b5bd73b4725b92aeca7bf2696499941243",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 288×512",
+        "screen-2.jpg under min 320×480: 288×512",
+        "screen-3.jpg under min 320×480: 288×512",
+        "screen-4.jpg under min 320×480: 288×512",
+        "screen-5.jpg under min 320×480: 288×512",
+        "screen-6.jpg under min 320×480: 288×512",
+        "screen-7.jpg under min 320×480: 288×512",
+        "screen-8.jpg under min 320×480: 288×512"
+      ]
+    },
+    {
+      "slug": "snapchat",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "615f740812c76b66d722ff2417979f393fac2b49a265df5fc928efa3e6e8d440",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "2d00d189f53aedd1afd3dd0f365063e41dc3bc23b02b83ded973ebf685973f15",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "dad7fe4bbd4adccea508292dbbf9a3be99f42f8314f5697a84e11435cf994241",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "294ecebe8fe5558859859542002d8d9c39c63d3cc6de9181e837ea672a13808b",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "c5af7b10c1155e1466762771a848de9b394ebf4d77c85d7cd495896e1986126b",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "fd2264dba22087c52f1ad243a45b4fd22f6e85a8455a7f51182a17d07d36171f",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "494c06b2c8738e623ef4370281520b4278d8c8322283cd5c178299bdc8feb791",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "c37a16b02888ba2df646adfbea28ab20cfa4d85b6927bfdcb70f47a3377955f1",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "soundcloud",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 576,
+            "height": 768,
+            "hash": "9a8770a9fac7c7d43033615e1c33557bf7fa8c88d35a1395000214d0194f037d",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 576,
+            "height": 768,
+            "hash": "9581c6acb770a7a6f2d74ca42d243d8d7d7ee2d8fc04263a2d47501e2da04933",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 576,
+            "height": 768,
+            "hash": "f1fc238ed245c7f291eb199f116405b37c0307133f5b1e1098c4db3f52762fec",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 576,
+            "height": 768,
+            "hash": "f040e0e9757a6c89e63c38701a0d61ca84621230facf921292b807261c173175",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 576,
+            "height": 768,
+            "hash": "72e763bff6dfccecd7441f31ef41899b9c98b6a0b76dbaeca4917e8839ff058e",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 576,
+            "height": 768,
+            "hash": "a75581c806e5c6e9f44060e520517cd25a321812530bf4888a8d15d6e391d5a3",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 576,
+            "height": 768,
+            "hash": "a6d70c2756710668bf3eafff56f10971b4c6a6b3d710dfb42bd1449384299c45",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 576,
+            "height": 768,
+            "hash": "05b5e42b73d15625922b3bfcbd15c26c8ad7367a5d8ecadd9647eab74a55e55a",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "spotify",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "d253fce96b330b7197410888494563295f74e79cab7031a8854cdb0bf9c3b749",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "20ee4ead9ab6199914fe832d353227bc0682634f7447a940ae8db04a55ccaf2c",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "4dbba662d0c9f46988883b0b3c945faf683ac4be11036e5c9a5782e0b2ec92e4",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "8f6e0de442419511b98c22790fee4c8e6bd1ef2fb785bb25cdf2cfc133b5b1ca",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "3af8f3b6756d429d9cee5aab2ef0c9cdfdbfd5dcd96e73e055f6364e6cd6af00",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 392,
+            "height": 696,
+            "hash": "cb40d665b9103bbb68aedfe64feeae272f72d4afefc61efb18fa4b0ce0f48987",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 392,
+            "height": 696,
+            "hash": "305ab8b9b56e4f3524db7439785bf9c79898631e88aa156520b1fff1ac99d503",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 392,
+            "height": 696,
+            "hash": "ccef20736c89a505d92eb15f227d327a5b9f28e005039f02d18992b30146db01",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "stockx",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "320152ccdb0fd591a04cd4d1db432ae74abbab4a197e07e3296e772816d32ef8",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "9481646b42996ef67b81373ada68a93cafd55f2d76cfcb0641fde084aeb02c8a",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "61b5c56f44de7f5a3783df9b39ad401267e278c6609c11ab243feab5c9aeeba5",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "3b1213cc1123a00ec3c41d7e40694eae2e00f4486b328a33a5f0197b546a7d26",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "452d09101eb4e1197c534697fe1ecf335453d77bb8c4d2b79f27679adf692cf1",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "ac9a2355008cad8699cb00f93f6e0126521847708de0a743b331653564b2f1dd",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "f4ef17f2c20352f377440a0e87806717ac11111416b4d6ba38190642eca9c1c7",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 384,
+            "height": 512,
+            "hash": "8d20857d39c9c4c22a1c40883d9ab3b88a73f9be87f95fdad873afc02187cb1a",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 288×512",
+        "screen-2.jpg under min 320×480: 288×512",
+        "screen-3.jpg under min 320×480: 288×512",
+        "screen-4.jpg under min 320×480: 288×512",
+        "screen-5.jpg under min 320×480: 288×512",
+        "screen-6.jpg under min 320×480: 288×512",
+        "screen-7.jpg under min 320×480: 288×512"
+      ]
+    },
+    {
+      "slug": "strava",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "a644e557f6d6fb2334346efa087ec5a2beff4404f420aec974541f483b089278",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "8abf22e387a3c79ba6410d0e4a174e5b73e2ac96f1bf6dc56a1f4b3aa980ff0a",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "7b0114270a1b55e2859801a3166748f93106ecf4e490aa4182fc902412bdd525",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "eb27e0da70921a1943070489fd5027b14284539e7986d1203bbeea7e486b3599",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "b13052a9af2faf3a43398c252750fec1b387bcf1a50b922c1511b92394737733",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "8920fe7cda85bb167025722933b2f8f98ab324efcdb3f6dac4673044e10f3450",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "4d154049c3c3db4d8fb9e5d718b8cec44938fbbd3ab434e394c1d526f9e00a07",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "db1325d463140238643fb55eb0af7a150bccb53588784d0b8085cd5e252e566e",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "substack",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "864fe3b00e40e63f815226e5abdfba81ddd822a0c63e51390f6d0b68aba6566f",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "6170a99a21f0b85b8504300cf3a8ae06df065624b6778ce0b1d1d979828b3053",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "ec263440674240f1941d689991882a1434a10a471462a493b925020857d3fcc1",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "2a95eee10b0cebd35f0dadad97189615d6a71debe5b9f04142495a0c4e8f4358",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "da707b902214aa2ced901ede01367a530057bc503f66ad88ae54c1a702b92e4b",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "40f0ab4c0b0d6a73138efe1fb0561262a47173ec213bae307c8b0957917949f0",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "99a5511f69aa7c5f2a4331e58ec899ded336edeb6757734667eeac50e6967949",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 576,
+            "height": 768,
+            "hash": "32389b898ed832da1fee5ae5c0623d3088adf377effe0ce007ec8c633ecb66e9",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "the-new-york-times",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "5041c209ca53c0802f24cd336bb79c5877fd6d481a4aaed0d8b153281fd2a4c5",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "c2d487525d7e624603432583f52a70c9e56df5ba7fa66b10c9f4a7b54105d0b9",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "0ac81fe91f7e5b702a72da700db8434e6ea5e637102f885cf4581b27933f2086",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "5fe5705130c9591e09ea7d11c0a6491f388e266f48347845d20f9fb2f7d9db79",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "e74120f12a7a5c3ffe236c100179a1af76dbb6207094d6532128b7d8365c8dc4",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 392,
+            "height": 696,
+            "hash": "3ce23e48cc9e14a2af1642106a2be62cca008a9108d81d22ac3f6fa25128c34d",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 392,
+            "height": 696,
+            "hash": "57b8904cc103577c68fd4bdd04f40260b96a9ae9850e843d9e4fc25fcde53f4c",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 392,
+            "height": 696,
+            "hash": "85980f9283a198358445fd3feee02a5b13b75117f5a00f89403238f3143492b2",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "threads",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 6,
+        "validCount": 6,
+        "countStatus": "warn",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "f115ca53fd2d989b48b05bd44a5b22d25d2a857f41089a79045103efece1c6d9",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "34e602e07d2d0a53270a0fb901e742255aae59c65f6c6365d55a9ae18dd1baaf",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "38f2f31cebf08def9698c288fe3a547a5bc740da67066ee05b5860f4678d20c5",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "1c0ae0468550bf0e4a5c795490202ac9ba664e1334d0f352daf85e5a91323413",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "aecb4dfe0d535d4f34f733ce6fb1588c761a8737a31f67408ae24ca0440891d9",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "9e862cef9fe372dbe7e2667fbab4cdbcfb926b5c7cdc3699cd1d0f135c78e917",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 288×512",
+        "screen-2.jpg under min 320×480: 288×512",
+        "screen-3.jpg under min 320×480: 288×512",
+        "screen-4.jpg under min 320×480: 288×512",
+        "screen-5.jpg under min 320×480: 288×512",
+        "screen-6.jpg under min 320×480: 288×512",
+        "below target: 6 < 8 target"
+      ]
+    },
+    {
+      "slug": "tidal",
+      "status": "fail",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 4,
+        "validCount": 4,
+        "countStatus": "fail",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 576,
+            "height": 768,
+            "hash": "f577057cf02154bcf2bf8f1dbd46bb8d7002470d34455787c1c9ae84d4c8df9d",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 576,
+            "height": 768,
+            "hash": "eb3ebf63304b063feaf9b0ba4f59acb05623bcbff723b9a54101a7be0ab152fa",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 576,
+            "height": 768,
+            "hash": "518dad265fc35934bd3dd69f16697b5b1921111554695268476857c5fafbd0e9",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 576,
+            "height": 768,
+            "hash": "3a9fc792e84e178e8aeddb49c7b1958cfffad7bd6dbe159cef528c0a56e332a7",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [
+        "insufficient screenshots: 4 < 6 required"
+      ],
+      "warnings": []
+    },
+    {
+      "slug": "tiktok",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "246cc0e9eefda692bd3223c4b4d0b94b1b1410ac5b2b98634eae8c16cd9bd92a",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "d9d12d63a5958c7b01b39cec207f4f2ad9b0c29a2423e64e06b9b70b256d32d9",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "767c0da8b235d1385e613879670520fc2035545d589cd3283f35a55d9929e6bf",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "44231b3325a4412c6a7e7955aa3f59143feb99c9b2ebb1ba4be1ba53b044c0a5",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "40fdaa5e288bb47640475ab98bf6b6c6bad886724653181a6c2f9bca057c2995",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 392,
+            "height": 696,
+            "hash": "7976e019eac68f024b9bcd9be34f1f0219cfe026836469adc3f6a3a023cfb337",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 392,
+            "height": 696,
+            "hash": "8aabe8ee5b491dbc2685242f2d9a053c670bcf96e2cbf44399f3ab8a5f526e84",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 576,
+            "height": 768,
+            "hash": "a2a678f4e887b6b7a0aa90c174d31ae797d7bfc0033c1a6a928f13096a121b2e",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "trello",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "298c00a468f4ded37d0431e8fcfdd4f475327cf6ede5baa0b57cf3863781555a",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "ae96480d13264e8c01926bea43200eab08155c4879d72e3f8c8ac807ca9e8622",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "c1e81e715ef8784b2e6a011c36e54d36bd6cc7fb4a1244813f27127b6b6bda27",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "ae68df5f8a5ada0d1b4a733746560f65ac22c8d40916827d0d1ae91b4e188457",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "953c9993039ce5b0b555ca7dfc00558b4be664455baaf8c8e9255a7aebf3394c",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 512,
+            "height": 288,
+            "hash": "412ab62fd62d61edaca9bc7a5ffb12e78b6e8bf8ceb5478a4a091eb0fdc2825a",
+            "status": "warn",
+            "reason": "under min 320×480: 512×288"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 512,
+            "height": 288,
+            "hash": "9d66fad18a15fc5519f4ced3bf8dc72e0743678d1f208ecab42f59d7e71b6a6d",
+            "status": "warn",
+            "reason": "under min 320×480: 512×288"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 512,
+            "height": 288,
+            "hash": "4f0bf20d4114bf07db5c0dbb4608da5b156fbb7ca9e411e7410a012c4c1bc4a9",
+            "status": "warn",
+            "reason": "under min 320×480: 512×288"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 288×512",
+        "screen-2.jpg under min 320×480: 288×512",
+        "screen-3.jpg under min 320×480: 288×512",
+        "screen-4.jpg under min 320×480: 288×512",
+        "screen-5.jpg under min 320×480: 288×512",
+        "screen-6.jpg under min 320×480: 512×288",
+        "screen-7.jpg under min 320×480: 512×288",
+        "screen-8.jpg under min 320×480: 512×288"
+      ]
+    },
+    {
+      "slug": "tripadvisor",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "1ac70443deb46af6d0deb2208329e768a051bb80b8685cc6f4ae1e514519bffe",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "af732fb9f1f4328bcf88b59877152514e946214e1eb6285a6cfb5582be3d27f1",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "d4c63b1cb9f8e1e1d59990f66d41b4cf0d4d0efb6ca52deb2ad336b9d7b62bd3",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "9d5799f5ebfdf0ba07eb785a5f599397bfce61b70fa756c73c336b00aa0d58d8",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "ca3e3d700c9ba96dbe576196f070ae82f8416fe5f0b04f504036603a7844c767",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 576,
+            "height": 768,
+            "hash": "878ce695f6d6f3d12b4097f567157e03f741ed5de1d47adc31ef7f6082949cce",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 576,
+            "height": 768,
+            "hash": "7c6b9691abf83738c6af3d3eb1972cd1b520caf978ce8f6557e36bb5e4b39a59",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 576,
+            "height": 768,
+            "hash": "658cb15a6f66e8c5721201d1980083b59b884ff1461c2966f3e5a39f671cf2ae",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "twitter",
+      "status": "fail",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 2,
+        "validCount": 2,
+        "countStatus": "fail",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "e0cc65b4e1f217796e5c1008402a5f8e36eb29c690e1a6f86a90c7118dbbf4dc",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 576,
+            "height": 768,
+            "hash": "08884c430eb769dffa401594e6d312d4a8e5d1418b095bedcccad8766c17155a",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [
+        "insufficient screenshots: 2 < 6 required"
+      ],
+      "warnings": []
+    },
+    {
+      "slug": "udemy",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "0e75af8cd06146ff17230c5f3031a070f949c2dfba348ac0f5958b8422b8b855",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "8aacd7a15d88617140e1c7820167338137955aad84889ca98fde8dd4a259c725",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "0332f871aa293302e3bdc269dce9d8826a31e222eec869167ef21c0b40948f38",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "b86110a1f39b2ca00baae547b9ec7db83d1e62968f742caf0dd249699beb3d0a",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "23892aeb07a784ddb46757eacb333fd9314b5509e47470944d19ee02f35a97e5",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "67579706ad1f447b5582117edecd050a87f844f1236faca014c20c5473de3d7e",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "49e92fd3b8b34f8f80e5ad6b65d571846e484757fb4c75a090a17b7289518da2",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 576,
+            "height": 768,
+            "hash": "294b52b297e605e9082119ad8829c5635b313670ef8be3b82a21936f5f5df2b8",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "uniswap",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "2015b4f076c0a8358d13e638870a3af3f1d6388aab701bf28fd116d277a195eb",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "1cc0a205689dffdb3c0e2eeb9c16373e141787126c87187a17cec86a622cb507",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "414416bd444b8ca8b3c5b5ce1d495f27865b7b26a3265a2c6d983f57f4d39954",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "cf4a2658edb1d0388b10774f04ea53ebab5cdbc5cb75e63842052c7d24c53035",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "f7b7daf25f9bce057367962e684c6b80567f5e618362c0513686b4910c8ce246",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "837a2ef16c99517532cd236b66359abbdd41b5ac576a222b7618d2d96653045f",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "0a0c39836933fd397a6995dbb5bd9bfc124137b88bd5750f4abeccc6eceff29d",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "651ddba07ffb83a2bc0994efd1669ca546f78f56c5a46386e08b81fd00dc80ae",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "wallet",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "4bd9536b10b736b016ba7d32bf53554537e84021f42e4fa06e52d73a6c8ed386",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "cf5482a44c1744437dc9a8545bac92f0687b0dfad45b77745164e486fb090849",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "aedf2d5ab6ce11533c0fbfd016919f0df893419bd59c68a5363ae35b00adb4e2",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "24aff77c716c6ebd7d40e195262dc5bd0b917c5387a86dedd452e671ffc1f598",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "a3030a7021140e6b788ddbeca22de0112738f5eaaeaeaf480e63ba092c5a5456",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "e79d2f45c72c172523d1fc21db4bcb859dd165f05c3f2836f7d49be01b4e48c2",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "4800680da03fbc2e3ece87b20742de3ed06bcccf003be64ac928f69f3f6b1bf6",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 392,
+            "height": 696,
+            "hash": "fa20ecf2c1d2eedcf09668e347194c16dcf507c8d06e13d4d91219b78aba7ebe",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "wealthfront",
+      "status": "pass",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "b3e2b408833972684fa32410346ecee77f08f0872e125ddf9e2f84cc565a3a9d",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "43891463ebfb09c7a00e7a527bf94f7d740c3d94f4438aa804d742215d17089d",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "0a89ad4fa85eb8b4b956d285754dc4a471daf328f5d2fae20a7bbaba1f264e44",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "f9aef81025f8269ed785aed6b6473716bef5b952dd422817d9cc3f5d22f96ced",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "f34cdb3a87c98a27b1e29e3a83ad467237a321ade4f17460f626401bccbf0c20",
+            "status": "pass"
+          },
+          {
+            "file": "screen-6.png",
+            "width": 392,
+            "height": 696,
+            "hash": "f5dd7b2292a2d893a90c2dab11e515c76250cb206ab8c8843cae055ace0add02",
+            "status": "pass"
+          },
+          {
+            "file": "screen-7.png",
+            "width": 392,
+            "height": 696,
+            "hash": "fcce7fd00fffe3acb470f180577a84dfb5a0d5cea03775f595eba34918a99079",
+            "status": "pass"
+          },
+          {
+            "file": "screen-8.png",
+            "width": 392,
+            "height": 696,
+            "hash": "1e10988f42692d821cc18edd07b227dd596e84b7dd8f8c533caa7ef0cbbdefd7",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "slug": "whatsapp",
+      "status": "fail",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 5,
+        "validCount": 5,
+        "countStatus": "fail",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.png",
+            "width": 392,
+            "height": 696,
+            "hash": "769d3df5df381d4c7ea5aeb9b12b3c446ce804052cb53bdfdcfb0af8b73bc97a",
+            "status": "pass"
+          },
+          {
+            "file": "screen-2.png",
+            "width": 392,
+            "height": 696,
+            "hash": "a73e8f27a24b86456f9d7062564ef4dcf78d47c8a8925993d10f40f5d54f2a53",
+            "status": "pass"
+          },
+          {
+            "file": "screen-3.png",
+            "width": 392,
+            "height": 696,
+            "hash": "400a97b7ec5c84bc533fcfa8217b9d5c484a3020a0de38ead0562f14006f88e7",
+            "status": "pass"
+          },
+          {
+            "file": "screen-4.png",
+            "width": 392,
+            "height": 696,
+            "hash": "c7bfa5c571cfebfec40fb42e8a84e9b6a22142a02da007821e8bd639b23bfb7e",
+            "status": "pass"
+          },
+          {
+            "file": "screen-5.png",
+            "width": 392,
+            "height": 696,
+            "hash": "662dd83866cc3284292cecefdb6d90c80a57c747d0c068e696a626c8f40f4a79",
+            "status": "pass"
+          }
+        ]
+      },
+      "issues": [
+        "insufficient screenshots: 5 < 6 required"
+      ],
+      "warnings": []
+    },
+    {
+      "slug": "zara",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 236,
+            "height": 512,
+            "hash": "948e73614e63348b26c09fd5538693c7cb8ddd602d7110273748ed0039575d44",
+            "status": "warn",
+            "reason": "under min 320×480: 236×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 236,
+            "height": 512,
+            "hash": "62a723aba30a04ce09745b68cb8f7706249bab22fcb87a0e0b5f4ee590b7d0e1",
+            "status": "warn",
+            "reason": "under min 320×480: 236×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 236,
+            "height": 512,
+            "hash": "b59e9d7bbe54d8875426cef4e2e9db281b49bab790a96f01a5437f99502242ac",
+            "status": "warn",
+            "reason": "under min 320×480: 236×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 237,
+            "height": 512,
+            "hash": "8036a52bdc18df1ae39360ff3ae033debf1decf7022d54d357a596f2c16b6883",
+            "status": "warn",
+            "reason": "under min 320×480: 237×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 237,
+            "height": 512,
+            "hash": "61b1aac87e1b4df4330b37f740e8a3cca454b9bf58c87af1fe65e319660eff45",
+            "status": "warn",
+            "reason": "under min 320×480: 237×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 236,
+            "height": 512,
+            "hash": "655d0dcdd9a532aadc8bbee726ff0de400ebcec6f27c7edcf82d6a4e48aa65a6",
+            "status": "warn",
+            "reason": "under min 320×480: 236×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "1361ed5189a7d4299b2de8399ad133bf9f3c1fceb85da40decd68549e942f87a",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "4d3802608655052762aab93608406f35db3dbf381f840e40dedbbb343a79689a",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 236×512",
+        "screen-2.jpg under min 320×480: 236×512",
+        "screen-3.jpg under min 320×480: 236×512",
+        "screen-4.jpg under min 320×480: 237×512",
+        "screen-5.jpg under min 320×480: 237×512",
+        "screen-6.jpg under min 320×480: 236×512",
+        "screen-7.jpg under min 320×480: 288×512",
+        "screen-8.jpg under min 320×480: 288×512"
+      ]
+    },
+    {
+      "slug": "zoom",
+      "status": "warn",
+      "logo": {
+        "file": "logo.jpg",
+        "width": 128,
+        "height": 128,
+        "status": "pass"
+      },
+      "screenshots": {
+        "count": 8,
+        "validCount": 8,
+        "countStatus": "pass",
+        "duplicates": [],
+        "files": [
+          {
+            "file": "screen-1.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "a2f206c99103deac57477038ddf2fa22c0a8cabb4bfcc6200573fa0f494a4fbc",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-2.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "337cf467696939389efbb0c1f334c29c1d5409f6856c2b096561dc85295f20a1",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-3.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "a03059da08d7f4c239025db8201874b5e4a5a51effd548e24cda41d5fd08cfce",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-4.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "143a1647a5d99b60c945f965a2ffd006953fd5359a81df269d8dec837492ed4b",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-5.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "df60fce607e1ec2b0301b77f2cf11d7619b4b98cce911192fe118955b79b9a21",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-6.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "42965021ccdcef801d3f502aa8cc7366eec9b497e1d2c8c3d837b55fb9591edc",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-7.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "188027ed27895c0ca4583ad32748359685822fcbb4aa58c848e118fbe7d5d855",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          },
+          {
+            "file": "screen-8.jpg",
+            "width": 288,
+            "height": 512,
+            "hash": "c443c5a2588a450148bec494ac2756fafabd7fec39af467233c7305525aff1dd",
+            "status": "warn",
+            "reason": "under min 320×480: 288×512"
+          }
+        ]
+      },
+      "issues": [],
+      "warnings": [
+        "screen-1.jpg under min 320×480: 288×512",
+        "screen-2.jpg under min 320×480: 288×512",
+        "screen-3.jpg under min 320×480: 288×512",
+        "screen-4.jpg under min 320×480: 288×512",
+        "screen-5.jpg under min 320×480: 288×512",
+        "screen-6.jpg under min 320×480: 288×512",
+        "screen-7.jpg under min 320×480: 288×512",
+        "screen-8.jpg under min 320×480: 288×512"
+      ]
+    }
+  ]
+}

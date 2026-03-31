@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Send, Sparkles, Bot, User } from 'lucide-react';
 import { chatWithDesignExpert } from '../services/geminiService';
+import { useConciergeMode } from '../contexts/AppSessionContext';
 import { Message } from '../types';
 
 interface DesignAssistantProps {
@@ -10,9 +11,10 @@ interface DesignAssistantProps {
 }
 
 const DesignAssistant: React.FC<DesignAssistantProps> = ({ isOpen, onClose }) => {
+  const { hasLiveConcierge } = useConciergeMode();
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'model', text: 'Hi! I\'m your AI Design Assistant. Ask me about UI patterns, color theory, or UX best practices.', timestamp: new Date() }
+    { role: 'model', text: `${hasLiveConcierge ? '' : 'Live concierge is offline right now, but I can still answer from the local catalog. '}Ask me which Figma kits are ready, what a kit includes, how many credits a kit costs, or which research flow to study before you buy.`, timestamp: new Date() }
   ]);
   const [loading, setLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -76,8 +78,10 @@ const DesignAssistant: React.FC<DesignAssistantProps> = ({ isOpen, onClose }) =>
                     <Sparkles size={20} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-900 dark:text-white">Design Assistant</h3>
-                    <p className="text-xs text-gray-500 dark:text-gray-400">Powered by Gemini 3 Flash</p>
+                    <h3 className="font-bold text-gray-900 dark:text-white">Kit Concierge</h3>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">
+                      {hasLiveConcierge ? 'Grounded in LuxuryUI’s research and Figma catalog' : 'Offline catalog mode'}
+                    </p>
                   </div>
                 </div>
                 <button onClick={onClose} className="p-2 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-full transition-colors text-gray-500 dark:text-gray-400">
@@ -133,7 +137,7 @@ const DesignAssistant: React.FC<DesignAssistantProps> = ({ isOpen, onClose }) =>
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                     onKeyDown={handleKeyDown}
-                    placeholder="Ask about design patterns..."
+                    placeholder="Ask about kits, credit costs, licensing, or the best flow to buy..."
                     className="w-full pl-4 pr-12 py-3 rounded-xl border border-gray-200 dark:border-gray-700 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 outline-none resize-none bg-white dark:bg-gray-800 dark:text-white shadow-sm"
                     rows={1}
                   />

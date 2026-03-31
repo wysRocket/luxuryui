@@ -1,0 +1,591 @@
+{
+  "version": 1,
+  "source": "https://screensdesign.com",
+  "discoveredAt": "2026-03-20T19:09:38.000Z",
+  "method": "sitemap",
+  "sitemapUrl": "https://screensdesign.com/sitemap.xml",
+  "staticHtmlLimitation": "The site is a client-side SPA. Static HTML href extraction produces only asset URLs (SVGs, fonts, CSS). Sitemap-based discovery is required to enumerate app and category routes.",
+  "routePatterns": {
+    "appDetail": "/apps/{slug}/",
+    "category": "/categories/{slug}",
+    "showcase": "/showcase/{slug}/",
+    "search": "/search/?q={query}&smode={mode}"
+  },
+  "counts": {
+    "total": 5762,
+    "appDetail": 2369,
+    "category": 989,
+    "showcase": 2369,
+    "search": 25,
+    "utility": 10
+  },
+  "seeds": {
+    "appDetailSample": [
+      {
+        "url": "https://screensdesign.com/apps/photo-collage-makerpic-layout/",
+        "lastmod": "2026-03-16",
+        "slug": "photo-collage-makerpic-layout"
+      },
+      {
+        "url": "https://screensdesign.com/apps/gym-wp-workout-planner-log/",
+        "lastmod": "2026-03-16",
+        "slug": "gym-wp-workout-planner-log"
+      },
+      {
+        "url": "https://screensdesign.com/apps/bible-daily-bible-verse-kjv/",
+        "lastmod": "2026-03-16",
+        "slug": "bible-daily-bible-verse-kjv"
+      },
+      {
+        "url": "https://screensdesign.com/apps/lyfta-gym-workout-tracker-log/",
+        "lastmod": "2026-03-16",
+        "slug": "lyfta-gym-workout-tracker-log"
+      },
+      {
+        "url": "https://screensdesign.com/apps/radarbot-speed-cameras-gps/",
+        "lastmod": "2026-03-16",
+        "slug": "radarbot-speed-cameras-gps"
+      },
+      {
+        "url": "https://screensdesign.com/apps/photo-collage-maker-incollage/",
+        "lastmod": "2026-03-16",
+        "slug": "photo-collage-maker-incollage"
+      },
+      {
+        "url": "https://screensdesign.com/apps/freepik-ai-video-generator/",
+        "lastmod": "2026-03-16",
+        "slug": "freepik-ai-video-generator"
+      },
+      {
+        "url": "https://screensdesign.com/apps/1111-faster-internet/",
+        "lastmod": "2026-03-16",
+        "slug": "1111-faster-internet"
+      },
+      {
+        "url": "https://screensdesign.com/apps/free-vpn-fast-secure-proxy/",
+        "lastmod": "2026-03-16",
+        "slug": "free-vpn-fast-secure-proxy"
+      },
+      {
+        "url": "https://screensdesign.com/apps/vpn-fast-vpn-proxy/",
+        "lastmod": "2026-03-16",
+        "slug": "vpn-fast-vpn-proxy"
+      },
+      {
+        "url": "https://screensdesign.com/apps/tolan-alien-best-friend/",
+        "lastmod": "2026-03-16",
+        "slug": "tolan-alien-best-friend"
+      },
+      {
+        "url": "https://screensdesign.com/apps/muslim-ramadan-2026-azan/",
+        "lastmod": "2026-03-16",
+        "slug": "muslim-ramadan-2026-azan"
+      },
+      {
+        "url": "https://screensdesign.com/apps/fontmaker-font-keyboard-app/",
+        "lastmod": "2026-03-16",
+        "slug": "fontmaker-font-keyboard-app"
+      },
+      {
+        "url": "https://screensdesign.com/apps/bring-grocery-shopping-list/",
+        "lastmod": "2026-03-16",
+        "slug": "bring-grocery-shopping-list"
+      },
+      {
+        "url": "https://screensdesign.com/apps/running-tracker-app-fitapp/",
+        "lastmod": "2026-03-16",
+        "slug": "running-tracker-app-fitapp"
+      },
+      {
+        "url": "https://screensdesign.com/apps/happy-scale/",
+        "lastmod": "2026-03-16",
+        "slug": "happy-scale"
+      },
+      {
+        "url": "https://screensdesign.com/apps/themie-wallpapers-theme/",
+        "lastmod": "2026-03-16",
+        "slug": "themie-wallpapers-theme"
+      },
+      {
+        "url": "https://screensdesign.com/apps/triprank-speed-tracker/",
+        "lastmod": "2026-03-16",
+        "slug": "triprank-speed-tracker"
+      },
+      {
+        "url": "https://screensdesign.com/apps/asvab-practice-test-2026-prep/",
+        "lastmod": "2026-03-16",
+        "slug": "asvab-practice-test-2026-prep"
+      },
+      {
+        "url": "https://screensdesign.com/apps/looseloop-craft-companion/",
+        "lastmod": "2026-03-16",
+        "slug": "looseloop-craft-companion"
+      },
+      {
+        "url": "https://screensdesign.com/apps/menufit-healthy-eating-out/",
+        "lastmod": "2026-03-16",
+        "slug": "menufit-healthy-eating-out"
+      },
+      {
+        "url": "https://screensdesign.com/apps/health-tracker-heartrate-bp/",
+        "lastmod": "2026-03-16",
+        "slug": "health-tracker-heartrate-bp"
+      },
+      {
+        "url": "https://screensdesign.com/apps/v0/",
+        "lastmod": "2026-03-16",
+        "slug": "v0"
+      },
+      {
+        "url": "https://screensdesign.com/apps/song-ai-maker-generate-music/",
+        "lastmod": "2026-03-16",
+        "slug": "song-ai-maker-generate-music"
+      },
+      {
+        "url": "https://screensdesign.com/apps/guma-ai-photo-video-editor/",
+        "lastmod": "2026-03-16",
+        "slug": "guma-ai-photo-video-editor"
+      },
+      {
+        "url": "https://screensdesign.com/apps/sondo-ai-music-video-ai-mv/",
+        "lastmod": "2026-03-16",
+        "slug": "sondo-ai-music-video-ai-mv"
+      },
+      {
+        "url": "https://screensdesign.com/apps/rockin-rock-mineral-identify/",
+        "lastmod": "2026-03-16",
+        "slug": "rockin-rock-mineral-identify"
+      },
+      {
+        "url": "https://screensdesign.com/apps/blow-up-go-viral-with-ai/",
+        "lastmod": "2026-03-16",
+        "slug": "blow-up-go-viral-with-ai"
+      },
+      {
+        "url": "https://screensdesign.com/apps/cleansound-speaker-cleaner/",
+        "lastmod": "2026-03-16",
+        "slug": "cleansound-speaker-cleaner"
+      },
+      {
+        "url": "https://screensdesign.com/apps/plantaididentifiercare-guide/",
+        "lastmod": "2026-03-16",
+        "slug": "plantaididentifiercare-guide"
+      },
+      {
+        "url": "https://screensdesign.com/apps/daily-bible-verseshome-widget/",
+        "lastmod": "2026-03-16",
+        "slug": "daily-bible-verseshome-widget"
+      },
+      {
+        "url": "https://screensdesign.com/apps/inflow-adhd-cbt-based-program/",
+        "lastmod": "2026-03-16",
+        "slug": "inflow-adhd-cbt-based-program"
+      },
+      {
+        "url": "https://screensdesign.com/apps/zetto/",
+        "lastmod": "2026-03-16",
+        "slug": "zetto"
+      },
+      {
+        "url": "https://screensdesign.com/apps/learn-anything-befreed/",
+        "lastmod": "2026-03-16",
+        "slug": "learn-anything-befreed"
+      },
+      {
+        "url": "https://screensdesign.com/apps/lyricfluent-learn-languages/",
+        "lastmod": "2026-03-16",
+        "slug": "lyricfluent-learn-languages"
+      },
+      {
+        "url": "https://screensdesign.com/apps/language-reactor-sounter/",
+        "lastmod": "2026-03-16",
+        "slug": "language-reactor-sounter"
+      },
+      {
+        "url": "https://screensdesign.com/apps/psl-looksmax-ascend/",
+        "lastmod": "2026-03-16",
+        "slug": "psl-looksmax-ascend"
+      },
+      {
+        "url": "https://screensdesign.com/apps/ai-calorie-counter-meal-plan/",
+        "lastmod": "2026-03-16",
+        "slug": "ai-calorie-counter-meal-plan"
+      },
+      {
+        "url": "https://screensdesign.com/apps/stem-splitter-voice-isolation/",
+        "lastmod": "2026-03-16",
+        "slug": "stem-splitter-voice-isolation"
+      },
+      {
+        "url": "https://screensdesign.com/apps/ai-cal-calorie-counter/",
+        "lastmod": "2026-03-16",
+        "slug": "ai-cal-calorie-counter"
+      },
+      {
+        "url": "https://screensdesign.com/apps/plan-joyto-do-list-reminder/",
+        "lastmod": "2026-03-16",
+        "slug": "plan-joyto-do-list-reminder"
+      },
+      {
+        "url": "https://screensdesign.com/apps/ai-antique-identifier-antiqo/",
+        "lastmod": "2026-03-16",
+        "slug": "ai-antique-identifier-antiqo"
+      },
+      {
+        "url": "https://screensdesign.com/apps/payout-claim-class-actions/",
+        "lastmod": "2026-03-16",
+        "slug": "payout-claim-class-actions"
+      },
+      {
+        "url": "https://screensdesign.com/apps/bookcast-15-minute-insights/",
+        "lastmod": "2026-03-16",
+        "slug": "bookcast-15-minute-insights"
+      },
+      {
+        "url": "https://screensdesign.com/apps/critique-ai/",
+        "lastmod": "2026-03-16",
+        "slug": "critique-ai"
+      },
+      {
+        "url": "https://screensdesign.com/apps/learn-pythonocean-ai-compile/",
+        "lastmod": "2026-03-16",
+        "slug": "learn-pythonocean-ai-compile"
+      },
+      {
+        "url": "https://screensdesign.com/apps/interior-ai-ai-home-designer/",
+        "lastmod": "2026-03-16",
+        "slug": "interior-ai-ai-home-designer"
+      },
+      {
+        "url": "https://screensdesign.com/apps/monoboost-cancel-subscriptions/",
+        "lastmod": "2026-03-16",
+        "slug": "monoboost-cancel-subscriptions"
+      },
+      {
+        "url": "https://screensdesign.com/apps/macrofactor-workouts-tracker/",
+        "lastmod": "2026-03-16",
+        "slug": "macrofactor-workouts-tracker"
+      },
+      {
+        "url": "https://screensdesign.com/apps/mynoise-focus-sleep-relax/",
+        "lastmod": "2026-03-16",
+        "slug": "mynoise-focus-sleep-relax"
+      }
+    ],
+    "categorySample": [
+      {
+        "url": "https://screensdesign.com/categories/zoom-meeting-recorder-apps",
+        "lastmod": "2025-06-17",
+        "slug": "zoom-meeting-recorder-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/zodiac-compatibility-apps",
+        "lastmod": "2025-06-17",
+        "slug": "zodiac-compatibility-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/zero-waste-cooking-apps",
+        "lastmod": "2025-06-17",
+        "slug": "zero-waste-cooking-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/youtube-video-summary-ai-apps",
+        "lastmod": "2025-06-17",
+        "slug": "youtube-video-summary-ai-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/yoga-pose-guide-apps",
+        "lastmod": "2025-06-17",
+        "slug": "yoga-pose-guide-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/yoga-apps",
+        "lastmod": "2025-06-17",
+        "slug": "yoga-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/writing-assistant-apps",
+        "lastmod": "2025-06-17",
+        "slug": "writing-assistant-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/wrinkle-smoothing-face-apps",
+        "lastmod": "2025-06-17",
+        "slug": "wrinkle-smoothing-face-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/wrinkle-reducer-apps",
+        "lastmod": "2025-06-17",
+        "slug": "wrinkle-reducer-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/workout-split-planner-apps",
+        "lastmod": "2025-06-17",
+        "slug": "workout-split-planner-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/workout-planner-apps",
+        "lastmod": "2025-06-17",
+        "slug": "workout-planner-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/wod-timer-apps",
+        "lastmod": "2025-06-17",
+        "slug": "wod-timer-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/wine-pairing-apps",
+        "lastmod": "2025-06-17",
+        "slug": "wine-pairing-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/wildlife-tracking-apps",
+        "lastmod": "2025-06-17",
+        "slug": "wildlife-tracking-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/wildlife-conservation-apps",
+        "lastmod": "2025-06-17",
+        "slug": "wildlife-conservation-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/wilderness-medicine-apps",
+        "lastmod": "2025-06-17",
+        "slug": "wilderness-medicine-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/wild-mushroom-scanner-apps",
+        "lastmod": "2025-06-17",
+        "slug": "wild-mushroom-scanner-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/whiteboard-scanner-apps",
+        "lastmod": "2025-06-17",
+        "slug": "whiteboard-scanner-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/whiteboard-animation-apps",
+        "lastmod": "2025-06-17",
+        "slug": "whiteboard-animation-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/white-noise-generator-apps",
+        "lastmod": "2025-06-17",
+        "slug": "white-noise-generator-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/white-noise-for-babies-apps",
+        "lastmod": "2025-06-17",
+        "slug": "white-noise-for-babies-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/white-noise-apps",
+        "lastmod": "2025-06-17",
+        "slug": "white-noise-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/wheelchair-workout-apps",
+        "lastmod": "2025-06-17",
+        "slug": "wheelchair-workout-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/western-astrology-apps",
+        "lastmod": "2025-06-17",
+        "slug": "western-astrology-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/wellness-journal-apps",
+        "lastmod": "2025-06-17",
+        "slug": "wellness-journal-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/weightlifting-tracker-apps",
+        "lastmod": "2025-06-17",
+        "slug": "weightlifting-tracker-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/weight-loss-tracker-apps",
+        "lastmod": "2025-06-17",
+        "slug": "weight-loss-tracker-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/weight-gain-tracker-apps",
+        "lastmod": "2025-06-17",
+        "slug": "weight-gain-tracker-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/weather-radar-apps",
+        "lastmod": "2025-06-17",
+        "slug": "weather-radar-apps"
+      },
+      {
+        "url": "https://screensdesign.com/categories/weather-forecast-apps",
+        "lastmod": "2025-06-17",
+        "slug": "weather-forecast-apps"
+      }
+    ],
+    "searchRoutes": [
+      {
+        "url": "https://screensdesign.com/search/?q=Paywall&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Paywall",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Tutorial&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Tutorial",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Sign+Up&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Sign Up",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Progress+Bar&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Progress Bar",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Login+Screen&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Login Screen",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Settings+Menu&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Settings Menu",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Profile+Page&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Profile Page",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Search+Bar&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Search Bar",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Filter+Options&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Filter Options",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Streak+Progress&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Streak Progress",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Success+Screen&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Success Screen",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Numeric+Keypad&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Numeric Keypad",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Audio+Player&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Audio Player",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Notification+Permission&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Notification Permission",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Gradient+Icon&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Gradient Icon",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Timer&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Timer",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Profile+Picture&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Profile Picture",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Font+Adjustment&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Font Adjustment",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Rating+Prompt&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Rating Prompt",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Feedback+Popup&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Feedback Popup",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Toggle+Switch&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Toggle Switch",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Color+Picker&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Color Picker",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Date+Picker&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Date Picker",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Dark+Mode+Toggle&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Dark Mode Toggle",
+        "smode": ""
+      },
+      {
+        "url": "https://screensdesign.com/search/?q=Loading+Screen&amp;smode=elements",
+        "lastmod": "2026-03-13",
+        "query": "Loading Screen",
+        "smode": ""
+      }
+    ]
+  },
+  "crawlFrontier": {
+    "strategy": "sitemap-driven",
+    "entryPoint": "https://screensdesign.com/sitemap.xml",
+    "paginationPattern": null,
+    "notes": "All 2369 app routes and 989 category routes are enumerated in the sitemap. No pagination required; sitemap is the complete frontier."
+  },
+  "qualitySignals": {
+    "sitemapCoverage": "high",
+    "routeDeterminism": "deterministic \u2014 sitemap is authoritative",
+    "appDetailOnly": "Showcase routes mirror app-detail routes 1:1 (2369 each). Category routes are tag-page aggregates."
+  }
+}
