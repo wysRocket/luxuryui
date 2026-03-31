@@ -22,7 +22,7 @@ const AppSlider: React.FC<AppSliderProps> = ({
   if (apps.length === 0) return null;
 
   // Duplicate apps once for a perfect 50% loop
-  const sliderApps = [...apps, ...apps];
+  const sliderApps = [...apps, ...apps].filter((app): app is AppItem => Boolean(app));
 
   return (
     <div 
