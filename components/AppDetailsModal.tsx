@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Smartphone, Monitor, LayoutGrid, Share2, Bookmark, Info } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
@@ -19,11 +19,16 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
   const navigate = useNavigate();
   const { isAuthenticated, wallet, hasUnlocked } = useAppSession();
   const realScreenshots = app ? REAL_APP_ASSETS[app.name]?.screenshots : undefined;
-  const screenshots = app
-    ? realScreenshots?.length
-      ? realScreenshots
-      : [app.image]
-    : [];
+  const screenshots = useMemo(() => {
+    if (!app) {
+      return [];
+    }
+
+    const baseScreenshots = realScreenshots?.length ? realScreenshots : [app.image];
+    const orderedScreenshots = [app.image, ...baseScreenshots].filter(Boolean);
+
+    return Array.from(new Set(orderedScreenshots));
+  }, [app, realScreenshots]);
   const relatedKit = app ? getPublishedKitForAppSlug(app.slug) : undefined;
   const kitUnlocked = relatedKit ? hasUnlocked(relatedKit.id) : false;
   const hasEnoughCredits = relatedKit ? (wallet?.balance ?? 0) >= relatedKit.creditCost : false;
@@ -34,8 +39,8 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
       return;
     }
 
-    setActiveScreenshot(realScreenshots?.[0] ?? app.image);
-  }, [app, realScreenshots]);
+    setActiveScreenshot(app.image);
+  }, [app]);
 
   if (!app) return null;
 
