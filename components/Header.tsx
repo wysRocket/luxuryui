@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Search, Bell, Sparkles, Sun, Moon, X, ArrowLeft, TrendingUp, Zap, Clock } from 'lucide-react';
+import { Search, Bell, Sparkles, Sun, Moon, X, ArrowLeft, TrendingUp, Zap, Clock, Menu } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link, useNavigate } from 'react-router-dom';
-import { MOCK_APPS, FILTER_TAGS } from '../constants';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { MOCK_APPS, FILTER_TAGS, NAV_ITEMS } from '../constants';
 import { useAppSession } from '../contexts/AppSessionContext';
 
 interface HeaderProps {
@@ -21,8 +21,9 @@ const Header: React.FC<HeaderProps> = ({
   onSearchChange
 }) => {
   const navigate = useNavigate();
-  const { isAuthenticated, user, wallet, signOut } = useAppSession();
+  const { backendMode, isAuthenticated, user, wallet, signOut } = useAppSession();
   const [isMobileSearchOpen, setIsMobileSearchOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   const searchRef = useRef<HTMLDivElement>(null);
 
@@ -183,6 +184,17 @@ const Header: React.FC<HeaderProps> = ({
             <Search size={20} className="sm:w-[22px] sm:h-[22px]" />
           </button>
 
+          <button
+            onClick={() => {
+              setIsMobileSearchOpen(false);
+              setIsMobileMenuOpen(true);
+            }}
+            className="lg:hidden p-2 sm:p-2.5 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors"
+            aria-label="Open menu"
+          >
+            <Menu size={20} className="sm:w-[22px] sm:h-[22px]" />
+          </button>
+
           <button 
             onClick={toggleDarkMode}
             className="p-2 sm:p-2.5 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors"
@@ -193,7 +205,7 @@ const Header: React.FC<HeaderProps> = ({
 
           <button 
               onClick={onOpenAssistant}
-              className="hidden xl:flex items-center gap-2.5 px-5 py-2.5 bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600 text-white rounded-full text-[11px] font-black shadow-lg shadow-blue-500/10 hover:shadow-blue-500/30 transition-all hover:scale-[1.03] active:scale-95 tracking-widest uppercase"
+              className="hidden xl:flex cursor-pointer items-center gap-2.5 px-5 py-2.5 bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600 text-white rounded-full text-[11px] font-black shadow-lg shadow-blue-500/10 hover:shadow-blue-500/30 transition-all hover:scale-[1.03] active:scale-95 tracking-widest uppercase"
           >
               <Sparkles size={16} />
               Kit Concierge
@@ -214,9 +226,16 @@ const Header: React.FC<HeaderProps> = ({
               >
                 <span>{wallet?.balance ?? 0} credits</span>
               </Link>
-              <Link to="/account" className="hidden md:block text-sm lg:text-[15px] font-bold text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white px-2 lg:px-3 transition-colors">
-                {user?.displayName ?? 'Account'}
-              </Link>
+              <div className="hidden xl:flex items-center gap-2">
+                {backendMode === 'firebase' && (
+                  <span className="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-[10px] font-black uppercase tracking-[0.16em] text-emerald-700 dark:border-emerald-900/40 dark:bg-emerald-950/30 dark:text-emerald-200">
+                    Firebase
+                  </span>
+                )}
+                <Link to="/account" className="text-sm lg:text-[15px] font-bold text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white px-2 lg:px-3 transition-colors">
+                  {user?.displayName ?? 'Account'}
+                </Link>
+              </div>
               <button
                 type="button"
                 onClick={async () => {
@@ -279,6 +298,130 @@ const Header: React.FC<HeaderProps> = ({
               Done
             </button>
           </motion.div>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <>
+            <motion.button
+              type="button"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="fixed inset-0 z-40 bg-black/45 backdrop-blur-sm lg:hidden"
+              aria-label="Close menu"
+            />
+            <motion.div
+              initial={{ opacity: 0, x: 24 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 24 }}
+              transition={{ duration: 0.2, ease: 'easeOut' }}
+              className="fixed right-0 top-0 z-50 h-screen w-[min(24rem,88vw)] border-l border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 shadow-2xl lg:hidden"
+            >
+              <div className="flex h-full flex-col">
+                <div className="flex items-center justify-between border-b border-gray-100 dark:border-gray-900 px-5 py-4">
+                  <div>
+                    <p className="text-xs font-black uppercase tracking-[0.18em] text-gray-400 dark:text-gray-500">Navigation</p>
+                    <p className="mt-1 text-xl font-black tracking-tight text-gray-900 dark:text-white">LuxuryUI</p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="rounded-full p-2 text-gray-500 transition-colors hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
+                  >
+                    <X size={20} />
+                  </button>
+                </div>
+
+                <nav className="flex-1 overflow-y-auto px-4 py-5">
+                  <div className="space-y-2">
+                    {NAV_ITEMS.map((item) => (
+                      <NavLink
+                        key={item.label}
+                        to={item.path}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        className={({ isActive }) =>
+                          `flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-bold transition-colors ${
+                            isActive
+                              ? 'bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white'
+                              : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-900 dark:hover:text-white'
+                          }`
+                        }
+                      >
+                        {item.icon}
+                        {item.label}
+                      </NavLink>
+                    ))}
+                  </div>
+
+                  <div className="mt-6 rounded-[24px] border border-gray-100 bg-gray-50 p-4 dark:border-gray-800 dark:bg-gray-900/60">
+                    <p className="text-xs font-black uppercase tracking-[0.18em] text-gray-400 dark:text-gray-500">Concierge</p>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setIsMobileMenuOpen(false);
+                        onOpenAssistant();
+                      }}
+                      className="mt-3 flex w-full cursor-pointer items-center justify-between rounded-2xl bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600 px-4 py-3 text-left text-sm font-black uppercase tracking-[0.14em] text-white"
+                    >
+                      <span>Open Kit Concierge</span>
+                      <Sparkles size={16} />
+                    </button>
+                  </div>
+                </nav>
+
+                <div className="border-t border-gray-100 px-4 py-4 dark:border-gray-900">
+                  {isAuthenticated ? (
+                    <div className="space-y-3">
+                      {backendMode === 'firebase' && (
+                        <div className="rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-xs font-black uppercase tracking-[0.14em] text-emerald-700 dark:border-emerald-900/40 dark:bg-emerald-950/30 dark:text-emerald-200">
+                          Firebase account
+                        </div>
+                      )}
+                      <Link
+                        to="/account"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        className="flex items-center justify-between rounded-2xl border border-gray-200 px-4 py-3 text-sm font-bold text-gray-700 dark:border-gray-700 dark:text-gray-200"
+                      >
+                        <span>Account</span>
+                        <span>{wallet?.balance ?? 0} credits</span>
+                      </Link>
+                      <button
+                        type="button"
+                        onClick={async () => {
+                          await signOut();
+                          setIsMobileMenuOpen(false);
+                          navigate('/');
+                        }}
+                        className="w-full rounded-2xl bg-black px-4 py-3 text-sm font-black text-white dark:bg-white dark:text-black"
+                      >
+                        Sign out
+                      </button>
+                    </div>
+                  ) : (
+                    <div className="grid grid-cols-2 gap-3">
+                      <Link
+                        to="/login"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        className="rounded-2xl border border-gray-200 px-4 py-3 text-center text-sm font-bold text-gray-700 dark:border-gray-700 dark:text-gray-200"
+                      >
+                        Log in
+                      </Link>
+                      <Link
+                        to="/signup"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        className="rounded-2xl bg-black px-4 py-3 text-center text-sm font-black text-white dark:bg-white dark:text-black"
+                      >
+                        Sign Up
+                      </Link>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </header>

@@ -1,0 +1,25 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /wallets/{userId} {
+      allow read, create, update: if request.auth != null && request.auth.uid == userId;
+
+      match /transactions/{transactionId} {
+        allow read, create, update: if request.auth != null && request.auth.uid == userId;
+      }
+
+      match /topUps/{topUpId} {
+        allow read, create, update: if request.auth != null && request.auth.uid == userId;
+      }
+
+      match /orders/{orderId} {
+        allow read, create, update: if request.auth != null && request.auth.uid == userId;
+      }
+
+      match /unlocks/{unlockId} {
+        allow read, create, update: if request.auth != null && request.auth.uid == userId;
+      }
+    }
+  }
+}

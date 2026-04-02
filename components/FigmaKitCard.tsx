@@ -34,10 +34,18 @@ const FigmaKitCard: React.FC<FigmaKitCardProps> = ({ kit }) => {
             <span className="inline-flex items-center rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-[11px] font-black uppercase tracking-[0.18em] text-white/80">
               {flowLabel}
             </span>
-            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-400/12 px-3 py-1.5 text-[11px] font-black uppercase tracking-[0.18em] text-emerald-200">
-              <CheckCircle2 size={12} />
-              Figma-ready
-            </span>
+            <div className="flex flex-wrap justify-end gap-2">
+              {unlocked && (
+                <span className="inline-flex items-center gap-1 rounded-full bg-white/14 px-3 py-1.5 text-[11px] font-black uppercase tracking-[0.18em] text-white">
+                  <CheckCircle2 size={12} />
+                  Purchased
+                </span>
+              )}
+              <span className="inline-flex items-center gap-1 rounded-full bg-emerald-400/12 px-3 py-1.5 text-[11px] font-black uppercase tracking-[0.18em] text-emerald-200">
+                <CheckCircle2 size={12} />
+                Figma-ready
+              </span>
+            </div>
           </div>
           <h3 className="max-w-md text-2xl font-black tracking-tight text-white leading-tight">{kit.title}</h3>
           <p className="mt-3 max-w-lg text-sm leading-relaxed text-white/70">
@@ -71,12 +79,12 @@ const FigmaKitCard: React.FC<FigmaKitCardProps> = ({ kit }) => {
           </div>
         </div>
 
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           <div>
             <p className="text-xs font-black uppercase tracking-[0.16em] text-gray-400 dark:text-gray-500">Credit Cost</p>
             <p className="text-2xl font-black text-gray-900 dark:text-white">{formatCreditCost(kit.creditCost)}</p>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
             <Link
               to={kit.previewPath}
               className="inline-flex items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 px-4 py-2.5 text-sm font-bold text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"

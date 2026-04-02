@@ -1,23 +1,23 @@
-import React from 'react';
+import type { ReactNode } from "react";
 
 export interface AppItem {
   id: string;
   slug: string;
   name: string;
   category: string;
-  platform: 'iOS' | 'Android' | 'Web';
+  platform: "iOS" | "Android" | "Web";
   screenCount: number;
   image: string; // URL for the cover image
   logo: string; // URL for the app logo
   lastUpdated: string;
-  sourceQuality?: 'pass' | 'warn' | 'fail' | 'unknown';
+  sourceQuality?: "pass" | "warn" | "fail" | "unknown";
   qualityWarnings?: string[];
-  assetOrigin?: 'real' | 'generated';
+  assetOrigin?: "real" | "generated";
 }
 
 export interface NavItem {
   label: string;
-  icon: React.ReactNode;
+  icon: ReactNode;
   path: string;
 }
 
@@ -27,18 +27,22 @@ export interface FilterTag {
 }
 
 export interface Message {
-  role: 'user' | 'model';
+  role: "user" | "model";
   text: string;
   timestamp: Date;
 }
 
 export interface ReferenceApp extends AppItem {
-  researchStatus: 'reference-only' | 'kit-ready';
-  sourceQuality: 'pass' | 'warn' | 'fail' | 'unknown';
+  researchStatus: "reference-only" | "kit-ready";
+  sourceQuality: "pass" | "warn" | "fail" | "unknown";
 }
 
-export type FigmaKitType = 'screen-kit' | 'flow-kit' | 'component-kit' | 'full-system';
-export type FigmaKitStatus = 'draft' | 'ready' | 'published' | 'blocked';
+export type FigmaKitType =
+  | "screen-kit"
+  | "flow-kit"
+  | "component-kit"
+  | "full-system";
+export type FigmaKitStatus = "draft" | "ready" | "published" | "blocked";
 
 export interface CreditPackConfig {
   minCredits: number;
@@ -58,11 +62,35 @@ export interface CreditQuote {
   gbpTotal: number;
 }
 
-export interface UserProfile {
+export type AuthProvider = "local" | "firebase-password" | "firebase-google";
+export type AuthStatus = "loading" | "authenticated" | "anonymous";
+
+export interface AuthenticatedUser {
   uid: string;
   email: string;
   displayName: string;
   createdAt: string;
+  provider: AuthProvider;
+}
+
+export type UserProfile = AuthenticatedUser;
+
+export interface AuthBackend {
+  signUp: (input: {
+    displayName: string;
+    email: string;
+    password: string;
+  }) => Promise<AuthenticatedUser>;
+  signIn: (input: {
+    email: string;
+    password: string;
+  }) => Promise<AuthenticatedUser>;
+  signInWithGoogle: () => Promise<AuthenticatedUser>;
+  signOut: () => Promise<void>;
+  onAuthStateChanged: (
+    listener: (user: AuthenticatedUser | null) => void,
+  ) => () => void;
+  getCurrentUser: () => Promise<AuthenticatedUser | null>;
 }
 
 export interface CreditWallet {
@@ -70,13 +98,14 @@ export interface CreditWallet {
   balance: number;
   lifetimePurchased: number;
   lifetimeSpent: number;
+  createdAt?: string;
   updatedAt: string;
 }
 
 export interface CreditTransaction {
   id: string;
   userId: string;
-  type: 'topup' | 'purchase' | 'refund';
+  type: "topup" | "purchase" | "refund";
   creditsDelta: number;
   relatedKitId?: string;
   relatedOrderId?: string;
@@ -90,7 +119,7 @@ export interface CreditTopUp {
   eurAmount: number;
   gbpAmount: number;
   stripeSessionId: string;
-  status: 'pending' | 'succeeded' | 'failed';
+  status: "pending" | "succeeded" | "failed";
   createdAt: string;
 }
 
@@ -100,7 +129,7 @@ export interface KitUnlock {
   productId: string;
   creditsSpent: number;
   unlockedAt: string;
-  downloadStatus: 'available' | 'downloaded';
+  downloadStatus: "available" | "downloaded";
 }
 
 export interface KitOrder {
@@ -108,7 +137,7 @@ export interface KitOrder {
   userId: string;
   productId: string;
   creditCost: number;
-  status: 'unlocked' | 'fulfilled';
+  status: "unlocked" | "fulfilled";
   fulfilledAt: string | null;
 }
 
@@ -164,13 +193,54 @@ export interface CommercialReview {
   productId: string;
   productSlug: string;
   sourceAppSlug: string;
-  reviewStatus: 'approved' | 'blocked';
-  sourceQuality: 'pass' | 'warn' | 'fail' | 'unknown';
-  originalityStatus: 'transformed' | 'too-close' | 'needs-review';
-  completenessStatus: 'pass' | 'fail';
-  provenanceStatus: 'linked' | 'partial' | 'missing';
+  reviewStatus: "approved" | "blocked";
+  sourceQuality: "pass" | "warn" | "fail" | "unknown";
+  originalityStatus: "transformed" | "too-close" | "needs-review";
+  completenessStatus: "pass" | "fail";
+  provenanceStatus: "linked" | "partial" | "missing";
   readyForSale: boolean;
   legalNotes: string[];
   editorialNotes: string[];
   reviewedAt: string;
+}
+
+export interface AppSessionState {
+  authStatus: AuthStatus;
+  user: AuthenticatedUser | null;
+  wallet: CreditWallet | null;
+  transactions: CreditTransaction[];
+  topUps: CreditTopUp[];
+  unlocks: KitUnlock[];
+  orders: KitOrder[];
+}
+
+export interface CommerceStore {
+  ensureWallet: (user: UserProfile) => Promise<CreditWallet> | CreditWallet;
+  subscribeToWallet: (
+    userId: string,
+    listener: (wallet: CreditWallet | null) => void,
+  ) => () => void;
+  subscribeToTransactions: (
+    userId: string,
+    listener: (transactions: CreditTransaction[]) => void,
+  ) => () => void;
+  subscribeToTopUps: (
+    userId: string,
+    listener: (topUps: CreditTopUp[]) => void,
+  ) => () => void;
+  subscribeToOrders: (
+    userId: string,
+    listener: (orders: KitOrder[]) => void,
+  ) => () => void;
+  subscribeToUnlocks: (
+    userId: string,
+    listener: (unlocks: KitUnlock[]) => void,
+  ) => () => void;
+  topUpCredits: (user: UserProfile, credits: number) => Promise<CreditTopUp>;
+  purchaseKit: (user: UserProfile, kit: FigmaKitProduct) => Promise<KitUnlock>;
+  markDownloadStatus: (
+    userId: string,
+    unlockId: string,
+    status: KitUnlock["downloadStatus"],
+  ) => Promise<void> | void;
 }

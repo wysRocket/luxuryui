@@ -16,7 +16,7 @@ import { useAppSession } from '../contexts/AppSessionContext';
 const FigmaKitDetailPage: React.FC = () => {
   const { kitSlug } = useParams<{ kitSlug: string }>();
   const navigate = useNavigate();
-  const { isAuthenticated, wallet, hasUnlocked, purchaseKit, isBusy } = useAppSession();
+  const { backendMode, isAuthenticated, wallet, hasUnlocked, purchaseKit, isBusy } = useAppSession();
   const [purchaseError, setPurchaseError] = useState('');
 
   const kit = useMemo(() => (kitSlug ? getFigmaKitBySlug(kitSlug) : undefined), [kitSlug]);
@@ -107,7 +107,9 @@ const FigmaKitDetailPage: React.FC = () => {
                 {formatCurrencyAmount('EUR', quote.eurTotal)} / {formatCurrencyAmount('GBP', quote.gbpTotal)} top-up value
               </p>
               <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400 mb-6">
-                Delivered as an editable Figma file with notes, tokens, and reusable sections for commercial product work.
+                {backendMode === 'firebase'
+                  ? 'Delivered as an editable Figma file with notes, tokens, and reusable sections for commercial product work. Your unlock state now persists to your Firebase-backed account.'
+                  : 'Delivered as an editable Figma file with notes, tokens, and reusable sections for commercial product work.'}
               </p>
               {purchaseError && (
                 <div className="mb-4 rounded-2xl border border-red-200 bg-red-50 px-4 py-4 text-sm text-red-700 dark:border-red-900/40 dark:bg-red-950/30 dark:text-red-200">
