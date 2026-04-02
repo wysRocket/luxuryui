@@ -82,11 +82,11 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
           {/* Modal Container */}
           <motion.div
             layoutId={`app-card-container-${app.id}`}
-            className="bg-white dark:bg-gray-900 w-full max-w-5xl h-[90vh] rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row transition-colors duration-300 relative z-10"
+            className="bg-white dark:bg-gray-900 w-full max-w-5xl h-[92vh] rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row transition-colors duration-300 relative z-10"
           >
             {/* Image Section */}
             <motion.div 
-              className="w-full md:w-3/5 h-[420px] md:h-auto relative overflow-hidden bg-[#0b0b0f]"
+              className="w-full md:w-3/5 h-[52vh] min-h-[380px] sm:h-[460px] md:h-auto relative overflow-hidden bg-[#0b0b0f]"
             >
               <div className="absolute inset-0">
                 <img
@@ -98,7 +98,7 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.12),transparent_38%),linear-gradient(180deg,rgba(12,12,14,0.3),rgba(12,12,14,0.92))]" />
               </div>
 
-              <div className="relative z-10 flex h-full flex-col p-5 md:p-8">
+              <div className="relative z-10 flex h-full flex-col p-5 sm:p-6 md:p-8">
                 <div className="flex items-start justify-between gap-3">
                   <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/80 backdrop-blur-md">
                     <span>Curated Preview</span>
@@ -115,8 +115,8 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
                   </button>
                 </div>
 
-                <div className="flex flex-1 items-center justify-center py-6 md:py-10">
-                  <div className="w-full max-w-[260px] md:max-w-[360px]">
+                <div className="flex flex-1 items-center justify-center py-4 sm:py-6 md:py-10">
+                  <div className="w-full max-w-[min(88vw,360px)] sm:max-w-[320px] md:max-w-[360px]">
                     <div className="rounded-[2rem] border border-white/10 bg-black/55 p-3 shadow-[0_30px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl">
                       <div className="mb-3 flex justify-center">
                         <div className="h-1.5 w-20 rounded-full bg-white/18" />
@@ -157,7 +157,7 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
                           <img
                             src={screenshot}
                             alt={`${app.name} screenshot ${index + 1}`}
-                            className={`h-24 w-[4.4rem] bg-black object-cover transition-transform duration-300 ${
+                            className={`h-28 w-[5.2rem] sm:h-24 sm:w-[4.4rem] bg-black object-cover transition-transform duration-300 ${
                               isActive ? 'scale-[1.03]' : 'group-hover:scale-[1.03]'
                             }`}
                             draggable={false}

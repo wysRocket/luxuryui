@@ -3,11 +3,10 @@ import { Link, Navigate, useParams } from 'react-router-dom';
 import { Download, FileArchive, ShieldCheck } from 'lucide-react';
 import { useAppSession } from '../contexts/AppSessionContext';
 import { getFigmaKitBySlug, getFigmaManifest } from '../data/figmaKits';
-import { markKitDownloaded } from '../services/appSessionStore';
 
 const KitDeliveryPage: React.FC = () => {
   const { kitSlug } = useParams<{ kitSlug: string }>();
-  const { hasUnlocked, getUnlock, createDownload } = useAppSession();
+  const { backendMode, hasUnlocked, getUnlock, createDownload, markDownloadStatus } = useAppSession();
   const [downloadError, setDownloadError] = useState('');
   const [downloadedAt, setDownloadedAt] = useState('');
 
@@ -24,7 +23,7 @@ const KitDeliveryPage: React.FC = () => {
   const unlock = getUnlock(kit.id);
   const manifest = getFigmaManifest(kit.id);
 
-  const handleDownload = () => {
+  const handleDownload = async () => {
     setDownloadError('');
 
     try {
@@ -38,7 +37,7 @@ const KitDeliveryPage: React.FC = () => {
       window.setTimeout(() => URL.revokeObjectURL(url), 0);
 
       if (unlock) {
-        markKitDownloaded(unlock.id);
+        await markDownloadStatus(unlock.id, 'downloaded');
       }
       setDownloadedAt(new Date().toLocaleTimeString());
     } catch (error) {
@@ -52,7 +51,9 @@ const KitDeliveryPage: React.FC = () => {
         <p className="text-xs font-black uppercase tracking-[0.24em] text-gray-400 dark:text-gray-500 mb-4">Delivery</p>
         <h1 className="text-4xl md:text-5xl font-black tracking-tight text-gray-900 dark:text-white mb-4">{kit.title}</h1>
         <p className="text-[15px] leading-relaxed text-gray-600 dark:text-gray-400 mb-8">
-          Your kit is unlocked. Download the delivery package, review the file blueprint, and return here any time from your account library.
+          {backendMode === 'firebase'
+            ? 'Your kit is unlocked and attached to your Firebase-backed account. Download the delivery package, review the file blueprint, and return here from any signed-in session.'
+            : 'Your kit is unlocked. Download the delivery package, review the file blueprint, and return here any time from your account library.'}
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">

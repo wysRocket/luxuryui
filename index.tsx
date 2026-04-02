@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
+import ScrollToTop from './components/ScrollToTop';
 import { AppSessionProvider } from './contexts/AppSessionContext';
 import './index.css';
 
@@ -15,6 +16,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <AppSessionProvider>
+        <ScrollToTop />
         <App />
       </AppSessionProvider>
     </BrowserRouter>

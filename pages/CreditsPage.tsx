@@ -13,7 +13,7 @@ import {
 import { useAppSession } from '../contexts/AppSessionContext';
 
 const CreditsPage: React.FC = () => {
-  const { isAuthenticated, topUpCredits, wallet, isBusy, warnings } = useAppSession();
+  const { backendMode, isAuthenticated, topUpCredits, wallet, isBusy, warnings } = useAppSession();
   const [credits, setCredits] = useState(CREDIT_PACK_CONFIG.defaultCredits);
   const [statusMessage, setStatusMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
@@ -222,7 +222,9 @@ const CreditsPage: React.FC = () => {
           </div>
 
           <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">
-            Currency display is informational. You adjust credits here, then spend those credits on approved Figma kits in the storefront.
+            {backendMode === 'firebase'
+              ? 'Your account, wallet balance, and unlocked kits now persist through Firebase Auth + Firestore. Top-ups here are still instant mock payments until Stripe checkout is connected.'
+              : 'Currency display is informational. You adjust credits here, then spend those credits on approved Figma kits in the storefront.'}
           </p>
         </article>
 

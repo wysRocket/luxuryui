@@ -14,8 +14,7 @@ LuxuryUI is evolving from a premium screenshot library into a sellable Figma ass
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+**Prerequisites:** Node.js
 
 1. Install dependencies:
    `npm install`
@@ -28,7 +27,7 @@ LuxuryUI is evolving from a premium screenshot library into a sellable Figma ass
 LuxuryUI now supports two runtime shapes:
 
 - `local` mode works immediately and persists auth, credits, purchases, and unlocked kits in the browser
-- live mode is enabled by env vars and is designed for Firebase auth/data plus Stripe checkout
+- `firebase` mode enables real Firebase email/password auth plus Firestore-backed wallet, purchases, unlocks, and account history
 
 Important runtime switches:
 
@@ -37,6 +36,39 @@ Important runtime switches:
 - `VITE_GEMINI_API_KEY` for the live concierge
 
 If you switch to Firebase or Stripe mode without the required keys, the app fails loudly in development instead of silently falling back.
+
+### Firebase Auth Notes
+
+- Firebase mode uses a real Firebase project, not the emulator suite
+- local mock accounts are separate from Firebase accounts and are not migrated automatically
+- in Firebase mode, login/signup and wallet history persist across devices through Firebase Auth + Firestore
+- payment processing is still mock/local in this phase; top-ups complete instantly in-app until Stripe is connected
+
+### Google Sign-In Setup
+
+1. In Firebase Console, open Authentication -> Sign-in method.
+2. Enable the Google provider.
+3. Add every deployment hostname under Authentication -> Settings -> Authorized domains.
+4. In `.env.local`, set:
+   - `VITE_FIREBASE_GOOGLE_AUTH_ENABLED=true`
+   - `VITE_FIREBASE_AUTHORIZED_DOMAINS=localhost,127.0.0.1,<your-domain>`
+
+If these values are missing, the app shows readiness warnings in Firebase mode to reduce deployment drift.
+
+### Auth Regression Checklist
+
+Use [docs/auth-regression-checklist.md](/Users/wysmyfree/Projects/luxuryui/docs/auth-regression-checklist.md) before releases that touch auth, wallet, or account state.
+
+### Deploy Firestore Rules
+
+1. Log into Firebase CLI:
+   `npm run firebase:login`
+2. Select or configure your target Firebase project locally:
+   `npx -y firebase-tools@latest use <project-id>`
+3. Deploy the wallet security rules from [firestore.rules](/Users/wysmyfree/Projects/luxuryui/firestore.rules):
+   `npm run firebase:deploy:rules`
+
+The repo-level Firebase config lives in [firebase.json](/Users/wysmyfree/Projects/luxuryui/firebase.json).
 
 ## Agent Team
 

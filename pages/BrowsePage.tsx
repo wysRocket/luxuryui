@@ -168,12 +168,12 @@ const BrowsePage: React.FC<BrowsePageProps> = ({ isDarkMode, searchQuery, onSear
 
             <div className="w-px h-6 bg-gray-200 dark:bg-gray-800 mx-1 flex-shrink-0" />
 
-            <div className="flex items-center gap-3 overflow-x-auto no-scrollbar pb-2 md:pb-0 flex-1 mask-linear-fade">
+            <div className="flex flex-1 flex-wrap gap-3 pb-2 md:flex-nowrap md:overflow-x-auto md:no-scrollbar md:pb-0 md:mask-linear-fade">
               {FILTER_TAGS.map((tag) => (
                 <button
                   key={tag.id}
                   onClick={() => setSelectedFilter(tag.id)}
-                  className={`px-5 py-2 rounded-full text-sm font-bold transition-all whitespace-nowrap flex-shrink-0 flex items-center gap-2 border-2 ${
+                  className={`px-4 sm:px-5 py-2 rounded-full text-sm font-bold transition-all whitespace-nowrap flex-shrink-0 flex items-center gap-2 border-2 ${
                     selectedFilter === tag.id
                       ? 'bg-white border-black text-black dark:bg-gray-950 dark:border-white dark:text-white'
                       : 'bg-gray-100 dark:bg-gray-900 border-transparent text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-gray-100'

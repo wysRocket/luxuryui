@@ -10,13 +10,7 @@ import {
 } from '../types';
 import { assertRuntimeConfiguration } from './runtimeConfig';
 
-interface LocalUserRecord extends UserProfile {
-  password: string;
-}
-
 interface PersistedState {
-  users: LocalUserRecord[];
-  sessionUid: string | null;
   wallets: CreditWallet[];
   transactions: CreditTransaction[];
   topUps: CreditTopUp[];
@@ -37,8 +31,6 @@ const STORAGE_KEY = 'luxuryui.session-store.v1';
 const CHANGE_EVENT = 'luxuryui-session-store-change';
 
 const defaultState: PersistedState = {
-  users: [],
-  sessionUid: null,
   wallets: [],
   transactions: [],
   topUps: [],
@@ -63,10 +55,14 @@ const readState = (): PersistedState => {
       return defaultState;
     }
 
-    const parsed = JSON.parse(raw) as Partial<PersistedState>;
+    const parsed = JSON.parse(raw) as Partial<
+      PersistedState & {
+        users?: unknown[];
+        sessionUid?: string | null;
+      }
+    >;
+
     return {
-      users: parsed.users ?? [],
-      sessionUid: parsed.sessionUid ?? null,
       wallets: parsed.wallets ?? [],
       transactions: parsed.transactions ?? [],
       topUps: parsed.topUps ?? [],
@@ -90,17 +86,16 @@ const writeState = (nextState: PersistedState): void => {
 const getWalletForUser = (state: PersistedState, userId: string): CreditWallet | null =>
   state.wallets.find((wallet) => wallet.userId === userId) ?? null;
 
-const toSnapshot = (state: PersistedState): SessionSnapshot => {
-  const activeUserRecord = state.users.find((user) => user.uid === state.sessionUid) ?? null;
-  const user = activeUserRecord
-    ? {
-        uid: activeUserRecord.uid,
-        email: activeUserRecord.email,
-        displayName: activeUserRecord.displayName,
-        createdAt: activeUserRecord.createdAt,
-      }
-    : null;
+const buildWallet = (userId: string): CreditWallet => ({
+  userId,
+  balance: 0,
+  lifetimePurchased: 0,
+  lifetimeSpent: 0,
+  createdAt: now(),
+  updatedAt: now(),
+});
 
+const toSnapshot = (state: PersistedState, user: UserProfile | null): SessionSnapshot => {
   if (!user) {
     return {
       user: null,
@@ -122,9 +117,9 @@ const toSnapshot = (state: PersistedState): SessionSnapshot => {
   };
 };
 
-export const getSessionSnapshot = (): SessionSnapshot => {
+export const getSessionSnapshot = (user: UserProfile | null): SessionSnapshot => {
   assertRuntimeConfiguration();
-  return toSnapshot(readState());
+  return toSnapshot(readState(), user);
 };
 
 export const subscribeToSession = (callback: () => void): (() => void) => {
@@ -137,98 +132,33 @@ export const subscribeToSession = (callback: () => void): (() => void) => {
   return () => window.removeEventListener(CHANGE_EVENT, wrapped);
 };
 
-export const signUpWithEmail = async ({
-  displayName,
-  email,
-  password,
-}: {
-  displayName: string;
-  email: string;
-  password: string;
-}): Promise<UserProfile> => {
-  assertRuntimeConfiguration();
-
-  const normalizedEmail = email.trim().toLowerCase();
+export const ensureWalletForUser = (userId: string): CreditWallet => {
   const currentState = readState();
+  const existingWallet = getWalletForUser(currentState, userId);
 
-  if (currentState.users.some((user) => user.email.toLowerCase() === normalizedEmail)) {
-    throw new Error('An account with this email already exists.');
+  if (existingWallet) {
+    return existingWallet;
   }
 
-  const createdAt = now();
-  const nextUser: LocalUserRecord = {
-    uid: generateId('user'),
-    displayName: displayName.trim(),
-    email: normalizedEmail,
-    password,
-    createdAt,
-  };
-
-  const nextWallet: CreditWallet = {
-    userId: nextUser.uid,
-    balance: 0,
-    lifetimePurchased: 0,
-    lifetimeSpent: 0,
-    updatedAt: createdAt,
-  };
+  const nextWallet = buildWallet(userId);
 
   writeState({
     ...currentState,
-    users: [...currentState.users, nextUser],
     wallets: [...currentState.wallets, nextWallet],
-    sessionUid: nextUser.uid,
   });
 
-  return {
-    uid: nextUser.uid,
-    displayName: nextUser.displayName,
-    email: nextUser.email,
-    createdAt: nextUser.createdAt,
-  };
+  return nextWallet;
 };
 
-export const signInWithEmail = async ({ email, password }: { email: string; password: string }): Promise<UserProfile> => {
+export const topUpWalletCredits = async (user: UserProfile | null, credits: number): Promise<CreditTopUp> => {
   assertRuntimeConfiguration();
 
-  const normalizedEmail = email.trim().toLowerCase();
-  const currentState = readState();
-  const existingUser = currentState.users.find((user) => user.email.toLowerCase() === normalizedEmail);
-
-  if (!existingUser || existingUser.password !== password) {
-    throw new Error('Email or password is incorrect.');
-  }
-
-  writeState({
-    ...currentState,
-    sessionUid: existingUser.uid,
-  });
-
-  return {
-    uid: existingUser.uid,
-    displayName: existingUser.displayName,
-    email: existingUser.email,
-    createdAt: existingUser.createdAt,
-  };
-};
-
-export const signOutSession = async (): Promise<void> => {
-  const currentState = readState();
-  writeState({
-    ...currentState,
-    sessionUid: null,
-  });
-};
-
-export const topUpWalletCredits = async (credits: number): Promise<CreditTopUp> => {
-  assertRuntimeConfiguration();
-
-  const currentState = readState();
-  const snapshot = toSnapshot(currentState);
-
-  if (!snapshot.user || !snapshot.wallet) {
+  if (!user) {
     throw new Error('Sign in before topping up credits.');
   }
 
+  const currentState = readState();
+  const currentWallet = getWalletForUser(currentState, user.uid) ?? ensureWalletForUser(user.uid);
   const quote = getCreditQuote(credits);
   const createdAt = now();
   const topUpId = generateId('topup');
@@ -237,7 +167,7 @@ export const topUpWalletCredits = async (credits: number): Promise<CreditTopUp> 
 
   const nextTopUp: CreditTopUp = {
     id: topUpId,
-    userId: snapshot.user.uid,
+    userId: user.uid,
     creditsPurchased: quote.credits,
     eurAmount: quote.eurTotal,
     gbpAmount: quote.gbpTotal,
@@ -248,7 +178,7 @@ export const topUpWalletCredits = async (credits: number): Promise<CreditTopUp> 
 
   const nextTransaction: CreditTransaction = {
     id: generateId('txn'),
-    userId: snapshot.user.uid,
+    userId: user.uid,
     type: 'topup',
     creditsDelta: quote.credits,
     relatedOrderId: orderId,
@@ -256,15 +186,17 @@ export const topUpWalletCredits = async (credits: number): Promise<CreditTopUp> 
   };
 
   const nextWallet: CreditWallet = {
-    ...snapshot.wallet,
-    balance: snapshot.wallet.balance + quote.credits,
-    lifetimePurchased: snapshot.wallet.lifetimePurchased + quote.credits,
+    ...currentWallet,
+    balance: currentWallet.balance + quote.credits,
+    lifetimePurchased: currentWallet.lifetimePurchased + quote.credits,
     updatedAt: createdAt,
   };
 
   writeState({
     ...currentState,
-    wallets: currentState.wallets.map((wallet) => (wallet.userId === snapshot.user?.uid ? nextWallet : wallet)),
+    wallets: currentState.wallets.some((wallet) => wallet.userId === user.uid)
+      ? currentState.wallets.map((wallet) => (wallet.userId === user.uid ? nextWallet : wallet))
+      : [...currentState.wallets, nextWallet],
     topUps: [...currentState.topUps, nextTopUp],
     transactions: [...currentState.transactions, nextTransaction],
   });
@@ -272,7 +204,7 @@ export const topUpWalletCredits = async (credits: number): Promise<CreditTopUp> 
   return nextTopUp;
 };
 
-export const purchaseKitWithCredits = async (kit: FigmaKitProduct): Promise<KitUnlock> => {
+export const purchaseKitWithCredits = async (user: UserProfile | null, kit: FigmaKitProduct): Promise<KitUnlock> => {
   assertRuntimeConfiguration();
 
   const review = getCommercialReview(kit.id);
@@ -280,22 +212,19 @@ export const purchaseKitWithCredits = async (kit: FigmaKitProduct): Promise<KitU
     throw new Error('This kit is still research-only and cannot be unlocked yet.');
   }
 
-  const currentState = readState();
-  const snapshot = toSnapshot(currentState);
-
-  if (!snapshot.user || !snapshot.wallet) {
+  if (!user) {
     throw new Error('Sign in before buying with credits.');
   }
 
-  const existingUnlock = currentState.unlocks.find(
-    (unlock) => unlock.userId === snapshot.user?.uid && unlock.productId === kit.id
-  );
+  const currentState = readState();
+  const currentWallet = getWalletForUser(currentState, user.uid) ?? ensureWalletForUser(user.uid);
+  const existingUnlock = currentState.unlocks.find((unlock) => unlock.userId === user.uid && unlock.productId === kit.id);
 
   if (existingUnlock) {
     return existingUnlock;
   }
 
-  if (snapshot.wallet.balance < kit.creditCost) {
+  if (currentWallet.balance < kit.creditCost) {
     throw new Error('Not enough credits. Top up your wallet first.');
   }
 
@@ -305,7 +234,7 @@ export const purchaseKitWithCredits = async (kit: FigmaKitProduct): Promise<KitU
 
   const nextUnlock: KitUnlock = {
     id: unlockId,
-    userId: snapshot.user.uid,
+    userId: user.uid,
     productId: kit.id,
     creditsSpent: kit.creditCost,
     unlockedAt: createdAt,
@@ -314,7 +243,7 @@ export const purchaseKitWithCredits = async (kit: FigmaKitProduct): Promise<KitU
 
   const nextOrder: KitOrder = {
     id: orderId,
-    userId: snapshot.user.uid,
+    userId: user.uid,
     productId: kit.id,
     creditCost: kit.creditCost,
     status: 'unlocked',
@@ -323,7 +252,7 @@ export const purchaseKitWithCredits = async (kit: FigmaKitProduct): Promise<KitU
 
   const nextTransaction: CreditTransaction = {
     id: generateId('txn'),
-    userId: snapshot.user.uid,
+    userId: user.uid,
     type: 'purchase',
     creditsDelta: -kit.creditCost,
     relatedKitId: kit.id,
@@ -332,15 +261,17 @@ export const purchaseKitWithCredits = async (kit: FigmaKitProduct): Promise<KitU
   };
 
   const nextWallet: CreditWallet = {
-    ...snapshot.wallet,
-    balance: snapshot.wallet.balance - kit.creditCost,
-    lifetimeSpent: snapshot.wallet.lifetimeSpent + kit.creditCost,
+    ...currentWallet,
+    balance: currentWallet.balance - kit.creditCost,
+    lifetimeSpent: currentWallet.lifetimeSpent + kit.creditCost,
     updatedAt: createdAt,
   };
 
   writeState({
     ...currentState,
-    wallets: currentState.wallets.map((wallet) => (wallet.userId === snapshot.user?.uid ? nextWallet : wallet)),
+    wallets: currentState.wallets.some((wallet) => wallet.userId === user.uid)
+      ? currentState.wallets.map((wallet) => (wallet.userId === user.uid ? nextWallet : wallet))
+      : [...currentState.wallets, nextWallet],
     transactions: [...currentState.transactions, nextTransaction],
     unlocks: [...currentState.unlocks, nextUnlock],
     orders: [...currentState.orders, nextOrder],
@@ -350,47 +281,53 @@ export const purchaseKitWithCredits = async (kit: FigmaKitProduct): Promise<KitU
 };
 
 export const hasUnlockedKit = (productId: string, userId?: string | null): boolean => {
-  const state = readState();
-  const activeUserId = userId ?? state.sessionUid;
-  if (!activeUserId) {
+  if (!userId) {
     return false;
   }
 
-  return state.unlocks.some((unlock) => unlock.userId === activeUserId && unlock.productId === productId);
+  const state = readState();
+  return state.unlocks.some((unlock) => unlock.userId === userId && unlock.productId === productId);
 };
 
 export const markKitDownloaded = (unlockId: string): void => {
   const currentState = readState();
+  const targetUnlock = currentState.unlocks.find((unlock) => unlock.id === unlockId);
+
   writeState({
     ...currentState,
     unlocks: currentState.unlocks.map((unlock) =>
       unlock.id === unlockId ? { ...unlock, downloadStatus: 'downloaded' } : unlock
     ),
     orders: currentState.orders.map((order) =>
-      currentState.unlocks.find((unlock) => unlock.id === unlockId && unlock.productId === order.productId)
+      targetUnlock && order.userId === targetUnlock.userId && order.productId === targetUnlock.productId
         ? { ...order, status: 'fulfilled', fulfilledAt: now() }
         : order
     ),
   });
 };
 
-export const getUnlockForProduct = (productId: string): KitUnlock | undefined => {
-  const state = readState();
-  if (!state.sessionUid) {
+export const getUnlockForProduct = (productId: string, userId?: string | null): KitUnlock | undefined => {
+  if (!userId) {
     return undefined;
   }
 
-  return state.unlocks.find((unlock) => unlock.userId === state.sessionUid && unlock.productId === productId);
+  const state = readState();
+  return state.unlocks.find((unlock) => unlock.userId === userId && unlock.productId === productId);
 };
 
-export const createDeliveryDownload = (productId: string): { url: string; fileName: string } => {
-  const unlock = getUnlockForProduct(productId);
+export const createDeliveryDownload = (
+  user: UserProfile | null,
+  unlock: KitUnlock | undefined,
+  productId: string
+): { url: string; fileName: string } => {
+  if (!user) {
+    throw new Error('Sign in before downloading this package.');
+  }
+
   if (!unlock) {
     throw new Error('Unlock required before downloading this package.');
   }
 
-  const currentState = readState();
-  const activeUser = currentState.users.find((user) => user.uid === unlock.userId);
   const kit = getFigmaKitById(productId) ?? null;
   const spec = getFigmaKitSpec(productId);
   const review = getCommercialReview(productId);
@@ -398,13 +335,12 @@ export const createDeliveryDownload = (productId: string): { url: string; fileNa
 
   const payload = {
     exportedAt: now(),
-    unlockedBy: activeUser
-      ? {
-          uid: activeUser.uid,
-          email: activeUser.email,
-          displayName: activeUser.displayName,
-        }
-      : null,
+    unlockedBy: {
+      uid: user.uid,
+      email: user.email,
+      displayName: user.displayName,
+      provider: user.provider,
+    },
     unlock,
     kit,
     spec,
