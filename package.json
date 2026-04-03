@@ -15,8 +15,8 @@
     "sources:screensdesign:integrity": "node scripts/sources/screensdesign-asset-integrity.mjs",
     "sources:screensdesign:flow-packs": "node scripts/sources/screensdesign-flow-packs.mjs",
     "sources:screensdesign:sync-assets": "node scripts/sources/screensdesign-sync-assets.mjs",
-    "commercial:generate:stitch": "npm run commercial:generate",
-    "commercial:rebuild:figma": "npm run commercial:generate:stitch && npm run commercial:readiness",
+    "commercial:generate:stitch": "node scripts/commercial/generate-stitch-kits.mjs",
+    "commercial:rebuild:figma": "node scripts/commercial/rebuild-figma-kits.mjs",
     "commercial:package": "npm run commercial:rebuild:figma && npm run build",
     "commercial:generate": "node scripts/commercial/generate-figma-kits.mjs",
     "commercial:readiness": "node scripts/commercial/validate-commercial-readiness.mjs",
@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "@google/genai": "^1.42.0",
+    "@google/stitch-sdk": "^0.1.0",
     "@tailwindcss/vite": "^4.2.1",
     "firebase": "^12.11.0",
     "framer-motion": "^12.34.2",
@@ -40,7 +41,6 @@
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-router-dom": "^6.30.3",
-    "stitch-sdk": "^0.0.115",
     "tailwindcss": "^4.2.1"
   },
   "devDependencies": {

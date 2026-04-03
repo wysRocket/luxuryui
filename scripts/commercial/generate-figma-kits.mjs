@@ -2,6 +2,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { CATALOG_ENTRIES, slugify } from '../../data/catalog.js';
+import { getKitArtifactPaths } from './lib/commercialArtifactPaths.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -9,6 +10,7 @@ const projectRoot = path.resolve(__dirname, '../..');
 
 const qualityReportPath = path.join(projectRoot, 'data', 'curation', 'coverage', 'screensdesign-quality-report.json');
 const flowPacksPath = path.join(projectRoot, 'data', 'curation', 'flows', 'screensdesign-flow-packs.json');
+const stitchRunsPath = path.join(projectRoot, 'data', 'curation', 'commercial', 'generated-kit-runs.json');
 const outputDir = path.join(projectRoot, 'data', 'curation', 'commercial');
 
 const DEFAULT_FLOW_BY_CATEGORY = {
@@ -77,11 +79,119 @@ const creditCostForKit = (qualityScore, completenessScore, includedScreens) => {
   return Math.max(60, credits);
 };
 
-const run = async () => {
-  const [qualityReport, flowPacks] = await Promise.all([
+export const parseOnlyArg = (argv = process.argv.slice(2)) => {
+  const onlyArg = argv.find((arg) => arg.startsWith('--only='));
+  return onlyArg ? onlyArg.slice('--only='.length) : null;
+};
+
+const readJsonIfExists = async (filePath, fallback) => {
+  try {
+    return JSON.parse(await readFile(filePath, 'utf8'));
+  } catch (error) {
+    if (error && typeof error === 'object' && 'code' in error && error.code === 'ENOENT') {
+      return fallback;
+    }
+
+    throw error;
+  }
+};
+
+const getRecordKey = (record) => record?.productId ?? record?.id ?? null;
+
+export const mergeRecordsByProductId = (existingRecords = [], updatedRecords = []) => {
+  const updatesByProductId = new Map(
+    updatedRecords
+      .map((record) => [getRecordKey(record), record])
+      .filter(([key]) => key)
+  );
+  const mergedRecords = existingRecords.map((record) =>
+    updatesByProductId.get(getRecordKey(record)) ?? record
+  );
+  const existingProductIds = new Set(existingRecords.map((record) => getRecordKey(record)).filter(Boolean));
+
+  for (const record of updatedRecords) {
+    if (!existingProductIds.has(getRecordKey(record))) {
+      mergedRecords.push(record);
+    }
+  }
+
+  return mergedRecords;
+};
+
+export const loadGeneratedStitchRuns = async (runsPath = stitchRunsPath) => {
+  try {
+    const raw = await readFile(runsPath, 'utf8');
+    const ledger = JSON.parse(raw);
+    return Array.isArray(ledger.runs) ? ledger.runs : [];
+  } catch (error) {
+    if (error && typeof error === 'object' && 'code' in error && error.code === 'ENOENT') {
+      return [];
+    }
+
+    throw error;
+  }
+};
+
+export const buildGeneratedArtifactsBridge = ({
+  productSlug,
+  generatedAt,
+  commercialReady,
+  exportPackageFileName,
+  previewCount,
+  latestRun,
+  rootDir = projectRoot,
+}) => {
+  const paths = getKitArtifactPaths(productSlug, rootDir);
+  const relativePaths = {
+    generatedArtifactsRootDir: path.relative(rootDir, paths.generatedArtifactsRootDir).replace(/\\/g, '/'),
+    generatedKitArtifactsDir: path.relative(rootDir, paths.generatedKitArtifactsDir).replace(/\\/g, '/'),
+    deliveryPacksDir: path.relative(rootDir, paths.deliveryPacksDir).replace(/\\/g, '/'),
+    deliveryPackPath: path.relative(rootDir, paths.deliveryPackPath).replace(/\\/g, '/'),
+  };
+
+  const generationStatus = latestRun?.generationStatus ?? 'pending';
+  const isArtifactReady = generationStatus === 'generated';
+
+  return {
+    kitSlug: productSlug,
+    generatedAt: latestRun?.generatedAt ?? generatedAt,
+    stage: latestRun ? generationStatus : 'pending',
+    generationStatus,
+    commercialReady: commercialReady && isArtifactReady,
+    exportPackageFileName,
+    previewCount,
+    stitchProjectId: latestRun?.stitchProjectId ?? null,
+    selectedScreenIds: latestRun?.selectedScreenIds ?? [],
+    stitchHtmlFiles: latestRun?.stitchHtmlFiles ?? [],
+    stitchPreviewImages: latestRun?.stitchPreviewImages ?? [],
+    paths: relativePaths,
+  };
+};
+
+export const selectGeneratedArtifactsRun = (runs = []) => {
+  const validRuns = runs.filter((run) => run && typeof run === 'object');
+  const latestGeneratedRun = [...validRuns].reverse().find(
+    (run) => run.generationStatus === 'generated'
+  );
+
+  return latestGeneratedRun ?? validRuns.at(-1) ?? null;
+};
+
+export const run = async () => {
+  const only = parseOnlyArg(process.argv.slice(2));
+  const [qualityReport, flowPacks, stitchRuns] = await Promise.all([
     readFile(qualityReportPath, 'utf8').then((raw) => JSON.parse(raw)),
     readFile(flowPacksPath, 'utf8').then((raw) => JSON.parse(raw)),
+    loadGeneratedStitchRuns(),
   ]);
+  const runsByKitSlug = new Map();
+  for (const runRecord of stitchRuns) {
+    if (runRecord?.kitSlug) {
+      const existingRuns = runsByKitSlug.get(runRecord.kitSlug) ?? [];
+      existingRuns.push(runRecord);
+      runsByKitSlug.set(runRecord.kitSlug, existingRuns);
+    }
+  }
 
   const qualityBySlug = new Map(qualityReport.apps.map((app) => [app.slug, app]));
   const flowById = new Map(flowPacks.packs.map((pack) => [pack.flowId, pack]));
@@ -105,8 +215,15 @@ const run = async () => {
   const kitSpecs = [];
   const manifests = [];
   const reviews = [];
+  const catalogEntries = only
+    ? CATALOG_ENTRIES.filter((entry) => `${entry.slug}-figma-kit` === only || entry.slug === only)
+    : CATALOG_ENTRIES;
 
-  for (const entry of CATALOG_ENTRIES) {
+  if (only && catalogEntries.length === 0) {
+    throw new Error(`No commercial kit source found for --only=${only}.`);
+  }
+
+  for (const entry of catalogEntries) {
     const quality = qualityBySlug.get(entry.slug);
     const sourceQuality = quality?.status ?? 'unknown';
     const screenshotFiles = quality?.screenshots?.files ?? [];
@@ -223,6 +340,14 @@ const run = async () => {
         previewCount: gallery.length,
         commercialReady: isApproved,
       },
+      generatedArtifacts: buildGeneratedArtifactsBridge({
+        productSlug: kitSlug,
+        generatedAt,
+        commercialReady: isApproved,
+        exportPackageFileName: `${kitSlug}.fig`,
+        previewCount: gallery.length,
+        latestRun: selectGeneratedArtifactsRun(runsByKitSlug.get(kitSlug) ?? []),
+      }),
     });
 
     reviews.push({
@@ -246,11 +371,34 @@ const run = async () => {
     });
   }
 
+  const [existingProductsPayload, existingSpecsPayload, existingManifestsPayload, existingReviewsPayload] =
+    only
+      ? await Promise.all([
+          readJsonIfExists(path.join(outputDir, 'figma-kit-products.json'), { products: [] }),
+          readJsonIfExists(path.join(outputDir, 'figma-kit-specs.json'), { kitSpecs: [] }),
+          readJsonIfExists(path.join(outputDir, 'figma-content-manifests.json'), { manifests: [] }),
+          readJsonIfExists(path.join(outputDir, 'commercial-reviews.json'), { reviews: [] }),
+        ])
+      : [{ products: [] }, { kitSpecs: [] }, { manifests: [] }, { reviews: [] }];
+
+  const finalProducts = only
+    ? mergeRecordsByProductId(existingProductsPayload.products, products)
+    : products;
+  const finalKitSpecs = only
+    ? mergeRecordsByProductId(existingSpecsPayload.kitSpecs, kitSpecs)
+    : kitSpecs;
+  const finalManifests = only
+    ? mergeRecordsByProductId(existingManifestsPayload.manifests, manifests)
+    : manifests;
+  const finalReviews = only
+    ? mergeRecordsByProductId(existingReviewsPayload.reviews, reviews)
+    : reviews;
+
   const summary = {
-    totalProducts: products.length,
-    publishedProducts: products.filter((product) => product.status === 'published').length,
-    blockedProducts: products.filter((product) => product.status === 'blocked').length,
-    flowsRepresented: [...new Set(products.filter((product) => product.status === 'published').map((product) => product.primaryFlowId))].length,
+    totalProducts: finalProducts.length,
+    publishedProducts: finalProducts.filter((product) => product.status === 'published').length,
+    blockedProducts: finalProducts.filter((product) => product.status === 'blocked').length,
+    flowsRepresented: [...new Set(finalProducts.filter((product) => product.status === 'published').map((product) => product.primaryFlowId))].length,
   };
 
   await mkdir(outputDir, { recursive: true });
@@ -258,26 +406,28 @@ const run = async () => {
   await Promise.all([
     writeFile(
       path.join(outputDir, 'figma-kit-products.json'),
-      `${JSON.stringify({ schema: '2', generatedAt, summary, products }, null, 2)}\n`
+      `${JSON.stringify({ schema: '2', generatedAt, summary, products: finalProducts }, null, 2)}\n`
     ),
     writeFile(
       path.join(outputDir, 'figma-kit-specs.json'),
-      `${JSON.stringify({ schema: '1', generatedAt, summary, kitSpecs }, null, 2)}\n`
+      `${JSON.stringify({ schema: '1', generatedAt, summary, kitSpecs: finalKitSpecs }, null, 2)}\n`
     ),
     writeFile(
       path.join(outputDir, 'figma-content-manifests.json'),
-      `${JSON.stringify({ schema: '1', generatedAt, summary, manifests }, null, 2)}\n`
+      `${JSON.stringify({ schema: '1', generatedAt, summary, manifests: finalManifests }, null, 2)}\n`
     ),
     writeFile(
       path.join(outputDir, 'commercial-reviews.json'),
-      `${JSON.stringify({ schema: '1', generatedAt, summary, reviews }, null, 2)}\n`
+      `${JSON.stringify({ schema: '1', generatedAt, summary, reviews: finalReviews }, null, 2)}\n`
     ),
   ]);
 
   console.log(`Generated ${summary.totalProducts} Figma kit records (${summary.publishedProducts} published / ${summary.blockedProducts} blocked).`);
 };
 
-run().catch((error) => {
-  console.error(error instanceof Error ? error.message : String(error));
-  process.exit(1);
-});
+if (process.argv[1] && path.resolve(process.argv[1]) === __filename) {
+  run().catch((error) => {
+    console.error(error instanceof Error ? error.message : String(error));
+    process.exit(1);
+  });
+}

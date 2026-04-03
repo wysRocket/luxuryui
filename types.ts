@@ -189,7 +189,8 @@ export interface KitSpec {
   deliveryChecklist: string[];
 }
 
-export type GeneratedKitArtifactStage = "planned" | "generated" | "packaged" | "ready";
+export type GeneratedKitArtifactStage = "planned" | "pending" | "generated" | "packaged" | "ready" | "failed";
+export type GeneratedKitGenerationStatus = "pending" | "generated" | "failed";
 
 export interface GeneratedKitArtifactPaths {
   generatedArtifactsRootDir: string;
@@ -202,9 +203,14 @@ export interface GeneratedKitArtifacts {
   kitSlug: string;
   generatedAt: string;
   stage: GeneratedKitArtifactStage;
+  generationStatus: GeneratedKitGenerationStatus;
   commercialReady: boolean;
   exportPackageFileName: string;
   previewCount: number;
+  stitchProjectId?: string | null;
+  selectedScreenIds?: string[];
+  stitchHtmlFiles?: string[];
+  stitchPreviewImages?: string[];
   paths: GeneratedKitArtifactPaths;
 }
 

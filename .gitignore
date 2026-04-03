@@ -23,3 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 .worktrees/
+data/curation/commercial/generated-kit-artifacts/
+data/curation/commercial/delivery-packs/
+data/curation/commercial/generated-kit-runs.json
