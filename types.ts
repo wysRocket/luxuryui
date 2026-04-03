@@ -190,7 +190,7 @@ export interface KitSpec {
 }
 
 export type GeneratedKitArtifactStage = "planned" | "pending" | "generated" | "packaged" | "ready" | "failed";
-export type GeneratedKitGenerationStatus = "pending" | "generated" | "failed";
+export type GeneratedKitGenerationStatus = "pending" | "generated" | "packaged" | "failed";
 
 export interface GeneratedKitArtifactPaths {
   generatedArtifactsRootDir: string;

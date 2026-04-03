@@ -32,6 +32,31 @@ describe('generate-figma-kits Stitch artifact bridge', () => {
     expect(generatedArtifacts.stitchHtmlFiles).toEqual(['https://example.com/screen.html']);
     expect(generatedArtifacts.stitchPreviewImages).toEqual(['https://example.com/screen.png']);
     expect(generatedArtifacts.paths.generatedKitArtifactsDir).toBe('data/curation/commercial/generated-kit-artifacts/monzo-figma-kit');
+    // Stitch run alone is not sufficient — reconstruction must also be done for commercialReady.
+    expect(generatedArtifacts.commercialReady).toBe(false);
+  });
+
+  it('marks a kit as packaged and commercially ready when Stitch run and figma reconstruction are both done', () => {
+    const generatedArtifacts = buildGeneratedArtifactsBridge({
+      productSlug: 'monzo-figma-kit',
+      generatedAt: '2026-04-03T00:00:00.000Z',
+      commercialReady: true,
+      exportPackageFileName: 'monzo-figma-kit.fig',
+      previewCount: 3,
+      latestRun: {
+        generatedAt: '2026-04-03T01:00:00.000Z',
+        generationStatus: 'generated',
+        stitchProjectId: 'projects/project-123',
+        selectedScreenIds: ['screen-123'],
+        stitchHtmlFiles: ['https://example.com/screen.html'],
+        stitchPreviewImages: ['https://example.com/screen.png'],
+      },
+      reconstruction: { reconstructionStatus: 'done' },
+      rootDir: '/workspace',
+    });
+
+    expect(generatedArtifacts.generationStatus).toBe('packaged');
+    expect(generatedArtifacts.stage).toBe('packaged');
     expect(generatedArtifacts.commercialReady).toBe(true);
   });
 
@@ -93,7 +118,8 @@ describe('generate-figma-kits Stitch artifact bridge', () => {
     expect(generatedArtifacts.generationStatus).toBe('generated');
     expect(generatedArtifacts.stitchProjectId).toBe('projects/project-123');
     expect(generatedArtifacts.selectedScreenIds).toEqual(['screen-good']);
-    expect(generatedArtifacts.commercialReady).toBe(true);
+    // Without a done reconstruction packet, commercialReady stays false even on a good run.
+    expect(generatedArtifacts.commercialReady).toBe(false);
   });
 
   it('merges scoped record updates without dropping untouched catalog entries', () => {

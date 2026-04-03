@@ -139,6 +139,7 @@ export const buildGeneratedArtifactsBridge = ({
   exportPackageFileName,
   previewCount,
   latestRun,
+  reconstruction = null,
   rootDir = projectRoot,
 }) => {
   const paths = getKitArtifactPaths(productSlug, rootDir);
@@ -149,8 +150,13 @@ export const buildGeneratedArtifactsBridge = ({
     deliveryPackPath: path.relative(rootDir, paths.deliveryPackPath).replace(/\\/g, '/'),
   };
 
-  const generationStatus = latestRun?.generationStatus ?? 'pending';
-  const isArtifactReady = generationStatus === 'generated';
+  const rawStatus = latestRun?.generationStatus ?? 'pending';
+  // Promote to 'packaged' when Stitch generation succeeded AND figma reconstruction is done.
+  const generationStatus =
+    rawStatus === 'generated' && reconstruction?.reconstructionStatus === 'done'
+      ? 'packaged'
+      : rawStatus;
+  const isArtifactReady = generationStatus === 'packaged';
 
   return {
     kitSlug: productSlug,
@@ -184,6 +190,22 @@ export const run = async () => {
     readFile(flowPacksPath, 'utf8').then((raw) => JSON.parse(raw)),
     loadGeneratedStitchRuns(),
   ]);
+
+  // Load figma reconstruction packets to determine 'packaged' status.
+  const reconstructionBySlug = new Map();
+  for (const entry of CATALOG_ENTRIES) {
+    const kitSlug = `${entry.slug}-figma-kit`;
+    const packetPath = path.join(
+      projectRoot, 'data', 'curation', 'commercial', 'generated-kit-artifacts',
+      kitSlug, 'figma', 'reconstruction.json'
+    );
+    try {
+      const raw = await readFile(packetPath, 'utf8');
+      reconstructionBySlug.set(kitSlug, JSON.parse(raw));
+    } catch {
+      // No reconstruction yet — that's fine, kit stays at 'generated' or earlier.
+    }
+  }
   const runsByKitSlug = new Map();
   for (const runRecord of stitchRuns) {
     if (runRecord?.kitSlug) {
@@ -235,10 +257,17 @@ export const run = async () => {
     const includedScreens = Math.max(5, Math.min(8, screenshotCount || 5));
     const includedComponents = FLOW_COMPONENTS[primaryFlowId] ?? FLOW_COMPONENTS.onboarding;
     const includedTokens = CATEGORY_TOKENS[entry.category] ?? CATEGORY_TOKENS.Business;
-    const isApproved = sourceQuality === 'pass' && screenshotCount >= 6;
+    const kitSlug = `${entry.slug}-figma-kit`;
+    const reconstruction = reconstructionBySlug.get(kitSlug) ?? null;
+    const latestStitchRun = selectGeneratedArtifactsRun(runsByKitSlug.get(kitSlug) ?? []);
+    // A kit is approved only when source quality passes AND the full generation pipeline
+    // has completed (Stitch run succeeded + Figma reconstruction packet written).
+    const isPackaged =
+      latestStitchRun?.generationStatus === 'generated' &&
+      reconstruction?.reconstructionStatus === 'done';
+    const isApproved = sourceQuality === 'pass' && screenshotCount >= 6 && isPackaged;
     const status = isApproved ? 'published' : 'blocked';
     const reviewStatus = isApproved ? 'approved' : 'blocked';
-    const kitSlug = `${entry.slug}-figma-kit`;
     const titleFlow = primaryFlow?.title?.replace(/\s+Flow$/i, '') ?? 'Flow';
     const title = `${entry.name} ${titleFlow} Figma Flow Kit`;
     const qualityScore = scoreForStatus(sourceQuality, screenshotCount);
@@ -254,7 +283,7 @@ export const run = async () => {
       primaryFlowId,
       type: 'flow-kit',
       status,
-      figmaFileKey: isApproved ? `luxuryui/${primaryFlowId}/${entry.slug}/v1` : null,
+      figmaFileKey: reconstruction?.figmaFileKey ?? null,
       thumbnail: gallery[0] ?? null,
       gallery,
       includedScreens,
@@ -276,6 +305,12 @@ export const run = async () => {
       delivery: {
         format: 'Figma file',
         fulfillment: 'Own-site delivery pack',
+        artifactFormat: 'figma-source-packet',
+        artifactVersion: 1,
+        downloadFileName: `${kitSlug}-delivery-pack.json`,
+        previewImages: latestStitchRun?.stitchPreviewImages?.length
+          ? latestStitchRun.stitchPreviewImages
+          : gallery,
         includes: [
           'Editable Figma flow file',
           'Cover and usage page',
@@ -326,7 +361,7 @@ export const run = async () => {
     manifests.push({
       productId: `figma-kit:${entry.slug}`,
       productSlug: kitSlug,
-      figmaFileKey: isApproved ? `luxuryui/${primaryFlowId}/${entry.slug}/v1` : null,
+      figmaFileKey: reconstruction?.figmaFileKey ?? null,
       pageOrder: ['Cover', 'Flow', 'Components', 'Tokens', 'License'],
       pageBlueprints: [
         { name: 'Cover', contents: ['Hero frame', 'What is included', 'Transformation notes'] },
@@ -346,7 +381,8 @@ export const run = async () => {
         commercialReady: isApproved,
         exportPackageFileName: `${kitSlug}.fig`,
         previewCount: gallery.length,
-        latestRun: selectGeneratedArtifactsRun(runsByKitSlug.get(kitSlug) ?? []),
+        latestRun: latestStitchRun,
+        reconstruction,
       }),
     });
 
