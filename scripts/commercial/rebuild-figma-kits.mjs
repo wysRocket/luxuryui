@@ -20,10 +20,10 @@ import { fileURLToPath } from 'node:url';
 import { getKitArtifactPaths } from './lib/commercialArtifactPaths.mjs';
 import { buildFigmaReconstructionPacket, buildDeliveryManifest } from './lib/kitPackaging.mjs';
 
-const _metaUrl = new URL('../../', import.meta.url);
-const projectRoot = (_metaUrl.protocol === 'file:'
-  ? fileURLToPath(_metaUrl)
-  : _metaUrl.pathname
+const metaUrl = new URL('../../', import.meta.url);
+const projectRoot = (metaUrl.protocol === 'file:'
+  ? fileURLToPath(metaUrl)
+  : metaUrl.pathname
 ).replace(/[/\\]$/, '');
 
 const FIGMA_CONTENT_MANIFESTS_PATH = path.join(
@@ -50,7 +50,8 @@ const ensureDir = async (dir) => {
 };
 
 /**
- * Pick the best Stitch run for a kit: last generated/successful, or null.
+ * Pick the best Stitch run for a kit: last generated run, or null.
+ * Also accepts legacy `status: 'success'` records for backward compatibility.
  */
 export const selectBestRun = (ledgerRecords) => {
   if (!Array.isArray(ledgerRecords) || ledgerRecords.length === 0) return null;
