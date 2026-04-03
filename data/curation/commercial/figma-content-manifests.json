@@ -1,17 +1,17 @@
 {
   "schema": "1",
-  "generatedAt": "2026-04-03T18:03:24.107Z",
+  "generatedAt": "2026-04-03T21:45:04.822Z",
   "summary": {
     "totalProducts": 76,
-    "publishedProducts": 33,
-    "blockedProducts": 43,
-    "flowsRepresented": 5
+    "publishedProducts": 1,
+    "blockedProducts": 75,
+    "flowsRepresented": 1
   },
   "manifests": [
     {
       "productId": "figma-kit:monzo",
       "productSlug": "monzo-figma-kit",
-      "figmaFileKey": "luxuryui/onboarding/monzo/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -74,16 +74,43 @@
       },
       "generatedArtifacts": {
         "kitSlug": "monzo-figma-kit",
-        "generatedAt": "2026-04-03T18:03:24.017Z",
-        "stage": "failed",
-        "generationStatus": "failed",
-        "commercialReady": false,
+        "generatedAt": "2026-04-03T21:40:06.494Z",
+        "stage": "packaged",
+        "generationStatus": "packaged",
+        "commercialReady": true,
         "exportPackageFileName": "monzo-figma-kit.fig",
         "previewCount": 3,
-        "stitchProjectId": null,
-        "selectedScreenIds": [],
-        "stitchHtmlFiles": [],
-        "stitchPreviewImages": [],
+        "stitchProjectId": "8855788159661925639",
+        "selectedScreenIds": [
+          "a1118e929d0f493f8a8ebadcda4a596e",
+          "0aaffe4464374e6c884e23bd0ae4b627",
+          "6488d979654f4af89826a800e388effd",
+          "25f06a250b2247e3af1f1242bb5a6298",
+          "42ce496bc62146b28a38e84fdd72540c",
+          "21d743c1299c4e2ea538c115335d89cb",
+          "7da5be352d224fdbaf25428bf7b8b176",
+          "bc0ae1aaa8104e97af561076d4cf8dc0"
+        ],
+        "stitchHtmlFiles": [
+          "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2IxYjc3ZWI2MWIzNTQ3ZmE5NDhlMTlhZDk3YmNmNmQ2EgsSBxCL2JS42wgYAZIBIwoKcHJvamVjdF9pZBIVQhM4ODU1Nzg4MTU5NjYxOTI1NjM5&filename=&opi=96797242",
+          "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2EyY2JlY2M1ZDAzZTRmOWJiMjc5ZDZiZWI2Y2QxNWNjEgsSBxCL2JS42wgYAZIBIwoKcHJvamVjdF9pZBIVQhM4ODU1Nzg4MTU5NjYxOTI1NjM5&filename=&opi=96797242",
+          "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzQ3YThhMzJmMDcyYTQ5YzA4NjExYWE4NDExMTJlZDQ2EgsSBxCL2JS42wgYAZIBIwoKcHJvamVjdF9pZBIVQhM4ODU1Nzg4MTU5NjYxOTI1NjM5&filename=&opi=96797242",
+          "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzQ1MWQxMzZhZmIwYjRiMGI4NTRhOGE2MTgxODY3ZDcxEgsSBxCL2JS42wgYAZIBIwoKcHJvamVjdF9pZBIVQhM4ODU1Nzg4MTU5NjYxOTI1NjM5&filename=&opi=96797242",
+          "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2VhOWVkNWNkY2M1YzQyNTdiOWZlNDAyM2IxYmQ2MDI4EgsSBxCL2JS42wgYAZIBIwoKcHJvamVjdF9pZBIVQhM4ODU1Nzg4MTU5NjYxOTI1NjM5&filename=&opi=96797242",
+          "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzlmODIwYjM4MDkzNDQ0MDdiNzVmMWVlODgyNjNkMWFmEgsSBxCL2JS42wgYAZIBIwoKcHJvamVjdF9pZBIVQhM4ODU1Nzg4MTU5NjYxOTI1NjM5&filename=&opi=96797242",
+          "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzI3Y2Y4ODBkZWYxZDQ2MTg4YmIyMTEzZmEwODM5MWY0EgsSBxCL2JS42wgYAZIBIwoKcHJvamVjdF9pZBIVQhM4ODU1Nzg4MTU5NjYxOTI1NjM5&filename=&opi=96797242",
+          "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzQ2MTY1MjNhMzU1ZjRlNjM5ZjdjMDkwMWU5YTYzYjAyEgsSBxCL2JS42wgYAZIBIwoKcHJvamVjdF9pZBIVQhM4ODU1Nzg4MTU5NjYxOTI1NjM5&filename=&opi=96797242"
+        ],
+        "stitchPreviewImages": [
+          "https://lh3.googleusercontent.com/aida/ADBb0uh86RuVuAzvHsFIQSAIIOQKkxoN_KIFLJaFWQqAxvppVnY--L3I8RuK3MgcuqvHeauApPm7FXm23vT5bNIksatKanLnGHQmgM7afnIRvsMAjHYGQgU2vwzGFO5kWSiPIxIO3AkCu1HNxnfYOLOT7mbfdlgvNsOofI3gNaSHL1wQeR45QROPjOgxOaYpTsvjVSrq2cA9VE16Yf_B3-9tGp90SyObkjUGZFoUjMoOAdVLyLyKydoUpAi47L4",
+          "https://lh3.googleusercontent.com/aida/ADBb0uiBBtyPFNP0tTjSs42ekj845QvC7BgLo9kuSZMX-I4TsYJcEyYt6f3paAKtqDFBjn5yT3_ZCEXczOI2BNWII7RTn8qAPtmaz62Q58mmLaRbnMJLLwnLCXmCYlYObQGLLV0ib1BRQPsEnU85staCbqP0Wu5zER8hG7jXlg3a4JMjPDXJmAPgkJ5MoIw3ZiSTRTbrFbeLtuYr1daWsdDdjp4puhPbynKsS-WULxdZipUO8UCzBLsZ6nT5hA",
+          "https://lh3.googleusercontent.com/aida/ADBb0ug9wNmkwCsDNAv-f4z5CX3KuCqwd1WP9Th9tzynuNAPSIhA9DyiOhmZF8nhtPFs33MeZnwbiFcJDwNJhaOsIM65RWdyNmKqRD4eU--HXto-HK9Lq-X2lYkNQJz_157XdXpN1ZlMp-llQ85Echi-3ookeqDUBIwzNXcMoNzvbs9Zk0QrnxXe-lGs2kzKqpDhF-0ATY7TnB7HGjWQtkcszVNljDsRforLOAD58LX23e_jAlMN-Uw7uhtgL-I",
+          "https://lh3.googleusercontent.com/aida/ADBb0ujIgxJ3CTcribuCWehBTssMcdAxktaTNwheo4hJ9uQ1QQsjfcCjQE1ttFuMqfeoJyhubXNnyHJjtmQiuJG2EjjOrgxrCmdlcvxB3tuHqgLVn4ALRWkPPH0a4G8tCQ0kD2jstNufXTJlVfOeqJsvEMtLwe_UWgbZGM5cWhqA2O_iqLD8HSMHpZRfzqzWlUYu2IU10UXzRhYoddXp-ZSpG47tuaiLWQTvF6ReRtOp_bZJyDa9NeZln3FKdUU",
+          "https://lh3.googleusercontent.com/aida/ADBb0uiiJpXt4TNq9nBrsiv8LaTNiuMseLc3ilDgrNNU6KDgXNcHW9Q1C5Pnz-61FlEF6KDNgNSxfnoyLcRFg3iwPiNIJE9AtNaYzoDk4DCm3BBNm0qLIT6zmifeDH1MCNHa4CKFMPgRcCStY5E--scNZ5a54YJPgpN-eUBCO4X2qob5gLddZttrEodAM00TZOraMQA9wTYnM3EviK9emLTAOB_Iboklah8PI7T71o0JU6Je6DAPWtNLo6AjYM4",
+          "https://lh3.googleusercontent.com/aida/ADBb0uhE0wL7nxGmBMRyIQPdkPwP6QmVIssOVK9kKDeQWOQbg67ONzndDeVuCalx8NnHALSUaiC316-Z2cW-sPPyR7Mod8SiRyZWZDfc8yJx0i81bz_ju2Fo_Z6WPJ1HUk-boBB1YsQBNgvukMNu0Qp-ps9WT2ZiBWFyIKSYTWQaOTUT82Xjbs27m-N60q-aTztMzri1CSkVx66zmjnwnGAqa8pFMssfT6c_7uNzHddpIWtNubZrSlLrhc95Tk8",
+          "https://lh3.googleusercontent.com/aida/ADBb0ui8KMkyLk0eiu30S2SvQcpidAciMpqKYKo9H-ntMRDDG8g9Ha4x1g7vxpZdcIRvpAFCnjucULHXTKp3JJR9_cWspdvvscMCVM7yak6On9wYpqJ4X9zE-IsCTJSAf-IavYnlW0OexRY4LfW9Q2e3nKQsHiMbcJxe2wj1mwG3pH6246gPZV7T0EjqlgHeNDT54_FJiUCad1lyLC7CptKOri_aMXFNVB9RzVNh-AKAnsdJHWDQoC4-LKIXhw",
+          "https://lh3.googleusercontent.com/aida/ADBb0ui8o6m6sM3w2V2P0cnqNYdgVdj9pMDsAD9KE-l4podYjA3Y6q8l6Rh7_UBnuRGn7xUUBMkvZQN-KzTa9r0LeHPygS-5EFhuBJy9bTK0WSj3conR4DWZu4B18nMulIZgNPFd9LBVdKbls8eFzKRAzo8eCrfyGPr_wdc45iOBJhS94daYw--UbUvFXcjRa_TKX3mqaqGiktLJ89u0Zg4X_vjui5hoILKKuL0itNZwGUk5O6L2bKE7_i4tVw"
+        ],
         "paths": {
           "generatedArtifactsRootDir": "data/curation/commercial/generated-kit-artifacts",
           "generatedKitArtifactsDir": "data/curation/commercial/generated-kit-artifacts/monzo-figma-kit",
@@ -158,7 +185,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "revolut-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -241,7 +268,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "mint-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -262,7 +289,7 @@
     {
       "productId": "figma-kit:robinhood",
       "productSlug": "robinhood-figma-kit",
-      "figmaFileKey": "luxuryui/onboarding/robinhood/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -321,11 +348,11 @@
       "exportPackage": {
         "fileName": "robinhood-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "robinhood-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -409,7 +436,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "paypal-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -430,7 +457,7 @@
     {
       "productId": "figma-kit:wallet",
       "productSlug": "wallet-figma-kit",
-      "figmaFileKey": "luxuryui/onboarding/wallet/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -489,11 +516,11 @@
       "exportPackage": {
         "fileName": "wallet-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "wallet-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -514,7 +541,7 @@
     {
       "productId": "figma-kit:wealthfront",
       "productSlug": "wealthfront-figma-kit",
-      "figmaFileKey": "luxuryui/onboarding/wealthfront/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -573,11 +600,11 @@
       "exportPackage": {
         "fileName": "wealthfront-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "wealthfront-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -661,7 +688,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "n26-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -744,7 +771,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "coinbase-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -828,7 +855,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "binance-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -911,7 +938,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "metamask-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -932,7 +959,7 @@
     {
       "productId": "figma-kit:kraken",
       "productSlug": "kraken-figma-kit",
-      "figmaFileKey": "luxuryui/account-settings/kraken/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -991,11 +1018,11 @@
       "exportPackage": {
         "fileName": "kraken-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "kraken-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -1078,7 +1105,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "phantom-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -1099,7 +1126,7 @@
     {
       "productId": "figma-kit:uniswap",
       "productSlug": "uniswap-figma-kit",
-      "figmaFileKey": "luxuryui/account-settings/uniswap/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -1158,11 +1185,11 @@
       "exportPackage": {
         "fileName": "uniswap-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "uniswap-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -1246,7 +1273,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "ledger-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -1267,7 +1294,7 @@
     {
       "productId": "figma-kit:amazon",
       "productSlug": "amazon-figma-kit",
-      "figmaFileKey": "luxuryui/checkout/amazon/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -1326,11 +1353,11 @@
       "exportPackage": {
         "fileName": "amazon-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "amazon-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -1412,7 +1439,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "ebay-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -1496,7 +1523,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "shopify-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -1517,7 +1544,7 @@
     {
       "productId": "figma-kit:etsy",
       "productSlug": "etsy-figma-kit",
-      "figmaFileKey": "luxuryui/checkout/etsy/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -1576,11 +1603,11 @@
       "exportPackage": {
         "fileName": "etsy-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "etsy-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -1664,7 +1691,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "zara-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -1746,7 +1773,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "asos-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -1767,7 +1794,7 @@
     {
       "productId": "figma-kit:nike",
       "productSlug": "nike-figma-kit",
-      "figmaFileKey": "luxuryui/checkout/nike/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -1826,11 +1853,11 @@
       "exportPackage": {
         "fileName": "nike-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "nike-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -1914,7 +1941,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "stockx-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -1997,7 +2024,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "instagram-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -2078,7 +2105,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "twitter-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -2099,7 +2126,7 @@
     {
       "productId": "figma-kit:linkedin",
       "productSlug": "linkedin-figma-kit",
-      "figmaFileKey": "luxuryui/social-engagement/linkedin/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -2158,11 +2185,11 @@
       "exportPackage": {
         "fileName": "linkedin-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "linkedin-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -2183,7 +2210,7 @@
     {
       "productId": "figma-kit:tiktok",
       "productSlug": "tiktok-figma-kit",
-      "figmaFileKey": "luxuryui/social-engagement/tiktok/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -2242,11 +2269,11 @@
       "exportPackage": {
         "fileName": "tiktok-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "tiktok-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -2267,7 +2294,7 @@
     {
       "productId": "figma-kit:snapchat",
       "productSlug": "snapchat-figma-kit",
-      "figmaFileKey": "luxuryui/social-engagement/snapchat/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -2326,11 +2353,11 @@
       "exportPackage": {
         "fileName": "snapchat-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "snapchat-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -2411,7 +2438,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "whatsapp-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -2493,7 +2520,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "threads-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -2575,7 +2602,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "bereal-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -2659,7 +2686,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "airbnb-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -2743,7 +2770,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "expedia-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -2827,7 +2854,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "hopper-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -2848,7 +2875,7 @@
     {
       "productId": "figma-kit:booking-com",
       "productSlug": "booking-com-figma-kit",
-      "figmaFileKey": "luxuryui/checkout/booking-com/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -2907,11 +2934,11 @@
       "exportPackage": {
         "fileName": "booking-com-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "booking-com-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -2932,7 +2959,7 @@
     {
       "productId": "figma-kit:skyscanner",
       "productSlug": "skyscanner-figma-kit",
-      "figmaFileKey": "luxuryui/checkout/skyscanner/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -2991,11 +3018,11 @@
       "exportPackage": {
         "fileName": "skyscanner-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "skyscanner-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -3016,7 +3043,7 @@
     {
       "productId": "figma-kit:tripadvisor",
       "productSlug": "tripadvisor-figma-kit",
-      "figmaFileKey": "luxuryui/checkout/tripadvisor/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -3075,11 +3102,11 @@
       "exportPackage": {
         "fileName": "tripadvisor-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "tripadvisor-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -3163,7 +3190,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "kayak-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -3246,7 +3273,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "hoteltonight-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -3330,7 +3357,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "slack-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -3414,7 +3441,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "zoom-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -3498,7 +3525,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "trello-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -3581,7 +3608,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "notion-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -3664,7 +3691,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "asana-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -3748,7 +3775,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "monday-com-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -3830,7 +3857,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "linear-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -3913,7 +3940,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "loom-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -3934,7 +3961,7 @@
     {
       "productId": "figma-kit:headspace",
       "productSlug": "headspace-figma-kit",
-      "figmaFileKey": "luxuryui/onboarding/headspace/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -3993,11 +4020,11 @@
       "exportPackage": {
         "fileName": "headspace-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "headspace-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -4018,7 +4045,7 @@
     {
       "productId": "figma-kit:calm",
       "productSlug": "calm-figma-kit",
-      "figmaFileKey": "luxuryui/onboarding/calm/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -4077,11 +4104,11 @@
       "exportPackage": {
         "fileName": "calm-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "calm-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -4102,7 +4129,7 @@
     {
       "productId": "figma-kit:strava",
       "productSlug": "strava-figma-kit",
-      "figmaFileKey": "luxuryui/onboarding/strava/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -4161,11 +4188,11 @@
       "exportPackage": {
         "fileName": "strava-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "strava-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -4186,7 +4213,7 @@
     {
       "productId": "figma-kit:nike-run-club",
       "productSlug": "nike-run-club-figma-kit",
-      "figmaFileKey": "luxuryui/onboarding/nike-run-club/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -4245,11 +4272,11 @@
       "exportPackage": {
         "fileName": "nike-run-club-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "nike-run-club-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -4333,7 +4360,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "myfitnesspal-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -4415,7 +4442,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "fitbit-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -4436,7 +4463,7 @@
     {
       "productId": "figma-kit:flo",
       "productSlug": "flo-figma-kit",
-      "figmaFileKey": "luxuryui/onboarding/flo/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -4495,11 +4522,11 @@
       "exportPackage": {
         "fileName": "flo-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "flo-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -4583,7 +4610,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "sleep-cycle-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -4604,7 +4631,7 @@
     {
       "productId": "figma-kit:spotify",
       "productSlug": "spotify-figma-kit",
-      "figmaFileKey": "luxuryui/search-discovery/spotify/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -4663,11 +4690,11 @@
       "exportPackage": {
         "fileName": "spotify-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "spotify-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -4751,7 +4778,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "apple-music-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -4772,7 +4799,7 @@
     {
       "productId": "figma-kit:soundcloud",
       "productSlug": "soundcloud-figma-kit",
-      "figmaFileKey": "luxuryui/search-discovery/soundcloud/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -4831,11 +4858,11 @@
       "exportPackage": {
         "fileName": "soundcloud-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "soundcloud-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -4916,7 +4943,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "tidal-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -5000,7 +5027,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "deezer-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -5021,7 +5048,7 @@
     {
       "productId": "figma-kit:pandora",
       "productSlug": "pandora-figma-kit",
-      "figmaFileKey": "luxuryui/search-discovery/pandora/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -5080,11 +5107,11 @@
       "exportPackage": {
         "fileName": "pandora-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "pandora-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -5105,7 +5132,7 @@
     {
       "productId": "figma-kit:shazam",
       "productSlug": "shazam-figma-kit",
-      "figmaFileKey": "luxuryui/search-discovery/shazam/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -5164,11 +5191,11 @@
       "exportPackage": {
         "fileName": "shazam-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "shazam-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -5252,7 +5279,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "duolingo-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -5333,7 +5360,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "coursera-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -5354,7 +5381,7 @@
     {
       "productId": "figma-kit:masterclass",
       "productSlug": "masterclass-figma-kit",
-      "figmaFileKey": "luxuryui/onboarding/masterclass/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -5413,11 +5440,11 @@
       "exportPackage": {
         "fileName": "masterclass-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "masterclass-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -5438,7 +5465,7 @@
     {
       "productId": "figma-kit:udemy",
       "productSlug": "udemy-figma-kit",
-      "figmaFileKey": "luxuryui/onboarding/udemy/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -5497,11 +5524,11 @@
       "exportPackage": {
         "fileName": "udemy-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "udemy-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -5522,7 +5549,7 @@
     {
       "productId": "figma-kit:khan-academy",
       "productSlug": "khan-academy-figma-kit",
-      "figmaFileKey": "luxuryui/onboarding/khan-academy/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -5581,11 +5608,11 @@
       "exportPackage": {
         "fileName": "khan-academy-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "khan-academy-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -5606,7 +5633,7 @@
     {
       "productId": "figma-kit:skillshare",
       "productSlug": "skillshare-figma-kit",
-      "figmaFileKey": "luxuryui/onboarding/skillshare/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -5665,11 +5692,11 @@
       "exportPackage": {
         "fileName": "skillshare-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "skillshare-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -5690,7 +5717,7 @@
     {
       "productId": "figma-kit:babbel",
       "productSlug": "babbel-figma-kit",
-      "figmaFileKey": "luxuryui/onboarding/babbel/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -5749,11 +5776,11 @@
       "exportPackage": {
         "fileName": "babbel-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "babbel-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -5774,7 +5801,7 @@
     {
       "productId": "figma-kit:the-new-york-times",
       "productSlug": "the-new-york-times-figma-kit",
-      "figmaFileKey": "luxuryui/search-discovery/the-new-york-times/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -5833,11 +5860,11 @@
       "exportPackage": {
         "fileName": "the-new-york-times-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "the-new-york-times-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -5858,7 +5885,7 @@
     {
       "productId": "figma-kit:bbc-news",
       "productSlug": "bbc-news-figma-kit",
-      "figmaFileKey": "luxuryui/search-discovery/bbc-news/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -5917,11 +5944,11 @@
       "exportPackage": {
         "fileName": "bbc-news-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "bbc-news-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -6002,7 +6029,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "cnn-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -6086,7 +6113,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "reuters-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -6107,7 +6134,7 @@
     {
       "productId": "figma-kit:flipboard",
       "productSlug": "flipboard-figma-kit",
-      "figmaFileKey": "luxuryui/search-discovery/flipboard/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -6166,11 +6193,11 @@
       "exportPackage": {
         "fileName": "flipboard-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "flipboard-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -6191,7 +6218,7 @@
     {
       "productId": "figma-kit:substack",
       "productSlug": "substack-figma-kit",
-      "figmaFileKey": "luxuryui/search-discovery/substack/v1",
+      "figmaFileKey": null,
       "pageOrder": [
         "Cover",
         "Flow",
@@ -6250,11 +6277,11 @@
       "exportPackage": {
         "fileName": "substack-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": true
+        "commercialReady": false
       },
       "generatedArtifacts": {
         "kitSlug": "substack-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,
@@ -6338,7 +6365,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "pocket-figma-kit",
-        "generatedAt": "2026-04-03T18:03:07.698Z",
+        "generatedAt": "2026-04-03T21:45:04.822Z",
         "stage": "pending",
         "generationStatus": "pending",
         "commercialReady": false,

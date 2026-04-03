@@ -49,7 +49,10 @@ const ensureDir = async (dir) => {
  */
 export const selectBestRun = (ledgerRecords) => {
   if (!Array.isArray(ledgerRecords) || ledgerRecords.length === 0) return null;
-  const successful = ledgerRecords.filter((r) => r.status === 'success');
+  // Ledger records use status 'generated' (not 'success') for successful runs.
+  const successful = ledgerRecords.filter(
+    (r) => r.status === 'generated' || r.generationStatus === 'generated'
+  );
   if (successful.length === 0) return null;
   return successful[successful.length - 1];
 };
@@ -89,8 +92,15 @@ const main = async () => {
     }
   }
 
-  const entries = Array.isArray(manifests) ? manifests : [];
-  const targets = onlySlug ? entries.filter((m) => m.kitSlug === onlySlug) : entries;
+  // figma-content-manifests.json has a { manifests: [...] } wrapper shape.
+  const entries = Array.isArray(manifests)
+    ? manifests
+    : Array.isArray(manifests?.manifests)
+      ? manifests.manifests
+      : [];
+  const targets = onlySlug
+    ? entries.filter((m) => (m.kitSlug ?? m.productSlug) === onlySlug)
+    : entries;
 
   if (targets.length === 0) {
     console.log(onlySlug ? `No manifest found for kit slug: ${onlySlug}` : 'No manifests to process.');
@@ -101,7 +111,8 @@ const main = async () => {
   let skipped = 0;
 
   for (const manifest of targets) {
-    const { kitSlug, productId } = manifest;
+    const kitSlug = manifest.kitSlug ?? manifest.productSlug;
+    const { productId } = manifest;
     if (!kitSlug || !productId) {
       skipped++;
       continue;
@@ -118,7 +129,7 @@ const main = async () => {
     const packetPath = path.join(figmaDir, 'reconstruction.json');
     await writeFile(packetPath, `${JSON.stringify(packet, null, 2)}\n`);
 
-    const stitchPreviewImages = (bestRun?.screens ?? []).map((s) => s.previewUrl).filter(Boolean);
+    const stitchPreviewImages = bestRun?.stitchPreviewImages ?? [];
     const deliveryManifest = buildDeliveryManifest({
       kitSlug,
       figmaSourceFiles: [path.relative(projectRoot, packetPath)],
