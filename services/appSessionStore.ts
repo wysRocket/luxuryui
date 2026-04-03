@@ -1,4 +1,4 @@
-import { getCommercialReview, getCreditQuote, getFigmaKitById, getFigmaManifest, getFigmaKitSpec } from '../data/figmaKits';
+import { getCommercialReview, getCreditQuote, getFigmaKitById, getFigmaManifest, getFigmaKitSpec, getGeneratedArtifactsForKit } from '../data/figmaKits';
 import {
   CreditTopUp,
   CreditTransaction,
@@ -332,6 +332,7 @@ export const createDeliveryDownload = (
   const spec = getFigmaKitSpec(productId);
   const review = getCommercialReview(productId);
   const manifest = getFigmaManifest(productId);
+  const generatedArtifacts = getGeneratedArtifactsForKit(productId) ?? null;
 
   const payload = {
     exportedAt: now(),
@@ -346,6 +347,7 @@ export const createDeliveryDownload = (
     spec,
     review,
     manifest,
+    generatedArtifacts,
   };
 
   const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
