@@ -2,13 +2,22 @@ import productsData from './curation/commercial/figma-kit-products.json';
 import specsData from './curation/commercial/figma-kit-specs.json';
 import reviewsData from './curation/commercial/commercial-reviews.json';
 import manifestsData from './curation/commercial/figma-content-manifests.json';
-import { CommercialReview, CreditPackConfig, CreditQuote, FigmaKitProduct, KitSpec } from '../types';
+import {
+  CommercialReview,
+  CreditPackConfig,
+  CreditQuote,
+  FigmaKitProduct,
+  GeneratedKitArtifacts,
+  KitSpec,
+} from '../types';
 import { FLOW_DEFINITIONS } from './flows';
 
 const figmaKitProducts = productsData.products as FigmaKitProduct[];
 const figmaKitSpecs = specsData.kitSpecs as KitSpec[];
 const figmaKitReviews = reviewsData.reviews as CommercialReview[];
-const figmaKitManifests = manifestsData.manifests as Array<{
+const GENERATED_ARTIFACTS_ROOT_DIR = 'data/curation/commercial/generated-kit-artifacts';
+const DELIVERY_PACKS_DIR = 'data/curation/commercial/delivery-packs';
+type FigmaContentManifest = {
   productId: string;
   productSlug: string;
   figmaFileKey: string | null;
@@ -19,7 +28,61 @@ const figmaKitManifests = manifestsData.manifests as Array<{
     previewCount: number;
     commercialReady: boolean;
   };
-}>;
+  generatedArtifacts: GeneratedKitArtifacts;
+};
+
+const buildGeneratedArtifactPathDefaults = (productSlug: string) => ({
+  generatedArtifactsRootDir: GENERATED_ARTIFACTS_ROOT_DIR,
+  generatedKitArtifactsDir: `${GENERATED_ARTIFACTS_ROOT_DIR}/${productSlug}`,
+  deliveryPacksDir: DELIVERY_PACKS_DIR,
+  deliveryPackPath: `${DELIVERY_PACKS_DIR}/${productSlug}.json`,
+});
+
+const normalizeGeneratedArtifacts = (
+  manifest: {
+    productSlug: string;
+    exportPackage: {
+      fileName: string;
+      previewCount: number;
+      commercialReady: boolean;
+    };
+    generatedArtifacts?: Partial<GeneratedKitArtifacts>;
+  },
+  generatedAtFallback: string
+): GeneratedKitArtifacts => {
+  const fallbackGenerationStatus =
+    manifest.generatedArtifacts?.generationStatus ??
+    (manifest.generatedArtifacts?.stage === 'failed'
+      ? 'failed'
+      : manifest.exportPackage.commercialReady || manifest.generatedArtifacts?.stage === 'generated' || manifest.generatedArtifacts?.stage === 'ready'
+        ? 'generated'
+        : 'pending');
+
+  return {
+    kitSlug: manifest.productSlug,
+    generatedAt: manifest.generatedArtifacts?.generatedAt ?? generatedAtFallback,
+    stage: manifest.generatedArtifacts?.stage ?? (manifest.exportPackage.commercialReady ? 'ready' : 'pending'),
+    generationStatus: fallbackGenerationStatus,
+    commercialReady: manifest.generatedArtifacts?.commercialReady ?? manifest.exportPackage.commercialReady,
+    exportPackageFileName: manifest.generatedArtifacts?.exportPackageFileName ?? manifest.exportPackage.fileName,
+    previewCount: manifest.generatedArtifacts?.previewCount ?? manifest.exportPackage.previewCount,
+    stitchProjectId: manifest.generatedArtifacts?.stitchProjectId ?? null,
+    selectedScreenIds: manifest.generatedArtifacts?.selectedScreenIds ?? [],
+    stitchHtmlFiles: manifest.generatedArtifacts?.stitchHtmlFiles ?? [],
+    stitchPreviewImages: manifest.generatedArtifacts?.stitchPreviewImages ?? [],
+    paths: {
+      ...buildGeneratedArtifactPathDefaults(manifest.productSlug),
+      ...manifest.generatedArtifacts?.paths,
+    },
+  };
+};
+
+const figmaKitManifests = manifestsData.manifests.map((manifest) => {
+  return {
+    ...manifest,
+    generatedArtifacts: normalizeGeneratedArtifacts(manifest, manifestsData.generatedAt),
+  } satisfies FigmaContentManifest;
+}) as FigmaContentManifest[];
 
 export const FIGMA_KIT_PRODUCTS = figmaKitProducts;
 export const KIT_SPECS = figmaKitSpecs;
@@ -84,6 +147,9 @@ export const getCommercialReview = (productId: string): CommercialReview | undef
 
 export const getFigmaManifest = (productId: string) =>
   FIGMA_CONTENT_MANIFESTS.find((manifest) => manifest.productId === productId);
+
+export const getGeneratedArtifactsForKit = (productId: string) =>
+  getFigmaManifest(productId)?.generatedArtifacts;
 
 export const getPublishedKitsForFlow = (flowId: string): FigmaKitProduct[] =>
   getPublishedFigmaKits().filter((product) => product.primaryFlowId === flowId);
