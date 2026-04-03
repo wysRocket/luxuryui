@@ -17,6 +17,7 @@
     "commercial:readiness": "node scripts/commercial/validate-commercial-readiness.mjs",
     "pipeline:health": "node scripts/ci-pipeline-health.mjs",
     "firebase:login": "npx -y firebase-tools@latest login",
+    "firebase:domain:help": "node scripts/firebase-domain-help.mjs",
     "firebase:deploy:rules": "npx -y firebase-tools@latest deploy --only firestore:rules",
     "assets:fetch": "node scripts/fetch-real-assets.mjs",
     "assets:optimize": "node scripts/optimize-local-assets.mjs",

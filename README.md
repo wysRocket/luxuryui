@@ -59,6 +59,35 @@ If these values are missing, the app shows readiness warnings in Firebase mode t
 
 Use [docs/auth-regression-checklist.md](/Users/wysmyfree/Projects/luxuryui/docs/auth-regression-checklist.md) before releases that touch auth, wallet, or account state.
 
+### Troubleshooting Firebase Auth Errors
+
+#### Error: `auth/unauthorized-domain`
+
+This error occurs when your domain (e.g., `localhost:5173`) is not whitelisted in Firebase Authentication settings.
+
+**Fix Steps:**
+
+1. Run: `npm run firebase:domain:help` for a guided setup prompt
+2. Or manually:
+   - Go to [Firebase Console → Authentication → Settings](https://console.firebase.google.com/project/luxuryui/authentication/settings)
+   - Scroll to **Authorized domains**
+   - Click **Add domain** and enter your domain (e.g., `localhost:5173`, `yoursite.com`)
+   - Save
+   - Clear browser cache and reload
+
+**For development:**
+
+- Add `localhost:5173` for Vite default port
+- Add `localhost:3000` if using alternate port
+- Add `127.0.0.1:5173` if needed
+
+**For production:**
+
+- Add your domain: `yoursite.com`
+- Add www subdomain: `www.yoursite.com` (if applicable)
+
+The setting propagates within ~30 seconds. If it persists, clear your browser cache (Ctrl+Shift+Del) and hard-refresh.
+
 ### Deploy Firestore Rules
 
 1. Log into Firebase CLI:
