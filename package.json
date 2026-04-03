@@ -7,12 +7,17 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "test": "vitest",
+    "test:run": "vitest run",
     "sources:screensdesign:intake": "node scripts/sources/screensdesign-intake.mjs",
     "sources:screensdesign:normalize": "node scripts/sources/screensdesign-normalize.mjs",
     "sources:screensdesign:normalize:full": "node scripts/sources/screensdesign-normalize.mjs --full",
     "sources:screensdesign:integrity": "node scripts/sources/screensdesign-asset-integrity.mjs",
     "sources:screensdesign:flow-packs": "node scripts/sources/screensdesign-flow-packs.mjs",
     "sources:screensdesign:sync-assets": "node scripts/sources/screensdesign-sync-assets.mjs",
+    "commercial:generate:stitch": "node scripts/commercial/generate-stitch-kits.mjs",
+    "commercial:rebuild:figma": "node scripts/commercial/rebuild-figma-kits.mjs",
+    "commercial:package": "npm run commercial:rebuild:figma && npm run build",
     "commercial:generate": "node scripts/commercial/generate-figma-kits.mjs",
     "commercial:readiness": "node scripts/commercial/validate-commercial-readiness.mjs",
     "pipeline:health": "node scripts/ci-pipeline-health.mjs",
@@ -28,6 +33,7 @@
   },
   "dependencies": {
     "@google/genai": "^1.42.0",
+    "@google/stitch-sdk": "^0.1.0",
     "@tailwindcss/vite": "^4.2.1",
     "firebase": "^12.11.0",
     "framer-motion": "^12.34.2",
@@ -41,8 +47,10 @@
   "devDependencies": {
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
+    "jsdom": "^26.1.0",
     "sharp": "^0.34.5",
     "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "vite": "^6.2.0",
+    "vitest": "^4.1.2"
   }
 }

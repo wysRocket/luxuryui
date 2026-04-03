@@ -189,6 +189,31 @@ export interface KitSpec {
   deliveryChecklist: string[];
 }
 
+export type GeneratedKitArtifactStage = "planned" | "pending" | "generated" | "packaged" | "ready" | "failed";
+export type GeneratedKitGenerationStatus = "pending" | "generated" | "packaged" | "failed";
+
+export interface GeneratedKitArtifactPaths {
+  generatedArtifactsRootDir: string;
+  generatedKitArtifactsDir: string;
+  deliveryPacksDir: string;
+  deliveryPackPath: string;
+}
+
+export interface GeneratedKitArtifacts {
+  kitSlug: string;
+  generatedAt: string;
+  stage: GeneratedKitArtifactStage;
+  generationStatus: GeneratedKitGenerationStatus;
+  commercialReady: boolean;
+  exportPackageFileName: string;
+  previewCount: number;
+  stitchProjectId?: string | null;
+  selectedScreenIds?: string[];
+  stitchHtmlFiles?: string[];
+  stitchPreviewImages?: string[];
+  paths: GeneratedKitArtifactPaths;
+}
+
 export interface CommercialReview {
   productId: string;
   productSlug: string;
