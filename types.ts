@@ -189,6 +189,25 @@ export interface KitSpec {
   deliveryChecklist: string[];
 }
 
+export type GeneratedKitArtifactStage = "planned" | "generated" | "packaged" | "ready";
+
+export interface GeneratedKitArtifactPaths {
+  generatedArtifactsRootDir: string;
+  generatedKitArtifactsDir: string;
+  deliveryPacksDir: string;
+  deliveryPackPath: string;
+}
+
+export interface GeneratedKitArtifacts {
+  kitSlug: string;
+  generatedAt: string;
+  stage: GeneratedKitArtifactStage;
+  commercialReady: boolean;
+  exportPackageFileName: string;
+  previewCount: number;
+  paths: GeneratedKitArtifactPaths;
+}
+
 export interface CommercialReview {
   productId: string;
   productSlug: string;
