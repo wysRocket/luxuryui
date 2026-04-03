@@ -1,0 +1,36 @@
+# App
+Name: Monzo
+
+# Flow
+ID: onboarding
+Title: Onboarding Flow
+Objective: Reduce time-to-value in the first session.
+Steps:
+1. Welcome & Value Proposition
+2. Permission Setup
+3. Personalization
+4. Activation Event
+5. Completion State
+
+# Reference Screenshots
+- /assets/apps/monzo/screen-1.png
+- /assets/apps/monzo/screen-2.png
+- /assets/apps/monzo/screen-3.png
+
+# Rename Rules
+- Replace brand-specific nouns with generalized product language.
+- Swap proprietary icon metaphors for neutral system metaphors.
+- Use placeholder but realistic content across all frames.
+
+# Components To Reconstruct
+- Welcome hero
+- Preference picker
+- Progress tracker
+- Primary CTA footer
+
+# Design Tokens
+- Neutral finance palette
+- Data-heavy typography scale
+- Tight 8pt spacing grid
+
+Output: Produce an original, commercially safe kit direction.

@@ -100,16 +100,16 @@ describe('selectBestRun', () => {
 
   it('returns the last successful run', () => {
     const runs = [
-      { status: 'success', runId: 'a' },
+      { status: 'generated', runId: 'a' },
       { status: 'failed', runId: 'b' },
-      { status: 'success', runId: 'c' },
+      { status: 'generated', runId: 'c' },
     ];
     expect(selectBestRun(runs)?.runId).toBe('c');
   });
 
   it('prefers the last successful run over a newer failed run', () => {
     const runs = [
-      { status: 'success', runId: 'good' },
+      { status: 'generated', runId: 'good' },
       { status: 'failed', runId: 'bad' },
     ];
     expect(selectBestRun(runs)?.runId).toBe('good');
