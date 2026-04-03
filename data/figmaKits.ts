@@ -2,13 +2,22 @@ import productsData from './curation/commercial/figma-kit-products.json';
 import specsData from './curation/commercial/figma-kit-specs.json';
 import reviewsData from './curation/commercial/commercial-reviews.json';
 import manifestsData from './curation/commercial/figma-content-manifests.json';
-import { CommercialReview, CreditPackConfig, CreditQuote, FigmaKitProduct, KitSpec } from '../types';
+import {
+  CommercialReview,
+  CreditPackConfig,
+  CreditQuote,
+  FigmaKitProduct,
+  GeneratedKitArtifacts,
+  KitSpec,
+} from '../types';
 import { FLOW_DEFINITIONS } from './flows';
 
 const figmaKitProducts = productsData.products as FigmaKitProduct[];
 const figmaKitSpecs = specsData.kitSpecs as KitSpec[];
 const figmaKitReviews = reviewsData.reviews as CommercialReview[];
-const figmaKitManifests = manifestsData.manifests as Array<{
+const GENERATED_ARTIFACTS_ROOT_DIR = 'generated-kit-artifacts';
+const DELIVERY_PACKS_DIR = 'delivery-packs';
+type FigmaContentManifest = {
   productId: string;
   productSlug: string;
   figmaFileKey: string | null;
@@ -19,7 +28,28 @@ const figmaKitManifests = manifestsData.manifests as Array<{
     previewCount: number;
     commercialReady: boolean;
   };
-}>;
+  generatedArtifacts: GeneratedKitArtifacts;
+};
+
+const figmaKitManifests = manifestsData.manifests.map((manifest) => {
+  return {
+    ...manifest,
+    generatedArtifacts: {
+      kitSlug: manifest.productSlug,
+      generatedAt: manifestsData.generatedAt,
+      stage: manifest.exportPackage.commercialReady ? 'ready' : 'generated',
+      commercialReady: manifest.exportPackage.commercialReady,
+      exportPackageFileName: manifest.exportPackage.fileName,
+      previewCount: manifest.exportPackage.previewCount,
+      paths: {
+        generatedArtifactsRootDir: GENERATED_ARTIFACTS_ROOT_DIR,
+        generatedKitArtifactsDir: `${GENERATED_ARTIFACTS_ROOT_DIR}/${manifest.productSlug}`,
+        deliveryPacksDir: DELIVERY_PACKS_DIR,
+        deliveryPackPath: `${DELIVERY_PACKS_DIR}/${manifest.productSlug}.json`,
+      },
+    },
+  } satisfies FigmaContentManifest;
+}) as FigmaContentManifest[];
 
 export const FIGMA_KIT_PRODUCTS = figmaKitProducts;
 export const KIT_SPECS = figmaKitSpecs;
@@ -84,6 +114,9 @@ export const getCommercialReview = (productId: string): CommercialReview | undef
 
 export const getFigmaManifest = (productId: string) =>
   FIGMA_CONTENT_MANIFESTS.find((manifest) => manifest.productId === productId);
+
+export const getGeneratedArtifactsForKit = (productId: string) =>
+  getFigmaManifest(productId)?.generatedArtifacts;
 
 export const getPublishedKitsForFlow = (flowId: string): FigmaKitProduct[] =>
   getPublishedFigmaKits().filter((product) => product.primaryFlowId === flowId);
