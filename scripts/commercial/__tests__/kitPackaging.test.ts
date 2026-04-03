@@ -29,9 +29,11 @@ describe('commercial artifact paths', () => {
     expect(artifacts?.kitSlug).toBe('monzo-figma-kit');
     expect(typeof artifacts?.generatedAt).toBe('string');
     expect(artifacts?.generatedAt).toMatch(/^\d{4}-\d{2}-\d{2}T/);
-    expect(['pending', 'generated', 'packaged', 'ready', 'failed']).toContain(artifacts?.stage);
+    expect(['pending', 'generated', 'ready', 'packaged', 'failed']).toContain(artifacts?.stage);
     expect(['pending', 'generated', 'packaged', 'failed']).toContain(artifacts?.generationStatus);
-    expect(artifacts?.commercialReady).toBe(artifacts?.generationStatus === 'packaged');
+    expect(artifacts?.commercialReady).toBe(
+      artifacts?.generationStatus === 'generated' || artifacts?.generationStatus === 'packaged',
+    );
     expect(artifacts?.exportPackageFileName).toBe('monzo-figma-kit.fig');
     expect(artifacts?.previewCount).toBe(3);
     expect(artifacts?.paths.generatedArtifactsRootDir).toBe('data/curation/commercial/generated-kit-artifacts');

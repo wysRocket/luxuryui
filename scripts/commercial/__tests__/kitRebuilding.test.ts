@@ -47,14 +47,13 @@ describe('buildFigmaReconstructionPacket', () => {
     expect(packet.pageOrder).toEqual(['Cover', 'Flow', 'Components', 'Tokens', 'License']);
   });
 
-  it('produces a done packet when a Stitch run with screens is available', () => {
+  it('produces a done packet when a generated Stitch run is available', () => {
     const stitchRun = {
-      status: 'success',
+      status: 'generated',
+      generationStatus: 'generated',
       selectedScreenIds: ['scr_1', 'scr_2'],
-      screens: [
-        { htmlUrl: 'https://stitch.example/1.html', previewUrl: 'https://stitch.example/1.png' },
-        { htmlUrl: 'https://stitch.example/2.html', previewUrl: 'https://stitch.example/2.png' },
-      ],
+      stitchHtmlFiles: ['https://stitch.example/1.html', 'https://stitch.example/2.html'],
+      stitchPreviewImages: ['https://stitch.example/1.png', 'https://stitch.example/2.png'],
     };
 
     const packet = buildFigmaReconstructionPacket({
@@ -95,22 +94,22 @@ describe('selectBestRun', () => {
   });
 
   it('returns null when all runs failed', () => {
-    expect(selectBestRun([{ status: 'failed' }, { status: 'blocked_missing_api_key' }])).toBeNull();
+    expect(selectBestRun([{ status: 'runtime_error' }, { status: 'blocked_missing_api_key' }])).toBeNull();
   });
 
-  it('returns the last successful run', () => {
+  it('returns the last generated run', () => {
     const runs = [
-      { status: 'generated', runId: 'a' },
-      { status: 'failed', runId: 'b' },
-      { status: 'generated', runId: 'c' },
+      { status: 'generated', generationStatus: 'generated', runId: 'a' },
+      { status: 'runtime_error', runId: 'b' },
+      { status: 'generated', generationStatus: 'generated', runId: 'c' },
     ];
     expect(selectBestRun(runs)?.runId).toBe('c');
   });
 
-  it('prefers the last successful run over a newer failed run', () => {
+  it('prefers the last generated run over a newer failed run', () => {
     const runs = [
-      { status: 'generated', runId: 'good' },
-      { status: 'failed', runId: 'bad' },
+      { status: 'generated', generationStatus: 'generated', runId: 'good' },
+      { status: 'runtime_error', runId: 'bad' },
     ];
     expect(selectBestRun(runs)?.runId).toBe('good');
   });

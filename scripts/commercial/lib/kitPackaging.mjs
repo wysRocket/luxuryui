@@ -40,14 +40,11 @@ export const buildDeliveryManifest = ({ kitSlug, figmaSourceFiles = [], stitchPr
  * @param {object} opts.stitchRun — latest successful Stitch run record, or null
  */
 export const buildFigmaReconstructionPacket = ({ productId, kitSlug, spec, stitchRun }) => {
-  // Ledger records store URLs in stitchHtmlFiles / stitchPreviewImages parallel arrays.
-  const htmlFiles = stitchRun?.stitchHtmlFiles ?? stitchRun?.screens?.map((s) => s.htmlUrl) ?? [];
-  const previewImages = stitchRun?.stitchPreviewImages ?? stitchRun?.screens?.map((s) => s.previewUrl) ?? [];
   const screenBlueprints = (stitchRun?.selectedScreenIds ?? []).map((screenId, i) => ({
     name: `Screen ${i + 1}`,
     screenId,
-    htmlUrl: htmlFiles[i] ?? null,
-    previewUrl: previewImages[i] ?? null,
+    htmlUrl: stitchRun?.stitchHtmlFiles?.[i] ?? stitchRun?.screens?.[i]?.htmlUrl ?? null,
+    previewUrl: stitchRun?.stitchPreviewImages?.[i] ?? stitchRun?.screens?.[i]?.previewUrl ?? null,
   }));
 
   return {
