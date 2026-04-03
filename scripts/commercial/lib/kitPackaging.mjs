@@ -43,8 +43,8 @@ export const buildFigmaReconstructionPacket = ({ productId, kitSlug, spec, stitc
   const screenBlueprints = (stitchRun?.selectedScreenIds ?? []).map((screenId, i) => ({
     name: `Screen ${i + 1}`,
     screenId,
-    htmlUrl: stitchRun?.screens?.[i]?.htmlUrl ?? null,
-    previewUrl: stitchRun?.screens?.[i]?.previewUrl ?? null,
+    htmlUrl: stitchRun?.stitchHtmlFiles?.[i] ?? stitchRun?.screens?.[i]?.htmlUrl ?? null,
+    previewUrl: stitchRun?.stitchPreviewImages?.[i] ?? stitchRun?.screens?.[i]?.previewUrl ?? null,
   }));
 
   return {
