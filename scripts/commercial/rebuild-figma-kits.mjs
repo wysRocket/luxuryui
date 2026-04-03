@@ -15,11 +15,16 @@
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 import { getKitArtifactPaths } from './lib/commercialArtifactPaths.mjs';
 import { buildFigmaReconstructionPacket, buildDeliveryManifest } from './lib/kitPackaging.mjs';
 
-const projectRoot = new URL('../../', import.meta.url).pathname.replace(/\/$/, '');
+const _metaUrl = new URL('../../', import.meta.url);
+const projectRoot = (_metaUrl.protocol === 'file:'
+  ? fileURLToPath(_metaUrl)
+  : _metaUrl.pathname
+).replace(/[/\\]$/, '');
 
 const FIGMA_CONTENT_MANIFESTS_PATH = path.join(
   projectRoot, 'data', 'curation', 'commercial', 'figma-content-manifests.json'
@@ -45,11 +50,16 @@ const ensureDir = async (dir) => {
 };
 
 /**
- * Pick the best Stitch run for a kit: last successful, or null.
+ * Pick the best Stitch run for a kit: last generated/successful, or null.
  */
 export const selectBestRun = (ledgerRecords) => {
   if (!Array.isArray(ledgerRecords) || ledgerRecords.length === 0) return null;
-  const successful = ledgerRecords.filter((r) => r.status === 'success');
+  const successful = ledgerRecords.filter(
+    (r) =>
+      r?.generationStatus === 'generated' ||
+      r?.status === 'generated' ||
+      r?.status === 'success'
+  );
   if (successful.length === 0) return null;
   return successful[successful.length - 1];
 };
@@ -74,10 +84,13 @@ const main = async () => {
   }
 
   const specsMap = {};
-  if (Array.isArray(specs)) {
-    for (const s of specs) {
-      if (s.productId) specsMap[s.productId] = s;
-    }
+  const specEntries = Array.isArray(specs?.kitSpecs)
+    ? specs.kitSpecs
+    : Array.isArray(specs)
+      ? specs
+      : [];
+  for (const s of specEntries) {
+    if (s.productId) specsMap[s.productId] = s;
   }
 
   const ledgerBySlug = {};
@@ -89,8 +102,8 @@ const main = async () => {
     }
   }
 
-  const entries = Array.isArray(manifests) ? manifests : [];
-  const targets = onlySlug ? entries.filter((m) => m.kitSlug === onlySlug) : entries;
+  const entries = Array.isArray(manifests?.manifests) ? manifests.manifests : [];
+  const targets = onlySlug ? entries.filter((m) => m.productSlug === onlySlug) : entries;
 
   if (targets.length === 0) {
     console.log(onlySlug ? `No manifest found for kit slug: ${onlySlug}` : 'No manifests to process.');
@@ -101,7 +114,7 @@ const main = async () => {
   let skipped = 0;
 
   for (const manifest of targets) {
-    const { kitSlug, productId } = manifest;
+    const { productSlug: kitSlug, productId } = manifest;
     if (!kitSlug || !productId) {
       skipped++;
       continue;
@@ -118,7 +131,7 @@ const main = async () => {
     const packetPath = path.join(figmaDir, 'reconstruction.json');
     await writeFile(packetPath, `${JSON.stringify(packet, null, 2)}\n`);
 
-    const stitchPreviewImages = (bestRun?.screens ?? []).map((s) => s.previewUrl).filter(Boolean);
+    const stitchPreviewImages = bestRun?.stitchPreviewImages ?? [];
     const deliveryManifest = buildDeliveryManifest({
       kitSlug,
       figmaSourceFiles: [path.relative(projectRoot, packetPath)],
