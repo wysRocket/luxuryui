@@ -15,8 +15,8 @@ import { FLOW_DEFINITIONS } from './flows';
 const figmaKitProducts = productsData.products as FigmaKitProduct[];
 const figmaKitSpecs = specsData.kitSpecs as KitSpec[];
 const figmaKitReviews = reviewsData.reviews as CommercialReview[];
-const GENERATED_ARTIFACTS_ROOT_DIR = 'generated-kit-artifacts';
-const DELIVERY_PACKS_DIR = 'delivery-packs';
+const GENERATED_ARTIFACTS_ROOT_DIR = 'data/curation/commercial/generated-kit-artifacts';
+const DELIVERY_PACKS_DIR = 'data/curation/commercial/delivery-packs';
 type FigmaContentManifest = {
   productId: string;
   productSlug: string;
@@ -31,23 +31,56 @@ type FigmaContentManifest = {
   generatedArtifacts: GeneratedKitArtifacts;
 };
 
+const buildGeneratedArtifactPathDefaults = (productSlug: string) => ({
+  generatedArtifactsRootDir: GENERATED_ARTIFACTS_ROOT_DIR,
+  generatedKitArtifactsDir: `${GENERATED_ARTIFACTS_ROOT_DIR}/${productSlug}`,
+  deliveryPacksDir: DELIVERY_PACKS_DIR,
+  deliveryPackPath: `${DELIVERY_PACKS_DIR}/${productSlug}.json`,
+});
+
+const normalizeGeneratedArtifacts = (
+  manifest: {
+    productSlug: string;
+    exportPackage: {
+      fileName: string;
+      previewCount: number;
+      commercialReady: boolean;
+    };
+    generatedArtifacts?: Partial<GeneratedKitArtifacts>;
+  },
+  generatedAtFallback: string
+): GeneratedKitArtifacts => {
+  const fallbackGenerationStatus =
+    manifest.generatedArtifacts?.generationStatus ??
+    (manifest.generatedArtifacts?.stage === 'failed'
+      ? 'failed'
+      : manifest.exportPackage.commercialReady || manifest.generatedArtifacts?.stage === 'generated' || manifest.generatedArtifacts?.stage === 'ready'
+        ? 'generated'
+        : 'pending');
+
+  return {
+    kitSlug: manifest.productSlug,
+    generatedAt: manifest.generatedArtifacts?.generatedAt ?? generatedAtFallback,
+    stage: manifest.generatedArtifacts?.stage ?? (manifest.exportPackage.commercialReady ? 'ready' : 'pending'),
+    generationStatus: fallbackGenerationStatus,
+    commercialReady: manifest.generatedArtifacts?.commercialReady ?? manifest.exportPackage.commercialReady,
+    exportPackageFileName: manifest.generatedArtifacts?.exportPackageFileName ?? manifest.exportPackage.fileName,
+    previewCount: manifest.generatedArtifacts?.previewCount ?? manifest.exportPackage.previewCount,
+    stitchProjectId: manifest.generatedArtifacts?.stitchProjectId ?? null,
+    selectedScreenIds: manifest.generatedArtifacts?.selectedScreenIds ?? [],
+    stitchHtmlFiles: manifest.generatedArtifacts?.stitchHtmlFiles ?? [],
+    stitchPreviewImages: manifest.generatedArtifacts?.stitchPreviewImages ?? [],
+    paths: {
+      ...buildGeneratedArtifactPathDefaults(manifest.productSlug),
+      ...manifest.generatedArtifacts?.paths,
+    },
+  };
+};
+
 const figmaKitManifests = manifestsData.manifests.map((manifest) => {
   return {
     ...manifest,
-    generatedArtifacts: {
-      kitSlug: manifest.productSlug,
-      generatedAt: manifestsData.generatedAt,
-      stage: manifest.exportPackage.commercialReady ? 'ready' : 'generated',
-      commercialReady: manifest.exportPackage.commercialReady,
-      exportPackageFileName: manifest.exportPackage.fileName,
-      previewCount: manifest.exportPackage.previewCount,
-      paths: {
-        generatedArtifactsRootDir: GENERATED_ARTIFACTS_ROOT_DIR,
-        generatedKitArtifactsDir: `${GENERATED_ARTIFACTS_ROOT_DIR}/${manifest.productSlug}`,
-        deliveryPacksDir: DELIVERY_PACKS_DIR,
-        deliveryPackPath: `${DELIVERY_PACKS_DIR}/${manifest.productSlug}.json`,
-      },
-    },
+    generatedArtifacts: normalizeGeneratedArtifacts(manifest, manifestsData.generatedAt),
   } satisfies FigmaContentManifest;
 }) as FigmaContentManifest[];
 
