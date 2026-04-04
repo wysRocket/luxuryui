@@ -18,7 +18,7 @@
       "sourceAssetPath": "/assets/apps/monzo/screen-1.png",
       "sourceAppSlug": "monzo",
       "sourceFlowId": "onboarding",
-      "sourceLabel": "Welcome & Value Proposition"
+      "sourceLabel": "Screen 1"
     },
     {
       "name": "Screen 2",
@@ -28,7 +28,7 @@
       "sourceAssetPath": "/assets/apps/monzo/screen-2.png",
       "sourceAppSlug": "monzo",
       "sourceFlowId": "onboarding",
-      "sourceLabel": "Permission Setup"
+      "sourceLabel": "Screen 2"
     },
     {
       "name": "Screen 3",
@@ -38,7 +38,7 @@
       "sourceAssetPath": "/assets/apps/monzo/screen-3.png",
       "sourceAppSlug": "monzo",
       "sourceFlowId": "onboarding",
-      "sourceLabel": "Personalization"
+      "sourceLabel": "Screen 3"
     },
     {
       "name": "Screen 4",
@@ -48,7 +48,7 @@
       "sourceAssetPath": "/assets/apps/monzo/screen-4.png",
       "sourceAppSlug": "monzo",
       "sourceFlowId": "onboarding",
-      "sourceLabel": "Activation Event"
+      "sourceLabel": "Screen 4"
     },
     {
       "name": "Screen 5",
@@ -58,7 +58,7 @@
       "sourceAssetPath": "/assets/apps/monzo/screen-5.png",
       "sourceAppSlug": "monzo",
       "sourceFlowId": "onboarding",
-      "sourceLabel": "Completion State"
+      "sourceLabel": "Screen 5"
     },
     {
       "name": "Screen 6",
@@ -68,7 +68,7 @@
       "sourceAssetPath": "/assets/apps/monzo/screen-6.png",
       "sourceAppSlug": "monzo",
       "sourceFlowId": "onboarding",
-      "sourceLabel": "Reference screen 6"
+      "sourceLabel": "Screen 6"
     },
     {
       "name": "Screen 7",
@@ -78,7 +78,7 @@
       "sourceAssetPath": "/assets/apps/monzo/screen-7.png",
       "sourceAppSlug": "monzo",
       "sourceFlowId": "onboarding",
-      "sourceLabel": "Reference screen 7"
+      "sourceLabel": "Screen 7"
     },
     {
       "name": "Screen 8",
@@ -88,7 +88,7 @@
       "sourceAssetPath": "/assets/apps/monzo/screen-8.png",
       "sourceAppSlug": "monzo",
       "sourceFlowId": "onboarding",
-      "sourceLabel": "Reference screen 8"
+      "sourceLabel": "Screen 8"
     }
   ],
   "componentInventory": [
@@ -116,18 +116,14 @@
     "/assets/apps/monzo/screen-8.png"
   ],
   "transformationNotes": [
-    "Transform Monzo reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
-    "Do not mirror source branding, iconography, or raw layout one-for-one.",
-    "Package the result as an editable Figma file with tokens, component variants, and usage notes.",
     "Replace brand-specific nouns with generalized product language.",
     "Swap proprietary icon metaphors for neutral system metaphors.",
     "Use placeholder but realistic content across all frames.",
     "No direct reuse of source marketing copy.",
     "Use generalized avatars, illustrations, and product names.",
-    "Keep tone premium, but not source-identical.",
-    "Approved for storefront merchandising as an original transformed kit."
+    "Keep tone premium, but not source-identical."
   ],
   "reconstructionStatus": "done",
   "nextAction": "publish-via-figma-workflow",
-  "reconstructedAt": "2026-04-04T16:36:36.153Z"
+  "reconstructedAt": "2026-04-04T23:08:49.858Z"
 }
