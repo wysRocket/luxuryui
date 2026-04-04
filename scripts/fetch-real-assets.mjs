@@ -12,18 +12,19 @@ const outputTsPath = path.join(projectRoot, 'data', 'realAppAssets.ts');
 
 const appNames = [...new Set(Object.values(APP_NAMES_BY_CATEGORY).flat())];
 const STORE_COUNTRIES = ['us', 'gb', 'ca'];
-const QUERY_ALIASES = {
+export const QUERY_ALIASES = {
   Kayak: ['KAYAK Flights, Hotels & Cars'],
   Zoom: ['Zoom Workplace'],
   CNN: ['CNN News'],
   Reuters: ['Reuters News'],
+  Twitter: ['X'],
   Pocket: ['Pocket: Stay Informed'],
   Threads: ['Threads, an Instagram app'],
   BeReal: ['BeReal. Your friends for real.'],
   Sleep: ['Sleep Cycle'],
 };
 
-const slugify = (value) =>
+export const slugify = (value) =>
   value
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
@@ -47,7 +48,7 @@ const scoreResult = (query, result) => {
 
 const unique = (items) => [...new Set(items.filter(Boolean))];
 
-const extFromUrl = (url) => {
+export const extFromUrl = (url) => {
   try {
     const parsed = new URL(url);
     const ext = path.extname(parsed.pathname).toLowerCase();
@@ -118,7 +119,7 @@ const fetchJsonWithRetry = async (url, maxAttempts = 6) => {
   throw new Error('Request exhausted retries');
 };
 
-const downloadImage = async (url, filePath) => {
+export const downloadImage = async (url, filePath) => {
   const response = await fetch(url, {
     headers: {
       'User-Agent': 'LuxuryUI Asset Bot/1.0',
@@ -134,7 +135,7 @@ const downloadImage = async (url, filePath) => {
   await writeFile(filePath, buffer);
 };
 
-const fetchFromItunes = async (name) => {
+export const fetchFromItunes = async (name) => {
   const terms = [name, ...(QUERY_ALIASES[name] || [])];
 
   for (const country of STORE_COUNTRIES) {
@@ -172,7 +173,7 @@ const fetchFromItunes = async (name) => {
   return null;
 };
 
-const fetchFromGooglePlay = async (name) => {
+export const fetchFromGooglePlay = async (name) => {
   const terms = [name, ...(QUERY_ALIASES[name] || [])];
 
   for (const term of terms) {
@@ -213,7 +214,7 @@ const fetchFromGooglePlay = async (name) => {
   return null;
 };
 
-const run = async () => {
+export const run = async () => {
   await mkdir(publicAssetsRoot, { recursive: true });
 
   const assetMap = await readLocalAssetMap();
@@ -289,7 +290,11 @@ const run = async () => {
   }
 };
 
-run().catch((error) => {
-  console.error(error);
-  process.exit(1);
-});
+const isMain = process.argv[1] && path.resolve(process.argv[1]) === __filename;
+
+if (isMain) {
+  run().catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
+}

@@ -1,8 +1,9 @@
 {
-  "runId": "stitch-run-1775235620342",
+  "runId": "stitch-run-1775313801656",
   "kitSlug": "monzo-figma-kit",
   "productId": "figma-kit:monzo",
   "deviceType": "MOBILE",
+  "generationStatus": "generated",
   "promptSections": [
     "app",
     "flow",
@@ -11,41 +12,36 @@
     "components",
     "design tokens"
   ],
-  "generationStatus": "completed",
-  "status": "completed",
-  "stitchProjectId": "3437719771253114588",
+  "stitchProjectId": "13262938093905647630",
   "selectedScreenIds": [
-    "0ca2d21354df4c1b9a83b8e94dd1eba9",
-    "1adcfeea121a460fbcbc0b5cc0dc2d3a",
-    "a360e882df09475db157fecfdc398c28",
-    "fac602265b8743dea05dcab9b80313ac",
-    "22074c6065ea400eb2c9153915efb03b",
-    "ac5900de256a473181a5c51844060d1c",
-    "753faa2d18e84496b70d8eebe80a6025",
-    "3b7cc4261b004f228b1d4a7399ce4201"
+    "3f7462abe1ee4c919c183cf731f201e9",
+    "7012ac6214024725b7fe0167036ff513",
+    "2205f25e49584d1b993df83a3597cee5",
+    "cddace7fb9c24865bb044843b4e3c901",
+    "c06624407e0c4dcdb26b4f72b3e862ae",
+    "d3d3f47e059c4317b7ca8d150d6bd1d4",
+    "2abed35cfb934551aeb7b52d198a3305",
+    "6da7aa01550d4885906ef71a9cb6e01d"
   ],
   "stitchHtmlFiles": [
-    "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2JlMzg5NTRjYWI4YTQzNmM5YzJlNmIwOGNlNTFhMjM5EgsSBxCL2JS42wgYAZIBIwoKcHJvamVjdF9pZBIVQhMzNDM3NzE5NzcxMjUzMTE0NTg4&filename=&opi=96797242",
-    "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2MyYjJhMzM5OGI2NzRiMGVhMDhjNGNlMzA2NWU0MjFjEgsSBxCL2JS42wgYAZIBIwoKcHJvamVjdF9pZBIVQhMzNDM3NzE5NzcxMjUzMTE0NTg4&filename=&opi=96797242",
-    "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzVkZGEwNjcyYWRlMDQ5OGZiMTQwZjcyYmIxMjdkMTg4EgsSBxCL2JS42wgYAZIBIwoKcHJvamVjdF9pZBIVQhMzNDM3NzE5NzcxMjUzMTE0NTg4&filename=&opi=96797242",
-    "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzcxODE3ZGViMGM3MDRhMTE4NWFlNmJiMDE4OWM5Y2NjEgsSBxCL2JS42wgYAZIBIwoKcHJvamVjdF9pZBIVQhMzNDM3NzE5NzcxMjUzMTE0NTg4&filename=&opi=96797242",
-    "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzI2ODU0NjAxN2ExZTRlNWQ4NzRkODIwYjUzZWYxMjY1EgsSBxCL2JS42wgYAZIBIwoKcHJvamVjdF9pZBIVQhMzNDM3NzE5NzcxMjUzMTE0NTg4&filename=&opi=96797242",
-    "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2RiMWIzMDFkNTNkODRjNzg4MDA1ZTVmMGIxZDhhMWFlEgsSBxCL2JS42wgYAZIBIwoKcHJvamVjdF9pZBIVQhMzNDM3NzE5NzcxMjUzMTE0NTg4&filename=&opi=96797242",
-    "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2I5MTE4ODY0ODQ4OTQwYjg5MDM3YTUwYmNmNzhiYTYyEgsSBxCL2JS42wgYAZIBIwoKcHJvamVjdF9pZBIVQhMzNDM3NzE5NzcxMjUzMTE0NTg4&filename=&opi=96797242",
-    "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2Y0YTc4Yzg0NTZiMDQ3MjRhNWM4NDYzOWI2ZjYwMDZiEgsSBxCL2JS42wgYAZIBIwoKcHJvamVjdF9pZBIVQhMzNDM3NzE5NzcxMjUzMTE0NTg4&filename=&opi=96797242"
+    "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2YyMzVlN2U0M2VkYjQwMjRiNGMyOTFiZmQ1YzQ3Mzc3EgsSBxCL2JS42wgYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzI2MjkzODA5MzkwNTY0NzYzMA&filename=&opi=96797242",
+    "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzFjYWEyOTliZjEzMDRlYTlhYjRhNDk0N2NkNTYxNjM4EgsSBxCL2JS42wgYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzI2MjkzODA5MzkwNTY0NzYzMA&filename=&opi=96797242",
+    "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2VlNjc5ZTZlNGVlNDQyZjU5Y2IyZjI5YjIyNzM4YmRmEgsSBxCL2JS42wgYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzI2MjkzODA5MzkwNTY0NzYzMA&filename=&opi=96797242",
+    "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzMzYmFmMDZmMTM5MzQ1ZGFiYjQzNzhlYTg0ZjQ1YjljEgsSBxCL2JS42wgYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzI2MjkzODA5MzkwNTY0NzYzMA&filename=&opi=96797242",
+    "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2QzZGNhM2M0N2RiYTQ5ZGQ4YjI1OGQ3NzY5M2JmN2Q0EgsSBxCL2JS42wgYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzI2MjkzODA5MzkwNTY0NzYzMA&filename=&opi=96797242",
+    "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzkzZWI5ZWI2MGUzOTQ1MTViNmE0NmJkYjJlYmNmN2MyEgsSBxCL2JS42wgYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzI2MjkzODA5MzkwNTY0NzYzMA&filename=&opi=96797242",
+    "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzhhODY0YWUwYzcxNDRlMDk4NTE0ODE0NTE2NzQyMjVlEgsSBxCL2JS42wgYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzI2MjkzODA5MzkwNTY0NzYzMA&filename=&opi=96797242",
+    "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzBiYmY0YzVlNmE1ZDRlMzVhOWQwZDQyOGMwZTFhNTZjEgsSBxCL2JS42wgYAZIBJAoKcHJvamVjdF9pZBIWQhQxMzI2MjkzODA5MzkwNTY0NzYzMA&filename=&opi=96797242"
   ],
   "stitchPreviewImages": [
-    "https://lh3.googleusercontent.com/aida/ADBb0uiQH1jYq-YTH2PfZMr_QgT7c70VxBCtxym7jWtiOwXangd3ivbO4uUdKd0VltWOF36Bf3WDmFp8kTtSlrXYBVLf07whlxmkurw5UOpv1NlgIj-wQUF5Vuteo9eujAhSuHuMx9yMOd7rx0bzmq54nUHPqOxHHcxIwRil-1IlwYrT6CKdlahfG5kfnaIpdp5ttWNvqR8P8zv5eoTgIiBsiMyZVneV5Oehu-mB2uvkNd14O3YaLSOcSoaXTLc",
-    "https://lh3.googleusercontent.com/aida/ADBb0uh2z4leAArCPvzbwN6eH1qKi6C3SGCuqZnxUXKiFAXTbjLMpPP2Tn-Jv73xIoUEYPQ8QukUXJYIiZOR2IXblvtl6KrRrgsPnkQ0EJn1oJjmhN1jaSpeuSzS593acN8yx3aUL2l1QNM-eV2s6s8XqK_9-sKsDdb_6XaaPqnge1vg5BWzMf1fwfUo3X9882oQ1D3WtJQAEl-sIMzJdHFbXbDm2LnQRhQDUixNOtvA4fVjvwcigUMO5e6jQA",
-    "https://lh3.googleusercontent.com/aida/ADBb0uhKbQg7F34SeTIyEra_WPJ_F9J7-cIc4UrlfzfAAZ0Mj0aQaHJry9CJrTAo4r5CpBQ5XRtWWyKRyJ48ZKpOQ47XubqjEExW12Rvuj44Mga9OfY5CHxp2XTozsYhKH2iflagYW3qm2e3FYkloHwPa6DDh3aKeWcRjT7gA87Edb4Qch-7g-v3O_RtQP5IdmPNPqjbUOmYc2tz5pfAs2_mP1ChKzY1Fy1JmA3_460xhEaw8lKQuuRH8eCv",
-    "https://lh3.googleusercontent.com/aida/ADBb0ugXySf3sUao76W5yKca7J9j1SLF44AzLBy_YD44E-1vSIZEjPGuMhE-hMsn4GYws1D1NL7JvFf74IPbQzfBFrjwrXCjNpNkw1bU2Ccb5PVKCpsoLf2QszPv4wFBp3mwvdIvFfVFfbTG1r02cJASMdHKTnPF-FfFEz1a16Up0PkR5hDv0iGb_2kjoQ60e6Ev_m4vMm8XxT5-hj06CA4DVoJXOgu8bV0wch6vM8Om87E-OVw2fftcYU7KNI4",
-    "https://lh3.googleusercontent.com/aida/ADBb0uij5PY9vZGHAscDEFfQLyPQNAIQlL21AWGFFhSJ63i9HX_VYFe1nK6YnNvjPh4ugSH3kUlESOVO2YRCCRp8N3L5fhc3IFx0KhPWy0cDcaW7jiHgJcPHULI-C-n7g2Ze5sEdRW1G0tq24y-_L6T5UrcTnbsAUgj80YeJWyM4f_a7kQxsEBkQYjW9QcGR-WyjZ4EwBzTIMvgTrYF1Nvyr9o4cQMsU98EiXd4q1tTMbOQwxBPlK7aA64SzB7c",
-    "https://lh3.googleusercontent.com/aida/ADBb0uiAM-vf1k82lrSno8dIxzAR8XXiNK-JdMfIYlnssTUHt4f-RiU9kZPWX7HPsERsQTKwwxfz9kPX5ADnh7k9gr4sM6Sw0xttxhQC1qXriEjTyC_hTYhXknl04qXYYCCVY58Q4nGYSd3UwDk8hHfA7W7qEgICEbzZjD7oq8oPjVn_-hdGcFVSGmxlxQip4uoLRoIudKPaVbCcjFQY_Fg2Ncr7Qpubn6VllpoUl9VKOOnVd3lvD8pzj5uk1Q",
-    "https://lh3.googleusercontent.com/aida/ADBb0uh9teFVL8yBfLm1l7RgGwBTfKLGREJOj01TFmLiIsJCoK3t4qaY-RlfRV195i-mM8FYOG5sTKAFcszQ6NxHBGHybwIKlJEnWpitJA4cOw4kGNExiarc8arc4U9yHQgL907DV231m0MmqYvAWXkte50iiP82qpPKFuoGZhoVN2r4pJplHYHt5i1OBgi6yDUSGnYbTf9WT2UcgE0CYDjNMrRjcUAo4fW_kBhi3g4xjXREp_tnfJ5HHxh8JwE",
-    "https://lh3.googleusercontent.com/aida/ADBb0uiR6O6zG-JLfP2HCWbjdzx3bcKDFPBPpeEj7R8R3NWf7YkyIIX26Ym-Ob_x998py1tLZzVRXH4Tpa3G0c9h4ile_MrWzB88PfCV2Q76ZDrHClpthnd3D825mIAWyR0R0hHoHacmDrcsQZu3KzT3NgjSdzBV9Xhw6-PBlMLym1q7oWNhUJNw9TmGh2ODV3WZJP092tsk--8-CwMOTLcSVxQR3l9ouM81--u4XCp689NcvsxGYD6opuqr7_U"
+    "https://lh3.googleusercontent.com/aida/ADBb0ugHJAEyOwuwBhvFmskvghwbRkdmOb832gppuEjrkgG5FhXP_eYKP0RTt7D7cROkIaIE2LR-zeZooFRPqWC_64tUJ5xJdz1o1MrYwG8IvxKQ9KLO0a9KoHOo4-QwHIHt_yOaceEdmsErb_uiGIG8FGhQTBtdzlYTODZ84ymgeuCOGnOTEot4XF_r_HeItgjeyTSGd0dANII3Dq-kDcSWAaIn5rR1RATqxvPvp42yDMhy_NzcnDXpSbaBbSY",
+    "https://lh3.googleusercontent.com/aida/ADBb0uhctklg5gqLo5KVo33Twz_qD7Iep_8vueBnMpWlGlFhqjDwvIfzXHsuspfRfd96TaDsOGTWg4KlGgFPpSj3o4W8M0GUIbKDq3sszArrSWHy-XYIqOD65phsPEMJEz8UKnFOOGKs62d9QIridsoUXcRkNRtqym0NL7f9hm2LDIqdbZgFdUoDB00Tr7llPHCnyHTq0Mamfa74IrlbGt8JnCg1h21I8tpg25tUXbT-5f51kXsXDugzAjF9JK1w",
+    "https://lh3.googleusercontent.com/aida/ADBb0uhAnh1uVyFLso9awBCSeHUkq6EJdEPW4L32AioubcDESyLxyJUUMOj_sFI76b_sr5solezc0Qquh0tiX5L9BLEoWpHdXIUHTHgL2ot-lMWYWCbkKLJFnO2ouUiL8jPMj9zfKjb0HujBaTJAsd9VtdyxPzkq8iiVWoZz6nUGf5SMGMN2DWQzFUcKJyAH8yojLv2WEzwuTmVBLj3CC94NChLm1hKq_lK9blxLdskI5cr0LMGXHtvoqH-c4s6-",
+    "https://lh3.googleusercontent.com/aida/ADBb0uiDTDy2M6F1jgByrA4-NErBo9RUfuezTGHyV-djCd2aqCky_hnA0zNs11oqwuRgx6UF5lDwE9EP0yP30JetevKgHxINkzy-228TBbsT-wXXDV4a49ndTRBcyg9sXG4h4zrMrqLjzNPw5ZiFapxt4UaTDnnYHvdWfrRDKT75VuL1zQc5dTcm45VUt6L1ZAYOaVe4ZN9mcmkRToxGa365emIUQPM-KrBwTn8FJa5-XkUGmGCpPx5NSPqw_-3W",
+    "https://lh3.googleusercontent.com/aida/ADBb0uiUW7zS8cejXGsK3__hN5sOxAg0HKXG4FbXpzfFTawqmN5r88-qXf4i4mZOStaG0XS-2KPls9g0XuHfXDEe0uuNgWrUm-jvvNU1f3ca_WwSdPGYAtr9p_iQZTE7STEiuJlhQVlp_GbiwVcI-p4dJvuCn4h2cZVgtmTT4nfCT5aQXS2n3m5gQiCSocNbI7tw-RMPGgeaV8_PQlAOv4Z82Wrqqwer9F7cl1jFFPDES7xvAW0BoKQqcDh_N6o",
+    "https://lh3.googleusercontent.com/aida/ADBb0uiI6g7IFtQbil54p3yiqOWlEgfIEX0MDo4SRsf_ddBG6zs_q8bCm3qWJExqvK4KpJpAZYU8mm7sNhcKo6mGbJMJXnmQfg3cuOM6dHicayFzFyhuJnnnX9VaT7EgmPy3fp7HcWqc3VZAU2mnYQG4-JB-GKik3xejDoAY_vx0Xyv3tsnjNRVtodnlXW8JdsbOv9BAVbldmd6UwRH6pawKjwTKZkQlXWQGlhpCvp5kro5pETHK9kpnRPtGd24L",
+    "https://lh3.googleusercontent.com/aida/ADBb0uiRTb5K3nmGq3N25J_m-uphg5lLt7qFVs8aRNVRl8DitdWdUSMM8x_WJlw1sDNytD2LwlSXVw_NRtgVEzIb_kVFz6Uyh0Z5ycIxh2Qks2kexA6hXLdOTqiuQZirynWJjcQtkXaDgPgkZQhoY2lVx0q1tXufaDx72VjkYBNQ6-dLe0fpIQT1LS63sLRRyFt2972d9kqM9nkLIrGJ2Sy0Tub8roD-Au1piDQfF4Fuy8b9jttpXaIoncoeU9xB",
+    "https://lh3.googleusercontent.com/aida/ADBb0ugU72TtchZ7b3R5JM_CDkic6PwbCRvqVA971O29LccNnkJECfgD7oXuBpzOaMapSYZ0B3RC4fklgK8MvArQmFv8tWjxQhy_ETPK24M6mS4mM84GtKZrJSUQMJ9tH5RuoEtKHdXZpsoXxzvidK8WaDxUU4-CQ6_lZW95Bb98dJ_O1aly73PtPgVp51CIZRtnYgwn9gubkLzu47A7YmCGuA7j8DNoWRbGFeULEHmQxfXb-t_5mwJEOsLE0Ec"
   ],
-  "downloads": {
-    "htmlUrl": null,
-    "imageUrl": null
-  }
+  "status": "generated"
 }

@@ -1,5 +1,29 @@
 import { getKitArtifactPaths } from './commercialArtifactPaths.mjs';
 
+const DEFAULT_PAGE_ORDER = ['Cover', 'Flow', 'Components', 'Tokens', 'License'];
+
+const dedupe = (values = []) => [...new Set(values.filter(Boolean))];
+
+const buildStitchScreenBlueprints = (stitchRun) =>
+  (stitchRun?.selectedScreenIds ?? []).map((screenId, index) => ({
+    name: `Screen ${index + 1}`,
+    screenId,
+    htmlUrl: stitchRun?.stitchHtmlFiles?.[index] ?? stitchRun?.screens?.[index]?.htmlUrl ?? null,
+    previewUrl: stitchRun?.stitchPreviewImages?.[index] ?? stitchRun?.screens?.[index]?.previewUrl ?? null,
+  }));
+
+const buildDirectScreenBlueprints = (directSource) =>
+  (directSource?.sourceAssetPaths ?? []).map((sourceAssetPath, index) => ({
+    name: `Screen ${index + 1}`,
+    screenId: `${directSource.sourceAppSlug ?? 'source'}-source-screen-${index + 1}`,
+    htmlUrl: null,
+    previewUrl: sourceAssetPath,
+    sourceAssetPath,
+    sourceAppSlug: directSource?.sourceAppSlug ?? null,
+    sourceFlowId: directSource?.sourceFlowId ?? null,
+    sourceLabel: directSource?.sourceLabels?.[index] ?? `Reference screen ${index + 1}`,
+  }));
+
 /**
  * Build a delivery manifest that describes the downloadable artifacts for a kit.
  * This is the authoritative shape served by createDeliveryDownload().
@@ -38,23 +62,31 @@ export const buildDeliveryManifest = ({ kitSlug, figmaSourceFiles = [], stitchPr
  * @param {string} opts.kitSlug
  * @param {object} opts.spec  — KitSpec from figma-kit-specs.json
  * @param {object} opts.stitchRun — latest successful Stitch run record, or null
+ * @param {object} [opts.directSource]
  */
-export const buildFigmaReconstructionPacket = ({ productId, kitSlug, spec, stitchRun }) => {
-  const screenBlueprints = (stitchRun?.selectedScreenIds ?? []).map((screenId, i) => ({
-    name: `Screen ${i + 1}`,
-    screenId,
-    htmlUrl: stitchRun?.stitchHtmlFiles?.[i] ?? stitchRun?.screens?.[i]?.htmlUrl ?? null,
-    previewUrl: stitchRun?.stitchPreviewImages?.[i] ?? stitchRun?.screens?.[i]?.previewUrl ?? null,
-  }));
+export const buildFigmaReconstructionPacket = ({ productId, kitSlug, spec, stitchRun, directSource = null }) => {
+  const stitchScreenBlueprints = buildStitchScreenBlueprints(stitchRun);
+  const directScreenBlueprints = buildDirectScreenBlueprints(directSource);
+  const screenBlueprints = directScreenBlueprints.length > 0 ? directScreenBlueprints : stitchScreenBlueprints;
+  const generationSource = directScreenBlueprints.length > 0 ? 'direct' : 'stitch';
 
   return {
     productId,
     kitSlug,
     figmaFileKey: null,
-    pageOrder: ['Cover', 'Flow', 'Components', 'Tokens', 'License'],
+    pageOrder: DEFAULT_PAGE_ORDER,
     screenBlueprints,
     componentInventory: spec?.componentAbstractions ?? [],
     tokenInventory: spec?.colorStyles ?? [],
+    generationSource,
+    sourceAppSlug: directSource?.sourceAppSlug ?? null,
+    sourceFlowId: directSource?.sourceFlowId ?? null,
+    sourceAssetPaths: directSource?.sourceAssetPaths ?? [],
+    transformationNotes: dedupe([
+      ...(directSource?.transformationNotes ?? []),
+      ...(spec?.renameRules ?? []),
+      ...(spec?.placeholderContentPolicy ?? []),
+    ]),
     reconstructionStatus: screenBlueprints.length > 0 ? 'done' : 'pending',
     nextAction: 'publish-via-figma-workflow',
     reconstructedAt: new Date().toISOString(),
