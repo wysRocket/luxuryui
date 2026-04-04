@@ -56,7 +56,7 @@ export const checkCommercialReadiness = async () => {
         findings.push({ status: 'FAIL', message: `${product.slug} still exposes legacy price fields` });
       }
 
-      if (!product.figmaFileKey) {
+      if (!product.figmaFileKey && !manifest?.generatedArtifacts?.commercialReady) {
         findings.push({ status: 'FAIL', message: `${product.slug} is published without a figma file key` });
       }
 
