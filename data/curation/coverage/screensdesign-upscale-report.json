@@ -1,9 +1,9 @@
 {
   "schema": "1",
-  "generatedAt": "2026-04-04T16:36:24.320Z",
+  "generatedAt": "2026-04-04T23:07:48.591Z",
   "summary": {
     "totalApps": 77,
-    "upscaledScreenshots": 4
+    "upscaledScreenshots": 0
   },
   "results": [
     {
@@ -63,15 +63,8 @@
     },
     {
       "slug": "cnn",
-      "file": "rescue-screen-1.jpg",
-      "inputPath": "/Users/wysmyfree/Projects/luxuryui/public/assets/publish-ready/apps/cnn/rescue-screen-1.jpg",
-      "outputPath": "/Users/wysmyfree/Projects/luxuryui/public/assets/publish-ready/apps/cnn/rescue-screen-1.jpg",
-      "publicPath": "/assets/publish-ready/apps/cnn/rescue-screen-1.jpg",
-      "sourcePublicPath": "/assets/publish-ready/apps/cnn/rescue-screen-1.jpg",
-      "sourceWidth": 512,
-      "sourceHeight": 288,
-      "targetWidth": 854,
-      "targetHeight": 480
+      "file": null,
+      "skipped": true
     },
     {
       "slug": "coinbase",
@@ -150,15 +143,8 @@
     },
     {
       "slug": "kaykay",
-      "file": "rescue-screen-1.png",
-      "inputPath": "/Users/wysmyfree/Projects/luxuryui/public/assets/publish-ready/apps/kaykay/rescue-screen-1.png",
-      "outputPath": "/Users/wysmyfree/Projects/luxuryui/public/assets/publish-ready/apps/kaykay/rescue-screen-1.png",
-      "publicPath": "/assets/publish-ready/apps/kaykay/rescue-screen-1.png",
-      "sourcePublicPath": "/assets/publish-ready/apps/kaykay/rescue-screen-1.png",
-      "sourceWidth": 405,
-      "sourceHeight": 228,
-      "targetWidth": 853,
-      "targetHeight": 480
+      "file": null,
+      "skipped": true
     },
     {
       "slug": "khan-academy",
@@ -367,27 +353,8 @@
     },
     {
       "slug": "twitter",
-      "file": "rescue-screen-3.jpg",
-      "inputPath": "/Users/wysmyfree/Projects/luxuryui/public/assets/publish-ready/apps/twitter/rescue-screen-3.jpg",
-      "outputPath": "/Users/wysmyfree/Projects/luxuryui/public/assets/publish-ready/apps/twitter/rescue-screen-3.jpg",
-      "publicPath": "/assets/publish-ready/apps/twitter/rescue-screen-3.jpg",
-      "sourcePublicPath": "/assets/publish-ready/apps/twitter/rescue-screen-3.jpg",
-      "sourceWidth": 288,
-      "sourceHeight": 512,
-      "targetWidth": 320,
-      "targetHeight": 569
-    },
-    {
-      "slug": "twitter",
-      "file": "rescue-screen-4.jpg",
-      "inputPath": "/Users/wysmyfree/Projects/luxuryui/public/assets/publish-ready/apps/twitter/rescue-screen-4.jpg",
-      "outputPath": "/Users/wysmyfree/Projects/luxuryui/public/assets/publish-ready/apps/twitter/rescue-screen-4.jpg",
-      "publicPath": "/assets/publish-ready/apps/twitter/rescue-screen-4.jpg",
-      "sourcePublicPath": "/assets/publish-ready/apps/twitter/rescue-screen-4.jpg",
-      "sourceWidth": 288,
-      "sourceHeight": 512,
-      "targetWidth": 320,
-      "targetHeight": 569
+      "file": null,
+      "skipped": true
     },
     {
       "slug": "udemy",
