@@ -249,10 +249,9 @@ export const main = async () => {
         objective: flow.objective,
         steps: flow.steps,
       },
-      screenshots: spec.previewImages,
-      renameRules: spec.renameRules,
       components: spec.componentAbstractions,
       tokens: spec.colorStyles,
+      bundleIds: product.bundleIds ?? [],
     });
 
     const baseMetadata = {
