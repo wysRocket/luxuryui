@@ -1,11 +1,11 @@
 {
   "schema": "2",
-  "generatedAt": "2026-04-04T13:10:51.174Z",
+  "generatedAt": "2026-04-04T16:36:36.186Z",
   "summary": {
     "totalProducts": 76,
-    "publishedProducts": 1,
-    "blockedProducts": 75,
-    "flowsRepresented": 1
+    "publishedProducts": 76,
+    "blockedProducts": 0,
+    "flowsRepresented": 6
   },
   "products": [
     {
@@ -49,7 +49,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/monzo-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -57,16 +57,16 @@
         "fulfillment": "Own-site delivery pack",
         "artifactFormat": "figma-source-packet",
         "artifactVersion": 1,
-        "downloadFileName": "monzo-figma-kit.fig",
+        "downloadFileName": "monzo-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://lh3.googleusercontent.com/aida/ADBb0uiQH1jYq-YTH2PfZMr_QgT7c70VxBCtxym7jWtiOwXangd3ivbO4uUdKd0VltWOF36Bf3WDmFp8kTtSlrXYBVLf07whlxmkurw5UOpv1NlgIj-wQUF5Vuteo9eujAhSuHuMx9yMOd7rx0bzmq54nUHPqOxHHcxIwRil-1IlwYrT6CKdlahfG5kfnaIpdp5ttWNvqR8P8zv5eoTgIiBsiMyZVneV5Oehu-mB2uvkNd14O3YaLSOcSoaXTLc",
-          "https://lh3.googleusercontent.com/aida/ADBb0uh2z4leAArCPvzbwN6eH1qKi6C3SGCuqZnxUXKiFAXTbjLMpPP2Tn-Jv73xIoUEYPQ8QukUXJYIiZOR2IXblvtl6KrRrgsPnkQ0EJn1oJjmhN1jaSpeuSzS593acN8yx3aUL2l1QNM-eV2s6s8XqK_9-sKsDdb_6XaaPqnge1vg5BWzMf1fwfUo3X9882oQ1D3WtJQAEl-sIMzJdHFbXbDm2LnQRhQDUixNOtvA4fVjvwcigUMO5e6jQA",
-          "https://lh3.googleusercontent.com/aida/ADBb0uhKbQg7F34SeTIyEra_WPJ_F9J7-cIc4UrlfzfAAZ0Mj0aQaHJry9CJrTAo4r5CpBQ5XRtWWyKRyJ48ZKpOQ47XubqjEExW12Rvuj44Mga9OfY5CHxp2XTozsYhKH2iflagYW3qm2e3FYkloHwPa6DDh3aKeWcRjT7gA87Edb4Qch-7g-v3O_RtQP5IdmPNPqjbUOmYc2tz5pfAs2_mP1ChKzY1Fy1JmA3_460xhEaw8lKQuuRH8eCv",
-          "https://lh3.googleusercontent.com/aida/ADBb0ugXySf3sUao76W5yKca7J9j1SLF44AzLBy_YD44E-1vSIZEjPGuMhE-hMsn4GYws1D1NL7JvFf74IPbQzfBFrjwrXCjNpNkw1bU2Ccb5PVKCpsoLf2QszPv4wFBp3mwvdIvFfVFfbTG1r02cJASMdHKTnPF-FfFEz1a16Up0PkR5hDv0iGb_2kjoQ60e6Ev_m4vMm8XxT5-hj06CA4DVoJXOgu8bV0wch6vM8Om87E-OVw2fftcYU7KNI4",
-          "https://lh3.googleusercontent.com/aida/ADBb0uij5PY9vZGHAscDEFfQLyPQNAIQlL21AWGFFhSJ63i9HX_VYFe1nK6YnNvjPh4ugSH3kUlESOVO2YRCCRp8N3L5fhc3IFx0KhPWy0cDcaW7jiHgJcPHULI-C-n7g2Ze5sEdRW1G0tq24y-_L6T5UrcTnbsAUgj80YeJWyM4f_a7kQxsEBkQYjW9QcGR-WyjZ4EwBzTIMvgTrYF1Nvyr9o4cQMsU98EiXd4q1tTMbOQwxBPlK7aA64SzB7c",
-          "https://lh3.googleusercontent.com/aida/ADBb0uiAM-vf1k82lrSno8dIxzAR8XXiNK-JdMfIYlnssTUHt4f-RiU9kZPWX7HPsERsQTKwwxfz9kPX5ADnh7k9gr4sM6Sw0xttxhQC1qXriEjTyC_hTYhXknl04qXYYCCVY58Q4nGYSd3UwDk8hHfA7W7qEgICEbzZjD7oq8oPjVn_-hdGcFVSGmxlxQip4uoLRoIudKPaVbCcjFQY_Fg2Ncr7Qpubn6VllpoUl9VKOOnVd3lvD8pzj5uk1Q",
-          "https://lh3.googleusercontent.com/aida/ADBb0uh9teFVL8yBfLm1l7RgGwBTfKLGREJOj01TFmLiIsJCoK3t4qaY-RlfRV195i-mM8FYOG5sTKAFcszQ6NxHBGHybwIKlJEnWpitJA4cOw4kGNExiarc8arc4U9yHQgL907DV231m0MmqYvAWXkte50iiP82qpPKFuoGZhoVN2r4pJplHYHt5i1OBgi6yDUSGnYbTf9WT2UcgE0CYDjNMrRjcUAo4fW_kBhi3g4xjXREp_tnfJ5HHxh8JwE",
-          "https://lh3.googleusercontent.com/aida/ADBb0uiR6O6zG-JLfP2HCWbjdzx3bcKDFPBPpeEj7R8R3NWf7YkyIIX26Ym-Ob_x998py1tLZzVRXH4Tpa3G0c9h4ile_MrWzB88PfCV2Q76ZDrHClpthnd3D825mIAWyR0R0hHoHacmDrcsQZu3KzT3NgjSdzBV9Xhw6-PBlMLym1q7oWNhUJNw9TmGh2ODV3WZJP092tsk--8-CwMOTLcSVxQR3l9ouM81--u4XCp689NcvsxGYD6opuqr7_U"
+          "https://lh3.googleusercontent.com/aida/ADBb0uiqTBuO9VBQeZ5ERRPrj594wHT2mT3vmAyUqJ9fVPaaIvMhQbviEAdKWGONhP6CB3mg4edy0wz1d4OWhLHvoMKdzej9XK7hk_Dm0cnZ9e9mUz35PQAc3HBxdfasfjAwcMoSKZc3VR96XM1R0PocaPYOfx8qTVqpHLlKJJSP8rnh5PxxauVdZ3rXSDtOmDFctf5-W48pN9q4QXBxYztGU0PTwyoT0_Hollvy1XGEPuRQpaVWoE-OmI_e0cgP",
+          "https://lh3.googleusercontent.com/aida/ADBb0uiNgL_rsVv4WVbmjQ3KZnC6RPj8pmQH_vs9RZ4Y9yVjMv-jok48Z8OGc3QX4OZVgig2gmvqz0gPBrWsNxOYBxbSgcTHVMnNA_eN2DN1Wz66N501aisGOf9vY0gdzqXt7KUsInlknMjrjoJbUVNFIaOjjOFrj9Ic4cTQm-eFp38tDEQukIxKzb6rF0Q07oAux08a7_TzAaF8UjH4-6qf-xSDThSxcFPX6WstaekF_LJ0V6ZoHofxmO6W1RA",
+          "https://lh3.googleusercontent.com/aida/ADBb0uhWZHZAiNCuQZThztiJDLpQ_h36ggGPyeTB4WMIZs2Q74akaHZUqAJnERMpfcJISgMnEm7tuMOOo78s2nnuFblRAijhLK-BXNO53iRrVewaJX1VGn8ripiskQLvvL-d0gCKveEjlSg76IYyo4y-8uwI3NlXb-w8Jv0eiUSFjbZmXtAAd16u8A_hTqpK4P4yHI6FHdSnPDaQwKZcv5QBedNpcegGlIlFzbdWC8DlQaq0U5HX8ds8axGfxgs",
+          "https://lh3.googleusercontent.com/aida/ADBb0uhrsOHFI2XyKzHWjJgXAHiuIbStQDHsDIWthfbYYvXWjNLkWoU8Ed3iQ_PXBzfQuRE3cDPLxyWqLFzkATV2JyMdMD_B7VsPqDl9OwGp13JrbyiehKtnm30s7BtQ-mWMwIy3Le5xccp4UJ0fD_BI8Kgda61Su-1m80hGUxNGX_XPoSMLJ0bQX6ZpS3SjNsR6q4J-CZmoLGhMO7GtedpUvHVM_F3a9o2A0E23k6XLR9BZYS_w2066RBa4fIw",
+          "https://lh3.googleusercontent.com/aida/ADBb0uiu031jOAyX6e5fYE_5ye-pf0dj0fS-OD9h1NQqPVlLreyp1cOWrQKPYmFRUGxw-h_Ejzvv2a0oQXcjYV6Kb6Ohn8TIXHdroqeDaTn6UpGRcIy5GZSfqbxV7pPARugb75h_C55wguGSgDmRdeP7HBGSkgtemnEdsCs586ljPzM4EHyo57FBrQDllPafbHHjchE-x3q1JghKdMvCCTGl3ZfPEyetQyKJJyrLCW_7QFf5_Zt0eI2GIWF7c0Y",
+          "https://lh3.googleusercontent.com/aida/ADBb0uiM-VzC297gskK7a7CGkY6IZsYL-m4Wbvbf7Gyv0Gu-TqmJe5b4a_uSlwp3KQOdKaCgYzJBlYJyZ9z2mFDOdhmiTtNk7GXF1CREGRuFEsvrd39Qa83jgpxrUiUIyO_lQTnvrCUCIyTTiaHqkxODfVd4lPclFUx-TrTNsknXzwGfdrfp4mx1nhtkFusCt40fL31Y1fOEEm32zmVxBDsRtrovOpyqQ174GIcRqmWF62lfBf7SwGTvCYaa8WWh",
+          "https://lh3.googleusercontent.com/aida/ADBb0ui3NhVTLF9oPTE2ReX7tIpcLr9LEo3MhvCrnQLO6elIZBXzhb_hly71W71DWje2JIEJ0JqnpMB74HXfkrUJgB3Ayx2AAhtqNg71L1av6S2qiqZ191eSozNSXAnLhMDE_UV21tN0e2YLEp5LewKivGB1yVFUxKpDr6nGYsOjKGszSGx_3E1vQfO49_24D_Br_AcJolD_FEZBsTQrzVGafBygCm_boA0xdTs2zrS1-iCgVLsqcBBZix0G5iiR",
+          "https://lh3.googleusercontent.com/aida/ADBb0uhfvITi-epHU3Acgw5KTQ8Y69WlsWM6dgPK1FcZQV-AkODLlOIX3o95auU0YiPa2olx_Wv_Il6iZptofjUHdyPRKfitP8X836ZDEwG-zuPp4IbU_EV2Nb5khNwDKgwWomTnx0W3MT4Jm_ESqDm4LQ1CpckRXPVIbc-EDVNXshgEP3tPNF64NO-ezRMQLQ1eXdaRH2rka3v7rq5rZUeddyvf0AnWO3T3b12YwaDBuL4ifIOZxQ50i9FQHfuH"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -85,13 +85,13 @@
       "sourceAppName": "Revolut",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/revolut/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/revolut/screen-1.jpg",
       "gallery": [
-        "/assets/apps/revolut/screen-1.jpg",
-        "/assets/apps/revolut/screen-2.jpg",
-        "/assets/apps/revolut/screen-3.jpg"
+        "/assets/publish-ready/apps/revolut/screen-1.jpg",
+        "/assets/publish-ready/apps/revolut/screen-2.jpg",
+        "/assets/publish-ready/apps/revolut/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -106,7 +106,7 @@
         "Tight 8pt spacing grid"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-onboarding",
         "category-finance"
@@ -116,9 +116,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/revolut-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -128,9 +128,14 @@
         "artifactVersion": 1,
         "downloadFileName": "revolut-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/revolut/screen-1.jpg",
-          "/assets/apps/revolut/screen-2.jpg",
-          "/assets/apps/revolut/screen-3.jpg"
+          "https://lh3.googleusercontent.com/aida/ADBb0ujG4nZtWpj8SplwZ_ZkKL6VwQ6B5_8MUKk0rLWzXSKySwMKLiMez5z8IrWsmtw7B_JlOc_Ps7oCS_EyJcpP01Hlw5b_fD-A0z8wSRpdXigh1TQukHVcjeFOhCqm9wk5r24S5vmv2q-tjheXktyA59IkmRXfybVw4NATo1yntK52mLhDkDFRG4NoizLQizQkLnOizHDIJec_01ChwQ4ef5pD6FC3I8N--uELDs0UvB3nP-YS0GnAWo4YEgA",
+          "https://lh3.googleusercontent.com/aida/ADBb0uixuN13BtkbxK81aPh5kBRKBRZpD0Rt3VmO29qXtWPKsE6LJOqRlN96p14WNTrNKzUH4XnvENP64MyFxNfl3OwelKaQsPRK7MuzrTxzk5e2CcUVBTzGgKN-pBd5eWy6rsS2d7Vv34N7J3Gu6To5C7KzjjHngHrbWwIkwLZiTn8TsVFhaEGGLCEXHeJD1i06yRWhkQ05uIiHZTxjsF9sgI0cFL2KecBb_peKOWsYy_RfdA4B8rKaVREZ7yU",
+          "https://lh3.googleusercontent.com/aida/ADBb0ujMbxqtUayy4hwcgnCPXQmi1hRc2AkQnRmZi5_sgP_mO9EGNUjeAOCpiSvJnRePN6umGUcJr2EUP7hatWZNRq8HjLnN8EUtegKQbaTp1dLNccyMPI3JketBvkvcq1oB2hiYnBcSKoGxcF1qZSyZb4t6mZWsO08DERi360KfIMcaj2KxPcGSmPZcfEktVObniDHGfVUBndp0x1XXAfItOeUKQbhxRnqdp2yrGqTgkEFBiSGOGTKNcnlyCQ",
+          "https://lh3.googleusercontent.com/aida/ADBb0ugB_uybX3QqUXAqiR2nNEnycVURSD2HC3b41JvbfzY9rpB54F8DMSM_54-ph7SadcaidZhWIl9WKJlguhL3VQE3u0F2jWn9lGISnYl6MkML4Qrvf7nDDBm7l-3hsiLS2helYbtFSayeyxWiBvPvyWiA358IRcDLIRDhR1NsgCbB-ogMDI8ef1lUElHhjW5CwTy1RblUkeZMet_UYvbkgMfsqLZk7ZgT6e68Cpg-auxMRIV0ka6_SvABE9k",
+          "https://lh3.googleusercontent.com/aida/ADBb0uhljrktH6w7tz5l_8oCtwvEhUrbxn9qh47UYCLN3oDvQiyFVUdcXuoYQqNJi7tRpDd6bP9wxBvKBEi5EkPhgMHF9RQg_atvuSAQzVgPu2ALolqKzu0DBnNQnEn1Wu1B9dGz9bZm56a0Sm6HcrptYY13DaldOxN3-tV6YZjbdSAD2wJu3CJo-3mi2COZEKcAGC55F2aycgHgxjoxXq0nn8UbK-dI4glerXQDftG0NIbqv_jSvNUtAPZz3A",
+          "https://lh3.googleusercontent.com/aida/ADBb0ujt21XRwxtv15PAKcksg-HnxLmkyOZHBRf9qFhudKLvKCrk36KYkjPSW78-eRYUGr0I4gidELzq30VmG4qLzkfcOvkXDvDS_dGr6zNgpOKlVgPRbo5vNlMbhUSw2AUk2GMiwM03hqBo6w2qOOtIQizRAkar-V6XzXc8CNNHx-a4kUEtz_8V9Z7J8Wbq3VXd5e9X-j-nfCVDlzmm_dqIg-tIbTLBnkCM-USfJmbf3aQgJ083tb8pTe8ckiw",
+          "https://lh3.googleusercontent.com/aida/ADBb0uiBe4n8MGPdfLhs9LYkJ9gpGJQEjyUdHw0QeKyxAmYlav2thWKJW-ApaaoEbmO85x5f7aEHmh3-DVaH6HdyrQrWJykH8_pKcXHT3PUYAG0BGr42WJfs-m5MaSkwvKWC_xIyjBdOe6oa7q0Ind15pKnHCS6Xdix3OpgAzqe2xE5IW2dgXkrosy1iJHW6zSFnDdcGtiYsLGqWeiTkXX0mTUTQW3Is18sQ_un3mbDaq6dpcUQlJOngt1CNuVo",
+          "https://lh3.googleusercontent.com/aida/ADBb0uhOCkTmGhSlXbtrErwYh6G2nSoTY_0gWzyEm8MHA8NlqB7oX77YHTkt1Kh7_GZfgmc3EWUKvMUNZApJQrWvfzzzLK0hF6UfqpbyHYosXnXXH-bduK0ReE1Xdg9RkUANSTtzn-b2v_RXqNF-Wd9kXKwcvIFoyw5txBNz9a5IgLxFFbDcJ9qefVQpNXv67GK0799_bUU-dmktgltl3h7R_pM6c_yK6urRgzWiLXqZxqBuoxAQfuCExpYt9p4"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -149,7 +154,7 @@
       "sourceAppName": "Mint",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/mint/screen-1.png",
       "gallery": [
@@ -182,7 +187,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/mint-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -194,7 +199,11 @@
         "previewImages": [
           "/assets/apps/mint/screen-1.png",
           "/assets/apps/mint/screen-2.png",
-          "/assets/apps/mint/screen-3.png"
+          "/assets/apps/mint/screen-3.png",
+          "/assets/apps/mint/screen-4.png",
+          "/assets/apps/mint/screen-5.png",
+          "/assets/apps/mint/screen-6.png",
+          "/assets/apps/mint/screen-7.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -213,7 +222,7 @@
       "sourceAppName": "Robinhood",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/robinhood/screen-1.png",
       "gallery": [
@@ -246,7 +255,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/robinhood-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -256,9 +265,14 @@
         "artifactVersion": 1,
         "downloadFileName": "robinhood-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/robinhood/screen-1.png",
-          "/assets/apps/robinhood/screen-2.png",
-          "/assets/apps/robinhood/screen-3.png"
+          "https://lh3.googleusercontent.com/aida/ADBb0ugalHRLeoHWwFWcYKhsXmc7RzR8yRDKa1q44gfwmKnvoyVW8lUpRwk6UI5NABSF4JLR8-lP5VfPkunFIsfgbTHAL61xuBWrVL9tX6IxaZrh1YpN2rW93pdjrdGvOJO6eCTZfRzmBQFMKD7xrRp8tgEnr4DWcJKPBHvAccSI_ULDRaZRkTMvzQ-fMfIf3zdGgxZBbowuip8bqpGDveRrWhq84ZEVWR7Ox9an22OOF8pxgVAIuL285ZZeYYg",
+          "https://lh3.googleusercontent.com/aida/ADBb0uj0PBxcMjPjQOuzJCy6wDXImk6Oxa0lDDa7krm8VO_SnxltuN9E0FkML9AmTYLjxVUY0oxtsSd2_AXsCpgfQlaz8cMLNCsuNoEB1arGO-1bQA54nPNhEkC9-PziXfWOwhAzqkRiT0dm-BMXn57y_6r0HAKoUjOWmeKi6zlTUdQgECRmUkxdYyNKtHHrl8MhfHBW4h4WiUIFl3_-cQyjJ6PoYb4J7IkgJHq3Q6LXLBravjBucvgTgg6iNDU",
+          "https://lh3.googleusercontent.com/aida/ADBb0uhIov049gkCQJw2SsEvbPhTk-0r_jYE9BuYSYwdZmg4Z9wXS6IEjQCZnqhUnRlYo8GCg1A1wMkZ7e7AxDqu_UJd9PTOoFZ1hfhXjTVkQmHBadcTFiOCmuUo8hSnOY-OzlERBGtyghX1DPMlP7YjsFXISF80aWJobV4d21ykUebD2ARzrFQeuNYvOjXFG-kAvPZ_Y2gG9xyJ08K-Uw9lUH6YjYOHS7DmarpybKtzIMr8lGUBvBx2ZpxJ-uog",
+          "https://lh3.googleusercontent.com/aida/ADBb0ujVY4uvcuuM0sABCrdoRfCINJe2vDO5dWBjKcrZWVJqHkDjITjVPQQeJcCrlxr7zx43kDYEeMf61zx5apwWbAe3gJr3jv-aKPDLVK8BtpZYptlvi_sqwz8GeURs7p4m3NcYFH3gmoOqqFv18Z94haM2_FgL30_XHC7RX1Kn3Wpl7ZbO16XkQNLePVYxKA_kX_hOVoETN8ZLjrISIvlDUqTBf95PUgpOTiJjaN2eWF5iDQnegwZsUMoGfxU",
+          "https://lh3.googleusercontent.com/aida/ADBb0ugd2N9wBV1fMN05XKabtHc2rMy2PmTAet8gw5jrh7wG_hAbqJ5BQapf4MLz6byuC-1YiXxu5bAmUkw5DJoy1tsT9z54nAZuB6lkGsUMKxRUQ9DfhLgTgaHTXfUek7R9ECnhq_gPKLG7LHsySsVw5hFDJoOsNVemYvV_x2YthvMCphXLc-0lYAtLAIlBBqrFEyK0DNBi7MXYUq4GGXwsRcs8KhobWPDYVPhZSS0AmSz8QZV9yhk9PrGrghs",
+          "https://lh3.googleusercontent.com/aida/ADBb0ujFkdTwon4FlVpLdCq4Nhfmj3EjRE8W6VYjFGOG6d_vhgISuHcIdxRpA82F_paNmKuE_56kfIOVi21k5niLFaLukmI2n16uUwA2nXzwF-jui4W0w03tWfAMFZ59BbNHFXjMIlQjrA1YCgE-MR5oXns10-oq4Xh2NU6cX9yZc49Ox35JUb7lCqYObgQlsgk33ZWHEXW0rroWGLKVfSklTLU_hUJwl4pg4Mfdvg2Hxdx8BQ8kZokX5b7DIfY0",
+          "https://lh3.googleusercontent.com/aida/ADBb0uhCc6iawjMeePInEihMPnP0FTn6amecXchDwvBHq3gaCI9CtB59tkoep_EvZSvkzBuaIqVRxTyzjSPWJWCVzq-rAlfM7CI4e6JIg-8LBnS9p6wFbmWL_3iwmh2NsOVYEvvKXEyqUUJLn_fUoXeNz7X1iKwOSRfGk142oUGXkDcYwgVlG6ErpECLkzoD3ujAxCte_aPK9T4dlMth6A4nC2Uyi3ZdJ2Ro6kxqjfFHbyPuI6XV1mTaOPv_1s4e",
+          "https://lh3.googleusercontent.com/aida/ADBb0ujm08Y_tQPUlxzVbmV0rtPEydQJE9HvtTggIS7f-KpquUF-2wxTv16O48sY8zgfxfi7v8UN5KPmmpxJgoo_BHO2yzYHXCD1Lkr4uquDQxcYu0qI5qWL7rjbqp_UL_5BHGMHw-QTW4HJRLdRrU-XVhAxpnBc_ftzRCrX_rMiWJ3jqjEIvq3CGnlRyKH65kFZ6rgXUYbV8NCP02fKLBYoITURTLtBEUWWNebw40jbbddcuAv6d-H0b12xOgR8"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -277,13 +291,13 @@
       "sourceAppName": "PayPal",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/paypal/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/paypal/screen-1.jpg",
       "gallery": [
-        "/assets/apps/paypal/screen-1.jpg",
-        "/assets/apps/paypal/screen-2.jpg",
-        "/assets/apps/paypal/screen-3.jpg"
+        "/assets/publish-ready/apps/paypal/screen-1.jpg",
+        "/assets/publish-ready/apps/paypal/screen-2.jpg",
+        "/assets/publish-ready/apps/paypal/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -298,7 +312,7 @@
         "Tight 8pt spacing grid"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-onboarding",
         "category-finance"
@@ -308,9 +322,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/paypal-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -320,9 +334,14 @@
         "artifactVersion": 1,
         "downloadFileName": "paypal-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/paypal/screen-1.jpg",
-          "/assets/apps/paypal/screen-2.jpg",
-          "/assets/apps/paypal/screen-3.jpg"
+          "https://lh3.googleusercontent.com/aida/ADBb0ug7ofmpA3ebNE3lxkabQvp1kGRyMfTd6ZptW4RumGTg8q6e9oVPHoljIResJ5p12rvLVwNUOj_2b_et_v9xJDzeLqzR_IvWqGqcDuCBIU8-yFStjh_4sISijVM7vZdKX76GzmtNOneCjbzbi0OK7MN5YvS2hgVFpomluW6b3rUwsH_akCPqWdb_NHpwhtc0dYdLsAByZUTU1zhG9o_55eb_nzzFkJgbZRpIIoFWfG5LNx2MMUAIqZD8cN4",
+          "https://lh3.googleusercontent.com/aida/ADBb0ugBAjLz240E3QgHudfjlTTXC1n6KLdi4XwnUC_Y2QkxBW0VYEluYAHpiRUW3Q-TCUdUltAUEhXZD7bEawiWezYpvGGpz2kkkzcsR-9Cl9fZKUTlSmjk-WyzxJMipRnGmBB2oQ8-eZK7p-RFbEf3r95Pcq5VX4w3NDum6UdDM9CtVNziwX1EESNkccV7D49Bzpc0n7Luv_3PFDY3Jj8SPaSOMAV62ktMJYumYcoFhOh-du_LxFajPthE2w",
+          "https://lh3.googleusercontent.com/aida/ADBb0uhNj8qIK3AEG0t9W0qRx8I7Lzb9SZdMQFdNrkYuXRclQ88T0mcKH2OmGlTRcVB0j8_cBSlXxajEGPNke0bgAhRTMayrlMtSja8ju6I2gCIdJkD508yrbtcnZeTbEyp5vV_LBipQiDpXGs0_rsOBCFHUS-ICgQeUoGGx7tRSNQ-eMvqVx02JTqjgfPDMY_2h49nK0y4xInavGB8Y0rYS4oBzQ2wi8mLQd0EfuTIR2_rr8qqx7Hd5WoBjV5Q",
+          "https://lh3.googleusercontent.com/aida/ADBb0ug2Vv9JabhTKKrVXEEn4dBhK8L7wosxhYlWczKtHOiPmEvanY1hNTd4QmPEbX_3OqoEy23hd55iAkV8mIpKcg-aNf6k5z2NFFTalQN3ac4bTyXwf8XKLieGJcuCj9ZopgrZX7bIb4aAPs4ChnktUH68IsXrgXBtITeDal8SbUBBOCJa4PD7PGnsmCOnqqvQXAGb89QMKtFF6Rpq8-11Gb23KzNIEfKgKG4FYI_UAzdFUBrcv2W4mlEIyMc",
+          "https://lh3.googleusercontent.com/aida/ADBb0ujLAqCOdksNYXIapnz53KEtX4vlz8OXa3yzT3B-9NWGWB-Hse4Smk8vHftTYkxgYLLj9Y9-Tx3siv_srfcszR65vgz66HAxdhWHLrASMxaD73r3pnSDAvBzEhDYofaiaM7nnNMKwk8ksupptbDNLfTar7p7zoZd0twkmvb5Si3W_B3ELE04Hamge2S6XPJmpDWbXBbG0ved0-t0TnBn0t6DAN4PbwFtGGCQCLXX3VGYksrEgRPHfkhwJ-c",
+          "https://lh3.googleusercontent.com/aida/ADBb0ugC8A2tDNJ5OeL9gRXK8_o36jCzZgJIouAiLJhPx82cjSrHkHKv_KVCeyiK2komFTp4PdHymXTteOs8nhASQ2yQOluP51OFBnmkC4CWnCebfFdjw3uF_IWGRARGTus5-_Njc1IuD7IOhGmDkQr4xrdlnzZ55kjPuRgK8FWg-P5qT48me1gkULjQQP10dvTGfeVxj-oEaosmbzkZJ1esoIe0xRahg8MmnVX-dpdtwjkXUWxTfuL1T4Gg4w",
+          "https://lh3.googleusercontent.com/aida/ADBb0ugiwXgx6JgiCw8UhUMCqvSGAX7rZvfKVjkyjGYBMiOSHty5EQVHm3S2yPsCPu08FOoFgJxvP--ruoGuhibZew8ONu7uTajDJmfGlkAgTvn23vl1R1Kqi_f2VIj52zNgwJ7ueb_pvMdZMiB7q5tnFrUI-UQpKVHU5qm7IzEm8grdXv1kmaiJzIrwYiiclaDz8lS1almDSQyc5sUYGyLMSEDJejLxqyjLu4ThFHkD-XrCMuTDyK-X6QK_RA",
+          "https://lh3.googleusercontent.com/aida/ADBb0ujBizvrgYw-9AsxiM2Bc4ajJQsaoobcwm6mYgxOem_vmkOB4ImJmkBjsLZZ-gQ0NPbc7ioBGAhTzxWxsG2Ic5pFueSEekH1W1wZwhPOnDZBJxATwcfuHAsBN9iG-IFhtfbr6Wbs2O27_wGDsZ7coBj1BqgVDsfG0sPIDINzgLo26JrvXvhhzlebIHXpTVP8vnWxWPh9471Nfhwfu_BHlIl92GZmbR3zihuq09ERZufrOUrZrg-xWTXdVws"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -341,7 +360,7 @@
       "sourceAppName": "Wallet",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/wallet/screen-1.jpg",
       "gallery": [
@@ -374,7 +393,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/wallet-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -384,9 +403,14 @@
         "artifactVersion": 1,
         "downloadFileName": "wallet-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/wallet/screen-1.jpg",
-          "/assets/apps/wallet/screen-2.jpg",
-          "/assets/apps/wallet/screen-3.jpg"
+          "https://lh3.googleusercontent.com/aida/ADBb0uhTihDET8MJk0kHlFfDu4fQiFuLZ_NLfJ1QZTvw9wGKqWpSI1mYGB1JTC4gQvITUevw11ex24-JANchkmJp8jiCm8wqj-ZC0z6Q05N8jJcvj2h3nmveUG5IgTnuJQ2vFm_inERK8ZloXOp01WIT3QUD9axJfQMAvmIZtjq348mvq3d2Wj2dqHgRzEKfk3K156ZqYkmbINfgQfdyPTfkmAbj0EL-rUnvoa1wq9fMNR4baUua_vuV6lPsrg",
+          "https://lh3.googleusercontent.com/aida/ADBb0uiFXUKc11HS1IGWqRDDuSM4Xc5gvYBoLVogc25Bkb5SWSbNmbEuAKisPA8Oetypf64U7QL4scpMOpf7WIFORHx08zlpT36SZVmhluIAGQkUuMk3S1hELlgE2hCh-J6RBebj7kr5RJXnVGcjHEXB-J16WSXh2B0EOBOG8s2F5n25g3nRujwPsJ_2kNGC5DxrWLBEh8t9X7o-oBXbNlkHiZ4_WlylQTPpldDaDDuV7nrw2u0ebekXX35qvQ",
+          "https://lh3.googleusercontent.com/aida/ADBb0ui0_z-Bkca32O5haznlNHj_jzZqi5bQyLE2JV5rEDRp66NNvTnGesgjcYc3IVK29Jn1QEene98F2t6jmcTScNJ_sJcH_KjhEuzHoZPBbQKQRFKQ_202lwsD6mWCARsnWO0x5WITDADzvlV80ZfZEm19OXNfoP6c5d0xaK338JoT8_K4MkNAq03460WEDwnAxIPdRlPcyLFh-jJA5u5q4Wvtz2EMONX2qM_-e6LjeJ-0EIntVxCfRyMrSM0",
+          "https://lh3.googleusercontent.com/aida/ADBb0uiAX2-5Zb9TtjxDWbWsISsYrmJGbot0Wi1UjmqLS-7mKOHe9g_IVie0oQdvLY3-ZxgEA8lsWJQPvRL_pWSwIqTGzgBn7ySmBo9zoCq1cXqE3sipxdIv45_f6beahCWtlZFDaks1ztr7v47E3WbP571InnIyDL8KwY7O6C3QFKt5UYdCFzOXIOiMKOuUfwGcVZVNHgocJ8AiNL0wxtSmT5Nj7k0JRZxMnNq1SoDMfMooW0eLtbExKUslIw",
+          "https://lh3.googleusercontent.com/aida/ADBb0ui8nqC1WbCBkYGq180PTMXEDWyiVQjpW_HAskKDznnrU53YVrqPUQ9SF15yoS1ZpaZU63HOeIMqExvsEINnUiUWVCwC217GIchDIzw2vDJ-GoYHOsKnR_rHfQG7IOYkag1SGIxUxeiuOXkE__PMjoVom38R9PX89xG_hB-wNaVrjfsr3lBpys7_Qgfo6xAq6jBONDrQxL5ohWTGV3uW9H7U4hNbXznx0W19iQgSZoIgfOusHbtFR1cGduQ",
+          "https://lh3.googleusercontent.com/aida/ADBb0uggYKuYCcTkkGaL9pc57ihNEPB4bZV3KJTgNMBNAV8JrjojpCI09rAbYhCmBjiVDTaICDIqumdXB7-HspSOd04-V4_AZLQA5u0jJ8eNS0uYoRKO0FRIQ0fpRwyDQWm2PkvsU95VTuZIKin-m8Fvm18UG2GrSMP3dgSSuD4bimaUI7EIBGG3buoXlMvlmtESCDud2fBWoQ168aym1j-3amzMvduD24yEbS7SiWPFmLe8uK3YuI_xbUUEDg",
+          "https://lh3.googleusercontent.com/aida/ADBb0uimPz0COlNvt-NzLQUgnmUwfWQCe5SD_52ud7cp4N_q0VHIX60LiBQ6jHVuN7s1H_A0Eh2ny7kj6hfnx0TMieV9iwB3LU8wtdJOOzUl5v1bfWzh1F8boTbmJsh0ACjnbLhid20UUFbQw-slTVzSODVWRPorDQgztR3urlhFUWR2b1TUbqLPYTOKCH4VB3_KiSWJWTECLJmip56clxTTQOrvmSQ8bK9LYNuWLs_U4gv7W5672MHCfOSCDW4",
+          "https://lh3.googleusercontent.com/aida/ADBb0uiG1TqV9s-3AxXgaqPUQpDFB44-5T1InsVzKXVFvUwZz8820ZCb2tA6v_LVqaS-FBFrjLqta-_rlCWMgsQVB6qeKyylO0iJyAPO_7p6PrtZ1fIo_694vKZHaJmC5ll6EA0pv0OJE16WQhNN8515PyKLvrMMasrwzPLsIZMDGUCoNEUC11-61D3Ce_YQaDyTW-jwzNQUiWW7LyHLA3yeMOz7Hh_vobzfm1uYQn8_aKbWPBsnT-vSL-LZPw"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -405,7 +429,7 @@
       "sourceAppName": "Wealthfront",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/wealthfront/screen-1.png",
       "gallery": [
@@ -438,7 +462,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/wealthfront-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -450,7 +474,12 @@
         "previewImages": [
           "/assets/apps/wealthfront/screen-1.png",
           "/assets/apps/wealthfront/screen-2.png",
-          "/assets/apps/wealthfront/screen-3.png"
+          "/assets/apps/wealthfront/screen-3.png",
+          "/assets/apps/wealthfront/screen-4.png",
+          "/assets/apps/wealthfront/screen-5.png",
+          "/assets/apps/wealthfront/screen-6.png",
+          "/assets/apps/wealthfront/screen-7.png",
+          "/assets/apps/wealthfront/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -469,13 +498,13 @@
       "sourceAppName": "N26",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/n26/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/n26/screen-1.jpg",
       "gallery": [
-        "/assets/apps/n26/screen-1.jpg",
-        "/assets/apps/n26/screen-2.jpg",
-        "/assets/apps/n26/screen-3.jpg"
+        "/assets/publish-ready/apps/n26/screen-1.jpg",
+        "/assets/publish-ready/apps/n26/screen-2.jpg",
+        "/assets/publish-ready/apps/n26/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -490,7 +519,7 @@
         "Tight 8pt spacing grid"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-onboarding",
         "category-finance"
@@ -500,9 +529,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/n26-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -514,7 +543,12 @@
         "previewImages": [
           "/assets/apps/n26/screen-1.jpg",
           "/assets/apps/n26/screen-2.jpg",
-          "/assets/apps/n26/screen-3.jpg"
+          "/assets/apps/n26/screen-3.jpg",
+          "/assets/apps/n26/screen-4.jpg",
+          "/assets/apps/n26/screen-5.jpg",
+          "/assets/apps/n26/screen-6.jpg",
+          "/assets/apps/n26/screen-7.jpg",
+          "/assets/apps/n26/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -533,7 +567,7 @@
       "sourceAppName": "Coinbase",
       "primaryFlowId": "account-settings",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/coinbase/screen-1.png",
       "gallery": [
@@ -566,7 +600,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/coinbase-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -578,7 +612,11 @@
         "previewImages": [
           "/assets/apps/coinbase/screen-1.png",
           "/assets/apps/coinbase/screen-2.png",
-          "/assets/apps/coinbase/screen-3.png"
+          "/assets/apps/coinbase/screen-3.png",
+          "/assets/apps/coinbase/screen-4.png",
+          "/assets/apps/coinbase/screen-5.png",
+          "/assets/apps/coinbase/screen-6.png",
+          "/assets/apps/coinbase/screen-7.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -597,13 +635,13 @@
       "sourceAppName": "Binance",
       "primaryFlowId": "account-settings",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/binance/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/binance/screen-1.jpg",
       "gallery": [
-        "/assets/apps/binance/screen-1.jpg",
-        "/assets/apps/binance/screen-2.jpg",
-        "/assets/apps/binance/screen-3.jpg"
+        "/assets/publish-ready/apps/binance/screen-1.jpg",
+        "/assets/publish-ready/apps/binance/screen-2.jpg",
+        "/assets/publish-ready/apps/binance/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -618,7 +656,7 @@
         "Dense dashboard spacing"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-account-settings",
         "category-crypto"
@@ -628,9 +666,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/binance-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -640,9 +678,14 @@
         "artifactVersion": 1,
         "downloadFileName": "binance-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/binance/screen-1.jpg",
-          "/assets/apps/binance/screen-2.jpg",
-          "/assets/apps/binance/screen-3.jpg"
+          "/assets/publish-ready/apps/binance/screen-1.jpg",
+          "/assets/publish-ready/apps/binance/screen-2.jpg",
+          "/assets/publish-ready/apps/binance/screen-3.jpg",
+          "/assets/publish-ready/apps/binance/screen-4.jpg",
+          "/assets/publish-ready/apps/binance/screen-5.jpg",
+          "/assets/publish-ready/apps/binance/screen-6.jpg",
+          "/assets/publish-ready/apps/binance/screen-7.jpg",
+          "/assets/publish-ready/apps/binance/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -661,13 +704,13 @@
       "sourceAppName": "MetaMask",
       "primaryFlowId": "account-settings",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/metamask/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/metamask/screen-1.jpg",
       "gallery": [
-        "/assets/apps/metamask/screen-1.jpg",
-        "/assets/apps/metamask/screen-2.jpg",
-        "/assets/apps/metamask/screen-3.jpg"
+        "/assets/publish-ready/apps/metamask/screen-1.jpg",
+        "/assets/publish-ready/apps/metamask/screen-2.jpg",
+        "/assets/publish-ready/apps/metamask/screen-3.jpg"
       ],
       "includedScreens": 7,
       "includedComponents": [
@@ -694,7 +737,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/metamask-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -704,9 +747,13 @@
         "artifactVersion": 1,
         "downloadFileName": "metamask-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/metamask/screen-1.jpg",
-          "/assets/apps/metamask/screen-2.jpg",
-          "/assets/apps/metamask/screen-3.jpg"
+          "/assets/publish-ready/apps/metamask/screen-1.jpg",
+          "/assets/publish-ready/apps/metamask/screen-2.jpg",
+          "/assets/publish-ready/apps/metamask/screen-3.jpg",
+          "/assets/publish-ready/apps/metamask/screen-4.jpg",
+          "/assets/publish-ready/apps/metamask/screen-5.jpg",
+          "/assets/publish-ready/apps/metamask/screen-6.jpg",
+          "/assets/publish-ready/apps/metamask/screen-7.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -725,7 +772,7 @@
       "sourceAppName": "Kraken",
       "primaryFlowId": "account-settings",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/kraken/screen-1.jpg",
       "gallery": [
@@ -758,7 +805,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/kraken-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -770,7 +817,12 @@
         "previewImages": [
           "/assets/apps/kraken/screen-1.jpg",
           "/assets/apps/kraken/screen-2.jpg",
-          "/assets/apps/kraken/screen-3.jpg"
+          "/assets/apps/kraken/screen-3.jpg",
+          "/assets/apps/kraken/screen-4.jpg",
+          "/assets/apps/kraken/screen-5.jpg",
+          "/assets/apps/kraken/screen-6.jpg",
+          "/assets/apps/kraken/screen-7.jpg",
+          "/assets/apps/kraken/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -789,7 +841,7 @@
       "sourceAppName": "Phantom",
       "primaryFlowId": "account-settings",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/phantom/screen-1.jpg",
       "gallery": [
@@ -822,7 +874,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/phantom-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -834,7 +886,11 @@
         "previewImages": [
           "/assets/apps/phantom/screen-1.jpg",
           "/assets/apps/phantom/screen-2.jpg",
-          "/assets/apps/phantom/screen-3.jpg"
+          "/assets/apps/phantom/screen-3.jpg",
+          "/assets/apps/phantom/screen-4.jpg",
+          "/assets/apps/phantom/screen-5.jpg",
+          "/assets/apps/phantom/screen-6.jpg",
+          "/assets/apps/phantom/screen-7.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -853,7 +909,7 @@
       "sourceAppName": "Uniswap",
       "primaryFlowId": "account-settings",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/uniswap/screen-1.jpg",
       "gallery": [
@@ -886,7 +942,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/uniswap-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -898,7 +954,12 @@
         "previewImages": [
           "/assets/apps/uniswap/screen-1.jpg",
           "/assets/apps/uniswap/screen-2.jpg",
-          "/assets/apps/uniswap/screen-3.jpg"
+          "/assets/apps/uniswap/screen-3.jpg",
+          "/assets/apps/uniswap/screen-4.jpg",
+          "/assets/apps/uniswap/screen-5.jpg",
+          "/assets/apps/uniswap/screen-6.jpg",
+          "/assets/apps/uniswap/screen-7.jpg",
+          "/assets/apps/uniswap/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -917,13 +978,13 @@
       "sourceAppName": "Ledger",
       "primaryFlowId": "account-settings",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/ledger/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/ledger/screen-1.jpg",
       "gallery": [
-        "/assets/apps/ledger/screen-1.jpg",
-        "/assets/apps/ledger/screen-2.jpg",
-        "/assets/apps/ledger/screen-3.jpg"
+        "/assets/publish-ready/apps/ledger/screen-1.jpg",
+        "/assets/publish-ready/apps/ledger/screen-2.jpg",
+        "/assets/publish-ready/apps/ledger/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -938,7 +999,7 @@
         "Dense dashboard spacing"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-account-settings",
         "category-crypto"
@@ -948,9 +1009,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/ledger-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -960,9 +1021,14 @@
         "artifactVersion": 1,
         "downloadFileName": "ledger-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/ledger/screen-1.jpg",
-          "/assets/apps/ledger/screen-2.jpg",
-          "/assets/apps/ledger/screen-3.jpg"
+          "/assets/publish-ready/apps/ledger/screen-1.jpg",
+          "/assets/publish-ready/apps/ledger/screen-2.jpg",
+          "/assets/publish-ready/apps/ledger/screen-3.jpg",
+          "/assets/publish-ready/apps/ledger/screen-4.jpg",
+          "/assets/publish-ready/apps/ledger/screen-5.jpg",
+          "/assets/publish-ready/apps/ledger/screen-6.jpg",
+          "/assets/publish-ready/apps/ledger/screen-7.jpg",
+          "/assets/publish-ready/apps/ledger/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -981,7 +1047,7 @@
       "sourceAppName": "Amazon",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/amazon/screen-1.jpg",
       "gallery": [
@@ -1014,7 +1080,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/amazon-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1026,7 +1092,12 @@
         "previewImages": [
           "/assets/apps/amazon/screen-1.jpg",
           "/assets/apps/amazon/screen-2.jpg",
-          "/assets/apps/amazon/screen-3.jpg"
+          "/assets/apps/amazon/screen-3.jpg",
+          "/assets/apps/amazon/screen-4.jpg",
+          "/assets/apps/amazon/screen-5.jpg",
+          "/assets/apps/amazon/screen-6.jpg",
+          "/assets/apps/amazon/screen-7.jpg",
+          "/assets/apps/amazon/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1045,7 +1116,7 @@
       "sourceAppName": "eBay",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/ebay/screen-1.png",
       "gallery": [
@@ -1078,7 +1149,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/ebay-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1090,7 +1161,10 @@
         "previewImages": [
           "/assets/apps/ebay/screen-1.png",
           "/assets/apps/ebay/screen-2.png",
-          "/assets/apps/ebay/screen-3.png"
+          "/assets/apps/ebay/screen-3.png",
+          "/assets/apps/ebay/screen-4.png",
+          "/assets/apps/ebay/screen-5.png",
+          "/assets/apps/ebay/screen-6.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1109,13 +1183,13 @@
       "sourceAppName": "Shopify",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/shopify/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/shopify/screen-1.jpg",
       "gallery": [
-        "/assets/apps/shopify/screen-1.jpg",
-        "/assets/apps/shopify/screen-2.jpg",
-        "/assets/apps/shopify/screen-3.jpg"
+        "/assets/publish-ready/apps/shopify/screen-1.jpg",
+        "/assets/publish-ready/apps/shopify/screen-2.jpg",
+        "/assets/publish-ready/apps/shopify/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -1130,7 +1204,7 @@
         "Responsive card spacing"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-checkout",
         "category-shopping"
@@ -1140,9 +1214,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/shopify-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1154,7 +1228,12 @@
         "previewImages": [
           "/assets/apps/shopify/screen-1.jpg",
           "/assets/apps/shopify/screen-2.jpg",
-          "/assets/apps/shopify/screen-3.jpg"
+          "/assets/apps/shopify/screen-3.jpg",
+          "/assets/apps/shopify/screen-4.jpg",
+          "/assets/apps/shopify/screen-5.jpg",
+          "/assets/apps/shopify/screen-6.jpg",
+          "/assets/apps/shopify/screen-7.jpg",
+          "/assets/apps/shopify/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1173,7 +1252,7 @@
       "sourceAppName": "Etsy",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/etsy/screen-1.jpg",
       "gallery": [
@@ -1206,7 +1285,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/etsy-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1218,7 +1297,12 @@
         "previewImages": [
           "/assets/apps/etsy/screen-1.jpg",
           "/assets/apps/etsy/screen-2.jpg",
-          "/assets/apps/etsy/screen-3.jpg"
+          "/assets/apps/etsy/screen-3.jpg",
+          "/assets/apps/etsy/screen-4.jpg",
+          "/assets/apps/etsy/screen-5.jpg",
+          "/assets/apps/etsy/screen-6.jpg",
+          "/assets/apps/etsy/screen-7.jpg",
+          "/assets/apps/etsy/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1237,13 +1321,13 @@
       "sourceAppName": "Zara",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/zara/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/zara/screen-1.jpg",
       "gallery": [
-        "/assets/apps/zara/screen-1.jpg",
-        "/assets/apps/zara/screen-2.jpg",
-        "/assets/apps/zara/screen-3.jpg"
+        "/assets/publish-ready/apps/zara/screen-1.jpg",
+        "/assets/publish-ready/apps/zara/screen-2.jpg",
+        "/assets/publish-ready/apps/zara/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -1258,7 +1342,7 @@
         "Responsive card spacing"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-checkout",
         "category-shopping"
@@ -1268,9 +1352,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/zara-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1282,7 +1366,12 @@
         "previewImages": [
           "/assets/apps/zara/screen-1.jpg",
           "/assets/apps/zara/screen-2.jpg",
-          "/assets/apps/zara/screen-3.jpg"
+          "/assets/apps/zara/screen-3.jpg",
+          "/assets/apps/zara/screen-4.jpg",
+          "/assets/apps/zara/screen-5.jpg",
+          "/assets/apps/zara/screen-6.jpg",
+          "/assets/apps/zara/screen-7.jpg",
+          "/assets/apps/zara/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1301,7 +1390,7 @@
       "sourceAppName": "ASOS",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/asos/screen-1.png",
       "gallery": [
@@ -1334,7 +1423,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/asos-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1346,7 +1435,10 @@
         "previewImages": [
           "/assets/apps/asos/screen-1.png",
           "/assets/apps/asos/screen-2.png",
-          "/assets/apps/asos/screen-3.png"
+          "/assets/apps/asos/screen-3.png",
+          "/assets/apps/asos/screen-4.png",
+          "/assets/apps/asos/screen-5.png",
+          "/assets/apps/asos/screen-6.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1365,7 +1457,7 @@
       "sourceAppName": "Nike",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/nike/screen-1.png",
       "gallery": [
@@ -1398,7 +1490,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/nike-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1410,7 +1502,12 @@
         "previewImages": [
           "/assets/apps/nike/screen-1.png",
           "/assets/apps/nike/screen-2.png",
-          "/assets/apps/nike/screen-3.png"
+          "/assets/apps/nike/screen-3.png",
+          "/assets/apps/nike/screen-4.png",
+          "/assets/apps/nike/screen-5.png",
+          "/assets/apps/nike/screen-6.png",
+          "/assets/apps/nike/screen-7.png",
+          "/assets/apps/nike/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1429,13 +1526,13 @@
       "sourceAppName": "StockX",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/stockx/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/stockx/screen-1.jpg",
       "gallery": [
-        "/assets/apps/stockx/screen-1.jpg",
-        "/assets/apps/stockx/screen-2.jpg",
-        "/assets/apps/stockx/screen-3.jpg"
+        "/assets/publish-ready/apps/stockx/screen-1.jpg",
+        "/assets/publish-ready/apps/stockx/screen-2.jpg",
+        "/assets/publish-ready/apps/stockx/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -1450,7 +1547,7 @@
         "Responsive card spacing"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-checkout",
         "category-shopping"
@@ -1460,9 +1557,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/stockx-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1474,7 +1571,12 @@
         "previewImages": [
           "/assets/apps/stockx/screen-1.jpg",
           "/assets/apps/stockx/screen-2.jpg",
-          "/assets/apps/stockx/screen-3.jpg"
+          "/assets/apps/stockx/screen-3.jpg",
+          "/assets/apps/stockx/screen-4.jpg",
+          "/assets/apps/stockx/screen-5.jpg",
+          "/assets/apps/stockx/screen-6.jpg",
+          "/assets/apps/stockx/screen-7.jpg",
+          "/assets/apps/stockx/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1493,7 +1595,7 @@
       "sourceAppName": "Instagram",
       "primaryFlowId": "social-engagement",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/instagram/screen-1.jpg",
       "gallery": [
@@ -1526,7 +1628,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/instagram-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1538,7 +1640,11 @@
         "previewImages": [
           "/assets/apps/instagram/screen-1.jpg",
           "/assets/apps/instagram/screen-2.jpg",
-          "/assets/apps/instagram/screen-3.jpg"
+          "/assets/apps/instagram/screen-3.jpg",
+          "/assets/apps/instagram/screen-4.jpg",
+          "/assets/apps/instagram/screen-5.jpg",
+          "/assets/apps/instagram/screen-6.jpg",
+          "/assets/apps/instagram/screen-7.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1557,14 +1663,15 @@
       "sourceAppName": "Twitter",
       "primaryFlowId": "social-engagement",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/twitter/screen-1.png",
       "gallery": [
         "/assets/apps/twitter/screen-1.png",
-        "/assets/apps/twitter/screen-2.png"
+        "/assets/apps/twitter/screen-2.png",
+        "/assets/publish-ready/apps/twitter/rescue-screen-1.png"
       ],
-      "includedScreens": 5,
+      "includedScreens": 6,
       "includedComponents": [
         "Feed card",
         "Reaction rail",
@@ -1587,9 +1694,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 32,
-      "completenessScore": 25,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 68,
+      "completenessScore": 66,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/twitter-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1600,7 +1707,11 @@
         "downloadFileName": "twitter-figma-kit-delivery-pack.json",
         "previewImages": [
           "/assets/apps/twitter/screen-1.png",
-          "/assets/apps/twitter/screen-2.png"
+          "/assets/apps/twitter/screen-2.png",
+          "/assets/publish-ready/apps/twitter/rescue-screen-1.png",
+          "/assets/publish-ready/apps/twitter/rescue-screen-2.png",
+          "/assets/publish-ready/apps/twitter/rescue-screen-3.jpg",
+          "/assets/publish-ready/apps/twitter/rescue-screen-4.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1619,7 +1730,7 @@
       "sourceAppName": "LinkedIn",
       "primaryFlowId": "social-engagement",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/linkedin/screen-1.png",
       "gallery": [
@@ -1652,7 +1763,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/linkedin-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1664,7 +1775,12 @@
         "previewImages": [
           "/assets/apps/linkedin/screen-1.png",
           "/assets/apps/linkedin/screen-2.png",
-          "/assets/apps/linkedin/screen-3.png"
+          "/assets/apps/linkedin/screen-3.png",
+          "/assets/apps/linkedin/screen-4.png",
+          "/assets/apps/linkedin/screen-5.png",
+          "/assets/apps/linkedin/screen-6.png",
+          "/assets/apps/linkedin/screen-7.png",
+          "/assets/apps/linkedin/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1683,7 +1799,7 @@
       "sourceAppName": "TikTok",
       "primaryFlowId": "social-engagement",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/tiktok/screen-1.png",
       "gallery": [
@@ -1716,7 +1832,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/tiktok-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1728,7 +1844,12 @@
         "previewImages": [
           "/assets/apps/tiktok/screen-1.png",
           "/assets/apps/tiktok/screen-2.png",
-          "/assets/apps/tiktok/screen-3.png"
+          "/assets/apps/tiktok/screen-3.png",
+          "/assets/apps/tiktok/screen-4.png",
+          "/assets/apps/tiktok/screen-5.png",
+          "/assets/apps/tiktok/screen-6.png",
+          "/assets/apps/tiktok/screen-7.png",
+          "/assets/apps/tiktok/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1747,7 +1868,7 @@
       "sourceAppName": "Snapchat",
       "primaryFlowId": "social-engagement",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/snapchat/screen-1.jpg",
       "gallery": [
@@ -1780,7 +1901,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/snapchat-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1792,7 +1913,12 @@
         "previewImages": [
           "/assets/apps/snapchat/screen-1.jpg",
           "/assets/apps/snapchat/screen-2.jpg",
-          "/assets/apps/snapchat/screen-3.jpg"
+          "/assets/apps/snapchat/screen-3.jpg",
+          "/assets/apps/snapchat/screen-4.jpg",
+          "/assets/apps/snapchat/screen-5.jpg",
+          "/assets/apps/snapchat/screen-6.jpg",
+          "/assets/apps/snapchat/screen-7.jpg",
+          "/assets/apps/snapchat/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1811,7 +1937,7 @@
       "sourceAppName": "WhatsApp",
       "primaryFlowId": "social-engagement",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/whatsapp/screen-1.png",
       "gallery": [
@@ -1819,7 +1945,7 @@
         "/assets/apps/whatsapp/screen-2.png",
         "/assets/apps/whatsapp/screen-3.png"
       ],
-      "includedScreens": 5,
+      "includedScreens": 6,
       "includedComponents": [
         "Feed card",
         "Reaction rail",
@@ -1842,9 +1968,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 38,
-      "completenessScore": 33,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 68,
+      "completenessScore": 66,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/whatsapp-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1856,7 +1982,10 @@
         "previewImages": [
           "/assets/apps/whatsapp/screen-1.png",
           "/assets/apps/whatsapp/screen-2.png",
-          "/assets/apps/whatsapp/screen-3.png"
+          "/assets/apps/whatsapp/screen-3.png",
+          "/assets/apps/whatsapp/screen-4.png",
+          "/assets/apps/whatsapp/screen-5.png",
+          "/assets/publish-ready/apps/whatsapp/rescue-screen-1.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1875,13 +2004,13 @@
       "sourceAppName": "Threads",
       "primaryFlowId": "social-engagement",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/threads/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/threads/screen-1.jpg",
       "gallery": [
-        "/assets/apps/threads/screen-1.jpg",
-        "/assets/apps/threads/screen-2.jpg",
-        "/assets/apps/threads/screen-3.jpg"
+        "/assets/publish-ready/apps/threads/screen-1.jpg",
+        "/assets/publish-ready/apps/threads/screen-2.jpg",
+        "/assets/publish-ready/apps/threads/screen-3.jpg"
       ],
       "includedScreens": 6,
       "includedComponents": [
@@ -1908,7 +2037,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/threads-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1920,7 +2049,10 @@
         "previewImages": [
           "/assets/apps/threads/screen-1.jpg",
           "/assets/apps/threads/screen-2.jpg",
-          "/assets/apps/threads/screen-3.jpg"
+          "/assets/apps/threads/screen-3.jpg",
+          "/assets/apps/threads/screen-4.jpg",
+          "/assets/apps/threads/screen-5.jpg",
+          "/assets/apps/threads/screen-6.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1939,13 +2071,13 @@
       "sourceAppName": "BeReal",
       "primaryFlowId": "social-engagement",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/bereal/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/bereal/screen-1.jpg",
       "gallery": [
-        "/assets/apps/bereal/screen-1.jpg",
-        "/assets/apps/bereal/screen-2.jpg",
-        "/assets/apps/bereal/screen-3.jpg"
+        "/assets/publish-ready/apps/bereal/screen-1.jpg",
+        "/assets/publish-ready/apps/bereal/screen-2.jpg",
+        "/assets/publish-ready/apps/bereal/screen-3.jpg"
       ],
       "includedScreens": 6,
       "includedComponents": [
@@ -1972,7 +2104,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/bereal-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1984,7 +2116,10 @@
         "previewImages": [
           "/assets/apps/bereal/screen-1.jpg",
           "/assets/apps/bereal/screen-2.jpg",
-          "/assets/apps/bereal/screen-3.jpg"
+          "/assets/apps/bereal/screen-3.jpg",
+          "/assets/apps/bereal/screen-4.jpg",
+          "/assets/apps/bereal/screen-5.jpg",
+          "/assets/apps/bereal/screen-6.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2003,13 +2138,13 @@
       "sourceAppName": "Airbnb",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/airbnb/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/airbnb/screen-1.jpg",
       "gallery": [
-        "/assets/apps/airbnb/screen-1.jpg",
-        "/assets/apps/airbnb/screen-2.jpg",
-        "/assets/apps/airbnb/screen-3.jpg"
+        "/assets/publish-ready/apps/airbnb/screen-1.jpg",
+        "/assets/publish-ready/apps/airbnb/screen-2.jpg",
+        "/assets/publish-ready/apps/airbnb/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2024,7 +2159,7 @@
         "Comfort-first spacing scale"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-checkout",
         "category-travel"
@@ -2034,9 +2169,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/airbnb-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2048,7 +2183,12 @@
         "previewImages": [
           "/assets/apps/airbnb/screen-1.jpg",
           "/assets/apps/airbnb/screen-2.jpg",
-          "/assets/apps/airbnb/screen-3.jpg"
+          "/assets/apps/airbnb/screen-3.jpg",
+          "/assets/apps/airbnb/screen-4.jpg",
+          "/assets/apps/airbnb/screen-5.jpg",
+          "/assets/apps/airbnb/screen-6.jpg",
+          "/assets/apps/airbnb/screen-7.jpg",
+          "/assets/apps/airbnb/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2067,13 +2207,13 @@
       "sourceAppName": "Expedia",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/expedia/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/expedia/screen-1.jpg",
       "gallery": [
-        "/assets/apps/expedia/screen-1.jpg",
-        "/assets/apps/expedia/screen-2.jpg",
-        "/assets/apps/expedia/screen-3.jpg"
+        "/assets/publish-ready/apps/expedia/screen-1.jpg",
+        "/assets/publish-ready/apps/expedia/screen-2.jpg",
+        "/assets/publish-ready/apps/expedia/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2088,7 +2228,7 @@
         "Comfort-first spacing scale"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-checkout",
         "category-travel"
@@ -2098,9 +2238,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/expedia-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2112,7 +2252,12 @@
         "previewImages": [
           "/assets/apps/expedia/screen-1.jpg",
           "/assets/apps/expedia/screen-2.jpg",
-          "/assets/apps/expedia/screen-3.jpg"
+          "/assets/apps/expedia/screen-3.jpg",
+          "/assets/apps/expedia/screen-4.jpg",
+          "/assets/apps/expedia/screen-5.jpg",
+          "/assets/apps/expedia/screen-6.jpg",
+          "/assets/apps/expedia/screen-7.jpg",
+          "/assets/apps/expedia/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2131,13 +2276,13 @@
       "sourceAppName": "Hopper",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/hopper/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/hopper/screen-1.jpg",
       "gallery": [
-        "/assets/apps/hopper/screen-1.jpg",
-        "/assets/apps/hopper/screen-2.jpg",
-        "/assets/apps/hopper/screen-3.jpg"
+        "/assets/publish-ready/apps/hopper/screen-1.jpg",
+        "/assets/publish-ready/apps/hopper/screen-2.jpg",
+        "/assets/publish-ready/apps/hopper/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2152,7 +2297,7 @@
         "Comfort-first spacing scale"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-checkout",
         "category-travel"
@@ -2162,9 +2307,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/hopper-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2176,7 +2321,12 @@
         "previewImages": [
           "/assets/apps/hopper/screen-1.jpg",
           "/assets/apps/hopper/screen-2.jpg",
-          "/assets/apps/hopper/screen-3.jpg"
+          "/assets/apps/hopper/screen-3.jpg",
+          "/assets/apps/hopper/screen-4.jpg",
+          "/assets/apps/hopper/screen-5.jpg",
+          "/assets/apps/hopper/screen-6.jpg",
+          "/assets/apps/hopper/screen-7.jpg",
+          "/assets/apps/hopper/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2195,7 +2345,7 @@
       "sourceAppName": "Booking.com",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/booking-com/screen-1.jpg",
       "gallery": [
@@ -2228,7 +2378,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/booking-com-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2240,7 +2390,12 @@
         "previewImages": [
           "/assets/apps/booking-com/screen-1.jpg",
           "/assets/apps/booking-com/screen-2.jpg",
-          "/assets/apps/booking-com/screen-3.jpg"
+          "/assets/apps/booking-com/screen-3.jpg",
+          "/assets/apps/booking-com/screen-4.jpg",
+          "/assets/apps/booking-com/screen-5.png",
+          "/assets/apps/booking-com/screen-6.jpg",
+          "/assets/apps/booking-com/screen-7.jpg",
+          "/assets/apps/booking-com/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2259,7 +2414,7 @@
       "sourceAppName": "Skyscanner",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/skyscanner/screen-1.png",
       "gallery": [
@@ -2292,7 +2447,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/skyscanner-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2304,7 +2459,12 @@
         "previewImages": [
           "/assets/apps/skyscanner/screen-1.png",
           "/assets/apps/skyscanner/screen-2.png",
-          "/assets/apps/skyscanner/screen-3.png"
+          "/assets/apps/skyscanner/screen-3.png",
+          "/assets/apps/skyscanner/screen-4.png",
+          "/assets/apps/skyscanner/screen-5.png",
+          "/assets/apps/skyscanner/screen-6.png",
+          "/assets/apps/skyscanner/screen-7.png",
+          "/assets/apps/skyscanner/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2323,7 +2483,7 @@
       "sourceAppName": "TripAdvisor",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/tripadvisor/screen-1.png",
       "gallery": [
@@ -2356,7 +2516,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/tripadvisor-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2368,7 +2528,12 @@
         "previewImages": [
           "/assets/apps/tripadvisor/screen-1.png",
           "/assets/apps/tripadvisor/screen-2.png",
-          "/assets/apps/tripadvisor/screen-3.png"
+          "/assets/apps/tripadvisor/screen-3.png",
+          "/assets/apps/tripadvisor/screen-4.png",
+          "/assets/apps/tripadvisor/screen-5.png",
+          "/assets/apps/tripadvisor/screen-6.png",
+          "/assets/apps/tripadvisor/screen-7.png",
+          "/assets/apps/tripadvisor/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2387,13 +2552,13 @@
       "sourceAppName": "Kayak",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/kayak/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/kayak/screen-1.jpg",
       "gallery": [
-        "/assets/apps/kayak/screen-1.jpg",
-        "/assets/apps/kayak/screen-2.jpg",
-        "/assets/apps/kayak/screen-3.jpg"
+        "/assets/publish-ready/apps/kayak/screen-1.jpg",
+        "/assets/publish-ready/apps/kayak/screen-2.jpg",
+        "/assets/publish-ready/apps/kayak/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2408,7 +2573,7 @@
         "Comfort-first spacing scale"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-checkout",
         "category-travel"
@@ -2418,9 +2583,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/kayak-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2432,7 +2597,12 @@
         "previewImages": [
           "/assets/apps/kayak/screen-1.jpg",
           "/assets/apps/kayak/screen-2.jpg",
-          "/assets/apps/kayak/screen-3.jpg"
+          "/assets/apps/kayak/screen-3.jpg",
+          "/assets/apps/kayak/screen-4.jpg",
+          "/assets/apps/kayak/screen-5.jpg",
+          "/assets/apps/kayak/screen-6.jpg",
+          "/assets/apps/kayak/screen-7.jpg",
+          "/assets/apps/kayak/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2451,13 +2621,13 @@
       "sourceAppName": "HotelTonight",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/hoteltonight/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/hoteltonight/screen-1.jpg",
       "gallery": [
-        "/assets/apps/hoteltonight/screen-1.jpg",
-        "/assets/apps/hoteltonight/screen-2.jpg",
-        "/assets/apps/hoteltonight/screen-3.jpg"
+        "/assets/publish-ready/apps/hoteltonight/screen-1.jpg",
+        "/assets/publish-ready/apps/hoteltonight/screen-2.jpg",
+        "/assets/publish-ready/apps/hoteltonight/screen-3.jpg"
       ],
       "includedScreens": 7,
       "includedComponents": [
@@ -2484,7 +2654,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/hoteltonight-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2496,7 +2666,11 @@
         "previewImages": [
           "/assets/apps/hoteltonight/screen-1.jpg",
           "/assets/apps/hoteltonight/screen-2.jpg",
-          "/assets/apps/hoteltonight/screen-3.jpg"
+          "/assets/apps/hoteltonight/screen-3.jpg",
+          "/assets/apps/hoteltonight/screen-4.jpg",
+          "/assets/apps/hoteltonight/screen-5.jpg",
+          "/assets/apps/hoteltonight/screen-6.jpg",
+          "/assets/apps/hoteltonight/screen-7.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2515,7 +2689,7 @@
       "sourceAppName": "Slack",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/slack/screen-1.png",
       "gallery": [
@@ -2536,7 +2710,7 @@
         "Operational spacing rhythm"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-onboarding",
         "category-business"
@@ -2546,9 +2720,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/slack-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2560,7 +2734,12 @@
         "previewImages": [
           "/assets/apps/slack/screen-1.png",
           "/assets/apps/slack/screen-2.png",
-          "/assets/apps/slack/screen-3.png"
+          "/assets/apps/slack/screen-3.png",
+          "/assets/apps/slack/screen-4.png",
+          "/assets/apps/slack/screen-5.png",
+          "/assets/apps/slack/screen-6.png",
+          "/assets/apps/slack/screen-7.png",
+          "/assets/apps/slack/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2579,13 +2758,13 @@
       "sourceAppName": "Zoom",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/zoom/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/zoom/screen-1.jpg",
       "gallery": [
-        "/assets/apps/zoom/screen-1.jpg",
-        "/assets/apps/zoom/screen-2.jpg",
-        "/assets/apps/zoom/screen-3.jpg"
+        "/assets/publish-ready/apps/zoom/screen-1.jpg",
+        "/assets/publish-ready/apps/zoom/screen-2.jpg",
+        "/assets/publish-ready/apps/zoom/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2600,7 +2779,7 @@
         "Operational spacing rhythm"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-onboarding",
         "category-business"
@@ -2610,9 +2789,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/zoom-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2624,7 +2803,12 @@
         "previewImages": [
           "/assets/apps/zoom/screen-1.jpg",
           "/assets/apps/zoom/screen-2.jpg",
-          "/assets/apps/zoom/screen-3.jpg"
+          "/assets/apps/zoom/screen-3.jpg",
+          "/assets/apps/zoom/screen-4.jpg",
+          "/assets/apps/zoom/screen-5.jpg",
+          "/assets/apps/zoom/screen-6.jpg",
+          "/assets/apps/zoom/screen-7.jpg",
+          "/assets/apps/zoom/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2643,13 +2827,13 @@
       "sourceAppName": "Trello",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/trello/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/trello/screen-1.jpg",
       "gallery": [
-        "/assets/apps/trello/screen-1.jpg",
-        "/assets/apps/trello/screen-2.jpg",
-        "/assets/apps/trello/screen-3.jpg"
+        "/assets/publish-ready/apps/trello/screen-1.jpg",
+        "/assets/publish-ready/apps/trello/screen-2.jpg",
+        "/assets/publish-ready/apps/trello/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2664,7 +2848,7 @@
         "Operational spacing rhythm"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-onboarding",
         "category-business"
@@ -2674,9 +2858,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/trello-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2688,7 +2872,12 @@
         "previewImages": [
           "/assets/apps/trello/screen-1.jpg",
           "/assets/apps/trello/screen-2.jpg",
-          "/assets/apps/trello/screen-3.jpg"
+          "/assets/apps/trello/screen-3.jpg",
+          "/assets/apps/trello/screen-4.jpg",
+          "/assets/apps/trello/screen-5.jpg",
+          "/assets/apps/trello/screen-6.jpg",
+          "/assets/apps/trello/screen-7.jpg",
+          "/assets/apps/trello/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2707,7 +2896,7 @@
       "sourceAppName": "Notion",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/notion/screen-1.png",
       "gallery": [
@@ -2740,7 +2929,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/notion-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2752,7 +2941,11 @@
         "previewImages": [
           "/assets/apps/notion/screen-1.png",
           "/assets/apps/notion/screen-2.png",
-          "/assets/apps/notion/screen-3.png"
+          "/assets/apps/notion/screen-3.png",
+          "/assets/apps/notion/screen-4.png",
+          "/assets/apps/notion/screen-5.png",
+          "/assets/apps/notion/screen-6.png",
+          "/assets/apps/notion/screen-7.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2771,13 +2964,13 @@
       "sourceAppName": "Asana",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/asana/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/asana/screen-1.jpg",
       "gallery": [
-        "/assets/apps/asana/screen-1.jpg",
-        "/assets/apps/asana/screen-2.jpg",
-        "/assets/apps/asana/screen-3.jpg"
+        "/assets/publish-ready/apps/asana/screen-1.jpg",
+        "/assets/publish-ready/apps/asana/screen-2.jpg",
+        "/assets/publish-ready/apps/asana/screen-3.jpg"
       ],
       "includedScreens": 7,
       "includedComponents": [
@@ -2804,7 +2997,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/asana-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2816,7 +3009,11 @@
         "previewImages": [
           "/assets/apps/asana/screen-1.jpg",
           "/assets/apps/asana/screen-2.jpg",
-          "/assets/apps/asana/screen-3.jpg"
+          "/assets/apps/asana/screen-3.jpg",
+          "/assets/apps/asana/screen-4.jpg",
+          "/assets/apps/asana/screen-5.jpg",
+          "/assets/apps/asana/screen-6.jpg",
+          "/assets/apps/asana/screen-7.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2835,7 +3032,7 @@
       "sourceAppName": "Monday.com",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/monday-com/screen-1.png",
       "gallery": [
@@ -2856,7 +3053,7 @@
         "Operational spacing rhythm"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-onboarding",
         "category-business"
@@ -2866,9 +3063,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/monday-com-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2880,7 +3077,12 @@
         "previewImages": [
           "/assets/apps/monday-com/screen-1.png",
           "/assets/apps/monday-com/screen-2.png",
-          "/assets/apps/monday-com/screen-3.png"
+          "/assets/apps/monday-com/screen-3.png",
+          "/assets/apps/monday-com/screen-4.png",
+          "/assets/apps/monday-com/screen-5.png",
+          "/assets/apps/monday-com/screen-6.png",
+          "/assets/apps/monday-com/screen-7.png",
+          "/assets/apps/monday-com/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2899,7 +3101,7 @@
       "sourceAppName": "Linear",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/linear/screen-1.png",
       "gallery": [
@@ -2932,7 +3134,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/linear-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2944,7 +3146,10 @@
         "previewImages": [
           "/assets/apps/linear/screen-1.png",
           "/assets/apps/linear/screen-2.png",
-          "/assets/apps/linear/screen-3.png"
+          "/assets/apps/linear/screen-3.png",
+          "/assets/apps/linear/screen-4.png",
+          "/assets/apps/linear/screen-5.png",
+          "/assets/apps/linear/screen-6.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2963,13 +3168,13 @@
       "sourceAppName": "Loom",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/loom/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/loom/screen-1.jpg",
       "gallery": [
-        "/assets/apps/loom/screen-1.jpg",
-        "/assets/apps/loom/screen-2.jpg",
-        "/assets/apps/loom/screen-3.jpg"
+        "/assets/publish-ready/apps/loom/screen-1.jpg",
+        "/assets/publish-ready/apps/loom/screen-2.jpg",
+        "/assets/publish-ready/apps/loom/screen-3.jpg"
       ],
       "includedScreens": 7,
       "includedComponents": [
@@ -2996,7 +3201,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/loom-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3008,7 +3213,11 @@
         "previewImages": [
           "/assets/apps/loom/screen-1.jpg",
           "/assets/apps/loom/screen-2.jpg",
-          "/assets/apps/loom/screen-3.jpg"
+          "/assets/apps/loom/screen-3.jpg",
+          "/assets/apps/loom/screen-4.jpg",
+          "/assets/apps/loom/screen-5.jpg",
+          "/assets/apps/loom/screen-6.jpg",
+          "/assets/apps/loom/screen-7.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3027,7 +3236,7 @@
       "sourceAppName": "Headspace",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/headspace/screen-1.png",
       "gallery": [
@@ -3060,7 +3269,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/headspace-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3072,7 +3281,12 @@
         "previewImages": [
           "/assets/apps/headspace/screen-1.png",
           "/assets/apps/headspace/screen-2.png",
-          "/assets/apps/headspace/screen-3.png"
+          "/assets/apps/headspace/screen-3.png",
+          "/assets/apps/headspace/screen-4.png",
+          "/assets/apps/headspace/screen-5.png",
+          "/assets/apps/headspace/screen-6.png",
+          "/assets/apps/headspace/screen-7.png",
+          "/assets/apps/headspace/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3091,7 +3305,7 @@
       "sourceAppName": "Calm",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/calm/screen-1.png",
       "gallery": [
@@ -3124,7 +3338,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/calm-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3136,7 +3350,12 @@
         "previewImages": [
           "/assets/apps/calm/screen-1.png",
           "/assets/apps/calm/screen-2.png",
-          "/assets/apps/calm/screen-3.png"
+          "/assets/apps/calm/screen-3.png",
+          "/assets/apps/calm/screen-4.png",
+          "/assets/apps/calm/screen-5.png",
+          "/assets/apps/calm/screen-6.png",
+          "/assets/apps/calm/screen-7.png",
+          "/assets/apps/calm/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3155,7 +3374,7 @@
       "sourceAppName": "Strava",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/strava/screen-1.jpg",
       "gallery": [
@@ -3188,7 +3407,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/strava-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3200,7 +3419,12 @@
         "previewImages": [
           "/assets/apps/strava/screen-1.jpg",
           "/assets/apps/strava/screen-2.jpg",
-          "/assets/apps/strava/screen-3.jpg"
+          "/assets/apps/strava/screen-3.jpg",
+          "/assets/apps/strava/screen-4.jpg",
+          "/assets/apps/strava/screen-5.jpg",
+          "/assets/apps/strava/screen-6.jpg",
+          "/assets/apps/strava/screen-7.jpg",
+          "/assets/apps/strava/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3219,7 +3443,7 @@
       "sourceAppName": "Nike Run Club",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/nike-run-club/screen-1.png",
       "gallery": [
@@ -3252,7 +3476,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/nike-run-club-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3264,7 +3488,12 @@
         "previewImages": [
           "/assets/apps/nike-run-club/screen-1.png",
           "/assets/apps/nike-run-club/screen-2.png",
-          "/assets/apps/nike-run-club/screen-3.png"
+          "/assets/apps/nike-run-club/screen-3.png",
+          "/assets/apps/nike-run-club/screen-4.png",
+          "/assets/apps/nike-run-club/screen-5.png",
+          "/assets/apps/nike-run-club/screen-6.png",
+          "/assets/apps/nike-run-club/screen-7.png",
+          "/assets/apps/nike-run-club/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3283,13 +3512,13 @@
       "sourceAppName": "MyFitnessPal",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/myfitnesspal/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/myfitnesspal/screen-1.jpg",
       "gallery": [
-        "/assets/apps/myfitnesspal/screen-1.jpg",
-        "/assets/apps/myfitnesspal/screen-2.jpg",
-        "/assets/apps/myfitnesspal/screen-3.jpg"
+        "/assets/publish-ready/apps/myfitnesspal/screen-1.jpg",
+        "/assets/publish-ready/apps/myfitnesspal/screen-2.jpg",
+        "/assets/publish-ready/apps/myfitnesspal/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -3304,7 +3533,7 @@
         "Breathing room spacing scale"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-onboarding",
         "category-health"
@@ -3314,9 +3543,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/myfitnesspal-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3328,7 +3557,12 @@
         "previewImages": [
           "/assets/apps/myfitnesspal/screen-1.jpg",
           "/assets/apps/myfitnesspal/screen-2.jpg",
-          "/assets/apps/myfitnesspal/screen-3.jpg"
+          "/assets/apps/myfitnesspal/screen-3.jpg",
+          "/assets/apps/myfitnesspal/screen-4.jpg",
+          "/assets/apps/myfitnesspal/screen-5.jpg",
+          "/assets/apps/myfitnesspal/screen-6.jpg",
+          "/assets/apps/myfitnesspal/screen-7.jpg",
+          "/assets/apps/myfitnesspal/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3347,7 +3581,7 @@
       "sourceAppName": "Fitbit",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/fitbit/screen-1.jpg",
       "gallery": [
@@ -3380,7 +3614,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/fitbit-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3392,7 +3626,10 @@
         "previewImages": [
           "/assets/apps/fitbit/screen-1.jpg",
           "/assets/apps/fitbit/screen-2.jpg",
-          "/assets/apps/fitbit/screen-3.jpg"
+          "/assets/apps/fitbit/screen-3.jpg",
+          "/assets/apps/fitbit/screen-4.jpg",
+          "/assets/apps/fitbit/screen-5.jpg",
+          "/assets/apps/fitbit/screen-6.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3411,7 +3648,7 @@
       "sourceAppName": "Flo",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/flo/screen-1.jpg",
       "gallery": [
@@ -3444,7 +3681,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/flo-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3456,7 +3693,12 @@
         "previewImages": [
           "/assets/apps/flo/screen-1.jpg",
           "/assets/apps/flo/screen-2.jpg",
-          "/assets/apps/flo/screen-3.jpg"
+          "/assets/apps/flo/screen-3.jpg",
+          "/assets/apps/flo/screen-4.jpg",
+          "/assets/apps/flo/screen-5.jpg",
+          "/assets/apps/flo/screen-6.jpg",
+          "/assets/apps/flo/screen-7.jpg",
+          "/assets/apps/flo/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3475,13 +3717,13 @@
       "sourceAppName": "Sleep Cycle",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/sleep-cycle/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/sleep-cycle/screen-1.jpg",
       "gallery": [
-        "/assets/apps/sleep-cycle/screen-1.jpg",
-        "/assets/apps/sleep-cycle/screen-2.jpg",
-        "/assets/apps/sleep-cycle/screen-3.jpg"
+        "/assets/publish-ready/apps/sleep-cycle/screen-1.jpg",
+        "/assets/publish-ready/apps/sleep-cycle/screen-2.jpg",
+        "/assets/publish-ready/apps/sleep-cycle/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -3496,7 +3738,7 @@
         "Breathing room spacing scale"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-onboarding",
         "category-health"
@@ -3506,9 +3748,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/sleep-cycle-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3520,7 +3762,12 @@
         "previewImages": [
           "/assets/apps/sleep-cycle/screen-1.jpg",
           "/assets/apps/sleep-cycle/screen-2.jpg",
-          "/assets/apps/sleep-cycle/screen-3.jpg"
+          "/assets/apps/sleep-cycle/screen-3.jpg",
+          "/assets/apps/sleep-cycle/screen-4.jpg",
+          "/assets/apps/sleep-cycle/screen-5.jpg",
+          "/assets/apps/sleep-cycle/screen-6.jpg",
+          "/assets/apps/sleep-cycle/screen-7.jpg",
+          "/assets/apps/sleep-cycle/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3539,7 +3786,7 @@
       "sourceAppName": "Spotify",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/spotify/screen-1.png",
       "gallery": [
@@ -3572,7 +3819,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/spotify-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3584,7 +3831,12 @@
         "previewImages": [
           "/assets/apps/spotify/screen-1.png",
           "/assets/apps/spotify/screen-2.png",
-          "/assets/apps/spotify/screen-3.png"
+          "/assets/apps/spotify/screen-3.png",
+          "/assets/apps/spotify/screen-4.png",
+          "/assets/apps/spotify/screen-5.png",
+          "/assets/apps/spotify/screen-6.png",
+          "/assets/apps/spotify/screen-7.png",
+          "/assets/apps/spotify/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3603,7 +3855,7 @@
       "sourceAppName": "Apple Music",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/apple-music/screen-1.png",
       "gallery": [
@@ -3624,7 +3876,7 @@
         "Immersive content spacing"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-search-discovery",
         "category-music"
@@ -3634,9 +3886,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/apple-music-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3648,7 +3900,12 @@
         "previewImages": [
           "/assets/apps/apple-music/screen-1.png",
           "/assets/apps/apple-music/screen-2.png",
-          "/assets/apps/apple-music/screen-3.png"
+          "/assets/apps/apple-music/screen-3.png",
+          "/assets/apps/apple-music/screen-4.png",
+          "/assets/apps/apple-music/screen-5.png",
+          "/assets/apps/apple-music/screen-6.png",
+          "/assets/apps/apple-music/screen-7.png",
+          "/assets/apps/apple-music/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3667,7 +3924,7 @@
       "sourceAppName": "SoundCloud",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/soundcloud/screen-1.png",
       "gallery": [
@@ -3700,7 +3957,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/soundcloud-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3712,7 +3969,12 @@
         "previewImages": [
           "/assets/apps/soundcloud/screen-1.png",
           "/assets/apps/soundcloud/screen-2.png",
-          "/assets/apps/soundcloud/screen-3.png"
+          "/assets/apps/soundcloud/screen-3.png",
+          "/assets/apps/soundcloud/screen-4.png",
+          "/assets/apps/soundcloud/screen-5.png",
+          "/assets/apps/soundcloud/screen-6.png",
+          "/assets/apps/soundcloud/screen-7.png",
+          "/assets/apps/soundcloud/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3731,7 +3993,7 @@
       "sourceAppName": "Tidal",
       "primaryFlowId": "subscription-upgrade",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/tidal/screen-1.jpg",
       "gallery": [
@@ -3739,7 +4001,7 @@
         "/assets/apps/tidal/screen-2.jpg",
         "/assets/apps/tidal/screen-3.jpg"
       ],
-      "includedScreens": 5,
+      "includedScreens": 6,
       "includedComponents": [
         "Plan comparison card",
         "Feature checklist",
@@ -3762,9 +4024,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 36,
-      "completenessScore": 30,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 68,
+      "completenessScore": 66,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/tidal-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3776,7 +4038,10 @@
         "previewImages": [
           "/assets/apps/tidal/screen-1.jpg",
           "/assets/apps/tidal/screen-2.jpg",
-          "/assets/apps/tidal/screen-3.jpg"
+          "/assets/apps/tidal/screen-3.jpg",
+          "/assets/apps/tidal/screen-4.jpg",
+          "/assets/publish-ready/apps/tidal/rescue-screen-1.jpg",
+          "/assets/publish-ready/apps/tidal/rescue-screen-2.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3795,13 +4060,13 @@
       "sourceAppName": "Deezer",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/deezer/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/deezer/screen-1.jpg",
       "gallery": [
-        "/assets/apps/deezer/screen-1.jpg",
-        "/assets/apps/deezer/screen-2.jpg",
-        "/assets/apps/deezer/screen-3.jpg"
+        "/assets/publish-ready/apps/deezer/screen-1.jpg",
+        "/assets/publish-ready/apps/deezer/screen-2.jpg",
+        "/assets/publish-ready/apps/deezer/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -3816,7 +4081,7 @@
         "Immersive content spacing"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-search-discovery",
         "category-music"
@@ -3826,9 +4091,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/deezer-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3840,7 +4105,12 @@
         "previewImages": [
           "/assets/apps/deezer/screen-1.jpg",
           "/assets/apps/deezer/screen-2.jpg",
-          "/assets/apps/deezer/screen-3.jpg"
+          "/assets/apps/deezer/screen-3.jpg",
+          "/assets/apps/deezer/screen-4.jpg",
+          "/assets/apps/deezer/screen-5.jpg",
+          "/assets/apps/deezer/screen-6.jpg",
+          "/assets/apps/deezer/screen-7.jpg",
+          "/assets/apps/deezer/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3859,7 +4129,7 @@
       "sourceAppName": "Pandora",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/pandora/screen-1.jpg",
       "gallery": [
@@ -3892,7 +4162,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/pandora-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3904,7 +4174,12 @@
         "previewImages": [
           "/assets/apps/pandora/screen-1.jpg",
           "/assets/apps/pandora/screen-2.jpg",
-          "/assets/apps/pandora/screen-3.jpg"
+          "/assets/apps/pandora/screen-3.jpg",
+          "/assets/apps/pandora/screen-4.jpg",
+          "/assets/apps/pandora/screen-5.jpg",
+          "/assets/apps/pandora/screen-6.jpg",
+          "/assets/apps/pandora/screen-7.jpg",
+          "/assets/apps/pandora/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3923,7 +4198,7 @@
       "sourceAppName": "Shazam",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/shazam/screen-1.png",
       "gallery": [
@@ -3956,7 +4231,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/shazam-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3968,7 +4243,12 @@
         "previewImages": [
           "/assets/apps/shazam/screen-1.png",
           "/assets/apps/shazam/screen-2.png",
-          "/assets/apps/shazam/screen-3.png"
+          "/assets/apps/shazam/screen-3.png",
+          "/assets/apps/shazam/screen-4.png",
+          "/assets/apps/shazam/screen-5.png",
+          "/assets/apps/shazam/screen-6.png",
+          "/assets/apps/shazam/screen-7.png",
+          "/assets/apps/shazam/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3987,13 +4267,13 @@
       "sourceAppName": "Duolingo",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/duolingo/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/duolingo/screen-1.jpg",
       "gallery": [
-        "/assets/apps/duolingo/screen-1.jpg",
-        "/assets/apps/duolingo/screen-2.jpg",
-        "/assets/apps/duolingo/screen-3.jpg"
+        "/assets/publish-ready/apps/duolingo/screen-1.jpg",
+        "/assets/publish-ready/apps/duolingo/screen-2.jpg",
+        "/assets/publish-ready/apps/duolingo/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -4008,7 +4288,7 @@
         "Guided flow spacing"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-onboarding",
         "category-education"
@@ -4018,9 +4298,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/duolingo-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4032,7 +4312,12 @@
         "previewImages": [
           "/assets/apps/duolingo/screen-1.jpg",
           "/assets/apps/duolingo/screen-2.jpg",
-          "/assets/apps/duolingo/screen-3.jpg"
+          "/assets/apps/duolingo/screen-3.jpg",
+          "/assets/apps/duolingo/screen-4.jpg",
+          "/assets/apps/duolingo/screen-5.jpg",
+          "/assets/apps/duolingo/screen-6.jpg",
+          "/assets/apps/duolingo/screen-7.jpg",
+          "/assets/apps/duolingo/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4051,7 +4336,7 @@
       "sourceAppName": "Coursera",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/coursera/screen-1.png",
       "gallery": [
@@ -4059,7 +4344,7 @@
         "/assets/apps/coursera/screen-2.png",
         "/assets/apps/coursera/screen-3.png"
       ],
-      "includedScreens": 5,
+      "includedScreens": 6,
       "includedComponents": [
         "Welcome hero",
         "Preference picker",
@@ -4082,9 +4367,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 38,
-      "completenessScore": 33,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 68,
+      "completenessScore": 66,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/coursera-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4096,7 +4381,10 @@
         "previewImages": [
           "/assets/apps/coursera/screen-1.png",
           "/assets/apps/coursera/screen-2.png",
-          "/assets/apps/coursera/screen-3.png"
+          "/assets/apps/coursera/screen-3.png",
+          "/assets/apps/coursera/screen-4.png",
+          "/assets/apps/coursera/screen-5.png",
+          "/assets/publish-ready/apps/coursera/rescue-screen-1.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4115,7 +4403,7 @@
       "sourceAppName": "MasterClass",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/masterclass/screen-1.png",
       "gallery": [
@@ -4148,7 +4436,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/masterclass-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4160,7 +4448,12 @@
         "previewImages": [
           "/assets/apps/masterclass/screen-1.png",
           "/assets/apps/masterclass/screen-2.png",
-          "/assets/apps/masterclass/screen-3.png"
+          "/assets/apps/masterclass/screen-3.png",
+          "/assets/apps/masterclass/screen-4.png",
+          "/assets/apps/masterclass/screen-5.png",
+          "/assets/apps/masterclass/screen-6.png",
+          "/assets/apps/masterclass/screen-7.png",
+          "/assets/apps/masterclass/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4179,7 +4472,7 @@
       "sourceAppName": "Udemy",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/udemy/screen-1.jpg",
       "gallery": [
@@ -4212,7 +4505,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/udemy-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4224,7 +4517,12 @@
         "previewImages": [
           "/assets/apps/udemy/screen-1.jpg",
           "/assets/apps/udemy/screen-2.jpg",
-          "/assets/apps/udemy/screen-3.jpg"
+          "/assets/apps/udemy/screen-3.jpg",
+          "/assets/apps/udemy/screen-4.jpg",
+          "/assets/apps/udemy/screen-5.jpg",
+          "/assets/apps/udemy/screen-6.jpg",
+          "/assets/apps/udemy/screen-7.jpg",
+          "/assets/apps/udemy/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4243,7 +4541,7 @@
       "sourceAppName": "Khan Academy",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/khan-academy/screen-1.png",
       "gallery": [
@@ -4276,7 +4574,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/khan-academy-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4288,7 +4586,12 @@
         "previewImages": [
           "/assets/apps/khan-academy/screen-1.png",
           "/assets/apps/khan-academy/screen-2.png",
-          "/assets/apps/khan-academy/screen-3.png"
+          "/assets/apps/khan-academy/screen-3.png",
+          "/assets/apps/khan-academy/screen-4.png",
+          "/assets/apps/khan-academy/screen-5.png",
+          "/assets/apps/khan-academy/screen-6.png",
+          "/assets/apps/khan-academy/screen-7.png",
+          "/assets/apps/khan-academy/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4307,7 +4610,7 @@
       "sourceAppName": "Skillshare",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/skillshare/screen-1.png",
       "gallery": [
@@ -4340,7 +4643,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/skillshare-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4352,7 +4655,12 @@
         "previewImages": [
           "/assets/apps/skillshare/screen-1.png",
           "/assets/apps/skillshare/screen-2.png",
-          "/assets/apps/skillshare/screen-3.png"
+          "/assets/apps/skillshare/screen-3.png",
+          "/assets/apps/skillshare/screen-4.png",
+          "/assets/apps/skillshare/screen-5.png",
+          "/assets/apps/skillshare/screen-6.png",
+          "/assets/apps/skillshare/screen-7.png",
+          "/assets/apps/skillshare/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4371,7 +4679,7 @@
       "sourceAppName": "Babbel",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/babbel/screen-1.jpg",
       "gallery": [
@@ -4404,7 +4712,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/babbel-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4416,7 +4724,12 @@
         "previewImages": [
           "/assets/apps/babbel/screen-1.jpg",
           "/assets/apps/babbel/screen-2.jpg",
-          "/assets/apps/babbel/screen-3.jpg"
+          "/assets/apps/babbel/screen-3.jpg",
+          "/assets/apps/babbel/screen-4.jpg",
+          "/assets/apps/babbel/screen-5.jpg",
+          "/assets/apps/babbel/screen-6.jpg",
+          "/assets/apps/babbel/screen-7.jpg",
+          "/assets/apps/babbel/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4435,7 +4748,7 @@
       "sourceAppName": "The New York Times",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/the-new-york-times/screen-1.png",
       "gallery": [
@@ -4468,7 +4781,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/the-new-york-times-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4480,7 +4793,12 @@
         "previewImages": [
           "/assets/apps/the-new-york-times/screen-1.png",
           "/assets/apps/the-new-york-times/screen-2.png",
-          "/assets/apps/the-new-york-times/screen-3.png"
+          "/assets/apps/the-new-york-times/screen-3.png",
+          "/assets/apps/the-new-york-times/screen-4.png",
+          "/assets/apps/the-new-york-times/screen-5.png",
+          "/assets/apps/the-new-york-times/screen-6.png",
+          "/assets/apps/the-new-york-times/screen-7.png",
+          "/assets/apps/the-new-york-times/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4499,7 +4817,7 @@
       "sourceAppName": "BBC News",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/bbc-news/screen-1.png",
       "gallery": [
@@ -4532,7 +4850,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/bbc-news-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4544,7 +4862,12 @@
         "previewImages": [
           "/assets/apps/bbc-news/screen-1.png",
           "/assets/apps/bbc-news/screen-2.png",
-          "/assets/apps/bbc-news/screen-3.png"
+          "/assets/apps/bbc-news/screen-3.png",
+          "/assets/apps/bbc-news/screen-4.png",
+          "/assets/apps/bbc-news/screen-5.png",
+          "/assets/apps/bbc-news/screen-6.png",
+          "/assets/apps/bbc-news/screen-7.png",
+          "/assets/apps/bbc-news/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4563,15 +4886,15 @@
       "sourceAppName": "CNN",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/cnn/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/cnn/screen-1.jpg",
       "gallery": [
-        "/assets/apps/cnn/screen-1.jpg",
-        "/assets/apps/cnn/screen-2.jpg",
-        "/assets/apps/cnn/screen-3.jpg"
+        "/assets/publish-ready/apps/cnn/screen-1.jpg",
+        "/assets/publish-ready/apps/cnn/screen-2.jpg",
+        "/assets/publish-ready/apps/cnn/screen-3.jpg"
       ],
-      "includedScreens": 5,
+      "includedScreens": 6,
       "includedComponents": [
         "Search header",
         "Suggestion chip row",
@@ -4594,9 +4917,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 38,
-      "completenessScore": 33,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 68,
+      "completenessScore": 66,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/cnn-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4606,9 +4929,12 @@
         "artifactVersion": 1,
         "downloadFileName": "cnn-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/cnn/screen-1.jpg",
-          "/assets/apps/cnn/screen-2.jpg",
-          "/assets/apps/cnn/screen-3.jpg"
+          "/assets/publish-ready/apps/cnn/screen-1.jpg",
+          "/assets/publish-ready/apps/cnn/screen-2.jpg",
+          "/assets/publish-ready/apps/cnn/screen-3.jpg",
+          "/assets/publish-ready/apps/cnn/screen-4.jpg",
+          "/assets/publish-ready/apps/cnn/screen-5.jpg",
+          "/assets/publish-ready/apps/cnn/rescue-screen-1.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4627,13 +4953,13 @@
       "sourceAppName": "Reuters",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/reuters/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/reuters/screen-1.jpg",
       "gallery": [
-        "/assets/apps/reuters/screen-1.jpg",
-        "/assets/apps/reuters/screen-2.jpg",
-        "/assets/apps/reuters/screen-3.jpg"
+        "/assets/publish-ready/apps/reuters/screen-1.jpg",
+        "/assets/publish-ready/apps/reuters/screen-2.jpg",
+        "/assets/publish-ready/apps/reuters/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -4648,7 +4974,7 @@
         "Reading-friendly rhythm"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-search-discovery",
         "category-news"
@@ -4658,9 +4984,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/reuters-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4672,7 +4998,12 @@
         "previewImages": [
           "/assets/apps/reuters/screen-1.jpg",
           "/assets/apps/reuters/screen-2.jpg",
-          "/assets/apps/reuters/screen-3.jpg"
+          "/assets/apps/reuters/screen-3.jpg",
+          "/assets/apps/reuters/screen-4.jpg",
+          "/assets/apps/reuters/screen-5.jpg",
+          "/assets/apps/reuters/screen-6.jpg",
+          "/assets/apps/reuters/screen-7.jpg",
+          "/assets/apps/reuters/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4691,7 +5022,7 @@
       "sourceAppName": "Flipboard",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/flipboard/screen-1.png",
       "gallery": [
@@ -4724,7 +5055,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/flipboard-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4736,7 +5067,12 @@
         "previewImages": [
           "/assets/apps/flipboard/screen-1.png",
           "/assets/apps/flipboard/screen-2.png",
-          "/assets/apps/flipboard/screen-3.png"
+          "/assets/apps/flipboard/screen-3.png",
+          "/assets/apps/flipboard/screen-4.png",
+          "/assets/apps/flipboard/screen-5.png",
+          "/assets/apps/flipboard/screen-6.png",
+          "/assets/apps/flipboard/screen-7.png",
+          "/assets/apps/flipboard/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4755,7 +5091,7 @@
       "sourceAppName": "Substack",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
       "thumbnail": "/assets/apps/substack/screen-1.jpg",
       "gallery": [
@@ -4788,7 +5124,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/substack-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4800,7 +5136,12 @@
         "previewImages": [
           "/assets/apps/substack/screen-1.jpg",
           "/assets/apps/substack/screen-2.jpg",
-          "/assets/apps/substack/screen-3.jpg"
+          "/assets/apps/substack/screen-3.jpg",
+          "/assets/apps/substack/screen-4.jpg",
+          "/assets/apps/substack/screen-5.jpg",
+          "/assets/apps/substack/screen-6.jpg",
+          "/assets/apps/substack/screen-7.jpg",
+          "/assets/apps/substack/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4819,13 +5160,13 @@
       "sourceAppName": "Pocket",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "blocked",
+      "status": "published",
       "figmaFileKey": null,
-      "thumbnail": "/assets/apps/pocket/screen-1.jpg",
+      "thumbnail": "/assets/publish-ready/apps/pocket/screen-1.jpg",
       "gallery": [
-        "/assets/apps/pocket/screen-1.jpg",
-        "/assets/apps/pocket/screen-2.jpg",
-        "/assets/apps/pocket/screen-3.jpg"
+        "/assets/publish-ready/apps/pocket/screen-1.jpg",
+        "/assets/publish-ready/apps/pocket/screen-2.jpg",
+        "/assets/publish-ready/apps/pocket/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -4840,7 +5181,7 @@
         "Reading-friendly rhythm"
       ],
       "licenseTier": "Commercial",
-      "creditCost": 110,
+      "creditCost": 140,
       "bundleIds": [
         "flow-search-discovery",
         "category-news"
@@ -4850,9 +5191,9 @@
         "Do not mirror source branding, iconography, or raw layout one-for-one.",
         "Package the result as an editable Figma file with tokens, component variants, and usage notes."
       ],
-      "qualityScore": 70,
-      "completenessScore": 70,
-      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
+      "qualityScore": 96,
+      "completenessScore": 100,
+      "lastReviewedAt": "2026-04-04T16:36:36.186Z",
       "previewPath": "/kits/pocket-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4864,7 +5205,12 @@
         "previewImages": [
           "/assets/apps/pocket/screen-1.jpg",
           "/assets/apps/pocket/screen-2.jpg",
-          "/assets/apps/pocket/screen-3.jpg"
+          "/assets/apps/pocket/screen-3.jpg",
+          "/assets/apps/pocket/screen-4.jpg",
+          "/assets/apps/pocket/screen-5.jpg",
+          "/assets/apps/pocket/screen-6.jpg",
+          "/assets/apps/pocket/screen-7.jpg",
+          "/assets/apps/pocket/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
