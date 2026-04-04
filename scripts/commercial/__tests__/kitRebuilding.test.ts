@@ -85,6 +85,49 @@ describe('buildFigmaReconstructionPacket', () => {
     expect(packet.componentInventory).toEqual(['Hero', 'CTA']);
     expect(packet.tokenInventory).toEqual(['Primary', 'Neutral']);
   });
+
+  it('produces a done packet from direct source assets without Stitch input', () => {
+    const packet = buildFigmaReconstructionPacket({
+      productId: 'figma-kit:monzo',
+      kitSlug: 'monzo-figma-kit',
+      spec: {
+        componentAbstractions: ['Hero', 'CTA'],
+        colorStyles: ['Primary', 'Neutral'],
+      },
+      stitchRun: null,
+      directSource: {
+        generationSource: 'direct',
+        sourceAppSlug: 'monzo',
+        sourceFlowId: 'onboarding',
+        sourceAssetPaths: [
+          '/assets/apps/monzo/screen-1.png',
+          '/assets/apps/monzo/screen-2.png',
+        ],
+        sourceLabels: ['Welcome & Value Proposition', 'Permission Setup'],
+        transformationNotes: [
+          'Generalize brand-specific copy.',
+          'Keep the onboarding sequence but replace proprietary visuals.',
+        ],
+      },
+    });
+
+    expect(packet.reconstructionStatus).toBe('done');
+    expect(packet.generationSource).toBe('direct');
+    expect(packet.sourceAppSlug).toBe('monzo');
+    expect(packet.sourceFlowId).toBe('onboarding');
+    expect(packet.screenBlueprints).toHaveLength(2);
+    expect(packet.screenBlueprints[0]).toMatchObject({
+      screenId: 'monzo-source-screen-1',
+      sourceAssetPath: '/assets/apps/monzo/screen-1.png',
+      sourceAppSlug: 'monzo',
+      sourceFlowId: 'onboarding',
+      sourceLabel: 'Welcome & Value Proposition',
+    });
+    expect(packet.transformationNotes).toEqual([
+      'Generalize brand-specific copy.',
+      'Keep the onboarding sequence but replace proprietary visuals.',
+    ]);
+  });
 });
 
 describe('selectBestRun', () => {

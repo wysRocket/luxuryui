@@ -1,0 +1,133 @@
+{
+  "productId": "figma-kit:monzo",
+  "kitSlug": "monzo-figma-kit",
+  "figmaFileKey": null,
+  "pageOrder": [
+    "Cover",
+    "Flow",
+    "Components",
+    "Tokens",
+    "License"
+  ],
+  "screenBlueprints": [
+    {
+      "name": "Screen 1",
+      "screenId": "monzo-source-screen-1",
+      "htmlUrl": null,
+      "previewUrl": "/assets/apps/monzo/screen-1.png",
+      "sourceAssetPath": "/assets/apps/monzo/screen-1.png",
+      "sourceAppSlug": "monzo",
+      "sourceFlowId": "onboarding",
+      "sourceLabel": "Welcome & Value Proposition"
+    },
+    {
+      "name": "Screen 2",
+      "screenId": "monzo-source-screen-2",
+      "htmlUrl": null,
+      "previewUrl": "/assets/apps/monzo/screen-2.png",
+      "sourceAssetPath": "/assets/apps/monzo/screen-2.png",
+      "sourceAppSlug": "monzo",
+      "sourceFlowId": "onboarding",
+      "sourceLabel": "Permission Setup"
+    },
+    {
+      "name": "Screen 3",
+      "screenId": "monzo-source-screen-3",
+      "htmlUrl": null,
+      "previewUrl": "/assets/apps/monzo/screen-3.png",
+      "sourceAssetPath": "/assets/apps/monzo/screen-3.png",
+      "sourceAppSlug": "monzo",
+      "sourceFlowId": "onboarding",
+      "sourceLabel": "Personalization"
+    },
+    {
+      "name": "Screen 4",
+      "screenId": "monzo-source-screen-4",
+      "htmlUrl": null,
+      "previewUrl": "/assets/apps/monzo/screen-4.png",
+      "sourceAssetPath": "/assets/apps/monzo/screen-4.png",
+      "sourceAppSlug": "monzo",
+      "sourceFlowId": "onboarding",
+      "sourceLabel": "Activation Event"
+    },
+    {
+      "name": "Screen 5",
+      "screenId": "monzo-source-screen-5",
+      "htmlUrl": null,
+      "previewUrl": "/assets/apps/monzo/screen-5.png",
+      "sourceAssetPath": "/assets/apps/monzo/screen-5.png",
+      "sourceAppSlug": "monzo",
+      "sourceFlowId": "onboarding",
+      "sourceLabel": "Completion State"
+    },
+    {
+      "name": "Screen 6",
+      "screenId": "monzo-source-screen-6",
+      "htmlUrl": null,
+      "previewUrl": "/assets/apps/monzo/screen-6.png",
+      "sourceAssetPath": "/assets/apps/monzo/screen-6.png",
+      "sourceAppSlug": "monzo",
+      "sourceFlowId": "onboarding",
+      "sourceLabel": "Reference screen 6"
+    },
+    {
+      "name": "Screen 7",
+      "screenId": "monzo-source-screen-7",
+      "htmlUrl": null,
+      "previewUrl": "/assets/apps/monzo/screen-7.png",
+      "sourceAssetPath": "/assets/apps/monzo/screen-7.png",
+      "sourceAppSlug": "monzo",
+      "sourceFlowId": "onboarding",
+      "sourceLabel": "Reference screen 7"
+    },
+    {
+      "name": "Screen 8",
+      "screenId": "monzo-source-screen-8",
+      "htmlUrl": null,
+      "previewUrl": "/assets/apps/monzo/screen-8.png",
+      "sourceAssetPath": "/assets/apps/monzo/screen-8.png",
+      "sourceAppSlug": "monzo",
+      "sourceFlowId": "onboarding",
+      "sourceLabel": "Reference screen 8"
+    }
+  ],
+  "componentInventory": [
+    "Welcome hero",
+    "Preference picker",
+    "Progress tracker",
+    "Primary CTA footer"
+  ],
+  "tokenInventory": [
+    "Neutral finance palette",
+    "Data-heavy typography scale",
+    "Tight 8pt spacing grid"
+  ],
+  "generationSource": "direct",
+  "sourceAppSlug": "monzo",
+  "sourceFlowId": "onboarding",
+  "sourceAssetPaths": [
+    "/assets/apps/monzo/screen-1.png",
+    "/assets/apps/monzo/screen-2.png",
+    "/assets/apps/monzo/screen-3.png",
+    "/assets/apps/monzo/screen-4.png",
+    "/assets/apps/monzo/screen-5.png",
+    "/assets/apps/monzo/screen-6.png",
+    "/assets/apps/monzo/screen-7.png",
+    "/assets/apps/monzo/screen-8.png"
+  ],
+  "transformationNotes": [
+    "Transform Monzo reference patterns into an original onboarding kit with renamed UI copy and generalized components.",
+    "Do not mirror source branding, iconography, or raw layout one-for-one.",
+    "Package the result as an editable Figma file with tokens, component variants, and usage notes.",
+    "Replace brand-specific nouns with generalized product language.",
+    "Swap proprietary icon metaphors for neutral system metaphors.",
+    "Use placeholder but realistic content across all frames.",
+    "No direct reuse of source marketing copy.",
+    "Use generalized avatars, illustrations, and product names.",
+    "Keep tone premium, but not source-identical.",
+    "Approved for storefront merchandising as an original transformed kit."
+  ],
+  "reconstructionStatus": "done",
+  "nextAction": "publish-via-figma-workflow",
+  "reconstructedAt": "2026-04-04T16:36:36.153Z"
+}

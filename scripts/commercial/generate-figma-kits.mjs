@@ -9,6 +9,13 @@ const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, '../..');
 
 const qualityReportPath = path.join(projectRoot, 'data', 'curation', 'coverage', 'screensdesign-quality-report.json');
+const publishQualityReportPath = path.join(
+  projectRoot,
+  'data',
+  'curation',
+  'coverage',
+  'screensdesign-publish-quality-report.json'
+);
 const flowPacksPath = path.join(projectRoot, 'data', 'curation', 'flows', 'screensdesign-flow-packs.json');
 const stitchRunsPath = path.join(projectRoot, 'data', 'curation', 'commercial', 'generated-kit-runs.json');
 const outputDir = path.join(projectRoot, 'data', 'curation', 'commercial');
@@ -49,7 +56,15 @@ const CATEGORY_TOKENS = {
 };
 
 const sanitizeScreenshots = (slug, screenshotFiles = []) =>
-  screenshotFiles.map((file) => `/assets/apps/${slug}/${file.file}`);
+  screenshotFiles
+    .map((file) =>
+      typeof file?.publicPath === 'string'
+        ? file.publicPath
+        : file?.file
+          ? `/assets/apps/${slug}/${file.file}`
+          : null
+    )
+    .filter(Boolean);
 
 const scoreForStatus = (status, screenshotCount) => {
   if (status === 'pass') return Math.min(98, 88 + Math.min(screenshotCount, 8));
@@ -82,6 +97,30 @@ const creditCostForKit = (qualityScore, completenessScore, includedScreens) => {
 export const parseOnlyArg = (argv = process.argv.slice(2)) => {
   const onlyArg = argv.find((arg) => arg.startsWith('--only='));
   return onlyArg ? onlyArg.slice('--only='.length) : null;
+};
+
+export const deriveCommercialPublication = ({
+  isPackaged,
+  publishQualityStatus,
+  publishReadyForSale: publishReadySignal,
+  validScreenshotCount,
+}) => {
+  const publishReadyForSale =
+    typeof publishReadySignal === 'boolean'
+      ? publishReadySignal
+      : (
+          isPackaged &&
+          publishQualityStatus === 'pass' &&
+          Number.isFinite(validScreenshotCount) &&
+          validScreenshotCount >= 6
+        );
+
+  return {
+    status: publishReadyForSale ? 'published' : 'blocked',
+    reviewStatus: publishReadyForSale ? 'approved' : 'blocked',
+    publishReadyForSale,
+    completenessStatus: publishReadyForSale ? 'pass' : 'fail',
+  };
 };
 
 const readJsonIfExists = async (filePath, fallback) => {
@@ -136,6 +175,9 @@ export const buildGeneratedArtifactsBridge = ({
   productSlug,
   generatedAt,
   commercialReady,
+  publishQualityStatus = null,
+  publishReadyForSale = false,
+  publishAssetOrigin = null,
   exportPackageFileName,
   previewCount,
   latestRun,
@@ -151,25 +193,40 @@ export const buildGeneratedArtifactsBridge = ({
   };
 
   const rawStatus = latestRun?.generationStatus ?? 'pending';
+  const isSuccessfulRun = rawStatus === 'generated' || rawStatus === 'completed';
+  const isDirectReconstructionReady =
+    reconstruction?.generationSource === 'direct' &&
+    reconstruction?.reconstructionStatus === 'done';
   // Promote to 'packaged' when Stitch generation succeeded AND figma reconstruction is done.
   const generationStatus =
-    rawStatus === 'generated' && reconstruction?.reconstructionStatus === 'done'
+    ((isSuccessfulRun && reconstruction?.reconstructionStatus === 'done') || isDirectReconstructionReady)
       ? 'packaged'
       : rawStatus;
   const isArtifactReady = generationStatus === 'packaged';
+  const reconstructionSourceAssetPaths = reconstruction?.sourceAssetPaths?.length
+    ? reconstruction.sourceAssetPaths
+    : (reconstruction?.screenBlueprints ?? []).map((screen) => screen?.sourceAssetPath).filter(Boolean);
+  const generationSource = reconstruction?.generationSource ?? latestRun?.generationSource ?? null;
 
   return {
     kitSlug: productSlug,
     generatedAt: latestRun?.generatedAt ?? generatedAt,
-    stage: latestRun ? generationStatus : 'pending',
+    stage: latestRun || isDirectReconstructionReady ? generationStatus : 'pending',
     generationStatus,
+    generationSource,
     commercialReady: commercialReady && isArtifactReady,
+    publishQualityStatus,
+    publishReadyForSale: publishReadyForSale && isArtifactReady,
+    publishAssetOrigin,
     exportPackageFileName,
     previewCount,
     stitchProjectId: latestRun?.stitchProjectId ?? null,
     selectedScreenIds: latestRun?.selectedScreenIds ?? [],
     stitchHtmlFiles: latestRun?.stitchHtmlFiles ?? [],
     stitchPreviewImages: latestRun?.stitchPreviewImages ?? [],
+    sourceAssetPaths: reconstructionSourceAssetPaths ?? [],
+    sourceAppSlug: reconstruction?.sourceAppSlug ?? null,
+    sourceFlowId: reconstruction?.sourceFlowId ?? null,
     paths: relativePaths,
   };
 };
@@ -177,16 +234,26 @@ export const buildGeneratedArtifactsBridge = ({
 export const selectGeneratedArtifactsRun = (runs = []) => {
   const validRuns = runs.filter((run) => run && typeof run === 'object');
   const latestGeneratedRun = [...validRuns].reverse().find(
-    (run) => run.generationStatus === 'generated'
+    (run) => run.generationStatus === 'generated' || run.generationStatus === 'completed'
   );
 
   return latestGeneratedRun ?? validRuns.at(-1) ?? null;
 };
 
-export const run = async () => {
-  const only = parseOnlyArg(process.argv.slice(2));
-  const [qualityReport, flowPacks, stitchRuns] = await Promise.all([
+const getReconstructionPreviewImages = (reconstruction) => {
+  if (!reconstruction || reconstruction.reconstructionStatus !== 'done') {
+    return [];
+  }
+
+  return (reconstruction.screenBlueprints ?? [])
+    .map((screen) => screen?.previewUrl ?? screen?.sourceAssetPath ?? null)
+    .filter(Boolean);
+};
+
+export const run = async ({ only = parseOnlyArg(process.argv.slice(2)) } = {}) => {
+  const [qualityReport, publishQualityReport, flowPacks, stitchRuns] = await Promise.all([
     readFile(qualityReportPath, 'utf8').then((raw) => JSON.parse(raw)),
+    readJsonIfExists(publishQualityReportPath, null),
     readFile(flowPacksPath, 'utf8').then((raw) => JSON.parse(raw)),
     loadGeneratedStitchRuns(),
   ]);
@@ -216,6 +283,9 @@ export const run = async () => {
   }
 
   const qualityBySlug = new Map(qualityReport.apps.map((app) => [app.slug, app]));
+  const publishQualityBySlug = new Map(
+    (publishQualityReport?.apps ?? []).map((app) => [app.slug, app])
+  );
   const flowById = new Map(flowPacks.packs.map((pack) => [pack.flowId, pack]));
   const appFlowMap = new Map();
 
@@ -250,28 +320,45 @@ export const run = async () => {
     const sourceQuality = quality?.status ?? 'unknown';
     const screenshotFiles = quality?.screenshots?.files ?? [];
     const screenshotCount = quality?.screenshots?.validCount ?? 0;
+    const publishQuality = publishQualityBySlug.get(entry.slug) ?? null;
+    const publishQualityStatus = publishQuality?.status ?? sourceQuality;
+    const publishScreenshotFiles =
+      publishQuality?.screenshots?.files?.filter((file) => file?.status !== 'fail') ?? screenshotFiles;
+    const publishValidScreenshotCount =
+      publishQuality?.screenshots?.validCount ?? screenshotCount;
     const flowMatches = appFlowMap.get(entry.slug) ?? [];
     const primaryFlowId = flowMatches[0]?.flowId ?? DEFAULT_FLOW_BY_CATEGORY[entry.category] ?? 'onboarding';
     const primaryFlow = flowById.get(primaryFlowId);
-    const gallery = sanitizeScreenshots(entry.slug, screenshotFiles.slice(0, 3));
-    const includedScreens = Math.max(5, Math.min(8, screenshotCount || 5));
+    const gallery = sanitizeScreenshots(entry.slug, publishScreenshotFiles.slice(0, 3));
+    const includedScreens = Math.max(5, Math.min(8, publishValidScreenshotCount || 5));
     const includedComponents = FLOW_COMPONENTS[primaryFlowId] ?? FLOW_COMPONENTS.onboarding;
     const includedTokens = CATEGORY_TOKENS[entry.category] ?? CATEGORY_TOKENS.Business;
     const kitSlug = `${entry.slug}-figma-kit`;
     const reconstruction = reconstructionBySlug.get(kitSlug) ?? null;
     const latestStitchRun = selectGeneratedArtifactsRun(runsByKitSlug.get(kitSlug) ?? []);
+    const reconstructionPreviewImages = getReconstructionPreviewImages(reconstruction);
+    const hasSuccessfulStitchRun =
+      latestStitchRun?.generationStatus === 'generated' || latestStitchRun?.generationStatus === 'completed';
+    const hasDirectPacket =
+      reconstruction?.generationSource === 'direct' && reconstruction?.reconstructionStatus === 'done';
     // A kit is approved only when source quality passes AND the full generation pipeline
     // has completed (Stitch run succeeded + Figma reconstruction packet written).
     const isPackaged =
-      latestStitchRun?.generationStatus === 'generated' &&
-      reconstruction?.reconstructionStatus === 'done';
-    const isApproved = sourceQuality === 'pass' && screenshotCount >= 6 && isPackaged;
-    const status = isApproved ? 'published' : 'blocked';
-    const reviewStatus = isApproved ? 'approved' : 'blocked';
+      reconstruction?.reconstructionStatus === 'done' &&
+      (hasSuccessfulStitchRun || hasDirectPacket);
+    const publication = deriveCommercialPublication({
+      isPackaged,
+      publishQualityStatus,
+      publishReadyForSale: publishQuality?.publishReadyForSale,
+      validScreenshotCount: publishValidScreenshotCount,
+    });
+    const isApproved = publication.publishReadyForSale;
+    const status = publication.status;
+    const reviewStatus = publication.reviewStatus;
     const titleFlow = primaryFlow?.title?.replace(/\s+Flow$/i, '') ?? 'Flow';
     const title = `${entry.name} ${titleFlow} Figma Flow Kit`;
-    const qualityScore = scoreForStatus(sourceQuality, screenshotCount);
-    const completenessScore = completenessForStatus(sourceQuality, screenshotCount);
+    const qualityScore = scoreForStatus(publishQualityStatus, publishValidScreenshotCount);
+    const completenessScore = completenessForStatus(publishQualityStatus, publishValidScreenshotCount);
     const creditCost = creditCostForKit(qualityScore, completenessScore, includedScreens);
 
     products.push({
@@ -310,7 +397,9 @@ export const run = async () => {
         downloadFileName: `${kitSlug}-delivery-pack.json`,
         previewImages: latestStitchRun?.stitchPreviewImages?.length
           ? latestStitchRun.stitchPreviewImages
-          : gallery,
+          : reconstructionPreviewImages.length
+            ? reconstructionPreviewImages
+            : gallery,
         includes: [
           'Editable Figma flow file',
           'Cover and usage page',
@@ -379,6 +468,9 @@ export const run = async () => {
         productSlug: kitSlug,
         generatedAt,
         commercialReady: isApproved,
+        publishQualityStatus,
+        publishReadyForSale: isApproved,
+        publishAssetOrigin: publishQuality?.publishAssetOrigin ?? 'raw',
         exportPackageFileName: `${kitSlug}.fig`,
         previewCount: gallery.length,
         latestRun: latestStitchRun,
@@ -392,17 +484,20 @@ export const run = async () => {
       sourceAppSlug: entry.slug,
       reviewStatus,
       sourceQuality,
+      publishQualityStatus,
       originalityStatus: 'transformed',
-      completenessStatus: isApproved ? 'pass' : 'fail',
+      completenessStatus: publication.completenessStatus,
       provenanceStatus: quality ? 'linked' : 'missing',
       readyForSale: isApproved,
+      publishReadyForSale: isApproved,
+      publishAssetOrigin: publishQuality?.publishAssetOrigin ?? 'raw',
       legalNotes: [
         'Use source screenshots as research evidence only.',
         'Do not sell source screenshots or source-identical layouts as the deliverable.',
       ],
       editorialNotes: isApproved
         ? ['Approved for storefront merchandising as an original transformed kit.']
-        : ['Blocked until source quality and catalog readiness improve.'],
+        : ['Blocked until publish-quality assets and catalog readiness improve.'],
       reviewedAt: generatedAt,
     });
   }
