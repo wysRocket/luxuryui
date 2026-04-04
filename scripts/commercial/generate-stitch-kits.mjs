@@ -18,11 +18,46 @@ const generatedRunsPath = path.join(projectRoot, 'data', 'curation', 'commercial
 const STITCH_OUTPUT_DIRNAME = 'stitch';
 export const DEFAULT_DEVICE_TYPE = DEFAULT_STITCH_DEVICE_TYPE;
 
+// Default delay between kits (ms) — keeps us under Stitch rate limits.
+// Override with --delay=N (milliseconds).
+const DEFAULT_KIT_DELAY_MS = 10_000;
+
 const readJson = async (filePath) => JSON.parse(await readFile(filePath, 'utf8'));
+
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+const isQuotaError = (error) => {
+  const msg = error instanceof Error ? error.message : String(error);
+  return /resource.*exhausted|quota|rate.?limit|429/i.test(msg);
+};
+
+/**
+ * Retry an async fn with exponential backoff, specifically for quota/rate-limit errors.
+ * Non-quota errors are re-thrown immediately without retry.
+ */
+export const withRetry = async (fn, { maxAttempts = 3, baseDelayMs = 60_000, label = '' } = {}) => {
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    try {
+      return await fn();
+    } catch (error) {
+      if (!isQuotaError(error) || attempt === maxAttempts) throw error;
+      const delay = baseDelayMs * 2 ** (attempt - 1);
+      console.log(`\n    quota hit${label ? ` (${label})` : ''} — waiting ${delay / 1000}s before retry ${attempt + 1}/${maxAttempts}...`);
+      await sleep(delay);
+    }
+  }
+};
 
 export const parseOnlyArg = (argv) => {
   const onlyArg = argv.find((arg) => arg.startsWith('--only='));
   return onlyArg ? onlyArg.slice('--only='.length) : null;
+};
+
+export const parseSkipExistingFlag = (argv) => argv.includes('--skip-existing');
+
+export const parseDelayArg = (argv) => {
+  const flag = argv.find((a) => a.startsWith('--delay='));
+  return flag ? Number(flag.slice('--delay='.length)) : DEFAULT_KIT_DELAY_MS;
 };
 
 export const getEligibleKits = ({ products, specs, reviews, flowPacks, only }) => {
@@ -39,10 +74,14 @@ export const getEligibleKits = ({ products, specs, reviews, flowPacks, only }) =
       flow: flowById.get(product.primaryFlowId),
     }))
     .filter(({ product, spec, review, flow }) => {
+      // Gate: source asset quality must be 'pass' (good screenshots for design inspiration).
+      // We intentionally do NOT require product.status === 'published' or
+      // review.reviewStatus === 'approved' here — those come AFTER a successful
+      // Stitch run, so requiring them would create a circular dependency.
+      // product.status and review.reviewStatus are promoted by generate-figma-kits.mjs
+      // once reconstruction is complete.
       return (
-        product.status === 'published' &&
-        review?.reviewStatus === 'approved' &&
-        review?.readyForSale === true &&
+        (review?.sourceQuality === 'pass' || review?.sourceQuality === 'warn') &&
         Boolean(spec) &&
         Boolean(flow)
       );
@@ -216,6 +255,8 @@ export const collectGeneratedScreenArtifacts = async ({
 
 export const main = async () => {
   const only = parseOnlyArg(process.argv.slice(2));
+  const skipExisting = parseSkipExistingFlag(process.argv.slice(2));
+  const kitDelayMs = parseDelayArg(process.argv.slice(2));
   const [products, specs, reviews, flowPacks] = await Promise.all([
     readJson(productsPath),
     readJson(specsPath),
@@ -238,7 +279,19 @@ export const main = async () => {
   let ledgerState = await loadExistingLedger(generatedRunsPath);
   const failures = [];
 
+  // Build set of already-generated slugs for --skip-existing support.
+  const alreadyGeneratedSlugs = new Set(
+    (ledgerState?.runs ?? [])
+      .filter((r) => r.status === 'generated' || r.status === 'completed')
+      .map((r) => r.kitSlug)
+  );
+
   for (const { product, spec, flow } of eligibleKits) {
+    if (skipExisting && alreadyGeneratedSlugs.has(product.slug)) {
+      console.log(`  skipping ${product.slug} (already generated)`);
+      continue;
+    }
+    process.stdout.write(`  [${records.length + 1}/${eligibleKits.length}] ${product.slug} ... `);
     const artifactPaths = getKitArtifactPaths(product.slug, projectRoot);
     const stitchDir = await ensureDir(path.join(artifactPaths.generatedKitArtifactsDir, STITCH_OUTPUT_DIRNAME));
     const prompt = buildCommercialKitPrompt({
@@ -297,6 +350,7 @@ export const main = async () => {
         ledgerState,
         runRecord,
       });
+      console.log('blocked (STITCH_API_KEY not set)');
       failures.push(`${product.slug}: STITCH_API_KEY is not set. Export the key before running commercial:generate:stitch.`);
       continue;
     }
@@ -305,15 +359,20 @@ export const main = async () => {
     let projectId = null;
 
     try {
-      projectId = await client.createProject(product.title);
-      const project = client.project(projectId);
-      const screen = await project.generate(prompt, DEFAULT_DEVICE_TYPE);
-      const collectedArtifacts = await collectGeneratedScreenArtifacts({
-        client,
-        project,
-        baseScreen: screen,
-        targetScreenCount: getTargetScreenCount(spec.includedFrames),
-      });
+      const collectedArtifacts = await withRetry(
+        async () => {
+          projectId = await client.createProject(product.title);
+          const project = client.project(projectId);
+          const screen = await project.generate(prompt, DEFAULT_DEVICE_TYPE);
+          return collectGeneratedScreenArtifacts({
+            client,
+            project,
+            baseScreen: screen,
+            targetScreenCount: getTargetScreenCount(spec.includedFrames),
+          });
+        },
+        { maxAttempts: 3, baseDelayMs: 60_000, label: product.slug }
+      );
       const metadata = {
         ...baseMetadata,
         status: 'generated',
@@ -345,11 +404,13 @@ export const main = async () => {
         ledgerState,
         runRecord,
       });
+      console.log(`generated (${collectedArtifacts.selectedScreenIds.length} screens, project ${projectId})`);
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : String(error);
+      const errorStatus = isQuotaError(error) ? 'quota_error' : 'runtime_error';
       const failedMetadata = {
         ...baseMetadata,
-        status: 'runtime_error',
+        status: errorStatus,
         generationStatus: 'failed',
         stitchProjectId: projectId,
       };
@@ -364,7 +425,7 @@ export const main = async () => {
         kitSlug: product.slug,
         stitchDir,
         artifacts,
-        status: 'runtime_error',
+        status: errorStatus,
         metadata: failedMetadata,
         errorMessage,
       });
@@ -375,9 +436,15 @@ export const main = async () => {
         ledgerState,
         runRecord,
       });
+      console.log(`ERROR: ${errorMessage}`);
       failures.push(`${product.slug}: ${errorMessage}`);
     } finally {
       await client.close();
+    }
+
+    // Rate-limit guard: pause between kits to avoid quota exhaustion.
+    if (kitDelayMs > 0 && records.length < eligibleKits.length) {
+      await sleep(kitDelayMs);
     }
   }
 
