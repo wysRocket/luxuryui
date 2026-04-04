@@ -1,102 +1,81 @@
 import { describe, expect, it } from 'vitest';
 import { buildCommercialKitPrompt, buildStitchPrompt } from '../lib/stitchPromptBuilder.mjs';
 
+const BASE_INPUT = {
+  appName: 'Monzo',
+  flow: {
+    id: 'onboarding',
+    title: 'Onboarding Flow',
+    objective: 'Reduce time-to-value in the first session.',
+    steps: ['Welcome', 'Permissions', 'Activation'],
+  },
+  components: ['Welcome hero', 'Preference picker', 'Primary CTA footer'],
+  tokens: ['Neutral finance palette', 'Data-heavy typography scale', 'Tight 8pt spacing grid'],
+  bundleIds: ['flow-onboarding', 'category-finance'],
+};
+
 describe('buildStitchPrompt', () => {
   it('assembles deterministic sections from the kit context', () => {
-    const prompt = buildCommercialKitPrompt({
-      appName: 'Monzo',
-      flow: {
-        id: 'onboarding',
-        title: 'Onboarding Flow',
-        objective: 'Reduce time-to-value in the first session.',
-        steps: ['Welcome', 'Permissions', 'Activation'],
-      },
-      screenshots: [
-        '/assets/apps/monzo/screen-1.png',
-        '/assets/apps/monzo/screen-2.png',
-      ],
-      renameRules: [
-        'Replace brand-specific nouns with generalized product language.',
-        'Use placeholder but realistic content across all frames.',
-      ],
-      components: ['Welcome hero', 'Preference picker', 'Primary CTA footer'],
-      tokens: ['Neutral finance palette', 'Data-heavy typography scale', 'Tight 8pt spacing grid'],
-    });
+    const prompt = buildCommercialKitPrompt(BASE_INPUT);
 
-    expect(prompt).toContain('# App');
-    expect(prompt).toContain('Name: Monzo');
-    expect(prompt).toContain('# Flow');
-    expect(prompt).toContain('Objective: Reduce time-to-value in the first session.');
-    expect(prompt).toContain('Steps:\n1. Welcome\n2. Permissions\n3. Activation');
-    expect(prompt).toContain('# Reference Screenshots');
-    expect(prompt).toContain('- /assets/apps/monzo/screen-1.png');
-    expect(prompt).toContain('# Rename Rules');
-    expect(prompt).toContain('# Components To Reconstruct');
-    expect(prompt).toContain('# Design Tokens');
-    expect(prompt).toContain('Do not mirror source branding, icons, copy, or exact layouts.');
-    expect(prompt).toContain('Produce an original commercial-kit output that is safe to sell as a transformed kit.');
-    expect(prompt).toContain('Required output structure:');
-    expect(prompt).toContain('- Cover');
-    expect(prompt).toContain('- 6-8 transformed flow screens');
-    expect(prompt).toContain('- Shared component patterns');
-    expect(prompt).toContain('- Token direction');
-    expect(prompt).toMatchInlineSnapshot(`
-      "# App
-      Name: Monzo
-      
-      # Flow
-      ID: onboarding
-      Title: Onboarding Flow
-      Objective: Reduce time-to-value in the first session.
-      Steps:
-      1. Welcome
-      2. Permissions
-      3. Activation
-      
-      # Reference Screenshots
-      - /assets/apps/monzo/screen-1.png
-      - /assets/apps/monzo/screen-2.png
-      
-      # Rename Rules
-      - Replace brand-specific nouns with generalized product language.
-      - Use placeholder but realistic content across all frames.
-      - Do not mirror source branding, icons, copy, or exact layouts.
-      
-      # Components To Reconstruct
-      - Welcome hero
-      - Preference picker
-      - Primary CTA footer
-      
-      # Design Tokens
-      - Neutral finance palette
-      - Data-heavy typography scale
-      - Tight 8pt spacing grid
-      
-      # Required Output
-      Produce an original commercial-kit output that is safe to sell as a transformed kit.
-      Required output structure:
-      - Cover
-      - 6-8 transformed flow screens
-      - Shared component patterns
-      - Token direction"
-    `);
+    // Aesthetic direction must be present
+    expect(prompt).toContain('Monzo');
+    expect(prompt).toContain('finance');
+    expect(prompt).toContain('Onboarding Flow');
+
+    // Must name the components
+    expect(prompt).toContain('Welcome hero');
+    expect(prompt).toContain('Preference picker');
+
+    // Must use natural language structure (not spec headings)
+    expect(prompt).not.toContain('# App');
+    expect(prompt).not.toContain('# Reference Screenshots');
+    expect(prompt).not.toContain('# Required Output');
+
+    // Must include screen count and flow-specific blueprint
+    expect(prompt).toContain('6 distinct mobile screens');
+
+    // Must be safe — no raw brand name as product
+    expect(prompt).toContain('Monzo-style');
+    expect(prompt).toContain('fully transformed');
+  });
+
+  it('applies Finance-specific colour and mood direction', () => {
+    const prompt = buildCommercialKitPrompt(BASE_INPUT);
+    // Should reference finance aesthetic, not generic blue/dark
+    expect(prompt).toMatch(/trustworthy|data-confident|navy|slate/i);
+    expect(prompt).toMatch(/bloomberg|authoritative|data density/i);
+  });
+
+  it('applies Crypto-specific colour direction when category is Crypto', () => {
+    const prompt = buildCommercialKitPrompt({
+      ...BASE_INPUT,
+      bundleIds: ['flow-onboarding', 'category-crypto'],
+    });
+    expect(prompt).toMatch(/teal|violet|near-black|dark/i);
+    expect(prompt).toMatch(/trading terminal|high-contrast/i);
+  });
+
+  it('generates onboarding-flow screen blueprints in numbered order', () => {
+    const prompt = buildCommercialKitPrompt(BASE_INPUT);
+    expect(prompt).toContain('1.');
+    expect(prompt).toContain('2.');
+    expect(prompt).toMatch(/hero|welcome|value-proposition/i);
+    expect(prompt).toMatch(/personalisation|interest|chip/i);
+  });
+
+  it('generates checkout-flow screen blueprints when flow is checkout', () => {
+    const prompt = buildCommercialKitPrompt({
+      ...BASE_INPUT,
+      flow: { id: 'checkout', title: 'Checkout Flow', objective: '', steps: [] },
+      bundleIds: ['flow-checkout', 'category-shopping'],
+    });
+    expect(prompt).toMatch(/cart|checkout/i);
+    expect(prompt).toMatch(/payment|billing/i);
+    expect(prompt).toMatch(/warm|terracotta|amber/i); // Shopping palette
   });
 
   it('keeps buildStitchPrompt as a backward-compatible alias', () => {
-    const input = {
-      appName: 'Monzo',
-      flow: {
-        id: 'onboarding',
-        title: 'Onboarding Flow',
-        objective: 'Reduce time-to-value in the first session.',
-        steps: ['Welcome'],
-      },
-      screenshots: ['/assets/apps/monzo/screen-1.png'],
-      renameRules: ['Replace brand-specific nouns with generalized product language.'],
-      components: ['Welcome hero'],
-      tokens: ['Neutral finance palette'],
-    };
-
-    expect(buildStitchPrompt(input)).toBe(buildCommercialKitPrompt(input));
+    expect(buildStitchPrompt(BASE_INPUT)).toBe(buildCommercialKitPrompt(BASE_INPUT));
   });
 });
