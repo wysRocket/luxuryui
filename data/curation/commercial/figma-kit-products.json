@@ -1,11 +1,11 @@
 {
   "schema": "2",
-  "generatedAt": "2026-04-03T18:03:24.107Z",
+  "generatedAt": "2026-04-04T13:10:51.174Z",
   "summary": {
     "totalProducts": 76,
-    "publishedProducts": 33,
-    "blockedProducts": 43,
-    "flowsRepresented": 5
+    "publishedProducts": 1,
+    "blockedProducts": 75,
+    "flowsRepresented": 1
   },
   "products": [
     {
@@ -17,7 +17,7 @@
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
       "status": "published",
-      "figmaFileKey": "luxuryui/onboarding/monzo/v1",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/monzo/screen-1.png",
       "gallery": [
         "/assets/apps/monzo/screen-1.png",
@@ -49,12 +49,25 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:24.107Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/monzo-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "monzo-figma-kit.fig",
+        "previewImages": [
+          "https://lh3.googleusercontent.com/aida/ADBb0uiQH1jYq-YTH2PfZMr_QgT7c70VxBCtxym7jWtiOwXangd3ivbO4uUdKd0VltWOF36Bf3WDmFp8kTtSlrXYBVLf07whlxmkurw5UOpv1NlgIj-wQUF5Vuteo9eujAhSuHuMx9yMOd7rx0bzmq54nUHPqOxHHcxIwRil-1IlwYrT6CKdlahfG5kfnaIpdp5ttWNvqR8P8zv5eoTgIiBsiMyZVneV5Oehu-mB2uvkNd14O3YaLSOcSoaXTLc",
+          "https://lh3.googleusercontent.com/aida/ADBb0uh2z4leAArCPvzbwN6eH1qKi6C3SGCuqZnxUXKiFAXTbjLMpPP2Tn-Jv73xIoUEYPQ8QukUXJYIiZOR2IXblvtl6KrRrgsPnkQ0EJn1oJjmhN1jaSpeuSzS593acN8yx3aUL2l1QNM-eV2s6s8XqK_9-sKsDdb_6XaaPqnge1vg5BWzMf1fwfUo3X9882oQ1D3WtJQAEl-sIMzJdHFbXbDm2LnQRhQDUixNOtvA4fVjvwcigUMO5e6jQA",
+          "https://lh3.googleusercontent.com/aida/ADBb0uhKbQg7F34SeTIyEra_WPJ_F9J7-cIc4UrlfzfAAZ0Mj0aQaHJry9CJrTAo4r5CpBQ5XRtWWyKRyJ48ZKpOQ47XubqjEExW12Rvuj44Mga9OfY5CHxp2XTozsYhKH2iflagYW3qm2e3FYkloHwPa6DDh3aKeWcRjT7gA87Edb4Qch-7g-v3O_RtQP5IdmPNPqjbUOmYc2tz5pfAs2_mP1ChKzY1Fy1JmA3_460xhEaw8lKQuuRH8eCv",
+          "https://lh3.googleusercontent.com/aida/ADBb0ugXySf3sUao76W5yKca7J9j1SLF44AzLBy_YD44E-1vSIZEjPGuMhE-hMsn4GYws1D1NL7JvFf74IPbQzfBFrjwrXCjNpNkw1bU2Ccb5PVKCpsoLf2QszPv4wFBp3mwvdIvFfVFfbTG1r02cJASMdHKTnPF-FfFEz1a16Up0PkR5hDv0iGb_2kjoQ60e6Ev_m4vMm8XxT5-hj06CA4DVoJXOgu8bV0wch6vM8Om87E-OVw2fftcYU7KNI4",
+          "https://lh3.googleusercontent.com/aida/ADBb0uij5PY9vZGHAscDEFfQLyPQNAIQlL21AWGFFhSJ63i9HX_VYFe1nK6YnNvjPh4ugSH3kUlESOVO2YRCCRp8N3L5fhc3IFx0KhPWy0cDcaW7jiHgJcPHULI-C-n7g2Ze5sEdRW1G0tq24y-_L6T5UrcTnbsAUgj80YeJWyM4f_a7kQxsEBkQYjW9QcGR-WyjZ4EwBzTIMvgTrYF1Nvyr9o4cQMsU98EiXd4q1tTMbOQwxBPlK7aA64SzB7c",
+          "https://lh3.googleusercontent.com/aida/ADBb0uiAM-vf1k82lrSno8dIxzAR8XXiNK-JdMfIYlnssTUHt4f-RiU9kZPWX7HPsERsQTKwwxfz9kPX5ADnh7k9gr4sM6Sw0xttxhQC1qXriEjTyC_hTYhXknl04qXYYCCVY58Q4nGYSd3UwDk8hHfA7W7qEgICEbzZjD7oq8oPjVn_-hdGcFVSGmxlxQip4uoLRoIudKPaVbCcjFQY_Fg2Ncr7Qpubn6VllpoUl9VKOOnVd3lvD8pzj5uk1Q",
+          "https://lh3.googleusercontent.com/aida/ADBb0uh9teFVL8yBfLm1l7RgGwBTfKLGREJOj01TFmLiIsJCoK3t4qaY-RlfRV195i-mM8FYOG5sTKAFcszQ6NxHBGHybwIKlJEnWpitJA4cOw4kGNExiarc8arc4U9yHQgL907DV231m0MmqYvAWXkte50iiP82qpPKFuoGZhoVN2r4pJplHYHt5i1OBgi6yDUSGnYbTf9WT2UcgE0CYDjNMrRjcUAo4fW_kBhi3g4xjXREp_tnfJ5HHxh8JwE",
+          "https://lh3.googleusercontent.com/aida/ADBb0uiR6O6zG-JLfP2HCWbjdzx3bcKDFPBPpeEj7R8R3NWf7YkyIIX26Ym-Ob_x998py1tLZzVRXH4Tpa3G0c9h4ile_MrWzB88PfCV2Q76ZDrHClpthnd3D825mIAWyR0R0hHoHacmDrcsQZu3KzT3NgjSdzBV9Xhw6-PBlMLym1q7oWNhUJNw9TmGh2ODV3WZJP092tsk--8-CwMOTLcSVxQR3l9ouM81--u4XCp689NcvsxGYD6opuqr7_U"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -105,12 +118,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/revolut-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "revolut-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/revolut/screen-1.jpg",
+          "/assets/apps/revolut/screen-2.jpg",
+          "/assets/apps/revolut/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -161,12 +182,20 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/mint-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "mint-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/mint/screen-1.png",
+          "/assets/apps/mint/screen-2.png",
+          "/assets/apps/mint/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -184,8 +213,8 @@
       "sourceAppName": "Robinhood",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/onboarding/robinhood/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/robinhood/screen-1.png",
       "gallery": [
         "/assets/apps/robinhood/screen-1.png",
@@ -217,12 +246,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/robinhood-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "robinhood-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/robinhood/screen-1.png",
+          "/assets/apps/robinhood/screen-2.png",
+          "/assets/apps/robinhood/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -273,12 +310,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/paypal-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "paypal-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/paypal/screen-1.jpg",
+          "/assets/apps/paypal/screen-2.jpg",
+          "/assets/apps/paypal/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -296,8 +341,8 @@
       "sourceAppName": "Wallet",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/onboarding/wallet/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/wallet/screen-1.jpg",
       "gallery": [
         "/assets/apps/wallet/screen-1.jpg",
@@ -329,12 +374,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/wallet-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "wallet-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/wallet/screen-1.jpg",
+          "/assets/apps/wallet/screen-2.jpg",
+          "/assets/apps/wallet/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -352,8 +405,8 @@
       "sourceAppName": "Wealthfront",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/onboarding/wealthfront/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/wealthfront/screen-1.png",
       "gallery": [
         "/assets/apps/wealthfront/screen-1.png",
@@ -385,12 +438,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/wealthfront-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "wealthfront-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/wealthfront/screen-1.png",
+          "/assets/apps/wealthfront/screen-2.png",
+          "/assets/apps/wealthfront/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -441,12 +502,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/n26-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "n26-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/n26/screen-1.jpg",
+          "/assets/apps/n26/screen-2.jpg",
+          "/assets/apps/n26/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -497,12 +566,20 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/coinbase-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "coinbase-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/coinbase/screen-1.png",
+          "/assets/apps/coinbase/screen-2.png",
+          "/assets/apps/coinbase/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -553,12 +630,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/binance-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "binance-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/binance/screen-1.jpg",
+          "/assets/apps/binance/screen-2.jpg",
+          "/assets/apps/binance/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -609,12 +694,20 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/metamask-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "metamask-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/metamask/screen-1.jpg",
+          "/assets/apps/metamask/screen-2.jpg",
+          "/assets/apps/metamask/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -632,8 +725,8 @@
       "sourceAppName": "Kraken",
       "primaryFlowId": "account-settings",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/account-settings/kraken/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/kraken/screen-1.jpg",
       "gallery": [
         "/assets/apps/kraken/screen-1.jpg",
@@ -665,12 +758,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/kraken-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "kraken-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/kraken/screen-1.jpg",
+          "/assets/apps/kraken/screen-2.jpg",
+          "/assets/apps/kraken/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -721,12 +822,20 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/phantom-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "phantom-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/phantom/screen-1.jpg",
+          "/assets/apps/phantom/screen-2.jpg",
+          "/assets/apps/phantom/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -744,8 +853,8 @@
       "sourceAppName": "Uniswap",
       "primaryFlowId": "account-settings",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/account-settings/uniswap/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/uniswap/screen-1.jpg",
       "gallery": [
         "/assets/apps/uniswap/screen-1.jpg",
@@ -777,12 +886,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/uniswap-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "uniswap-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/uniswap/screen-1.jpg",
+          "/assets/apps/uniswap/screen-2.jpg",
+          "/assets/apps/uniswap/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -833,12 +950,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/ledger-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "ledger-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/ledger/screen-1.jpg",
+          "/assets/apps/ledger/screen-2.jpg",
+          "/assets/apps/ledger/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -856,8 +981,8 @@
       "sourceAppName": "Amazon",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/checkout/amazon/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/amazon/screen-1.jpg",
       "gallery": [
         "/assets/apps/amazon/screen-1.jpg",
@@ -889,12 +1014,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/amazon-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "amazon-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/amazon/screen-1.jpg",
+          "/assets/apps/amazon/screen-2.jpg",
+          "/assets/apps/amazon/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -945,12 +1078,20 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/ebay-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "ebay-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/ebay/screen-1.png",
+          "/assets/apps/ebay/screen-2.png",
+          "/assets/apps/ebay/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -1001,12 +1142,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/shopify-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "shopify-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/shopify/screen-1.jpg",
+          "/assets/apps/shopify/screen-2.jpg",
+          "/assets/apps/shopify/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -1024,8 +1173,8 @@
       "sourceAppName": "Etsy",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/checkout/etsy/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/etsy/screen-1.jpg",
       "gallery": [
         "/assets/apps/etsy/screen-1.jpg",
@@ -1057,12 +1206,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/etsy-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "etsy-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/etsy/screen-1.jpg",
+          "/assets/apps/etsy/screen-2.jpg",
+          "/assets/apps/etsy/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -1113,12 +1270,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/zara-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "zara-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/zara/screen-1.jpg",
+          "/assets/apps/zara/screen-2.jpg",
+          "/assets/apps/zara/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -1169,12 +1334,20 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/asos-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "asos-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/asos/screen-1.png",
+          "/assets/apps/asos/screen-2.png",
+          "/assets/apps/asos/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -1192,8 +1365,8 @@
       "sourceAppName": "Nike",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/checkout/nike/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/nike/screen-1.png",
       "gallery": [
         "/assets/apps/nike/screen-1.png",
@@ -1225,12 +1398,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/nike-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "nike-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/nike/screen-1.png",
+          "/assets/apps/nike/screen-2.png",
+          "/assets/apps/nike/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -1281,12 +1462,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/stockx-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "stockx-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/stockx/screen-1.jpg",
+          "/assets/apps/stockx/screen-2.jpg",
+          "/assets/apps/stockx/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -1337,12 +1526,20 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/instagram-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "instagram-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/instagram/screen-1.jpg",
+          "/assets/apps/instagram/screen-2.jpg",
+          "/assets/apps/instagram/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -1392,12 +1589,19 @@
       ],
       "qualityScore": 32,
       "completenessScore": 25,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/twitter-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "twitter-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/twitter/screen-1.png",
+          "/assets/apps/twitter/screen-2.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -1415,8 +1619,8 @@
       "sourceAppName": "LinkedIn",
       "primaryFlowId": "social-engagement",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/social-engagement/linkedin/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/linkedin/screen-1.png",
       "gallery": [
         "/assets/apps/linkedin/screen-1.png",
@@ -1448,12 +1652,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/linkedin-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "linkedin-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/linkedin/screen-1.png",
+          "/assets/apps/linkedin/screen-2.png",
+          "/assets/apps/linkedin/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -1471,8 +1683,8 @@
       "sourceAppName": "TikTok",
       "primaryFlowId": "social-engagement",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/social-engagement/tiktok/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/tiktok/screen-1.png",
       "gallery": [
         "/assets/apps/tiktok/screen-1.png",
@@ -1504,12 +1716,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/tiktok-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "tiktok-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/tiktok/screen-1.png",
+          "/assets/apps/tiktok/screen-2.png",
+          "/assets/apps/tiktok/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -1527,8 +1747,8 @@
       "sourceAppName": "Snapchat",
       "primaryFlowId": "social-engagement",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/social-engagement/snapchat/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/snapchat/screen-1.jpg",
       "gallery": [
         "/assets/apps/snapchat/screen-1.jpg",
@@ -1560,12 +1780,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/snapchat-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "snapchat-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/snapchat/screen-1.jpg",
+          "/assets/apps/snapchat/screen-2.jpg",
+          "/assets/apps/snapchat/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -1616,12 +1844,20 @@
       ],
       "qualityScore": 38,
       "completenessScore": 33,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/whatsapp-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "whatsapp-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/whatsapp/screen-1.png",
+          "/assets/apps/whatsapp/screen-2.png",
+          "/assets/apps/whatsapp/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -1672,12 +1908,20 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/threads-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "threads-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/threads/screen-1.jpg",
+          "/assets/apps/threads/screen-2.jpg",
+          "/assets/apps/threads/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -1728,12 +1972,20 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/bereal-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "bereal-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/bereal/screen-1.jpg",
+          "/assets/apps/bereal/screen-2.jpg",
+          "/assets/apps/bereal/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -1784,12 +2036,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/airbnb-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "airbnb-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/airbnb/screen-1.jpg",
+          "/assets/apps/airbnb/screen-2.jpg",
+          "/assets/apps/airbnb/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -1840,12 +2100,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/expedia-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "expedia-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/expedia/screen-1.jpg",
+          "/assets/apps/expedia/screen-2.jpg",
+          "/assets/apps/expedia/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -1896,12 +2164,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/hopper-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "hopper-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/hopper/screen-1.jpg",
+          "/assets/apps/hopper/screen-2.jpg",
+          "/assets/apps/hopper/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -1919,8 +2195,8 @@
       "sourceAppName": "Booking.com",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/checkout/booking-com/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/booking-com/screen-1.jpg",
       "gallery": [
         "/assets/apps/booking-com/screen-1.jpg",
@@ -1952,12 +2228,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/booking-com-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "booking-com-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/booking-com/screen-1.jpg",
+          "/assets/apps/booking-com/screen-2.jpg",
+          "/assets/apps/booking-com/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -1975,8 +2259,8 @@
       "sourceAppName": "Skyscanner",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/checkout/skyscanner/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/skyscanner/screen-1.png",
       "gallery": [
         "/assets/apps/skyscanner/screen-1.png",
@@ -2008,12 +2292,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/skyscanner-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "skyscanner-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/skyscanner/screen-1.png",
+          "/assets/apps/skyscanner/screen-2.png",
+          "/assets/apps/skyscanner/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -2031,8 +2323,8 @@
       "sourceAppName": "TripAdvisor",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/checkout/tripadvisor/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/tripadvisor/screen-1.png",
       "gallery": [
         "/assets/apps/tripadvisor/screen-1.png",
@@ -2064,12 +2356,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/tripadvisor-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "tripadvisor-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/tripadvisor/screen-1.png",
+          "/assets/apps/tripadvisor/screen-2.png",
+          "/assets/apps/tripadvisor/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -2120,12 +2420,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/kayak-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "kayak-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/kayak/screen-1.jpg",
+          "/assets/apps/kayak/screen-2.jpg",
+          "/assets/apps/kayak/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -2176,12 +2484,20 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/hoteltonight-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "hoteltonight-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/hoteltonight/screen-1.jpg",
+          "/assets/apps/hoteltonight/screen-2.jpg",
+          "/assets/apps/hoteltonight/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -2232,12 +2548,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/slack-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "slack-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/slack/screen-1.png",
+          "/assets/apps/slack/screen-2.png",
+          "/assets/apps/slack/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -2288,12 +2612,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/zoom-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "zoom-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/zoom/screen-1.jpg",
+          "/assets/apps/zoom/screen-2.jpg",
+          "/assets/apps/zoom/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -2344,12 +2676,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/trello-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "trello-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/trello/screen-1.jpg",
+          "/assets/apps/trello/screen-2.jpg",
+          "/assets/apps/trello/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -2400,12 +2740,20 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/notion-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "notion-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/notion/screen-1.png",
+          "/assets/apps/notion/screen-2.png",
+          "/assets/apps/notion/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -2456,12 +2804,20 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/asana-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "asana-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/asana/screen-1.jpg",
+          "/assets/apps/asana/screen-2.jpg",
+          "/assets/apps/asana/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -2512,12 +2868,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/monday-com-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "monday-com-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/monday-com/screen-1.png",
+          "/assets/apps/monday-com/screen-2.png",
+          "/assets/apps/monday-com/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -2568,12 +2932,20 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/linear-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "linear-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/linear/screen-1.png",
+          "/assets/apps/linear/screen-2.png",
+          "/assets/apps/linear/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -2624,12 +2996,20 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/loom-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "loom-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/loom/screen-1.jpg",
+          "/assets/apps/loom/screen-2.jpg",
+          "/assets/apps/loom/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -2647,8 +3027,8 @@
       "sourceAppName": "Headspace",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/onboarding/headspace/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/headspace/screen-1.png",
       "gallery": [
         "/assets/apps/headspace/screen-1.png",
@@ -2680,12 +3060,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/headspace-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "headspace-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/headspace/screen-1.png",
+          "/assets/apps/headspace/screen-2.png",
+          "/assets/apps/headspace/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -2703,8 +3091,8 @@
       "sourceAppName": "Calm",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/onboarding/calm/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/calm/screen-1.png",
       "gallery": [
         "/assets/apps/calm/screen-1.png",
@@ -2736,12 +3124,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/calm-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "calm-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/calm/screen-1.png",
+          "/assets/apps/calm/screen-2.png",
+          "/assets/apps/calm/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -2759,8 +3155,8 @@
       "sourceAppName": "Strava",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/onboarding/strava/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/strava/screen-1.jpg",
       "gallery": [
         "/assets/apps/strava/screen-1.jpg",
@@ -2792,12 +3188,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/strava-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "strava-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/strava/screen-1.jpg",
+          "/assets/apps/strava/screen-2.jpg",
+          "/assets/apps/strava/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -2815,8 +3219,8 @@
       "sourceAppName": "Nike Run Club",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/onboarding/nike-run-club/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/nike-run-club/screen-1.png",
       "gallery": [
         "/assets/apps/nike-run-club/screen-1.png",
@@ -2848,12 +3252,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/nike-run-club-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "nike-run-club-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/nike-run-club/screen-1.png",
+          "/assets/apps/nike-run-club/screen-2.png",
+          "/assets/apps/nike-run-club/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -2904,12 +3316,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/myfitnesspal-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "myfitnesspal-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/myfitnesspal/screen-1.jpg",
+          "/assets/apps/myfitnesspal/screen-2.jpg",
+          "/assets/apps/myfitnesspal/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -2960,12 +3380,20 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/fitbit-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "fitbit-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/fitbit/screen-1.jpg",
+          "/assets/apps/fitbit/screen-2.jpg",
+          "/assets/apps/fitbit/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -2983,8 +3411,8 @@
       "sourceAppName": "Flo",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/onboarding/flo/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/flo/screen-1.jpg",
       "gallery": [
         "/assets/apps/flo/screen-1.jpg",
@@ -3016,12 +3444,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/flo-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "flo-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/flo/screen-1.jpg",
+          "/assets/apps/flo/screen-2.jpg",
+          "/assets/apps/flo/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -3072,12 +3508,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/sleep-cycle-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "sleep-cycle-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/sleep-cycle/screen-1.jpg",
+          "/assets/apps/sleep-cycle/screen-2.jpg",
+          "/assets/apps/sleep-cycle/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -3095,8 +3539,8 @@
       "sourceAppName": "Spotify",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/search-discovery/spotify/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/spotify/screen-1.png",
       "gallery": [
         "/assets/apps/spotify/screen-1.png",
@@ -3128,12 +3572,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/spotify-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "spotify-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/spotify/screen-1.png",
+          "/assets/apps/spotify/screen-2.png",
+          "/assets/apps/spotify/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -3184,12 +3636,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/apple-music-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "apple-music-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/apple-music/screen-1.png",
+          "/assets/apps/apple-music/screen-2.png",
+          "/assets/apps/apple-music/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -3207,8 +3667,8 @@
       "sourceAppName": "SoundCloud",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/search-discovery/soundcloud/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/soundcloud/screen-1.png",
       "gallery": [
         "/assets/apps/soundcloud/screen-1.png",
@@ -3240,12 +3700,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/soundcloud-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "soundcloud-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/soundcloud/screen-1.png",
+          "/assets/apps/soundcloud/screen-2.png",
+          "/assets/apps/soundcloud/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -3296,12 +3764,20 @@
       ],
       "qualityScore": 36,
       "completenessScore": 30,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/tidal-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "tidal-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/tidal/screen-1.jpg",
+          "/assets/apps/tidal/screen-2.jpg",
+          "/assets/apps/tidal/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -3352,12 +3828,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/deezer-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "deezer-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/deezer/screen-1.jpg",
+          "/assets/apps/deezer/screen-2.jpg",
+          "/assets/apps/deezer/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -3375,8 +3859,8 @@
       "sourceAppName": "Pandora",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/search-discovery/pandora/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/pandora/screen-1.jpg",
       "gallery": [
         "/assets/apps/pandora/screen-1.jpg",
@@ -3408,12 +3892,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/pandora-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "pandora-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/pandora/screen-1.jpg",
+          "/assets/apps/pandora/screen-2.jpg",
+          "/assets/apps/pandora/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -3431,8 +3923,8 @@
       "sourceAppName": "Shazam",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/search-discovery/shazam/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/shazam/screen-1.png",
       "gallery": [
         "/assets/apps/shazam/screen-1.png",
@@ -3464,12 +3956,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/shazam-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "shazam-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/shazam/screen-1.png",
+          "/assets/apps/shazam/screen-2.png",
+          "/assets/apps/shazam/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -3520,12 +4020,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/duolingo-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "duolingo-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/duolingo/screen-1.jpg",
+          "/assets/apps/duolingo/screen-2.jpg",
+          "/assets/apps/duolingo/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -3576,12 +4084,20 @@
       ],
       "qualityScore": 38,
       "completenessScore": 33,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/coursera-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "coursera-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/coursera/screen-1.png",
+          "/assets/apps/coursera/screen-2.png",
+          "/assets/apps/coursera/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -3599,8 +4115,8 @@
       "sourceAppName": "MasterClass",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/onboarding/masterclass/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/masterclass/screen-1.png",
       "gallery": [
         "/assets/apps/masterclass/screen-1.png",
@@ -3632,12 +4148,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/masterclass-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "masterclass-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/masterclass/screen-1.png",
+          "/assets/apps/masterclass/screen-2.png",
+          "/assets/apps/masterclass/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -3655,8 +4179,8 @@
       "sourceAppName": "Udemy",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/onboarding/udemy/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/udemy/screen-1.jpg",
       "gallery": [
         "/assets/apps/udemy/screen-1.jpg",
@@ -3688,12 +4212,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/udemy-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "udemy-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/udemy/screen-1.jpg",
+          "/assets/apps/udemy/screen-2.jpg",
+          "/assets/apps/udemy/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -3711,8 +4243,8 @@
       "sourceAppName": "Khan Academy",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/onboarding/khan-academy/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/khan-academy/screen-1.png",
       "gallery": [
         "/assets/apps/khan-academy/screen-1.png",
@@ -3744,12 +4276,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/khan-academy-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "khan-academy-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/khan-academy/screen-1.png",
+          "/assets/apps/khan-academy/screen-2.png",
+          "/assets/apps/khan-academy/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -3767,8 +4307,8 @@
       "sourceAppName": "Skillshare",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/onboarding/skillshare/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/skillshare/screen-1.png",
       "gallery": [
         "/assets/apps/skillshare/screen-1.png",
@@ -3800,12 +4340,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/skillshare-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "skillshare-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/skillshare/screen-1.png",
+          "/assets/apps/skillshare/screen-2.png",
+          "/assets/apps/skillshare/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -3823,8 +4371,8 @@
       "sourceAppName": "Babbel",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/onboarding/babbel/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/babbel/screen-1.jpg",
       "gallery": [
         "/assets/apps/babbel/screen-1.jpg",
@@ -3856,12 +4404,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/babbel-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "babbel-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/babbel/screen-1.jpg",
+          "/assets/apps/babbel/screen-2.jpg",
+          "/assets/apps/babbel/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -3879,8 +4435,8 @@
       "sourceAppName": "The New York Times",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/search-discovery/the-new-york-times/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/the-new-york-times/screen-1.png",
       "gallery": [
         "/assets/apps/the-new-york-times/screen-1.png",
@@ -3912,12 +4468,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/the-new-york-times-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "the-new-york-times-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/the-new-york-times/screen-1.png",
+          "/assets/apps/the-new-york-times/screen-2.png",
+          "/assets/apps/the-new-york-times/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -3935,8 +4499,8 @@
       "sourceAppName": "BBC News",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/search-discovery/bbc-news/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/bbc-news/screen-1.png",
       "gallery": [
         "/assets/apps/bbc-news/screen-1.png",
@@ -3968,12 +4532,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/bbc-news-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "bbc-news-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/bbc-news/screen-1.png",
+          "/assets/apps/bbc-news/screen-2.png",
+          "/assets/apps/bbc-news/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -4024,12 +4596,20 @@
       ],
       "qualityScore": 38,
       "completenessScore": 33,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/cnn-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "cnn-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/cnn/screen-1.jpg",
+          "/assets/apps/cnn/screen-2.jpg",
+          "/assets/apps/cnn/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -4080,12 +4660,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/reuters-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "reuters-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/reuters/screen-1.jpg",
+          "/assets/apps/reuters/screen-2.jpg",
+          "/assets/apps/reuters/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -4103,8 +4691,8 @@
       "sourceAppName": "Flipboard",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/search-discovery/flipboard/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/flipboard/screen-1.png",
       "gallery": [
         "/assets/apps/flipboard/screen-1.png",
@@ -4136,12 +4724,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/flipboard-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "flipboard-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/flipboard/screen-1.png",
+          "/assets/apps/flipboard/screen-2.png",
+          "/assets/apps/flipboard/screen-3.png"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -4159,8 +4755,8 @@
       "sourceAppName": "Substack",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "luxuryui/search-discovery/substack/v1",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "/assets/apps/substack/screen-1.jpg",
       "gallery": [
         "/assets/apps/substack/screen-1.jpg",
@@ -4192,12 +4788,20 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/substack-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "substack-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/substack/screen-1.jpg",
+          "/assets/apps/substack/screen-2.jpg",
+          "/assets/apps/substack/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
@@ -4248,12 +4852,20 @@
       ],
       "qualityScore": 70,
       "completenessScore": 70,
-      "lastReviewedAt": "2026-04-03T18:03:07.698Z",
+      "lastReviewedAt": "2026-04-04T13:10:51.174Z",
       "previewPath": "/kits/pocket-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
         "format": "Figma file",
         "fulfillment": "Own-site delivery pack",
+        "artifactFormat": "figma-source-packet",
+        "artifactVersion": 1,
+        "downloadFileName": "pocket-figma-kit-delivery-pack.json",
+        "previewImages": [
+          "/assets/apps/pocket/screen-1.jpg",
+          "/assets/apps/pocket/screen-2.jpg",
+          "/assets/apps/pocket/screen-3.jpg"
+        ],
         "includes": [
           "Editable Figma flow file",
           "Cover and usage page",
