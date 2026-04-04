@@ -101,7 +101,7 @@ const addFetchedScreenshots = async ({ appName, missingScreenshots, outputDir, e
     }
 
     const ext = extFromUrl(screenshotUrl);
-    const tempName = `.__rescue_tmp__${Date.now()}_${added}${ext}`;
+    const tempName = `.__rescue_tmp__${Date.now()}_${Math.random().toString(36).slice(2, 11)}_${added}${ext}`;
     const tempPath = path.join(outputDir, tempName);
     await downloadImage(screenshotUrl, tempPath);
     const hash = await sha256(tempPath);

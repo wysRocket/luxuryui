@@ -36,16 +36,19 @@ const isQuotaError = (error) => {
  * Non-quota errors are re-thrown immediately without retry.
  */
 export const withRetry = async (fn, { maxAttempts = 3, baseDelayMs = 60_000, label = '' } = {}) => {
+  let lastError;
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
     try {
       return await fn();
     } catch (error) {
+      lastError = error;
       if (!isQuotaError(error) || attempt === maxAttempts) throw error;
       const delay = baseDelayMs * 2 ** (attempt - 1);
       console.log(`\n    quota hit${label ? ` (${label})` : ''} — waiting ${delay / 1000}s before retry ${attempt + 1}/${maxAttempts}...`);
       await sleep(delay);
     }
   }
+  throw lastError;
 };
 
 export const parseOnlyArg = (argv) => {
@@ -57,7 +60,9 @@ export const parseSkipExistingFlag = (argv) => argv.includes('--skip-existing');
 
 export const parseDelayArg = (argv) => {
   const flag = argv.find((a) => a.startsWith('--delay='));
-  return flag ? Number(flag.slice('--delay='.length)) : DEFAULT_KIT_DELAY_MS;
+  if (!flag) return DEFAULT_KIT_DELAY_MS;
+  const parsed = Number(flag.slice('--delay='.length));
+  return Number.isFinite(parsed) && parsed >= 0 ? parsed : DEFAULT_KIT_DELAY_MS;
 };
 
 export const getEligibleKits = ({ products, specs, reviews, flowPacks, only }) => {
@@ -74,8 +79,8 @@ export const getEligibleKits = ({ products, specs, reviews, flowPacks, only }) =
       flow: flowById.get(product.primaryFlowId),
     }))
     .filter(({ product, spec, review, flow }) => {
-      // Gate: source asset quality must be 'pass' (good screenshots for design inspiration).
-      // We intentionally do NOT require product.status === 'published' or
+      // Gate: source asset quality must be 'pass' or 'warn' (sufficient screenshots for design
+      // inspiration). We intentionally do NOT require product.status === 'published' or
       // review.reviewStatus === 'approved' here — those come AFTER a successful
       // Stitch run, so requiring them would create a circular dependency.
       // product.status and review.reviewStatus are promoted by generate-figma-kits.mjs
@@ -291,7 +296,8 @@ export const main = async () => {
       console.log(`  skipping ${product.slug} (already generated)`);
       continue;
     }
-    process.stdout.write(`  [${records.length + 1}/${eligibleKits.length}] ${product.slug} ... `);
+    const kitIndex = eligibleKits.findIndex(({ product: p }) => p.slug === product.slug) + 1;
+    process.stdout.write(`  [${kitIndex}/${eligibleKits.length}] ${product.slug} ... `);
     const artifactPaths = getKitArtifactPaths(product.slug, projectRoot);
     const stitchDir = await ensureDir(path.join(artifactPaths.generatedKitArtifactsDir, STITCH_OUTPUT_DIRNAME));
     const prompt = buildCommercialKitPrompt({
