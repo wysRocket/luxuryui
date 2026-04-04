@@ -122,34 +122,39 @@ export const run = async ({ only = parseOnlyArg() } = {}) => {
 
       await mkdir(publishDir, { recursive: true });
 
-      const pipeline = sharp(inputPath, { failOnError: false })
-        .rotate()
-        .resize({
-          width: targetSize.width,
-          height: targetSize.height,
-          fit: 'inside',
-          withoutEnlargement: false,
+      try {
+        const pipeline = sharp(inputPath, { failOnError: false })
+          .rotate()
+          .resize({
+            width: targetSize.width,
+            height: targetSize.height,
+            fit: 'inside',
+            withoutEnlargement: false,
+          });
+
+        await encodeImage(pipeline, path.extname(screenFile.file)).toFile(tempOutputPath);
+
+        if (tempOutputPath !== outputPath) {
+          await rename(tempOutputPath, outputPath);
+        }
+
+        results.push({
+          slug: app.slug,
+          file: screenFile.file,
+          inputPath: path.relative(projectRoot, inputPath),
+          outputPath: path.relative(projectRoot, outputPath),
+          publicPath: outputPublicPath,
+          sourcePublicPath,
+          sourceWidth: screenFile.width,
+          sourceHeight: screenFile.height,
+          targetWidth: targetSize.width,
+          targetHeight: targetSize.height,
         });
-
-      await encodeImage(pipeline, path.extname(screenFile.file)).toFile(tempOutputPath);
-
-      if (tempOutputPath !== outputPath) {
-        await rename(tempOutputPath, outputPath);
+        upscaledCount += 1;
+      } catch (error) {
+        console.warn(`Failed to upscale ${app.slug}/${screenFile.file}: ${error instanceof Error ? error.message : String(error)}`);
+        continue;
       }
-
-      results.push({
-        slug: app.slug,
-        file: screenFile.file,
-        inputPath,
-        outputPath,
-        publicPath: outputPublicPath,
-        sourcePublicPath,
-        sourceWidth: screenFile.width,
-        sourceHeight: screenFile.height,
-        targetWidth: targetSize.width,
-        targetHeight: targetSize.height,
-      });
-      upscaledCount += 1;
     }
 
     if (upscaledCount === 0) {

@@ -18,6 +18,7 @@ const publishQualityReportPath = path.join(
 );
 const flowPacksPath = path.join(projectRoot, 'data', 'curation', 'flows', 'screensdesign-flow-packs.json');
 const stitchRunsPath = path.join(projectRoot, 'data', 'curation', 'commercial', 'generated-kit-runs.json');
+const rubricPath = path.join(projectRoot, 'config', 'quality', 'asset-rubric.json');
 const outputDir = path.join(projectRoot, 'data', 'curation', 'commercial');
 
 const DEFAULT_FLOW_BY_CATEGORY = {
@@ -104,16 +105,19 @@ export const deriveCommercialPublication = ({
   publishQualityStatus,
   publishReadyForSale: publishReadySignal,
   validScreenshotCount,
+  minimumCount = 6,
 }) => {
-  const publishReadyForSale =
+  const assetReady =
     typeof publishReadySignal === 'boolean'
       ? publishReadySignal
       : (
-          isPackaged &&
           publishQualityStatus === 'pass' &&
           Number.isFinite(validScreenshotCount) &&
-          validScreenshotCount >= 6
+          validScreenshotCount >= minimumCount
         );
+
+  // Packaging is always required — asset readiness alone is not sufficient.
+  const publishReadyForSale = Boolean(isPackaged && assetReady);
 
   return {
     status: publishReadyForSale ? 'published' : 'blocked',
@@ -193,7 +197,9 @@ export const buildGeneratedArtifactsBridge = ({
   };
 
   const rawStatus = latestRun?.generationStatus ?? 'pending';
-  const isSuccessfulRun = rawStatus === 'generated' || rawStatus === 'completed';
+  // Normalize legacy 'completed' status to the canonical 'generated' value.
+  const normalizedStatus = rawStatus === 'completed' ? 'generated' : rawStatus;
+  const isSuccessfulRun = normalizedStatus === 'generated';
   const isDirectReconstructionReady =
     reconstruction?.generationSource === 'direct' &&
     reconstruction?.reconstructionStatus === 'done';
@@ -201,7 +207,7 @@ export const buildGeneratedArtifactsBridge = ({
   const generationStatus =
     ((isSuccessfulRun && reconstruction?.reconstructionStatus === 'done') || isDirectReconstructionReady)
       ? 'packaged'
-      : rawStatus;
+      : normalizedStatus;
   const isArtifactReady = generationStatus === 'packaged';
   const reconstructionSourceAssetPaths = reconstruction?.sourceAssetPaths?.length
     ? reconstruction.sourceAssetPaths
@@ -251,12 +257,14 @@ const getReconstructionPreviewImages = (reconstruction) => {
 };
 
 export const run = async ({ only = parseOnlyArg(process.argv.slice(2)) } = {}) => {
-  const [qualityReport, publishQualityReport, flowPacks, stitchRuns] = await Promise.all([
+  const [qualityReport, publishQualityReport, flowPacks, stitchRuns, rubric] = await Promise.all([
     readFile(qualityReportPath, 'utf8').then((raw) => JSON.parse(raw)),
     readJsonIfExists(publishQualityReportPath, null),
     readFile(flowPacksPath, 'utf8').then((raw) => JSON.parse(raw)),
     loadGeneratedStitchRuns(),
+    readJsonIfExists(rubricPath, null),
   ]);
+  const minimumScreenshotCount = rubric?.assets?.screenshots?.minimumCount ?? 6;
 
   // Load figma reconstruction packets to determine 'packaged' status.
   const reconstructionBySlug = new Map();
@@ -351,6 +359,7 @@ export const run = async ({ only = parseOnlyArg(process.argv.slice(2)) } = {}) =
       publishQualityStatus,
       publishReadyForSale: publishQuality?.publishReadyForSale,
       validScreenshotCount: publishValidScreenshotCount,
+      minimumCount: minimumScreenshotCount,
     });
     const isApproved = publication.publishReadyForSale;
     const status = publication.status;
