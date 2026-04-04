@@ -25,6 +25,7 @@
     "commercial:package": "npm run commercial:rebuild:figma && npm run build",
     "commercial:generate": "node scripts/commercial/generate-figma-kits.mjs",
     "commercial:readiness": "node scripts/commercial/validate-commercial-readiness.mjs",
+    "figma:publish": "node scripts/commercial/publish-to-figma.mjs",
     "pipeline:health": "node scripts/ci-pipeline-health.mjs",
     "firebase:login": "npx -y firebase-tools@latest login",
     "firebase:domain:help": "node scripts/firebase-domain-help.mjs",
