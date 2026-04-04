@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuxuryUI Kit Publisher</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, -apple-system, sans-serif;
+      background: #0a0a0a;
+      color: #f9fafb;
+      padding: 20px;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .logo {
+      width: 32px; height: 32px;
+      background: #c9a96e;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 14px; color: #000;
+    }
+    h1 { font-size: 16px; font-weight: 700; color: #fff; }
+    .subtitle { font-size: 12px; color: #6b7280; }
+    .card {
+      background: #111;
+      border: 1px solid #1f1f1f;
+      border-radius: 10px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+    .stat-row {
+      display: flex; gap: 12px; margin-bottom: 16px;
+    }
+    .stat {
+      flex: 1;
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 12px;
+      text-align: center;
+    }
+    .stat .value { font-size: 28px; font-weight: 700; color: #c9a96e; }
+    .stat .label { font-size: 11px; color: #6b7280; margin-top: 2px; }
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+    .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+    .btn-primary { background: #c9a96e; color: #000; }
+    .btn-secondary { background: #1a1a1a; color: #fff; border: 1px solid #2a2a2a; }
+    .btn + .btn { margin-top: 8px; }
+    .log {
+      background: #0a0a0a;
+      border: 1px solid #1f1f1f;
+      border-radius: 8px;
+      padding: 12px;
+      height: 180px;
+      overflow-y: auto;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 11px;
+      color: #9ca3af;
+    }
+    .log-entry { padding: 2px 0; }
+    .log-entry.success { color: #4ade80; }
+    .log-entry.error { color: #f87171; }
+    .log-entry.info { color: #60a5fa; }
+    .progress-bar-wrap {
+      background: #1a1a1a;
+      border-radius: 4px;
+      height: 6px;
+      margin: 12px 0 4px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      height: 100%;
+      background: #c9a96e;
+      border-radius: 4px;
+      transition: width 0.3s;
+      width: 0%;
+    }
+    .progress-label { font-size: 11px; color: #6b7280; text-align: right; }
+    .kit-list {
+      max-height: 120px;
+      overflow-y: auto;
+      margin-top: 8px;
+    }
+    .kit-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 0;
+      border-bottom: 1px solid #1a1a1a;
+      font-size: 11px;
+    }
+    .kit-item:last-child { border-bottom: none; }
+    .dot { width: 6px; height: 6px; border-radius: 50%; background: #6b7280; flex-shrink: 0; }
+    .dot.done { background: #4ade80; }
+    .dot.error { background: #f87171; }
+    .section-title {
+      font-size: 11px;
+      font-weight: 600;
+      color: #6b7280;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+    }
+    .server-note {
+      background: #1a1200;
+      border: 1px solid #3d2e00;
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 12px;
+      font-size: 12px;
+      color: #d97706;
+    }
+    .server-note code {
+      background: #2a1f00;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    #status-text { font-size: 12px; color: #6b7280; margin-top: 8px; min-height: 18px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">L</div>
+    <div>
+      <h1>LuxuryUI Kit Publisher</h1>
+      <div class="subtitle">Figma file generator for all 76 kits</div>
+    </div>
+  </div>
+
+  <div id="server-note" class="server-note" style="display:none">
+    ⚠️ Server not running. In your terminal: <code>npm run figma:publish</code>
+  </div>
+
+  <div class="stat-row">
+    <div class="stat">
+      <div class="value" id="stat-total">—</div>
+      <div class="label">Total kits</div>
+    </div>
+    <div class="stat">
+      <div class="value" id="stat-done" style="color:#4ade80">—</div>
+      <div class="label">Published</div>
+    </div>
+    <div class="stat">
+      <div class="value" id="stat-pending">—</div>
+      <div class="label">Pending</div>
+    </div>
+  </div>
+
+  <div class="progress-bar-wrap">
+    <div class="progress-bar" id="progress-bar"></div>
+  </div>
+  <div class="progress-label" id="progress-label">Loading...</div>
+
+  <div style="margin: 16px 0; display:flex; gap:8px">
+    <button class="btn btn-primary" id="btn-publish" disabled>Publish All Pending Kits</button>
+    <button class="btn btn-secondary" id="btn-refresh" style="width:auto; padding: 12px 16px;">↻</button>
+  </div>
+
+  <div id="status-text"></div>
+
+  <div class="card" style="margin-top:12px">
+    <div class="section-title">Activity Log</div>
+    <div class="log" id="log"></div>
+  </div>
+
+  <div class="card">
+    <div class="section-title">Kit Queue</div>
+    <div class="kit-list" id="kit-list">
+      <div style="color:#6b7280; font-size:12px">Loading kits...</div>
+    </div>
+  </div>
+
+  <script>
+    let kitsData = [];
+    let isRunning = false;
+
+    const log = (msg, type = '') => {
+      const el = document.getElementById('log');
+      const entry = document.createElement('div');
+      entry.className = `log-entry ${type}`;
+      entry.textContent = `${new Date().toLocaleTimeString()} ${msg}`;
+      el.appendChild(entry);
+      el.scrollTop = el.scrollHeight;
+    };
+
+    const setStatus = (msg) => {
+      document.getElementById('status-text').textContent = msg;
+    };
+
+    const updateStats = (total, done, pending) => {
+      document.getElementById('stat-total').textContent = total === undefined ? '—' : total;
+      document.getElementById('stat-done').textContent = done === undefined ? '—' : done;
+      document.getElementById('stat-pending').textContent = pending === undefined ? '—' : pending;
+      const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+      document.getElementById('progress-bar').style.width = `${pct}%`;
+      document.getElementById('progress-label').textContent = `${pct}% complete`;
+    };
+
+    const renderKitList = (kits, statusMap = {}) => {
+      const el = document.getElementById('kit-list');
+      if (!kits.length) {
+        el.innerHTML = '<div style="color:#4ade80; font-size:12px">✅ All kits published!</div>';
+        return;
+      }
+      el.innerHTML = kits.map(k => {
+        const s = statusMap[k.kitSlug] ?? 'pending';
+        const dotClass = s === 'done' ? 'done' : s === 'error' ? 'error' : '';
+        return `<div class="kit-item">
+          <div class="dot ${dotClass}"></div>
+          <span>${k.kitSlug}</span>
+        </div>`;
+      }).join('');
+    };
+
+    document.getElementById('btn-refresh').onclick = () => {
+      parent.postMessage({ pluginMessage: { type: 'fetch-kits' } }, '*');
+      parent.postMessage({ pluginMessage: { type: 'fetch-progress' } }, '*');
+    };
+
+    document.getElementById('btn-publish').onclick = () => {
+      if (isRunning || !kitsData.length) return;
+      isRunning = true;
+      document.getElementById('btn-publish').disabled = true;
+      document.getElementById('btn-publish').textContent = 'Publishing...';
+      log(`Starting publish of ${kitsData.length} kits...`, 'info');
+      parent.postMessage({ pluginMessage: { type: 'publish-kits', kits: kitsData } }, '*');
+    };
+
+    window.onmessage = (event) => {
+      const msg = event.data.pluginMessage;
+      if (!msg) return;
+
+      if (msg.type === 'kits-loaded') {
+        const { total, pending, done, kits } = msg.data;
+        kitsData = kits;
+        updateStats(total, done, pending);
+        renderKitList(kits);
+        document.getElementById('btn-publish').disabled = kits.length === 0;
+        document.getElementById('btn-publish').textContent =
+          kits.length === 0 ? '✅ All Published' : `Publish All ${kits.length} Pending Kits`;
+        document.getElementById('server-note').style.display = 'none';
+        log(`Loaded ${kits.length} pending kits`, 'info');
+      }
+
+      if (msg.type === 'progress-loaded') {
+        const { total, done, pending } = msg.data;
+        updateStats(total, done, pending);
+      }
+
+      if (msg.type === 'status') {
+        setStatus(msg.message);
+        log(msg.message);
+      }
+
+      if (msg.type === 'kit-done') {
+        log(`✅ ${msg.kitSlug} → ${msg.figmaFileKey}`, 'success');
+        // Update dot in list
+        const items = document.querySelectorAll('.kit-item');
+        items.forEach(item => {
+          if (item.textContent.includes(msg.kitSlug)) {
+            item.querySelector('.dot').className = 'dot done';
+          }
+        });
+        parent.postMessage({ pluginMessage: { type: 'fetch-progress' } }, '*');
+      }
+
+      if (msg.type === 'kit-error') {
+        log(`❌ ${msg.kitSlug}: ${msg.error}`, 'error');
+      }
+
+      if (msg.type === 'all-done') {
+        isRunning = false;
+        const ok = msg.results.filter(r => r.ok).length;
+        const fail = msg.results.filter(r => !r.ok).length;
+        setStatus(`Done: ${ok} published, ${fail} failed.`);
+        log(`All done — ${ok} published, ${fail} failed`, ok === msg.results.length ? 'success' : 'error');
+        document.getElementById('btn-publish').textContent = 'Publish All Pending Kits';
+        parent.postMessage({ pluginMessage: { type: 'fetch-progress' } }, '*');
+      }
+
+      if (msg.type === 'error') {
+        log(`⚠️ ${msg.message}`, 'error');
+        document.getElementById('server-note').style.display = 'block';
+        document.getElementById('btn-publish').disabled = false;
+        isRunning = false;
+      }
+    };
+
+    // Auto-load on open
+    parent.postMessage({ pluginMessage: { type: 'fetch-kits' } }, '*');
+    parent.postMessage({ pluginMessage: { type: 'fetch-progress' } }, '*');
+  </script>
+</body>
+</html>
