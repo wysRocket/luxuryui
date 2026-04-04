@@ -191,6 +191,9 @@ export interface KitSpec {
 
 export type GeneratedKitArtifactStage = "planned" | "pending" | "generated" | "packaged" | "ready" | "failed";
 export type GeneratedKitGenerationStatus = "pending" | "generated" | "packaged" | "failed";
+export type GeneratedKitSource = "stitch" | "direct";
+export type PublishQualityStatus = "pass" | "warn" | "fail" | "unknown";
+export type PublishAssetOrigin = "raw" | "upscaled" | "rescued";
 
 export interface GeneratedKitArtifactPaths {
   generatedArtifactsRootDir: string;
@@ -204,13 +207,20 @@ export interface GeneratedKitArtifacts {
   generatedAt: string;
   stage: GeneratedKitArtifactStage;
   generationStatus: GeneratedKitGenerationStatus;
+  generationSource?: GeneratedKitSource | null;
   commercialReady: boolean;
+  publishQualityStatus?: PublishQualityStatus | null;
+  publishReadyForSale?: boolean;
+  publishAssetOrigin?: PublishAssetOrigin | null;
   exportPackageFileName: string;
   previewCount: number;
   stitchProjectId?: string | null;
   selectedScreenIds?: string[];
   stitchHtmlFiles?: string[];
   stitchPreviewImages?: string[];
+  sourceAssetPaths?: string[];
+  sourceAppSlug?: string | null;
+  sourceFlowId?: string | null;
   paths: GeneratedKitArtifactPaths;
 }
 
@@ -219,11 +229,14 @@ export interface CommercialReview {
   productSlug: string;
   sourceAppSlug: string;
   reviewStatus: "approved" | "blocked";
-  sourceQuality: "pass" | "warn" | "fail" | "unknown";
+  sourceQuality: PublishQualityStatus;
+  publishQualityStatus?: PublishQualityStatus;
   originalityStatus: "transformed" | "too-close" | "needs-review";
   completenessStatus: "pass" | "fail";
   provenanceStatus: "linked" | "partial" | "missing";
   readyForSale: boolean;
+  publishReadyForSale?: boolean;
+  publishAssetOrigin?: PublishAssetOrigin;
   legalNotes: string[];
   editorialNotes: string[];
   reviewedAt: string;

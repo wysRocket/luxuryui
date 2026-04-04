@@ -58,7 +58,9 @@ export const selectBestRun = (ledgerRecords) => {
   const successful = ledgerRecords.filter(
     (r) =>
       r?.generationStatus === 'generated' ||
+      r?.generationStatus === 'completed' ||
       r?.status === 'generated' ||
+      r?.status === 'completed' ||
       r?.status === 'success'
   );
   if (successful.length === 0) return null;
@@ -123,16 +125,38 @@ const main = async () => {
 
     const spec = specsMap[productId] ?? null;
     const bestRun = selectBestRun(ledgerBySlug[kitSlug] ?? []);
+    const directSource =
+      manifest.generatedArtifacts?.generationSource === 'direct'
+        ? {
+            generationSource: 'direct',
+            sourceAppSlug: manifest.generatedArtifacts?.sourceAppSlug ?? null,
+            sourceFlowId: manifest.generatedArtifacts?.sourceFlowId ?? null,
+            sourceAssetPaths: manifest.generatedArtifacts?.sourceAssetPaths ?? [],
+            sourceLabels: manifest.pageBlueprints?.find((page) => page.name === 'Flow')?.contents ?? [],
+            transformationNotes: [
+              ...(spec?.renameRules ?? []),
+              ...(spec?.placeholderContentPolicy ?? []),
+            ],
+          }
+        : null;
 
     const artifactPaths = getKitArtifactPaths(kitSlug, projectRoot);
     const figmaDir = path.join(artifactPaths.generatedKitArtifactsDir, 'figma');
     await ensureDir(figmaDir);
 
-    const packet = buildFigmaReconstructionPacket({ productId, kitSlug, spec, stitchRun: bestRun });
+    const packet = buildFigmaReconstructionPacket({
+      productId,
+      kitSlug,
+      spec,
+      stitchRun: bestRun,
+      directSource,
+    });
     const packetPath = path.join(figmaDir, 'reconstruction.json');
     await writeFile(packetPath, `${JSON.stringify(packet, null, 2)}\n`);
 
-    const stitchPreviewImages = bestRun?.stitchPreviewImages ?? [];
+    const stitchPreviewImages = (packet.screenBlueprints ?? [])
+      .map((screen) => screen?.previewUrl ?? screen?.sourceAssetPath ?? null)
+      .filter(Boolean);
     const deliveryManifest = buildDeliveryManifest({
       kitSlug,
       figmaSourceFiles: [path.relative(projectRoot, packetPath)],

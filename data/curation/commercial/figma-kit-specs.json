@@ -1,11 +1,11 @@
 {
   "schema": "1",
-  "generatedAt": "2026-04-04T13:10:51.174Z",
+  "generatedAt": "2026-04-04T16:36:36.186Z",
   "summary": {
     "totalProducts": 76,
-    "publishedProducts": 1,
-    "blockedProducts": 75,
-    "flowsRepresented": 1
+    "publishedProducts": 76,
+    "blockedProducts": 0,
+    "flowsRepresented": 6
   },
   "kitSpecs": [
     {
@@ -133,9 +133,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/revolut/screen-1.jpg",
-        "/assets/apps/revolut/screen-2.jpg",
-        "/assets/apps/revolut/screen-3.jpg"
+        "/assets/publish-ready/apps/revolut/screen-1.jpg",
+        "/assets/publish-ready/apps/revolut/screen-2.jpg",
+        "/assets/publish-ready/apps/revolut/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -336,9 +336,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/paypal/screen-1.jpg",
-        "/assets/apps/paypal/screen-2.jpg",
-        "/assets/apps/paypal/screen-3.jpg"
+        "/assets/publish-ready/apps/paypal/screen-1.jpg",
+        "/assets/publish-ready/apps/paypal/screen-2.jpg",
+        "/assets/publish-ready/apps/paypal/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -540,9 +540,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/n26/screen-1.jpg",
-        "/assets/apps/n26/screen-2.jpg",
-        "/assets/apps/n26/screen-3.jpg"
+        "/assets/publish-ready/apps/n26/screen-1.jpg",
+        "/assets/publish-ready/apps/n26/screen-2.jpg",
+        "/assets/publish-ready/apps/n26/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -675,9 +675,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/binance/screen-1.jpg",
-        "/assets/apps/binance/screen-2.jpg",
-        "/assets/apps/binance/screen-3.jpg"
+        "/assets/publish-ready/apps/binance/screen-1.jpg",
+        "/assets/publish-ready/apps/binance/screen-2.jpg",
+        "/assets/publish-ready/apps/binance/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -742,9 +742,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/metamask/screen-1.jpg",
-        "/assets/apps/metamask/screen-2.jpg",
-        "/assets/apps/metamask/screen-3.jpg"
+        "/assets/publish-ready/apps/metamask/screen-1.jpg",
+        "/assets/publish-ready/apps/metamask/screen-2.jpg",
+        "/assets/publish-ready/apps/metamask/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -1013,9 +1013,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/ledger/screen-1.jpg",
-        "/assets/apps/ledger/screen-2.jpg",
-        "/assets/apps/ledger/screen-3.jpg"
+        "/assets/publish-ready/apps/ledger/screen-1.jpg",
+        "/assets/publish-ready/apps/ledger/screen-2.jpg",
+        "/assets/publish-ready/apps/ledger/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -1215,9 +1215,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/shopify/screen-1.jpg",
-        "/assets/apps/shopify/screen-2.jpg",
-        "/assets/apps/shopify/screen-3.jpg"
+        "/assets/publish-ready/apps/shopify/screen-1.jpg",
+        "/assets/publish-ready/apps/shopify/screen-2.jpg",
+        "/assets/publish-ready/apps/shopify/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -1351,9 +1351,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/zara/screen-1.jpg",
-        "/assets/apps/zara/screen-2.jpg",
-        "/assets/apps/zara/screen-3.jpg"
+        "/assets/publish-ready/apps/zara/screen-1.jpg",
+        "/assets/publish-ready/apps/zara/screen-2.jpg",
+        "/assets/publish-ready/apps/zara/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -1553,9 +1553,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/stockx/screen-1.jpg",
-        "/assets/apps/stockx/screen-2.jpg",
-        "/assets/apps/stockx/screen-3.jpg"
+        "/assets/publish-ready/apps/stockx/screen-1.jpg",
+        "/assets/publish-ready/apps/stockx/screen-2.jpg",
+        "/assets/publish-ready/apps/stockx/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -1644,6 +1644,7 @@
         "Transformed screen 3",
         "Transformed screen 4",
         "Transformed screen 5",
+        "Transformed screen 6",
         "Component set",
         "Style tokens",
         "Usage notes"
@@ -1686,7 +1687,8 @@
       ],
       "previewImages": [
         "/assets/apps/twitter/screen-1.png",
-        "/assets/apps/twitter/screen-2.png"
+        "/assets/apps/twitter/screen-2.png",
+        "/assets/publish-ready/apps/twitter/rescue-screen-1.png"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -1912,6 +1914,7 @@
         "Transformed screen 3",
         "Transformed screen 4",
         "Transformed screen 5",
+        "Transformed screen 6",
         "Component set",
         "Style tokens",
         "Usage notes"
@@ -2019,9 +2022,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/threads/screen-1.jpg",
-        "/assets/apps/threads/screen-2.jpg",
-        "/assets/apps/threads/screen-3.jpg"
+        "/assets/publish-ready/apps/threads/screen-1.jpg",
+        "/assets/publish-ready/apps/threads/screen-2.jpg",
+        "/assets/publish-ready/apps/threads/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -2085,9 +2088,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/bereal/screen-1.jpg",
-        "/assets/apps/bereal/screen-2.jpg",
-        "/assets/apps/bereal/screen-3.jpg"
+        "/assets/publish-ready/apps/bereal/screen-1.jpg",
+        "/assets/publish-ready/apps/bereal/screen-2.jpg",
+        "/assets/publish-ready/apps/bereal/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -2153,9 +2156,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/airbnb/screen-1.jpg",
-        "/assets/apps/airbnb/screen-2.jpg",
-        "/assets/apps/airbnb/screen-3.jpg"
+        "/assets/publish-ready/apps/airbnb/screen-1.jpg",
+        "/assets/publish-ready/apps/airbnb/screen-2.jpg",
+        "/assets/publish-ready/apps/airbnb/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -2221,9 +2224,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/expedia/screen-1.jpg",
-        "/assets/apps/expedia/screen-2.jpg",
-        "/assets/apps/expedia/screen-3.jpg"
+        "/assets/publish-ready/apps/expedia/screen-1.jpg",
+        "/assets/publish-ready/apps/expedia/screen-2.jpg",
+        "/assets/publish-ready/apps/expedia/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -2289,9 +2292,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/hopper/screen-1.jpg",
-        "/assets/apps/hopper/screen-2.jpg",
-        "/assets/apps/hopper/screen-3.jpg"
+        "/assets/publish-ready/apps/hopper/screen-1.jpg",
+        "/assets/publish-ready/apps/hopper/screen-2.jpg",
+        "/assets/publish-ready/apps/hopper/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -2561,9 +2564,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/kayak/screen-1.jpg",
-        "/assets/apps/kayak/screen-2.jpg",
-        "/assets/apps/kayak/screen-3.jpg"
+        "/assets/publish-ready/apps/kayak/screen-1.jpg",
+        "/assets/publish-ready/apps/kayak/screen-2.jpg",
+        "/assets/publish-ready/apps/kayak/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -2628,9 +2631,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/hoteltonight/screen-1.jpg",
-        "/assets/apps/hoteltonight/screen-2.jpg",
-        "/assets/apps/hoteltonight/screen-3.jpg"
+        "/assets/publish-ready/apps/hoteltonight/screen-1.jpg",
+        "/assets/publish-ready/apps/hoteltonight/screen-2.jpg",
+        "/assets/publish-ready/apps/hoteltonight/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -2764,9 +2767,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/zoom/screen-1.jpg",
-        "/assets/apps/zoom/screen-2.jpg",
-        "/assets/apps/zoom/screen-3.jpg"
+        "/assets/publish-ready/apps/zoom/screen-1.jpg",
+        "/assets/publish-ready/apps/zoom/screen-2.jpg",
+        "/assets/publish-ready/apps/zoom/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -2832,9 +2835,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/trello/screen-1.jpg",
-        "/assets/apps/trello/screen-2.jpg",
-        "/assets/apps/trello/screen-3.jpg"
+        "/assets/publish-ready/apps/trello/screen-1.jpg",
+        "/assets/publish-ready/apps/trello/screen-2.jpg",
+        "/assets/publish-ready/apps/trello/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -2966,9 +2969,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/asana/screen-1.jpg",
-        "/assets/apps/asana/screen-2.jpg",
-        "/assets/apps/asana/screen-3.jpg"
+        "/assets/publish-ready/apps/asana/screen-1.jpg",
+        "/assets/publish-ready/apps/asana/screen-2.jpg",
+        "/assets/publish-ready/apps/asana/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -3167,9 +3170,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/loom/screen-1.jpg",
-        "/assets/apps/loom/screen-2.jpg",
-        "/assets/apps/loom/screen-3.jpg"
+        "/assets/publish-ready/apps/loom/screen-1.jpg",
+        "/assets/publish-ready/apps/loom/screen-2.jpg",
+        "/assets/publish-ready/apps/loom/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -3507,9 +3510,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/myfitnesspal/screen-1.jpg",
-        "/assets/apps/myfitnesspal/screen-2.jpg",
-        "/assets/apps/myfitnesspal/screen-3.jpg"
+        "/assets/publish-ready/apps/myfitnesspal/screen-1.jpg",
+        "/assets/publish-ready/apps/myfitnesspal/screen-2.jpg",
+        "/assets/publish-ready/apps/myfitnesspal/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -3709,9 +3712,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/sleep-cycle/screen-1.jpg",
-        "/assets/apps/sleep-cycle/screen-2.jpg",
-        "/assets/apps/sleep-cycle/screen-3.jpg"
+        "/assets/publish-ready/apps/sleep-cycle/screen-1.jpg",
+        "/assets/publish-ready/apps/sleep-cycle/screen-2.jpg",
+        "/assets/publish-ready/apps/sleep-cycle/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -3937,6 +3940,7 @@
         "Transformed screen 3",
         "Transformed screen 4",
         "Transformed screen 5",
+        "Transformed screen 6",
         "Component set",
         "Style tokens",
         "Usage notes"
@@ -4046,9 +4050,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/deezer/screen-1.jpg",
-        "/assets/apps/deezer/screen-2.jpg",
-        "/assets/apps/deezer/screen-3.jpg"
+        "/assets/publish-ready/apps/deezer/screen-1.jpg",
+        "/assets/publish-ready/apps/deezer/screen-2.jpg",
+        "/assets/publish-ready/apps/deezer/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -4250,9 +4254,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/duolingo/screen-1.jpg",
-        "/assets/apps/duolingo/screen-2.jpg",
-        "/assets/apps/duolingo/screen-3.jpg"
+        "/assets/publish-ready/apps/duolingo/screen-1.jpg",
+        "/assets/publish-ready/apps/duolingo/screen-2.jpg",
+        "/assets/publish-ready/apps/duolingo/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -4274,6 +4278,7 @@
         "Transformed screen 3",
         "Transformed screen 4",
         "Transformed screen 5",
+        "Transformed screen 6",
         "Component set",
         "Style tokens",
         "Usage notes"
@@ -4815,6 +4820,7 @@
         "Transformed screen 3",
         "Transformed screen 4",
         "Transformed screen 5",
+        "Transformed screen 6",
         "Component set",
         "Style tokens",
         "Usage notes"
@@ -4856,9 +4862,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/cnn/screen-1.jpg",
-        "/assets/apps/cnn/screen-2.jpg",
-        "/assets/apps/cnn/screen-3.jpg"
+        "/assets/publish-ready/apps/cnn/screen-1.jpg",
+        "/assets/publish-ready/apps/cnn/screen-2.jpg",
+        "/assets/publish-ready/apps/cnn/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -4924,9 +4930,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/reuters/screen-1.jpg",
-        "/assets/apps/reuters/screen-2.jpg",
-        "/assets/apps/reuters/screen-3.jpg"
+        "/assets/publish-ready/apps/reuters/screen-1.jpg",
+        "/assets/publish-ready/apps/reuters/screen-2.jpg",
+        "/assets/publish-ready/apps/reuters/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",
@@ -5128,9 +5134,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/pocket/screen-1.jpg",
-        "/assets/apps/pocket/screen-2.jpg",
-        "/assets/apps/pocket/screen-3.jpg"
+        "/assets/publish-ready/apps/pocket/screen-1.jpg",
+        "/assets/publish-ready/apps/pocket/screen-2.jpg",
+        "/assets/publish-ready/apps/pocket/screen-3.jpg"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",

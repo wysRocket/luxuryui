@@ -1,0 +1,428 @@
+{
+  "schema": "1",
+  "generatedAt": "2026-04-04T16:36:24.320Z",
+  "summary": {
+    "totalApps": 77,
+    "upscaledScreenshots": 4
+  },
+  "results": [
+    {
+      "slug": "airbnb",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "amazon",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "apple-music",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "asana",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "asos",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "babbel",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "bbc-news",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "bereal",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "binance",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "booking-com",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "calm",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "cnn",
+      "file": "rescue-screen-1.jpg",
+      "inputPath": "/Users/wysmyfree/Projects/luxuryui/public/assets/publish-ready/apps/cnn/rescue-screen-1.jpg",
+      "outputPath": "/Users/wysmyfree/Projects/luxuryui/public/assets/publish-ready/apps/cnn/rescue-screen-1.jpg",
+      "publicPath": "/assets/publish-ready/apps/cnn/rescue-screen-1.jpg",
+      "sourcePublicPath": "/assets/publish-ready/apps/cnn/rescue-screen-1.jpg",
+      "sourceWidth": 512,
+      "sourceHeight": 288,
+      "targetWidth": 854,
+      "targetHeight": 480
+    },
+    {
+      "slug": "coinbase",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "coursera",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "deezer",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "duolingo",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "ebay",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "etsy",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "expedia",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "fitbit",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "flipboard",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "flo",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "headspace",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "hopper",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "hoteltonight",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "instagram",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "kayak",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "kaykay",
+      "file": "rescue-screen-1.png",
+      "inputPath": "/Users/wysmyfree/Projects/luxuryui/public/assets/publish-ready/apps/kaykay/rescue-screen-1.png",
+      "outputPath": "/Users/wysmyfree/Projects/luxuryui/public/assets/publish-ready/apps/kaykay/rescue-screen-1.png",
+      "publicPath": "/assets/publish-ready/apps/kaykay/rescue-screen-1.png",
+      "sourcePublicPath": "/assets/publish-ready/apps/kaykay/rescue-screen-1.png",
+      "sourceWidth": 405,
+      "sourceHeight": 228,
+      "targetWidth": 853,
+      "targetHeight": 480
+    },
+    {
+      "slug": "khan-academy",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "kraken",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "ledger",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "linear",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "linkedin",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "loom",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "masterclass",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "metamask",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "mint",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "monday-com",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "monzo",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "myfitnesspal",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "n26",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "nike",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "nike-run-club",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "notion",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "pandora",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "paypal",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "phantom",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "pocket",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "reuters",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "revolut",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "robinhood",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "shazam",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "shopify",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "skillshare",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "skyscanner",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "slack",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "sleep-cycle",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "snapchat",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "soundcloud",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "spotify",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "stockx",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "strava",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "substack",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "the-new-york-times",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "threads",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "tidal",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "tiktok",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "trello",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "tripadvisor",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "twitter",
+      "file": "rescue-screen-3.jpg",
+      "inputPath": "/Users/wysmyfree/Projects/luxuryui/public/assets/publish-ready/apps/twitter/rescue-screen-3.jpg",
+      "outputPath": "/Users/wysmyfree/Projects/luxuryui/public/assets/publish-ready/apps/twitter/rescue-screen-3.jpg",
+      "publicPath": "/assets/publish-ready/apps/twitter/rescue-screen-3.jpg",
+      "sourcePublicPath": "/assets/publish-ready/apps/twitter/rescue-screen-3.jpg",
+      "sourceWidth": 288,
+      "sourceHeight": 512,
+      "targetWidth": 320,
+      "targetHeight": 569
+    },
+    {
+      "slug": "twitter",
+      "file": "rescue-screen-4.jpg",
+      "inputPath": "/Users/wysmyfree/Projects/luxuryui/public/assets/publish-ready/apps/twitter/rescue-screen-4.jpg",
+      "outputPath": "/Users/wysmyfree/Projects/luxuryui/public/assets/publish-ready/apps/twitter/rescue-screen-4.jpg",
+      "publicPath": "/assets/publish-ready/apps/twitter/rescue-screen-4.jpg",
+      "sourcePublicPath": "/assets/publish-ready/apps/twitter/rescue-screen-4.jpg",
+      "sourceWidth": 288,
+      "sourceHeight": 512,
+      "targetWidth": 320,
+      "targetHeight": 569
+    },
+    {
+      "slug": "udemy",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "uniswap",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "wallet",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "wealthfront",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "whatsapp",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "zara",
+      "file": null,
+      "skipped": true
+    },
+    {
+      "slug": "zoom",
+      "file": null,
+      "skipped": true
+    }
+  ]
+}

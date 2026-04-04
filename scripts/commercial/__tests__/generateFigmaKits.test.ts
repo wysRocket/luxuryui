@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import {
   buildGeneratedArtifactsBridge,
+  deriveCommercialPublication,
   mergeRecordsByProductId,
   selectGeneratedArtifactsRun,
 } from '../generate-figma-kits.mjs';
@@ -81,6 +82,39 @@ describe('generate-figma-kits Stitch artifact bridge', () => {
     expect(generatedArtifacts.commercialReady).toBe(false);
   });
 
+  it('marks a direct reconstruction packet as packaged without a Stitch run', () => {
+    const generatedArtifacts = buildGeneratedArtifactsBridge({
+      productSlug: 'monzo-figma-kit',
+      generatedAt: '2026-04-03T00:00:00.000Z',
+      commercialReady: true,
+      exportPackageFileName: 'monzo-figma-kit.fig',
+      previewCount: 3,
+      latestRun: undefined,
+      reconstruction: {
+        reconstructionStatus: 'done',
+        generationSource: 'direct',
+        sourceAppSlug: 'monzo',
+        sourceFlowId: 'onboarding',
+        screenBlueprints: [
+          { sourceAssetPath: '/assets/apps/monzo/screen-1.png' },
+          { sourceAssetPath: '/assets/apps/monzo/screen-2.png' },
+        ],
+      },
+      rootDir: '/workspace',
+    });
+
+    expect(generatedArtifacts.stage).toBe('packaged');
+    expect(generatedArtifacts.generationStatus).toBe('packaged');
+    expect(generatedArtifacts.generationSource).toBe('direct');
+    expect(generatedArtifacts.sourceAppSlug).toBe('monzo');
+    expect(generatedArtifacts.sourceFlowId).toBe('onboarding');
+    expect(generatedArtifacts.sourceAssetPaths).toEqual([
+      '/assets/apps/monzo/screen-1.png',
+      '/assets/apps/monzo/screen-2.png',
+    ]);
+    expect(generatedArtifacts.commercialReady).toBe(true);
+  });
+
   it('prefers the last successful generated run over a newer failed run', () => {
     const selectedRun = selectGeneratedArtifactsRun([
       {
@@ -158,5 +192,51 @@ describe('generate-figma-kits Stitch artifact bridge', () => {
     expect(generatedArtifacts.stage).toBe('failed');
     expect(generatedArtifacts.generationStatus).toBe('failed');
     expect(generatedArtifacts.commercialReady).toBe(false);
+  });
+
+  it('publishes packaged kits when publish-quality passes even if raw source quality is warn', () => {
+    expect(
+      deriveCommercialPublication({
+        isPackaged: true,
+        publishQualityStatus: 'pass',
+        validScreenshotCount: 6,
+      }),
+    ).toEqual({
+      status: 'published',
+      reviewStatus: 'approved',
+      publishReadyForSale: true,
+      completenessStatus: 'pass',
+    });
+  });
+
+  it('keeps sparse kits blocked when publish-quality still fails screenshot count', () => {
+    expect(
+      deriveCommercialPublication({
+        isPackaged: true,
+        publishQualityStatus: 'fail',
+        validScreenshotCount: 5,
+      }),
+    ).toEqual({
+      status: 'blocked',
+      reviewStatus: 'blocked',
+      publishReadyForSale: false,
+      completenessStatus: 'fail',
+    });
+  });
+
+  it('publishes warn-status kits when the publish audit marks them sale-ready', () => {
+    expect(
+      deriveCommercialPublication({
+        isPackaged: true,
+        publishQualityStatus: 'warn',
+        publishReadyForSale: true,
+        validScreenshotCount: 6,
+      }),
+    ).toEqual({
+      status: 'published',
+      reviewStatus: 'approved',
+      publishReadyForSale: true,
+      completenessStatus: 'pass',
+    });
   });
 });

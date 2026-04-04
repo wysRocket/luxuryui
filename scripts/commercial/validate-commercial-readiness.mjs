@@ -44,7 +44,12 @@ export const checkCommercialReadiness = async () => {
     }
 
     if (product.status === 'published') {
-      if (review.reviewStatus !== 'approved' || !review.readyForSale) {
+      if (
+        review.reviewStatus !== 'approved' ||
+        !review.readyForSale ||
+        review.publishQualityStatus === 'fail' ||
+        review.publishReadyForSale !== true
+      ) {
         findings.push({ status: 'FAIL', message: `${product.slug} is published without an approved commercial review` });
       }
 
@@ -58,6 +63,13 @@ export const checkCommercialReadiness = async () => {
 
       if (!product.figmaFileKey && !manifest?.generatedArtifacts?.commercialReady) {
         findings.push({ status: 'FAIL', message: `${product.slug} is published without a figma file key` });
+      }
+
+      if (
+        manifest?.generatedArtifacts?.publishQualityStatus === 'fail' ||
+        manifest?.generatedArtifacts?.publishReadyForSale !== true
+      ) {
+        findings.push({ status: 'FAIL', message: `${product.slug} is published without publish-quality approved generated artifacts` });
       }
 
       if (!product.thumbnail || product.gallery.length === 0) {
