@@ -438,6 +438,14 @@ export const main = async () => {
       });
       console.log(`ERROR: ${errorMessage}`);
       failures.push(`${product.slug}: ${errorMessage}`);
+
+      // Quota errors are account-wide — stop the batch immediately rather than
+      // burning through retries on every remaining kit. Re-run with
+      // --skip-existing once the quota window resets.
+      if (errorStatus === 'quota_error') {
+        console.log('\nQuota exhausted — stopping batch. Re-run with --skip-existing once quota resets.');
+        break;
+      }
     } finally {
       await client.close();
     }
