@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', system-ui, sans-serif; background: #0A0A0A; color: #fff; font-size: 13px; }
+  .panel { padding: 20px; }
+  .logo { font-size: 11px; font-weight: 600; color: #C9A96E; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 20px; }
+  .card { background: #111; border: 1px solid #1F1F1F; border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+  .kit-name { font-size: 20px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+  .kit-sub  { font-size: 13px; color: #6B7280; margin-bottom: 14px; }
+  .chips { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+  .chip { background: #1A1A1A; border: 1px solid #2A2A2A; border-radius: 6px; padding: 4px 10px; font-size: 11px; color: #C9A96E; }
+  .btn { width: 100%; padding: 13px; border-radius: 10px; border: none; cursor: pointer; font-size: 14px; font-weight: 600; transition: opacity 0.15s; }
+  .btn-primary { background: #C9A96E; color: #0A0A0A; }
+  .btn-primary:hover { opacity: 0.85; }
+  .btn-primary:disabled { opacity: 0.4; cursor: default; }
+  .btn-secondary { background: #1A1A1A; color: #6B7280; margin-top: 8px; }
+  .status { font-size: 12px; color: #6B7280; text-align: center; padding: 8px 0; min-height: 28px; }
+  .status.ok  { color: #22c55e; }
+  .progress { background: #1A1A1A; border-radius: 6px; height: 6px; margin: 12px 0; overflow: hidden; }
+  .progress-bar { height: 100%; background: linear-gradient(90deg, #C9A96E, #e8c98a); transition: width 0.4s; }
+  .step { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid #1F1F1F; font-size: 12px; color: #6B7280; }
+  .step .dot { width: 8px; height: 8px; border-radius: 50%; background: #1A1A1A; flex-shrink: 0; }
+  .step.active .dot { background: #C9A96E; }
+  .step.done .dot { background: #22c55e; }
+  .step.active { color: #fff; }
+  .step.done { color: #4B5563; }
+  .screen-state { text-align: center; padding: 40px 20px; }
+  .screen-state .icon { font-size: 40px; margin-bottom: 12px; }
+  .screen-state h2 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+  .screen-state p { font-size: 12px; color: #6B7280; line-height: 1.6; white-space: pre-wrap; }
+  .stat-row { display: flex; gap: 12px; margin-bottom: 16px; }
+  .stat { flex: 1; background: #1A1A1A; border-radius: 8px; padding: 12px; text-align: center; }
+  .stat-val { font-size: 22px; font-weight: 700; color: #C9A96E; }
+  .stat-lbl { font-size: 10px; color: #6B7280; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 2px; }
+  .search-wrap { margin-bottom: 12px; }
+  .search-wrap input { width: 100%; padding: 10px 12px; background: #111; border: 1px solid #2A2A2A; border-radius: 8px; color: #fff; font-size: 13px; outline: none; }
+  .search-wrap input:focus { border-color: #C9A96E; }
+  .kit-list { max-height: 320px; overflow-y: auto; display: flex; flex-direction: column; gap: 6px; }
+  .kit-row { display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; background: #111; border: 1px solid #1F1F1F; border-radius: 8px; cursor: pointer; }
+  .kit-row:hover { border-color: #C9A96E; }
+  .kit-row.selected { border-color: #C9A96E; background: #1A1200; }
+  .kit-row-name { font-size: 13px; font-weight: 600; }
+  .kit-row-meta { font-size: 11px; color: #6B7280; }
+  .kit-row-badge { font-size: 10px; color: #22c55e; background: #052e16; border-radius: 4px; padding: 2px 6px; }
+  #screen-detecting, #screen-picker, #screen-build, #screen-done, #screen-error { display: none; }
+</style>
+</head>
+<body>
+<div class="panel">
+  <div class="logo">LuxuryUI Kit Publisher</div>
+
+  <div id="screen-detecting">
+    <div class="screen-state">
+      <div class="icon">&#128269;</div>
+      <h2>Connecting...</h2>
+      <p>Reaching local server at localhost:7777</p>
+    </div>
+  </div>
+
+  <div id="screen-picker">
+    <div class="search-wrap">
+      <input id="picker-search" placeholder="Search kits (Airbnb, Spotify...)" autocomplete="off" />
+    </div>
+    <div class="kit-list" id="kit-list"></div>
+    <div style="margin-top:12px">
+      <button class="btn btn-primary" id="btn-pick" disabled>Build Selected Kit</button>
+      <button class="btn btn-secondary" id="btn-close-picker">Close</button>
+    </div>
+  </div>
+
+  <div id="screen-build">
+    <div class="card">
+      <div class="kit-name" id="kit-name">-</div>
+      <div class="kit-sub" id="kit-sub">-</div>
+      <div class="chips" id="kit-chips"></div>
+    </div>
+    <div id="steps">
+      <div class="step" id="step-cover"><span class="dot"></span>Build Cover page</div>
+      <div class="step" id="step-flow"><span class="dot"></span>Build Flow page</div>
+      <div class="step" id="step-details"><span class="dot"></span>Build Kit Details page</div>
+    </div>
+    <div class="progress" style="margin-top:16px"><div class="progress-bar" id="prog" style="width:0%"></div></div>
+    <div class="status" id="status-msg">Ready to build.</div>
+    <button class="btn btn-primary" id="btn-build">Build Kit Content</button>
+    <button class="btn btn-secondary" id="btn-close">Close</button>
+  </div>
+
+  <div id="screen-done">
+    <div class="card" style="text-align:center">
+      <div style="font-size:36px;margin-bottom:12px">&#127881;</div>
+      <div class="kit-name" id="done-name" style="margin-bottom:6px">-</div>
+      <div class="kit-sub">Cover + Flow + Kit Details built</div>
+    </div>
+    <div class="stat-row" id="done-stats"></div>
+    <div class="status ok">Content built successfully</div>
+    <button class="btn btn-secondary" id="btn-close2" style="margin-top:8px">Close Plugin</button>
+  </div>
+
+  <div id="screen-error">
+    <div class="screen-state">
+      <div class="icon">&#9888;</div>
+      <h2 id="err-title">Error</h2>
+      <p id="err-msg">-</p>
+    </div>
+    <button class="btn btn-secondary" style="margin-top:16px" id="btn-retry">Try Again</button>
+  </div>
+</div>
+
+<script>
+var kitSlug = null;
+var kitMeta = null;
+var allKits = [];
+var selectedKitSlug = null;
+
+function show(id) {
+  var screens = ['screen-detecting','screen-picker','screen-build','screen-done','screen-error'];
+  for (var i = 0; i < screens.length; i++) {
+    document.getElementById(screens[i]).style.display = screens[i] === id ? 'block' : 'none';
+  }
+}
+
+function setStep(id, state) {
+  document.getElementById('step-' + id).className = 'step ' + state;
+}
+
+function setProgress(pct) {
+  document.getElementById('prog').style.width = pct + '%';
+}
+
+function setStatus(msg) {
+  document.getElementById('status-msg').textContent = msg;
+}
+
+function toTitle(slug) {
+  return slug.replace(/-figma-kit$/, '').replace(/-/g, ' ').replace(/\b\w/g, function(c) { return c.toUpperCase(); });
+}
+
+function onStatusMsg(msg) {
+  setStatus(msg);
+  if (msg.indexOf('Cover') !== -1)   { setStep('cover', 'active'); setProgress(15); }
+  if (msg.indexOf('Flow') !== -1)    { setStep('cover', 'done'); setStep('flow', 'active'); setProgress(50); }
+  if (msg.indexOf('Details') !== -1) { setStep('flow', 'done'); setStep('details', 'active'); setProgress(80); }
+  if (msg.indexOf('Fetch') !== -1)   { setProgress(5); }
+}
+
+function renderKitList(filter) {
+  var list = document.getElementById('kit-list');
+  list.innerHTML = '';
+  for (var i = 0; i < allKits.length; i++) {
+    var k = allKits[i];
+    var name = toTitle(k.kitSlug).toLowerCase();
+    if (filter && name.indexOf(filter.toLowerCase()) === -1) continue;
+    var row = document.createElement('div');
+    row.className = 'kit-row' + (k.kitSlug === selectedKitSlug ? ' selected' : '');
+    var appName = toTitle(k.kitSlug);
+    var flowName = (k.sourceFlowId || '').replace(/-/g, ' ').replace(/\b\w/g, function(c) { return c.toUpperCase(); });
+    row.innerHTML =
+      '<div><div class="kit-row-name">' + appName + '</div>' +
+      '<div class="kit-row-meta">' + flowName + ' - ' + (k.screenCount || 0) + ' screens</div></div>' +
+      (k.contentBuilt ? '<span class="kit-row-badge">done</span>' : '');
+    (function(slug, r) {
+      r.addEventListener('click', function() {
+        selectedKitSlug = slug;
+        var rows = document.querySelectorAll('.kit-row');
+        for (var j = 0; j < rows.length; j++) rows[j].classList.remove('selected');
+        r.classList.add('selected');
+        document.getElementById('btn-pick').disabled = false;
+      });
+    })(k.kitSlug, row);
+    list.appendChild(row);
+  }
+}
+
+function loadKitIntoBuilder(k) {
+  kitSlug = k.kitSlug;
+  kitMeta = k;
+  var appName = toTitle(k.kitSlug);
+  var flowName = (k.sourceFlowId || '').replace(/-/g, ' ').replace(/\b\w/g, function(c) { return c.toUpperCase(); });
+  document.getElementById('kit-name').textContent = appName + ' - ' + flowName;
+  document.getElementById('kit-sub').textContent = k.kitSlug;
+  var chips = document.getElementById('kit-chips');
+  chips.innerHTML = '';
+  var chipData = [
+    (k.screenCount || 0) + ' Screens',
+    (k.componentCount || 0) + ' Components',
+    (k.tokenCount || 0) + ' Tokens',
+    'Commercial'
+  ];
+  for (var i = 0; i < chipData.length; i++) {
+    var span = document.createElement('span');
+    span.className = 'chip';
+    span.textContent = chipData[i];
+    chips.appendChild(span);
+  }
+  document.getElementById('btn-build').disabled = false;
+  show('screen-build');
+}
+
+show('screen-detecting');
+
+window.onmessage = function(event) {
+  var msg = event.data.pluginMessage;
+  if (!msg) return;
+
+  if (msg.type === 'kit-detected') {
+    kitSlug = msg.kitSlug;
+    kitMeta = msg.meta;
+    var m = msg.meta;
+    var appName = (m.sourceAppSlug || '').replace(/-/g, ' ').replace(/\b\w/g, function(c) { return c.toUpperCase(); });
+    var flowName = (m.sourceFlowId || '').replace(/-/g, ' ').replace(/\b\w/g, function(c) { return c.toUpperCase(); });
+    document.getElementById('kit-name').textContent = appName + ' - ' + flowName;
+    document.getElementById('kit-sub').textContent = kitSlug;
+    var chips = document.getElementById('kit-chips');
+    chips.innerHTML = '';
+    var chipData = [m.screenCount + ' Screens', m.componentCount + ' Components', m.tokenCount + ' Tokens', 'Commercial'];
+    for (var i = 0; i < chipData.length; i++) {
+      var span = document.createElement('span');
+      span.className = 'chip';
+      span.textContent = chipData[i];
+      chips.appendChild(span);
+    }
+    show('screen-build');
+  }
+
+  if (msg.type === 'show-picker') {
+    allKits = msg.kits;
+    renderKitList('');
+    show('screen-picker');
+  }
+
+  if (msg.type === 'server-error') {
+    document.getElementById('err-title').textContent = 'Server Not Running';
+    document.getElementById('err-msg').textContent = msg.message;
+    show('screen-error');
+  }
+
+  if (msg.type === 'status') {
+    onStatusMsg(msg.message);
+  }
+
+  if (msg.type === 'build-done') {
+    setStep('cover', 'done');
+    setStep('flow', 'done');
+    setStep('details', 'done');
+    setProgress(100);
+    document.getElementById('done-name').textContent = document.getElementById('kit-name').textContent;
+    var statsEl = document.getElementById('done-stats');
+    var m2 = kitMeta;
+    var sc = m2 ? (m2.screenCount || 0) : 0;
+    var cc = m2 ? (m2.componentCount || 0) : 0;
+    var tc = m2 ? (m2.tokenCount || 0) : 0;
+    statsEl.innerHTML =
+      '<div class="stat"><div class="stat-val">' + sc + '</div><div class="stat-lbl">Screens</div></div>' +
+      '<div class="stat"><div class="stat-val">' + cc + '</div><div class="stat-lbl">Components</div></div>' +
+      '<div class="stat"><div class="stat-val">' + tc + '</div><div class="stat-lbl">Tokens</div></div>';
+    show('screen-done');
+  }
+
+  if (msg.type === 'build-error') {
+    document.getElementById('err-title').textContent = 'Build Failed';
+    document.getElementById('err-msg').textContent = msg.message;
+    show('screen-error');
+  }
+};
+
+document.getElementById('picker-search').addEventListener('input', function() {
+  renderKitList(this.value);
+});
+
+document.getElementById('btn-pick').addEventListener('click', function() {
+  for (var i = 0; i < allKits.length; i++) {
+    if (allKits[i].kitSlug === selectedKitSlug) {
+      loadKitIntoBuilder(allKits[i]);
+      return;
+    }
+  }
+});
+
+document.getElementById('btn-build').addEventListener('click', function() {
+  if (!kitSlug) return;
+  this.disabled = true;
+  parent.postMessage({ pluginMessage: { type: 'build-current', kitSlug: kitSlug } }, '*');
+});
+
+document.getElementById('btn-retry').addEventListener('click', function() {
+  parent.postMessage({ pluginMessage: { type: 'retry' } }, '*');
+});
+
+var closeBtns = ['btn-close', 'btn-close2', 'btn-close-picker'];
+for (var i = 0; i < closeBtns.length; i++) {
+  document.getElementById(closeBtns[i]).addEventListener('click', function() {
+    parent.postMessage({ pluginMessage: { type: 'close' } }, '*');
+  });
+}
+</script>
+</body>
+</html>
