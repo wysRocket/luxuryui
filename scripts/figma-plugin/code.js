@@ -308,25 +308,28 @@ function fetchWithTimeout(url, ms) {
   });
 }
 
-// On load: auto-detect which kit this file belongs to
+// On load: try auto-detect by fileKey, fall back to manual picker
 (async function init() {
   var fileKey = figma.fileKey;
-  if (!fileKey) {
-    figma.ui.postMessage({ type: 'no-file-key' });
-    return;
+  if (fileKey) {
+    try {
+      var res = await fetchWithTimeout(SERVER + '/kit-by-file/' + fileKey, 5000);
+      var data = await res.json();
+      if (data.ok) {
+        figma.ui.postMessage({ type: 'kit-detected', kit: data.packet, kitSlug: data.kitSlug });
+        return;
+      }
+    } catch (_) { /* fall through to manual picker */ }
   }
+  // No fileKey or kit not found — load full kit list for manual selection
   try {
-    var res = await fetchWithTimeout(SERVER + '/kit-by-file/' + fileKey, 5000);
-    var data = await res.json();
-    if (data.ok) {
-      figma.ui.postMessage({ type: 'kit-detected', kit: data.packet, kitSlug: data.kitSlug });
-    } else {
-      figma.ui.postMessage({ type: 'kit-not-found', fileKey: fileKey });
-    }
-  } catch (err) {
-    var msg = err.message === 'timeout'
-      ? 'Server did not respond. Is it running? Open a terminal and run:\n\nnpm run figma:publish'
-      : 'Cannot reach server at localhost:7777.\n\nRun: npm run figma:publish';
+    var res2 = await fetchWithTimeout(SERVER + '/all-kits', 5000);
+    var list = await res2.json();
+    figma.ui.postMessage({ type: 'show-picker', kits: list });
+  } catch (err2) {
+    var msg = err2.message === 'timeout'
+      ? 'Server did not respond.\n\nRun in terminal:\nnpm run figma:publish'
+      : 'Cannot reach server at localhost:7777.\n\nRun in terminal:\nnpm run figma:publish';
     figma.ui.postMessage({ type: 'server-error', message: msg });
   }
 })();
