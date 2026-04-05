@@ -17,7 +17,7 @@
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
       "status": "published",
-      "figmaFileKey": null,
+      "figmaFileKey": "f2lUizLGCCeBxkQk5hTA7w",
       "thumbnail": "/assets/apps/monzo/screen-1.png",
       "gallery": [
         "/assets/apps/monzo/screen-1.png",
@@ -75,7 +75,8 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      }
+      },
+      "figmaFileUrl": "https://www.figma.com/design/f2lUizLGCCeBxkQk5hTA7w"
     },
     {
       "id": "figma-kit:revolut",

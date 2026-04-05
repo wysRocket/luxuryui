@@ -1,7 +1,7 @@
 {
   "productId": "figma-kit:monzo",
   "kitSlug": "monzo-figma-kit",
-  "figmaFileKey": null,
+  "figmaFileKey": "f2lUizLGCCeBxkQk5hTA7w",
   "pageOrder": [
     "Cover",
     "Flow",
@@ -124,6 +124,8 @@
     "Keep tone premium, but not source-identical."
   ],
   "reconstructionStatus": "done",
-  "nextAction": "publish-via-figma-workflow",
-  "reconstructedAt": "2026-04-04T23:08:49.858Z"
+  "nextAction": "done",
+  "reconstructedAt": "2026-04-04T23:08:49.858Z",
+  "figmaFileUrl": "https://www.figma.com/design/f2lUizLGCCeBxkQk5hTA7w",
+  "figmaPublishedAt": "2026-04-05T05:19:03.465Z"
 }
