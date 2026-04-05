@@ -268,20 +268,18 @@ const buildKitDetailsPage = async (page, kit) => {
 };
 
 // ─── Build content in the current file ───────────────────────────────────────
-// Renames or reuses the default page, then adds Flow and Kit Details pages.
-// Stays within the Figma Starter 3-page limit.
 
-const buildContentInCurrentFile = async (kit) => {
-  // Page 1: rename existing page to Cover and build it
-  const coverPage = figma.currentPage;
+var buildContentInCurrentFile = async function(kit, onStatus) {
+  onStatus('Building Cover page...');
+  var coverPage = figma.currentPage;
   await buildCoverPage(coverPage, kit);
 
-  // Page 2: Flow
-  const flowPage = figma.createPage();
+  onStatus('Building Flow page...');
+  var flowPage = figma.createPage();
   await buildFlowPage(flowPage, kit);
 
-  // Page 3: Kit Details (Components + Tokens + License combined)
-  const detailsPage = figma.createPage();
+  onStatus('Building Kit Details page...');
+  var detailsPage = figma.createPage();
   await buildKitDetailsPage(detailsPage, kit);
 
   figma.currentPage = coverPage;
@@ -292,19 +290,13 @@ const buildContentInCurrentFile = async (kit) => {
 
 figma.showUI(__html__, { width: 480, height: 640, title: 'LuxuryUI Kit Publisher' });
 
-// fetchWithTimeout: abort after ms milliseconds
 function fetchWithTimeout(url, ms) {
   return new Promise(function(resolve, reject) {
-    var timer = setTimeout(function() {
-      reject(new Error('timeout'));
-    }, ms);
-    fetch(url).then(function(res) {
-      clearTimeout(timer);
-      resolve(res);
-    }, function(err) {
-      clearTimeout(timer);
-      reject(err);
-    });
+    var timer = setTimeout(function() { reject(new Error('timeout')); }, ms);
+    fetch(url).then(
+      function(res) { clearTimeout(timer); resolve(res); },
+      function(err) { clearTimeout(timer); reject(err); }
+    );
   });
 }
 
@@ -313,35 +305,55 @@ function fetchWithTimeout(url, ms) {
   var fileKey = figma.fileKey;
   if (fileKey) {
     try {
-      var res = await fetchWithTimeout(SERVER + '/kit-by-file/' + fileKey, 5000);
-      var data = await res.json();
-      if (data.ok) {
-        figma.ui.postMessage({ type: 'kit-detected', kit: data.packet, kitSlug: data.kitSlug });
+      var r = await fetchWithTimeout(SERVER + '/kit-by-file/' + fileKey, 5000);
+      var d = await r.json();
+      if (d.ok) {
+        figma.ui.postMessage({ type: 'kit-detected', kitSlug: d.kitSlug, meta: {
+          screenCount: (d.packet.screenBlueprints || []).length,
+          componentCount: (d.packet.componentInventory || []).length,
+          tokenCount: (d.packet.tokenInventory || []).length,
+          sourceAppSlug: d.packet.sourceAppSlug,
+          sourceFlowId: d.packet.sourceFlowId,
+        }});
         return;
       }
-    } catch (_) { /* fall through to manual picker */ }
+    } catch (_) { /* fall through */ }
   }
-  // No fileKey or kit not found — load full kit list for manual selection
   try {
-    var res2 = await fetchWithTimeout(SERVER + '/all-kits', 5000);
-    var list = await res2.json();
+    var r2 = await fetchWithTimeout(SERVER + '/all-kits', 5000);
+    var list = await r2.json();
     figma.ui.postMessage({ type: 'show-picker', kits: list });
-  } catch (err2) {
-    var msg = err2.message === 'timeout'
-      ? 'Server did not respond.\n\nRun in terminal:\nnpm run figma:publish'
-      : 'Cannot reach server at localhost:7777.\n\nRun in terminal:\nnpm run figma:publish';
-    figma.ui.postMessage({ type: 'server-error', message: msg });
+  } catch (err) {
+    figma.ui.postMessage({
+      type: 'server-error',
+      message: 'Cannot reach server at localhost:7777\n\nMake sure you ran:\nnpm run figma:publish'
+    });
   }
 })();
 
-figma.ui.onmessage = async (msg) => {
+figma.ui.onmessage = async function(msg) {
+  // build-current: UI sends just the kitSlug, plugin fetches full data itself
   if (msg.type === 'build-current') {
-    var kit = msg.kit;
     var kitSlug = msg.kitSlug;
-    figma.ui.postMessage({ type: 'status', message: 'Building Cover page...' });
+    figma.ui.postMessage({ type: 'status', message: 'Fetching kit data...' });
+    var kit;
     try {
-      await buildContentInCurrentFile(kit);
-      // Notify server that content is built
+      var r = await fetchWithTimeout(SERVER + '/kit-by-slug/' + kitSlug, 8000);
+      var d = await r.json();
+      if (!d.ok) {
+        figma.ui.postMessage({ type: 'build-error', message: 'Kit not found: ' + kitSlug });
+        return;
+      }
+      kit = d.packet;
+    } catch (err) {
+      figma.ui.postMessage({ type: 'build-error', message: 'Could not fetch kit: ' + err.message });
+      return;
+    }
+
+    try {
+      await buildContentInCurrentFile(kit, function(statusMsg) {
+        figma.ui.postMessage({ type: 'status', message: statusMsg });
+      });
       try {
         await fetch(SERVER + '/content-built', {
           method: 'POST',
@@ -355,17 +367,40 @@ figma.ui.onmessage = async (msg) => {
     }
   }
 
-  if (msg.type === 'fetch-progress') {
-    try {
-      var res = await fetch(SERVER + '/progress');
-      var data = await res.json();
-      figma.ui.postMessage({ type: 'progress-loaded', data: data });
-    } catch (_) {
-      figma.ui.postMessage({ type: 'error', message: 'Server not reachable.' });
-    }
+  if (msg.type === 'retry') {
+    (async function retryInit() {
+      var fileKey = figma.fileKey;
+      if (fileKey) {
+        try {
+          var r = await fetchWithTimeout(SERVER + '/kit-by-file/' + fileKey, 5000);
+          var d = await r.json();
+          if (d.ok) {
+            figma.ui.postMessage({ type: 'kit-detected', kitSlug: d.kitSlug, meta: {
+              screenCount: (d.packet.screenBlueprints || []).length,
+              componentCount: (d.packet.componentInventory || []).length,
+              tokenCount: (d.packet.tokenInventory || []).length,
+              sourceAppSlug: d.packet.sourceAppSlug,
+              sourceFlowId: d.packet.sourceFlowId,
+            }});
+            return;
+          }
+        } catch (_) { /* fall through */ }
+      }
+      try {
+        var r2 = await fetchWithTimeout(SERVER + '/all-kits', 5000);
+        var list = await r2.json();
+        figma.ui.postMessage({ type: 'show-picker', kits: list });
+      } catch (err) {
+        figma.ui.postMessage({
+          type: 'server-error',
+          message: 'Cannot reach server at localhost:7777\n\nMake sure you ran:\nnpm run figma:publish'
+        });
+      }
+    })();
   }
 
   if (msg.type === 'close') {
     figma.closePlugin();
   }
+};
 };
