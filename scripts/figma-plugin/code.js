@@ -292,15 +292,31 @@ const buildContentInCurrentFile = async (kit) => {
 
 figma.showUI(__html__, { width: 480, height: 640, title: 'LuxuryUI Kit Publisher' });
 
+// fetchWithTimeout: abort after ms milliseconds
+function fetchWithTimeout(url, ms) {
+  return new Promise(function(resolve, reject) {
+    var timer = setTimeout(function() {
+      reject(new Error('timeout'));
+    }, ms);
+    fetch(url).then(function(res) {
+      clearTimeout(timer);
+      resolve(res);
+    }, function(err) {
+      clearTimeout(timer);
+      reject(err);
+    });
+  });
+}
+
 // On load: auto-detect which kit this file belongs to
 (async function init() {
-  var fileKey = figma.fileKey || null;
+  var fileKey = figma.fileKey;
   if (!fileKey) {
     figma.ui.postMessage({ type: 'no-file-key' });
     return;
   }
   try {
-    var res = await fetch(SERVER + '/kit-by-file/' + fileKey);
+    var res = await fetchWithTimeout(SERVER + '/kit-by-file/' + fileKey, 5000);
     var data = await res.json();
     if (data.ok) {
       figma.ui.postMessage({ type: 'kit-detected', kit: data.packet, kitSlug: data.kitSlug });
@@ -308,7 +324,10 @@ figma.showUI(__html__, { width: 480, height: 640, title: 'LuxuryUI Kit Publisher
       figma.ui.postMessage({ type: 'kit-not-found', fileKey: fileKey });
     }
   } catch (err) {
-    figma.ui.postMessage({ type: 'server-error', message: 'Cannot reach server. Run: npm run figma:publish' });
+    var msg = err.message === 'timeout'
+      ? 'Server did not respond. Is it running? Open a terminal and run:\n\nnpm run figma:publish'
+      : 'Cannot reach server at localhost:7777.\n\nRun: npm run figma:publish';
+    figma.ui.postMessage({ type: 'server-error', message: msg });
   }
 })();
 
