@@ -94,6 +94,19 @@ const handleRequest = async (req, res) => {
     return;
   }
 
+  // GET /kit-by-file/:fileKey — return reconstruction packet for a specific Figma file
+  if (req.method === 'GET' && url.pathname.startsWith('/kit-by-file/')) {
+    const fileKey = url.pathname.slice('/kit-by-file/'.length);
+    const all = await loadAllPackets();
+    const found = all.find(({ packet }) => packet.figmaFileKey === fileKey);
+    if (found) {
+      json(res, 200, { ok: true, kitSlug: found.kitSlug, packet: found.packet });
+    } else {
+      json(res, 404, { ok: false, error: `No kit found for fileKey: ${fileKey}` });
+    }
+    return;
+  }
+
   // GET /kits — return all reconstruction packets that need a figmaFileKey
   if (req.method === 'GET' && url.pathname === '/kits') {
     const all = await loadAllPackets();
@@ -122,17 +135,49 @@ const handleRequest = async (req, res) => {
   if (req.method === 'GET' && url.pathname === '/progress') {
     const all = await loadAllPackets();
     const done = all.filter(({ packet }) => Boolean(packet.figmaFileKey));
+    const built = all.filter(({ packet }) => Boolean(packet.contentBuiltAt));
     json(res, 200, {
       total: all.length,
       done: done.length,
       pending: all.length - done.length,
+      contentBuilt: built.length,
+      contentPending: all.length - built.length,
       completedKits: done.map(({ kitSlug, packet }) => ({
         kitSlug,
         figmaFileKey: packet.figmaFileKey,
-        figmaUrl: `https://www.figma.com/file/${packet.figmaFileKey}`,
+        figmaUrl: `https://www.figma.com/design/${packet.figmaFileKey}`,
         publishedAt: packet.figmaPublishedAt,
+        contentBuilt: Boolean(packet.contentBuiltAt),
       })),
     });
+    return;
+  }
+
+  // POST /content-built — mark a kit's Figma file as having content built
+  // Body: { kitSlug: string }
+  if (req.method === 'POST' && url.pathname === '/content-built') {
+    let body;
+    try {
+      body = JSON.parse(await collectBody(req));
+    } catch {
+      json(res, 400, { error: 'Invalid JSON body' });
+      return;
+    }
+    const { kitSlug } = body;
+    if (!kitSlug) {
+      json(res, 400, { error: 'kitSlug is required' });
+      return;
+    }
+    const packetPath = path.join(ARTIFACTS_DIR, kitSlug, 'figma', 'reconstruction.json');
+    try {
+      const packet = JSON.parse(await readFile(packetPath, 'utf8'));
+      packet.contentBuiltAt = new Date().toISOString();
+      await writeFile(packetPath, JSON.stringify(packet, null, 2) + '\n');
+      console.log(`  🎨 ${kitSlug} — content built`);
+      json(res, 200, { ok: true, kitSlug, contentBuiltAt: packet.contentBuiltAt });
+    } catch (err) {
+      json(res, 404, { error: err.message });
+    }
     return;
   }
 
