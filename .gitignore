@@ -28,4 +28,4 @@ data/curation/commercial/generated-kit-artifacts/*
 data/curation/commercial/delivery-packs/
 data/curation/commercial/generated-kit-runs.json
 
-.env
+.envscripts/.upscale-manifest.json
