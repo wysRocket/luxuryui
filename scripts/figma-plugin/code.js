@@ -36,12 +36,12 @@ const setFill = (node, color, opacity = 1) => {
   node.fills = [{ type: 'SOLID', color, opacity }];
 };
 
-const addText = async (parent, content, { x, y, w, h, size, weight, color, align } = {}) => {
-  const t = figma.createText();
-  await figma.loadFontAsync({ family: 'Inter', style: weight === 700 ? 'Bold' : weight === 600 ? 'Semi Bold' : weight === 500 ? 'Medium' : 'Regular' });
+const addText = (parent, content, { x, y, w, h, size, weight, color, align } = {}) => {
+  var t = figma.createText();
+  var style = weight === 700 ? 'Bold' : weight === 600 ? 'Semi Bold' : weight === 500 ? 'Medium' : 'Regular';
   t.characters = content;
   t.fontSize = size !== undefined ? size : 14;
-  t.fontName = { family: 'Inter', style: weight === 700 ? 'Bold' : weight === 600 ? 'Semi Bold' : weight === 500 ? 'Medium' : 'Regular' };
+  t.fontName = { family: 'Inter', style: style };
   t.fills = [{ type: 'SOLID', color: color || PALETTE.white }];
   if (w) t.resize(w, h !== undefined ? h : t.height);
   if (align) t.textAlignHorizontal = align;
@@ -90,20 +90,20 @@ const buildCoverPage = async (page, kit) => {
   const appName = kit.sourceAppSlug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
   const flowName = kit.sourceFlowId.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
 
-  await addText(frame, `${appName} — ${flowName} Kit`, {
+  addText(frame, `${appName} — ${flowName} Kit`, {
     x: PAD * 2, y: 380, w: 900, size: 64, weight: 700, color: PALETTE.white,
   });
-  await addText(frame, 'LuxuryUI Figma Flow Kit', {
+  addText(frame, 'LuxuryUI Figma Flow Kit', {
     x: PAD * 2, y: 470, w: 600, size: 24, weight: 400, color: PALETTE.accent,
   });
-  await addText(frame, `${kit.screenBlueprints.length} screens · ${kit.componentInventory.length} components · ${kit.tokenInventory.length} token sets`, {
+  addText(frame, `${kit.screenBlueprints.length} screens · ${kit.componentInventory.length} components · ${kit.tokenInventory.length} token sets`, {
     x: PAD * 2, y: 520, w: 800, size: 18, weight: 400, color: PALETTE.muted,
   });
 
   // Divider
   addRect(frame, { x: PAD * 2, y: 570, w: 80, h: 2, color: PALETTE.accent });
 
-  await addText(frame, 'luxuryui.com', {
+  addText(frame, 'luxuryui.com', {
     x: PAD * 2, y: 590, w: 400, size: 14, weight: 400, color: PALETTE.muted,
   });
 };
@@ -126,7 +126,7 @@ const buildFlowPage = async (page, kit) => {
   page.appendChild(canvas);
 
   // Title
-  await addText(canvas, 'User Flow — Screen Reference', {
+  addText(canvas, 'User Flow — Screen Reference', {
     x: gutter, y: PAD, w: 800, size: 32, weight: 700, color: PALETTE.white,
   });
 
@@ -148,16 +148,15 @@ const buildFlowPage = async (page, kit) => {
     sf.clipsContent = true;
     canvas.appendChild(sf);
 
-    // Try to load image
+    // Try to load image (5s timeout)
     if (screen.previewUrl || screen.sourceAssetPath) {
       try {
-        const imgUrl = screen.previewUrl || screen.sourceAssetPath;
-        // Construct absolute URL if relative public path
-        const fetchUrl = imgUrl.startsWith('http') ? imgUrl : `http://localhost:7777/asset${imgUrl}`;
-        const response = await fetch(fetchUrl);
+        var imgUrl = screen.previewUrl || screen.sourceAssetPath;
+        var fetchUrl = imgUrl.startsWith('http') ? imgUrl : 'http://localhost:7777/asset' + imgUrl;
+        var response = await fetchWithTimeout(fetchUrl, 5000);
         if (response.ok) {
-          const buf = await response.arrayBuffer();
-          const img = figma.createImage(new Uint8Array(buf));
+          var buf = await response.arrayBuffer();
+          var img = figma.createImage(new Uint8Array(buf));
           const imgRect = figma.createRectangle();
           imgRect.resize(FRAME_W, FRAME_H);
           imgRect.fills = [{ type: 'IMAGE', imageHash: img.hash, scaleMode: 'FILL' }];
@@ -165,7 +164,7 @@ const buildFlowPage = async (page, kit) => {
         } else {
           // Fallback: placeholder
           addRect(sf, { x: 0, y: 0, w: FRAME_W, h: FRAME_H, color: PALETTE.chip });
-          await addText(sf, screen.name || ('Screen ' + (i + 1)), {
+          addText(sf, screen.name || ('Screen ' + (i + 1)), {
             x: PAD, y: FRAME_H / 2 - 20, w: FRAME_W - PAD * 2, size: 16, weight: 500, color: PALETTE.muted, align: 'CENTER',
           });
         }
@@ -175,7 +174,7 @@ const buildFlowPage = async (page, kit) => {
     }
 
     // Label below frame
-    await addText(canvas, screen.sourceLabel || screen.name || ('Screen ' + (i + 1)), {
+    addText(canvas, screen.sourceLabel || screen.name || ('Screen ' + (i + 1)), {
       x: sx, y: sy + FRAME_H + 12, w: FRAME_W, size: 13, weight: 400, color: PALETTE.muted, align: 'CENTER',
     });
   }
@@ -199,9 +198,9 @@ const buildKitDetailsPage = async (page, kit) => {
   let y = PAD;
 
   // ── Components section
-  await addText(frame, 'Component Inventory', { x: PAD, y, w: 800, size: 32, weight: 700, color: PALETTE.white });
+  addText(frame, 'Component Inventory', { x: PAD, y, w: 800, size: 32, weight: 700, color: PALETTE.white });
   y += 48;
-  await addText(frame, String(components.length) + ' abstracted components ready for use', { x: PAD, y, w: 600, size: 15, weight: 400, color: PALETTE.muted });
+  addText(frame, String(components.length) + ' abstracted components ready for use', { x: PAD, y, w: 600, size: 15, weight: 400, color: PALETTE.muted });
   y += 40;
   addRect(frame, { x: PAD, y, w: 1200 - PAD * 2, h: 1, color: PALETTE.border });
   y += 24;
@@ -209,9 +208,9 @@ const buildKitDetailsPage = async (page, kit) => {
   for (let i = 0; i < components.length; i++) {
     addRect(frame, { x: PAD, y, w: 1200 - PAD * 2, h: 80, color: PALETTE.chip, radius: 12 });
     addRect(frame, { x: PAD + 16, y: y + 22, w: 36, h: 36, color: PALETTE.accent, radius: 8 });
-    await addText(frame, String(i + 1), { x: PAD + 16, y: y + 28, w: 36, size: 16, weight: 700, color: PALETTE.black, align: 'CENTER' });
-    await addText(frame, components[i], { x: PAD + 72, y: y + 14, w: 700, size: 18, weight: 600, color: PALETTE.white });
-    await addText(frame, 'Abstracted · Brand-neutral · Production-ready', { x: PAD + 72, y: y + 42, w: 700, size: 13, weight: 400, color: PALETTE.muted });
+    addText(frame, String(i + 1), { x: PAD + 16, y: y + 28, w: 36, size: 16, weight: 700, color: PALETTE.black, align: 'CENTER' });
+    addText(frame, components[i], { x: PAD + 72, y: y + 14, w: 700, size: 18, weight: 600, color: PALETTE.white });
+    addText(frame, 'Abstracted · Brand-neutral · Production-ready', { x: PAD + 72, y: y + 42, w: 700, size: 13, weight: 400, color: PALETTE.muted });
     y += 96;
   }
 
@@ -220,27 +219,27 @@ const buildKitDetailsPage = async (page, kit) => {
   y += 40;
 
   // ── Tokens section
-  await addText(frame, 'Style Tokens', { x: PAD, y, w: 800, size: 32, weight: 700, color: PALETTE.white });
+  addText(frame, 'Style Tokens', { x: PAD, y, w: 800, size: 32, weight: 700, color: PALETTE.white });
   y += 48;
 
   for (let i = 0; i < tokens.length; i++) {
     addRect(frame, { x: PAD, y, w: 1200 - PAD * 2, h: 72, color: PALETTE.chip, radius: 12 });
     addRect(frame, { x: PAD + 16, y: y + 16, w: 40, h: 40, color: PALETTE.accent, radius: 8 });
-    await addText(frame, tokens[i], { x: PAD + 72, y: y + 12, w: 700, size: 18, weight: 600, color: PALETTE.white });
-    await addText(frame, 'Applied across all screens in this kit', { x: PAD + 72, y: y + 40, w: 700, size: 13, weight: 400, color: PALETTE.muted });
+    addText(frame, tokens[i], { x: PAD + 72, y: y + 12, w: 700, size: 18, weight: 600, color: PALETTE.white });
+    addText(frame, 'Applied across all screens in this kit', { x: PAD + 72, y: y + 40, w: 700, size: 13, weight: 400, color: PALETTE.muted });
     y += 88;
   }
 
   y += 40;
-  await addText(frame, 'Spacing Scale', { x: PAD, y, w: 400, size: 20, weight: 700, color: PALETTE.white });
+  addText(frame, 'Spacing Scale', { x: PAD, y, w: 400, size: 20, weight: 700, color: PALETTE.white });
   y += 36;
-  await addText(frame, '4 · 8 · 12 · 16 · 24 · 32 (8pt grid)', { x: PAD, y, w: 800, size: 15, weight: 400, color: PALETTE.muted });
+  addText(frame, '4 · 8 · 12 · 16 · 24 · 32 (8pt grid)', { x: PAD, y, w: 800, size: 15, weight: 400, color: PALETTE.muted });
   y += 60;
   addRect(frame, { x: PAD, y, w: 1200 - PAD * 2, h: 1, color: PALETTE.border });
   y += 40;
 
   // ── License section
-  await addText(frame, 'License & Usage', { x: PAD, y, w: 800, size: 32, weight: 700, color: PALETTE.white });
+  addText(frame, 'License & Usage', { x: PAD, y, w: 800, size: 32, weight: 700, color: PALETTE.white });
   y += 48;
   addRect(frame, { x: PAD, y, w: 60, h: 3, color: PALETTE.accent });
   y += 24;
@@ -264,12 +263,19 @@ const buildKitDetailsPage = async (page, kit) => {
     'luxuryui.com   All rights reserved.',
   ];
 
-  await addText(frame, licLines.join('\n'), { x: PAD, y, w: 1200 - PAD * 2, size: 15, weight: 400, color: PALETTE.muted });
+  addText(frame, licLines.join('\n'), { x: PAD, y, w: 1200 - PAD * 2, size: 15, weight: 400, color: PALETTE.muted });
 };
 
 // ─── Build content in the current file ───────────────────────────────────────
 
 var buildContentInCurrentFile = async function(kit, onStatus) {
+  // Preload all font weights once before building any pages
+  onStatus('Loading fonts...');
+  await figma.loadFontAsync({ family: 'Inter', style: 'Regular' });
+  await figma.loadFontAsync({ family: 'Inter', style: 'Medium' });
+  await figma.loadFontAsync({ family: 'Inter', style: 'Semi Bold' });
+  await figma.loadFontAsync({ family: 'Inter', style: 'Bold' });
+
   onStatus('Building Cover page...');
   var coverPage = figma.currentPage;
   await buildCoverPage(coverPage, kit);
@@ -282,7 +288,7 @@ var buildContentInCurrentFile = async function(kit, onStatus) {
   var detailsPage = figma.createPage();
   await buildKitDetailsPage(detailsPage, kit);
 
-  figma.currentPage = coverPage;
+  await figma.setCurrentPageAsync(coverPage);
   figma.viewport.scrollAndZoomIntoView(coverPage.children);
 };
 
