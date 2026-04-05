@@ -403,4 +403,3 @@ figma.ui.onmessage = async function(msg) {
     figma.closePlugin();
   }
 };
-};
