@@ -39,23 +39,23 @@ const addText = async (parent, content, { x, y, w, h, size, weight, color, align
   const t = figma.createText();
   await figma.loadFontAsync({ family: 'Inter', style: weight === 700 ? 'Bold' : weight === 600 ? 'Semi Bold' : weight === 500 ? 'Medium' : 'Regular' });
   t.characters = content;
-  t.fontSize = size ?? 14;
+  t.fontSize = size !== undefined ? size : 14;
   t.fontName = { family: 'Inter', style: weight === 700 ? 'Bold' : weight === 600 ? 'Semi Bold' : weight === 500 ? 'Medium' : 'Regular' };
-  t.fills = [{ type: 'SOLID', color: color ?? PALETTE.white }];
-  if (w) t.resize(w, h ?? t.height);
+  t.fills = [{ type: 'SOLID', color: color || PALETTE.white }];
+  if (w) t.resize(w, h !== undefined ? h : t.height);
   if (align) t.textAlignHorizontal = align;
-  t.x = x ?? 0;
-  t.y = y ?? 0;
+  t.x = x !== undefined ? x : 0;
+  t.y = y !== undefined ? y : 0;
   parent.appendChild(t);
   return t;
 };
 
 const addRect = (parent, { x, y, w, h, color, opacity, radius } = {}) => {
   const r = figma.createRectangle();
-  r.resize(w ?? 100, h ?? 100);
-  r.x = x ?? 0;
-  r.y = y ?? 0;
-  if (color) setFill(r, color, opacity ?? 1);
+  r.resize(w !== undefined ? w : 100, h !== undefined ? h : 100);
+  r.x = x !== undefined ? x : 0;
+  r.y = y !== undefined ? y : 0;
+  if (color) setFill(r, color, opacity !== undefined ? opacity : 1);
   if (radius) r.cornerRadius = radius;
   parent.appendChild(r);
   return r;
@@ -111,7 +111,7 @@ const buildCoverPage = async (page, kit) => {
 
 const buildFlowPage = async (page, kit) => {
   page.name = 'Flow';
-  const screens = kit.screenBlueprints ?? [];
+  const screens = kit.screenBlueprints || [];
   const cols = Math.min(screens.length, 4);
   const rows = Math.ceil(screens.length / cols);
   const gutter = 48;
@@ -138,7 +138,7 @@ const buildFlowPage = async (page, kit) => {
 
     // Screen frame
     const sf = figma.createFrame();
-    sf.name = screen.name ?? `Screen ${i + 1}`;
+    sf.name = screen.name || ('Screen ' + (i + 1));
     sf.resize(FRAME_W, FRAME_H);
     sf.x = sx;
     sf.y = sy;
@@ -150,7 +150,7 @@ const buildFlowPage = async (page, kit) => {
     // Try to load image
     if (screen.previewUrl || screen.sourceAssetPath) {
       try {
-        const imgUrl = screen.previewUrl ?? screen.sourceAssetPath;
+        const imgUrl = screen.previewUrl || screen.sourceAssetPath;
         // Construct absolute URL if relative public path
         const fetchUrl = imgUrl.startsWith('http') ? imgUrl : `http://localhost:7777/asset${imgUrl}`;
         const response = await fetch(fetchUrl);
@@ -164,7 +164,7 @@ const buildFlowPage = async (page, kit) => {
         } else {
           // Fallback: placeholder
           addRect(sf, { x: 0, y: 0, w: FRAME_W, h: FRAME_H, color: PALETTE.chip });
-          await addText(sf, screen.name ?? `Screen ${i + 1}`, {
+          await addText(sf, screen.name || ('Screen ' + (i + 1)), {
             x: PAD, y: FRAME_H / 2 - 20, w: FRAME_W - PAD * 2, size: 16, weight: 500, color: PALETTE.muted, align: 'CENTER',
           });
         }
@@ -174,7 +174,7 @@ const buildFlowPage = async (page, kit) => {
     }
 
     // Label below frame
-    await addText(canvas, screen.sourceLabel ?? screen.name ?? `Screen ${i + 1}`, {
+    await addText(canvas, screen.sourceLabel || screen.name || ('Screen ' + (i + 1)), {
       x: sx, y: sy + FRAME_H + 12, w: FRAME_W, size: 13, weight: 400, color: PALETTE.muted, align: 'CENTER',
     });
   }
@@ -184,7 +184,7 @@ const buildFlowPage = async (page, kit) => {
 
 const buildComponentsPage = async (page, kit) => {
   page.name = 'Components';
-  const components = kit.componentInventory ?? [];
+  const components = kit.componentInventory || [];
   const canvasH = Math.max(600, components.length * 120 + 200);
 
   const frame = figma.createFrame();
@@ -227,8 +227,8 @@ const buildComponentsPage = async (page, kit) => {
 
 const buildTokensPage = async (page, kit) => {
   page.name = 'Tokens';
-  const tokens = kit.tokenInventory ?? [];
-  const spec = kit.spec ?? {};
+  const tokens = kit.tokenInventory || [];
+  const spec = kit.spec || {};
   const canvasH = Math.max(800, tokens.length * 120 + 400);
 
   const frame = figma.createFrame();
@@ -380,7 +380,7 @@ figma.ui.onmessage = async (msg) => {
         await createKitFile(kit);
 
         // The current file's key is the figmaFileKey for this kit
-        const figmaFileKey = figma.fileKey ?? 'local-preview';
+        const figmaFileKey = figma.fileKey || 'local-preview';
 
         // POST the key back to the server
         await fetch(`${SERVER}/figma-key`, {
