@@ -107,6 +107,23 @@ const handleRequest = async (req, res) => {
     return;
   }
 
+  // GET /all-kits — return slim list of all 76 kits for manual picker
+  if (req.method === 'GET' && url.pathname === '/all-kits') {
+    const all = await loadAllPackets();
+    json(res, 200, all.map(({ kitSlug, packet }) => ({
+      kitSlug,
+      sourceAppSlug: packet.sourceAppSlug,
+      sourceFlowId: packet.sourceFlowId,
+      figmaFileKey: packet.figmaFileKey,
+      contentBuilt: Boolean(packet.contentBuiltAt),
+      screenCount: (packet.screenBlueprints || []).length,
+      componentCount: (packet.componentInventory || []).length,
+      tokenCount: (packet.tokenInventory || []).length,
+      packet,
+    })));
+    return;
+  }
+
   // GET /kits — return all reconstruction packets that need a figmaFileKey
   if (req.method === 'GET' && url.pathname === '/kits') {
     const all = await loadAllPackets();
