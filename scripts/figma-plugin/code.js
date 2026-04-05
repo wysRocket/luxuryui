@@ -79,8 +79,8 @@ const buildCoverPage = async (page, kit) => {
     type: 'GRADIENT_RADIAL',
     gradientTransform: [[0.5, 0, 0.5], [0, 0.5, 0.5]],
     gradientStops: [
-      { position: 0, color: { ...PALETTE.accent, a: 0.12 } },
-      { position: 1, color: { ...PALETTE.black, a: 0 } },
+      { position: 0, color: { r: PALETTE.accent.r, g: PALETTE.accent.g, b: PALETTE.accent.b, a: 0.12 } },
+      { position: 1, color: { r: PALETTE.black.r, g: PALETTE.black.g, b: PALETTE.black.b, a: 0 } },
     ],
     opacity: 1,
   }];
