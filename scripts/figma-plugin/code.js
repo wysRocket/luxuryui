@@ -169,7 +169,7 @@ const buildFlowPage = async (page, kit) => {
             x: PAD, y: FRAME_H / 2 - 20, w: FRAME_W - PAD * 2, size: 16, weight: 500, color: PALETTE.muted, align: 'CENTER',
           });
         }
-      } catch {
+      } catch (_) {
         addRect(sf, { x: 0, y: 0, w: FRAME_W, h: FRAME_H, color: PALETTE.chip });
       }
     }
