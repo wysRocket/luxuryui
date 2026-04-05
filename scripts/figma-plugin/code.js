@@ -1,6 +1,7 @@
 // LuxuryUI Kit Publisher — Figma Plugin
-// Connects to the local publish-to-figma.mjs server on :7777
-// Creates a Figma file per kit with Cover / Flow / Components / Tokens / License pages.
+// Single-file build mode: auto-detects which kit belongs to the current Figma file
+// and builds Cover / Flow / Kit Details pages inside it.
+// Requires the local server: npm run figma:publish
 
 const SERVER = 'http://localhost:7777';
 
@@ -180,224 +181,166 @@ const buildFlowPage = async (page, kit) => {
   }
 };
 
-// ─── Components page ─────────────────────────────────────────────────────────
+// ─── Kit Details page (Components + Tokens + License combined) ───────────────
+// Combines all three into one page to stay within Figma Starter 3-page limit.
 
-const buildComponentsPage = async (page, kit) => {
-  page.name = 'Components';
+const buildKitDetailsPage = async (page, kit) => {
+  page.name = 'Kit Details';
   const components = kit.componentInventory || [];
-  const canvasH = Math.max(600, components.length * 120 + 200);
+  const tokens = kit.tokenInventory || [];
+  const totalH = Math.max(1200, 200 + components.length * 100 + 80 + tokens.length * 88 + 600);
 
   const frame = figma.createFrame();
-  frame.name = 'Component Inventory';
-  frame.resize(1200, canvasH);
+  frame.name = 'Kit Details';
+  frame.resize(1200, totalH);
   setFill(frame, PALETTE.surface);
   page.appendChild(frame);
 
-  await addText(frame, 'Component Inventory', {
-    x: PAD, y: PAD, w: 800, size: 36, weight: 700, color: PALETTE.white,
-  });
-  await addText(frame, `${components.length} abstracted components ready for use`, {
-    x: PAD, y: PAD + 52, w: 600, size: 16, weight: 400, color: PALETTE.muted,
-  });
+  let y = PAD;
 
-  addRect(frame, { x: PAD, y: PAD + 80, w: 1200 - PAD * 2, h: 1, color: PALETTE.border });
+  // ── Components section
+  await addText(frame, 'Component Inventory', { x: PAD, y, w: 800, size: 32, weight: 700, color: PALETTE.white });
+  y += 48;
+  await addText(frame, String(components.length) + ' abstracted components ready for use', { x: PAD, y, w: 600, size: 15, weight: 400, color: PALETTE.muted });
+  y += 40;
+  addRect(frame, { x: PAD, y, w: 1200 - PAD * 2, h: 1, color: PALETTE.border });
+  y += 24;
 
   for (let i = 0; i < components.length; i++) {
-    const y = 120 + i * 100;
-
-    // Card
-    const card = addRect(frame, { x: PAD, y, w: 1200 - PAD * 2, h: 80, color: PALETTE.chip, radius: 12 });
-
-    // Index chip
+    addRect(frame, { x: PAD, y, w: 1200 - PAD * 2, h: 80, color: PALETTE.chip, radius: 12 });
     addRect(frame, { x: PAD + 16, y: y + 22, w: 36, h: 36, color: PALETTE.accent, radius: 8 });
-    await addText(frame, String(i + 1), {
-      x: PAD + 16, y: y + 28, w: 36, size: 16, weight: 700, color: PALETTE.black, align: 'CENTER',
-    });
-
-    await addText(frame, components[i], {
-      x: PAD + 72, y: y + 14, w: 700, size: 20, weight: 600, color: PALETTE.white,
-    });
-    await addText(frame, 'Abstracted · Brand-neutral · Production-ready', {
-      x: PAD + 72, y: y + 42, w: 700, size: 13, weight: 400, color: PALETTE.muted,
-    });
+    await addText(frame, String(i + 1), { x: PAD + 16, y: y + 28, w: 36, size: 16, weight: 700, color: PALETTE.black, align: 'CENTER' });
+    await addText(frame, components[i], { x: PAD + 72, y: y + 14, w: 700, size: 18, weight: 600, color: PALETTE.white });
+    await addText(frame, 'Abstracted · Brand-neutral · Production-ready', { x: PAD + 72, y: y + 42, w: 700, size: 13, weight: 400, color: PALETTE.muted });
+    y += 96;
   }
-};
 
-// ─── Tokens page ─────────────────────────────────────────────────────────────
+  y += 40;
+  addRect(frame, { x: PAD, y, w: 1200 - PAD * 2, h: 1, color: PALETTE.border });
+  y += 40;
 
-const buildTokensPage = async (page, kit) => {
-  page.name = 'Tokens';
-  const tokens = kit.tokenInventory || [];
-  const spec = kit.spec || {};
-  const canvasH = Math.max(800, tokens.length * 120 + 400);
+  // ── Tokens section
+  await addText(frame, 'Style Tokens', { x: PAD, y, w: 800, size: 32, weight: 700, color: PALETTE.white });
+  y += 48;
 
-  const frame = figma.createFrame();
-  frame.name = 'Style Tokens';
-  frame.resize(1200, canvasH);
-  setFill(frame, PALETTE.surface);
-  page.appendChild(frame);
-
-  await addText(frame, 'Style Tokens', {
-    x: PAD, y: PAD, w: 800, size: 36, weight: 700, color: PALETTE.white,
-  });
-
-  let y = 100;
-
-  // Token sets
-  for (const token of tokens) {
-    const card = addRect(frame, { x: PAD, y, w: 1200 - PAD * 2, h: 72, color: PALETTE.chip, radius: 12 });
+  for (let i = 0; i < tokens.length; i++) {
+    addRect(frame, { x: PAD, y, w: 1200 - PAD * 2, h: 72, color: PALETTE.chip, radius: 12 });
     addRect(frame, { x: PAD + 16, y: y + 16, w: 40, h: 40, color: PALETTE.accent, radius: 8 });
-    await addText(frame, token, {
-      x: PAD + 72, y: y + 12, w: 700, size: 20, weight: 600, color: PALETTE.white,
-    });
-    await addText(frame, 'Applied across all frames in this kit', {
-      x: PAD + 72, y: y + 40, w: 700, size: 13, weight: 400, color: PALETTE.muted,
-    });
+    await addText(frame, tokens[i], { x: PAD + 72, y: y + 12, w: 700, size: 18, weight: 600, color: PALETTE.white });
+    await addText(frame, 'Applied across all screens in this kit', { x: PAD + 72, y: y + 40, w: 700, size: 13, weight: 400, color: PALETTE.muted });
     y += 88;
   }
 
-  y += 32;
+  y += 40;
+  await addText(frame, 'Spacing Scale', { x: PAD, y, w: 400, size: 20, weight: 700, color: PALETTE.white });
+  y += 36;
+  await addText(frame, '4 · 8 · 12 · 16 · 24 · 32 (8pt grid)', { x: PAD, y, w: 800, size: 15, weight: 400, color: PALETTE.muted });
+  y += 60;
   addRect(frame, { x: PAD, y, w: 1200 - PAD * 2, h: 1, color: PALETTE.border });
-  y += 32;
+  y += 40;
 
-  await addText(frame, 'Spacing Scale', {
-    x: PAD, y, w: 400, size: 24, weight: 700, color: PALETTE.white,
-  });
+  // ── License section
+  await addText(frame, 'License & Usage', { x: PAD, y, w: 800, size: 32, weight: 700, color: PALETTE.white });
   y += 48;
+  addRect(frame, { x: PAD, y, w: 60, h: 3, color: PALETTE.accent });
+  y += 24;
 
-  await addText(frame, '4 · 8 · 12 · 16 · 24 · 32 (8pt grid)', {
-    x: PAD, y, w: 800, size: 16, weight: 400, color: PALETTE.muted,
-  });
-};
-
-// ─── License page ────────────────────────────────────────────────────────────
-
-const buildLicensePage = async (page, kit) => {
-  page.name = 'License';
-
-  const frame = figma.createFrame();
-  frame.name = 'License';
-  frame.resize(1200, 800);
-  setFill(frame, PALETTE.black);
-  page.appendChild(frame);
-
-  await addText(frame, 'License & Usage', {
-    x: PAD * 2, y: PAD * 2, w: 800, size: 36, weight: 700, color: PALETTE.white,
-  });
-
-  addRect(frame, { x: PAD * 2, y: PAD * 2 + 56, w: 60, h: 3, color: PALETTE.accent });
-
-  const licenseText = [
+  var licLines = [
     'This Figma kit is licensed for personal and commercial use by the purchasing individual or team.',
     '',
     'You MAY:',
-    '  · Use this kit to design products, apps, and client work.',
-    '  · Modify and adapt the components for your own projects.',
-    '  · Use this kit across multiple projects for the license holder.',
+    '  Use this kit to design products, apps, and client work.',
+    '  Modify and adapt the components for your own projects.',
+    '  Use this kit across multiple projects for the license holder.',
     '',
     'You MAY NOT:',
-    '  · Redistribute, resell, or sublicense this kit.',
-    '  · Share this file with individuals outside the purchasing team.',
-    '  · Claim authorship or remove LuxuryUI attribution.',
+    '  Redistribute, resell, or sublicense this kit.',
+    '  Share this file with individuals outside the purchasing team.',
+    '  Claim authorship or remove LuxuryUI attribution.',
     '',
-    'All screenshots and UI references used as inspiration are sourced from publicly available',
-    'app store materials. All components are fully abstracted and brand-neutral.',
+    'All screenshots and UI references are sourced from publicly available app store materials.',
+    'All components are fully abstracted and brand-neutral.',
     '',
-    '© LuxuryUI · luxuryui.com · All rights reserved.',
-  ].join('\n');
+    'luxuryui.com   All rights reserved.',
+  ];
 
-  await addText(frame, licenseText, {
-    x: PAD * 2, y: PAD * 2 + 96, w: 1200 - PAD * 4, size: 16, weight: 400, color: PALETTE.muted,
-  });
+  await addText(frame, licLines.join('\n'), { x: PAD, y, w: 1200 - PAD * 2, size: 15, weight: 400, color: PALETTE.muted });
 };
 
-// ─── Create a full kit file ───────────────────────────────────────────────────
+// ─── Build content in the current file ───────────────────────────────────────
+// Renames or reuses the default page, then adds Flow and Kit Details pages.
+// Stays within the Figma Starter 3-page limit.
 
-const createKitFile = async (kit) => {
-  const appName = kit.sourceAppSlug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
-  const flowName = kit.sourceFlowId.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
-  const fileName = `${appName} — ${flowName} Figma Flow Kit`;
-
-  // Figma Plugin API: work inside current file by creating a new page per kit
-  // (Figma plugins cannot create new files directly; we use one file per run
-  //  with pages grouped by kit, then the user duplicates per kit if needed.)
-  // Each "kit" becomes a top-level section with sub-pages.
-
-  const coverPage = figma.createPage();
+const buildContentInCurrentFile = async (kit) => {
+  // Page 1: rename existing page to Cover and build it
+  const coverPage = figma.currentPage;
   await buildCoverPage(coverPage, kit);
 
+  // Page 2: Flow
   const flowPage = figma.createPage();
   await buildFlowPage(flowPage, kit);
 
-  const componentsPage = figma.createPage();
-  await buildComponentsPage(componentsPage, kit);
+  // Page 3: Kit Details (Components + Tokens + License combined)
+  const detailsPage = figma.createPage();
+  await buildKitDetailsPage(detailsPage, kit);
 
-  const tokensPage = figma.createPage();
-  await buildTokensPage(tokensPage, kit);
-
-  const licensePage = figma.createPage();
-  await buildLicensePage(licensePage, kit);
-
-  return { coverPage, flowPage, componentsPage, tokensPage, licensePage };
+  figma.currentPage = coverPage;
+  figma.viewport.scrollAndZoomIntoView(coverPage.children);
 };
 
 // ─── Main plugin entry ────────────────────────────────────────────────────────
 
-figma.showUI(__html__, { width: 480, height: 600, title: 'LuxuryUI Kit Publisher' });
+figma.showUI(__html__, { width: 480, height: 640, title: 'LuxuryUI Kit Publisher' });
+
+// On load: auto-detect which kit this file belongs to
+(async function init() {
+  var fileKey = figma.fileKey || null;
+  if (!fileKey) {
+    figma.ui.postMessage({ type: 'no-file-key' });
+    return;
+  }
+  try {
+    var res = await fetch(SERVER + '/kit-by-file/' + fileKey);
+    var data = await res.json();
+    if (data.ok) {
+      figma.ui.postMessage({ type: 'kit-detected', kit: data.packet, kitSlug: data.kitSlug });
+    } else {
+      figma.ui.postMessage({ type: 'kit-not-found', fileKey: fileKey });
+    }
+  } catch (err) {
+    figma.ui.postMessage({ type: 'server-error', message: 'Cannot reach server. Run: npm run figma:publish' });
+  }
+})();
 
 figma.ui.onmessage = async (msg) => {
-  if (msg.type === 'fetch-kits') {
+  if (msg.type === 'build-current') {
+    var kit = msg.kit;
+    var kitSlug = msg.kitSlug;
+    figma.ui.postMessage({ type: 'status', message: 'Building Cover page...' });
     try {
-      const res = await fetch(`${SERVER}/kits`);
-      const data = await res.json();
-      figma.ui.postMessage({ type: 'kits-loaded', data });
-    } catch {
-      figma.ui.postMessage({ type: 'error', message: `Cannot reach server at ${SERVER}. Run: npm run figma:publish` });
+      await buildContentInCurrentFile(kit);
+      // Notify server that content is built
+      try {
+        await fetch(SERVER + '/content-built', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ kitSlug: kitSlug }),
+        });
+      } catch (_) { /* non-fatal */ }
+      figma.ui.postMessage({ type: 'build-done', kitSlug: kitSlug });
+    } catch (err) {
+      figma.ui.postMessage({ type: 'build-error', message: err.message });
     }
   }
 
   if (msg.type === 'fetch-progress') {
     try {
-      const res = await fetch(`${SERVER}/progress`);
-      const data = await res.json();
-      figma.ui.postMessage({ type: 'progress-loaded', data });
-    } catch {
+      var res = await fetch(SERVER + '/progress');
+      var data = await res.json();
+      figma.ui.postMessage({ type: 'progress-loaded', data: data });
+    } catch (_) {
       figma.ui.postMessage({ type: 'error', message: 'Server not reachable.' });
     }
-  }
-
-  if (msg.type === 'publish-kits') {
-    const { kits } = msg;
-    const results = [];
-
-    figma.ui.postMessage({ type: 'status', message: `Publishing ${kits.length} kits...` });
-
-    for (let i = 0; i < kits.length; i++) {
-      const kit = kits[i];
-      figma.ui.postMessage({ type: 'status', message: `[${i + 1}/${kits.length}] Creating ${kit.kitSlug}...` });
-
-      try {
-        await createKitFile(kit);
-
-        // The current file's key is the figmaFileKey for this kit
-        const figmaFileKey = figma.fileKey || 'local-preview';
-
-        // POST the key back to the server
-        await fetch(`${SERVER}/figma-key`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ kitSlug: kit.kitSlug, figmaFileKey }),
-        });
-
-        results.push({ kitSlug: kit.kitSlug, figmaFileKey, ok: true });
-        figma.ui.postMessage({ type: 'kit-done', kitSlug: kit.kitSlug, figmaFileKey });
-      } catch (err) {
-        results.push({ kitSlug: kit.kitSlug, ok: false, error: err.message });
-        figma.ui.postMessage({ type: 'kit-error', kitSlug: kit.kitSlug, error: err.message });
-      }
-    }
-
-    figma.ui.postMessage({ type: 'all-done', results });
   }
 
   if (msg.type === 'close') {
