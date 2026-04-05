@@ -119,8 +119,20 @@ const handleRequest = async (req, res) => {
       screenCount: (packet.screenBlueprints || []).length,
       componentCount: (packet.componentInventory || []).length,
       tokenCount: (packet.tokenInventory || []).length,
-      packet,
     })));
+    return;
+  }
+
+  // GET /kit-by-slug/:slug — return full packet for a kit slug
+  if (req.method === 'GET' && url.pathname.startsWith('/kit-by-slug/')) {
+    const slug = url.pathname.slice('/kit-by-slug/'.length);
+    const all = await loadAllPackets();
+    const found = all.find(({ kitSlug }) => kitSlug === slug);
+    if (found) {
+      json(res, 200, { ok: true, kitSlug: found.kitSlug, packet: found.packet });
+    } else {
+      json(res, 404, { ok: false, error: 'Kit not found: ' + slug });
+    }
     return;
   }
 
