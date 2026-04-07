@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc *)",
+      "Bash(ffprobe *)",
+      "Bash(ffmpeg *)",
+      "Bash(mv *)",
+      "Bash(python3 *)",
+      "Bash(pip3 install *)",
+      "Bash(brew *)",
+      "Bash(git checkout *)",
+      "Bash(rm *)"
+    ]
+  },
+  "$version": 3
+}

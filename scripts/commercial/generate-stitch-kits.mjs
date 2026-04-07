@@ -300,6 +300,35 @@ export const main = async () => {
     process.stdout.write(`  [${kitIndex}/${eligibleKits.length}] ${product.slug} ... `);
     const artifactPaths = getKitArtifactPaths(product.slug, projectRoot);
     const stitchDir = await ensureDir(path.join(artifactPaths.generatedKitArtifactsDir, STITCH_OUTPUT_DIRNAME));
+    
+    // We try to pull the analysis data & images from Gemini
+    let analysisData = null;
+    let base64Image = null;
+    let imageMimeType = null;
+    
+    // Find the first screen (screen-1.webp) corresponding to this product from /assets/apps/ or dist/
+    // Since our product appName maps to the folder, we look into public/assets/apps/${product.sourceAppSlug}/
+    // e.g. "Zoom" -> "zoom" and we need to fetch multiple if needed 
+    try {
+        const appAssetsDir = path.join(projectRoot, 'public', 'assets', 'apps', product.sourceAppSlug || product.sourceAppName.toLowerCase());
+        const FilePath = path.join(appAssetsDir, 'screen-1.webp'); 
+        
+        const fileStat = await stat(FilePath).catch(() => null);
+        if (fileStat) {
+            const actualImages = await readFile(FilePath);
+            base64Image = actualImages.toString('base64');
+            imageMimeType = 'image/webp';
+            
+            const analysisPath = path.join(appAssetsDir, 'screen-1.upscale-analysis.md');
+            analysisData = await readFile(analysisPath, 'utf8').catch(() => null);
+            if (base64Image) {
+                console.log(`\n  (Attached ${product.sourceAppSlug || product.sourceAppName}/screen-1.webp to Stitch generation...)`);
+            }
+        }
+    } catch(err) {
+        // Just ignore if we can't find source assets
+    }
+    
     const prompt = buildCommercialKitPrompt({
       appName: product.sourceAppName,
       flow: {
@@ -311,6 +340,9 @@ export const main = async () => {
       components: spec.componentAbstractions,
       tokens: spec.colorStyles,
       bundleIds: product.bundleIds ?? [],
+      analysisData,
+      base64Image,
+      imageMimeType,
     });
 
     const baseMetadata = {
@@ -363,12 +395,21 @@ export const main = async () => {
 
     const client = await createStitchClient({ apiKey: process.env.STITCH_API_KEY });
     let projectId = null;
-
+    const existingRun = ledgerState.runs?.find(r => r.productId === product.id && r.stitchProjectId);
+    
     try {
       const collectedArtifacts = await withRetry(
         async () => {
-          projectId = await client.createProject(product.title);
-          const project = client.project(projectId);
+          let project;
+          if (existingRun?.stitchProjectId) {
+              projectId = existingRun.stitchProjectId;
+              console.log(`(reusing existing project ${projectId})`);
+              project = client.project(projectId);
+          } else {
+              projectId = await client.createProject(product.title);
+              project = client.project(projectId);
+          }
+          
           const screen = await project.generate(prompt, DEFAULT_DEVICE_TYPE);
           return collectGeneratedScreenArtifacts({
             client,

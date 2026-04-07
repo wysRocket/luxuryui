@@ -173,6 +173,9 @@ export const buildCommercialKitPrompt = ({
   tokens = [],
   bundleIds = [],
   category: explicitCategory,
+  analysisData = null,
+  base64Image = null,
+  imageMimeType = null,
 }) => {
   const category = explicitCategory ?? inferCategory({ bundleIds, tokens });
   const aesthetic = CATEGORY_AESTHETICS[category] ?? CATEGORY_AESTHETICS.Business;
@@ -180,7 +183,7 @@ export const buildCommercialKitPrompt = ({
   const screenBlueprints = FLOW_SCREEN_BLUEPRINTS[flowId] ?? FLOW_SCREEN_BLUEPRINTS.onboarding;
   const screenCount = Math.min(screenBlueprints.length, 8);
 
-  return [
+  const basePrompt = [
     `Design an original, commercially releasable ${aesthetic.mood} mobile app for a ${category.toLowerCase()} product.`,
     '',
     `Visual identity: ${aesthetic.feel}.`,
@@ -191,14 +194,37 @@ export const buildCommercialKitPrompt = ({
       `use generic product copy, replace any brand-specific icons with neutral system metaphors, ` +
       `and ensure no individual screen mirrors an existing app one-for-one.`,
     '',
+  ];
+  
+  if (base64Image && imageMimeType) {
+      basePrompt.push(
+          `Reference screenshot:`,
+          `![source](data:${imageMimeType};base64,${base64Image})`,
+          ``
+      );
+  }
+  
+  if (analysisData) {
+      basePrompt.push(
+          `Use the following high-fidelity structural description of the UI layout to ensure exact measurements, padding, typography scales, and structural fidelity:`,
+          `---`,
+          analysisData,
+          `---`,
+          ``
+      );
+  }
+
+  basePrompt.push(
     `Generate ${screenCount} distinct mobile screens showing the ${flow?.title ?? 'Onboarding'} flow in this exact order:`,
     ...screenBlueprints.slice(0, screenCount).map((s, i) => `${i + 1}. ${s}`),
     '',
     `Across the screens, include these UI components: ${components.join(', ')}.`,
     '',
     `Every screen must share a coherent visual system — consistent colour usage, type scale, spacing rhythm, and component style.`,
-    `The final result should feel like a premium, original product a designer could sell as an editable Figma kit.`,
-  ].join('\n');
+    `The final result should feel like a premium, original product a designer could sell as an editable Figma kit.`
+  );
+
+  return basePrompt.join('\n');
 };
 
 export const buildStitchPrompt = buildCommercialKitPrompt;
