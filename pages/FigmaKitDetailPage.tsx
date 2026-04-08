@@ -12,6 +12,7 @@ import {
   getFlowLabelForKit,
 } from '../data/figmaKits';
 import { useAppSession } from '../contexts/AppSessionContext';
+import { getCreditState } from '../services/presentationState';
 
 const FigmaKitDetailPage: React.FC = () => {
   const { kitSlug } = useParams<{ kitSlug: string }>();
@@ -31,7 +32,7 @@ const FigmaKitDetailPage: React.FC = () => {
   const flowLabel = getFlowLabelForKit(kit.primaryFlowId);
   const quote = getCreditQuote(kit.creditCost);
   const alreadyUnlocked = hasUnlocked(kit.id);
-  const hasEnoughCredits = (wallet?.balance ?? 0) >= kit.creditCost;
+  const creditState = getCreditState(isAuthenticated, wallet?.balance ?? 0, kit.creditCost);
 
   const handlePurchase = async () => {
     setPurchaseError('');
@@ -131,10 +132,10 @@ const FigmaKitDetailPage: React.FC = () => {
                       to={`/login?redirect=${encodeURIComponent(`/kits/${kit.slug}`)}`}
                       className="inline-flex items-center justify-center gap-2 rounded-full bg-black dark:bg-white px-6 py-3 text-sm font-black text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
                     >
-                      Sign in to buy
+                      Sign in to unlock
                       <ArrowRight size={15} />
                     </Link>
-                  ) : hasEnoughCredits ? (
+                  ) : creditState === 'ready' ? (
                     <button
                       type="button"
                       onClick={handlePurchase}
@@ -146,17 +147,17 @@ const FigmaKitDetailPage: React.FC = () => {
                     </button>
                   ) : (
                     <Link
-                      to="/pricing"
+                      to="/account"
                       className="inline-flex items-center justify-center gap-2 rounded-full bg-black dark:bg-white px-6 py-3 text-sm font-black text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
                     >
-                      Top up credits
+                      Top up in account
                       <ArrowRight size={15} />
                     </Link>
                   )}
 
-                  {!alreadyUnlocked && isAuthenticated && !hasEnoughCredits && (
+                  {!alreadyUnlocked && isAuthenticated && creditState !== 'ready' && (
                     <div className="rounded-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 px-4 py-4 text-sm text-gray-600 dark:text-gray-300">
-                      You have {wallet?.balance ?? 0} credits. Add {Math.max(0, kit.creditCost - (wallet?.balance ?? 0))} more to unlock this kit.
+                      You have {wallet?.balance ?? 0} credits. Add {Math.max(0, kit.creditCost - (wallet?.balance ?? 0))} more in your account wallet to unlock this kit.
                     </div>
                   )}
                 </div>
@@ -283,15 +284,15 @@ const FigmaKitDetailPage: React.FC = () => {
                 ? `/kits/${kit.slug}/delivery`
                 : review?.readyForSale
                   ? isAuthenticated
-                    ? hasEnoughCredits
+                    ? creditState === 'ready'
                       ? `/kits/${kit.slug}`
-                      : '/pricing'
+                      : '/account'
                     : `/login?redirect=${encodeURIComponent(`/kits/${kit.slug}`)}`
                   : '/kits'
             }
             className="mt-5 inline-flex items-center gap-2 text-sm font-black text-blue-600 dark:text-blue-400"
           >
-            {alreadyUnlocked ? 'Open delivery' : review?.readyForSale ? (isAuthenticated && hasEnoughCredits ? 'Ready to unlock' : 'Top up credits') : 'Browse approved kits'}
+            {alreadyUnlocked ? 'Open delivery' : review?.readyForSale ? (isAuthenticated && creditState === 'ready' ? 'Ready to unlock' : 'Top up in account') : 'Browse approved kits'}
             <Download size={15} />
           </Link>
         </article>

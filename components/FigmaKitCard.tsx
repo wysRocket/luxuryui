@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { FigmaKitProduct } from '../types';
 import { formatCreditCost, getFlowLabelForKit } from '../data/figmaKits';
 import { useAppSession } from '../contexts/AppSessionContext';
+import { getCreditState } from '../services/presentationState';
 
 interface FigmaKitCardProps {
   kit: FigmaKitProduct;
@@ -13,15 +14,15 @@ const FigmaKitCard: React.FC<FigmaKitCardProps> = ({ kit }) => {
   const flowLabel = getFlowLabelForKit(kit.primaryFlowId);
   const { isAuthenticated, wallet, hasUnlocked } = useAppSession();
   const unlocked = hasUnlocked(kit.id);
-  const hasEnoughCredits = (wallet?.balance ?? 0) >= kit.creditCost;
+  const creditState = getCreditState(isAuthenticated, wallet?.balance ?? 0, kit.creditCost);
 
   const action = unlocked
     ? { label: 'Open delivery', to: `/kits/${kit.slug}/delivery` }
     : !isAuthenticated
-      ? { label: 'Sign in to buy', to: `/login?redirect=${encodeURIComponent(kit.previewPath)}` }
-      : hasEnoughCredits
+      ? { label: 'Sign in to unlock', to: `/login?redirect=${encodeURIComponent(kit.previewPath)}` }
+      : creditState === 'ready'
         ? { label: `Use ${kit.creditCost} credits`, to: kit.previewPath }
-        : { label: 'Top up credits', to: '/pricing' };
+        : { label: 'Top up in account', to: '/account' };
 
   return (
     <article className="group rounded-[28px] border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 overflow-hidden shadow-sm hover:shadow-xl hover:shadow-black/5 transition-all">
@@ -38,7 +39,13 @@ const FigmaKitCard: React.FC<FigmaKitCardProps> = ({ kit }) => {
               {unlocked && (
                 <span className="inline-flex items-center gap-1 rounded-full bg-white/14 px-3 py-1.5 text-[11px] font-black uppercase tracking-[0.18em] text-white">
                   <CheckCircle2 size={12} />
-                  Purchased
+                  Owned
+                </span>
+              )}
+              {!unlocked && (
+                <span className="inline-flex items-center gap-1 rounded-full bg-white/10 px-3 py-1.5 text-[11px] font-black uppercase tracking-[0.18em] text-white/85">
+                  <ShieldCheck size={12} />
+                  Available to unlock
                 </span>
               )}
               <span className="inline-flex items-center gap-1 rounded-full bg-emerald-400/12 px-3 py-1.5 text-[11px] font-black uppercase tracking-[0.18em] text-emerald-200">
