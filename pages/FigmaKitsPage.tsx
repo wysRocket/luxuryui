@@ -3,6 +3,7 @@ import { ArrowRight, PackageCheck, Sparkles, Store } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import FigmaKitCard from '../components/FigmaKitCard';
 import { FIGMA_KIT_SUMMARY, getPublishedFigmaKits } from '../data/figmaKits';
+import { useAppSession } from '../contexts/AppSessionContext';
 
 const comparisonCards = [
   {
@@ -19,6 +20,7 @@ const comparisonCards = [
 
 const FigmaKitsPage: React.FC = () => {
   const publishedKits = getPublishedFigmaKits();
+  const { isAuthenticated } = useAppSession();
 
   return (
     <div className="p-4 md:p-8 max-w-[1600px] mx-auto w-full">
@@ -71,8 +73,8 @@ const FigmaKitsPage: React.FC = () => {
           <p className="text-xs font-black uppercase tracking-[0.2em] text-gray-400 dark:text-gray-500 mb-3">Published Kits</p>
           <h2 className="text-3xl md:text-4xl font-black tracking-tight text-gray-900 dark:text-white">Storefront-ready Figma products</h2>
         </div>
-        <Link to="/pricing" className="inline-flex items-center gap-2 text-sm font-black text-blue-600 dark:text-blue-400">
-          Top up credits <ArrowRight size={14} />
+        <Link to={isAuthenticated ? "/account" : "/pricing"} className="inline-flex items-center gap-2 text-sm font-black text-blue-600 dark:text-blue-400">
+          {isAuthenticated ? 'Open buyer portal' : 'Top up credits'} <ArrowRight size={14} />
         </Link>
       </section>
 

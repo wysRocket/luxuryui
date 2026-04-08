@@ -6,6 +6,7 @@ import { formatCreditCost, getPublishedKitForAppSlug } from '../data/figmaKits';
 import { REAL_APP_ASSETS } from '../data/realAppAssets';
 import { AppItem } from '../types';
 import { useAppSession } from '../contexts/AppSessionContext';
+import { getAppPresentationState, getResearchTierLabel } from '../services/presentationState';
 
 interface AppDetailsModalProps {
   app: AppItem | null;
@@ -31,16 +32,52 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
   }, [app, realScreenshots]);
   const relatedKit = app ? getPublishedKitForAppSlug(app.slug) : undefined;
   const kitUnlocked = relatedKit ? hasUnlocked(relatedKit.id) : false;
-  const hasEnoughCredits = relatedKit ? (wallet?.balance ?? 0) >= relatedKit.creditCost : false;
-  const sourceQuality = app?.sourceQuality ?? 'unknown';
+  const presentation = app
+    ? getAppPresentationState({
+        app,
+        relatedKit,
+        isAuthenticated,
+        walletBalance: wallet?.balance ?? 0,
+        isOwned: kitUnlocked,
+      })
+    : undefined;
+  const researchLabel = presentation
+    ? getResearchTierLabel(presentation.researchTier)
+    : '';
   const qualityMessage =
-    sourceQuality === 'pass'
-      ? 'This source set meets the current premium preview bar.'
-      : sourceQuality === 'warn'
-        ? 'This source set is useful for research, but some screenshots are mixed-resolution.'
-        : app?.assetOrigin === 'generated'
-          ? 'This app currently uses generated preview imagery instead of a fully verified source set.'
-          : 'This source set is still in preview mode.';
+    presentation?.researchTier === 'verified'
+      ? 'This source set clears the premium research bar and can carry the strongest visual treatment.'
+      : presentation?.researchTier === 'research'
+        ? 'This source set is still useful for reference work, but mixed image quality keeps it out of the premium tier.'
+        : 'This entry currently relies on generated fallback imagery, so it stays in the restrained research tier.';
+  const commercialHeadline =
+    presentation?.commercialState === 'owned'
+      ? 'Owned in your client library'
+      : presentation?.commercialState === 'available'
+        ? 'Editable kit available'
+        : 'Not yet available for purchase';
+  const commercialBody =
+    presentation?.commercialState === 'owned'
+      ? 'You already own the editable kit for this app. Open delivery to access the commercial file package and notes.'
+      : presentation?.commercialState === 'available'
+        ? `This app has an approved editable kit in the commercial catalog. Use this preview for research, then unlock the production-ready file package for ${formatCreditCost(relatedKit?.creditCost ?? 0)}.`
+        : 'This source set is still valuable for research, but it has not passed the commercial gate required for a sellable editable kit.';
+  const commercialActionPath =
+    presentation?.commercialState === 'owned'
+      ? `/kits/${relatedKit?.slug}/delivery`
+      : !isAuthenticated
+        ? `/login?redirect=${encodeURIComponent(relatedKit?.previewPath ?? `/apps/${app?.id}/screens`)}`
+        : presentation?.creditState === 'ready'
+          ? relatedKit?.previewPath
+          : '/account';
+  const commercialActionLabel =
+    presentation?.commercialState === 'owned'
+      ? 'Open delivery'
+      : !isAuthenticated
+        ? 'Sign in to unlock'
+        : presentation?.creditState === 'ready'
+          ? 'View editable kit'
+          : 'Top up in account';
 
   useEffect(() => {
     if (!app) {
@@ -101,7 +138,7 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
               <div className="relative z-10 flex h-full flex-col p-5 sm:p-6 md:p-8">
                 <div className="flex items-start justify-between gap-3">
                   <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/80 backdrop-blur-md">
-                    <span>Curated Preview</span>
+                    <span>{researchLabel}</span>
                     <span className="h-1 w-1 rounded-full bg-white/50" />
                     <span>{screenshots.length} shots</span>
                   </div>
@@ -254,30 +291,41 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
               </div>
 
               <div className="mb-8">
-                <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-3">About this app</h4>
+                <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-3">Research brief</h4>
                 <p className="text-gray-600 dark:text-gray-400 text-[15px] leading-relaxed">
-                  Explore the user journey and design patterns of {app.name}. This preview focuses on curated reference screens that help you study navigation, visual tone, and core product flows without stretching low-resolution assets beyond their comfort zone.
+                  Study the user journey and design patterns of {app.name} through a curated research lens. This dossier is meant to help you inspect navigation, hierarchy, and flow structure before you decide whether you need the editable commercial kit.
+                </p>
+              </div>
+
+              <div className="mb-8 rounded-2xl border border-gray-100 bg-white px-5 py-4 text-gray-900 dark:border-gray-800 dark:bg-gray-950/40 dark:text-white">
+                <p className="text-[10px] font-black uppercase tracking-[0.18em] text-gray-400 dark:text-gray-500 mb-2">
+                  Best Used For
+                </p>
+                <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+                  Compare product choices, save structural references, and assess whether this source is strong enough to justify moving into the commercial layer.
                 </p>
               </div>
 
               <div className={`mb-8 rounded-2xl border px-5 py-4 ${
-                sourceQuality === 'pass'
+                presentation?.researchTier === 'verified'
                   ? 'border-emerald-200 bg-emerald-50 text-emerald-900 dark:border-emerald-900/30 dark:bg-emerald-950/20 dark:text-emerald-100'
-                  : 'border-amber-200 bg-amber-50 text-amber-900 dark:border-amber-900/30 dark:bg-amber-950/20 dark:text-amber-100'
+                  : presentation?.researchTier === 'research'
+                    ? 'border-amber-200 bg-amber-50 text-amber-900 dark:border-amber-900/30 dark:bg-amber-950/20 dark:text-amber-100'
+                    : 'border-slate-200 bg-slate-50 text-slate-900 dark:border-slate-800 dark:bg-slate-950/30 dark:text-slate-100'
               }`}>
                 <p className="text-[10px] font-black uppercase tracking-[0.18em] mb-2">
-                  {sourceQuality === 'pass' ? 'Verified preview quality' : 'Reference quality note'}
+                  {presentation?.researchTier === 'verified' ? 'Verified research tier' : presentation?.researchTier === 'research' ? 'Research tier note' : 'Generated tier note'}
                 </p>
                 <p className="text-sm leading-relaxed">{qualityMessage}</p>
               </div>
 
               <div className="mb-8 rounded-2xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-950/40 p-5">
-                <p className="text-[10px] font-black uppercase tracking-[0.18em] text-gray-400 dark:text-gray-500 mb-2">Commercial Status</p>
+                <p className="text-[10px] font-black uppercase tracking-[0.18em] text-gray-400 dark:text-gray-500 mb-2">Commercial Action</p>
                 {relatedKit ? (
                   <>
-                    <h4 className="text-lg font-black tracking-tight text-gray-900 dark:text-white mb-2">Editable Figma kit available</h4>
+                    <h4 className="text-lg font-black tracking-tight text-gray-900 dark:text-white mb-2">{commercialHeadline}</h4>
                     <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400 mb-4">
-                      This app has an approved transformed flow kit in the commercial catalog. Use the screenshots for research, then jump to the editable file package when you need production-ready assets. Current unlock cost: {formatCreditCost(relatedKit.creditCost)}.
+                      {commercialBody}
                     </p>
                     <div className="flex flex-wrap gap-2">
                       <Link
@@ -288,27 +336,19 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
                         View what’s included
                       </Link>
                       <Link
-                        to={
-                          kitUnlocked
-                            ? `/kits/${relatedKit.slug}/delivery`
-                            : !isAuthenticated
-                              ? `/login?redirect=${encodeURIComponent(relatedKit.previewPath)}`
-                              : hasEnoughCredits
-                                ? relatedKit.previewPath
-                                : relatedKit.purchasePath
-                        }
+                        to={commercialActionPath ?? relatedKit.previewPath}
                         onClick={onClose}
                         className="inline-flex items-center justify-center rounded-full bg-black dark:bg-white px-4 py-2 text-sm font-black text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
                       >
-                        {kitUnlocked ? 'Open delivery' : !isAuthenticated ? 'Sign in to buy' : hasEnoughCredits ? 'Use credits' : 'Top up credits'}
+                        {commercialActionLabel}
                       </Link>
                     </div>
                   </>
                 ) : (
                   <>
-                    <h4 className="text-lg font-black tracking-tight text-gray-900 dark:text-white mb-2">Research-only reference</h4>
+                    <h4 className="text-lg font-black tracking-tight text-gray-900 dark:text-white mb-2">{commercialHeadline}</h4>
                     <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-                      This source set is still useful for inspiration, but it has not passed the commercial gate required for a sellable Figma kit yet.
+                      {commercialBody}
                     </p>
                   </>
                 )}
