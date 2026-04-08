@@ -107,6 +107,23 @@ const handleRequest = async (req, res) => {
     return;
   }
 
+  // GET /kit-by-slug/:kitSlug — return reconstruction packet for a specific kitSlug
+  if (req.method === 'GET' && url.pathname.startsWith('/kit-by-slug/')) {
+    const slug = decodeURIComponent(url.pathname.slice('/kit-by-slug/'.length));
+    if (!slug) {
+      json(res, 400, { ok: false, error: 'Missing kit slug' });
+      return;
+    }
+    const all = await loadAllPackets();
+    const found = all.find(({ kitSlug }) => kitSlug === slug);
+    if (found) {
+      json(res, 200, { ok: true, kitSlug: found.kitSlug, packet: found.packet });
+    } else {
+      json(res, 404, { ok: false, error: `No kit found for slug: ${slug}` });
+    }
+    return;
+  }
+
   // GET /all-kits — return slim list of all 76 kits for manual picker
   if (req.method === 'GET' && url.pathname === '/all-kits') {
     const all = await loadAllPackets();

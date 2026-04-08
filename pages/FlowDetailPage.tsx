@@ -6,6 +6,7 @@ import { AppItem } from '../types';
 import { FLOW_DEFINITIONS, getFlowApps, getFlowScreens } from '../data/flows';
 import { getPublishedKitsForFlow } from '../data/figmaKits';
 import FigmaKitCard from '../components/FigmaKitCard';
+import { useAppSession } from '../contexts/AppSessionContext';
 
 interface FlowDetailPageProps {
   apps: AppItem[];
@@ -13,6 +14,7 @@ interface FlowDetailPageProps {
 
 const FlowDetailPage: React.FC<FlowDetailPageProps> = ({ apps }) => {
   const { flowId } = useParams<{ flowId: string }>();
+  const { isAuthenticated } = useAppSession();
 
   const flow = useMemo(() => FLOW_DEFINITIONS.find((item) => item.id === flowId), [flowId]);
 
@@ -86,11 +88,11 @@ const FlowDetailPage: React.FC<FlowDetailPageProps> = ({ apps }) => {
                 </p>
               </div>
               <Link
-                to="/pricing"
+                to={isAuthenticated ? '/account' : '/pricing'}
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-black dark:bg-white px-5 py-3 text-sm font-black text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
               >
                 <PackageCheck size={16} />
-                Top up credits
+                {isAuthenticated ? 'Open buyer portal' : 'Top up credits'}
               </Link>
             </div>
           </div>

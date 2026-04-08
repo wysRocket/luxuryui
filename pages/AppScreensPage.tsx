@@ -6,6 +6,7 @@ import { buildGeneratedScreens } from '../services/assetFactory';
 import { REAL_APP_ASSETS } from '../data/realAppAssets';
 import { formatCreditCost, getPublishedKitForAppSlug } from '../data/figmaKits';
 import { useAppSession } from '../contexts/AppSessionContext';
+import { getAppPresentationState } from '../services/presentationState';
 
 const AppScreensPage: React.FC = () => {
   const { appId } = useParams<{ appId: string }>();
@@ -14,8 +15,19 @@ const AppScreensPage: React.FC = () => {
   const app = useMemo(() => MOCK_APPS.find((item) => item.id === appId), [appId]);
   const relatedKit = useMemo(() => (app ? getPublishedKitForAppSlug(app.slug) : undefined), [app]);
   const kitUnlocked = relatedKit ? hasUnlocked(relatedKit.id) : false;
-  const hasEnoughCredits = relatedKit ? (wallet?.balance ?? 0) >= relatedKit.creditCost : false;
-  const sourceQuality = app?.sourceQuality ?? 'unknown';
+  const presentation = useMemo(
+    () =>
+      app
+        ? getAppPresentationState({
+            app,
+            relatedKit,
+            isAuthenticated,
+            walletBalance: wallet?.balance ?? 0,
+            isOwned: kitUnlocked,
+          })
+        : undefined,
+    [app, relatedKit, isAuthenticated, wallet?.balance, kitUnlocked]
+  );
 
   const screens = useMemo(() => {
     if (!app) return [];
@@ -73,11 +85,17 @@ const AppScreensPage: React.FC = () => {
               {screens.length} screens
             </span>
             <span className={`inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-black ${
-              sourceQuality === 'pass'
+              presentation?.researchTier === 'verified'
                 ? 'border border-emerald-200 bg-emerald-50 text-emerald-800 dark:border-emerald-900/30 dark:bg-emerald-950/20 dark:text-emerald-200'
-                : 'border border-amber-200 bg-amber-50 text-amber-800 dark:border-amber-900/30 dark:bg-amber-950/20 dark:text-amber-200'
+                : presentation?.researchTier === 'research'
+                  ? 'border border-amber-200 bg-amber-50 text-amber-800 dark:border-amber-900/30 dark:bg-amber-950/20 dark:text-amber-200'
+                  : 'border border-slate-200 bg-slate-50 text-slate-800 dark:border-slate-800 dark:bg-slate-950/30 dark:text-slate-200'
             }`}>
-              {sourceQuality === 'pass' ? 'Verified preview set' : 'Research-grade preview'}
+              {presentation?.researchTier === 'verified'
+                ? 'Verified research'
+                : presentation?.researchTier === 'research'
+                  ? 'Research preview'
+                  : 'Generated reference'}
             </span>
             {relatedKit ? (
               <>
@@ -93,13 +111,13 @@ const AppScreensPage: React.FC = () => {
                       ? `/kits/${relatedKit.slug}/delivery`
                       : !isAuthenticated
                         ? `/login?redirect=${encodeURIComponent(relatedKit.previewPath)}`
-                        : hasEnoughCredits
+                        : presentation?.creditState === 'ready'
                           ? relatedKit.previewPath
-                          : relatedKit.purchasePath
+                          : '/account'
                   }
                   className="inline-flex items-center gap-2 rounded-full bg-black dark:bg-white text-white dark:text-black px-4 py-2 text-sm font-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
                 >
-                  {kitUnlocked ? 'Open delivery' : !isAuthenticated ? 'Sign in to buy' : hasEnoughCredits ? 'Use credits' : 'Top up credits'}
+                  {kitUnlocked ? 'Open delivery' : !isAuthenticated ? 'Sign in to unlock' : presentation?.creditState === 'ready' ? 'View editable kit' : 'Top up in account'}
                 </Link>
               </>
             ) : (
@@ -111,11 +129,13 @@ const AppScreensPage: React.FC = () => {
         </div>
       </section>
 
-      {sourceQuality !== 'pass' && (
+      {presentation?.researchTier !== 'verified' && (
         <section className="rounded-3xl border border-amber-200 bg-amber-50 dark:border-amber-900/30 dark:bg-amber-950/20 px-6 py-5 mb-10">
           <p className="text-[10px] font-black uppercase tracking-[0.18em] text-amber-700 dark:text-amber-300 mb-2">Quality note</p>
           <p className="text-sm leading-relaxed text-amber-900 dark:text-amber-100">
-            These screens are still useful for reference work, but the source set is not visually consistent enough to present as a premium asset preview. We keep the full gallery available for research while reserving the highest-gloss treatment for verified sets.
+            {presentation?.researchTier === 'generated'
+              ? 'These screens remain available for directional research, but generated imagery is intentionally kept out of the premium presentation tier.'
+              : 'These screens are still useful for reference work, but the source set is not visually consistent enough to present as a premium asset preview.'}
           </p>
         </section>
       )}
@@ -145,14 +165,14 @@ const AppScreensPage: React.FC = () => {
                     ? `/kits/${relatedKit.slug}/delivery`
                     : !isAuthenticated
                       ? `/login?redirect=${encodeURIComponent(relatedKit.previewPath)}`
-                      : hasEnoughCredits
+                      : presentation?.creditState === 'ready'
                         ? relatedKit.previewPath
-                        : relatedKit.purchasePath
+                        : '/account'
                 }
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-black dark:bg-white px-5 py-3 text-sm font-black text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
               >
                 <PackageCheck size={16} />
-                {kitUnlocked ? 'Open delivery' : !isAuthenticated ? 'Sign in to buy' : hasEnoughCredits ? 'Use credits' : 'Top up credits'}
+                {kitUnlocked ? 'Open delivery' : !isAuthenticated ? 'Sign in to unlock' : presentation?.creditState === 'ready' ? 'View editable kit' : 'Top up in account'}
               </Link>
             </div>
           </div>

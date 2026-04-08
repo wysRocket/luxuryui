@@ -50,7 +50,7 @@ const CreditsPage: React.FC = () => {
           <p className="text-xs font-black uppercase tracking-[0.24em] text-gray-400 dark:text-gray-500 mb-4">Credits</p>
           <h1 className="text-4xl md:text-6xl font-black tracking-tight text-gray-900 dark:text-white mb-4">Top Up Credits For Editable Figma Kits</h1>
           <p className="text-[16px] md:text-lg text-gray-600 dark:text-gray-400 max-w-3xl leading-relaxed">
-            Browse the research library for free, top up credits when you are ready, and spend those credits on transformed Figma kits with screens, components, tokens, and delivery notes.
+            Browse the research library for free, top up credits when you are ready, and spend those credits on transformed Figma kits with screens, components, tokens, and delivery notes. Signed-in buyers should treat this page as a pricing explainer and use their account hub for repeat top-ups.
           </p>
         </div>
 
@@ -188,20 +188,20 @@ const CreditsPage: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-3 mb-6">
             {isAuthenticated ? (
               <>
+                <Link
+                  to="/account"
+                  className="inline-flex items-center justify-center rounded-full bg-black dark:bg-white px-6 py-3 text-sm font-black text-white dark:text-black"
+                >
+                  Open buyer portal
+                </Link>
                 <button
                   type="button"
                   onClick={handleTopUp}
                   disabled={isBusy}
-                  className="inline-flex items-center justify-center rounded-full bg-black dark:bg-white px-6 py-3 text-sm font-black text-white dark:text-black disabled:opacity-60"
+                  className="inline-flex items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 px-6 py-3 text-sm font-bold text-gray-700 dark:text-gray-200 disabled:opacity-60"
                 >
-                  {isBusy ? 'Processing top-up...' : `Complete top-up for ${formatCreditCost(quote.credits)}`}
+                  {isBusy ? 'Processing top-up...' : 'Top up here instead'}
                 </button>
-                <Link
-                  to="/account"
-                  className="inline-flex items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 px-6 py-3 text-sm font-bold text-gray-700 dark:text-gray-200"
-                >
-                  Open account
-                </Link>
               </>
             ) : (
               <>
@@ -223,8 +223,8 @@ const CreditsPage: React.FC = () => {
 
           <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">
             {backendMode === 'firebase'
-              ? 'Your account, wallet balance, and unlocked kits now persist through Firebase Auth + Firestore. Top-ups here are still instant mock payments until Stripe checkout is connected.'
-              : 'Currency display is informational. You adjust credits here, then spend those credits on approved Figma kits in the storefront.'}
+              ? 'Your account, wallet balance, and unlocked kits now persist through Firebase Auth + Firestore. Use the buyer portal for the fastest repeat top-up flow; this page remains available as a pricing explainer until Stripe checkout is connected.'
+              : 'Currency display is informational. Signed-in buyers should manage repeat top-ups from account, then spend credits on approved Figma kits in the storefront.'}
           </p>
         </article>
 
