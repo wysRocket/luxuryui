@@ -109,16 +109,27 @@ const handleRequest = async (req, res) => {
 
   // GET /kit-by-slug/:kitSlug — return reconstruction packet for a specific kitSlug
   if (req.method === 'GET' && url.pathname.startsWith('/kit-by-slug/')) {
-    const slug = decodeURIComponent(url.pathname.slice('/kit-by-slug/'.length));
-    if (!slug) {
-      json(res, 400, { ok: false, error: 'Missing kit slug' });
+    let slug;
+    try {
+      slug = decodeURIComponent(url.pathname.slice('/kit-by-slug/'.length).replace(/\/+$/, ''));
+    } catch {
+      json(res, 400, { ok: false, error: 'Invalid encoded kit slug.' });
       return;
     }
-    const all = await loadAllPackets();
-    const found = all.find(({ kitSlug }) => kitSlug === slug);
-    if (found) {
-      json(res, 200, { ok: true, kitSlug: found.kitSlug, packet: found.packet });
-    } else {
+    if (!slug || !/^[a-z0-9-]+$/i.test(slug)) {
+      json(res, 400, { ok: false, error: 'Invalid kit slug.' });
+      return;
+    }
+    const packetPath = path.join(ARTIFACTS_DIR, slug, 'figma', 'reconstruction.json');
+    // Guard against path traversal
+    if (!packetPath.startsWith(ARTIFACTS_DIR + path.sep)) {
+      json(res, 400, { ok: false, error: 'Invalid kit slug.' });
+      return;
+    }
+    try {
+      const packet = await readJson(packetPath);
+      json(res, 200, { ok: true, kitSlug: slug, packet });
+    } catch {
       json(res, 404, { ok: false, error: `No kit found for slug: ${slug}` });
     }
     return;
