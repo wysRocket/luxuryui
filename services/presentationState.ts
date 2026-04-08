@@ -75,6 +75,21 @@ export const getAppPresentationState = ({
   hasCommercialOffer: Boolean(relatedKit),
 });
 
+export const getResearchTierLabel = (tier: ResearchTier): string => {
+  if (tier === "verified") return "Verified research";
+  if (tier === "research") return "Research preview";
+  return "Generated reference";
+};
+
+export const getCommercialStateLabel = (
+  state: CommercialState,
+  researchTier: ResearchTier = "verified",
+): string => {
+  if (state === "owned") return "Owned kit";
+  if (state === "available") return "Kit available";
+  return researchTier === "generated" ? "Generated fallback" : "Reference only";
+};
+
 export const getAvailableToUnlockKits = ({
   publishedKits,
   ownedProductIds,
