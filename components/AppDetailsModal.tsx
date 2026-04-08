@@ -6,7 +6,7 @@ import { formatCreditCost, getPublishedKitForAppSlug } from '../data/figmaKits';
 import { REAL_APP_ASSETS } from '../data/realAppAssets';
 import { AppItem } from '../types';
 import { useAppSession } from '../contexts/AppSessionContext';
-import { getAppPresentationState } from '../services/presentationState';
+import { getAppPresentationState, getResearchTierLabel } from '../services/presentationState';
 
 interface AppDetailsModalProps {
   app: AppItem | null;
@@ -41,12 +41,9 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
         isOwned: kitUnlocked,
       })
     : undefined;
-  const researchLabel =
-    presentation?.researchTier === 'verified'
-      ? 'Verified research'
-      : presentation?.researchTier === 'research'
-        ? 'Research preview'
-        : 'Generated reference';
+  const researchLabel = presentation
+    ? getResearchTierLabel(presentation.researchTier)
+    : '';
   const qualityMessage =
     presentation?.researchTier === 'verified'
       ? 'This source set clears the premium research bar and can carry the strongest visual treatment.'
@@ -324,7 +321,7 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
 
               <div className="mb-8 rounded-2xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-950/40 p-5">
                 <p className="text-[10px] font-black uppercase tracking-[0.18em] text-gray-400 dark:text-gray-500 mb-2">Commercial Action</p>
-                {presentation?.commercialState !== 'none' ? (
+                {relatedKit ? (
                   <>
                     <h4 className="text-lg font-black tracking-tight text-gray-900 dark:text-white mb-2">{commercialHeadline}</h4>
                     <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400 mb-4">

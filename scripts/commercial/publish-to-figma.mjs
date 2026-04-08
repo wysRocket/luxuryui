@@ -109,7 +109,11 @@ const handleRequest = async (req, res) => {
 
   // GET /kit-by-slug/:kitSlug — return reconstruction packet for a specific kitSlug
   if (req.method === 'GET' && url.pathname.startsWith('/kit-by-slug/')) {
-    const slug = url.pathname.slice('/kit-by-slug/'.length);
+    const slug = decodeURIComponent(url.pathname.slice('/kit-by-slug/'.length));
+    if (!slug) {
+      json(res, 400, { ok: false, error: 'Missing kit slug' });
+      return;
+    }
     const all = await loadAllPackets();
     const found = all.find(({ kitSlug }) => kitSlug === slug);
     if (found) {

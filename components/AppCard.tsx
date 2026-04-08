@@ -4,7 +4,7 @@ import { AppItem } from '../types';
 import { Smartphone, Monitor, Maximize2, Bookmark, AlertTriangle, BadgeCheck, Sparkles } from 'lucide-react';
 import { getPublishedKitForAppSlug } from '../data/figmaKits';
 import { useAppSession } from '../contexts/AppSessionContext';
-import { getAppPresentationState } from '../services/presentationState';
+import { getAppPresentationState, getResearchTierLabel, getCommercialStateLabel } from '../services/presentationState';
 
 interface AppCardProps {
   app: AppItem | null;
@@ -48,12 +48,7 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
     isOwned: relatedKit ? hasUnlocked(relatedKit.id) : false,
   });
   const isVerified = presentation.researchTier === 'verified';
-  const qualityLabel =
-    presentation.researchTier === 'verified'
-      ? 'Verified research'
-      : presentation.researchTier === 'research'
-        ? 'Research preview'
-        : 'Generated research';
+  const qualityLabel = getResearchTierLabel(presentation.researchTier);
   const qualityIcon =
     presentation.researchTier === 'verified'
       ? BadgeCheck
@@ -61,12 +56,7 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
         ? AlertTriangle
         : Sparkles;
   const QualityIcon = qualityIcon;
-  const commercialLabel =
-    presentation.commercialState === 'owned'
-      ? 'Owned kit'
-      : presentation.commercialState === 'available'
-        ? 'Editable kit available'
-        : 'Research only';
+  const commercialLabel = getCommercialStateLabel(presentation.commercialState, presentation.researchTier);
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
     if (!cardRef.current) return;
@@ -231,16 +221,10 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
            <div className="px-5 pb-5">
               <div className="flex justify-between items-end mb-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <span className="text-[10px] font-black text-white uppercase tracking-tighter">
-                  {isVerified ? 'Verified research' : presentation.researchTier === 'research' ? 'Research preview' : 'Generated reference'}
+                  {getResearchTierLabel(presentation.researchTier)}
                 </span>
                 <span className="text-[10px] font-black text-white/85">
-                  {presentation.commercialState === 'owned'
-                    ? 'Owned commercial kit'
-                    : presentation.commercialState === 'available'
-                      ? 'Commercial layer available'
-                      : presentation.researchTier === 'generated'
-                        ? 'Generated fallback'
-                        : 'Reference only'}
+                  {getCommercialStateLabel(presentation.commercialState, presentation.researchTier)}
                 </span>
               </div>
               <div className="h-[3px] w-full bg-white/20 rounded-full overflow-hidden backdrop-blur-sm">
