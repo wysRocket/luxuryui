@@ -152,7 +152,7 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
                   </button>
                 </div>
 
-                <div className="flex flex-1 items-center justify-center py-4 sm:py-6 md:py-10">
+                <div className="flex flex-1 items-center justify-center pt-2 sm:pt-6 md:pt-10 pb-28 md:pb-10 min-h-0 overflow-hidden">
                   <div className="w-full max-w-[min(88vw,360px)] sm:max-w-[320px] md:max-w-[360px]">
                     <div className="rounded-[2rem] border border-white/10 bg-black/55 p-3 shadow-[0_30px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl">
                       <div className="mb-3 flex justify-center">
@@ -175,7 +175,8 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
                 </div>
 
                 {screenshots.length > 1 && (
-                  <div className="-mx-1 flex gap-3 overflow-x-auto px-1 pb-1">
+                  <div className="absolute bottom-0 left-0 right-0 z-20 px-5 sm:px-6 md:px-8 pb-4">
+                  <div className="flex gap-2 overflow-x-auto pb-1">
                     {screenshots.slice(0, 8).map((screenshot, index) => {
                       const isActive = screenshot === activeScreenshot;
 
@@ -194,7 +195,7 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
                           <img
                             src={screenshot}
                             alt={`${app.name} screenshot ${index + 1}`}
-                            className={`h-28 w-[5.2rem] sm:h-24 sm:w-[4.4rem] bg-black object-cover transition-transform duration-300 ${
+                            className={`h-20 w-14 sm:h-24 sm:w-[4.4rem] bg-black object-cover transition-transform duration-300 ${
                               isActive ? 'scale-[1.03]' : 'group-hover:scale-[1.03]'
                             }`}
                             draggable={false}
@@ -205,6 +206,7 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
                         </button>
                       );
                     })}
+                  </div>
                   </div>
                 )}
               </div>
