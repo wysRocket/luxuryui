@@ -17,7 +17,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/airbnb/screen-7.webp",
       "/assets/apps/airbnb/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.airbnb.android&hl=en&gl=us"
   },
   "Amazon": {
     "logo": "/assets/apps/amazon/logo.webp",
@@ -31,7 +31,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/amazon/screen-7.webp",
       "/assets/apps/amazon/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/amazon-shopping/id297606951?uo=4"
   },
   "Apple Music": {
     "logo": "/assets/apps/apple-music/logo.webp",
@@ -45,7 +45,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/apple-music/screen-7.webp",
       "/assets/apps/apple-music/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.apple.android.music&hl=en&gl=us"
   },
   "Asana": {
     "logo": "/assets/apps/asana/logo.webp",
@@ -58,7 +58,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/asana/screen-6.webp",
       "/assets/apps/asana/screen-7.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.asana.app&hl=en&gl=us"
   },
   "ASOS": {
     "logo": "/assets/apps/asos/logo.webp",
@@ -70,7 +70,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/asos/screen-5.webp",
       "/assets/apps/asos/screen-6.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/asos-discover-fashion-online/id457876088?uo=4"
   },
   "Babbel": {
     "logo": "/assets/apps/babbel/logo.webp",
@@ -84,7 +84,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/babbel/screen-7.webp",
       "/assets/apps/babbel/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/babbel-language-learning/id829587759?uo=4"
   },
   "BBC News": {
     "logo": "/assets/apps/bbc-news/logo.webp",
@@ -98,7 +98,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/bbc-news/screen-7.webp",
       "/assets/apps/bbc-news/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/bbc-world-news-stories/id364147881?uo=4"
   },
   "BeReal": {
     "logo": "/assets/apps/bereal/logo.webp",
@@ -110,7 +110,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/bereal/screen-5.webp",
       "/assets/apps/bereal/screen-6.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.bereal.ft&hl=en&gl=us"
   },
   "Binance": {
     "logo": "/assets/apps/binance/logo.webp",
@@ -124,7 +124,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/binance/screen-7.webp",
       "/assets/apps/binance/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.binance.dev&hl=en&gl=us"
   },
   "Booking.com": {
     "logo": "/assets/apps/booking-com/logo.webp",
@@ -138,7 +138,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/booking-com/screen-7.webp",
       "/assets/apps/booking-com/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/booking-com-hotels-travel/id367003839?uo=4"
   },
   "Calm": {
     "logo": "/assets/apps/calm/logo.webp",
@@ -152,7 +152,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/calm/screen-7.webp",
       "/assets/apps/calm/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/calm/id571800810?uo=4"
   },
   "Coinbase": {
     "logo": "/assets/apps/coinbase/logo.webp",
@@ -165,7 +165,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/coinbase/screen-6.webp",
       "/assets/apps/coinbase/screen-7.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/coinbase-buy-crypto-stocks/id886427730?uo=4"
   },
   "Deezer": {
     "logo": "/assets/apps/deezer/logo.webp",
@@ -179,7 +179,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/deezer/screen-7.webp",
       "/assets/apps/deezer/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=deezer.android.app&hl=en&gl=us"
   },
   "Duolingo": {
     "logo": "/assets/apps/duolingo/logo.webp",
@@ -193,7 +193,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/duolingo/screen-7.webp",
       "/assets/apps/duolingo/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.duolingo&hl=en&gl=us"
   },
   "eBay": {
     "logo": "/assets/apps/ebay/logo.webp",
@@ -205,7 +205,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/ebay/screen-5.webp",
       "/assets/apps/ebay/screen-6.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/ebay-online-shopping-selling/id282614216?uo=4"
   },
   "Etsy": {
     "logo": "/assets/apps/etsy/logo.webp",
@@ -219,7 +219,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/etsy/screen-7.webp",
       "/assets/apps/etsy/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/etsy-shop-home-style-more/id477128284?uo=4"
   },
   "Expedia": {
     "logo": "/assets/apps/expedia/logo.webp",
@@ -233,7 +233,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/expedia/screen-7.webp",
       "/assets/apps/expedia/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.expedia.bookings&hl=en&gl=us"
   },
   "Fitbit": {
     "logo": "/assets/apps/fitbit/logo.webp",
@@ -245,7 +245,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/fitbit/screen-5.webp",
       "/assets/apps/fitbit/screen-6.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/fitbit-health-fitness/id462638897?uo=4"
   },
   "Flipboard": {
     "logo": "/assets/apps/flipboard/logo.webp",
@@ -259,7 +259,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/flipboard/screen-7.webp",
       "/assets/apps/flipboard/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/flipboard-the-social-magazine/id358801284?uo=4"
   },
   "Flo": {
     "logo": "/assets/apps/flo/logo.webp",
@@ -273,7 +273,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/flo/screen-7.webp",
       "/assets/apps/flo/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/flo-cycle-period-tracker/id1038369065?uo=4"
   },
   "Headspace": {
     "logo": "/assets/apps/headspace/logo.webp",
@@ -287,7 +287,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/headspace/screen-7.webp",
       "/assets/apps/headspace/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/headspace-meditation-sleep/id493145008?uo=4"
   },
   "Hopper": {
     "logo": "/assets/apps/hopper/logo.webp",
@@ -301,7 +301,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/hopper/screen-7.webp",
       "/assets/apps/hopper/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.hopper.mountainview.play&hl=en&gl=us"
   },
   "HotelTonight": {
     "logo": "/assets/apps/hoteltonight/logo.webp",
@@ -314,7 +314,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/hoteltonight/screen-6.webp",
       "/assets/apps/hoteltonight/screen-7.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.hoteltonight.android.prod&hl=en&gl=us"
   },
   "Instagram": {
     "logo": "/assets/apps/instagram/logo.webp",
@@ -327,7 +327,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/instagram/screen-6.webp",
       "/assets/apps/instagram/screen-7.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/instagram/id389801252?uo=4"
   },
   "Kayak": {
     "logo": "/assets/apps/kayak/logo.webp",
@@ -341,7 +341,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/kayak/screen-7.webp",
       "/assets/apps/kayak/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.kayak.android&hl=en&gl=us"
   },
   "Khan Academy": {
     "logo": "/assets/apps/khan-academy/logo.webp",
@@ -355,7 +355,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/khan-academy/screen-7.webp",
       "/assets/apps/khan-academy/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/khan-academy/id469863705?uo=4"
   },
   "Kraken": {
     "logo": "/assets/apps/kraken/logo.webp",
@@ -369,7 +369,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/kraken/screen-7.webp",
       "/assets/apps/kraken/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/kraken-buy-crypto-stocks/id1481947260?uo=4"
   },
   "Ledger": {
     "logo": "/assets/apps/ledger/logo.webp",
@@ -383,7 +383,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/ledger/screen-7.webp",
       "/assets/apps/ledger/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.ledger.live&hl=en&gl=us"
   },
   "Linear": {
     "logo": "/assets/apps/linear/logo.webp",
@@ -395,7 +395,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/linear/screen-5.webp",
       "/assets/apps/linear/screen-6.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/linear-mobile/id1645587184?uo=4"
   },
   "LinkedIn": {
     "logo": "/assets/apps/linkedin/logo.webp",
@@ -409,7 +409,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/linkedin/screen-7.webp",
       "/assets/apps/linkedin/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/linkedin-community-network/id288429040?uo=4"
   },
   "Loom": {
     "logo": "/assets/apps/loom/logo.webp",
@@ -422,7 +422,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/loom/screen-6.webp",
       "/assets/apps/loom/screen-7.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.loom.android&hl=en&gl=us"
   },
   "MasterClass": {
     "logo": "/assets/apps/masterclass/logo.webp",
@@ -436,7 +436,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/masterclass/screen-7.webp",
       "/assets/apps/masterclass/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/masterclass-online-classes/id1273867416?uo=4"
   },
   "MetaMask": {
     "logo": "/assets/apps/metamask/logo.webp",
@@ -449,7 +449,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/metamask/screen-6.webp",
       "/assets/apps/metamask/screen-7.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=io.metamask&hl=en&gl=us"
   },
   "Mint": {
     "logo": "/assets/apps/mint/logo.webp",
@@ -462,7 +462,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/mint/screen-6.webp",
       "/assets/apps/mint/screen-7.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/mint-mobile/id1295303441?uo=4"
   },
   "Monday.com": {
     "logo": "/assets/apps/monday-com/logo.webp",
@@ -476,7 +476,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/monday-com/screen-7.webp",
       "/assets/apps/monday-com/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/monday-com-work-platform/id1290128888?uo=4"
   },
   "Monzo": {
     "logo": "/assets/apps/monzo/logo.webp",
@@ -490,7 +490,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/monzo/screen-7.webp",
       "/assets/apps/monzo/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/monzo-mobile-banking/id1052238659?uo=4"
   },
   "MyFitnessPal": {
     "logo": "/assets/apps/myfitnesspal/logo.webp",
@@ -504,7 +504,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/myfitnesspal/screen-7.webp",
       "/assets/apps/myfitnesspal/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.myfitnesspal.android&hl=en&gl=us"
   },
   "N26": {
     "logo": "/assets/apps/n26/logo.webp",
@@ -518,7 +518,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/n26/screen-7.webp",
       "/assets/apps/n26/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=de.number26.android&hl=en&gl=us"
   },
   "Nike": {
     "logo": "/assets/apps/nike/logo.webp",
@@ -532,7 +532,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/nike/screen-7.webp",
       "/assets/apps/nike/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/nike-shoes-apparel-stories/id1095459556?uo=4"
   },
   "Nike Run Club": {
     "logo": "/assets/apps/nike-run-club/logo.webp",
@@ -546,7 +546,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/nike-run-club/screen-7.webp",
       "/assets/apps/nike-run-club/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/nike-run-club-running-coach/id387771637?uo=4"
   },
   "Notion": {
     "logo": "/assets/apps/notion/logo.webp",
@@ -559,7 +559,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/notion/screen-6.webp",
       "/assets/apps/notion/screen-7.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/notion-notes-tasks-ai/id1232780281?uo=4"
   },
   "Pandora": {
     "logo": "/assets/apps/pandora/logo.webp",
@@ -573,7 +573,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/pandora/screen-7.webp",
       "/assets/apps/pandora/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/pandora-music-podcasts/id284035177?uo=4"
   },
   "PayPal": {
     "logo": "/assets/apps/paypal/logo.webp",
@@ -587,7 +587,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/paypal/screen-7.webp",
       "/assets/apps/paypal/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.paypal.android.p2pmobile&hl=en&gl=us"
   },
   "Phantom": {
     "logo": "/assets/apps/phantom/logo.webp",
@@ -600,7 +600,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/phantom/screen-6.webp",
       "/assets/apps/phantom/screen-7.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/phantom-trade-markets/id1598432977?uo=4"
   },
   "Pocket": {
     "logo": "/assets/apps/pocket/logo.webp",
@@ -628,7 +628,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/reuters/screen-7.webp",
       "/assets/apps/reuters/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.thomsonreuters.reuters&hl=en&gl=us"
   },
   "Revolut": {
     "logo": "/assets/apps/revolut/logo.webp",
@@ -642,7 +642,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/revolut/screen-7.webp",
       "/assets/apps/revolut/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.revolut.revolut&hl=en&gl=us"
   },
   "Robinhood": {
     "logo": "/assets/apps/robinhood/logo.webp",
@@ -656,7 +656,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/robinhood/screen-7.webp",
       "/assets/apps/robinhood/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/robinhood-trading-investing/id938003185?uo=4"
   },
   "Shazam": {
     "logo": "/assets/apps/shazam/logo.webp",
@@ -670,7 +670,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/shazam/screen-7.webp",
       "/assets/apps/shazam/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/shazam-find-music-concerts/id284993459?uo=4"
   },
   "Shopify": {
     "logo": "/assets/apps/shopify/logo.webp",
@@ -684,7 +684,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/shopify/screen-7.webp",
       "/assets/apps/shopify/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.shopify.mobile&hl=en&gl=us"
   },
   "Skillshare": {
     "logo": "/assets/apps/skillshare/logo.webp",
@@ -698,7 +698,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/skillshare/screen-7.webp",
       "/assets/apps/skillshare/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/skillshare-creativity-classes/id916819843?uo=4"
   },
   "Skyscanner": {
     "logo": "/assets/apps/skyscanner/logo.webp",
@@ -712,7 +712,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/skyscanner/screen-7.webp",
       "/assets/apps/skyscanner/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/skyscanner-flights-travel/id415458524?uo=4"
   },
   "Slack": {
     "logo": "/assets/apps/slack/logo.webp",
@@ -726,7 +726,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/slack/screen-7.webp",
       "/assets/apps/slack/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/slack/id618783545?uo=4"
   },
   "Sleep Cycle": {
     "logo": "/assets/apps/sleep-cycle/logo.webp",
@@ -740,7 +740,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/sleep-cycle/screen-7.webp",
       "/assets/apps/sleep-cycle/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.northcube.sleepcycle&hl=en&gl=us"
   },
   "Snapchat": {
     "logo": "/assets/apps/snapchat/logo.webp",
@@ -754,7 +754,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/snapchat/screen-7.webp",
       "/assets/apps/snapchat/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/snapchat/id447188370?uo=4"
   },
   "SoundCloud": {
     "logo": "/assets/apps/soundcloud/logo.webp",
@@ -768,7 +768,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/soundcloud/screen-7.webp",
       "/assets/apps/soundcloud/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/soundcloud-the-music-you-love/id336353151?uo=4"
   },
   "Spotify": {
     "logo": "/assets/apps/spotify/logo.webp",
@@ -782,7 +782,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/spotify/screen-7.webp",
       "/assets/apps/spotify/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/spotify-music-and-podcasts/id324684580?uo=4"
   },
   "StockX": {
     "logo": "/assets/apps/stockx/logo.webp",
@@ -796,7 +796,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/stockx/screen-7.webp",
       "/assets/apps/stockx/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.stockx.stockx&hl=en&gl=us"
   },
   "Strava": {
     "logo": "/assets/apps/strava/logo.webp",
@@ -810,7 +810,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/strava/screen-7.webp",
       "/assets/apps/strava/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/strava-run-bike-walk/id426826309?uo=4"
   },
   "Substack": {
     "logo": "/assets/apps/substack/logo.webp",
@@ -824,7 +824,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/substack/screen-7.webp",
       "/assets/apps/substack/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/substack/id1581650857?uo=4"
   },
   "The New York Times": {
     "logo": "/assets/apps/the-new-york-times/logo.webp",
@@ -838,7 +838,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/the-new-york-times/screen-7.webp",
       "/assets/apps/the-new-york-times/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/nytimes-us-and-global-news/id284862083?uo=4"
   },
   "Threads": {
     "logo": "/assets/apps/threads/logo.webp",
@@ -850,7 +850,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/threads/screen-5.webp",
       "/assets/apps/threads/screen-6.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.instagram.barcelona&hl=en&gl=us"
   },
   "TikTok": {
     "logo": "/assets/apps/tiktok/logo.webp",
@@ -864,7 +864,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/tiktok/screen-7.webp",
       "/assets/apps/tiktok/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/tiktok-videos-shop-live/id835599320?uo=4"
   },
   "Trello": {
     "logo": "/assets/apps/trello/logo.webp",
@@ -878,7 +878,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/trello/screen-7.webp",
       "/assets/apps/trello/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.trello&hl=en&gl=us"
   },
   "TripAdvisor": {
     "logo": "/assets/apps/tripadvisor/logo.webp",
@@ -892,7 +892,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/tripadvisor/screen-7.webp",
       "/assets/apps/tripadvisor/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/tripadvisor-plan-book-trips/id284876795?uo=4"
   },
   "Udemy": {
     "logo": "/assets/apps/udemy/logo.webp",
@@ -906,7 +906,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/udemy/screen-7.webp",
       "/assets/apps/udemy/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/udemy-online-video-courses/id562413829?uo=4"
   },
   "Uniswap": {
     "logo": "/assets/apps/uniswap/logo.webp",
@@ -920,7 +920,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/uniswap/screen-7.webp",
       "/assets/apps/uniswap/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/uniswap-crypto-nft-wallet/id6443944476?uo=4"
   },
   "Wallet": {
     "logo": "/assets/apps/wallet/logo.webp",
@@ -934,7 +934,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/wallet/screen-7.webp",
       "/assets/apps/wallet/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/wallet-daily-budget-profit/id1032467659?uo=4"
   },
   "Wealthfront": {
     "logo": "/assets/apps/wealthfront/logo.webp",
@@ -948,7 +948,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/wealthfront/screen-7.webp",
       "/assets/apps/wealthfront/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://apps.apple.com/us/app/wealthfront-save-and-invest/id816020992?uo=4"
   },
   "Zara": {
     "logo": "/assets/apps/zara/logo.webp",
@@ -962,7 +962,7 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/zara/screen-7.webp",
       "/assets/apps/zara/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=com.inditex.zara&hl=en&gl=us"
   },
   "Zoom": {
     "logo": "/assets/apps/zoom/logo.webp",
@@ -976,6 +976,58 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
       "/assets/apps/zoom/screen-7.webp",
       "/assets/apps/zoom/screen-8.webp"
     ],
-    "source": "local-cache"
+    "source": "https://play.google.com/store/apps/details?id=us.zoom.videomeetings&hl=en&gl=us"
+  },
+  "Twitter": {
+    "logo": "/assets/apps/twitter/logo.webp",
+    "screenshots": [
+      "/assets/apps/twitter/screen-1.webp",
+      "/assets/apps/twitter/screen-2.webp"
+    ],
+    "source": "https://apps.apple.com/us/app/blue-for-twitter/id6472628197?uo=4"
+  },
+  "WhatsApp": {
+    "logo": "/assets/apps/whatsapp/logo.webp",
+    "screenshots": [
+      "/assets/apps/whatsapp/screen-1.webp",
+      "/assets/apps/whatsapp/screen-2.webp",
+      "/assets/apps/whatsapp/screen-3.webp",
+      "/assets/apps/whatsapp/screen-4.webp",
+      "/assets/apps/whatsapp/screen-5.webp"
+    ],
+    "source": "https://apps.apple.com/us/app/whatsapp-messenger/id310633997?uo=4"
+  },
+  "Tidal": {
+    "logo": "/assets/apps/tidal/logo.webp",
+    "screenshots": [
+      "/assets/apps/tidal/screen-1.webp",
+      "/assets/apps/tidal/screen-2.webp",
+      "/assets/apps/tidal/screen-3.webp",
+      "/assets/apps/tidal/screen-4.webp"
+    ],
+    "source": "https://apps.apple.com/us/app/tidal-music-hifi-sound/id913943275?uo=4"
+  },
+  "Coursera": {
+    "logo": "/assets/apps/coursera/logo.webp",
+    "screenshots": [
+      "/assets/apps/coursera/screen-1.webp",
+      "/assets/apps/coursera/screen-2.webp",
+      "/assets/apps/coursera/screen-3.webp",
+      "/assets/apps/coursera/screen-4.webp",
+      "/assets/apps/coursera/screen-5.webp"
+    ],
+    "source": "https://apps.apple.com/us/app/coursera-grow-your-career/id736535961?uo=4"
+  },
+  "CNN": {
+    "logo": "/assets/apps/cnn/logo.webp",
+    "screenshots": [
+      "/assets/apps/cnn/screen-1.webp",
+      "/assets/apps/cnn/screen-2.webp",
+      "/assets/apps/cnn/screen-3.webp",
+      "/assets/apps/cnn/screen-4.webp",
+      "/assets/apps/cnn/screen-5.webp",
+      "/assets/apps/cnn/screen-6.webp"
+    ],
+    "source": "https://play.google.com/store/apps/details?id=com.cnn.mobile.android.tv&hl=en&gl=us"
   }
 };

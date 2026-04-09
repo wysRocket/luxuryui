@@ -79,7 +79,7 @@ const AppScreensPage: React.FC = () => {
               {app.category} for {app.platform} • {REAL_APP_ASSETS[app.name] ? 'Live app-store screenshots' : 'Generated fallback previews'}.
             </p>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             <span className="inline-flex items-center gap-2 rounded-full bg-black dark:bg-white text-white dark:text-black px-4 py-2 text-sm font-black">
               <LayoutGrid size={15} />
               {screens.length} screens
