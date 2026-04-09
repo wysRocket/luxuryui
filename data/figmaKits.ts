@@ -108,16 +108,25 @@ export const CREDIT_PACK_CONFIG: CreditPackConfig = {
   },
 };
 
+const roundCurrency = (amount: number): number =>
+  Math.round((amount + Number.EPSILON) * 100) / 100;
+
 export const clampCredits = (credits: number): number =>
-  Math.min(CREDIT_PACK_CONFIG.maxCredits, Math.max(CREDIT_PACK_CONFIG.minCredits, credits));
+  Math.min(
+    CREDIT_PACK_CONFIG.maxCredits,
+    Math.max(
+      CREDIT_PACK_CONFIG.minCredits,
+      Math.round(Number.isFinite(credits) ? credits : CREDIT_PACK_CONFIG.defaultCredits),
+    ),
+  );
 
 export const getCreditQuote = (credits: number): CreditQuote => {
   const clampedCredits = clampCredits(credits);
 
   return {
     credits: clampedCredits,
-    eurTotal: Number((clampedCredits * CREDIT_PACK_CONFIG.currencyRates.EUR).toFixed(2)),
-    gbpTotal: Number((clampedCredits * CREDIT_PACK_CONFIG.currencyRates.GBP).toFixed(2)),
+    eurTotal: roundCurrency(clampedCredits * CREDIT_PACK_CONFIG.currencyRates.EUR),
+    gbpTotal: roundCurrency(clampedCredits * CREDIT_PACK_CONFIG.currencyRates.GBP),
   };
 };
 

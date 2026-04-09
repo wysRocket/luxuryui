@@ -247,6 +247,41 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
                 </button>
               </div>
 
+              <div className="mb-8 rounded-2xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-950/40 p-5">
+                <p className="text-[10px] font-black uppercase tracking-[0.18em] text-gray-400 dark:text-gray-500 mb-2">Commercial Action</p>
+                {relatedKit ? (
+                  <>
+                    <h4 className="text-lg font-black tracking-tight text-gray-900 dark:text-white mb-2">{commercialHeadline}</h4>
+                    <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400 mb-4">
+                      {commercialBody}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <Link
+                        to={relatedKit.previewPath}
+                        onClick={onClose}
+                        className="inline-flex items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 px-4 py-2 text-sm font-bold text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                      >
+                        View what’s included
+                      </Link>
+                      <Link
+                        to={commercialActionPath ?? relatedKit.previewPath}
+                        onClick={onClose}
+                        className="inline-flex items-center justify-center rounded-full bg-black dark:bg-white px-4 py-2 text-sm font-black text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
+                      >
+                        {commercialActionLabel}
+                      </Link>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <h4 className="text-lg font-black tracking-tight text-gray-900 dark:text-white mb-2">{commercialHeadline}</h4>
+                    <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+                      {commercialBody}
+                    </p>
+                  </>
+                )}
+              </div>
+
               <div className="grid grid-cols-2 gap-6 mb-10">
                 <div className="relative flex items-center gap-3 text-gray-600 dark:text-gray-400">
                   <motion.button
@@ -319,41 +354,6 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
                   {presentation?.researchTier === 'verified' ? 'Verified research tier' : presentation?.researchTier === 'research' ? 'Research tier note' : 'Generated tier note'}
                 </p>
                 <p className="text-sm leading-relaxed">{qualityMessage}</p>
-              </div>
-
-              <div className="mb-8 rounded-2xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-950/40 p-5">
-                <p className="text-[10px] font-black uppercase tracking-[0.18em] text-gray-400 dark:text-gray-500 mb-2">Commercial Action</p>
-                {relatedKit ? (
-                  <>
-                    <h4 className="text-lg font-black tracking-tight text-gray-900 dark:text-white mb-2">{commercialHeadline}</h4>
-                    <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400 mb-4">
-                      {commercialBody}
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      <Link
-                        to={relatedKit.previewPath}
-                        onClick={onClose}
-                        className="inline-flex items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 px-4 py-2 text-sm font-bold text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-                      >
-                        View what’s included
-                      </Link>
-                      <Link
-                        to={commercialActionPath ?? relatedKit.previewPath}
-                        onClick={onClose}
-                        className="inline-flex items-center justify-center rounded-full bg-black dark:bg-white px-4 py-2 text-sm font-black text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
-                      >
-                        {commercialActionLabel}
-                      </Link>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <h4 className="text-lg font-black tracking-tight text-gray-900 dark:text-white mb-2">{commercialHeadline}</h4>
-                    <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-                      {commercialBody}
-                    </p>
-                  </>
-                )}
               </div>
 
               <div className="mt-auto pt-8 border-t border-gray-100 dark:border-gray-800 flex items-center gap-3">
