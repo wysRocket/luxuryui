@@ -7,7 +7,7 @@ import {
   query,
   runTransaction,
 } from 'firebase/firestore';
-import { getCommercialReview, getCreditQuote } from '../data/figmaKits';
+import { CREDIT_PACK_CONFIG, getCommercialReview, getCreditQuote } from '../data/figmaKits';
 import { CreditTopUp, CreditTransaction, CreditWallet, FigmaKitProduct, KitOrder, KitUnlock, UserProfile } from '../types';
 import { getFirebaseFirestoreClient } from './firebaseClient';
 import { assertRuntimeConfiguration } from './runtimeConfig';
@@ -87,6 +87,18 @@ const mapTopUp = (id: string, data: DocumentData): CreditTopUp => ({
   status: data.status === 'failed' ? 'failed' : data.status === 'pending' ? 'pending' : 'succeeded',
   createdAt: typeof data.createdAt === 'string' ? data.createdAt : now(),
 });
+
+const assertValidTopUpCredits = (credits: number): void => {
+  if (!Number.isFinite(credits) || !Number.isInteger(credits)) {
+    throw new Error('Credits must be a whole number.');
+  }
+
+  if (credits < CREDIT_PACK_CONFIG.minCredits || credits > CREDIT_PACK_CONFIG.maxCredits) {
+    throw new Error(
+      `Credits must be between ${CREDIT_PACK_CONFIG.minCredits} and ${CREDIT_PACK_CONFIG.maxCredits}.`,
+    );
+  }
+};
 
 const mapOrder = (id: string, data: DocumentData): KitOrder => ({
   id: typeof data.id === 'string' ? data.id : id,
@@ -198,6 +210,7 @@ export const subscribeToFirestoreUnlocks = (
   );
 
 export const topUpFirestoreWalletCredits = async (user: UserProfile, credits: number): Promise<CreditTopUp> => {
+  assertValidTopUpCredits(credits);
   const quote = getCreditQuote(credits);
   const createdAt = now();
   const topUpId = generateId('topup');

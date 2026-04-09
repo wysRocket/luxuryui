@@ -13,6 +13,7 @@
     "sources:screensdesign:normalize": "node scripts/sources/screensdesign-normalize.mjs",
     "sources:screensdesign:normalize:full": "node scripts/sources/screensdesign-normalize.mjs --full",
     "sources:screensdesign:integrity": "node scripts/sources/screensdesign-asset-integrity.mjs",
+    "sources:screensdesign:refine-foundry": "node scripts/sources/screensdesign-refine-assets-foundry.mjs",
     "sources:screensdesign:upscale": "node scripts/sources/screensdesign-upscale-assets.mjs",
     "sources:screensdesign:publish-integrity": "node scripts/sources/screensdesign-publish-asset-integrity.mjs",
     "sources:screensdesign:rescue-report": "node scripts/sources/screensdesign-rescue-report.mjs",

@@ -1,4 +1,11 @@
-import { getCommercialReview, getCreditQuote, getFigmaKitById, getFigmaManifest, getFigmaKitSpec } from '../data/figmaKits';
+import {
+  CREDIT_PACK_CONFIG,
+  getCommercialReview,
+  getCreditQuote,
+  getFigmaKitById,
+  getFigmaManifest,
+  getFigmaKitSpec,
+} from '../data/figmaKits';
 import {
   CreditTopUp,
   CreditTransaction,
@@ -95,6 +102,18 @@ const buildWallet = (userId: string): CreditWallet => ({
   updatedAt: now(),
 });
 
+const assertValidTopUpCredits = (credits: number): void => {
+  if (!Number.isFinite(credits) || !Number.isInteger(credits)) {
+    throw new Error('Credits must be a whole number.');
+  }
+
+  if (credits < CREDIT_PACK_CONFIG.minCredits || credits > CREDIT_PACK_CONFIG.maxCredits) {
+    throw new Error(
+      `Credits must be between ${CREDIT_PACK_CONFIG.minCredits} and ${CREDIT_PACK_CONFIG.maxCredits}.`,
+    );
+  }
+};
+
 const toSnapshot = (state: PersistedState, user: UserProfile | null): SessionSnapshot => {
   if (!user) {
     return {
@@ -152,6 +171,7 @@ export const ensureWalletForUser = (userId: string): CreditWallet => {
 
 export const topUpWalletCredits = async (user: UserProfile | null, credits: number): Promise<CreditTopUp> => {
   assertRuntimeConfiguration();
+  assertValidTopUpCredits(credits);
 
   if (!user) {
     throw new Error('Sign in before topping up credits.');
