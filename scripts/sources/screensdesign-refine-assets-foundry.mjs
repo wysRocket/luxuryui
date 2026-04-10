@@ -1,4 +1,5 @@
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
+import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
@@ -6,6 +7,21 @@ import { selectPublishScreenshotPaths } from './lib/publishAssetPipeline.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(__dirname, '../..');
+const envLocalPath = path.join(projectRoot, '.env.local');
+
+if (existsSync(envLocalPath)) {
+  const envText = readFileSync(envLocalPath, 'utf8');
+  for (const line of envText.split('\n')) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#') || !trimmed.includes('=')) {
+      continue;
+    }
+    const [key, ...rest] = trimmed.split('=');
+    if (key && !(key in process.env)) {
+      process.env[key] = rest.join('=');
+    }
+  }
+}
 
 const QUALITY_REPORT_PATH = path.join(
   projectRoot,
@@ -23,7 +39,6 @@ const OUT_PATH = path.join(
   'screensdesign-refine-report.json',
 );
 
-const RAW_PUBLIC_ROOT = '/assets/apps/';
 const PUBLISH_PUBLIC_ROOT = '/assets/publish-ready/apps/';
 const IMAGE_EXTS = new Set(['.jpg', '.jpeg', '.png', '.webp', '.avif']);
 const ALLOWED_MODEL_SIZES = [
@@ -47,6 +62,7 @@ const apiVersion = process.env.AZURE_OPENAI_IMAGE_API_VERSION ?? '2025-04-01-pre
 const endpoint = process.env.AZURE_OPENAI_ENDPOINT;
 const apiKey = process.env.AZURE_OPENAI_API_KEY;
 const deployment = process.env.AZURE_OPENAI_IMAGE_DEPLOYMENT;
+const isV1Endpoint = Boolean(endpoint && /\/openai\/v1\/?$/.test(endpoint));
 
 if (!endpoint || !apiKey || !deployment) {
   console.error(
@@ -59,6 +75,26 @@ const isImage = (fileName) => IMAGE_EXTS.has(path.extname(fileName).toLowerCase(
 
 const publicPathToFsPath = (publicPath) =>
   path.join(projectRoot, 'public', publicPath.replace(/^\//, ''));
+
+const fsPathToPublicPath = (filePath) =>
+  `/${path.relative(path.join(projectRoot, 'public'), filePath).replace(/\\/g, '/')}`;
+
+const resolveExistingImagePath = (candidatePath) => {
+  if (existsSync(candidatePath)) {
+    return candidatePath;
+  }
+
+  const dir = path.dirname(candidatePath);
+  const stem = path.basename(candidatePath, path.extname(candidatePath));
+  for (const ext of ['.webp', '.png', '.jpg', '.jpeg', '.avif']) {
+    const next = path.join(dir, `${stem}${ext}`);
+    if (existsSync(next)) {
+      return next;
+    }
+  }
+
+  return null;
+};
 
 const toPublishPublicPath = (publicPath, slug, fileName) =>
   publicPath.startsWith(PUBLISH_PUBLIC_ROOT)
@@ -143,15 +179,22 @@ const encodeToOriginalFormat = (pipeline, ext) => {
 };
 
 const callImageEdit = async ({ inputPngBuffer, size }) => {
-  const url = `${endpoint.replace(/\/$/, '')}/openai/deployments/${deployment}/images/edits?api-version=${encodeURIComponent(
-    apiVersion,
-  )}`;
+  const baseEndpoint = endpoint.replace(/\/$/, '');
+  const url = isV1Endpoint
+    ? `${baseEndpoint}/images/edits`
+    : `${baseEndpoint}/openai/deployments/${deployment}/images/edits?api-version=${encodeURIComponent(
+        apiVersion,
+      )}`;
 
   const formData = new FormData();
   formData.set('prompt', REFINE_PROMPT);
   formData.set('n', '1');
   formData.set('quality', 'high');
   formData.set('size', size);
+  if (isV1Endpoint) {
+    // For Azure OpenAI v1 endpoints, this value is the model/deployment identifier.
+    formData.set('model', deployment);
+  }
   formData.set('image', new Blob([inputPngBuffer], { type: 'image/png' }), 'input.png');
 
   const response = await fetch(url, {
@@ -248,11 +291,23 @@ export const run = async () => {
   let failedCount = 0;
 
   for (const target of targets) {
-    const sourcePath = publicPathToFsPath(target.sourcePublicPath);
-    const outputPath = publicPathToFsPath(target.outputPublicPath);
-    const ext = path.extname(target.fileName);
-
     try {
+      const sourcePathCandidate = publicPathToFsPath(target.sourcePublicPath);
+      const sourcePath = resolveExistingImagePath(sourcePathCandidate);
+      if (!sourcePath) {
+        throw new Error(`Source file not found: ${sourcePathCandidate}`);
+      }
+
+      const resolvedSourcePublicPath = fsPathToPublicPath(sourcePath);
+      const resolvedFileName = path.basename(sourcePath);
+      const outputPublicPath = toPublishPublicPath(
+        resolvedSourcePublicPath,
+        target.slug,
+        resolvedFileName,
+      );
+      const outputPath = publicPathToFsPath(outputPublicPath);
+      const ext = path.extname(resolvedFileName);
+
       const sourceBuffer = await readFile(sourcePath);
       const sourceMeta = await sharp(sourceBuffer).metadata();
       const sourceWidth = sourceMeta.width ?? 0;
@@ -290,6 +345,9 @@ export const run = async () => {
 
       results.push({
         ...target,
+        fileName: resolvedFileName,
+        sourcePublicPath: resolvedSourcePublicPath,
+        outputPublicPath,
         status: dryRun ? 'dry-run' : 'refined',
         sourceSizeBytes: sourceBuffer.byteLength,
         outputSizeBytes: finalBuffer.byteLength,
@@ -321,6 +379,7 @@ export const run = async () => {
     settings: {
       deployment,
       apiVersion,
+      endpointMode: isV1Endpoint ? 'v1' : 'deployment-path',
     },
     summary: {
       totalTargets: targets.length,

@@ -38,6 +38,7 @@
     "zip": "cd dist && zip -r ../dist.zip . && cd ..",
     "deploy": "npm run build && npm run zip && node scripts/deploy.mjs",
     "assets:upscale": "node scripts/upscale-assets.mjs",
+    "assets:enhance": "node scripts/enhance-assets-foundry.mjs",
     "assets:update-refs": "node scripts/update-asset-refs.mjs",
     "assets:update-refs:dry": "node scripts/update-asset-refs.mjs --dry-run"
   },
