@@ -1,0 +1,111 @@
+{
+  "schema": "1",
+  "generatedAt": "2026-04-10T14:21:38.638Z",
+  "mode": "warn",
+  "only": "stockx",
+  "dryRun": true,
+  "settings": {
+    "deployment": "MAI-Image-2-2026-02-20",
+    "apiVersion": "2025-04-01-preview",
+    "endpointMode": "v1"
+  },
+  "summary": {
+    "totalTargets": 7,
+    "refined": 7,
+    "failed": 0,
+    "durationSeconds": 0.32
+  },
+  "results": [
+    {
+      "slug": "stockx",
+      "fileName": "screen-1.webp",
+      "sourcePublicPath": "/assets/apps/stockx/screen-1.webp",
+      "outputPublicPath": "/assets/publish-ready/apps/stockx/screen-1.webp",
+      "status": "dry-run",
+      "sourceSizeBytes": 28840,
+      "outputSizeBytes": 28840,
+      "width": 288,
+      "height": 512,
+      "modelSize": "1024x1536",
+      "mimeType": "image/webp"
+    },
+    {
+      "slug": "stockx",
+      "fileName": "screen-2.webp",
+      "sourcePublicPath": "/assets/apps/stockx/screen-2.webp",
+      "outputPublicPath": "/assets/publish-ready/apps/stockx/screen-2.webp",
+      "status": "dry-run",
+      "sourceSizeBytes": 20778,
+      "outputSizeBytes": 20778,
+      "width": 288,
+      "height": 512,
+      "modelSize": "1024x1536",
+      "mimeType": "image/webp"
+    },
+    {
+      "slug": "stockx",
+      "fileName": "screen-3.webp",
+      "sourcePublicPath": "/assets/apps/stockx/screen-3.webp",
+      "outputPublicPath": "/assets/publish-ready/apps/stockx/screen-3.webp",
+      "status": "dry-run",
+      "sourceSizeBytes": 28350,
+      "outputSizeBytes": 28350,
+      "width": 288,
+      "height": 512,
+      "modelSize": "1024x1536",
+      "mimeType": "image/webp"
+    },
+    {
+      "slug": "stockx",
+      "fileName": "screen-4.webp",
+      "sourcePublicPath": "/assets/apps/stockx/screen-4.webp",
+      "outputPublicPath": "/assets/publish-ready/apps/stockx/screen-4.webp",
+      "status": "dry-run",
+      "sourceSizeBytes": 19612,
+      "outputSizeBytes": 19612,
+      "width": 288,
+      "height": 512,
+      "modelSize": "1024x1536",
+      "mimeType": "image/webp"
+    },
+    {
+      "slug": "stockx",
+      "fileName": "screen-5.webp",
+      "sourcePublicPath": "/assets/apps/stockx/screen-5.webp",
+      "outputPublicPath": "/assets/publish-ready/apps/stockx/screen-5.webp",
+      "status": "dry-run",
+      "sourceSizeBytes": 17142,
+      "outputSizeBytes": 17142,
+      "width": 288,
+      "height": 512,
+      "modelSize": "1024x1536",
+      "mimeType": "image/webp"
+    },
+    {
+      "slug": "stockx",
+      "fileName": "screen-6.webp",
+      "sourcePublicPath": "/assets/apps/stockx/screen-6.webp",
+      "outputPublicPath": "/assets/publish-ready/apps/stockx/screen-6.webp",
+      "status": "dry-run",
+      "sourceSizeBytes": 15654,
+      "outputSizeBytes": 15654,
+      "width": 288,
+      "height": 512,
+      "modelSize": "1024x1536",
+      "mimeType": "image/webp"
+    },
+    {
+      "slug": "stockx",
+      "fileName": "screen-7.webp",
+      "sourcePublicPath": "/assets/apps/stockx/screen-7.webp",
+      "outputPublicPath": "/assets/publish-ready/apps/stockx/screen-7.webp",
+      "status": "dry-run",
+      "sourceSizeBytes": 19874,
+      "outputSizeBytes": 19874,
+      "width": 288,
+      "height": 512,
+      "modelSize": "1024x1536",
+      "mimeType": "image/webp"
+    }
+  ]
+}
