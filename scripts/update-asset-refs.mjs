@@ -1,8 +1,10 @@
 /**
  * Update image URL references from .jpg/.png to .webp in data files.
  *
- * Targets: data/realAppAssets.ts (and any other *.ts in data/ with /assets/apps/ refs)
- * Only rewrites paths where the .webp file actually exists on disk.
+ * Targets: app asset references and commercial kit data.
+ * Rewrites to the matching .webp file when it exists on disk.
+ * If a /assets/publish-ready/apps/... reference no longer exists, it falls back to
+ * the equivalent /assets/apps/... .webp file when available.
  *
  * Usage:
  *   node scripts/update-asset-refs.mjs --dry-run   # preview only
@@ -22,10 +24,30 @@ const isDryRun = process.argv.includes('--dry-run');
 
 const TARGET_FILES = [
   'data/realAppAssets.ts',
+  'data/curation/commercial/figma-kit-products.json',
+  'data/curation/commercial/figma-kit-specs.json',
 ];
 
-// Matches any /assets/apps/... path ending in .jpg, .jpeg, or .png inside a string literal
-const IMAGE_REF_RE = /(["'])(\/assets\/apps\/[^"']+?)\.(jpe?g|png)(["'])/gi;
+// Matches any /assets/apps/... or /assets/publish-ready/apps/... path ending in .jpg, .jpeg, or .png inside a string literal
+const IMAGE_REF_RE = /(["'])(\/assets\/(?:publish-ready\/)?apps\/[^"']+?)\.(jpe?g|png)(["'])/gi;
+
+const resolveReplacementUrl = (imagePath) => {
+  const preferredWebpUrl = `${imagePath}.webp`;
+  const preferredWebpDiskPath = path.join(projectRoot, 'public', preferredWebpUrl.replace(/^\//, ''));
+  if (existsSync(preferredWebpDiskPath)) {
+    return preferredWebpUrl;
+  }
+
+  if (imagePath.startsWith('/assets/publish-ready/apps/')) {
+    const rawWebpUrl = imagePath.replace('/assets/publish-ready/apps/', '/assets/apps/') + '.webp';
+    const rawWebpDiskPath = path.join(projectRoot, 'public', rawWebpUrl.replace(/^\//, ''));
+    if (existsSync(rawWebpDiskPath)) {
+      return rawWebpUrl;
+    }
+  }
+
+  return null;
+};
 
 const rewriteFile = async (relPath) => {
   const absPath = path.join(projectRoot, relPath);
@@ -43,13 +65,12 @@ const rewriteFile = async (relPath) => {
   const lines = [];
 
   const newContent = content.replace(IMAGE_REF_RE, (match, openQuote, imagePath, ext, closeQuote) => {
-    const webpDiskPath = path.join(projectRoot, 'public', imagePath + '.webp');
-    const webpUrl = imagePath + '.webp';
+    const replacementUrl = resolveReplacementUrl(imagePath);
 
-    if (existsSync(webpDiskPath)) {
+    if (replacementUrl) {
       changed++;
-      lines.push(`    ${imagePath}.${ext}  →  ${webpUrl}`);
-      return `${openQuote}${webpUrl}${closeQuote}`;
+      lines.push(`    ${imagePath}.${ext}  →  ${replacementUrl}`);
+      return `${openQuote}${replacementUrl}${closeQuote}`;
     } else {
       skipped++;
       lines.push(`    ⚠️  no webp found for ${imagePath}.${ext} — skipped`);
