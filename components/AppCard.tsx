@@ -3,8 +3,6 @@ import { motion, useScroll, useTransform, useSpring, useMotionValue } from 'fram
 import { AppItem } from '../types';
 import { Smartphone, Monitor, Maximize2, Bookmark, AlertTriangle, BadgeCheck, Sparkles } from 'lucide-react';
 import { getPublishedKitForAppSlug } from '../data/figmaKits';
-import { useAppSession } from '../contexts/AppSessionContext';
-import { getAppPresentationState, getResearchTierLabel, getCommercialStateLabel } from '../services/presentationState';
 
 interface AppCardProps {
   app: AppItem | null;
@@ -14,7 +12,19 @@ interface AppCardProps {
 const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
-  const { isAuthenticated, wallet, hasUnlocked } = useAppSession();
+  const sourceQuality = app?.sourceQuality ?? 'unknown';
+  const assetOrigin = app?.assetOrigin ?? 'generated';
+  const isVerified = sourceQuality === 'pass' && assetOrigin === 'real';
+  const isWarn = sourceQuality === 'warn';
+  const qualityLabel = isVerified
+    ? 'Verified set'
+    : isWarn
+      ? 'Mixed quality'
+      : assetOrigin === 'generated'
+        ? 'Generated preview'
+        : 'Preview set';
+  const qualityIcon = isVerified ? BadgeCheck : isWarn ? AlertTriangle : Sparkles;
+  const QualityIcon = qualityIcon;
   
   // 1. Interactive 3D Tilt Logic
   const x = useMotionValue(0);
@@ -35,28 +45,11 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
   const yRange = useTransform(scrollYProgress, [0, 1], ["-12%", "12%"]);
   const imageY = useSpring(yRange, { stiffness: 100, damping: 30 });
 
+  const hasKit = Boolean(app && getPublishedKitForAppSlug(app.slug));
+
   if (!app) {
     return null;
   }
-
-  const relatedKit = getPublishedKitForAppSlug(app.slug);
-  const presentation = getAppPresentationState({
-    app,
-    relatedKit,
-    isAuthenticated,
-    walletBalance: wallet?.balance ?? 0,
-    isOwned: relatedKit ? hasUnlocked(relatedKit.id) : false,
-  });
-  const isVerified = presentation.researchTier === 'verified';
-  const qualityLabel = getResearchTierLabel(presentation.researchTier);
-  const qualityIcon =
-    presentation.researchTier === 'verified'
-      ? BadgeCheck
-      : presentation.researchTier === 'research'
-        ? AlertTriangle
-        : Sparkles;
-  const QualityIcon = qualityIcon;
-  const commercialLabel = getCommercialStateLabel(presentation.commercialState, presentation.researchTier);
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
     if (!cardRef.current) return;
@@ -188,12 +181,10 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
         </motion.div>
 
         <div
-          className={`absolute right-5 ${presentation.hasCommercialOffer ? 'bottom-[4.3rem]' : 'bottom-5'} rounded-full border px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.18em] z-40 ${
+          className={`absolute right-5 ${hasKit ? 'bottom-[4.3rem]' : 'bottom-5'} rounded-full border px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.18em] z-40 ${
             isVerified
               ? 'border-emerald-300/20 bg-emerald-400/15 text-white'
-              : presentation.researchTier === 'research'
-                ? 'border-amber-200/15 bg-black/35 text-white/92'
-                : 'border-white/10 bg-black/40 text-white/88'
+              : 'border-amber-200/15 bg-black/35 text-white/92'
           }`}
           style={{ transform: 'translateZ(74px)' }}
         >
@@ -203,16 +194,12 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
           </span>
         </div>
 
-        {presentation.hasCommercialOffer && (
+        {hasKit && (
           <div
-            className={`absolute bottom-5 left-5 rounded-full border px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.18em] text-white z-40 ${
-              presentation.commercialState === 'owned'
-                ? 'border-emerald-200/30 bg-emerald-400/20'
-                : 'border-white/15 bg-white/10'
-            }`}
+            className="absolute bottom-5 left-5 rounded-full border border-white/15 bg-emerald-400/15 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.18em] text-white z-40"
             style={{ transform: "translateZ(70px)" }}
           >
-            {commercialLabel}
+            Figma kit
           </div>
         )}
 
@@ -221,19 +208,17 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
            <div className="px-5 pb-5">
               <div className="flex justify-between items-end mb-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <span className="text-[10px] font-black text-white uppercase tracking-tighter">
-                  {getResearchTierLabel(presentation.researchTier)}
+                  {isVerified ? 'Premium preview' : 'Reference preview'}
                 </span>
                 <span className="text-[10px] font-black text-white/85">
-                  {getCommercialStateLabel(presentation.commercialState, presentation.researchTier)}
+                  {isVerified ? 'High-confidence source' : assetOrigin === 'generated' ? 'Generated fallback' : 'Use for research'}
                 </span>
               </div>
               <div className="h-[3px] w-full bg-white/20 rounded-full overflow-hidden backdrop-blur-sm">
                 <motion.div 
-                  className={`h-full shadow-[0_0_10px_rgba(255,255,255,0.45)] ${
-                    isVerified ? 'bg-white' : presentation.researchTier === 'research' ? 'bg-amber-300' : 'bg-slate-300'
-                  }`}
+                  className={`h-full shadow-[0_0_10px_rgba(255,255,255,0.45)] ${isVerified ? 'bg-white' : 'bg-amber-300'}`}
                   initial={{ width: 0 }}
-                  animate={{ width: isHovered ? (isVerified ? '100%' : presentation.researchTier === 'research' ? '62%' : '38%') : "0%" }}
+                  animate={{ width: isHovered ? (isVerified ? '100%' : '62%') : "0%" }}
                   transition={{ type: "spring", stiffness: 50, damping: 15, delay: 0.1 }}
                 />
               </div>

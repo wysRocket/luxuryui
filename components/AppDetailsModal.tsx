@@ -6,7 +6,6 @@ import { formatCreditCost, getPublishedKitForAppSlug } from '../data/figmaKits';
 import { REAL_APP_ASSETS } from '../data/realAppAssets';
 import { AppItem } from '../types';
 import { useAppSession } from '../contexts/AppSessionContext';
-import { getAppPresentationState, getResearchTierLabel } from '../services/presentationState';
 
 interface AppDetailsModalProps {
   app: AppItem | null;
@@ -32,52 +31,16 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
   }, [app, realScreenshots]);
   const relatedKit = app ? getPublishedKitForAppSlug(app.slug) : undefined;
   const kitUnlocked = relatedKit ? hasUnlocked(relatedKit.id) : false;
-  const presentation = app
-    ? getAppPresentationState({
-        app,
-        relatedKit,
-        isAuthenticated,
-        walletBalance: wallet?.balance ?? 0,
-        isOwned: kitUnlocked,
-      })
-    : undefined;
-  const researchLabel = presentation
-    ? getResearchTierLabel(presentation.researchTier)
-    : '';
+  const hasEnoughCredits = relatedKit ? (wallet?.balance ?? 0) >= relatedKit.creditCost : false;
+  const sourceQuality = app?.sourceQuality ?? 'unknown';
   const qualityMessage =
-    presentation?.researchTier === 'verified'
-      ? 'This source set clears the premium research bar and can carry the strongest visual treatment.'
-      : presentation?.researchTier === 'research'
-        ? 'This source set is still useful for reference work, but mixed image quality keeps it out of the premium tier.'
-        : 'This entry currently relies on generated fallback imagery, so it stays in the restrained research tier.';
-  const commercialHeadline =
-    presentation?.commercialState === 'owned'
-      ? 'Owned in your client library'
-      : presentation?.commercialState === 'available'
-        ? 'Editable kit available'
-        : 'Not yet available for purchase';
-  const commercialBody =
-    presentation?.commercialState === 'owned'
-      ? 'You already own the editable kit for this app. Open delivery to access the commercial file package and notes.'
-      : presentation?.commercialState === 'available'
-        ? `This app has an approved editable kit in the commercial catalog. Use this preview for research, then unlock the production-ready file package for ${formatCreditCost(relatedKit?.creditCost ?? 0)}.`
-        : 'This source set is still valuable for research, but it has not passed the commercial gate required for a sellable editable kit.';
-  const commercialActionPath =
-    presentation?.commercialState === 'owned'
-      ? `/kits/${relatedKit?.slug}/delivery`
-      : !isAuthenticated
-        ? `/login?redirect=${encodeURIComponent(relatedKit?.previewPath ?? `/apps/${app?.id}/screens`)}`
-        : presentation?.creditState === 'ready'
-          ? relatedKit?.previewPath
-          : '/account';
-  const commercialActionLabel =
-    presentation?.commercialState === 'owned'
-      ? 'Open delivery'
-      : !isAuthenticated
-        ? 'Sign in to unlock'
-        : presentation?.creditState === 'ready'
-          ? 'View editable kit'
-          : 'Top up in account';
+    sourceQuality === 'pass'
+      ? 'This source set meets the current premium preview bar.'
+      : sourceQuality === 'warn'
+        ? 'This source set is useful for research, but some screenshots are mixed-resolution.'
+        : app?.assetOrigin === 'generated'
+          ? 'This app currently uses generated preview imagery instead of a fully verified source set.'
+          : 'This source set is still in preview mode.';
 
   useEffect(() => {
     if (!app) {
@@ -138,7 +101,7 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
               <div className="relative z-10 flex h-full flex-col p-5 sm:p-6 md:p-8">
                 <div className="flex items-start justify-between gap-3">
                   <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/80 backdrop-blur-md">
-                    <span>{researchLabel}</span>
+                    <span>Curated Preview</span>
                     <span className="h-1 w-1 rounded-full bg-white/50" />
                     <span>{screenshots.length} shots</span>
                   </div>
@@ -152,7 +115,7 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
                   </button>
                 </div>
 
-                <div className="flex flex-1 items-center justify-center pt-2 sm:pt-6 md:pt-10 pb-28 md:pb-10 min-h-0 overflow-hidden">
+                <div className="flex flex-1 items-center justify-center py-4 sm:py-6 md:py-10">
                   <div className="w-full max-w-[min(88vw,360px)] sm:max-w-[320px] md:max-w-[360px]">
                     <div className="rounded-[2rem] border border-white/10 bg-black/55 p-3 shadow-[0_30px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl">
                       <div className="mb-3 flex justify-center">
@@ -175,8 +138,7 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
                 </div>
 
                 {screenshots.length > 1 && (
-                  <div className="absolute bottom-0 left-0 right-0 z-20 px-5 sm:px-6 md:px-8 pb-4">
-                  <div className="flex gap-2 overflow-x-auto pb-1">
+                  <div className="-mx-1 flex gap-3 overflow-x-auto px-1 pb-1">
                     {screenshots.slice(0, 8).map((screenshot, index) => {
                       const isActive = screenshot === activeScreenshot;
 
@@ -195,7 +157,7 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
                           <img
                             src={screenshot}
                             alt={`${app.name} screenshot ${index + 1}`}
-                            className={`h-20 w-14 sm:h-24 sm:w-[4.4rem] bg-black object-cover transition-transform duration-300 ${
+                            className={`h-28 w-[5.2rem] sm:h-24 sm:w-[4.4rem] bg-black object-cover transition-transform duration-300 ${
                               isActive ? 'scale-[1.03]' : 'group-hover:scale-[1.03]'
                             }`}
                             draggable={false}
@@ -206,7 +168,6 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
                         </button>
                       );
                     })}
-                  </div>
                   </div>
                 )}
               </div>
@@ -245,59 +206,6 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
                 >
                   <X size={24} />
                 </button>
-              </div>
-
-              <div className="mb-8 flex items-center gap-3">
-                <button
-                  onClick={() => {
-                    onClose();
-                    navigate(`/apps/${app.id}/screens`);
-                  }}
-                  className="flex-1 py-4 bg-black dark:bg-white text-white dark:text-black font-bold rounded-2xl hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors shadow-lg shadow-gray-200 dark:shadow-none"
-                >
-                  View all screens
-                </button>
-                <button className="p-4 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-2xl hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-                  <Bookmark size={20} />
-                </button>
-                <button className="p-4 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-2xl hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-                  <Share2 size={20} />
-                </button>
-              </div>
-
-              <div className="mb-8 rounded-2xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-950/40 p-5">
-                <p className="text-[10px] font-black uppercase tracking-[0.18em] text-gray-400 dark:text-gray-500 mb-2">Commercial Action</p>
-                {relatedKit ? (
-                  <>
-                    <h4 className="text-lg font-black tracking-tight text-gray-900 dark:text-white mb-2">{commercialHeadline}</h4>
-                    <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400 mb-4">
-                      {commercialBody}
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      <Link
-                        to={relatedKit.previewPath}
-                        onClick={onClose}
-                        className="inline-flex items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 px-4 py-2 text-sm font-bold text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-                      >
-                        View what’s included
-                      </Link>
-                      <Link
-                        to={commercialActionPath ?? relatedKit.previewPath}
-                        onClick={onClose}
-                        className="inline-flex items-center justify-center rounded-full bg-black dark:bg-white px-4 py-2 text-sm font-black text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
-                      >
-                        {commercialActionLabel}
-                      </Link>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <h4 className="text-lg font-black tracking-tight text-gray-900 dark:text-white mb-2">{commercialHeadline}</h4>
-                    <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-                      {commercialBody}
-                    </p>
-                  </>
-                )}
               </div>
 
               <div className="grid grid-cols-2 gap-6 mb-10">
@@ -346,32 +254,82 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
               </div>
 
               <div className="mb-8">
-                <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-3">Research brief</h4>
+                <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-3">About this app</h4>
                 <p className="text-gray-600 dark:text-gray-400 text-[15px] leading-relaxed">
-                  Study the user journey and design patterns of {app.name} through a curated research lens. This dossier is meant to help you inspect navigation, hierarchy, and flow structure before you decide whether you need the editable commercial kit.
-                </p>
-              </div>
-
-              <div className="mb-8 rounded-2xl border border-gray-100 bg-white px-5 py-4 text-gray-900 dark:border-gray-800 dark:bg-gray-950/40 dark:text-white">
-                <p className="text-[10px] font-black uppercase tracking-[0.18em] text-gray-400 dark:text-gray-500 mb-2">
-                  Best Used For
-                </p>
-                <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-                  Compare product choices, save structural references, and assess whether this source is strong enough to justify moving into the commercial layer.
+                  Explore the user journey and design patterns of {app.name}. This preview focuses on curated reference screens that help you study navigation, visual tone, and core product flows without stretching low-resolution assets beyond their comfort zone.
                 </p>
               </div>
 
               <div className={`mb-8 rounded-2xl border px-5 py-4 ${
-                presentation?.researchTier === 'verified'
+                sourceQuality === 'pass'
                   ? 'border-emerald-200 bg-emerald-50 text-emerald-900 dark:border-emerald-900/30 dark:bg-emerald-950/20 dark:text-emerald-100'
-                  : presentation?.researchTier === 'research'
-                    ? 'border-amber-200 bg-amber-50 text-amber-900 dark:border-amber-900/30 dark:bg-amber-950/20 dark:text-amber-100'
-                    : 'border-slate-200 bg-slate-50 text-slate-900 dark:border-slate-800 dark:bg-slate-950/30 dark:text-slate-100'
+                  : 'border-amber-200 bg-amber-50 text-amber-900 dark:border-amber-900/30 dark:bg-amber-950/20 dark:text-amber-100'
               }`}>
                 <p className="text-[10px] font-black uppercase tracking-[0.18em] mb-2">
-                  {presentation?.researchTier === 'verified' ? 'Verified research tier' : presentation?.researchTier === 'research' ? 'Research tier note' : 'Generated tier note'}
+                  {sourceQuality === 'pass' ? 'Verified preview quality' : 'Reference quality note'}
                 </p>
                 <p className="text-sm leading-relaxed">{qualityMessage}</p>
+              </div>
+
+              <div className="mb-8 rounded-2xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-950/40 p-5">
+                <p className="text-[10px] font-black uppercase tracking-[0.18em] text-gray-400 dark:text-gray-500 mb-2">Commercial Status</p>
+                {relatedKit ? (
+                  <>
+                    <h4 className="text-lg font-black tracking-tight text-gray-900 dark:text-white mb-2">Editable Figma kit available</h4>
+                    <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400 mb-4">
+                      This app has an approved transformed flow kit in the commercial catalog. Use the screenshots for research, then jump to the editable file package when you need production-ready assets. Current unlock cost: {formatCreditCost(relatedKit.creditCost)}.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <Link
+                        to={relatedKit.previewPath}
+                        onClick={onClose}
+                        className="inline-flex items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 px-4 py-2 text-sm font-bold text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                      >
+                        View what’s included
+                      </Link>
+                      <Link
+                        to={
+                          kitUnlocked
+                            ? `/kits/${relatedKit.slug}/delivery`
+                            : !isAuthenticated
+                              ? `/login?redirect=${encodeURIComponent(relatedKit.previewPath)}`
+                              : hasEnoughCredits
+                                ? relatedKit.previewPath
+                                : relatedKit.purchasePath
+                        }
+                        onClick={onClose}
+                        className="inline-flex items-center justify-center rounded-full bg-black dark:bg-white px-4 py-2 text-sm font-black text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
+                      >
+                        {kitUnlocked ? 'Open delivery' : !isAuthenticated ? 'Sign in to buy' : hasEnoughCredits ? 'Use credits' : 'Top up credits'}
+                      </Link>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <h4 className="text-lg font-black tracking-tight text-gray-900 dark:text-white mb-2">Research-only reference</h4>
+                    <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+                      This source set is still useful for inspiration, but it has not passed the commercial gate required for a sellable Figma kit yet.
+                    </p>
+                  </>
+                )}
+              </div>
+
+              <div className="mt-auto pt-8 border-t border-gray-100 dark:border-gray-800 flex items-center gap-3">
+                <button
+                  onClick={() => {
+                    onClose();
+                    navigate(`/apps/${app.id}/screens`);
+                  }}
+                  className="flex-1 py-4 bg-black dark:bg-white text-white dark:text-black font-bold rounded-2xl hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors shadow-lg shadow-gray-200 dark:shadow-none"
+                >
+                  View all screens
+                </button>
+                <button className="p-4 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-2xl hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                  <Bookmark size={20} />
+                </button>
+                <button className="p-4 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-2xl hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                  <Share2 size={20} />
+                </button>
               </div>
             </motion.div>
           </motion.div>

@@ -103,8 +103,8 @@ export const CREDIT_PACK_CONFIG: CreditPackConfig = {
   sliderStep: 1,
   buttonSteps: [10, 1],
   currencyRates: {
-    EUR: 0.65,
-    GBP: 0.56,
+    EUR: 0.01,
+    GBP: 0.0086,
   },
 };
 

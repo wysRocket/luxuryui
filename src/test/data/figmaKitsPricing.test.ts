@@ -30,8 +30,8 @@ describe("figmaKits pricing math", () => {
   it("returns currency totals rounded to cents", () => {
     expect(getCreditQuote(123)).toEqual({
       credits: 123,
-      eurTotal: 79.95,
-      gbpTotal: 68.88,
+      eurTotal: 1.23,
+      gbpTotal: 1.06,
     });
   });
 });
