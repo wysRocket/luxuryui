@@ -8,6 +8,7 @@ class CompatibleTextEncoder {
 
 Object.defineProperties(globalThis, {
   TextEncoder: { value: CompatibleTextEncoder },
+  IS_REACT_ACT_ENVIRONMENT: { value: true, configurable: true, writable: true },
 });
 
 afterEach(() => {

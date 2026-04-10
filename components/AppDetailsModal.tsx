@@ -15,7 +15,7 @@ interface AppDetailsModalProps {
 
 const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose }) => {
   const [showPlatformTooltip, setShowPlatformTooltip] = useState(false);
-  const [activeScreenshot, setActiveScreenshot] = useState('');
+  const [activeScreenshot, setActiveScreenshot] = useState(app?.image ?? '');
   const navigate = useNavigate();
   const { isAuthenticated, wallet, hasUnlocked } = useAppSession();
   const realScreenshots = app ? REAL_APP_ASSETS[app.name]?.screenshots : undefined;
@@ -115,7 +115,7 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
                   </button>
                 </div>
 
-                <div className="flex flex-1 items-center justify-center py-4 sm:py-6 md:py-10">
+                <div className="flex flex-1 items-center justify-center min-h-0 overflow-hidden pt-2 pb-28 sm:pt-6 sm:pb-32 md:pt-10 md:pb-10">
                   <div className="w-full max-w-[min(88vw,360px)] sm:max-w-[320px] md:max-w-[360px]">
                     <div className="rounded-[2rem] border border-white/10 bg-black/55 p-3 shadow-[0_30px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl">
                       <div className="mb-3 flex justify-center">
@@ -138,36 +138,38 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
                 </div>
 
                 {screenshots.length > 1 && (
-                  <div className="-mx-1 flex gap-3 overflow-x-auto px-1 pb-1">
-                    {screenshots.slice(0, 8).map((screenshot, index) => {
-                      const isActive = screenshot === activeScreenshot;
+                  <div className="absolute bottom-0 left-0 right-0 z-20 px-5 pb-4 sm:px-6 md:px-8">
+                    <div className="-mx-1 flex gap-3 overflow-x-auto px-1 pb-1">
+                      {screenshots.slice(0, 8).map((screenshot, index) => {
+                        const isActive = screenshot === activeScreenshot;
 
-                      return (
-                        <button
-                          key={screenshot}
-                          type="button"
-                          onClick={() => setActiveScreenshot(screenshot)}
-                          className={`group relative shrink-0 overflow-hidden rounded-[1.15rem] border transition-all ${
-                            isActive
-                              ? 'border-white/60 shadow-[0_10px_30px_rgba(0,0,0,0.35)]'
-                              : 'border-white/10 hover:border-white/30'
-                          }`}
-                          aria-label={`Show screenshot ${index + 1}`}
-                        >
-                          <img
-                            src={screenshot}
-                            alt={`${app.name} screenshot ${index + 1}`}
-                            className={`h-28 w-[5.2rem] sm:h-24 sm:w-[4.4rem] bg-black object-cover transition-transform duration-300 ${
-                              isActive ? 'scale-[1.03]' : 'group-hover:scale-[1.03]'
+                        return (
+                          <button
+                            key={screenshot}
+                            type="button"
+                            onClick={() => setActiveScreenshot(screenshot)}
+                            className={`group relative shrink-0 overflow-hidden rounded-[1.15rem] border transition-all ${
+                              isActive
+                                ? 'border-white/60 shadow-[0_10px_30px_rgba(0,0,0,0.35)]'
+                                : 'border-white/10 hover:border-white/30'
                             }`}
-                            draggable={false}
-                          />
-                          <div className={`absolute inset-0 ring-1 ring-inset transition-colors ${
-                            isActive ? 'ring-white/35' : 'ring-white/0 group-hover:ring-white/20'
-                          }`} />
-                        </button>
-                      );
-                    })}
+                            aria-label={`Show screenshot ${index + 1}`}
+                          >
+                            <img
+                              src={screenshot}
+                              alt={`${app.name} screenshot ${index + 1}`}
+                              className={`h-28 w-[5.2rem] bg-black object-cover transition-transform duration-300 sm:h-24 sm:w-[4.4rem] ${
+                                isActive ? 'scale-[1.03]' : 'group-hover:scale-[1.03]'
+                              }`}
+                              draggable={false}
+                            />
+                            <div className={`absolute inset-0 ring-1 ring-inset transition-colors ${
+                              isActive ? 'ring-white/35' : 'ring-white/0 group-hover:ring-white/20'
+                            }`} />
+                          </button>
+                        );
+                      })}
+                    </div>
                   </div>
                 )}
               </div>
@@ -205,6 +207,24 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
                   className="hidden md:flex p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full text-gray-400 dark:text-gray-500 transition-colors"
                 >
                   <X size={24} />
+                </button>
+              </div>
+
+              <div className="mb-8 flex items-center gap-3">
+                <button
+                  onClick={() => {
+                    onClose();
+                    navigate(`/apps/${app.id}/screens`);
+                  }}
+                  className="flex-1 py-4 bg-black dark:bg-white text-white dark:text-black font-bold rounded-2xl hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors shadow-lg shadow-gray-200 dark:shadow-none"
+                >
+                  View all screens
+                </button>
+                <button className="p-4 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-2xl hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                  <Bookmark size={20} />
+                </button>
+                <button className="p-4 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-2xl hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                  <Share2 size={20} />
                 </button>
               </div>
 
@@ -314,23 +334,6 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({ app, isOpen, onClose 
                 )}
               </div>
 
-              <div className="mt-auto pt-8 border-t border-gray-100 dark:border-gray-800 flex items-center gap-3">
-                <button
-                  onClick={() => {
-                    onClose();
-                    navigate(`/apps/${app.id}/screens`);
-                  }}
-                  className="flex-1 py-4 bg-black dark:bg-white text-white dark:text-black font-bold rounded-2xl hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors shadow-lg shadow-gray-200 dark:shadow-none"
-                >
-                  View all screens
-                </button>
-                <button className="p-4 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-2xl hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-                  <Bookmark size={20} />
-                </button>
-                <button className="p-4 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-2xl hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-                  <Share2 size={20} />
-                </button>
-              </div>
             </motion.div>
           </motion.div>
         </div>
