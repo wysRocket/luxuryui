@@ -79,7 +79,7 @@ const AppScreensPage: React.FC = () => {
               {app.category} for {app.platform} • {REAL_APP_ASSETS[app.name] ? 'Live app-store screenshots' : 'Generated fallback previews'}.
             </p>
           </div>
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex flex-wrap items-center gap-2">
             <span className="inline-flex items-center gap-2 rounded-full bg-black dark:bg-white text-white dark:text-black px-4 py-2 text-sm font-black">
               <LayoutGrid size={15} />
               {screens.length} screens
@@ -196,19 +196,19 @@ const AppScreensPage: React.FC = () => {
         )}
       </section>
 
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <section className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4">
         {screens.map((screen, index) => (
           <article
             key={`${app.id}-screen-${index}`}
-            className="rounded-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 overflow-hidden"
+            className="break-inside-avoid mb-4 rounded-2xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-900/60 overflow-hidden"
           >
             <img
               src={screen}
               alt={`${app.name} screen ${index + 1}`}
               className="w-full h-auto block"
-              loading="lazy"
+              loading={index < 8 ? 'eager' : 'lazy'}
               decoding="async"
-              fetchPriority="low"
+              fetchPriority={index < 4 ? 'high' : 'low'}
             />
             <div className="px-4 py-3 border-t border-gray-100 dark:border-gray-800">
               <p className="text-sm font-bold text-gray-900 dark:text-white">Screen {index + 1}</p>
