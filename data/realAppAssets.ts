@@ -224,14 +224,14 @@ export const REAL_APP_ASSETS: Record<string, RealAppAsset> = {
   "Expedia": {
     "logo": "/assets/apps/expedia/logo.webp",
     "screenshots": [
-      "/assets/apps/expedia/screen-1.webp",
-      "/assets/apps/expedia/screen-2.webp",
-      "/assets/apps/expedia/screen-3.webp",
-      "/assets/apps/expedia/screen-4.webp",
-      "/assets/apps/expedia/screen-5.webp",
-      "/assets/apps/expedia/screen-6.webp",
-      "/assets/apps/expedia/screen-7.webp",
-      "/assets/apps/expedia/screen-8.webp"
+      "/assets/apps/expedia/screen-1.png",
+      "/assets/apps/expedia/screen-2.png",
+      "/assets/apps/expedia/screen-3.png",
+      "/assets/apps/expedia/screen-4.png",
+      "/assets/apps/expedia/screen-5.png",
+      "/assets/apps/expedia/screen-6.png",
+      "/assets/apps/expedia/screen-7.png",
+      "/assets/apps/expedia/screen-8.png"
     ],
     "source": "https://play.google.com/store/apps/details?id=com.expedia.bookings&hl=en&gl=us"
   },
