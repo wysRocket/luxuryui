@@ -23,7 +23,7 @@ describe('enhanceImageBuffer', () => {
     // Create a 236×419 synthetic WebP (like bereal screenshots)
     const smallWebp = await sharp({
       create: { width: 236, height: 419, channels: 3, background: { r: 128, g: 64, b: 200 } }
-    }).webp({ quality: 80 }).toBuffer();
+    }).png({ quality: 80 }).toBuffer();
 
     const result = await enhanceImageBuffer(smallWebp, 944);
     const meta = await sharp(result).metadata();
@@ -34,7 +34,7 @@ describe('enhanceImageBuffer', () => {
   it('does not shrink large images (>900px wide)', async () => {
     const largeWebp = await sharp({
       create: { width: 1242, height: 2208, channels: 3, background: { r: 255, g: 200, b: 100 } }
-    }).webp({ quality: 80 }).toBuffer();
+    }).png({ quality: 80 }).toBuffer();
 
     const result = await enhanceImageBuffer(largeWebp, 944);
     const meta = await sharp(result).metadata();
@@ -46,7 +46,7 @@ describe('enhanceImageBuffer', () => {
   it('re-encodes as WebP regardless of input size', async () => {
     const input = await sharp({
       create: { width: 400, height: 710, channels: 3, background: { r: 10, g: 10, b: 10 } }
-    }).webp().toBuffer();
+    }).png().toBuffer();
 
     const result = await enhanceImageBuffer(input, 800);
     const meta = await sharp(result).metadata();

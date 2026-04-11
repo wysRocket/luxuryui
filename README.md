@@ -43,6 +43,19 @@ If you switch to Firebase or Stripe mode without the required keys, the app fail
 - local mock accounts are separate from Firebase accounts and are not migrated automatically
 - in Firebase mode, login/signup and wallet history persist across devices through Firebase Auth + Firestore
 - payment processing is still mock/local in this phase; top-ups complete instantly in-app until Stripe is connected
+- Firebase mode now also syncs `userProfiles/{uid}` and `userRoles/{uid}` documents for backoffice observability
+
+### Admin Backoffice Setup
+
+LuxuryUI now includes a protected `/admin` backoffice for read-only buyer observability in Firebase mode.
+
+To seed the first admin account:
+
+1. Sign up once with the Firebase account that should become an admin.
+2. In Firestore, open the `userRoles` collection and find the document whose ID matches that user's `uid`.
+3. Change the `roles` array from `["user"]` to `["user", "admin"]`.
+4. Keep the existing `userId`, `createdAt`, and `updatedAt` fields intact.
+5. Reload the app and open `/admin`.
 
 ### Google Sign-In Setup
 

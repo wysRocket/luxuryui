@@ -64,6 +64,8 @@ export interface CreditQuote {
 
 export type AuthProvider = "local" | "firebase-password" | "firebase-google";
 export type AuthStatus = "loading" | "authenticated" | "anonymous";
+export type AdminStatus = "idle" | "loading" | "ready";
+export type UserRole = "user" | "admin";
 
 export interface AuthenticatedUser {
   uid: string;
@@ -99,6 +101,22 @@ export interface CreditWallet {
   lifetimePurchased: number;
   lifetimeSpent: number;
   createdAt?: string;
+  updatedAt: string;
+}
+
+export interface UserProfileRecord {
+  uid: string;
+  email: string;
+  displayName: string;
+  provider: AuthProvider;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface UserRoleRecord {
+  userId: string;
+  roles: UserRole[];
+  createdAt: string;
   updatedAt: string;
 }
 
@@ -246,6 +264,16 @@ export interface AppSessionState {
   authStatus: AuthStatus;
   user: AuthenticatedUser | null;
   wallet: CreditWallet | null;
+  transactions: CreditTransaction[];
+  topUps: CreditTopUp[];
+  unlocks: KitUnlock[];
+  orders: KitOrder[];
+}
+
+export interface AdminOverviewSnapshot {
+  profiles: UserProfileRecord[];
+  roles: UserRoleRecord[];
+  wallets: CreditWallet[];
   transactions: CreditTransaction[];
   topUps: CreditTopUp[];
   unlocks: KitUnlock[];

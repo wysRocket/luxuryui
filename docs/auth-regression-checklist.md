@@ -31,6 +31,14 @@ Run this checklist when changing auth, session, account, wallet sync, or unlock 
 - Popup blocked scenario surfaces a user-actionable message.
 - Existing Google user returns to authenticated state with synchronized data.
 
+## Admin Backoffice Coverage
+
+- `userProfiles/{uid}` is created or refreshed after Firebase sign-in.
+- `userRoles/{uid}` exists with the default `user` role for non-admin accounts.
+- A seeded admin role can access `/admin` and sees observability data.
+- A non-admin authenticated user is redirected away from `/admin`.
+- Firestore rules still allow buyers to read only their own wallet subtree.
+
 ## Routing And Session
 
 - `redirect` query parameter is honored after login and signup.

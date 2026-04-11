@@ -28,8 +28,15 @@ import {
   subscribeToFirestoreWallet,
   topUpFirestoreWalletCredits,
 } from "../services/firestoreCommerceStore";
+import {
+  ensureFirestoreUserProfile,
+  ensureFirestoreUserRole,
+  getFirestoreAdminStatus,
+} from "../services/firestoreAdminStore";
+import { isFirestorePermissionDeniedError } from "../services/firebaseErrorUtils";
 import { getRuntimeWarnings, RUNTIME_CONFIG } from "../services/runtimeConfig";
 import type {
+  AdminStatus,
   AppSessionState,
   AuthStatus,
   CreditTopUp,
@@ -42,6 +49,8 @@ import type {
 
 interface AppSessionContextValue extends AppSessionState {
   isAuthenticated: boolean;
+  isAdmin: boolean;
+  adminStatus: AdminStatus;
   isBusy: boolean;
   warnings: string[];
   backendMode: "local" | "firebase";
@@ -87,9 +96,20 @@ export const AppSessionProvider: React.FC<{ children: React.ReactNode }> = ({
     user: null,
     ...emptyCommerceState,
   }));
+  const [isAdmin, setIsAdmin] = useState(false);
+  const [adminStatus, setAdminStatus] = useState<AdminStatus>("loading");
+  const [sessionWarnings, setSessionWarnings] = useState<string[]>([]);
   const [isBusy, setIsBusy] = useState(false);
   const currentUserRef = useRef<UserProfile | null>(null);
   const unsubscribeCommerceRef = useRef<(() => void) | null>(null);
+
+  const noteSessionWarning = useCallback((message: string) => {
+    setSessionWarnings((currentWarnings) =>
+      currentWarnings.includes(message)
+        ? currentWarnings
+        : [...currentWarnings, message],
+    );
+  }, []);
 
   const stopCommerceSubscriptions = useCallback(() => {
     unsubscribeCommerceRef.current?.();
@@ -128,6 +148,27 @@ export const AppSessionProvider: React.FC<{ children: React.ReactNode }> = ({
 
   const bindFirestoreCommerceState = useCallback(async (user: UserProfile) => {
     await ensureFirestoreWalletForUser(user);
+
+    const syncResults = await Promise.allSettled([
+      ensureFirestoreUserProfile(user),
+      ensureFirestoreUserRole(user),
+    ]);
+
+    syncResults.forEach((result) => {
+      if (result.status !== "rejected") {
+        return;
+      }
+
+      if (isFirestorePermissionDeniedError(result.reason)) {
+        noteSessionWarning(
+          "Backoffice sync is unavailable until the latest Firestore rules are deployed. Buyer auth and wallet flows still work.",
+        );
+        return;
+      }
+
+      console.warn("Unable to sync Firebase backoffice records.", result.reason);
+    });
+
     setSnapshot((currentSnapshot) => ({
       ...currentSnapshot,
       authStatus: "authenticated",
@@ -193,7 +234,40 @@ export const AppSessionProvider: React.FC<{ children: React.ReactNode }> = ({
       unsubscribeOrders();
       unsubscribeUnlocks();
     };
-  }, []);
+  }, [noteSessionWarning]);
+
+  const syncAdminState = useCallback(async (user: UserProfile | null) => {
+    if (!user || RUNTIME_CONFIG.backendMode === "local") {
+      setIsAdmin(false);
+      setAdminStatus("ready");
+      return;
+    }
+
+    setAdminStatus("loading");
+
+    try {
+      const nextIsAdmin = await getFirestoreAdminStatus(user.uid);
+
+      if (currentUserRef.current?.uid !== user.uid) {
+        return;
+      }
+
+      setIsAdmin(nextIsAdmin);
+    } catch {
+      if (currentUserRef.current?.uid !== user.uid) {
+        return;
+      }
+
+      setIsAdmin(false);
+      noteSessionWarning(
+        "Admin access checks are blocked until the latest Firestore rules are deployed.",
+      );
+    } finally {
+      if (currentUserRef.current?.uid === user.uid) {
+        setAdminStatus("ready");
+      }
+    }
+  }, [noteSessionWarning]);
 
   const syncCommerceState = useCallback(
     async (user: UserProfile | null) => {
@@ -205,6 +279,8 @@ export const AppSessionProvider: React.FC<{ children: React.ReactNode }> = ({
           user: null,
           ...emptyCommerceState,
         });
+        setIsAdmin(false);
+        setAdminStatus("ready");
         return;
       }
 
@@ -226,14 +302,21 @@ export const AppSessionProvider: React.FC<{ children: React.ReactNode }> = ({
     let isMounted = true;
 
     const hydrate = async () => {
-      const currentUser = await authBackend.getCurrentUser();
+      try {
+        const currentUser = await authBackend.getCurrentUser();
 
-      if (!isMounted) {
-        return;
+        if (!isMounted) {
+          return;
+        }
+
+        syncAuthState(currentUser);
+        await Promise.all([
+          syncCommerceState(currentUser),
+          syncAdminState(currentUser),
+        ]);
+      } catch (error) {
+        console.warn("Unable to hydrate app session state.", error);
       }
-
-      syncAuthState(currentUser);
-      await syncCommerceState(currentUser);
     };
 
     void hydrate();
@@ -244,7 +327,11 @@ export const AppSessionProvider: React.FC<{ children: React.ReactNode }> = ({
       }
 
       syncAuthState(user);
-      void syncCommerceState(user);
+      void Promise.all([syncCommerceState(user), syncAdminState(user)]).catch(
+        (error) => {
+          console.warn("Unable to synchronize auth session state.", error);
+        },
+      );
     });
 
     return () => {
@@ -252,7 +339,7 @@ export const AppSessionProvider: React.FC<{ children: React.ReactNode }> = ({
       stopCommerceSubscriptions();
       unsubscribeAuth();
     };
-  }, [stopCommerceSubscriptions, syncAuthState, syncCommerceState]);
+  }, [stopCommerceSubscriptions, syncAdminState, syncAuthState, syncCommerceState]);
 
   const refresh = useCallback(() => {
     if (!currentUserRef.current) {
@@ -292,8 +379,10 @@ export const AppSessionProvider: React.FC<{ children: React.ReactNode }> = ({
       ...snapshot,
       authStatus,
       isAuthenticated: authStatus === "authenticated",
+      isAdmin,
+      adminStatus,
       isBusy,
-      warnings: getRuntimeWarnings(),
+      warnings: [...getRuntimeWarnings(), ...sessionWarnings],
       backendMode: RUNTIME_CONFIG.backendMode,
       signUp: async (input) => {
         await wrapAction(async () => {
@@ -379,9 +468,12 @@ export const AppSessionProvider: React.FC<{ children: React.ReactNode }> = ({
     }),
     [
       authStatus,
+      adminStatus,
+      isAdmin,
       isBusy,
       refresh,
       snapshot,
+      sessionWarnings,
       syncAuthState,
       syncCommerceState,
       wrapAction,

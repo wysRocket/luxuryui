@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({
   onSearchChange
 }) => {
   const navigate = useNavigate();
-  const { backendMode, isAuthenticated, user, wallet, signOut } = useAppSession();
+  const { backendMode, isAuthenticated, isAdmin, user, wallet, signOut } = useAppSession();
   const [isMobileSearchOpen, setIsMobileSearchOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSearchFocused, setIsSearchFocused] = useState(false);
@@ -231,6 +231,14 @@ const Header: React.FC<HeaderProps> = ({
                   <span className="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-[10px] font-black uppercase tracking-[0.16em] text-emerald-700 dark:border-emerald-900/40 dark:bg-emerald-950/30 dark:text-emerald-200">
                     Firebase
                   </span>
+                )}
+                {isAdmin && (
+                  <Link
+                    to="/admin"
+                    className="rounded-full border border-cyan-200 bg-cyan-50 px-3 py-1 text-[10px] font-black uppercase tracking-[0.16em] text-cyan-700 transition-colors hover:bg-cyan-100 dark:border-cyan-900/40 dark:bg-cyan-950/30 dark:text-cyan-200 dark:hover:bg-cyan-950/50"
+                  >
+                    Backoffice
+                  </Link>
                 )}
                 <Link to="/account" className="text-sm lg:text-[15px] font-bold text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white px-2 lg:px-3 transition-colors">
                   {user?.displayName ?? 'Account'}

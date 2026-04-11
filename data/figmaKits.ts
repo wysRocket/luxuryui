@@ -98,7 +98,7 @@ export const FIGMA_CONTENT_MANIFESTS = figmaKitManifests;
 
 export const CREDIT_PACK_CONFIG: CreditPackConfig = {
   minCredits: 25,
-  maxCredits: 500,
+  maxCredits: 20_000,
   defaultCredits: 120,
   sliderStep: 1,
   buttonSteps: [10, 1],

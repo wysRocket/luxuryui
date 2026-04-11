@@ -6,6 +6,13 @@ import {
 } from "@/data/figmaKits";
 
 describe("figmaKits pricing math", () => {
+  it("matches the cloudbase max top-up amount", () => {
+    const maxQuote = getCreditQuote(CREDIT_PACK_CONFIG.maxCredits);
+
+    expect(CREDIT_PACK_CONFIG.maxCredits).toBe(20_000);
+    expect(maxQuote.eurTotal).toBe(200);
+  });
+
   it("clamps to configured min and max", () => {
     expect(clampCredits(CREDIT_PACK_CONFIG.minCredits - 10)).toBe(
       CREDIT_PACK_CONFIG.minCredits,

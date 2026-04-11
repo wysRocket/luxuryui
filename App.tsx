@@ -8,6 +8,7 @@ import { MOCK_APPS } from './constants';
 
 const DesignAssistant = lazy(() => import('./components/DesignAssistant'));
 const BrowsePage = lazy(() => import('./pages/BrowsePage'));
+const AdminObservabilityPage = lazy(() => import('./pages/AdminObservabilityPage'));
 const AccountPage = lazy(() => import('./pages/AccountPage'));
 const CollectionPage = lazy(() => import('./pages/CollectionPage'));
 const ContentPage = lazy(() => import('./pages/ContentPage'));
@@ -339,6 +340,14 @@ const App: React.FC = () => {
                 element={
                   <ProtectedRoute>
                     <AccountPage />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/admin"
+                element={
+                  <ProtectedRoute requireAdmin>
+                    <AdminObservabilityPage />
                   </ProtectedRoute>
                 }
               />

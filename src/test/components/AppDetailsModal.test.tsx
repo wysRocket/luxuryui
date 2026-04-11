@@ -8,9 +8,9 @@ import type { AppItem, FigmaKitProduct } from '@/types';
 
 const { screenshots, relatedKit } = vi.hoisted(() => {
   const screenshots = [
-    '/assets/apps/test/screen-1.webp',
-    '/assets/apps/test/screen-2.webp',
-    '/assets/apps/test/screen-3.webp',
+    '/assets/apps/test/screen-1.png',
+    '/assets/apps/test/screen-2.png',
+    '/assets/apps/test/screen-3.png',
   ];
 
   const relatedKit: FigmaKitProduct = {
@@ -23,8 +23,8 @@ const { screenshots, relatedKit } = vi.hoisted(() => {
     type: 'flow-kit',
     status: 'published',
     figmaFileKey: null,
-    thumbnail: '/assets/apps/test/kit.webp',
-    gallery: ['/assets/apps/test/kit.webp'],
+    thumbnail: '/assets/apps/test/kit.png',
+    gallery: ['/assets/apps/test/kit.png'],
     includedScreens: 8,
     includedComponents: ['Cards'],
     includedTokens: ['Colors'],
@@ -76,7 +76,7 @@ const app: AppItem = {
   platform: 'iOS',
   screenCount: 3,
   image: screenshots[0],
-  logo: '/assets/apps/test/logo.webp',
+  logo: '/assets/apps/test/logo.png',
   lastUpdated: '2026-04-10',
   sourceQuality: 'pass',
   assetOrigin: 'real',
