@@ -2236,11 +2236,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "aOkZpRhDSuHVKkltDl7yW3",
-      "thumbnail": "/assets/apps/expedia/screen-1.webp",
+      "thumbnail": "/assets/apps/expedia/screen-1.png",
       "gallery": [
-        "/assets/apps/expedia/screen-1.webp",
-        "/assets/apps/expedia/screen-2.webp",
-        "/assets/apps/expedia/screen-3.webp"
+        "/assets/apps/expedia/screen-1.png",
+        "/assets/apps/expedia/screen-2.png",
+        "/assets/apps/expedia/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2277,14 +2277,14 @@
         "artifactVersion": 1,
         "downloadFileName": "expedia-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/expedia/screen-1.webp",
-          "/assets/apps/expedia/screen-2.webp",
-          "/assets/apps/expedia/screen-3.webp",
-          "/assets/apps/expedia/screen-4.webp",
-          "/assets/apps/expedia/screen-5.webp",
-          "/assets/apps/expedia/screen-6.webp",
-          "/assets/apps/expedia/screen-7.webp",
-          "/assets/apps/expedia/screen-8.webp"
+          "/assets/apps/expedia/screen-1.png",
+          "/assets/apps/expedia/screen-2.png",
+          "/assets/apps/expedia/screen-3.png",
+          "/assets/apps/expedia/screen-4.png",
+          "/assets/apps/expedia/screen-5.png",
+          "/assets/apps/expedia/screen-6.png",
+          "/assets/apps/expedia/screen-7.png",
+          "/assets/apps/expedia/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",

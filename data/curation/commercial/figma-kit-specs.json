@@ -2224,9 +2224,9 @@
         "Keep tone premium, but not source-identical."
       ],
       "previewImages": [
-        "/assets/apps/expedia/screen-1.webp",
-        "/assets/apps/expedia/screen-2.webp",
-        "/assets/apps/expedia/screen-3.webp"
+        "/assets/apps/expedia/screen-1.png",
+        "/assets/apps/expedia/screen-2.png",
+        "/assets/apps/expedia/screen-3.png"
       ],
       "deliveryChecklist": [
         "All frames renamed and grouped",

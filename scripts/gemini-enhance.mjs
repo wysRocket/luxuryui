@@ -6,15 +6,19 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(__dirname, '..');
 
-// Load env
-const envRaw = await readFile(path.join(projectRoot, '.env'), 'utf8').catch(() => '');
-for (const line of envRaw.split('\n')) {
-  const [k, ...v] = line.split('=');
-  if (k && v.length && !process.env[k.trim()]) process.env[k.trim()] = v.join('=').trim();
+// Load .env.local first (takes priority), then .env
+for (const envFile of ['.env', '.env.local']) {
+  try {
+    const raw = await readFile(path.join(projectRoot, envFile), 'utf8');
+    for (const line of raw.split('\n')) {
+      const [k, ...v] = line.split('=');
+      if (k?.trim() && v.length) process.env[k.trim()] = v.join('=').trim();
+    }
+  } catch {}
 }
 
-const API_KEY = process.env.VITE_GEMINI_API_KEY;
-if (!API_KEY) { console.error('❌ VITE_GEMINI_API_KEY not found'); process.exit(1); }
+const API_KEY = process.env.GEMINI_API_KEY;
+if (!API_KEY) { console.error('❌ GEMINI_API_KEY not found in .env.local'); process.exit(1); }
 
 const appSlug = process.argv[2];
 if (!appSlug) { console.error('Usage: node scripts/gemini-enhance.mjs <app-slug> [--test]'); process.exit(1); }
@@ -22,34 +26,33 @@ const testOnly = process.argv.includes('--test');
 
 const appDir = path.join(projectRoot, 'public', 'assets', 'apps', appSlug);
 const files = (await readdir(appDir)).filter(f => f.startsWith('screen-') && f.endsWith('.webp')).sort();
-
-if (testOnly) {
-  console.log(`🧪 Test mode — processing only: ${files[0]}`);
-}
 const targets = testOnly ? [files[0]] : files;
-console.log(`🎨 Enhancing ${targets.length} screen(s) for "${appSlug}" via Gemini 2.5 Flash Image...\n`);
+
+console.log(`🎨 Enhancing ${targets.length} screen(s) for "${appSlug}" via Gemini Flash Image...\n`);
 
 const ai = new GoogleGenAI({ apiKey: API_KEY });
 
-const PROMPT = `This is a mobile app UI screenshot. 
-Your task: recreate this exact screenshot with maximum sharpness, crispness and visual quality.
-Rules:
-- Keep ALL text content exactly as shown — do not change any words
-- Keep the exact same layout, UI components, colors, icons, and proportions
-- Keep the same dimensions and aspect ratio
+// Find working image gen model
+const IMAGE_MODEL = 'gemini-2.5-flash-image';
+
+const PROMPT = `This is a mobile app UI screenshot.
+Recreate this exact screenshot with maximum sharpness and visual quality.
+- Keep ALL text exactly as shown — do not change any words
+- Keep the exact same layout, UI components, colors, icons, proportions
 - Enhance rendering quality: sharper edges, cleaner text, richer colors
-- Output should look like the same screen captured on a premium high-DPI display
-Do not add, remove or move any UI element.`;
+- Same dimensions and aspect ratio
+- Do not add, remove, or move any UI element`;
 
 for (const filename of targets) {
   const inputPath = path.join(appDir, filename);
   const imageBytes = await readFile(inputPath);
   const base64 = imageBytes.toString('base64');
+  const originalSize = (imageBytes.length / 1024).toFixed(0);
 
-  process.stdout.write(`  ${filename} ... `);
+  process.stdout.write(`  ${filename} (${originalSize}KB) → `);
   try {
     const response = await ai.models.generateContentStream({
-      model: 'gemini-2.5-flash-preview-05-20',
+      model: IMAGE_MODEL,
       config: { responseModalities: ['IMAGE', 'TEXT'] },
       contents: [{
         role: 'user',
@@ -65,21 +68,23 @@ for (const filename of targets) {
       const part = chunk.candidates?.[0]?.content?.parts?.[0];
       if (part?.inlineData?.data) {
         const outputBuffer = Buffer.from(part.inlineData.data, 'base64');
-        // Save back over the original (keep .webp)
-        const outputPath = path.join(appDir, filename);
-        await writeFile(outputPath, outputBuffer);
-        console.log(`✅ saved (${(outputBuffer.length / 1024).toFixed(0)} KB)`);
+        await writeFile(inputPath, outputBuffer);
+        console.log(`✅ ${(outputBuffer.length / 1024).toFixed(0)}KB`);
+        saved = true;
+        break;
+      } else if (part?.text) {
+        console.log(`⚠️  text only: ${part.text.slice(0, 60)}`);
         saved = true;
         break;
       }
     }
-    if (!saved) console.log('⚠️  no image in response');
+    if (!saved) console.log('⚠️  no output');
   } catch (err) {
-    console.log(`❌ ${err.message?.slice(0, 80)}`);
+    const msg = err.message?.slice(0, 100) ?? String(err);
+    console.log(`❌ ${msg}`);
   }
 
-  // Small delay between requests
-  if (targets.indexOf(filename) < targets.length - 1) await new Promise(r => setTimeout(r, 1500));
+  if (targets.indexOf(filename) < targets.length - 1) await new Promise(r => setTimeout(r, 2000));
 }
 
-console.log('\nDone.');
+console.log('\n✅ Done.');
