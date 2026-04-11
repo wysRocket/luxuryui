@@ -1,0 +1,4594 @@
+[
+  {
+    "file": "public/assets/apps/airbnb/screen-1.webp",
+    "beforeSizeKB": "32.3",
+    "afterSizeKB": "154.4",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/airbnb/screen-2.webp",
+    "beforeSizeKB": "27.0",
+    "afterSizeKB": "125.5",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/airbnb/screen-3.webp",
+    "beforeSizeKB": "33.1",
+    "afterSizeKB": "146.3",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/airbnb/screen-4.webp",
+    "beforeSizeKB": "27.1",
+    "afterSizeKB": "129.8",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/airbnb/screen-5.webp",
+    "beforeSizeKB": "21.2",
+    "afterSizeKB": "93.6",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/airbnb/screen-6.webp",
+    "beforeSizeKB": "23.9",
+    "afterSizeKB": "110.9",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/airbnb/screen-7.webp",
+    "beforeSizeKB": "9.9",
+    "afterSizeKB": "45.2",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/airbnb/screen-8.webp",
+    "beforeSizeKB": "51.9",
+    "afterSizeKB": "168.8",
+    "beforeDims": "384×512",
+    "afterDims": "944×1259",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/amazon/screen-1.webp",
+    "beforeSizeKB": "204.6",
+    "afterSizeKB": "224.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/amazon/screen-2.webp",
+    "beforeSizeKB": "272.2",
+    "afterSizeKB": "319.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/amazon/screen-3.webp",
+    "beforeSizeKB": "208.8",
+    "afterSizeKB": "217.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/amazon/screen-4.webp",
+    "beforeSizeKB": "145.8",
+    "afterSizeKB": "154.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/amazon/screen-5.webp",
+    "beforeSizeKB": "198.9",
+    "afterSizeKB": "227.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/amazon/screen-6.webp",
+    "beforeSizeKB": "245.8",
+    "afterSizeKB": "260.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/amazon/screen-7.webp",
+    "beforeSizeKB": "170.0",
+    "afterSizeKB": "174.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/amazon/screen-8.webp",
+    "beforeSizeKB": "203.4",
+    "afterSizeKB": "213.5",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/apple-music/screen-1.webp",
+    "beforeSizeKB": "24.6",
+    "afterSizeKB": "105.1",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/apple-music/screen-2.webp",
+    "beforeSizeKB": "25.4",
+    "afterSizeKB": "117.1",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/apple-music/screen-3.webp",
+    "beforeSizeKB": "18.8",
+    "afterSizeKB": "89.4",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/apple-music/screen-4.webp",
+    "beforeSizeKB": "29.4",
+    "afterSizeKB": "134.8",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/apple-music/screen-5.webp",
+    "beforeSizeKB": "23.7",
+    "afterSizeKB": "103.4",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/apple-music/screen-6.webp",
+    "beforeSizeKB": "21.4",
+    "afterSizeKB": "91.8",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/apple-music/screen-7.webp",
+    "beforeSizeKB": "22.8",
+    "afterSizeKB": "51.6",
+    "beforeDims": "512×288",
+    "afterDims": "944×531",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/apple-music/screen-8.webp",
+    "beforeSizeKB": "23.4",
+    "afterSizeKB": "56.6",
+    "beforeDims": "512×288",
+    "afterDims": "944×531",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/asana/screen-1.webp",
+    "beforeSizeKB": "26.0",
+    "afterSizeKB": "112.1",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/asana/screen-2.webp",
+    "beforeSizeKB": "17.4",
+    "afterSizeKB": "80.2",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/asana/screen-3.webp",
+    "beforeSizeKB": "22.9",
+    "afterSizeKB": "104.2",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/asana/screen-4.webp",
+    "beforeSizeKB": "23.1",
+    "afterSizeKB": "101.6",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/asana/screen-5.webp",
+    "beforeSizeKB": "22.6",
+    "afterSizeKB": "102.7",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/asana/screen-6.webp",
+    "beforeSizeKB": "21.7",
+    "afterSizeKB": "98.9",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/asana/screen-7.webp",
+    "beforeSizeKB": "27.9",
+    "afterSizeKB": "131.9",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/asos/screen-1.webp",
+    "beforeSizeKB": "293.8",
+    "afterSizeKB": "303.1",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/asos/screen-2.webp",
+    "beforeSizeKB": "219.5",
+    "afterSizeKB": "238.6",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/asos/screen-3.webp",
+    "beforeSizeKB": "68.7",
+    "afterSizeKB": "73.0",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/asos/screen-4.webp",
+    "beforeSizeKB": "262.0",
+    "afterSizeKB": "286.8",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/asos/screen-5.webp",
+    "beforeSizeKB": "114.1",
+    "afterSizeKB": "121.7",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/asos/screen-6.webp",
+    "beforeSizeKB": "97.0",
+    "afterSizeKB": "98.2",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/babbel/screen-1.webp",
+    "beforeSizeKB": "136.2",
+    "afterSizeKB": "127.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/babbel/screen-2.webp",
+    "beforeSizeKB": "124.5",
+    "afterSizeKB": "130.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/babbel/screen-3.webp",
+    "beforeSizeKB": "129.7",
+    "afterSizeKB": "128.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/babbel/screen-4.webp",
+    "beforeSizeKB": "91.8",
+    "afterSizeKB": "96.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/babbel/screen-5.webp",
+    "beforeSizeKB": "93.8",
+    "afterSizeKB": "93.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/babbel/screen-6.webp",
+    "beforeSizeKB": "90.9",
+    "afterSizeKB": "94.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/babbel/screen-7.webp",
+    "beforeSizeKB": "110.9",
+    "afterSizeKB": "107.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/babbel/screen-8.webp",
+    "beforeSizeKB": "137.2",
+    "afterSizeKB": "142.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/bbc-news/screen-1.webp",
+    "beforeSizeKB": "480.7",
+    "afterSizeKB": "506.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/bbc-news/screen-2.webp",
+    "beforeSizeKB": "265.8",
+    "afterSizeKB": "296.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/bbc-news/screen-3.webp",
+    "beforeSizeKB": "82.9",
+    "afterSizeKB": "93.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/bbc-news/screen-4.webp",
+    "beforeSizeKB": "430.1",
+    "afterSizeKB": "455.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/bbc-news/screen-5.webp",
+    "beforeSizeKB": "84.1",
+    "afterSizeKB": "84.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/bbc-news/screen-6.webp",
+    "beforeSizeKB": "159.0",
+    "afterSizeKB": "164.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/bbc-news/screen-7.webp",
+    "beforeSizeKB": "192.0",
+    "afterSizeKB": "188.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/bbc-news/screen-8.webp",
+    "beforeSizeKB": "198.6",
+    "afterSizeKB": "216.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/bereal/screen-1.webp",
+    "beforeSizeKB": "48.9",
+    "afterSizeKB": "299.2",
+    "beforeDims": "236×512",
+    "afterDims": "944×2048",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/bereal/screen-2.webp",
+    "beforeSizeKB": "49.0",
+    "afterSizeKB": "290.3",
+    "beforeDims": "236×512",
+    "afterDims": "944×2048",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/bereal/screen-3.webp",
+    "beforeSizeKB": "40.4",
+    "afterSizeKB": "256.1",
+    "beforeDims": "236×512",
+    "afterDims": "944×2048",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/bereal/screen-4.webp",
+    "beforeSizeKB": "60.7",
+    "afterSizeKB": "387.9",
+    "beforeDims": "236×512",
+    "afterDims": "944×2048",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/bereal/screen-5.webp",
+    "beforeSizeKB": "32.4",
+    "afterSizeKB": "211.0",
+    "beforeDims": "236×512",
+    "afterDims": "944×2048",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/bereal/screen-6.webp",
+    "beforeSizeKB": "56.3",
+    "afterSizeKB": "354.5",
+    "beforeDims": "236×512",
+    "afterDims": "944×2048",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/binance/screen-1.webp",
+    "beforeSizeKB": "20.8",
+    "afterSizeKB": "50.3",
+    "beforeDims": "512×288",
+    "afterDims": "944×531",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/binance/screen-2.webp",
+    "beforeSizeKB": "9.6",
+    "afterSizeKB": "20.3",
+    "beforeDims": "512×288",
+    "afterDims": "944×531",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/binance/screen-3.webp",
+    "beforeSizeKB": "16.8",
+    "afterSizeKB": "35.0",
+    "beforeDims": "512×288",
+    "afterDims": "944×531",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/binance/screen-4.webp",
+    "beforeSizeKB": "21.4",
+    "afterSizeKB": "45.5",
+    "beforeDims": "512×288",
+    "afterDims": "944×531",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/binance/screen-5.webp",
+    "beforeSizeKB": "26.8",
+    "afterSizeKB": "63.8",
+    "beforeDims": "512×288",
+    "afterDims": "944×531",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/binance/screen-6.webp",
+    "beforeSizeKB": "24.3",
+    "afterSizeKB": "57.9",
+    "beforeDims": "512×288",
+    "afterDims": "944×531",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/binance/screen-7.webp",
+    "beforeSizeKB": "19.9",
+    "afterSizeKB": "43.4",
+    "beforeDims": "512×288",
+    "afterDims": "944×531",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/binance/screen-8.webp",
+    "beforeSizeKB": "12.3",
+    "afterSizeKB": "27.1",
+    "beforeDims": "512×286",
+    "afterDims": "944×527",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/booking-com/screen-1.webp",
+    "beforeSizeKB": "171.9",
+    "afterSizeKB": "180.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/booking-com/screen-2.webp",
+    "beforeSizeKB": "204.9",
+    "afterSizeKB": "215.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/booking-com/screen-3.webp",
+    "beforeSizeKB": "262.1",
+    "afterSizeKB": "283.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/booking-com/screen-4.webp",
+    "beforeSizeKB": "445.6",
+    "afterSizeKB": "454.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/booking-com/screen-5.webp",
+    "beforeSizeKB": "219.7",
+    "afterSizeKB": "259.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/booking-com/screen-6.webp",
+    "beforeSizeKB": "292.4",
+    "afterSizeKB": "325.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/booking-com/screen-7.webp",
+    "beforeSizeKB": "196.0",
+    "afterSizeKB": "217.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/booking-com/screen-8.webp",
+    "beforeSizeKB": "285.6",
+    "afterSizeKB": "303.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/calm/screen-1.webp",
+    "beforeSizeKB": "177.9",
+    "afterSizeKB": "192.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/calm/screen-2.webp",
+    "beforeSizeKB": "262.3",
+    "afterSizeKB": "300.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/calm/screen-3.webp",
+    "beforeSizeKB": "244.5",
+    "afterSizeKB": "271.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/calm/screen-4.webp",
+    "beforeSizeKB": "149.9",
+    "afterSizeKB": "169.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/calm/screen-5.webp",
+    "beforeSizeKB": "242.2",
+    "afterSizeKB": "277.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/calm/screen-6.webp",
+    "beforeSizeKB": "219.1",
+    "afterSizeKB": "257.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/calm/screen-7.webp",
+    "beforeSizeKB": "160.3",
+    "afterSizeKB": "180.0",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/calm/screen-8.webp",
+    "beforeSizeKB": "162.5",
+    "afterSizeKB": "187.9",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/cnn/screen-1.webp",
+    "beforeSizeKB": "25.9",
+    "afterSizeKB": "66.0",
+    "beforeDims": "512×288",
+    "afterDims": "944×531",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/cnn/screen-2.webp",
+    "beforeSizeKB": "27.6",
+    "afterSizeKB": "70.5",
+    "beforeDims": "512×288",
+    "afterDims": "944×531",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/cnn/screen-3.webp",
+    "beforeSizeKB": "32.2",
+    "afterSizeKB": "78.6",
+    "beforeDims": "512×288",
+    "afterDims": "944×531",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/cnn/screen-4.webp",
+    "beforeSizeKB": "27.9",
+    "afterSizeKB": "71.7",
+    "beforeDims": "512×288",
+    "afterDims": "944×531",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/cnn/screen-5.webp",
+    "beforeSizeKB": "36.6",
+    "afterSizeKB": "88.2",
+    "beforeDims": "512×288",
+    "afterDims": "944×531",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/cnn/screen-6.webp",
+    "beforeSizeKB": "36.6",
+    "afterSizeKB": "89.8",
+    "beforeDims": "512×288",
+    "afterDims": "944×531",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/coinbase/screen-1.webp",
+    "beforeSizeKB": "202.0",
+    "afterSizeKB": "220.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/coinbase/screen-2.webp",
+    "beforeSizeKB": "121.0",
+    "afterSizeKB": "116.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/coinbase/screen-3.webp",
+    "beforeSizeKB": "103.7",
+    "afterSizeKB": "107.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/coinbase/screen-4.webp",
+    "beforeSizeKB": "101.3",
+    "afterSizeKB": "102.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/coinbase/screen-5.webp",
+    "beforeSizeKB": "95.4",
+    "afterSizeKB": "86.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/coinbase/screen-6.webp",
+    "beforeSizeKB": "67.9",
+    "afterSizeKB": "71.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/coinbase/screen-7.webp",
+    "beforeSizeKB": "139.2",
+    "afterSizeKB": "152.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/coursera/screen-1.webp",
+    "beforeSizeKB": "120.6",
+    "afterSizeKB": "133.0",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/coursera/screen-2.webp",
+    "beforeSizeKB": "95.2",
+    "afterSizeKB": "103.2",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/coursera/screen-3.webp",
+    "beforeSizeKB": "185.0",
+    "afterSizeKB": "196.3",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/coursera/screen-4.webp",
+    "beforeSizeKB": "49.1",
+    "afterSizeKB": "54.3",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/coursera/screen-5.webp",
+    "beforeSizeKB": "234.8",
+    "afterSizeKB": "282.5",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/deezer/screen-1.webp",
+    "beforeSizeKB": "23.9",
+    "afterSizeKB": "127.1",
+    "beforeDims": "236×512",
+    "afterDims": "944×2048",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/deezer/screen-2.webp",
+    "beforeSizeKB": "31.6",
+    "afterSizeKB": "176.4",
+    "beforeDims": "236×512",
+    "afterDims": "944×2048",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/deezer/screen-3.webp",
+    "beforeSizeKB": "17.4",
+    "afterSizeKB": "94.5",
+    "beforeDims": "236×512",
+    "afterDims": "944×2048",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/deezer/screen-4.webp",
+    "beforeSizeKB": "17.7",
+    "afterSizeKB": "91.5",
+    "beforeDims": "236×512",
+    "afterDims": "944×2048",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/deezer/screen-5.webp",
+    "beforeSizeKB": "25.7",
+    "afterSizeKB": "136.5",
+    "beforeDims": "236×512",
+    "afterDims": "944×2048",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/deezer/screen-6.webp",
+    "beforeSizeKB": "31.0",
+    "afterSizeKB": "167.5",
+    "beforeDims": "236×512",
+    "afterDims": "944×2048",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/deezer/screen-7.webp",
+    "beforeSizeKB": "18.0",
+    "afterSizeKB": "95.4",
+    "beforeDims": "236×512",
+    "afterDims": "944×2048",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/deezer/screen-8.webp",
+    "beforeSizeKB": "18.5",
+    "afterSizeKB": "109.5",
+    "beforeDims": "236×512",
+    "afterDims": "944×2048",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/duolingo/screen-1.webp",
+    "beforeSizeKB": "17.7",
+    "afterSizeKB": "78.4",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/duolingo/screen-2.webp",
+    "beforeSizeKB": "17.9",
+    "afterSizeKB": "80.7",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/duolingo/screen-3.webp",
+    "beforeSizeKB": "19.7",
+    "afterSizeKB": "88.3",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/duolingo/screen-4.webp",
+    "beforeSizeKB": "15.1",
+    "afterSizeKB": "68.4",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/duolingo/screen-5.webp",
+    "beforeSizeKB": "21.9",
+    "afterSizeKB": "92.9",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/duolingo/screen-6.webp",
+    "beforeSizeKB": "15.3",
+    "afterSizeKB": "68.2",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/duolingo/screen-7.webp",
+    "beforeSizeKB": "19.2",
+    "afterSizeKB": "74.8",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/duolingo/screen-8.webp",
+    "beforeSizeKB": "19.5",
+    "afterSizeKB": "86.0",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/ebay/screen-1.webp",
+    "beforeSizeKB": "432.1",
+    "afterSizeKB": "498.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/ebay/screen-2.webp",
+    "beforeSizeKB": "93.0",
+    "afterSizeKB": "98.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/ebay/screen-3.webp",
+    "beforeSizeKB": "105.1",
+    "afterSizeKB": "108.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/ebay/screen-4.webp",
+    "beforeSizeKB": "89.9",
+    "afterSizeKB": "92.1",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/ebay/screen-5.webp",
+    "beforeSizeKB": "81.4",
+    "afterSizeKB": "85.5",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/ebay/screen-6.webp",
+    "beforeSizeKB": "61.4",
+    "afterSizeKB": "63.6",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/etsy/screen-1.webp",
+    "beforeSizeKB": "354.7",
+    "afterSizeKB": "379.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/etsy/screen-2.webp",
+    "beforeSizeKB": "297.9",
+    "afterSizeKB": "311.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/etsy/screen-3.webp",
+    "beforeSizeKB": "310.7",
+    "afterSizeKB": "341.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/etsy/screen-4.webp",
+    "beforeSizeKB": "163.0",
+    "afterSizeKB": "170.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/etsy/screen-5.webp",
+    "beforeSizeKB": "286.3",
+    "afterSizeKB": "315.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/etsy/screen-6.webp",
+    "beforeSizeKB": "261.8",
+    "afterSizeKB": "285.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/etsy/screen-7.webp",
+    "beforeSizeKB": "326.3",
+    "afterSizeKB": "369.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/etsy/screen-8.webp",
+    "beforeSizeKB": "85.6",
+    "afterSizeKB": "89.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/expedia/screen-1.webp",
+    "beforeSizeKB": "23.9",
+    "afterSizeKB": "120.4",
+    "beforeDims": "256×512",
+    "afterDims": "944×1888",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/expedia/screen-2.webp",
+    "beforeSizeKB": "30.4",
+    "afterSizeKB": "152.3",
+    "beforeDims": "256×512",
+    "afterDims": "944×1888",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/expedia/screen-3.webp",
+    "beforeSizeKB": "29.6",
+    "afterSizeKB": "143.8",
+    "beforeDims": "256×512",
+    "afterDims": "944×1888",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/expedia/screen-4.webp",
+    "beforeSizeKB": "22.1",
+    "afterSizeKB": "107.3",
+    "beforeDims": "256×512",
+    "afterDims": "944×1888",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/expedia/screen-5.webp",
+    "beforeSizeKB": "20.9",
+    "afterSizeKB": "100.9",
+    "beforeDims": "256×512",
+    "afterDims": "944×1888",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/expedia/screen-6.webp",
+    "beforeSizeKB": "31.2",
+    "afterSizeKB": "153.4",
+    "beforeDims": "256×512",
+    "afterDims": "944×1888",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/expedia/screen-7.webp",
+    "beforeSizeKB": "31.3",
+    "afterSizeKB": "154.3",
+    "beforeDims": "256×512",
+    "afterDims": "944×1888",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/expedia/screen-8.webp",
+    "beforeSizeKB": "26.8",
+    "afterSizeKB": "141.9",
+    "beforeDims": "256×512",
+    "afterDims": "944×1888",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/fitbit/screen-1.webp",
+    "beforeSizeKB": "90.6",
+    "afterSizeKB": "103.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/fitbit/screen-2.webp",
+    "beforeSizeKB": "81.3",
+    "afterSizeKB": "93.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/fitbit/screen-3.webp",
+    "beforeSizeKB": "164.2",
+    "afterSizeKB": "188.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/fitbit/screen-4.webp",
+    "beforeSizeKB": "116.4",
+    "afterSizeKB": "130.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/fitbit/screen-5.webp",
+    "beforeSizeKB": "138.8",
+    "afterSizeKB": "154.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/fitbit/screen-6.webp",
+    "beforeSizeKB": "159.3",
+    "afterSizeKB": "184.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/flipboard/screen-1.webp",
+    "beforeSizeKB": "345.0",
+    "afterSizeKB": "386.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/flipboard/screen-2.webp",
+    "beforeSizeKB": "430.7",
+    "afterSizeKB": "464.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/flipboard/screen-3.webp",
+    "beforeSizeKB": "329.9",
+    "afterSizeKB": "344.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/flipboard/screen-4.webp",
+    "beforeSizeKB": "286.3",
+    "afterSizeKB": "307.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/flipboard/screen-5.webp",
+    "beforeSizeKB": "309.0",
+    "afterSizeKB": "355.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/flipboard/screen-6.webp",
+    "beforeSizeKB": "349.2",
+    "afterSizeKB": "379.7",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/flipboard/screen-7.webp",
+    "beforeSizeKB": "385.6",
+    "afterSizeKB": "422.5",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/flipboard/screen-8.webp",
+    "beforeSizeKB": "216.7",
+    "afterSizeKB": "252.7",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/flo/screen-1.webp",
+    "beforeSizeKB": "113.0",
+    "afterSizeKB": "129.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/flo/screen-2.webp",
+    "beforeSizeKB": "140.5",
+    "afterSizeKB": "151.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/flo/screen-3.webp",
+    "beforeSizeKB": "116.1",
+    "afterSizeKB": "122.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/flo/screen-4.webp",
+    "beforeSizeKB": "101.8",
+    "afterSizeKB": "109.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/flo/screen-5.webp",
+    "beforeSizeKB": "141.6",
+    "afterSizeKB": "148.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/flo/screen-6.webp",
+    "beforeSizeKB": "124.1",
+    "afterSizeKB": "136.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/flo/screen-7.webp",
+    "beforeSizeKB": "88.7",
+    "afterSizeKB": "96.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/flo/screen-8.webp",
+    "beforeSizeKB": "125.6",
+    "afterSizeKB": "145.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/headspace/screen-1.webp",
+    "beforeSizeKB": "98.2",
+    "afterSizeKB": "101.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/headspace/screen-2.webp",
+    "beforeSizeKB": "120.2",
+    "afterSizeKB": "132.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/headspace/screen-3.webp",
+    "beforeSizeKB": "122.6",
+    "afterSizeKB": "136.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/headspace/screen-4.webp",
+    "beforeSizeKB": "111.8",
+    "afterSizeKB": "118.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/headspace/screen-5.webp",
+    "beforeSizeKB": "114.5",
+    "afterSizeKB": "123.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/headspace/screen-6.webp",
+    "beforeSizeKB": "112.4",
+    "afterSizeKB": "120.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/headspace/screen-7.webp",
+    "beforeSizeKB": "128.0",
+    "afterSizeKB": "142.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/headspace/screen-8.webp",
+    "beforeSizeKB": "76.5",
+    "afterSizeKB": "76.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/hopper/screen-1.webp",
+    "beforeSizeKB": "18.4",
+    "afterSizeKB": "76.6",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/hopper/screen-2.webp",
+    "beforeSizeKB": "29.3",
+    "afterSizeKB": "127.7",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/hopper/screen-3.webp",
+    "beforeSizeKB": "27.5",
+    "afterSizeKB": "119.4",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/hopper/screen-4.webp",
+    "beforeSizeKB": "24.4",
+    "afterSizeKB": "101.8",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/hopper/screen-5.webp",
+    "beforeSizeKB": "18.5",
+    "afterSizeKB": "81.4",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/hopper/screen-6.webp",
+    "beforeSizeKB": "20.6",
+    "afterSizeKB": "87.0",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/hopper/screen-7.webp",
+    "beforeSizeKB": "17.6",
+    "afterSizeKB": "82.5",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/hopper/screen-8.webp",
+    "beforeSizeKB": "18.3",
+    "afterSizeKB": "79.6",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/hoteltonight/screen-1.webp",
+    "beforeSizeKB": "45.2",
+    "afterSizeKB": "213.5",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/hoteltonight/screen-2.webp",
+    "beforeSizeKB": "49.1",
+    "afterSizeKB": "231.4",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/hoteltonight/screen-3.webp",
+    "beforeSizeKB": "40.1",
+    "afterSizeKB": "188.7",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/hoteltonight/screen-4.webp",
+    "beforeSizeKB": "29.3",
+    "afterSizeKB": "140.4",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/hoteltonight/screen-5.webp",
+    "beforeSizeKB": "25.6",
+    "afterSizeKB": "122.6",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/hoteltonight/screen-6.webp",
+    "beforeSizeKB": "41.6",
+    "afterSizeKB": "196.7",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/hoteltonight/screen-7.webp",
+    "beforeSizeKB": "44.8",
+    "afterSizeKB": "207.3",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/instagram/screen-1.webp",
+    "beforeSizeKB": "335.6",
+    "afterSizeKB": "371.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/instagram/screen-2.webp",
+    "beforeSizeKB": "146.2",
+    "afterSizeKB": "159.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/instagram/screen-3.webp",
+    "beforeSizeKB": "449.1",
+    "afterSizeKB": "474.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/instagram/screen-4.webp",
+    "beforeSizeKB": "117.9",
+    "afterSizeKB": "124.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/instagram/screen-5.webp",
+    "beforeSizeKB": "289.4",
+    "afterSizeKB": "303.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/instagram/screen-6.webp",
+    "beforeSizeKB": "151.7",
+    "afterSizeKB": "170.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/instagram/screen-7.webp",
+    "beforeSizeKB": "70.5",
+    "afterSizeKB": "75.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/kayak/screen-1.webp",
+    "beforeSizeKB": "16.3",
+    "afterSizeKB": "77.9",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/kayak/screen-2.webp",
+    "beforeSizeKB": "18.9",
+    "afterSizeKB": "84.3",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/kayak/screen-3.webp",
+    "beforeSizeKB": "17.9",
+    "afterSizeKB": "74.5",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/kayak/screen-4.webp",
+    "beforeSizeKB": "41.1",
+    "afterSizeKB": "188.8",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/kayak/screen-5.webp",
+    "beforeSizeKB": "14.3",
+    "afterSizeKB": "58.7",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/kayak/screen-6.webp",
+    "beforeSizeKB": "39.5",
+    "afterSizeKB": "176.9",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/kayak/screen-7.webp",
+    "beforeSizeKB": "17.3",
+    "afterSizeKB": "74.2",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/kayak/screen-8.webp",
+    "beforeSizeKB": "19.7",
+    "afterSizeKB": "90.1",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/kaykay/screen-1.webp",
+    "beforeSizeKB": "84.1",
+    "afterSizeKB": "186.7",
+    "beforeDims": "576×1024",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/kaykay/screen-2.webp",
+    "beforeSizeKB": "58.3",
+    "afterSizeKB": "144.4",
+    "beforeDims": "576×1024",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/kaykay/screen-3.webp",
+    "beforeSizeKB": "60.4",
+    "afterSizeKB": "134.9",
+    "beforeDims": "576×1024",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/kaykay/screen-4.webp",
+    "beforeSizeKB": "70.5",
+    "afterSizeKB": "151.8",
+    "beforeDims": "576×1024",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/kaykay/screen-5.webp",
+    "beforeSizeKB": "79.1",
+    "afterSizeKB": "181.2",
+    "beforeDims": "576×1024",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/khan-academy/screen-1.webp",
+    "beforeSizeKB": "398.0",
+    "afterSizeKB": "467.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/khan-academy/screen-2.webp",
+    "beforeSizeKB": "245.5",
+    "afterSizeKB": "277.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/khan-academy/screen-3.webp",
+    "beforeSizeKB": "289.2",
+    "afterSizeKB": "315.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/khan-academy/screen-4.webp",
+    "beforeSizeKB": "257.4",
+    "afterSizeKB": "273.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/khan-academy/screen-5.webp",
+    "beforeSizeKB": "264.8",
+    "afterSizeKB": "293.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/khan-academy/screen-6.webp",
+    "beforeSizeKB": "313.6",
+    "afterSizeKB": "344.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/khan-academy/screen-7.webp",
+    "beforeSizeKB": "425.1",
+    "afterSizeKB": "472.0",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/khan-academy/screen-8.webp",
+    "beforeSizeKB": "453.8",
+    "afterSizeKB": "509.0",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/kraken/screen-1.webp",
+    "beforeSizeKB": "199.2",
+    "afterSizeKB": "211.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/kraken/screen-2.webp",
+    "beforeSizeKB": "328.0",
+    "afterSizeKB": "365.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/kraken/screen-3.webp",
+    "beforeSizeKB": "77.4",
+    "afterSizeKB": "86.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/kraken/screen-4.webp",
+    "beforeSizeKB": "158.5",
+    "afterSizeKB": "171.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/kraken/screen-5.webp",
+    "beforeSizeKB": "152.4",
+    "afterSizeKB": "161.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/kraken/screen-6.webp",
+    "beforeSizeKB": "94.5",
+    "afterSizeKB": "99.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/kraken/screen-7.webp",
+    "beforeSizeKB": "110.3",
+    "afterSizeKB": "121.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/kraken/screen-8.webp",
+    "beforeSizeKB": "126.2",
+    "afterSizeKB": "131.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/ledger/screen-1.webp",
+    "beforeSizeKB": "38.2",
+    "afterSizeKB": "177.6",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/ledger/screen-2.webp",
+    "beforeSizeKB": "21.9",
+    "afterSizeKB": "113.4",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/ledger/screen-3.webp",
+    "beforeSizeKB": "21.1",
+    "afterSizeKB": "101.2",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/ledger/screen-4.webp",
+    "beforeSizeKB": "14.9",
+    "afterSizeKB": "71.9",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/ledger/screen-5.webp",
+    "beforeSizeKB": "17.7",
+    "afterSizeKB": "86.3",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/ledger/screen-6.webp",
+    "beforeSizeKB": "21.8",
+    "afterSizeKB": "108.0",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/ledger/screen-7.webp",
+    "beforeSizeKB": "20.6",
+    "afterSizeKB": "88.0",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/ledger/screen-8.webp",
+    "beforeSizeKB": "40.3",
+    "afterSizeKB": "198.1",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/linear/screen-1.webp",
+    "beforeSizeKB": "102.3",
+    "afterSizeKB": "116.6",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/linear/screen-2.webp",
+    "beforeSizeKB": "99.8",
+    "afterSizeKB": "115.3",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/linear/screen-3.webp",
+    "beforeSizeKB": "62.1",
+    "afterSizeKB": "78.0",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/linear/screen-4.webp",
+    "beforeSizeKB": "66.8",
+    "afterSizeKB": "79.6",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/linear/screen-5.webp",
+    "beforeSizeKB": "77.4",
+    "afterSizeKB": "85.7",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/linear/screen-6.webp",
+    "beforeSizeKB": "105.7",
+    "afterSizeKB": "118.6",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/linkedin/screen-1.webp",
+    "beforeSizeKB": "484.1",
+    "afterSizeKB": "522.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/linkedin/screen-2.webp",
+    "beforeSizeKB": "129.0",
+    "afterSizeKB": "140.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/linkedin/screen-3.webp",
+    "beforeSizeKB": "181.4",
+    "afterSizeKB": "197.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/linkedin/screen-4.webp",
+    "beforeSizeKB": "153.5",
+    "afterSizeKB": "177.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/linkedin/screen-5.webp",
+    "beforeSizeKB": "214.2",
+    "afterSizeKB": "234.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/linkedin/screen-6.webp",
+    "beforeSizeKB": "153.1",
+    "afterSizeKB": "170.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/linkedin/screen-7.webp",
+    "beforeSizeKB": "455.1",
+    "afterSizeKB": "494.9",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/linkedin/screen-8.webp",
+    "beforeSizeKB": "116.1",
+    "afterSizeKB": "122.9",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/loom/screen-1.webp",
+    "beforeSizeKB": "21.9",
+    "afterSizeKB": "84.9",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/loom/screen-2.webp",
+    "beforeSizeKB": "27.4",
+    "afterSizeKB": "120.8",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/loom/screen-3.webp",
+    "beforeSizeKB": "13.6",
+    "afterSizeKB": "62.1",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/loom/screen-4.webp",
+    "beforeSizeKB": "22.6",
+    "afterSizeKB": "92.1",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/loom/screen-5.webp",
+    "beforeSizeKB": "17.5",
+    "afterSizeKB": "70.4",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/loom/screen-6.webp",
+    "beforeSizeKB": "21.6",
+    "afterSizeKB": "83.9",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/loom/screen-7.webp",
+    "beforeSizeKB": "19.6",
+    "afterSizeKB": "88.0",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/masterclass/screen-1.webp",
+    "beforeSizeKB": "314.4",
+    "afterSizeKB": "363.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/masterclass/screen-2.webp",
+    "beforeSizeKB": "184.0",
+    "afterSizeKB": "202.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/masterclass/screen-3.webp",
+    "beforeSizeKB": "173.6",
+    "afterSizeKB": "196.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/masterclass/screen-4.webp",
+    "beforeSizeKB": "176.5",
+    "afterSizeKB": "199.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/masterclass/screen-5.webp",
+    "beforeSizeKB": "119.4",
+    "afterSizeKB": "146.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/masterclass/screen-6.webp",
+    "beforeSizeKB": "204.2",
+    "afterSizeKB": "235.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/masterclass/screen-7.webp",
+    "beforeSizeKB": "248.4",
+    "afterSizeKB": "281.1",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/masterclass/screen-8.webp",
+    "beforeSizeKB": "149.6",
+    "afterSizeKB": "163.7",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/metamask/screen-1.webp",
+    "beforeSizeKB": "20.9",
+    "afterSizeKB": "99.9",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/metamask/screen-2.webp",
+    "beforeSizeKB": "20.7",
+    "afterSizeKB": "121.2",
+    "beforeDims": "237×512",
+    "afterDims": "944×2039",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/metamask/screen-3.webp",
+    "beforeSizeKB": "20.2",
+    "afterSizeKB": "94.5",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/metamask/screen-4.webp",
+    "beforeSizeKB": "18.8",
+    "afterSizeKB": "86.3",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/metamask/screen-5.webp",
+    "beforeSizeKB": "17.4",
+    "afterSizeKB": "83.1",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/metamask/screen-6.webp",
+    "beforeSizeKB": "18.9",
+    "afterSizeKB": "88.5",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/metamask/screen-7.webp",
+    "beforeSizeKB": "11.1",
+    "afterSizeKB": "56.3",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/mint/screen-1.webp",
+    "beforeSizeKB": "149.9",
+    "afterSizeKB": "160.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/mint/screen-2.webp",
+    "beforeSizeKB": "123.9",
+    "afterSizeKB": "132.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/mint/screen-3.webp",
+    "beforeSizeKB": "120.3",
+    "afterSizeKB": "130.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/mint/screen-4.webp",
+    "beforeSizeKB": "110.4",
+    "afterSizeKB": "120.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/mint/screen-5.webp",
+    "beforeSizeKB": "138.2",
+    "afterSizeKB": "158.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/mint/screen-6.webp",
+    "beforeSizeKB": "126.0",
+    "afterSizeKB": "138.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/mint/screen-7.webp",
+    "beforeSizeKB": "145.2",
+    "afterSizeKB": "152.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/monday-com/screen-1.webp",
+    "beforeSizeKB": "141.4",
+    "afterSizeKB": "138.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/monday-com/screen-2.webp",
+    "beforeSizeKB": "106.1",
+    "afterSizeKB": "109.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/monday-com/screen-3.webp",
+    "beforeSizeKB": "156.5",
+    "afterSizeKB": "169.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/monday-com/screen-4.webp",
+    "beforeSizeKB": "127.8",
+    "afterSizeKB": "132.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/monday-com/screen-5.webp",
+    "beforeSizeKB": "117.0",
+    "afterSizeKB": "118.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/monday-com/screen-6.webp",
+    "beforeSizeKB": "75.2",
+    "afterSizeKB": "74.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/monday-com/screen-7.webp",
+    "beforeSizeKB": "78.9",
+    "afterSizeKB": "82.0",
+    "beforeDims": "1290×967",
+    "afterDims": "1290×967",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/monday-com/screen-8.webp",
+    "beforeSizeKB": "105.0",
+    "afterSizeKB": "109.6",
+    "beforeDims": "1290×967",
+    "afterDims": "1290×967",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/monzo/screen-1.webp",
+    "beforeSizeKB": "126.6",
+    "afterSizeKB": "128.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/monzo/screen-2.webp",
+    "beforeSizeKB": "163.2",
+    "afterSizeKB": "181.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/monzo/screen-3.webp",
+    "beforeSizeKB": "170.9",
+    "afterSizeKB": "181.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/monzo/screen-4.webp",
+    "beforeSizeKB": "71.8",
+    "afterSizeKB": "79.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/monzo/screen-5.webp",
+    "beforeSizeKB": "99.0",
+    "afterSizeKB": "100.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/monzo/screen-6.webp",
+    "beforeSizeKB": "125.0",
+    "afterSizeKB": "127.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/monzo/screen-7.webp",
+    "beforeSizeKB": "116.4",
+    "afterSizeKB": "117.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/monzo/screen-8.webp",
+    "beforeSizeKB": "123.6",
+    "afterSizeKB": "129.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/myfitnesspal/screen-1.webp",
+    "beforeSizeKB": "36.5",
+    "afterSizeKB": "150.4",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/myfitnesspal/screen-2.webp",
+    "beforeSizeKB": "52.0",
+    "afterSizeKB": "253.3",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/myfitnesspal/screen-3.webp",
+    "beforeSizeKB": "35.5",
+    "afterSizeKB": "158.6",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/myfitnesspal/screen-4.webp",
+    "beforeSizeKB": "40.5",
+    "afterSizeKB": "186.0",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/myfitnesspal/screen-5.webp",
+    "beforeSizeKB": "33.8",
+    "afterSizeKB": "172.0",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/myfitnesspal/screen-6.webp",
+    "beforeSizeKB": "56.2",
+    "afterSizeKB": "255.9",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/myfitnesspal/screen-7.webp",
+    "beforeSizeKB": "41.3",
+    "afterSizeKB": "234.1",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/myfitnesspal/screen-8.webp",
+    "beforeSizeKB": "35.9",
+    "afterSizeKB": "182.8",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/n26/screen-1.webp",
+    "beforeSizeKB": "25.7",
+    "afterSizeKB": "141.0",
+    "beforeDims": "236×512",
+    "afterDims": "944×2048",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/n26/screen-2.webp",
+    "beforeSizeKB": "18.4",
+    "afterSizeKB": "105.0",
+    "beforeDims": "237×512",
+    "afterDims": "944×2039",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/n26/screen-3.webp",
+    "beforeSizeKB": "18.7",
+    "afterSizeKB": "104.2",
+    "beforeDims": "236×512",
+    "afterDims": "944×2048",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/n26/screen-4.webp",
+    "beforeSizeKB": "18.6",
+    "afterSizeKB": "104.5",
+    "beforeDims": "236×512",
+    "afterDims": "944×2048",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/n26/screen-5.webp",
+    "beforeSizeKB": "21.4",
+    "afterSizeKB": "120.4",
+    "beforeDims": "236×512",
+    "afterDims": "944×2048",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/n26/screen-6.webp",
+    "beforeSizeKB": "28.6",
+    "afterSizeKB": "161.3",
+    "beforeDims": "237×512",
+    "afterDims": "944×2039",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/n26/screen-7.webp",
+    "beforeSizeKB": "15.3",
+    "afterSizeKB": "82.8",
+    "beforeDims": "237×512",
+    "afterDims": "944×2039",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/n26/screen-8.webp",
+    "beforeSizeKB": "34.3",
+    "afterSizeKB": "192.5",
+    "beforeDims": "237×512",
+    "afterDims": "944×2039",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/nike/screen-1.webp",
+    "beforeSizeKB": "265.0",
+    "afterSizeKB": "301.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/nike/screen-2.webp",
+    "beforeSizeKB": "202.7",
+    "afterSizeKB": "270.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/nike/screen-3.webp",
+    "beforeSizeKB": "228.7",
+    "afterSizeKB": "271.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/nike/screen-4.webp",
+    "beforeSizeKB": "157.4",
+    "afterSizeKB": "179.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/nike/screen-5.webp",
+    "beforeSizeKB": "156.6",
+    "afterSizeKB": "182.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/nike/screen-6.webp",
+    "beforeSizeKB": "204.1",
+    "afterSizeKB": "241.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/nike/screen-7.webp",
+    "beforeSizeKB": "112.8",
+    "afterSizeKB": "127.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/nike/screen-8.webp",
+    "beforeSizeKB": "127.9",
+    "afterSizeKB": "142.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/nike-run-club/screen-1.webp",
+    "beforeSizeKB": "320.7",
+    "afterSizeKB": "398.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/nike-run-club/screen-2.webp",
+    "beforeSizeKB": "106.8",
+    "afterSizeKB": "121.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/nike-run-club/screen-3.webp",
+    "beforeSizeKB": "306.9",
+    "afterSizeKB": "363.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/nike-run-club/screen-4.webp",
+    "beforeSizeKB": "96.6",
+    "afterSizeKB": "97.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/nike-run-club/screen-5.webp",
+    "beforeSizeKB": "176.1",
+    "afterSizeKB": "201.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/nike-run-club/screen-6.webp",
+    "beforeSizeKB": "231.5",
+    "afterSizeKB": "247.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/nike-run-club/screen-7.webp",
+    "beforeSizeKB": "297.1",
+    "afterSizeKB": "327.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/nike-run-club/screen-8.webp",
+    "beforeSizeKB": "138.8",
+    "afterSizeKB": "154.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/notion/screen-1.webp",
+    "beforeSizeKB": "61.3",
+    "afterSizeKB": "57.6",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/notion/screen-2.webp",
+    "beforeSizeKB": "69.9",
+    "afterSizeKB": "71.1",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/notion/screen-3.webp",
+    "beforeSizeKB": "76.3",
+    "afterSizeKB": "79.7",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/notion/screen-4.webp",
+    "beforeSizeKB": "202.7",
+    "afterSizeKB": "209.7",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/notion/screen-5.webp",
+    "beforeSizeKB": "65.8",
+    "afterSizeKB": "64.9",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/notion/screen-6.webp",
+    "beforeSizeKB": "48.4",
+    "afterSizeKB": "48.9",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/notion/screen-7.webp",
+    "beforeSizeKB": "57.2",
+    "afterSizeKB": "53.0",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/pandora/screen-1.webp",
+    "beforeSizeKB": "196.9",
+    "afterSizeKB": "224.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/pandora/screen-2.webp",
+    "beforeSizeKB": "203.8",
+    "afterSizeKB": "220.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/pandora/screen-3.webp",
+    "beforeSizeKB": "231.3",
+    "afterSizeKB": "240.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/pandora/screen-4.webp",
+    "beforeSizeKB": "156.0",
+    "afterSizeKB": "169.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/pandora/screen-5.webp",
+    "beforeSizeKB": "251.1",
+    "afterSizeKB": "271.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/pandora/screen-6.webp",
+    "beforeSizeKB": "268.8",
+    "afterSizeKB": "276.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/pandora/screen-7.webp",
+    "beforeSizeKB": "219.2",
+    "afterSizeKB": "235.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/pandora/screen-8.webp",
+    "beforeSizeKB": "110.4",
+    "afterSizeKB": "128.2",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/paypal/screen-1.webp",
+    "beforeSizeKB": "20.9",
+    "afterSizeKB": "91.2",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/paypal/screen-2.webp",
+    "beforeSizeKB": "36.4",
+    "afterSizeKB": "161.4",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/paypal/screen-3.webp",
+    "beforeSizeKB": "25.4",
+    "afterSizeKB": "110.9",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/paypal/screen-4.webp",
+    "beforeSizeKB": "31.5",
+    "afterSizeKB": "153.8",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/paypal/screen-5.webp",
+    "beforeSizeKB": "18.2",
+    "afterSizeKB": "74.0",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/paypal/screen-6.webp",
+    "beforeSizeKB": "28.1",
+    "afterSizeKB": "119.1",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/paypal/screen-7.webp",
+    "beforeSizeKB": "21.1",
+    "afterSizeKB": "94.2",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/paypal/screen-8.webp",
+    "beforeSizeKB": "23.6",
+    "afterSizeKB": "107.1",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/phantom/screen-1.webp",
+    "beforeSizeKB": "150.6",
+    "afterSizeKB": "180.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/phantom/screen-2.webp",
+    "beforeSizeKB": "128.7",
+    "afterSizeKB": "148.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/phantom/screen-3.webp",
+    "beforeSizeKB": "82.4",
+    "afterSizeKB": "92.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/phantom/screen-4.webp",
+    "beforeSizeKB": "195.3",
+    "afterSizeKB": "233.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/phantom/screen-5.webp",
+    "beforeSizeKB": "132.7",
+    "afterSizeKB": "154.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/phantom/screen-6.webp",
+    "beforeSizeKB": "167.1",
+    "afterSizeKB": "181.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/phantom/screen-7.webp",
+    "beforeSizeKB": "127.2",
+    "afterSizeKB": "140.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/pocket/screen-1.webp",
+    "beforeSizeKB": "42.5",
+    "afterSizeKB": "105.3",
+    "beforeDims": "576×1024",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/pocket/screen-2.webp",
+    "beforeSizeKB": "64.4",
+    "afterSizeKB": "142.4",
+    "beforeDims": "576×1024",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/pocket/screen-3.webp",
+    "beforeSizeKB": "48.8",
+    "afterSizeKB": "108.9",
+    "beforeDims": "576×1024",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/pocket/screen-4.webp",
+    "beforeSizeKB": "57.7",
+    "afterSizeKB": "133.8",
+    "beforeDims": "576×1024",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/pocket/screen-5.webp",
+    "beforeSizeKB": "52.3",
+    "afterSizeKB": "118.7",
+    "beforeDims": "576×1024",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/pocket/screen-6.webp",
+    "beforeSizeKB": "26.8",
+    "afterSizeKB": "61.1",
+    "beforeDims": "576×1024",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/pocket/screen-7.webp",
+    "beforeSizeKB": "36.4",
+    "afterSizeKB": "81.0",
+    "beforeDims": "576×1024",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/pocket/screen-8.webp",
+    "beforeSizeKB": "36.4",
+    "afterSizeKB": "82.2",
+    "beforeDims": "576×1024",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/reuters/screen-1.webp",
+    "beforeSizeKB": "10.1",
+    "afterSizeKB": "32.0",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/reuters/screen-2.webp",
+    "beforeSizeKB": "16.2",
+    "afterSizeKB": "64.7",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/reuters/screen-3.webp",
+    "beforeSizeKB": "16.9",
+    "afterSizeKB": "67.9",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/reuters/screen-4.webp",
+    "beforeSizeKB": "19.1",
+    "afterSizeKB": "75.2",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/reuters/screen-5.webp",
+    "beforeSizeKB": "11.9",
+    "afterSizeKB": "46.0",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/reuters/screen-6.webp",
+    "beforeSizeKB": "15.3",
+    "afterSizeKB": "59.8",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/reuters/screen-7.webp",
+    "beforeSizeKB": "12.9",
+    "afterSizeKB": "50.9",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/reuters/screen-8.webp",
+    "beforeSizeKB": "20.2",
+    "afterSizeKB": "83.4",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/revolut/screen-1.webp",
+    "beforeSizeKB": "38.4",
+    "afterSizeKB": "203.5",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/revolut/screen-2.webp",
+    "beforeSizeKB": "33.2",
+    "afterSizeKB": "146.0",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/revolut/screen-3.webp",
+    "beforeSizeKB": "19.2",
+    "afterSizeKB": "82.2",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/revolut/screen-4.webp",
+    "beforeSizeKB": "14.6",
+    "afterSizeKB": "63.5",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/revolut/screen-5.webp",
+    "beforeSizeKB": "29.0",
+    "afterSizeKB": "138.7",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/revolut/screen-6.webp",
+    "beforeSizeKB": "34.7",
+    "afterSizeKB": "165.8",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/revolut/screen-7.webp",
+    "beforeSizeKB": "25.0",
+    "afterSizeKB": "113.2",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/revolut/screen-8.webp",
+    "beforeSizeKB": "30.8",
+    "afterSizeKB": "141.2",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/robinhood/screen-1.webp",
+    "beforeSizeKB": "134.9",
+    "afterSizeKB": "140.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/robinhood/screen-2.webp",
+    "beforeSizeKB": "112.6",
+    "afterSizeKB": "124.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/robinhood/screen-3.webp",
+    "beforeSizeKB": "127.9",
+    "afterSizeKB": "142.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/robinhood/screen-4.webp",
+    "beforeSizeKB": "104.7",
+    "afterSizeKB": "108.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/robinhood/screen-5.webp",
+    "beforeSizeKB": "128.7",
+    "afterSizeKB": "136.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/robinhood/screen-6.webp",
+    "beforeSizeKB": "125.9",
+    "afterSizeKB": "134.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/robinhood/screen-7.webp",
+    "beforeSizeKB": "149.9",
+    "afterSizeKB": "161.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/robinhood/screen-8.webp",
+    "beforeSizeKB": "104.8",
+    "afterSizeKB": "111.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/shazam/screen-1.webp",
+    "beforeSizeKB": "107.4",
+    "afterSizeKB": "120.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/shazam/screen-2.webp",
+    "beforeSizeKB": "121.6",
+    "afterSizeKB": "151.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/shazam/screen-3.webp",
+    "beforeSizeKB": "160.5",
+    "afterSizeKB": "195.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/shazam/screen-4.webp",
+    "beforeSizeKB": "125.3",
+    "afterSizeKB": "152.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/shazam/screen-5.webp",
+    "beforeSizeKB": "289.3",
+    "afterSizeKB": "333.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/shazam/screen-6.webp",
+    "beforeSizeKB": "214.9",
+    "afterSizeKB": "254.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/shazam/screen-7.webp",
+    "beforeSizeKB": "156.8",
+    "afterSizeKB": "182.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/shazam/screen-8.webp",
+    "beforeSizeKB": "127.4",
+    "afterSizeKB": "151.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/shopify/screen-1.webp",
+    "beforeSizeKB": "32.7",
+    "afterSizeKB": "139.7",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/shopify/screen-2.webp",
+    "beforeSizeKB": "18.4",
+    "afterSizeKB": "86.6",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/shopify/screen-3.webp",
+    "beforeSizeKB": "20.9",
+    "afterSizeKB": "94.1",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/shopify/screen-4.webp",
+    "beforeSizeKB": "17.7",
+    "afterSizeKB": "76.7",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/shopify/screen-5.webp",
+    "beforeSizeKB": "11.9",
+    "afterSizeKB": "53.5",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/shopify/screen-6.webp",
+    "beforeSizeKB": "15.4",
+    "afterSizeKB": "67.8",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/shopify/screen-7.webp",
+    "beforeSizeKB": "20.3",
+    "afterSizeKB": "88.1",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/shopify/screen-8.webp",
+    "beforeSizeKB": "31.5",
+    "afterSizeKB": "142.8",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/skillshare/screen-1.webp",
+    "beforeSizeKB": "324.5",
+    "afterSizeKB": "367.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/skillshare/screen-2.webp",
+    "beforeSizeKB": "206.5",
+    "afterSizeKB": "230.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/skillshare/screen-3.webp",
+    "beforeSizeKB": "246.9",
+    "afterSizeKB": "273.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/skillshare/screen-4.webp",
+    "beforeSizeKB": "301.4",
+    "afterSizeKB": "332.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/skillshare/screen-5.webp",
+    "beforeSizeKB": "299.3",
+    "afterSizeKB": "291.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/skillshare/screen-6.webp",
+    "beforeSizeKB": "130.4",
+    "afterSizeKB": "141.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/skillshare/screen-7.webp",
+    "beforeSizeKB": "217.7",
+    "afterSizeKB": "234.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/skillshare/screen-8.webp",
+    "beforeSizeKB": "310.3",
+    "afterSizeKB": "337.2",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/skyscanner/screen-1.webp",
+    "beforeSizeKB": "342.7",
+    "afterSizeKB": "377.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/skyscanner/screen-2.webp",
+    "beforeSizeKB": "75.9",
+    "afterSizeKB": "71.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/skyscanner/screen-3.webp",
+    "beforeSizeKB": "104.8",
+    "afterSizeKB": "110.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/skyscanner/screen-4.webp",
+    "beforeSizeKB": "90.2",
+    "afterSizeKB": "92.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/skyscanner/screen-5.webp",
+    "beforeSizeKB": "102.1",
+    "afterSizeKB": "98.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/skyscanner/screen-6.webp",
+    "beforeSizeKB": "156.0",
+    "afterSizeKB": "160.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/skyscanner/screen-7.webp",
+    "beforeSizeKB": "172.2",
+    "afterSizeKB": "186.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/skyscanner/screen-8.webp",
+    "beforeSizeKB": "136.4",
+    "afterSizeKB": "147.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/slack/screen-1.webp",
+    "beforeSizeKB": "114.0",
+    "afterSizeKB": "111.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/slack/screen-2.webp",
+    "beforeSizeKB": "126.7",
+    "afterSizeKB": "128.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/slack/screen-3.webp",
+    "beforeSizeKB": "182.2",
+    "afterSizeKB": "208.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/slack/screen-4.webp",
+    "beforeSizeKB": "161.9",
+    "afterSizeKB": "174.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/slack/screen-5.webp",
+    "beforeSizeKB": "159.1",
+    "afterSizeKB": "160.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/slack/screen-6.webp",
+    "beforeSizeKB": "168.5",
+    "afterSizeKB": "173.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/slack/screen-7.webp",
+    "beforeSizeKB": "230.5",
+    "afterSizeKB": "239.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/slack/screen-8.webp",
+    "beforeSizeKB": "83.2",
+    "afterSizeKB": "85.4",
+    "beforeDims": "1290×967",
+    "afterDims": "1290×967",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/sleep-cycle/screen-1.webp",
+    "beforeSizeKB": "22.0",
+    "afterSizeKB": "99.1",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/sleep-cycle/screen-2.webp",
+    "beforeSizeKB": "28.9",
+    "afterSizeKB": "128.4",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/sleep-cycle/screen-3.webp",
+    "beforeSizeKB": "28.9",
+    "afterSizeKB": "127.5",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/sleep-cycle/screen-4.webp",
+    "beforeSizeKB": "23.2",
+    "afterSizeKB": "107.4",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/sleep-cycle/screen-5.webp",
+    "beforeSizeKB": "17.7",
+    "afterSizeKB": "80.3",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/sleep-cycle/screen-6.webp",
+    "beforeSizeKB": "34.6",
+    "afterSizeKB": "160.4",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/sleep-cycle/screen-7.webp",
+    "beforeSizeKB": "23.6",
+    "afterSizeKB": "105.0",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/sleep-cycle/screen-8.webp",
+    "beforeSizeKB": "29.2",
+    "afterSizeKB": "130.2",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/snapchat/screen-1.webp",
+    "beforeSizeKB": "268.5",
+    "afterSizeKB": "304.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/snapchat/screen-2.webp",
+    "beforeSizeKB": "149.8",
+    "afterSizeKB": "154.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/snapchat/screen-3.webp",
+    "beforeSizeKB": "333.6",
+    "afterSizeKB": "383.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/snapchat/screen-4.webp",
+    "beforeSizeKB": "267.9",
+    "afterSizeKB": "286.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/snapchat/screen-5.webp",
+    "beforeSizeKB": "159.1",
+    "afterSizeKB": "189.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/snapchat/screen-6.webp",
+    "beforeSizeKB": "268.6",
+    "afterSizeKB": "317.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/snapchat/screen-7.webp",
+    "beforeSizeKB": "224.2",
+    "afterSizeKB": "248.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/snapchat/screen-8.webp",
+    "beforeSizeKB": "376.6",
+    "afterSizeKB": "424.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/soundcloud/screen-1.webp",
+    "beforeSizeKB": "272.7",
+    "afterSizeKB": "321.2",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/soundcloud/screen-2.webp",
+    "beforeSizeKB": "301.1",
+    "afterSizeKB": "355.5",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/soundcloud/screen-3.webp",
+    "beforeSizeKB": "367.5",
+    "afterSizeKB": "414.0",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/soundcloud/screen-4.webp",
+    "beforeSizeKB": "171.3",
+    "afterSizeKB": "202.1",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/soundcloud/screen-5.webp",
+    "beforeSizeKB": "143.3",
+    "afterSizeKB": "173.1",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/soundcloud/screen-6.webp",
+    "beforeSizeKB": "143.8",
+    "afterSizeKB": "160.9",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/soundcloud/screen-7.webp",
+    "beforeSizeKB": "159.0",
+    "afterSizeKB": "192.4",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/soundcloud/screen-8.webp",
+    "beforeSizeKB": "94.6",
+    "afterSizeKB": "113.9",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/spotify/screen-1.webp",
+    "beforeSizeKB": "310.5",
+    "afterSizeKB": "378.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/spotify/screen-2.webp",
+    "beforeSizeKB": "240.9",
+    "afterSizeKB": "283.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/spotify/screen-3.webp",
+    "beforeSizeKB": "381.4",
+    "afterSizeKB": "456.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/spotify/screen-4.webp",
+    "beforeSizeKB": "233.5",
+    "afterSizeKB": "279.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/spotify/screen-5.webp",
+    "beforeSizeKB": "252.8",
+    "afterSizeKB": "298.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/spotify/screen-6.webp",
+    "beforeSizeKB": "249.9",
+    "afterSizeKB": "309.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/spotify/screen-7.webp",
+    "beforeSizeKB": "221.9",
+    "afterSizeKB": "265.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/spotify/screen-8.webp",
+    "beforeSizeKB": "283.5",
+    "afterSizeKB": "373.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/stockx/screen-1.webp",
+    "beforeSizeKB": "37.9",
+    "afterSizeKB": "184.0",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/stockx/screen-2.webp",
+    "beforeSizeKB": "25.7",
+    "afterSizeKB": "117.5",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/stockx/screen-3.webp",
+    "beforeSizeKB": "35.5",
+    "afterSizeKB": "156.3",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/stockx/screen-4.webp",
+    "beforeSizeKB": "25.8",
+    "afterSizeKB": "115.6",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/stockx/screen-5.webp",
+    "beforeSizeKB": "22.2",
+    "afterSizeKB": "101.5",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/stockx/screen-6.webp",
+    "beforeSizeKB": "20.5",
+    "afterSizeKB": "101.8",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/stockx/screen-7.webp",
+    "beforeSizeKB": "26.7",
+    "afterSizeKB": "127.7",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/stockx/screen-8.webp",
+    "beforeSizeKB": "40.0",
+    "afterSizeKB": "142.8",
+    "beforeDims": "384×512",
+    "afterDims": "944×1259",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/strava/screen-1.webp",
+    "beforeSizeKB": "196.2",
+    "afterSizeKB": "218.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/strava/screen-2.webp",
+    "beforeSizeKB": "149.9",
+    "afterSizeKB": "171.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/strava/screen-3.webp",
+    "beforeSizeKB": "192.2",
+    "afterSizeKB": "219.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/strava/screen-4.webp",
+    "beforeSizeKB": "230.8",
+    "afterSizeKB": "253.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/strava/screen-5.webp",
+    "beforeSizeKB": "128.1",
+    "afterSizeKB": "146.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/strava/screen-6.webp",
+    "beforeSizeKB": "178.1",
+    "afterSizeKB": "205.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/strava/screen-7.webp",
+    "beforeSizeKB": "171.6",
+    "afterSizeKB": "196.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/strava/screen-8.webp",
+    "beforeSizeKB": "177.7",
+    "afterSizeKB": "208.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/substack/screen-1.webp",
+    "beforeSizeKB": "153.2",
+    "afterSizeKB": "159.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/substack/screen-2.webp",
+    "beforeSizeKB": "219.1",
+    "afterSizeKB": "219.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/substack/screen-3.webp",
+    "beforeSizeKB": "182.6",
+    "afterSizeKB": "190.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/substack/screen-4.webp",
+    "beforeSizeKB": "139.9",
+    "afterSizeKB": "153.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/substack/screen-5.webp",
+    "beforeSizeKB": "173.5",
+    "afterSizeKB": "177.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/substack/screen-6.webp",
+    "beforeSizeKB": "183.5",
+    "afterSizeKB": "197.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/substack/screen-7.webp",
+    "beforeSizeKB": "223.9",
+    "afterSizeKB": "237.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/substack/screen-8.webp",
+    "beforeSizeKB": "74.2",
+    "afterSizeKB": "76.9",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/the-new-york-times/screen-1.webp",
+    "beforeSizeKB": "353.7",
+    "afterSizeKB": "384.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/the-new-york-times/screen-2.webp",
+    "beforeSizeKB": "348.0",
+    "afterSizeKB": "349.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/the-new-york-times/screen-3.webp",
+    "beforeSizeKB": "543.5",
+    "afterSizeKB": "578.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/the-new-york-times/screen-4.webp",
+    "beforeSizeKB": "120.7",
+    "afterSizeKB": "158.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/the-new-york-times/screen-5.webp",
+    "beforeSizeKB": "109.7",
+    "afterSizeKB": "110.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/the-new-york-times/screen-6.webp",
+    "beforeSizeKB": "58.9",
+    "afterSizeKB": "63.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/the-new-york-times/screen-7.webp",
+    "beforeSizeKB": "398.8",
+    "afterSizeKB": "414.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/the-new-york-times/screen-8.webp",
+    "beforeSizeKB": "184.5",
+    "afterSizeKB": "187.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/threads/screen-1.webp",
+    "beforeSizeKB": "16.9",
+    "afterSizeKB": "66.2",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/threads/screen-2.webp",
+    "beforeSizeKB": "14.3",
+    "afterSizeKB": "55.7",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/threads/screen-3.webp",
+    "beforeSizeKB": "17.5",
+    "afterSizeKB": "69.5",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/threads/screen-4.webp",
+    "beforeSizeKB": "17.9",
+    "afterSizeKB": "68.3",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/threads/screen-5.webp",
+    "beforeSizeKB": "19.2",
+    "afterSizeKB": "74.7",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/threads/screen-6.webp",
+    "beforeSizeKB": "19.9",
+    "afterSizeKB": "76.9",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/tidal/screen-1.webp",
+    "beforeSizeKB": "94.4",
+    "afterSizeKB": "113.7",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/tidal/screen-2.webp",
+    "beforeSizeKB": "116.3",
+    "afterSizeKB": "132.3",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/tidal/screen-3.webp",
+    "beforeSizeKB": "172.7",
+    "afterSizeKB": "193.5",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/tidal/screen-4.webp",
+    "beforeSizeKB": "247.3",
+    "afterSizeKB": "291.8",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/tiktok/screen-1.webp",
+    "beforeSizeKB": "51.9",
+    "afterSizeKB": "54.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/tiktok/screen-2.webp",
+    "beforeSizeKB": "238.0",
+    "afterSizeKB": "264.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/tiktok/screen-3.webp",
+    "beforeSizeKB": "171.9",
+    "afterSizeKB": "206.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/tiktok/screen-4.webp",
+    "beforeSizeKB": "221.0",
+    "afterSizeKB": "259.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/tiktok/screen-5.webp",
+    "beforeSizeKB": "176.4",
+    "afterSizeKB": "198.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/tiktok/screen-6.webp",
+    "beforeSizeKB": "291.7",
+    "afterSizeKB": "329.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/tiktok/screen-7.webp",
+    "beforeSizeKB": "218.7",
+    "afterSizeKB": "258.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/tiktok/screen-8.webp",
+    "beforeSizeKB": "149.6",
+    "afterSizeKB": "175.8",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/trello/screen-1.webp",
+    "beforeSizeKB": "19.5",
+    "afterSizeKB": "82.7",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/trello/screen-2.webp",
+    "beforeSizeKB": "22.0",
+    "afterSizeKB": "89.0",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/trello/screen-3.webp",
+    "beforeSizeKB": "28.4",
+    "afterSizeKB": "123.0",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/trello/screen-4.webp",
+    "beforeSizeKB": "19.8",
+    "afterSizeKB": "87.2",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/trello/screen-5.webp",
+    "beforeSizeKB": "19.6",
+    "afterSizeKB": "85.0",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/trello/screen-6.webp",
+    "beforeSizeKB": "14.9",
+    "afterSizeKB": "35.4",
+    "beforeDims": "512×288",
+    "afterDims": "944×531",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/trello/screen-7.webp",
+    "beforeSizeKB": "19.5",
+    "afterSizeKB": "44.9",
+    "beforeDims": "512×288",
+    "afterDims": "944×531",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/trello/screen-8.webp",
+    "beforeSizeKB": "35.1",
+    "afterSizeKB": "81.5",
+    "beforeDims": "512×288",
+    "afterDims": "944×531",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/tripadvisor/screen-1.webp",
+    "beforeSizeKB": "571.8",
+    "afterSizeKB": "595.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/tripadvisor/screen-2.webp",
+    "beforeSizeKB": "390.0",
+    "afterSizeKB": "402.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/tripadvisor/screen-3.webp",
+    "beforeSizeKB": "199.9",
+    "afterSizeKB": "202.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/tripadvisor/screen-4.webp",
+    "beforeSizeKB": "265.6",
+    "afterSizeKB": "281.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/tripadvisor/screen-5.webp",
+    "beforeSizeKB": "270.8",
+    "afterSizeKB": "274.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/tripadvisor/screen-6.webp",
+    "beforeSizeKB": "574.1",
+    "afterSizeKB": "599.6",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/tripadvisor/screen-7.webp",
+    "beforeSizeKB": "293.9",
+    "afterSizeKB": "299.8",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/tripadvisor/screen-8.webp",
+    "beforeSizeKB": "87.5",
+    "afterSizeKB": "86.1",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/twitter/screen-1.webp",
+    "beforeSizeKB": "208.2",
+    "afterSizeKB": "232.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/twitter/screen-2.webp",
+    "beforeSizeKB": "256.6",
+    "afterSizeKB": "274.2",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/udemy/screen-1.webp",
+    "beforeSizeKB": "295.4",
+    "afterSizeKB": "333.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/udemy/screen-2.webp",
+    "beforeSizeKB": "135.1",
+    "afterSizeKB": "152.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/udemy/screen-3.webp",
+    "beforeSizeKB": "144.1",
+    "afterSizeKB": "150.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/udemy/screen-4.webp",
+    "beforeSizeKB": "112.0",
+    "afterSizeKB": "122.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/udemy/screen-5.webp",
+    "beforeSizeKB": "127.5",
+    "afterSizeKB": "145.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/udemy/screen-6.webp",
+    "beforeSizeKB": "157.7",
+    "afterSizeKB": "174.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/udemy/screen-7.webp",
+    "beforeSizeKB": "136.9",
+    "afterSizeKB": "156.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/udemy/screen-8.webp",
+    "beforeSizeKB": "223.3",
+    "afterSizeKB": "251.6",
+    "beforeDims": "1290×1721",
+    "afterDims": "1290×1721",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/uniswap/screen-1.webp",
+    "beforeSizeKB": "176.5",
+    "afterSizeKB": "193.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/uniswap/screen-2.webp",
+    "beforeSizeKB": "151.8",
+    "afterSizeKB": "167.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/uniswap/screen-3.webp",
+    "beforeSizeKB": "96.5",
+    "afterSizeKB": "104.2",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/uniswap/screen-4.webp",
+    "beforeSizeKB": "77.2",
+    "afterSizeKB": "81.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/uniswap/screen-5.webp",
+    "beforeSizeKB": "156.5",
+    "afterSizeKB": "174.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/uniswap/screen-6.webp",
+    "beforeSizeKB": "190.6",
+    "afterSizeKB": "215.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/uniswap/screen-7.webp",
+    "beforeSizeKB": "103.2",
+    "afterSizeKB": "107.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/uniswap/screen-8.webp",
+    "beforeSizeKB": "105.4",
+    "afterSizeKB": "113.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/wallet/screen-1.webp",
+    "beforeSizeKB": "179.0",
+    "afterSizeKB": "190.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/wallet/screen-2.webp",
+    "beforeSizeKB": "105.1",
+    "afterSizeKB": "113.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/wallet/screen-3.webp",
+    "beforeSizeKB": "104.8",
+    "afterSizeKB": "117.6",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/wallet/screen-4.webp",
+    "beforeSizeKB": "134.6",
+    "afterSizeKB": "143.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/wallet/screen-5.webp",
+    "beforeSizeKB": "122.2",
+    "afterSizeKB": "135.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/wallet/screen-6.webp",
+    "beforeSizeKB": "116.0",
+    "afterSizeKB": "127.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/wallet/screen-7.webp",
+    "beforeSizeKB": "105.3",
+    "afterSizeKB": "115.1",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/wallet/screen-8.webp",
+    "beforeSizeKB": "98.7",
+    "afterSizeKB": "110.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/wealthfront/screen-1.webp",
+    "beforeSizeKB": "184.0",
+    "afterSizeKB": "190.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/wealthfront/screen-2.webp",
+    "beforeSizeKB": "210.2",
+    "afterSizeKB": "228.3",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/wealthfront/screen-3.webp",
+    "beforeSizeKB": "164.1",
+    "afterSizeKB": "173.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/wealthfront/screen-4.webp",
+    "beforeSizeKB": "179.2",
+    "afterSizeKB": "186.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/wealthfront/screen-5.webp",
+    "beforeSizeKB": "167.9",
+    "afterSizeKB": "168.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/wealthfront/screen-6.webp",
+    "beforeSizeKB": "143.3",
+    "afterSizeKB": "150.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/wealthfront/screen-7.webp",
+    "beforeSizeKB": "176.3",
+    "afterSizeKB": "183.7",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/wealthfront/screen-8.webp",
+    "beforeSizeKB": "166.3",
+    "afterSizeKB": "180.9",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/whatsapp/screen-1.webp",
+    "beforeSizeKB": "127.1",
+    "afterSizeKB": "129.4",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/whatsapp/screen-2.webp",
+    "beforeSizeKB": "255.9",
+    "afterSizeKB": "276.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/whatsapp/screen-3.webp",
+    "beforeSizeKB": "342.5",
+    "afterSizeKB": "379.0",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/whatsapp/screen-4.webp",
+    "beforeSizeKB": "179.2",
+    "afterSizeKB": "208.5",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/whatsapp/screen-5.webp",
+    "beforeSizeKB": "431.2",
+    "afterSizeKB": "491.8",
+    "beforeDims": "1242×2208",
+    "afterDims": "1242×2208",
+    "upscaled": false
+  },
+  {
+    "file": "public/assets/apps/zara/screen-1.webp",
+    "beforeSizeKB": "17.9",
+    "afterSizeKB": "100.0",
+    "beforeDims": "236×512",
+    "afterDims": "944×2048",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/zara/screen-2.webp",
+    "beforeSizeKB": "21.8",
+    "afterSizeKB": "133.0",
+    "beforeDims": "236×512",
+    "afterDims": "944×2048",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/zara/screen-3.webp",
+    "beforeSizeKB": "34.7",
+    "afterSizeKB": "208.4",
+    "beforeDims": "236×512",
+    "afterDims": "944×2048",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/zara/screen-4.webp",
+    "beforeSizeKB": "20.5",
+    "afterSizeKB": "101.3",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/zara/screen-5.webp",
+    "beforeSizeKB": "25.6",
+    "afterSizeKB": "129.4",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/zara/screen-6.webp",
+    "beforeSizeKB": "37.5",
+    "afterSizeKB": "180.0",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/zara/screen-7.webp",
+    "beforeSizeKB": "25.2",
+    "afterSizeKB": "94.0",
+    "beforeDims": "384×512",
+    "afterDims": "944×1259",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/zara/screen-8.webp",
+    "beforeSizeKB": "30.0",
+    "afterSizeKB": "116.8",
+    "beforeDims": "384×512",
+    "afterDims": "944×1259",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/zoom/screen-1.webp",
+    "beforeSizeKB": "23.9",
+    "afterSizeKB": "102.2",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/zoom/screen-2.webp",
+    "beforeSizeKB": "22.3",
+    "afterSizeKB": "93.5",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/zoom/screen-3.webp",
+    "beforeSizeKB": "37.4",
+    "afterSizeKB": "164.2",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/zoom/screen-4.webp",
+    "beforeSizeKB": "22.6",
+    "afterSizeKB": "94.0",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/zoom/screen-5.webp",
+    "beforeSizeKB": "23.5",
+    "afterSizeKB": "98.1",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/zoom/screen-6.webp",
+    "beforeSizeKB": "21.2",
+    "afterSizeKB": "85.8",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/zoom/screen-7.webp",
+    "beforeSizeKB": "19.9",
+    "afterSizeKB": "82.3",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  },
+  {
+    "file": "public/assets/apps/zoom/screen-8.webp",
+    "beforeSizeKB": "23.7",
+    "afterSizeKB": "100.7",
+    "beforeDims": "288×512",
+    "afterDims": "944×1678",
+    "upscaled": true
+  }
+]

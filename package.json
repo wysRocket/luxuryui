@@ -40,7 +40,9 @@
     "assets:upscale": "node scripts/upscale-assets.mjs",
     "assets:enhance": "node scripts/enhance-assets-foundry.mjs",
     "assets:update-refs": "node scripts/update-asset-refs.mjs",
-    "assets:update-refs:dry": "node scripts/update-asset-refs.mjs --dry-run"
+    "assets:update-refs:dry": "node scripts/update-asset-refs.mjs --dry-run",
+    "assets:enhance-webp": "node scripts/enhance-webp.mjs",
+    "assets:enhance-webp:dry": "node scripts/enhance-webp.mjs --dry-run"
   },
   "dependencies": {
     "@google/genai": "^1.42.0",
