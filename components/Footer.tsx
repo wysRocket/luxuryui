@@ -1,8 +1,15 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Twitter, Instagram, Linkedin, Dribbble, ArrowRight, Github } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { useAppSession } from '../contexts/AppSessionContext';
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  Twitter,
+  Instagram,
+  Linkedin,
+  Dribbble,
+  ArrowRight,
+  Github,
+} from "lucide-react";
+import { Link } from "react-router-dom";
+import { useAppSession } from "../contexts/AppSessionContext";
 
 interface FooterLink {
   label: string;
@@ -11,36 +18,36 @@ interface FooterLink {
 
 const FOOTER_SECTIONS: { title: string; links: FooterLink[] }[] = [
   {
-    title: 'Browse',
+    title: "Browse",
     links: [
-      { label: 'iOS Apps', to: '/ios-apps' },
-      { label: 'Android Apps', to: '/android-apps' },
-      { label: 'Web Apps', to: '/web-apps' },
-      { label: 'Screens', to: '/screens' },
-      { label: 'Patterns', to: '/patterns' },
-      { label: 'User Flows', to: '/flows' },
+      { label: "iOS Apps", to: "/ios-apps" },
+      { label: "Android Apps", to: "/android-apps" },
+      { label: "Web Apps", to: "/web-apps" },
+      { label: "Screens", to: "/screens" },
+      { label: "Patterns", to: "/patterns" },
+      { label: "User Flows", to: "/flows" },
     ],
   },
   {
-    title: 'Resources',
+    title: "Resources",
     links: [
-      { label: 'Dictionary', to: '/dictionary' },
-      { label: 'Design Systems', to: '/design-systems' },
-      { label: 'Blog', to: '/blog' },
-      { label: 'Documentation', to: '/documentation' },
-      { label: 'Figma Plugin', to: '/figma-plugin' },
-      { label: 'Community', to: '/community' },
+      { label: "Dictionary", to: "/dictionary" },
+      { label: "Design Systems", to: "/design-systems" },
+      { label: "Blog", to: "/blog" },
+      { label: "Documentation", to: "/documentation" },
+      { label: "Figma Plugin", to: "/figma-plugin" },
+      { label: "Community", to: "/community" },
     ],
   },
   {
-    title: 'Company',
+    title: "Company",
     links: [
-      { label: 'About Us', to: '/about' },
-      { label: 'Top Up Credits', to: '/pricing' },
-      { label: 'Careers', to: '/careers' },
-      { label: 'Contact', to: '/contact' },
-      { label: 'Privacy Policy', to: '/privacy' },
-      { label: 'Terms of Service', to: '/terms' },
+      { label: "About Us", to: "/about" },
+      { label: "Top Up Credits", to: "/pricing" },
+      { label: "Careers", to: "/careers" },
+      { label: "Contact", to: "/contact" },
+      { label: "Privacy Policy", to: "/privacy" },
+      { label: "Terms of Service", to: "/terms" },
     ],
   },
 ];
@@ -50,11 +57,11 @@ const Footer: React.FC = () => {
   const { isAuthenticated } = useAppSession();
 
   const socialLinks = [
-    { icon: Twitter, href: 'https://x.com', label: 'X' },
-    { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Dribbble, href: 'https://dribbble.com', label: 'Dribbble' },
+    { icon: Twitter, href: "https://x.com", label: "X" },
+    { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
+    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com", label: "GitHub" },
+    { icon: Dribbble, href: "https://dribbble.com", label: "Dribbble" },
   ];
 
   return (
@@ -64,10 +71,13 @@ const Footer: React.FC = () => {
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-2 mb-6 group w-fit">
               <div className="w-8 h-8 bg-black dark:bg-white rounded-lg transition-transform group-hover:rotate-12" />
-              <span className="text-2xl font-black tracking-tighter dark:text-white">LuxuryUI</span>
+              <span className="text-2xl font-black tracking-tighter dark:text-white">
+                LuxuryUI
+              </span>
             </Link>
             <p className="text-gray-500 dark:text-gray-400 max-w-xs text-[15px] leading-relaxed mb-8">
-              Browse the research library, then unlock transformed Figma kits with credits when you need editable assets.
+              Browse the research library, then unlock transformed Figma kits
+              with credits when you need editable assets.
             </p>
             <div className="flex items-center gap-4">
               {socialLinks.map((social) => {
@@ -91,7 +101,9 @@ const Footer: React.FC = () => {
 
           {FOOTER_SECTIONS.map((section) => (
             <div key={section.title} className="lg:col-span-1">
-              <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-6 uppercase tracking-widest">{section.title}</h4>
+              <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-6 uppercase tracking-widest">
+                {section.title}
+              </h4>
               <ul className="space-y-4">
                 {section.links.map((link) => (
                   <li key={link.label}>
@@ -109,13 +121,18 @@ const Footer: React.FC = () => {
           ))}
 
           <div className="lg:col-span-1">
-            <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-6 uppercase tracking-widest">Stay Updated</h4>
-            <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">Account access and kit delivery are now handled directly inside LuxuryUI.</p>
+            <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-6 uppercase tracking-widest">
+              Stay Updated
+            </h4>
+            <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">
+              Account access and kit delivery are now handled directly inside
+              LuxuryUI.
+            </p>
             <Link
-              to={isAuthenticated ? '/account' : '/signup'}
+              to={isAuthenticated ? "/account" : "/signup"}
               className="inline-flex items-center gap-2 rounded-full bg-black dark:bg-white px-5 py-3 text-sm font-black text-white dark:text-black"
             >
-              {isAuthenticated ? 'Open account' : 'Create account'}
+              {isAuthenticated ? "Open account" : "Create account"}
               <ArrowRight size={16} />
             </Link>
           </div>
@@ -124,15 +141,26 @@ const Footer: React.FC = () => {
         <div className="mt-20 pt-8 border-t border-gray-100 dark:border-gray-900 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex flex-wrap justify-center md:justify-start items-center gap-6 text-sm text-gray-400 dark:text-gray-600">
             <span>© {currentYear} LuxuryUI Library.</span>
-            <div className="flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-              <span>Systems Operational</span>
-            </div>
           </div>
           <div className="flex items-center gap-8 text-sm text-gray-400 dark:text-gray-600">
-            <Link to="/privacy" className="hover:text-gray-900 dark:hover:text-white transition-colors">Privacy</Link>
-            <Link to="/terms" className="hover:text-gray-900 dark:hover:text-white transition-colors">Terms</Link>
-            <Link to="/cookies" className="hover:text-gray-900 dark:hover:text-white transition-colors">Cookies</Link>
+            <Link
+              to="/privacy"
+              className="hover:text-gray-900 dark:hover:text-white transition-colors"
+            >
+              Privacy
+            </Link>
+            <Link
+              to="/terms"
+              className="hover:text-gray-900 dark:hover:text-white transition-colors"
+            >
+              Terms
+            </Link>
+            <Link
+              to="/cookies"
+              className="hover:text-gray-900 dark:hover:text-white transition-colors"
+            >
+              Cookies
+            </Link>
             <div className="flex items-center gap-1 cursor-default">
               <span>English (US)</span>
             </div>

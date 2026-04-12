@@ -13,7 +13,6 @@ const LoginPage = () => {
     signIn,
     signInWithGoogle,
     isBusy,
-    warnings,
   } = useAppSession();
   const redirectTo = useMemo(
     () => new URLSearchParams(location.search).get("redirect") || "/account",
@@ -82,16 +81,9 @@ const LoginPage = () => {
           Log in to your workspace
         </h1>
         <p className="text-[15px] leading-relaxed text-gray-600 dark:text-gray-400 mb-8">
-          {backendMode === "firebase"
-            ? "Sign in with your Firebase-backed account to access your workspace, wallet balance, and unlocked kits across devices. Payment processing remains mock/local for now."
-            : "Sign in to top up credits, unlock kits, and access your delivery library."}
+          Sign in to top up credits, unlock kits, and access your delivery
+          library.
         </p>
-
-        {warnings.length > 0 && (
-          <div className="mb-6 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-4 text-sm text-amber-900 dark:border-amber-900/40 dark:bg-amber-950/30 dark:text-amber-100">
-            {warnings[0]}
-          </div>
-        )}
 
         <form onSubmit={handleSubmit} className="space-y-4">
           {backendMode === "firebase" && (

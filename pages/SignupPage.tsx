@@ -13,7 +13,6 @@ const SignupPage = () => {
     signUp,
     signInWithGoogle,
     isBusy,
-    warnings,
   } = useAppSession();
   const redirectTo = useMemo(
     () => new URLSearchParams(location.search).get("redirect") || "/account",
@@ -83,16 +82,9 @@ const SignupPage = () => {
           Create your LuxuryUI account
         </h1>
         <p className="text-[15px] leading-relaxed text-gray-600 dark:text-gray-400 mb-8">
-          {backendMode === "firebase"
-            ? "Create a Firebase-backed account for real login, wallet sync, and unlocked-kit history across devices. Payment processing remains mock/local until Stripe ships."
-            : "Create a workspace to top up credits, unlock transformed Figma kits, and manage your delivery library."}
+          Create a workspace to top up credits, unlock transformed Figma kits,
+          and manage your delivery library.
         </p>
-
-        {warnings.length > 0 && (
-          <div className="mb-6 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-4 text-sm text-amber-900 dark:border-amber-900/40 dark:bg-amber-950/30 dark:text-amber-100">
-            {warnings[0]}
-          </div>
-        )}
 
         <form onSubmit={handleSubmit} className="space-y-4">
           {backendMode === "firebase" && (

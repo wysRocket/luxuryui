@@ -18,7 +18,10 @@ import {
   getCreditQuote,
   getPublishedFigmaKits,
 } from "../data/figmaKits";
-import { getAvailableToUnlockKits, getCreditState } from "../services/presentationState";
+import {
+  getAvailableToUnlockKits,
+  getCreditState,
+} from "../services/presentationState";
 
 const AccountPage: FC = () => {
   const {
@@ -29,7 +32,6 @@ const AccountPage: FC = () => {
     unlocks,
     orders,
     topUps,
-    warnings,
     topUpCredits,
     isBusy,
   } = useAppSession();
@@ -52,17 +54,22 @@ const AccountPage: FC = () => {
       [...unlocks]
         .sort(
           (left, right) =>
-            new Date(right.unlockedAt).getTime() - new Date(left.unlockedAt).getTime(),
+            new Date(right.unlockedAt).getTime() -
+            new Date(left.unlockedAt).getTime(),
         )
         .map((unlock) => ({
           unlock,
-          kit: FIGMA_KIT_PRODUCTS.find((product) => product.id === unlock.productId),
+          kit: FIGMA_KIT_PRODUCTS.find(
+            (product) => product.id === unlock.productId,
+          ),
         }))
         .filter(
           (
             entry,
-          ): entry is { unlock: (typeof unlocks)[number]; kit: (typeof FIGMA_KIT_PRODUCTS)[number] } =>
-            Boolean(entry.kit),
+          ): entry is {
+            unlock: (typeof unlocks)[number];
+            kit: (typeof FIGMA_KIT_PRODUCTS)[number];
+          } => Boolean(entry.kit),
         ),
     [unlocks],
   );
@@ -83,7 +90,9 @@ const AccountPage: FC = () => {
 
     try {
       const topUp = await topUpCredits(credits);
-      setStatusMessage(`Added ${topUp.creditsPurchased} credits to your wallet.`);
+      setStatusMessage(
+        `Added ${topUp.creditsPurchased} credits to your wallet.`,
+      );
     } catch (error) {
       setErrorMessage(
         error instanceof Error
@@ -100,7 +109,7 @@ const AccountPage: FC = () => {
   return (
     <div className="mx-auto w-full max-w-[1500px] p-4 md:p-8">
       <section className="mb-8 overflow-hidden rounded-[32px] border border-gray-100 bg-[radial-gradient(circle_at_top_left,rgba(14,165,233,0.12),transparent_24%),radial-gradient(circle_at_bottom_right,rgba(16,185,129,0.12),transparent_28%),linear-gradient(180deg,#ffffff_0%,#f8fafc_100%)] p-8 dark:border-gray-800 dark:bg-[radial-gradient(circle_at_top_left,rgba(14,165,233,0.16),transparent_24%),linear-gradient(180deg,rgba(17,24,39,0.96)_0%,rgba(2,6,23,1)_100%)] md:p-10">
-        <div className="mb-8 flex flex-col gap-6 xl:flex-row xl:items-start xl:justify-between">
+        <div className="mb-8 flex flex-col-reverse gap-6 xl:flex-row xl:items-start xl:justify-between">
           <div className="max-w-3xl">
             <p className="mb-4 text-xs font-black uppercase tracking-[0.24em] text-gray-400 dark:text-gray-500">
               Your Account
@@ -112,9 +121,10 @@ const AccountPage: FC = () => {
               {user?.email}
             </p>
             <p className="max-w-2xl text-[15px] leading-relaxed text-gray-600 dark:text-gray-400">
-              Manage your wallet, add credits, and access the editable kits you already own.
-              Research lives in the library, commercial inventory lives in the catalog, and
-              everything you have purchased lives here.
+              Manage your wallet, add credits, and access the editable kits you
+              already own. Research lives in the library, commercial inventory
+              lives in the catalog, and everything you have purchased lives
+              here.
             </p>
           </div>
 
@@ -132,12 +142,6 @@ const AccountPage: FC = () => {
             </div>
           </div>
         </div>
-
-        {warnings.length > 0 && (
-          <div className="mb-6 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-4 text-sm text-amber-900 dark:border-amber-900/40 dark:bg-amber-950/30 dark:text-amber-100">
-            {warnings.join(" ")}
-          </div>
-        )}
 
         <div className="grid grid-cols-1 gap-6 xl:grid-cols-[0.95fr_1.05fr]">
           <div className="space-y-4">
@@ -179,7 +183,8 @@ const AccountPage: FC = () => {
                 Owned Kits
               </h2>
               <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-                Purchased kits stay grouped here so you can reopen delivery without scanning the storefront again.
+                Purchased kits stay grouped here so you can reopen delivery
+                without scanning the storefront again.
               </p>
             </div>
           </div>
@@ -317,7 +322,8 @@ const AccountPage: FC = () => {
             </div>
 
             <p className="mt-4 text-sm leading-relaxed text-gray-500 dark:text-gray-400">
-              Use the account hub for repeat top-ups, then spend credits from the commercial catalog when you are ready to unlock a kit.
+              Use the account hub for repeat top-ups, then spend credits from
+              the commercial catalog when you are ready to unlock a kit.
             </p>
           </article>
         </div>
@@ -333,7 +339,10 @@ const AccountPage: FC = () => {
               Your delivery library
             </h2>
           </div>
-          <Link to="/kits" className="text-sm font-black text-blue-600 dark:text-blue-400">
+          <Link
+            to="/kits"
+            className="text-sm font-black text-blue-600 dark:text-blue-400"
+          >
             Browse catalog
           </Link>
         </div>
@@ -351,8 +360,8 @@ const AccountPage: FC = () => {
                     {kit.title}
                   </p>
                   <p className="text-xs font-semibold text-gray-500 dark:text-gray-400">
-                    Unlocked {new Date(unlock.unlockedAt).toLocaleDateString()} •{" "}
-                    {formatCreditCost(unlock.creditsSpent)}
+                    Unlocked {new Date(unlock.unlockedAt).toLocaleDateString()}{" "}
+                    • {formatCreditCost(unlock.creditsSpent)}
                   </p>
                 </div>
                 <div className="inline-flex items-center gap-2 text-sm font-black text-blue-600 dark:text-blue-400">
@@ -363,7 +372,8 @@ const AccountPage: FC = () => {
           </div>
         ) : (
           <div className="rounded-2xl border border-dashed border-gray-200 px-4 py-5 text-sm text-gray-500 dark:border-gray-700 dark:text-gray-400">
-            No owned kits yet. Add credits above, then unlock your first editable kit from the catalog.
+            No owned kits yet. Add credits above, then unlock your first
+            editable kit from the catalog.
           </div>
         )}
       </section>
@@ -378,7 +388,10 @@ const AccountPage: FC = () => {
               Catalog picks for your current wallet
             </h2>
           </div>
-          <Link to="/kits" className="text-sm font-black text-blue-600 dark:text-blue-400">
+          <Link
+            to="/kits"
+            className="text-sm font-black text-blue-600 dark:text-blue-400"
+          >
             See full catalog
           </Link>
         </div>
@@ -386,7 +399,11 @@ const AccountPage: FC = () => {
         {availableToUnlock.length > 0 ? (
           <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
             {availableToUnlock.map((kit) => {
-              const creditState = getCreditState(true, availableCredits, kit.creditCost);
+              const creditState = getCreditState(
+                true,
+                availableCredits,
+                kit.creditCost,
+              );
 
               return (
                 <Link
@@ -407,15 +424,17 @@ const AccountPage: FC = () => {
                       }`}
                     >
                       <Sparkles size={12} />
-                      {creditState === "ready" ? "Unlock-ready" : "Needs top-up"}
+                      {creditState === "ready"
+                        ? "Unlock-ready"
+                        : "Needs top-up"}
                     </div>
                   </div>
                   <p className="mb-1 text-lg font-black text-gray-900 dark:text-white">
                     {kit.title}
                   </p>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    {formatCreditCost(kit.creditCost)} • {kit.includedScreens} screens •{" "}
-                    {kit.includedTokens.length} token groups
+                    {formatCreditCost(kit.creditCost)} • {kit.includedScreens}{" "}
+                    screens • {kit.includedTokens.length} token groups
                   </p>
                   <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">
                     {creditState === "ready"
@@ -428,7 +447,8 @@ const AccountPage: FC = () => {
           </div>
         ) : (
           <div className="rounded-2xl border border-dashed border-gray-200 px-4 py-5 text-sm text-gray-500 dark:border-gray-700 dark:text-gray-400">
-            You already own every published kit or the commercial catalog is temporarily unavailable.
+            You already own every published kit or the commercial catalog is
+            temporarily unavailable.
           </div>
         )}
       </section>
@@ -526,8 +546,9 @@ const AccountPage: FC = () => {
                     className="rounded-2xl border border-gray-100 bg-gray-50 px-4 py-4 dark:border-gray-800 dark:bg-gray-950/40"
                   >
                     <p className="text-sm font-black text-gray-900 dark:text-white">
-                      {FIGMA_KIT_PRODUCTS.find((product) => product.id === order.productId)
-                        ?.title ?? order.productId}
+                      {FIGMA_KIT_PRODUCTS.find(
+                        (product) => product.id === order.productId,
+                      )?.title ?? order.productId}
                     </p>
                     <p className="text-xs text-gray-500 dark:text-gray-400">
                       {formatCreditCost(order.creditCost)} • {order.status}
