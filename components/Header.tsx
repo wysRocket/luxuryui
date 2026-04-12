@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Search, Bell, Sparkles, Sun, Moon, X, ArrowLeft, TrendingUp, Zap, Clock, Menu } from 'lucide-react';
+import { Search, Sparkles, Sun, Moon, X, ArrowLeft, TrendingUp, Zap, Clock, Menu } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { MOCK_APPS, FILTER_TAGS, NAV_ITEMS } from '../constants';
@@ -211,11 +211,6 @@ const Header: React.FC<HeaderProps> = ({
               Kit Concierge
           </button>
             
-          <button className="hidden sm:block p-2 sm:p-2.5 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors relative">
-            <Bell size={20} className="sm:w-[22px] sm:h-[22px]" />
-            <span className="absolute top-2.5 right-2.5 w-2.5 h-2.5 bg-blue-500 rounded-full border-2 border-white dark:border-gray-950"></span>
-          </button>
-          
           <div className="w-px h-8 bg-gray-200 dark:bg-gray-800 mx-1 hidden sm:block"></div>
 
           {isAuthenticated ? (
@@ -227,11 +222,6 @@ const Header: React.FC<HeaderProps> = ({
                 <span>{wallet?.balance ?? 0} credits</span>
               </Link>
               <div className="hidden xl:flex items-center gap-2">
-                {backendMode === 'firebase' && (
-                  <span className="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-[10px] font-black uppercase tracking-[0.16em] text-emerald-700 dark:border-emerald-900/40 dark:bg-emerald-950/30 dark:text-emerald-200">
-                    Firebase
-                  </span>
-                )}
                 {isAdmin && (
                   <Link
                     to="/admin"
@@ -383,10 +373,14 @@ const Header: React.FC<HeaderProps> = ({
                 <div className="border-t border-gray-100 px-4 py-4 dark:border-gray-900">
                   {isAuthenticated ? (
                     <div className="space-y-3">
-                      {backendMode === 'firebase' && (
-                        <div className="rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-xs font-black uppercase tracking-[0.14em] text-emerald-700 dark:border-emerald-900/40 dark:bg-emerald-950/30 dark:text-emerald-200">
-                          Firebase account
-                        </div>
+                      {isAdmin && (
+                        <Link
+                          to="/admin"
+                          onClick={() => setIsMobileMenuOpen(false)}
+                          className="flex items-center justify-between rounded-2xl border border-cyan-200 bg-cyan-50 px-4 py-3 text-sm font-black uppercase tracking-[0.12em] text-cyan-700 dark:border-cyan-900/40 dark:bg-cyan-950/30 dark:text-cyan-200"
+                        >
+                          Backoffice
+                        </Link>
                       )}
                       <Link
                         to="/account"

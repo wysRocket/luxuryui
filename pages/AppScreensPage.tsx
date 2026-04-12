@@ -129,17 +129,6 @@ const AppScreensPage: React.FC = () => {
         </div>
       </section>
 
-      {presentation?.researchTier !== 'verified' && (
-        <section className="rounded-3xl border border-amber-200 bg-amber-50 dark:border-amber-900/30 dark:bg-amber-950/20 px-6 py-5 mb-10">
-          <p className="text-[10px] font-black uppercase tracking-[0.18em] text-amber-700 dark:text-amber-300 mb-2">Quality note</p>
-          <p className="text-sm leading-relaxed text-amber-900 dark:text-amber-100">
-            {presentation?.researchTier === 'generated'
-              ? 'These screens remain available for directional research, but generated imagery is intentionally kept out of the premium presentation tier.'
-              : 'These screens are still useful for reference work, but the source set is not visually consistent enough to present as a premium asset preview.'}
-          </p>
-        </section>
-      )}
-
       <section className="rounded-3xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 md:p-7 mb-10">
         {relatedKit ? (
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5">

@@ -22,9 +22,9 @@ import { getAvailableToUnlockKits, getCreditState } from "../services/presentati
 
 const AccountPage: FC = () => {
   const {
-    backendMode,
     user,
     wallet,
+    isAdmin,
     transactions,
     unlocks,
     orders,
@@ -119,10 +119,13 @@ const AccountPage: FC = () => {
           </div>
 
           <div className="flex flex-wrap gap-2">
-            {backendMode === "firebase" && (
-              <div className="inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-xs font-black uppercase tracking-[0.16em] text-emerald-700 dark:border-emerald-900/40 dark:bg-emerald-950/30 dark:text-emerald-200">
-                Firebase wallet sync
-              </div>
+            {isAdmin && (
+              <Link
+                to="/admin"
+                className="inline-flex items-center rounded-full border border-cyan-200 bg-cyan-50 px-4 py-2 text-xs font-black uppercase tracking-[0.16em] text-cyan-700 hover:bg-cyan-100 dark:border-cyan-900/40 dark:bg-cyan-950/30 dark:text-cyan-200 dark:hover:bg-cyan-950/50 transition-colors"
+              >
+                Backoffice
+              </Link>
             )}
             <div className="inline-flex items-center rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-gray-700 dark:border-gray-700 dark:bg-gray-900/80 dark:text-gray-200">
               {providerLabel}
@@ -314,9 +317,7 @@ const AccountPage: FC = () => {
             </div>
 
             <p className="mt-4 text-sm leading-relaxed text-gray-500 dark:text-gray-400">
-              {backendMode === "firebase"
-                ? "Your wallet and unlock history persist through Firebase Auth + Firestore. Top-ups here remain instant mock payments until Stripe checkout is connected."
-                : "Use the account hub for repeat top-ups, then spend credits from the commercial catalog when you are ready to unlock a kit."}
+              Use the account hub for repeat top-ups, then spend credits from the commercial catalog when you are ready to unlock a kit.
             </p>
           </article>
         </div>
