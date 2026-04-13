@@ -31,3 +31,6 @@ data/curation/commercial/generated-kit-runs.json
 
 .envscripts/.upscale-manifest.json
 .env
+
+# App screenshots — served from Cloudflare R2, not bundled in deploy
+public/assets/apps/

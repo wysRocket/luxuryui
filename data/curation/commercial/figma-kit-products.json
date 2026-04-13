@@ -18,11 +18,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "f2lUizLGCCeBxkQk5hTA7w",
-      "thumbnail": "/assets/apps/monzo/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/monzo/screen-1.png",
       "gallery": [
-        "/assets/apps/monzo/screen-1.png",
-        "/assets/apps/monzo/screen-2.png",
-        "/assets/apps/monzo/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/monzo/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/monzo/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/monzo/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -88,11 +88,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "6zI3kpmankQ433Eogt145B",
-      "thumbnail": "/assets/apps/revolut/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/revolut/screen-1.png",
       "gallery": [
-        "/assets/apps/revolut/screen-1.png",
-        "/assets/apps/revolut/screen-2.png",
-        "/assets/apps/revolut/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/revolut/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/revolut/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/revolut/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -158,11 +158,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "9D5DkUgAjuDNF6bTYbG033",
-      "thumbnail": "/assets/apps/mint/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/mint/screen-1.png",
       "gallery": [
-        "/assets/apps/mint/screen-1.png",
-        "/assets/apps/mint/screen-2.png",
-        "/assets/apps/mint/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/mint/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/mint/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/mint/screen-3.png"
       ],
       "includedScreens": 7,
       "includedComponents": [
@@ -199,13 +199,13 @@
         "artifactVersion": 1,
         "downloadFileName": "mint-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/mint/screen-1.png",
-          "/assets/apps/mint/screen-2.png",
-          "/assets/apps/mint/screen-3.png",
-          "/assets/apps/mint/screen-4.png",
-          "/assets/apps/mint/screen-5.png",
-          "/assets/apps/mint/screen-6.png",
-          "/assets/apps/mint/screen-7.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/mint/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/mint/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/mint/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/mint/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/mint/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/mint/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/mint/screen-7.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -227,11 +227,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "4Rpq7QyIpiphKGST5K8khL",
-      "thumbnail": "/assets/apps/robinhood/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/robinhood/screen-1.png",
       "gallery": [
-        "/assets/apps/robinhood/screen-1.png",
-        "/assets/apps/robinhood/screen-2.png",
-        "/assets/apps/robinhood/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/robinhood/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/robinhood/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/robinhood/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -297,11 +297,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "UxPcrs9Wrg5z51080DH2Jy",
-      "thumbnail": "/assets/apps/paypal/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/paypal/screen-1.png",
       "gallery": [
-        "/assets/apps/paypal/screen-1.png",
-        "/assets/apps/paypal/screen-2.png",
-        "/assets/apps/paypal/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/paypal/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/paypal/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/paypal/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -367,11 +367,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "BAi1nmxUVLvVZTVTNQWWCW",
-      "thumbnail": "/assets/apps/wallet/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wallet/screen-1.png",
       "gallery": [
-        "/assets/apps/wallet/screen-1.png",
-        "/assets/apps/wallet/screen-2.png",
-        "/assets/apps/wallet/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wallet/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wallet/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wallet/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -437,11 +437,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "HaMwiFAYUWyMla3af3grQs",
-      "thumbnail": "/assets/apps/wealthfront/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wealthfront/screen-1.png",
       "gallery": [
-        "/assets/apps/wealthfront/screen-1.png",
-        "/assets/apps/wealthfront/screen-2.png",
-        "/assets/apps/wealthfront/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wealthfront/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wealthfront/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wealthfront/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -478,14 +478,14 @@
         "artifactVersion": 1,
         "downloadFileName": "wealthfront-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/wealthfront/screen-1.png",
-          "/assets/apps/wealthfront/screen-2.png",
-          "/assets/apps/wealthfront/screen-3.png",
-          "/assets/apps/wealthfront/screen-4.png",
-          "/assets/apps/wealthfront/screen-5.png",
-          "/assets/apps/wealthfront/screen-6.png",
-          "/assets/apps/wealthfront/screen-7.png",
-          "/assets/apps/wealthfront/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wealthfront/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wealthfront/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wealthfront/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wealthfront/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wealthfront/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wealthfront/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wealthfront/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wealthfront/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -507,11 +507,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "pnRIPS11HTtikt7Bzf5Eq9",
-      "thumbnail": "/assets/apps/n26/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-1.png",
       "gallery": [
-        "/assets/apps/n26/screen-1.png",
-        "/assets/apps/n26/screen-2.png",
-        "/assets/apps/n26/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -548,14 +548,14 @@
         "artifactVersion": 1,
         "downloadFileName": "n26-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/n26/screen-1.png",
-          "/assets/apps/n26/screen-2.png",
-          "/assets/apps/n26/screen-3.png",
-          "/assets/apps/n26/screen-4.png",
-          "/assets/apps/n26/screen-5.png",
-          "/assets/apps/n26/screen-6.png",
-          "/assets/apps/n26/screen-7.png",
-          "/assets/apps/n26/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -577,11 +577,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "Zkhqox2Km0zHPMt9ceNsud",
-      "thumbnail": "/assets/apps/coinbase/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coinbase/screen-1.png",
       "gallery": [
-        "/assets/apps/coinbase/screen-1.png",
-        "/assets/apps/coinbase/screen-2.png",
-        "/assets/apps/coinbase/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coinbase/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coinbase/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coinbase/screen-3.png"
       ],
       "includedScreens": 7,
       "includedComponents": [
@@ -618,13 +618,13 @@
         "artifactVersion": 1,
         "downloadFileName": "coinbase-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/coinbase/screen-1.png",
-          "/assets/apps/coinbase/screen-2.png",
-          "/assets/apps/coinbase/screen-3.png",
-          "/assets/apps/coinbase/screen-4.png",
-          "/assets/apps/coinbase/screen-5.png",
-          "/assets/apps/coinbase/screen-6.png",
-          "/assets/apps/coinbase/screen-7.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coinbase/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coinbase/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coinbase/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coinbase/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coinbase/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coinbase/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coinbase/screen-7.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -646,11 +646,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "e6M0cXKkQgOtIu6KygheHz",
-      "thumbnail": "/assets/apps/binance/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-1.png",
       "gallery": [
-        "/assets/apps/binance/screen-1.png",
-        "/assets/apps/binance/screen-2.png",
-        "/assets/apps/binance/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -687,14 +687,14 @@
         "artifactVersion": 1,
         "downloadFileName": "binance-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/binance/screen-1.png",
-          "/assets/apps/binance/screen-2.png",
-          "/assets/apps/binance/screen-3.png",
-          "/assets/apps/binance/screen-4.png",
-          "/assets/apps/binance/screen-5.png",
-          "/assets/apps/binance/screen-6.png",
-          "/assets/apps/binance/screen-7.png",
-          "/assets/apps/binance/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -716,11 +716,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "9obVj8nh8tz1MeTTCzIu0e",
-      "thumbnail": "/assets/apps/metamask/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-1.png",
       "gallery": [
-        "/assets/apps/metamask/screen-1.png",
-        "/assets/apps/metamask/screen-2.png",
-        "/assets/apps/metamask/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-3.png"
       ],
       "includedScreens": 7,
       "includedComponents": [
@@ -757,13 +757,13 @@
         "artifactVersion": 1,
         "downloadFileName": "metamask-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/metamask/screen-1.png",
-          "/assets/apps/metamask/screen-2.png",
-          "/assets/apps/metamask/screen-3.png",
-          "/assets/apps/metamask/screen-4.png",
-          "/assets/apps/metamask/screen-5.png",
-          "/assets/apps/metamask/screen-6.png",
-          "/assets/apps/metamask/screen-7.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-7.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -785,11 +785,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "uPLfi1flttOyTCao96ITOv",
-      "thumbnail": "/assets/apps/kraken/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-1.png",
       "gallery": [
-        "/assets/apps/kraken/screen-1.png",
-        "/assets/apps/kraken/screen-2.png",
-        "/assets/apps/kraken/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -826,14 +826,14 @@
         "artifactVersion": 1,
         "downloadFileName": "kraken-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/kraken/screen-1.png",
-          "/assets/apps/kraken/screen-2.png",
-          "/assets/apps/kraken/screen-3.png",
-          "/assets/apps/kraken/screen-4.png",
-          "/assets/apps/kraken/screen-5.png",
-          "/assets/apps/kraken/screen-6.png",
-          "/assets/apps/kraken/screen-7.png",
-          "/assets/apps/kraken/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -855,11 +855,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "qlKeLS4or5lhJSD3gtNbte",
-      "thumbnail": "/assets/apps/phantom/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-1.png",
       "gallery": [
-        "/assets/apps/phantom/screen-1.png",
-        "/assets/apps/phantom/screen-2.png",
-        "/assets/apps/phantom/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-3.png"
       ],
       "includedScreens": 7,
       "includedComponents": [
@@ -896,13 +896,13 @@
         "artifactVersion": 1,
         "downloadFileName": "phantom-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/phantom/screen-1.png",
-          "/assets/apps/phantom/screen-2.png",
-          "/assets/apps/phantom/screen-3.png",
-          "/assets/apps/phantom/screen-4.png",
-          "/assets/apps/phantom/screen-5.png",
-          "/assets/apps/phantom/screen-6.png",
-          "/assets/apps/phantom/screen-7.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-7.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -924,11 +924,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "qM7MYyUsJz2dJJypDM724G",
-      "thumbnail": "/assets/apps/uniswap/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-1.png",
       "gallery": [
-        "/assets/apps/uniswap/screen-1.png",
-        "/assets/apps/uniswap/screen-2.png",
-        "/assets/apps/uniswap/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -965,14 +965,14 @@
         "artifactVersion": 1,
         "downloadFileName": "uniswap-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/uniswap/screen-1.png",
-          "/assets/apps/uniswap/screen-2.png",
-          "/assets/apps/uniswap/screen-3.png",
-          "/assets/apps/uniswap/screen-4.png",
-          "/assets/apps/uniswap/screen-5.png",
-          "/assets/apps/uniswap/screen-6.png",
-          "/assets/apps/uniswap/screen-7.png",
-          "/assets/apps/uniswap/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -994,11 +994,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "kxtiqwdR8ZvWEyIKoGYd68",
-      "thumbnail": "/assets/apps/ledger/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-1.png",
       "gallery": [
-        "/assets/apps/ledger/screen-1.png",
-        "/assets/apps/ledger/screen-2.png",
-        "/assets/apps/ledger/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -1035,14 +1035,14 @@
         "artifactVersion": 1,
         "downloadFileName": "ledger-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/ledger/screen-1.png",
-          "/assets/apps/ledger/screen-2.png",
-          "/assets/apps/ledger/screen-3.png",
-          "/assets/apps/ledger/screen-4.png",
-          "/assets/apps/ledger/screen-5.png",
-          "/assets/apps/ledger/screen-6.png",
-          "/assets/apps/ledger/screen-7.png",
-          "/assets/apps/ledger/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1064,11 +1064,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "vw9RosirSJeGGHq36aVS7f",
-      "thumbnail": "/assets/apps/amazon/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-1.png",
       "gallery": [
-        "/assets/apps/amazon/screen-1.png",
-        "/assets/apps/amazon/screen-2.png",
-        "/assets/apps/amazon/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -1105,14 +1105,14 @@
         "artifactVersion": 1,
         "downloadFileName": "amazon-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/amazon/screen-1.png",
-          "/assets/apps/amazon/screen-2.png",
-          "/assets/apps/amazon/screen-3.png",
-          "/assets/apps/amazon/screen-4.png",
-          "/assets/apps/amazon/screen-5.png",
-          "/assets/apps/amazon/screen-6.png",
-          "/assets/apps/amazon/screen-7.png",
-          "/assets/apps/amazon/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1134,11 +1134,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "g58rqBFnVkyU8lhRmNGlOW",
-      "thumbnail": "/assets/apps/ebay/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ebay/screen-1.png",
       "gallery": [
-        "/assets/apps/ebay/screen-1.png",
-        "/assets/apps/ebay/screen-2.png",
-        "/assets/apps/ebay/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ebay/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ebay/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ebay/screen-3.png"
       ],
       "includedScreens": 6,
       "includedComponents": [
@@ -1175,12 +1175,12 @@
         "artifactVersion": 1,
         "downloadFileName": "ebay-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/ebay/screen-1.png",
-          "/assets/apps/ebay/screen-2.png",
-          "/assets/apps/ebay/screen-3.png",
-          "/assets/apps/ebay/screen-4.png",
-          "/assets/apps/ebay/screen-5.png",
-          "/assets/apps/ebay/screen-6.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ebay/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ebay/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ebay/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ebay/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ebay/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ebay/screen-6.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1202,11 +1202,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "oNQCDjRkkDX3bMs3jC6HKN",
-      "thumbnail": "/assets/apps/shopify/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-1.png",
       "gallery": [
-        "/assets/apps/shopify/screen-1.png",
-        "/assets/apps/shopify/screen-2.png",
-        "/assets/apps/shopify/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -1243,14 +1243,14 @@
         "artifactVersion": 1,
         "downloadFileName": "shopify-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/shopify/screen-1.png",
-          "/assets/apps/shopify/screen-2.png",
-          "/assets/apps/shopify/screen-3.png",
-          "/assets/apps/shopify/screen-4.png",
-          "/assets/apps/shopify/screen-5.png",
-          "/assets/apps/shopify/screen-6.png",
-          "/assets/apps/shopify/screen-7.png",
-          "/assets/apps/shopify/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1272,11 +1272,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "mO1apOYu8jM89KoBJjnsRn",
-      "thumbnail": "/assets/apps/etsy/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-1.png",
       "gallery": [
-        "/assets/apps/etsy/screen-1.png",
-        "/assets/apps/etsy/screen-2.png",
-        "/assets/apps/etsy/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -1313,14 +1313,14 @@
         "artifactVersion": 1,
         "downloadFileName": "etsy-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/etsy/screen-1.png",
-          "/assets/apps/etsy/screen-2.png",
-          "/assets/apps/etsy/screen-3.png",
-          "/assets/apps/etsy/screen-4.png",
-          "/assets/apps/etsy/screen-5.png",
-          "/assets/apps/etsy/screen-6.png",
-          "/assets/apps/etsy/screen-7.png",
-          "/assets/apps/etsy/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1342,11 +1342,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "XJeRTjbRVq0ZTjfyu1EuRw",
-      "thumbnail": "/assets/apps/zara/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-1.png",
       "gallery": [
-        "/assets/apps/zara/screen-1.png",
-        "/assets/apps/zara/screen-2.png",
-        "/assets/apps/zara/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -1383,14 +1383,14 @@
         "artifactVersion": 1,
         "downloadFileName": "zara-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/zara/screen-1.png",
-          "/assets/apps/zara/screen-2.png",
-          "/assets/apps/zara/screen-3.png",
-          "/assets/apps/zara/screen-4.png",
-          "/assets/apps/zara/screen-5.png",
-          "/assets/apps/zara/screen-6.png",
-          "/assets/apps/zara/screen-7.png",
-          "/assets/apps/zara/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1412,11 +1412,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "j8Z1TnFFMTnv5XXDBAclPk",
-      "thumbnail": "/assets/apps/asos/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asos/screen-1.png",
       "gallery": [
-        "/assets/apps/asos/screen-1.png",
-        "/assets/apps/asos/screen-2.png",
-        "/assets/apps/asos/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asos/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asos/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asos/screen-3.png"
       ],
       "includedScreens": 6,
       "includedComponents": [
@@ -1453,12 +1453,12 @@
         "artifactVersion": 1,
         "downloadFileName": "asos-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/asos/screen-1.png",
-          "/assets/apps/asos/screen-2.png",
-          "/assets/apps/asos/screen-3.png",
-          "/assets/apps/asos/screen-4.png",
-          "/assets/apps/asos/screen-5.png",
-          "/assets/apps/asos/screen-6.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asos/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asos/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asos/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asos/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asos/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asos/screen-6.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1480,11 +1480,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "zcGv9Ce3jX2gkMV2pIjEUQ",
-      "thumbnail": "/assets/apps/nike/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike/screen-1.png",
       "gallery": [
-        "/assets/apps/nike/screen-1.png",
-        "/assets/apps/nike/screen-2.png",
-        "/assets/apps/nike/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -1521,14 +1521,14 @@
         "artifactVersion": 1,
         "downloadFileName": "nike-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/nike/screen-1.png",
-          "/assets/apps/nike/screen-2.png",
-          "/assets/apps/nike/screen-3.png",
-          "/assets/apps/nike/screen-4.png",
-          "/assets/apps/nike/screen-5.png",
-          "/assets/apps/nike/screen-6.png",
-          "/assets/apps/nike/screen-7.png",
-          "/assets/apps/nike/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1550,11 +1550,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "ItFoDYFYuOJITuiOM5xt2K",
-      "thumbnail": "/assets/apps/stockx/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-1.png",
       "gallery": [
-        "/assets/apps/stockx/screen-1.png",
-        "/assets/apps/stockx/screen-2.png",
-        "/assets/apps/stockx/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -1591,14 +1591,14 @@
         "artifactVersion": 1,
         "downloadFileName": "stockx-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/stockx/screen-1.png",
-          "/assets/apps/stockx/screen-2.png",
-          "/assets/apps/stockx/screen-3.png",
-          "/assets/apps/stockx/screen-4.png",
-          "/assets/apps/stockx/screen-5.png",
-          "/assets/apps/stockx/screen-6.png",
-          "/assets/apps/stockx/screen-7.png",
-          "/assets/apps/stockx/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1620,11 +1620,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "BXUHz0Rn5FLLjcWsFsJDfi",
-      "thumbnail": "/assets/apps/instagram/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-1.png",
       "gallery": [
-        "/assets/apps/instagram/screen-1.png",
-        "/assets/apps/instagram/screen-2.png",
-        "/assets/apps/instagram/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-3.png"
       ],
       "includedScreens": 7,
       "includedComponents": [
@@ -1661,13 +1661,13 @@
         "artifactVersion": 1,
         "downloadFileName": "instagram-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/instagram/screen-1.png",
-          "/assets/apps/instagram/screen-2.png",
-          "/assets/apps/instagram/screen-3.png",
-          "/assets/apps/instagram/screen-4.png",
-          "/assets/apps/instagram/screen-5.png",
-          "/assets/apps/instagram/screen-6.png",
-          "/assets/apps/instagram/screen-7.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-7.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1689,10 +1689,10 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "kBSaDsLWYAYMeTGwmI9XBE",
-      "thumbnail": "/assets/apps/twitter/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/twitter/screen-1.png",
       "gallery": [
-        "/assets/apps/twitter/screen-1.png",
-        "/assets/apps/twitter/screen-2.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/twitter/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/twitter/screen-2.png"
       ],
       "includedScreens": 6,
       "includedComponents": [
@@ -1729,8 +1729,8 @@
         "artifactVersion": 1,
         "downloadFileName": "twitter-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/twitter/screen-1.png",
-          "/assets/apps/twitter/screen-2.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/twitter/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/twitter/screen-2.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1752,11 +1752,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "30Pvx7Zg7boUkNIH90KaAn",
-      "thumbnail": "/assets/apps/linkedin/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linkedin/screen-1.png",
       "gallery": [
-        "/assets/apps/linkedin/screen-1.png",
-        "/assets/apps/linkedin/screen-2.png",
-        "/assets/apps/linkedin/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linkedin/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linkedin/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linkedin/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -1793,14 +1793,14 @@
         "artifactVersion": 1,
         "downloadFileName": "linkedin-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/linkedin/screen-1.png",
-          "/assets/apps/linkedin/screen-2.png",
-          "/assets/apps/linkedin/screen-3.png",
-          "/assets/apps/linkedin/screen-4.png",
-          "/assets/apps/linkedin/screen-5.png",
-          "/assets/apps/linkedin/screen-6.png",
-          "/assets/apps/linkedin/screen-7.png",
-          "/assets/apps/linkedin/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linkedin/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linkedin/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linkedin/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linkedin/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linkedin/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linkedin/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linkedin/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linkedin/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1822,11 +1822,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "5Pef8Q4IYusVq2eC4pK6oj",
-      "thumbnail": "/assets/apps/tiktok/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tiktok/screen-1.png",
       "gallery": [
-        "/assets/apps/tiktok/screen-1.png",
-        "/assets/apps/tiktok/screen-2.png",
-        "/assets/apps/tiktok/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tiktok/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tiktok/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tiktok/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -1863,14 +1863,14 @@
         "artifactVersion": 1,
         "downloadFileName": "tiktok-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/tiktok/screen-1.png",
-          "/assets/apps/tiktok/screen-2.png",
-          "/assets/apps/tiktok/screen-3.png",
-          "/assets/apps/tiktok/screen-4.png",
-          "/assets/apps/tiktok/screen-5.png",
-          "/assets/apps/tiktok/screen-6.png",
-          "/assets/apps/tiktok/screen-7.png",
-          "/assets/apps/tiktok/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tiktok/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tiktok/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tiktok/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tiktok/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tiktok/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tiktok/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tiktok/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tiktok/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1892,11 +1892,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "FIrDMcNIYBY9oAJfHBBTyV",
-      "thumbnail": "/assets/apps/snapchat/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-1.png",
       "gallery": [
-        "/assets/apps/snapchat/screen-1.png",
-        "/assets/apps/snapchat/screen-2.png",
-        "/assets/apps/snapchat/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -1933,14 +1933,14 @@
         "artifactVersion": 1,
         "downloadFileName": "snapchat-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/snapchat/screen-1.png",
-          "/assets/apps/snapchat/screen-2.png",
-          "/assets/apps/snapchat/screen-3.png",
-          "/assets/apps/snapchat/screen-4.png",
-          "/assets/apps/snapchat/screen-5.png",
-          "/assets/apps/snapchat/screen-6.png",
-          "/assets/apps/snapchat/screen-7.png",
-          "/assets/apps/snapchat/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1962,11 +1962,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "hkOI39RECtn163G8YVTrdR",
-      "thumbnail": "/assets/apps/whatsapp/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/whatsapp/screen-1.png",
       "gallery": [
-        "/assets/apps/whatsapp/screen-1.png",
-        "/assets/apps/whatsapp/screen-2.png",
-        "/assets/apps/whatsapp/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/whatsapp/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/whatsapp/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/whatsapp/screen-3.png"
       ],
       "includedScreens": 6,
       "includedComponents": [
@@ -2003,11 +2003,11 @@
         "artifactVersion": 1,
         "downloadFileName": "whatsapp-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/whatsapp/screen-1.png",
-          "/assets/apps/whatsapp/screen-2.png",
-          "/assets/apps/whatsapp/screen-3.png",
-          "/assets/apps/whatsapp/screen-4.png",
-          "/assets/apps/whatsapp/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/whatsapp/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/whatsapp/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/whatsapp/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/whatsapp/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/whatsapp/screen-5.png",
           "/assets/publish-ready/apps/whatsapp/rescue-screen-1.png"
         ],
         "includes": [
@@ -2030,11 +2030,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "od4whujhtAxrkMRu6H2uoE",
-      "thumbnail": "/assets/apps/threads/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-1.png",
       "gallery": [
-        "/assets/apps/threads/screen-1.png",
-        "/assets/apps/threads/screen-2.png",
-        "/assets/apps/threads/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-3.png"
       ],
       "includedScreens": 6,
       "includedComponents": [
@@ -2071,12 +2071,12 @@
         "artifactVersion": 1,
         "downloadFileName": "threads-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/threads/screen-1.png",
-          "/assets/apps/threads/screen-2.png",
-          "/assets/apps/threads/screen-3.png",
-          "/assets/apps/threads/screen-4.png",
-          "/assets/apps/threads/screen-5.png",
-          "/assets/apps/threads/screen-6.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-6.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2098,11 +2098,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "JdSPjA4YqVJbfew021F12d",
-      "thumbnail": "/assets/apps/bereal/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-1.png",
       "gallery": [
-        "/assets/apps/bereal/screen-1.png",
-        "/assets/apps/bereal/screen-2.png",
-        "/assets/apps/bereal/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-3.png"
       ],
       "includedScreens": 6,
       "includedComponents": [
@@ -2139,12 +2139,12 @@
         "artifactVersion": 1,
         "downloadFileName": "bereal-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/bereal/screen-1.png",
-          "/assets/apps/bereal/screen-2.png",
-          "/assets/apps/bereal/screen-3.png",
-          "/assets/apps/bereal/screen-4.png",
-          "/assets/apps/bereal/screen-5.png",
-          "/assets/apps/bereal/screen-6.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-6.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2166,11 +2166,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "Ifh6R8PmR4m9IhJ35kQulx",
-      "thumbnail": "/assets/apps/airbnb/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-1.png",
       "gallery": [
-        "/assets/apps/airbnb/screen-1.png",
-        "/assets/apps/airbnb/screen-2.png",
-        "/assets/apps/airbnb/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2207,14 +2207,14 @@
         "artifactVersion": 1,
         "downloadFileName": "airbnb-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/airbnb/screen-1.png",
-          "/assets/apps/airbnb/screen-2.png",
-          "/assets/apps/airbnb/screen-3.png",
-          "/assets/apps/airbnb/screen-4.png",
-          "/assets/apps/airbnb/screen-5.png",
-          "/assets/apps/airbnb/screen-6.png",
-          "/assets/apps/airbnb/screen-7.png",
-          "/assets/apps/airbnb/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2236,11 +2236,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "aOkZpRhDSuHVKkltDl7yW3",
-      "thumbnail": "/assets/apps/expedia/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-1.png",
       "gallery": [
-        "/assets/apps/expedia/screen-1.png",
-        "/assets/apps/expedia/screen-2.png",
-        "/assets/apps/expedia/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2277,14 +2277,14 @@
         "artifactVersion": 1,
         "downloadFileName": "expedia-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/expedia/screen-1.png",
-          "/assets/apps/expedia/screen-2.png",
-          "/assets/apps/expedia/screen-3.png",
-          "/assets/apps/expedia/screen-4.png",
-          "/assets/apps/expedia/screen-5.png",
-          "/assets/apps/expedia/screen-6.png",
-          "/assets/apps/expedia/screen-7.png",
-          "/assets/apps/expedia/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2306,11 +2306,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "LFILHhTaKWGerYWBLmtZGP",
-      "thumbnail": "/assets/apps/hopper/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-1.png",
       "gallery": [
-        "/assets/apps/hopper/screen-1.png",
-        "/assets/apps/hopper/screen-2.png",
-        "/assets/apps/hopper/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2347,14 +2347,14 @@
         "artifactVersion": 1,
         "downloadFileName": "hopper-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/hopper/screen-1.png",
-          "/assets/apps/hopper/screen-2.png",
-          "/assets/apps/hopper/screen-3.png",
-          "/assets/apps/hopper/screen-4.png",
-          "/assets/apps/hopper/screen-5.png",
-          "/assets/apps/hopper/screen-6.png",
-          "/assets/apps/hopper/screen-7.png",
-          "/assets/apps/hopper/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2376,11 +2376,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "DQ0kaJFziXKWnLuZCIHwIi",
-      "thumbnail": "/assets/apps/booking-com/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-1.png",
       "gallery": [
-        "/assets/apps/booking-com/screen-1.png",
-        "/assets/apps/booking-com/screen-2.png",
-        "/assets/apps/booking-com/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2417,14 +2417,14 @@
         "artifactVersion": 1,
         "downloadFileName": "booking-com-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/booking-com/screen-1.png",
-          "/assets/apps/booking-com/screen-2.png",
-          "/assets/apps/booking-com/screen-3.png",
-          "/assets/apps/booking-com/screen-4.png",
-          "/assets/apps/booking-com/screen-5.png",
-          "/assets/apps/booking-com/screen-6.png",
-          "/assets/apps/booking-com/screen-7.png",
-          "/assets/apps/booking-com/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2446,11 +2446,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "HgEWEAmTaxLPVLC1nddQdU",
-      "thumbnail": "/assets/apps/skyscanner/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skyscanner/screen-1.png",
       "gallery": [
-        "/assets/apps/skyscanner/screen-1.png",
-        "/assets/apps/skyscanner/screen-2.png",
-        "/assets/apps/skyscanner/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skyscanner/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skyscanner/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skyscanner/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2487,14 +2487,14 @@
         "artifactVersion": 1,
         "downloadFileName": "skyscanner-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/skyscanner/screen-1.png",
-          "/assets/apps/skyscanner/screen-2.png",
-          "/assets/apps/skyscanner/screen-3.png",
-          "/assets/apps/skyscanner/screen-4.png",
-          "/assets/apps/skyscanner/screen-5.png",
-          "/assets/apps/skyscanner/screen-6.png",
-          "/assets/apps/skyscanner/screen-7.png",
-          "/assets/apps/skyscanner/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skyscanner/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skyscanner/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skyscanner/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skyscanner/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skyscanner/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skyscanner/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skyscanner/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skyscanner/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2516,11 +2516,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "m0GajiBHMxiLt5jooCogY4",
-      "thumbnail": "/assets/apps/tripadvisor/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tripadvisor/screen-1.png",
       "gallery": [
-        "/assets/apps/tripadvisor/screen-1.png",
-        "/assets/apps/tripadvisor/screen-2.png",
-        "/assets/apps/tripadvisor/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tripadvisor/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tripadvisor/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tripadvisor/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2557,14 +2557,14 @@
         "artifactVersion": 1,
         "downloadFileName": "tripadvisor-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/tripadvisor/screen-1.png",
-          "/assets/apps/tripadvisor/screen-2.png",
-          "/assets/apps/tripadvisor/screen-3.png",
-          "/assets/apps/tripadvisor/screen-4.png",
-          "/assets/apps/tripadvisor/screen-5.png",
-          "/assets/apps/tripadvisor/screen-6.png",
-          "/assets/apps/tripadvisor/screen-7.png",
-          "/assets/apps/tripadvisor/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tripadvisor/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tripadvisor/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tripadvisor/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tripadvisor/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tripadvisor/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tripadvisor/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tripadvisor/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tripadvisor/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2586,11 +2586,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "sNVbBXuMdk6H8cfVG9Gj45",
-      "thumbnail": "/assets/apps/kayak/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-1.png",
       "gallery": [
-        "/assets/apps/kayak/screen-1.png",
-        "/assets/apps/kayak/screen-2.png",
-        "/assets/apps/kayak/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2627,14 +2627,14 @@
         "artifactVersion": 1,
         "downloadFileName": "kayak-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/kayak/screen-1.png",
-          "/assets/apps/kayak/screen-2.png",
-          "/assets/apps/kayak/screen-3.png",
-          "/assets/apps/kayak/screen-4.png",
-          "/assets/apps/kayak/screen-5.png",
-          "/assets/apps/kayak/screen-6.png",
-          "/assets/apps/kayak/screen-7.png",
-          "/assets/apps/kayak/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2656,11 +2656,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "GTDbW2ip1Q9vXCdbCHY7gQ",
-      "thumbnail": "/assets/apps/hoteltonight/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-1.png",
       "gallery": [
-        "/assets/apps/hoteltonight/screen-1.png",
-        "/assets/apps/hoteltonight/screen-2.png",
-        "/assets/apps/hoteltonight/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-3.png"
       ],
       "includedScreens": 7,
       "includedComponents": [
@@ -2697,13 +2697,13 @@
         "artifactVersion": 1,
         "downloadFileName": "hoteltonight-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/hoteltonight/screen-1.png",
-          "/assets/apps/hoteltonight/screen-2.png",
-          "/assets/apps/hoteltonight/screen-3.png",
-          "/assets/apps/hoteltonight/screen-4.png",
-          "/assets/apps/hoteltonight/screen-5.png",
-          "/assets/apps/hoteltonight/screen-6.png",
-          "/assets/apps/hoteltonight/screen-7.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-7.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2725,11 +2725,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "YhCOJ6ZUoafEk1Dl4mc9a5",
-      "thumbnail": "/assets/apps/slack/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/slack/screen-1.png",
       "gallery": [
-        "/assets/apps/slack/screen-1.png",
-        "/assets/apps/slack/screen-2.png",
-        "/assets/apps/slack/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/slack/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/slack/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/slack/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2766,14 +2766,14 @@
         "artifactVersion": 1,
         "downloadFileName": "slack-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/slack/screen-1.png",
-          "/assets/apps/slack/screen-2.png",
-          "/assets/apps/slack/screen-3.png",
-          "/assets/apps/slack/screen-4.png",
-          "/assets/apps/slack/screen-5.png",
-          "/assets/apps/slack/screen-6.png",
-          "/assets/apps/slack/screen-7.png",
-          "/assets/apps/slack/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/slack/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/slack/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/slack/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/slack/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/slack/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/slack/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/slack/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/slack/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2795,11 +2795,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "BfQr9qOfclxC2mHYM7hBfQ",
-      "thumbnail": "/assets/apps/zoom/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-1.png",
       "gallery": [
-        "/assets/apps/zoom/screen-1.png",
-        "/assets/apps/zoom/screen-2.png",
-        "/assets/apps/zoom/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2836,14 +2836,14 @@
         "artifactVersion": 1,
         "downloadFileName": "zoom-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/zoom/screen-1.png",
-          "/assets/apps/zoom/screen-2.png",
-          "/assets/apps/zoom/screen-3.png",
-          "/assets/apps/zoom/screen-4.png",
-          "/assets/apps/zoom/screen-5.png",
-          "/assets/apps/zoom/screen-6.png",
-          "/assets/apps/zoom/screen-7.png",
-          "/assets/apps/zoom/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2865,11 +2865,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "YZsWGejlEIwXMKzDtQybnp",
-      "thumbnail": "/assets/apps/trello/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-1.png",
       "gallery": [
-        "/assets/apps/trello/screen-1.png",
-        "/assets/apps/trello/screen-2.png",
-        "/assets/apps/trello/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2906,14 +2906,14 @@
         "artifactVersion": 1,
         "downloadFileName": "trello-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/trello/screen-1.png",
-          "/assets/apps/trello/screen-2.png",
-          "/assets/apps/trello/screen-3.png",
-          "/assets/apps/trello/screen-4.png",
-          "/assets/apps/trello/screen-5.png",
-          "/assets/apps/trello/screen-6.png",
-          "/assets/apps/trello/screen-7.png",
-          "/assets/apps/trello/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2935,11 +2935,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "I8Dv3bp4Iuh7ax3gUyPSD5",
-      "thumbnail": "/assets/apps/notion/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/notion/screen-1.png",
       "gallery": [
-        "/assets/apps/notion/screen-1.png",
-        "/assets/apps/notion/screen-2.png",
-        "/assets/apps/notion/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/notion/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/notion/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/notion/screen-3.png"
       ],
       "includedScreens": 7,
       "includedComponents": [
@@ -2976,13 +2976,13 @@
         "artifactVersion": 1,
         "downloadFileName": "notion-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/notion/screen-1.png",
-          "/assets/apps/notion/screen-2.png",
-          "/assets/apps/notion/screen-3.png",
-          "/assets/apps/notion/screen-4.png",
-          "/assets/apps/notion/screen-5.png",
-          "/assets/apps/notion/screen-6.png",
-          "/assets/apps/notion/screen-7.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/notion/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/notion/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/notion/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/notion/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/notion/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/notion/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/notion/screen-7.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3004,11 +3004,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "AB6qw6iOYBuIubaZZiKCXQ",
-      "thumbnail": "/assets/apps/asana/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-1.png",
       "gallery": [
-        "/assets/apps/asana/screen-1.png",
-        "/assets/apps/asana/screen-2.png",
-        "/assets/apps/asana/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-3.png"
       ],
       "includedScreens": 7,
       "includedComponents": [
@@ -3045,13 +3045,13 @@
         "artifactVersion": 1,
         "downloadFileName": "asana-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/asana/screen-1.png",
-          "/assets/apps/asana/screen-2.png",
-          "/assets/apps/asana/screen-3.png",
-          "/assets/apps/asana/screen-4.png",
-          "/assets/apps/asana/screen-5.png",
-          "/assets/apps/asana/screen-6.png",
-          "/assets/apps/asana/screen-7.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-7.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3073,11 +3073,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "akDLr6s9JdMlXuIDPri40S",
-      "thumbnail": "/assets/apps/monday-com/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/monday-com/screen-1.png",
       "gallery": [
-        "/assets/apps/monday-com/screen-1.png",
-        "/assets/apps/monday-com/screen-2.png",
-        "/assets/apps/monday-com/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/monday-com/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/monday-com/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/monday-com/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -3114,14 +3114,14 @@
         "artifactVersion": 1,
         "downloadFileName": "monday-com-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/monday-com/screen-1.png",
-          "/assets/apps/monday-com/screen-2.png",
-          "/assets/apps/monday-com/screen-3.png",
-          "/assets/apps/monday-com/screen-4.png",
-          "/assets/apps/monday-com/screen-5.png",
-          "/assets/apps/monday-com/screen-6.png",
-          "/assets/apps/monday-com/screen-7.png",
-          "/assets/apps/monday-com/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/monday-com/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/monday-com/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/monday-com/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/monday-com/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/monday-com/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/monday-com/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/monday-com/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/monday-com/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3143,11 +3143,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "7yJfhXeoLQFP3vxQEmP1g9",
-      "thumbnail": "/assets/apps/linear/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linear/screen-1.png",
       "gallery": [
-        "/assets/apps/linear/screen-1.png",
-        "/assets/apps/linear/screen-2.png",
-        "/assets/apps/linear/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linear/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linear/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linear/screen-3.png"
       ],
       "includedScreens": 6,
       "includedComponents": [
@@ -3184,12 +3184,12 @@
         "artifactVersion": 1,
         "downloadFileName": "linear-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/linear/screen-1.png",
-          "/assets/apps/linear/screen-2.png",
-          "/assets/apps/linear/screen-3.png",
-          "/assets/apps/linear/screen-4.png",
-          "/assets/apps/linear/screen-5.png",
-          "/assets/apps/linear/screen-6.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linear/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linear/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linear/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linear/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linear/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linear/screen-6.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3211,11 +3211,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "hKa1xqrRS168F9uQ3FTWWF",
-      "thumbnail": "/assets/apps/loom/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-1.png",
       "gallery": [
-        "/assets/apps/loom/screen-1.png",
-        "/assets/apps/loom/screen-2.png",
-        "/assets/apps/loom/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-3.png"
       ],
       "includedScreens": 7,
       "includedComponents": [
@@ -3252,13 +3252,13 @@
         "artifactVersion": 1,
         "downloadFileName": "loom-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/loom/screen-1.png",
-          "/assets/apps/loom/screen-2.png",
-          "/assets/apps/loom/screen-3.png",
-          "/assets/apps/loom/screen-4.png",
-          "/assets/apps/loom/screen-5.png",
-          "/assets/apps/loom/screen-6.png",
-          "/assets/apps/loom/screen-7.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-7.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3280,11 +3280,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "SG4v9Vv28OLtKSSdVwPZ1O",
-      "thumbnail": "/assets/apps/headspace/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/headspace/screen-1.png",
       "gallery": [
-        "/assets/apps/headspace/screen-1.png",
-        "/assets/apps/headspace/screen-2.png",
-        "/assets/apps/headspace/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/headspace/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/headspace/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/headspace/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -3321,14 +3321,14 @@
         "artifactVersion": 1,
         "downloadFileName": "headspace-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/headspace/screen-1.png",
-          "/assets/apps/headspace/screen-2.png",
-          "/assets/apps/headspace/screen-3.png",
-          "/assets/apps/headspace/screen-4.png",
-          "/assets/apps/headspace/screen-5.png",
-          "/assets/apps/headspace/screen-6.png",
-          "/assets/apps/headspace/screen-7.png",
-          "/assets/apps/headspace/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/headspace/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/headspace/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/headspace/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/headspace/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/headspace/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/headspace/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/headspace/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/headspace/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3350,11 +3350,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "ls0gQpnLMRF7nVhL2FouN2",
-      "thumbnail": "/assets/apps/calm/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/calm/screen-1.png",
       "gallery": [
-        "/assets/apps/calm/screen-1.png",
-        "/assets/apps/calm/screen-2.png",
-        "/assets/apps/calm/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/calm/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/calm/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/calm/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -3391,14 +3391,14 @@
         "artifactVersion": 1,
         "downloadFileName": "calm-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/calm/screen-1.png",
-          "/assets/apps/calm/screen-2.png",
-          "/assets/apps/calm/screen-3.png",
-          "/assets/apps/calm/screen-4.png",
-          "/assets/apps/calm/screen-5.png",
-          "/assets/apps/calm/screen-6.png",
-          "/assets/apps/calm/screen-7.png",
-          "/assets/apps/calm/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/calm/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/calm/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/calm/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/calm/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/calm/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/calm/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/calm/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/calm/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3420,11 +3420,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "INdb1FAWaszhr1mhW08qIT",
-      "thumbnail": "/assets/apps/strava/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-1.png",
       "gallery": [
-        "/assets/apps/strava/screen-1.png",
-        "/assets/apps/strava/screen-2.png",
-        "/assets/apps/strava/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -3461,14 +3461,14 @@
         "artifactVersion": 1,
         "downloadFileName": "strava-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/strava/screen-1.png",
-          "/assets/apps/strava/screen-2.png",
-          "/assets/apps/strava/screen-3.png",
-          "/assets/apps/strava/screen-4.png",
-          "/assets/apps/strava/screen-5.png",
-          "/assets/apps/strava/screen-6.png",
-          "/assets/apps/strava/screen-7.png",
-          "/assets/apps/strava/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3490,11 +3490,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "8NoFNebsFj2Fd6iFnplYXl",
-      "thumbnail": "/assets/apps/nike-run-club/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike-run-club/screen-1.png",
       "gallery": [
-        "/assets/apps/nike-run-club/screen-1.png",
-        "/assets/apps/nike-run-club/screen-2.png",
-        "/assets/apps/nike-run-club/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike-run-club/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike-run-club/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike-run-club/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -3531,14 +3531,14 @@
         "artifactVersion": 1,
         "downloadFileName": "nike-run-club-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/nike-run-club/screen-1.png",
-          "/assets/apps/nike-run-club/screen-2.png",
-          "/assets/apps/nike-run-club/screen-3.png",
-          "/assets/apps/nike-run-club/screen-4.png",
-          "/assets/apps/nike-run-club/screen-5.png",
-          "/assets/apps/nike-run-club/screen-6.png",
-          "/assets/apps/nike-run-club/screen-7.png",
-          "/assets/apps/nike-run-club/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike-run-club/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike-run-club/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike-run-club/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike-run-club/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike-run-club/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike-run-club/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike-run-club/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike-run-club/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3560,11 +3560,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "72XKcKIl8phYccv5eV4YBT",
-      "thumbnail": "/assets/apps/myfitnesspal/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-1.png",
       "gallery": [
-        "/assets/apps/myfitnesspal/screen-1.png",
-        "/assets/apps/myfitnesspal/screen-2.png",
-        "/assets/apps/myfitnesspal/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -3601,14 +3601,14 @@
         "artifactVersion": 1,
         "downloadFileName": "myfitnesspal-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/myfitnesspal/screen-1.png",
-          "/assets/apps/myfitnesspal/screen-2.png",
-          "/assets/apps/myfitnesspal/screen-3.png",
-          "/assets/apps/myfitnesspal/screen-4.png",
-          "/assets/apps/myfitnesspal/screen-5.png",
-          "/assets/apps/myfitnesspal/screen-6.png",
-          "/assets/apps/myfitnesspal/screen-7.png",
-          "/assets/apps/myfitnesspal/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3630,11 +3630,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "gKFaqhyylPtJUKud7RT5WL",
-      "thumbnail": "/assets/apps/fitbit/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-1.png",
       "gallery": [
-        "/assets/apps/fitbit/screen-1.png",
-        "/assets/apps/fitbit/screen-2.png",
-        "/assets/apps/fitbit/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-3.png"
       ],
       "includedScreens": 6,
       "includedComponents": [
@@ -3671,12 +3671,12 @@
         "artifactVersion": 1,
         "downloadFileName": "fitbit-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/fitbit/screen-1.png",
-          "/assets/apps/fitbit/screen-2.png",
-          "/assets/apps/fitbit/screen-3.png",
-          "/assets/apps/fitbit/screen-4.png",
-          "/assets/apps/fitbit/screen-5.png",
-          "/assets/apps/fitbit/screen-6.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-6.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3698,11 +3698,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "BqbumVee0jTJAGE8HZZOif",
-      "thumbnail": "/assets/apps/flo/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-1.png",
       "gallery": [
-        "/assets/apps/flo/screen-1.png",
-        "/assets/apps/flo/screen-2.png",
-        "/assets/apps/flo/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -3739,14 +3739,14 @@
         "artifactVersion": 1,
         "downloadFileName": "flo-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/flo/screen-1.png",
-          "/assets/apps/flo/screen-2.png",
-          "/assets/apps/flo/screen-3.png",
-          "/assets/apps/flo/screen-4.png",
-          "/assets/apps/flo/screen-5.png",
-          "/assets/apps/flo/screen-6.png",
-          "/assets/apps/flo/screen-7.png",
-          "/assets/apps/flo/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3768,11 +3768,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "IT67Mv1sQCsLXnD1IoWFWa",
-      "thumbnail": "/assets/apps/sleep-cycle/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-1.png",
       "gallery": [
-        "/assets/apps/sleep-cycle/screen-1.png",
-        "/assets/apps/sleep-cycle/screen-2.png",
-        "/assets/apps/sleep-cycle/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -3809,14 +3809,14 @@
         "artifactVersion": 1,
         "downloadFileName": "sleep-cycle-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/sleep-cycle/screen-1.png",
-          "/assets/apps/sleep-cycle/screen-2.png",
-          "/assets/apps/sleep-cycle/screen-3.png",
-          "/assets/apps/sleep-cycle/screen-4.png",
-          "/assets/apps/sleep-cycle/screen-5.png",
-          "/assets/apps/sleep-cycle/screen-6.png",
-          "/assets/apps/sleep-cycle/screen-7.png",
-          "/assets/apps/sleep-cycle/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3838,11 +3838,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "oJmv5djBOIvWZPH7LdnARJ",
-      "thumbnail": "/assets/apps/spotify/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/spotify/screen-1.png",
       "gallery": [
-        "/assets/apps/spotify/screen-1.png",
-        "/assets/apps/spotify/screen-2.png",
-        "/assets/apps/spotify/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/spotify/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/spotify/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/spotify/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -3879,14 +3879,14 @@
         "artifactVersion": 1,
         "downloadFileName": "spotify-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/spotify/screen-1.png",
-          "/assets/apps/spotify/screen-2.png",
-          "/assets/apps/spotify/screen-3.png",
-          "/assets/apps/spotify/screen-4.png",
-          "/assets/apps/spotify/screen-5.png",
-          "/assets/apps/spotify/screen-6.png",
-          "/assets/apps/spotify/screen-7.png",
-          "/assets/apps/spotify/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/spotify/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/spotify/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/spotify/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/spotify/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/spotify/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/spotify/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/spotify/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/spotify/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3908,11 +3908,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "QQhpVpgHSAi9GD2Ckt5T5c",
-      "thumbnail": "/assets/apps/apple-music/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/apple-music/screen-1.png",
       "gallery": [
-        "/assets/apps/apple-music/screen-1.png",
-        "/assets/apps/apple-music/screen-2.png",
-        "/assets/apps/apple-music/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/apple-music/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/apple-music/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/apple-music/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -3949,14 +3949,14 @@
         "artifactVersion": 1,
         "downloadFileName": "apple-music-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/apple-music/screen-1.png",
-          "/assets/apps/apple-music/screen-2.png",
-          "/assets/apps/apple-music/screen-3.png",
-          "/assets/apps/apple-music/screen-4.png",
-          "/assets/apps/apple-music/screen-5.png",
-          "/assets/apps/apple-music/screen-6.png",
-          "/assets/apps/apple-music/screen-7.png",
-          "/assets/apps/apple-music/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/apple-music/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/apple-music/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/apple-music/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/apple-music/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/apple-music/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/apple-music/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/apple-music/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/apple-music/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3978,11 +3978,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "azVKVDi6OXyQWBewSfAWJM",
-      "thumbnail": "/assets/apps/soundcloud/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/soundcloud/screen-1.png",
       "gallery": [
-        "/assets/apps/soundcloud/screen-1.png",
-        "/assets/apps/soundcloud/screen-2.png",
-        "/assets/apps/soundcloud/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/soundcloud/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/soundcloud/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/soundcloud/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -4019,14 +4019,14 @@
         "artifactVersion": 1,
         "downloadFileName": "soundcloud-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/soundcloud/screen-1.png",
-          "/assets/apps/soundcloud/screen-2.png",
-          "/assets/apps/soundcloud/screen-3.png",
-          "/assets/apps/soundcloud/screen-4.png",
-          "/assets/apps/soundcloud/screen-5.png",
-          "/assets/apps/soundcloud/screen-6.png",
-          "/assets/apps/soundcloud/screen-7.png",
-          "/assets/apps/soundcloud/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/soundcloud/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/soundcloud/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/soundcloud/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/soundcloud/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/soundcloud/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/soundcloud/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/soundcloud/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/soundcloud/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4048,11 +4048,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "hj0COPQtUGokxoHxqxnM8X",
-      "thumbnail": "/assets/apps/tidal/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-1.png",
       "gallery": [
-        "/assets/apps/tidal/screen-1.png",
-        "/assets/apps/tidal/screen-2.png",
-        "/assets/apps/tidal/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-3.png"
       ],
       "includedScreens": 6,
       "includedComponents": [
@@ -4089,10 +4089,10 @@
         "artifactVersion": 1,
         "downloadFileName": "tidal-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/tidal/screen-1.png",
-          "/assets/apps/tidal/screen-2.png",
-          "/assets/apps/tidal/screen-3.png",
-          "/assets/apps/tidal/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-4.png",
           "/assets/publish-ready/apps/tidal/rescue-screen-1.jpg",
           "/assets/publish-ready/apps/tidal/rescue-screen-2.jpg"
         ],
@@ -4116,11 +4116,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "L2aUhEBc4K9st2B2FvNKRG",
-      "thumbnail": "/assets/apps/deezer/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-1.png",
       "gallery": [
-        "/assets/apps/deezer/screen-1.png",
-        "/assets/apps/deezer/screen-2.png",
-        "/assets/apps/deezer/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -4157,14 +4157,14 @@
         "artifactVersion": 1,
         "downloadFileName": "deezer-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/deezer/screen-1.png",
-          "/assets/apps/deezer/screen-2.png",
-          "/assets/apps/deezer/screen-3.png",
-          "/assets/apps/deezer/screen-4.png",
-          "/assets/apps/deezer/screen-5.png",
-          "/assets/apps/deezer/screen-6.png",
-          "/assets/apps/deezer/screen-7.png",
-          "/assets/apps/deezer/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4186,11 +4186,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "VKUjPUJ4M2huFWsUKkwhl6",
-      "thumbnail": "/assets/apps/pandora/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-1.png",
       "gallery": [
-        "/assets/apps/pandora/screen-1.png",
-        "/assets/apps/pandora/screen-2.png",
-        "/assets/apps/pandora/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -4227,14 +4227,14 @@
         "artifactVersion": 1,
         "downloadFileName": "pandora-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/pandora/screen-1.png",
-          "/assets/apps/pandora/screen-2.png",
-          "/assets/apps/pandora/screen-3.png",
-          "/assets/apps/pandora/screen-4.png",
-          "/assets/apps/pandora/screen-5.png",
-          "/assets/apps/pandora/screen-6.png",
-          "/assets/apps/pandora/screen-7.png",
-          "/assets/apps/pandora/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4256,11 +4256,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "uM11NkFjHHHQA6BA3MOZTD",
-      "thumbnail": "/assets/apps/shazam/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shazam/screen-1.png",
       "gallery": [
-        "/assets/apps/shazam/screen-1.png",
-        "/assets/apps/shazam/screen-2.png",
-        "/assets/apps/shazam/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shazam/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shazam/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shazam/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -4297,14 +4297,14 @@
         "artifactVersion": 1,
         "downloadFileName": "shazam-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/shazam/screen-1.png",
-          "/assets/apps/shazam/screen-2.png",
-          "/assets/apps/shazam/screen-3.png",
-          "/assets/apps/shazam/screen-4.png",
-          "/assets/apps/shazam/screen-5.png",
-          "/assets/apps/shazam/screen-6.png",
-          "/assets/apps/shazam/screen-7.png",
-          "/assets/apps/shazam/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shazam/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shazam/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shazam/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shazam/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shazam/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shazam/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shazam/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shazam/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4326,11 +4326,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "w9XIzulDYS5DdfSfa4ECPV",
-      "thumbnail": "/assets/apps/duolingo/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-1.png",
       "gallery": [
-        "/assets/apps/duolingo/screen-1.png",
-        "/assets/apps/duolingo/screen-2.png",
-        "/assets/apps/duolingo/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -4367,14 +4367,14 @@
         "artifactVersion": 1,
         "downloadFileName": "duolingo-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/duolingo/screen-1.png",
-          "/assets/apps/duolingo/screen-2.png",
-          "/assets/apps/duolingo/screen-3.png",
-          "/assets/apps/duolingo/screen-4.png",
-          "/assets/apps/duolingo/screen-5.png",
-          "/assets/apps/duolingo/screen-6.png",
-          "/assets/apps/duolingo/screen-7.png",
-          "/assets/apps/duolingo/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4396,11 +4396,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "KCw4PyMuPofqQUtxKwAOVi",
-      "thumbnail": "/assets/apps/coursera/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coursera/screen-1.png",
       "gallery": [
-        "/assets/apps/coursera/screen-1.png",
-        "/assets/apps/coursera/screen-2.png",
-        "/assets/apps/coursera/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coursera/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coursera/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coursera/screen-3.png"
       ],
       "includedScreens": 6,
       "includedComponents": [
@@ -4437,11 +4437,11 @@
         "artifactVersion": 1,
         "downloadFileName": "coursera-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/coursera/screen-1.png",
-          "/assets/apps/coursera/screen-2.png",
-          "/assets/apps/coursera/screen-3.png",
-          "/assets/apps/coursera/screen-4.png",
-          "/assets/apps/coursera/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coursera/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coursera/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coursera/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coursera/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coursera/screen-5.png",
           "/assets/publish-ready/apps/coursera/rescue-screen-1.png"
         ],
         "includes": [
@@ -4464,11 +4464,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "f5yBnHDK9ZNGE8Ig4xbSsj",
-      "thumbnail": "/assets/apps/masterclass/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/masterclass/screen-1.png",
       "gallery": [
-        "/assets/apps/masterclass/screen-1.png",
-        "/assets/apps/masterclass/screen-2.png",
-        "/assets/apps/masterclass/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/masterclass/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/masterclass/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/masterclass/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -4505,14 +4505,14 @@
         "artifactVersion": 1,
         "downloadFileName": "masterclass-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/masterclass/screen-1.png",
-          "/assets/apps/masterclass/screen-2.png",
-          "/assets/apps/masterclass/screen-3.png",
-          "/assets/apps/masterclass/screen-4.png",
-          "/assets/apps/masterclass/screen-5.png",
-          "/assets/apps/masterclass/screen-6.png",
-          "/assets/apps/masterclass/screen-7.png",
-          "/assets/apps/masterclass/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/masterclass/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/masterclass/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/masterclass/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/masterclass/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/masterclass/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/masterclass/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/masterclass/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/masterclass/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4534,11 +4534,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "F6ddvGF3JkXUqJh16aSxWM",
-      "thumbnail": "/assets/apps/udemy/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-1.png",
       "gallery": [
-        "/assets/apps/udemy/screen-1.png",
-        "/assets/apps/udemy/screen-2.png",
-        "/assets/apps/udemy/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -4575,14 +4575,14 @@
         "artifactVersion": 1,
         "downloadFileName": "udemy-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/udemy/screen-1.png",
-          "/assets/apps/udemy/screen-2.png",
-          "/assets/apps/udemy/screen-3.png",
-          "/assets/apps/udemy/screen-4.png",
-          "/assets/apps/udemy/screen-5.png",
-          "/assets/apps/udemy/screen-6.png",
-          "/assets/apps/udemy/screen-7.png",
-          "/assets/apps/udemy/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4604,11 +4604,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "tqz970UaYJDCr7b2csHVmp",
-      "thumbnail": "/assets/apps/khan-academy/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/khan-academy/screen-1.png",
       "gallery": [
-        "/assets/apps/khan-academy/screen-1.png",
-        "/assets/apps/khan-academy/screen-2.png",
-        "/assets/apps/khan-academy/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/khan-academy/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/khan-academy/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/khan-academy/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -4645,14 +4645,14 @@
         "artifactVersion": 1,
         "downloadFileName": "khan-academy-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/khan-academy/screen-1.png",
-          "/assets/apps/khan-academy/screen-2.png",
-          "/assets/apps/khan-academy/screen-3.png",
-          "/assets/apps/khan-academy/screen-4.png",
-          "/assets/apps/khan-academy/screen-5.png",
-          "/assets/apps/khan-academy/screen-6.png",
-          "/assets/apps/khan-academy/screen-7.png",
-          "/assets/apps/khan-academy/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/khan-academy/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/khan-academy/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/khan-academy/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/khan-academy/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/khan-academy/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/khan-academy/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/khan-academy/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/khan-academy/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4674,11 +4674,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "3WH73htwuybxonNYLJ14rJ",
-      "thumbnail": "/assets/apps/skillshare/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skillshare/screen-1.png",
       "gallery": [
-        "/assets/apps/skillshare/screen-1.png",
-        "/assets/apps/skillshare/screen-2.png",
-        "/assets/apps/skillshare/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skillshare/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skillshare/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skillshare/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -4715,14 +4715,14 @@
         "artifactVersion": 1,
         "downloadFileName": "skillshare-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/skillshare/screen-1.png",
-          "/assets/apps/skillshare/screen-2.png",
-          "/assets/apps/skillshare/screen-3.png",
-          "/assets/apps/skillshare/screen-4.png",
-          "/assets/apps/skillshare/screen-5.png",
-          "/assets/apps/skillshare/screen-6.png",
-          "/assets/apps/skillshare/screen-7.png",
-          "/assets/apps/skillshare/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skillshare/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skillshare/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skillshare/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skillshare/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skillshare/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skillshare/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skillshare/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skillshare/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4744,11 +4744,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "bjL0VTlJoLst9Q0lOoE914",
-      "thumbnail": "/assets/apps/babbel/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-1.png",
       "gallery": [
-        "/assets/apps/babbel/screen-1.png",
-        "/assets/apps/babbel/screen-2.png",
-        "/assets/apps/babbel/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -4785,14 +4785,14 @@
         "artifactVersion": 1,
         "downloadFileName": "babbel-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/babbel/screen-1.png",
-          "/assets/apps/babbel/screen-2.png",
-          "/assets/apps/babbel/screen-3.png",
-          "/assets/apps/babbel/screen-4.png",
-          "/assets/apps/babbel/screen-5.png",
-          "/assets/apps/babbel/screen-6.png",
-          "/assets/apps/babbel/screen-7.png",
-          "/assets/apps/babbel/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4814,11 +4814,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "aXfYJrvhSa9Sh5gmydr8aF",
-      "thumbnail": "/assets/apps/the-new-york-times/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/the-new-york-times/screen-1.png",
       "gallery": [
-        "/assets/apps/the-new-york-times/screen-1.png",
-        "/assets/apps/the-new-york-times/screen-2.png",
-        "/assets/apps/the-new-york-times/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/the-new-york-times/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/the-new-york-times/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/the-new-york-times/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -4855,14 +4855,14 @@
         "artifactVersion": 1,
         "downloadFileName": "the-new-york-times-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/the-new-york-times/screen-1.png",
-          "/assets/apps/the-new-york-times/screen-2.png",
-          "/assets/apps/the-new-york-times/screen-3.png",
-          "/assets/apps/the-new-york-times/screen-4.png",
-          "/assets/apps/the-new-york-times/screen-5.png",
-          "/assets/apps/the-new-york-times/screen-6.png",
-          "/assets/apps/the-new-york-times/screen-7.png",
-          "/assets/apps/the-new-york-times/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/the-new-york-times/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/the-new-york-times/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/the-new-york-times/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/the-new-york-times/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/the-new-york-times/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/the-new-york-times/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/the-new-york-times/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/the-new-york-times/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4884,11 +4884,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "QJE304CBjIWEXYMgMIxKGb",
-      "thumbnail": "/assets/apps/bbc-news/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bbc-news/screen-1.png",
       "gallery": [
-        "/assets/apps/bbc-news/screen-1.png",
-        "/assets/apps/bbc-news/screen-2.png",
-        "/assets/apps/bbc-news/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bbc-news/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bbc-news/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bbc-news/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -4925,14 +4925,14 @@
         "artifactVersion": 1,
         "downloadFileName": "bbc-news-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/bbc-news/screen-1.png",
-          "/assets/apps/bbc-news/screen-2.png",
-          "/assets/apps/bbc-news/screen-3.png",
-          "/assets/apps/bbc-news/screen-4.png",
-          "/assets/apps/bbc-news/screen-5.png",
-          "/assets/apps/bbc-news/screen-6.png",
-          "/assets/apps/bbc-news/screen-7.png",
-          "/assets/apps/bbc-news/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bbc-news/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bbc-news/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bbc-news/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bbc-news/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bbc-news/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bbc-news/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bbc-news/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bbc-news/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4954,11 +4954,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "RTMwxXJET35EiwbWOaLt5r",
-      "thumbnail": "/assets/apps/cnn/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/cnn/screen-1.png",
       "gallery": [
-        "/assets/apps/cnn/screen-1.png",
-        "/assets/apps/cnn/screen-2.png",
-        "/assets/apps/cnn/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/cnn/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/cnn/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/cnn/screen-3.png"
       ],
       "includedScreens": 6,
       "includedComponents": [
@@ -4995,11 +4995,11 @@
         "artifactVersion": 1,
         "downloadFileName": "cnn-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/cnn/screen-1.png",
-          "/assets/apps/cnn/screen-2.png",
-          "/assets/apps/cnn/screen-3.png",
-          "/assets/apps/cnn/screen-4.png",
-          "/assets/apps/cnn/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/cnn/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/cnn/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/cnn/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/cnn/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/cnn/screen-5.png",
           "/assets/publish-ready/apps/cnn/rescue-screen-1.jpg"
         ],
         "includes": [
@@ -5022,11 +5022,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "QbrN7DcYiiMEx0Y1sml8uS",
-      "thumbnail": "/assets/apps/reuters/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-1.png",
       "gallery": [
-        "/assets/apps/reuters/screen-1.png",
-        "/assets/apps/reuters/screen-2.png",
-        "/assets/apps/reuters/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -5063,14 +5063,14 @@
         "artifactVersion": 1,
         "downloadFileName": "reuters-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/reuters/screen-1.png",
-          "/assets/apps/reuters/screen-2.png",
-          "/assets/apps/reuters/screen-3.png",
-          "/assets/apps/reuters/screen-4.png",
-          "/assets/apps/reuters/screen-5.png",
-          "/assets/apps/reuters/screen-6.png",
-          "/assets/apps/reuters/screen-7.png",
-          "/assets/apps/reuters/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -5092,11 +5092,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "8aJDuRIUFr9CIG2OZewLxq",
-      "thumbnail": "/assets/apps/flipboard/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flipboard/screen-1.png",
       "gallery": [
-        "/assets/apps/flipboard/screen-1.png",
-        "/assets/apps/flipboard/screen-2.png",
-        "/assets/apps/flipboard/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flipboard/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flipboard/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flipboard/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -5133,14 +5133,14 @@
         "artifactVersion": 1,
         "downloadFileName": "flipboard-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/flipboard/screen-1.png",
-          "/assets/apps/flipboard/screen-2.png",
-          "/assets/apps/flipboard/screen-3.png",
-          "/assets/apps/flipboard/screen-4.png",
-          "/assets/apps/flipboard/screen-5.png",
-          "/assets/apps/flipboard/screen-6.png",
-          "/assets/apps/flipboard/screen-7.png",
-          "/assets/apps/flipboard/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flipboard/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flipboard/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flipboard/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flipboard/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flipboard/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flipboard/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flipboard/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flipboard/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -5162,11 +5162,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "HGsR3DrfyQlZXYkkRmdN1F",
-      "thumbnail": "/assets/apps/substack/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-1.png",
       "gallery": [
-        "/assets/apps/substack/screen-1.png",
-        "/assets/apps/substack/screen-2.png",
-        "/assets/apps/substack/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -5203,14 +5203,14 @@
         "artifactVersion": 1,
         "downloadFileName": "substack-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/substack/screen-1.png",
-          "/assets/apps/substack/screen-2.png",
-          "/assets/apps/substack/screen-3.png",
-          "/assets/apps/substack/screen-4.png",
-          "/assets/apps/substack/screen-5.png",
-          "/assets/apps/substack/screen-6.png",
-          "/assets/apps/substack/screen-7.png",
-          "/assets/apps/substack/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -5232,11 +5232,11 @@
       "type": "flow-kit",
       "status": "published",
       "figmaFileKey": "cJnbRMy4cBl8JlFBSSh1oQ",
-      "thumbnail": "/assets/apps/pocket/screen-1.png",
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-1.png",
       "gallery": [
-        "/assets/apps/pocket/screen-1.png",
-        "/assets/apps/pocket/screen-2.png",
-        "/assets/apps/pocket/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-1.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-2.png",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-3.png"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -5273,14 +5273,14 @@
         "artifactVersion": 1,
         "downloadFileName": "pocket-figma-kit-delivery-pack.json",
         "previewImages": [
-          "/assets/apps/pocket/screen-1.png",
-          "/assets/apps/pocket/screen-2.png",
-          "/assets/apps/pocket/screen-3.png",
-          "/assets/apps/pocket/screen-4.png",
-          "/assets/apps/pocket/screen-5.png",
-          "/assets/apps/pocket/screen-6.png",
-          "/assets/apps/pocket/screen-7.png",
-          "/assets/apps/pocket/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-1.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-2.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-3.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-5.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-6.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-8.png"
         ],
         "includes": [
           "Editable Figma flow file",

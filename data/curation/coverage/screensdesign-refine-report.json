@@ -19,7 +19,7 @@
     {
       "slug": "stockx",
       "fileName": "screen-1.png",
-      "sourcePublicPath": "/assets/apps/stockx/screen-1.png",
+      "sourcePublicPath": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-1.png",
       "outputPublicPath": "/assets/publish-ready/apps/stockx/screen-1.png",
       "status": "dry-run",
       "sourceSizeBytes": 28840,
@@ -32,7 +32,7 @@
     {
       "slug": "stockx",
       "fileName": "screen-2.png",
-      "sourcePublicPath": "/assets/apps/stockx/screen-2.png",
+      "sourcePublicPath": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-2.png",
       "outputPublicPath": "/assets/publish-ready/apps/stockx/screen-2.png",
       "status": "dry-run",
       "sourceSizeBytes": 20778,
@@ -45,7 +45,7 @@
     {
       "slug": "stockx",
       "fileName": "screen-3.png",
-      "sourcePublicPath": "/assets/apps/stockx/screen-3.png",
+      "sourcePublicPath": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-3.png",
       "outputPublicPath": "/assets/publish-ready/apps/stockx/screen-3.png",
       "status": "dry-run",
       "sourceSizeBytes": 28350,
@@ -58,7 +58,7 @@
     {
       "slug": "stockx",
       "fileName": "screen-4.png",
-      "sourcePublicPath": "/assets/apps/stockx/screen-4.png",
+      "sourcePublicPath": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-4.png",
       "outputPublicPath": "/assets/publish-ready/apps/stockx/screen-4.png",
       "status": "dry-run",
       "sourceSizeBytes": 19612,
@@ -71,7 +71,7 @@
     {
       "slug": "stockx",
       "fileName": "screen-5.png",
-      "sourcePublicPath": "/assets/apps/stockx/screen-5.png",
+      "sourcePublicPath": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-5.png",
       "outputPublicPath": "/assets/publish-ready/apps/stockx/screen-5.png",
       "status": "dry-run",
       "sourceSizeBytes": 17142,
@@ -84,7 +84,7 @@
     {
       "slug": "stockx",
       "fileName": "screen-6.png",
-      "sourcePublicPath": "/assets/apps/stockx/screen-6.png",
+      "sourcePublicPath": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-6.png",
       "outputPublicPath": "/assets/publish-ready/apps/stockx/screen-6.png",
       "status": "dry-run",
       "sourceSizeBytes": 15654,
@@ -97,7 +97,7 @@
     {
       "slug": "stockx",
       "fileName": "screen-7.png",
-      "sourcePublicPath": "/assets/apps/stockx/screen-7.png",
+      "sourcePublicPath": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-7.png",
       "outputPublicPath": "/assets/publish-ready/apps/stockx/screen-7.png",
       "status": "dry-run",
       "sourceSizeBytes": 19874,
