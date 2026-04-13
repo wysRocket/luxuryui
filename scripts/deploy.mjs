@@ -70,6 +70,25 @@ server.stderr.on('data', (d) => {
     if (msg.trim()) console.error('[stderr]', msg.trim());
 });
 
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+async function callDeployTool() {
+    sendMessage({
+        jsonrpc: '2.0',
+        id: messageId,
+        method: 'tools/call',
+        params: {
+            name: 'hosting_deployStaticWebsite',
+            arguments: {
+                domain: DOMAIN,
+                archivePath: ARCHIVE_PATH,
+                removeArchive: false,
+            },
+        },
+    });
+    return waitForResponse(messageId);
+}
+
 async function run() {
     let exitCode = 0;
 
@@ -93,27 +112,27 @@ async function run() {
         sendMessage({ jsonrpc: '2.0', method: 'notifications/initialized' });
         messageId++;
 
-        // Call hosting_deployStaticWebsite
-        console.log('Calling hosting_deployStaticWebsite...');
-        sendMessage({
-            jsonrpc: '2.0',
-            id: messageId,
-            method: 'tools/call',
-            params: {
-                name: 'hosting_deployStaticWebsite',
-                arguments: {
-                    domain: DOMAIN,
-                    archivePath: ARCHIVE_PATH,
-                    removeArchive: false,
-                },
-            },
-        });
+        // Call hosting_deployStaticWebsite with retry for transient 500 errors
+        const MAX_ATTEMPTS = 3;
+        const RETRY_DELAY_MS = 10000;
+        let lastError;
 
-        const deployResponse = await waitForResponse(messageId);
-        if (deployResponse.error) {
-            console.error('Deploy error:', JSON.stringify(deployResponse.error, null, 2));
-            exitCode = 1;
-        } else {
+        for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+            if (attempt > 1) {
+                console.log(`Retrying deploy (attempt ${attempt}/${MAX_ATTEMPTS}) after ${RETRY_DELAY_MS / 1000}s delay...`);
+                await sleep(RETRY_DELAY_MS);
+                messageId++;
+            }
+
+            console.log(`Calling hosting_deployStaticWebsite (attempt ${attempt}/${MAX_ATTEMPTS})...`);
+            const deployResponse = await callDeployTool();
+
+            if (deployResponse.error) {
+                console.error('Deploy error:', JSON.stringify(deployResponse.error, null, 2));
+                lastError = new Error(`MCP error: ${JSON.stringify(deployResponse.error)}`);
+                continue;
+            }
+
             console.log('Deploy result:', JSON.stringify(deployResponse.result, null, 2));
 
             const payload = parseToolPayload(deployResponse.result);
@@ -121,9 +140,26 @@ async function run() {
                 throw new Error('Hostinger tool response did not include a JSON payload.');
             }
 
+            // Upload succeeded — if deploy fails with "Archive not found" (transient), retry
+            if (payload.upload?.status === 'success' && payload.deploy?.status !== 'success') {
+                const errMsg = typeof payload.deploy?.error === 'string'
+                    ? payload.deploy.error
+                    : JSON.stringify(payload.deploy?.error ?? payload.deploy);
+                const isTransient = errMsg.includes('500') || errMsg.includes('Archive not found');
+                if (isTransient && attempt < MAX_ATTEMPTS) {
+                    console.log(`Deploy trigger failed (transient): ${errMsg}`);
+                    lastError = new Error(`deploy failed: ${errMsg}`);
+                    continue;
+                }
+            }
+
             assertSuccessfulStep('upload', payload.upload);
             assertSuccessfulStep('deploy', payload.deploy);
+            lastError = null;
+            break;
         }
+
+        if (lastError) throw lastError;
     } catch (err) {
         console.error('Unexpected error:', err);
         exitCode = 1;
