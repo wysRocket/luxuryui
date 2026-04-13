@@ -8,7 +8,7 @@ const API_TOKEN = process.env.HOSTINGER_API_TOKEN;
 const BASE_URL = process.env.HOSTINGER_API_BASE_URL || 'https://developers.hostinger.com/';
 const DOMAIN = process.env.HOSTINGER_DOMAIN || 'luxuryuilib.com';
 const ARCHIVE_PATH = process.env.ARCHIVE_PATH || './dist.zip';
-const INITIAL_DEPLOY_DELAY_MS = Number(process.env.HOSTINGER_INITIAL_DEPLOY_DELAY_MS || 120000);
+const INITIAL_DEPLOY_DELAY_MS = Number(process.env.HOSTINGER_INITIAL_DEPLOY_DELAY_MS || 15000);
 const DEPLOY_RETRY_DELAY_MS = Number(process.env.HOSTINGER_DEPLOY_RETRY_DELAY_MS || 30000);
 const MAX_DEPLOY_ATTEMPTS = Number(process.env.HOSTINGER_DEPLOY_MAX_ATTEMPTS || 10);
 const DEPLOY_REQUEST_TIMEOUT_MS = Number(process.env.HOSTINGER_DEPLOY_REQUEST_TIMEOUT_MS || 180000);
@@ -183,7 +183,8 @@ async function triggerDeploy(username, domain, remoteArchiveName) {
         url: buildApiUrl(`api/hosting/v1/accounts/${username}/websites/${domain}/deploy`),
         headers: requestHeaders,
         data: {
-            archive_path: path.basename(remoteArchiveName),
+            // Upload URL puts files in public_html/, so archive lands at public_html/dist.zip
+            archive_path: `public_html/${path.basename(remoteArchiveName)}`,
         },
         timeout: DEPLOY_REQUEST_TIMEOUT_MS,
         validateStatus: (status) => status < 500,
