@@ -41,12 +41,38 @@ async function waitForResponse(id) {
     });
 }
 
+function parseToolPayload(result) {
+    const text = result?.content?.find((item) => item?.type === 'text')?.text;
+    if (!text) return null;
+
+    try {
+        return JSON.parse(text);
+    } catch (error) {
+        throw new Error(`Failed to parse Hostinger response payload: ${error.message}`);
+    }
+}
+
+function assertSuccessfulStep(stepName, step) {
+    if (!step) {
+        throw new Error(`Hostinger response is missing the "${stepName}" section.`);
+    }
+
+    if (step.status !== 'success') {
+        const details = step.error ?? step.data ?? step.message ?? step;
+        throw new Error(
+            `${stepName} failed: ${typeof details === 'string' ? details : JSON.stringify(details, null, 2)}`
+        );
+    }
+}
+
 server.stderr.on('data', (d) => {
     const msg = d.toString();
     if (msg.trim()) console.error('[stderr]', msg.trim());
 });
 
 async function run() {
+    let exitCode = 0;
+
     try {
         // Initialize
         sendMessage({
@@ -86,16 +112,25 @@ async function run() {
         const deployResponse = await waitForResponse(messageId);
         if (deployResponse.error) {
             console.error('Deploy error:', JSON.stringify(deployResponse.error, null, 2));
-            process.exit(1);
+            exitCode = 1;
         } else {
             console.log('Deploy result:', JSON.stringify(deployResponse.result, null, 2));
+
+            const payload = parseToolPayload(deployResponse.result);
+            if (!payload) {
+                throw new Error('Hostinger tool response did not include a JSON payload.');
+            }
+
+            assertSuccessfulStep('upload', payload.upload);
+            assertSuccessfulStep('deploy', payload.deploy);
         }
     } catch (err) {
         console.error('Unexpected error:', err);
-        process.exit(1);
+        exitCode = 1;
     } finally {
+        rl.close();
         server.kill();
-        process.exit(0);
+        process.exit(exitCode);
     }
 }
 
