@@ -24,9 +24,15 @@ jobs:
       - name: Build Production Bundle
         run: npm run build
 
+      - name: Create Timestamped Static Archive
+        run: |
+          ARCHIVE_NAME="luxuryui_$(date -u +%Y%m%d_%H%M%S).zip"
+          cd dist
+          zip -r "../${ARCHIVE_NAME}" .
+          echo "HOSTINGER_STATIC_PATH=./${ARCHIVE_NAME}" >> "$GITHUB_ENV"
+
       - name: Deploy via Hostinger CLI
         env:
           HOSTINGER_API_TOKEN: ${{ secrets.HOSTINGER_API_TOKEN }}
           HOSTINGER_DOMAIN: luxuryuilib.com
-          HOSTINGER_STATIC_PATH: ./dist
         run: node scripts/hostinger-mcp-deploy.mjs
