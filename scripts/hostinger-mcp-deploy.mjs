@@ -7,9 +7,19 @@ const API_TOKEN = process.env.HOSTINGER_API_TOKEN;
 const DOMAIN = process.env.HOSTINGER_DOMAIN || 'luxuryuilib.com';
 const STATIC_PATH = process.env.HOSTINGER_STATIC_PATH || './dist';
 const HOSTINGER_MCP_VERSION = process.env.HOSTINGER_MCP_VERSION || '0.1.36';
-const RESPONSE_TIMEOUT_MS = Number(process.env.HOSTINGER_MCP_RESPONSE_TIMEOUT_MS || 60000);
-const TOOL_CALL_RETRY_DELAY_MS = Number(process.env.HOSTINGER_MCP_RETRY_DELAY_MS || 30000);
-const MAX_TOOL_CALL_ATTEMPTS = Number(process.env.HOSTINGER_MCP_MAX_ATTEMPTS || 4);
+const parsePositiveEnvNumber = (name, fallback) => {
+    const raw = process.env[name];
+    const value = Number(raw ?? fallback);
+    if (!Number.isFinite(value) || value <= 0) {
+        console.error(`Error: ${name} must be a finite number greater than 0. Received: ${raw ?? fallback}`);
+        process.exit(1);
+    }
+    return value;
+};
+
+const RESPONSE_TIMEOUT_MS = parsePositiveEnvNumber('HOSTINGER_MCP_RESPONSE_TIMEOUT_MS', 60000);
+const TOOL_CALL_RETRY_DELAY_MS = parsePositiveEnvNumber('HOSTINGER_MCP_RETRY_DELAY_MS', 30000);
+const MAX_TOOL_CALL_ATTEMPTS = parsePositiveEnvNumber('HOSTINGER_MCP_MAX_ATTEMPTS', 4);
 
 if (!API_TOKEN) {
     console.error('Error: HOSTINGER_API_TOKEN environment variable is missing.');
@@ -135,14 +145,18 @@ function assertSuccessfulStep(stepName, step) {
 
 function isRetryableDeployError(error) {
     const message = error instanceof Error ? error.message : String(error);
-    return message.includes('Request failed with status code 500');
+    return (
+        message.includes('Request failed with status code 500') ||
+        message.includes('Timeout waiting for response')
+    );
 }
 
 async function callDeployTool() {
-    console.log('Calling hosting_deployStaticWebsite...');
+    const id = messageId++;
+    console.log(`Calling hosting_deployStaticWebsite (id: ${id})...`);
     sendMessage({
         jsonrpc: '2.0',
-        id: messageId,
+        id,
         method: 'tools/call',
         params: {
             name: 'hosting_deployStaticWebsite',
@@ -154,7 +168,7 @@ async function callDeployTool() {
         },
     });
 
-    const deployResponse = await waitForResponse(messageId);
+    const deployResponse = await waitForResponse(id);
     if (deployResponse.error) {
         throw new Error(`Hostinger CLI returned an error: ${JSON.stringify(deployResponse.error, null, 2)}`);
     }
@@ -252,10 +266,17 @@ async function run() {
         console.error('Hostinger CLI deploy failed:', error instanceof Error ? error.message : String(error));
     } finally {
         rl.close();
+        process.exitCode = exitCode;
         if (!childProcessTerminated) {
-            server.kill();
+            await new Promise((resolve) => {
+                const timeout = setTimeout(resolve, 5000);
+                server.once('close', () => {
+                    clearTimeout(timeout);
+                    resolve();
+                });
+                server.kill();
+            });
         }
-        process.exit(exitCode);
     }
 }
 
