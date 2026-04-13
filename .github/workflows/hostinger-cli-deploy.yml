@@ -1,6 +1,9 @@
 name: Hostinger CLI Deploy
 
 on:
+  push:
+    branches:
+      - codex/hostinger-cli-run
   workflow_dispatch:
 
 jobs:
