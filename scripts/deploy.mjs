@@ -11,6 +11,7 @@ const ARCHIVE_PATH = process.env.ARCHIVE_PATH || './dist.zip';
 const INITIAL_DEPLOY_DELAY_MS = Number(process.env.HOSTINGER_INITIAL_DEPLOY_DELAY_MS || 120000);
 const DEPLOY_RETRY_DELAY_MS = Number(process.env.HOSTINGER_DEPLOY_RETRY_DELAY_MS || 30000);
 const MAX_DEPLOY_ATTEMPTS = Number(process.env.HOSTINGER_DEPLOY_MAX_ATTEMPTS || 10);
+const DEPLOY_REQUEST_TIMEOUT_MS = Number(process.env.HOSTINGER_DEPLOY_REQUEST_TIMEOUT_MS || 180000);
 
 if (!API_TOKEN) {
     console.error('Error: HOSTINGER_API_TOKEN environment variable is missing.');
@@ -76,6 +77,15 @@ function isArchiveNotFoundError(error) {
         : JSON.stringify(responseData);
 
     return error.response?.status === 500 && responseText.includes('Archive not found');
+}
+
+function isDeployTimeoutError(error) {
+    return axios.isAxiosError(error)
+        && (error.code === 'ECONNABORTED' || error.message.includes('timeout'));
+}
+
+function isTransientDeployError(error) {
+    return isArchiveNotFoundError(error) || isDeployTimeoutError(error);
 }
 
 async function resolveUsername(domain) {
@@ -175,7 +185,7 @@ async function triggerDeploy(username, domain, remoteArchiveName) {
         data: {
             archive_path: path.basename(remoteArchiveName),
         },
-        timeout: 60000,
+        timeout: DEPLOY_REQUEST_TIMEOUT_MS,
         validateStatus: (status) => status < 500,
     });
 
@@ -195,13 +205,14 @@ async function triggerDeployWithRetry(username, domain, remoteArchiveName) {
             console.log(`Triggering deployment (attempt ${attempt}/${MAX_DEPLOY_ATTEMPTS}) for ${DOMAIN}...`);
             return await triggerDeploy(username, domain, remoteArchiveName);
         } catch (error) {
-            if (!isArchiveNotFoundError(error) || attempt === MAX_DEPLOY_ATTEMPTS) {
+            if (!isTransientDeployError(error) || attempt === MAX_DEPLOY_ATTEMPTS) {
                 throw error;
             }
 
-            console.warn(
-                `Archive is not visible to Hostinger yet. Retrying in ${DEPLOY_RETRY_DELAY_MS / 1000}s...`
-            );
+            const retryReason = isDeployTimeoutError(error)
+                ? `Deploy request timed out after ${DEPLOY_REQUEST_TIMEOUT_MS / 1000}s`
+                : 'Archive is not visible to Hostinger yet';
+            console.warn(`${retryReason}. Retrying in ${DEPLOY_RETRY_DELAY_MS / 1000}s...`);
             await sleep(DEPLOY_RETRY_DELAY_MS);
         }
     }
