@@ -8,9 +8,9 @@ const API_TOKEN = process.env.HOSTINGER_API_TOKEN;
 const BASE_URL = process.env.HOSTINGER_API_BASE_URL || 'https://developers.hostinger.com/';
 const DOMAIN = process.env.HOSTINGER_DOMAIN || 'luxuryuilib.com';
 const ARCHIVE_PATH = process.env.ARCHIVE_PATH || './dist.zip';
-const INITIAL_DEPLOY_DELAY_MS = Number(process.env.HOSTINGER_INITIAL_DEPLOY_DELAY_MS || 15000);
-const DEPLOY_RETRY_DELAY_MS = Number(process.env.HOSTINGER_DEPLOY_RETRY_DELAY_MS || 10000);
-const MAX_DEPLOY_ATTEMPTS = Number(process.env.HOSTINGER_DEPLOY_MAX_ATTEMPTS || 6);
+const INITIAL_DEPLOY_DELAY_MS = Number(process.env.HOSTINGER_INITIAL_DEPLOY_DELAY_MS || 120000);
+const DEPLOY_RETRY_DELAY_MS = Number(process.env.HOSTINGER_DEPLOY_RETRY_DELAY_MS || 30000);
+const MAX_DEPLOY_ATTEMPTS = Number(process.env.HOSTINGER_DEPLOY_MAX_ATTEMPTS || 10);
 
 if (!API_TOKEN) {
     console.error('Error: HOSTINGER_API_TOKEN environment variable is missing.');
