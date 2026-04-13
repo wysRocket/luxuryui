@@ -58,7 +58,9 @@ vi.mock('@/contexts/AppSessionContext', () => ({
 vi.mock('@/data/realAppAssets', () => ({
   REAL_APP_ASSETS: {
     'Test App': {
+      logo: '/assets/apps/test/logo.png',
       screenshots,
+      source: 'https://example.com/test-app',
     },
   },
 }));
@@ -135,7 +137,21 @@ describe('AppDetailsModal', () => {
 
     expect(rail?.className).toContain('overflow-x-auto');
     expect(rail?.parentElement?.className).toContain('absolute');
-    expect(rail?.parentElement?.className).toContain('bottom-0');
+    expect(rail?.parentElement?.className).toContain('bottom-32');
+  });
+
+  it('surfaces a mobile summary card with the primary action above the detail scroll area', () => {
+    renderModal();
+
+    const primaryAction = screenText('View all screens');
+    const summaryCard = primaryAction.closest('div');
+    const summaryWrapper = summaryCard?.parentElement;
+    const previewBadge = screenText('Curated Preview');
+    const previewPane = previewBadge.closest('div[class*="bg-[#0b0b0f]"]');
+
+    expect(summaryCard?.className).toContain('rounded-[1.75rem]');
+    expect(summaryWrapper?.className).toContain('md:hidden');
+    expect(previewPane?.className).toContain('h-[56svh]');
   });
 });
 

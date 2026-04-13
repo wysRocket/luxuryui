@@ -2,11 +2,10 @@ import React, { useMemo } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, LayoutGrid, PackageCheck } from 'lucide-react';
 import { MOCK_APPS } from '../constants';
-import { buildGeneratedScreens } from '../services/assetFactory';
-import { REAL_APP_ASSETS } from '../data/realAppAssets';
 import { formatCreditCost, getPublishedKitForAppSlug } from '../data/figmaKits';
 import { useAppSession } from '../contexts/AppSessionContext';
 import { getAppPresentationState } from '../services/presentationState';
+import { getPreviewScreensForApp, hasPreviewScreensForApp } from '../services/previewAssets';
 
 const AppScreensPage: React.FC = () => {
   const { appId } = useParams<{ appId: string }>();
@@ -32,13 +31,8 @@ const AppScreensPage: React.FC = () => {
   const screens = useMemo(() => {
     if (!app) return [];
 
-    const realScreens = REAL_APP_ASSETS[app.name]?.screenshots ?? [];
-    if (realScreens.length > 0) {
-      return realScreens;
-    }
-
     const fallbackCount = Math.min(Math.max(app.screenCount, 12), 72);
-    return buildGeneratedScreens(app, fallbackCount);
+    return getPreviewScreensForApp(app, fallbackCount);
   }, [app]);
 
   if (!app) {
@@ -76,26 +70,13 @@ const AppScreensPage: React.FC = () => {
             <p className="text-xs font-black uppercase tracking-[0.24em] text-gray-400 dark:text-gray-500 mb-3">Screen gallery</p>
             <h1 className="text-4xl md:text-6xl font-black tracking-tight text-gray-900 dark:text-white mb-3">{app.name}</h1>
             <p className="text-gray-600 dark:text-gray-400 text-[15px] md:text-base">
-              {app.category} for {app.platform} • {REAL_APP_ASSETS[app.name] ? 'Live app-store screenshots' : 'Generated fallback previews'}.
+              {app.category} for {app.platform} • {hasPreviewScreensForApp(app) ? 'Live app-store screenshots' : 'Curated fallback previews'}.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-2">
             <span className="inline-flex items-center gap-2 rounded-full bg-black dark:bg-white text-white dark:text-black px-4 py-2 text-sm font-black">
               <LayoutGrid size={15} />
               {screens.length} screens
-            </span>
-            <span className={`inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-black ${
-              presentation?.researchTier === 'verified'
-                ? 'border border-emerald-200 bg-emerald-50 text-emerald-800 dark:border-emerald-900/30 dark:bg-emerald-950/20 dark:text-emerald-200'
-                : presentation?.researchTier === 'research'
-                  ? 'border border-amber-200 bg-amber-50 text-amber-800 dark:border-amber-900/30 dark:bg-amber-950/20 dark:text-amber-200'
-                  : 'border border-slate-200 bg-slate-50 text-slate-800 dark:border-slate-800 dark:bg-slate-950/30 dark:text-slate-200'
-            }`}>
-              {presentation?.researchTier === 'verified'
-                ? 'Verified research'
-                : presentation?.researchTier === 'research'
-                  ? 'Research preview'
-                  : 'Generated reference'}
             </span>
             {relatedKit ? (
               <>

@@ -11,9 +11,9 @@ import {
 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { formatCreditCost, getPublishedKitForAppSlug } from "../data/figmaKits";
-import { REAL_APP_ASSETS } from "../data/realAppAssets";
 import { AppItem } from "../types";
 import { useAppSession } from "../contexts/AppSessionContext";
+import { getPreviewScreensForApp } from "../services/previewAssets";
 
 interface AppDetailsModalProps {
   app: AppItem | null;
@@ -30,27 +30,18 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({
   const [activeScreenshot, setActiveScreenshot] = useState(app?.image ?? "");
   const navigate = useNavigate();
   const { isAuthenticated, wallet, hasUnlocked } = useAppSession();
-  const realScreenshots = app
-    ? REAL_APP_ASSETS[app.name]?.screenshots
-    : undefined;
   const screenshots = useMemo(() => {
     if (!app) {
       return [];
     }
 
-    const baseScreenshots = realScreenshots?.length
-      ? realScreenshots
-      : [app.image];
-    const orderedScreenshots = [app.image, ...baseScreenshots].filter(Boolean);
-
-    return Array.from(new Set(orderedScreenshots));
-  }, [app, realScreenshots]);
+    return getPreviewScreensForApp(app, Math.max(app.screenCount, 8));
+  }, [app]);
   const relatedKit = app ? getPublishedKitForAppSlug(app.slug) : undefined;
   const kitUnlocked = relatedKit ? hasUnlocked(relatedKit.id) : false;
   const hasEnoughCredits = relatedKit
     ? (wallet?.balance ?? 0) >= relatedKit.creditCost
     : false;
-  const sourceQuality = app?.sourceQuality ?? "unknown";
 
   useEffect(() => {
     if (!app) {
@@ -58,8 +49,8 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({
       return;
     }
 
-    setActiveScreenshot(app.image);
-  }, [app]);
+    setActiveScreenshot(screenshots[0] ?? "");
+  }, [app, screenshots]);
 
   if (!app) return null;
 
@@ -92,10 +83,10 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({
           {/* Modal Container */}
           <motion.div
             layoutId={`app-card-container-${app.id}`}
-            className="bg-white dark:bg-gray-900 w-full max-w-5xl h-[92vh] rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row transition-colors duration-300 relative z-10"
+            className="relative z-10 flex h-[92svh] w-full max-w-5xl flex-col overflow-hidden rounded-3xl bg-white shadow-2xl transition-colors duration-300 dark:bg-gray-900 md:h-[92vh] md:flex-row"
           >
             {/* Image Section */}
-            <motion.div className="w-full md:w-3/5 h-[78vh] min-h-[500px] sm:h-[80vh] md:h-auto relative overflow-hidden bg-[#0b0b0f]">
+            <motion.div className="relative h-[56svh] min-h-0 w-full overflow-hidden bg-[#0b0b0f] sm:h-[60svh] md:h-auto md:min-h-[500px] md:w-3/5">
               <div className="absolute inset-0">
                 <img
                   src={activeScreenshot}
@@ -123,8 +114,8 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({
                   </button>
                 </div>
 
-                <div className="flex flex-1 items-center justify-center min-h-0 overflow-hidden pt-2 pb-16 sm:pt-4 sm:pb-20 md:pt-10 md:pb-10">
-                  <div className="w-full max-w-[min(88vw,360px)] sm:max-w-[320px] md:max-w-[360px]">
+                <div className="flex min-h-0 flex-1 items-center justify-center overflow-hidden pt-2 pb-36 sm:pt-4 sm:pb-40 md:pt-10 md:pb-10">
+                  <div className="w-full max-w-[min(74vw,300px)] sm:max-w-[320px] md:max-w-[360px]">
                     <div className="rounded-[2rem] border border-white/10 bg-black/55 p-3 shadow-[0_30px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl">
                       <div className="mb-3 flex justify-center">
                         <div className="h-1.5 w-20 rounded-full bg-white/18" />
@@ -146,8 +137,8 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({
                 </div>
 
                 {screenshots.length > 1 && (
-                  <div className="absolute bottom-0 left-0 right-0 z-20 px-5 pb-4 sm:px-6 md:px-8">
-                    <div className="-mx-1 flex gap-3 overflow-x-auto px-1 pb-1">
+                  <div className="absolute bottom-32 left-0 right-0 z-20 px-4 pb-3 sm:bottom-36 sm:px-6 md:bottom-0 md:px-8">
+                    <div className="-mx-1 flex gap-2 overflow-x-auto px-1 pb-1 sm:gap-3">
                       {screenshots.slice(0, 8).map((screenshot, index) => {
                         const isActive = screenshot === activeScreenshot;
 
@@ -166,7 +157,7 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({
                             <img
                               src={screenshot}
                               alt={`${app.name} screenshot ${index + 1}`}
-                              className={`h-20 w-16 bg-black object-cover transition-transform duration-300 sm:h-24 sm:w-[4.4rem] ${
+                              className={`h-[4.5rem] w-[3.25rem] bg-black object-cover transition-transform duration-300 sm:h-24 sm:w-[4.4rem] ${
                                 isActive
                                   ? "scale-[1.03]"
                                   : "group-hover:scale-[1.03]"
@@ -186,6 +177,36 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({
                     </div>
                   </div>
                 )}
+
+                <div className="absolute bottom-0 left-0 right-0 z-30 p-4 sm:p-5 md:hidden">
+                  <div className="rounded-[1.75rem] border border-white/20 bg-white/96 p-4 shadow-[0_24px_70px_rgba(0,0,0,0.35)] backdrop-blur-xl dark:border-gray-800 dark:bg-gray-950/96">
+                    <div className="mb-4 flex items-center gap-3">
+                      <img
+                        src={app.logo}
+                        alt={app.name}
+                        className="h-12 w-12 rounded-2xl border border-gray-100 object-cover shadow-sm dark:border-gray-800"
+                      />
+                      <div className="min-w-0">
+                        <h2 className="truncate text-xl font-black tracking-tight text-gray-900 dark:text-white">
+                          {app.name}
+                        </h2>
+                        <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                          {app.category} • {app.platform}
+                        </p>
+                      </div>
+                    </div>
+
+                    <button
+                      onClick={() => {
+                        onClose();
+                        navigate(`/apps/${app.id}/screens`);
+                      }}
+                      className="w-full rounded-2xl bg-black px-4 py-3 text-sm font-black text-white shadow-lg shadow-black/20 transition-colors hover:bg-gray-800 dark:bg-white dark:text-black dark:shadow-none dark:hover:bg-gray-100"
+                    >
+                      View all screens
+                    </button>
+                  </div>
+                </div>
               </div>
             </motion.div>
 
@@ -194,9 +215,9 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
-              className="w-full md:w-2/5 p-6 md:p-10 flex flex-col overflow-y-auto"
+              className="flex min-h-[36svh] w-full flex-1 flex-col overflow-y-auto p-5 sm:min-h-[32svh] sm:p-6 md:w-2/5 md:p-10"
             >
-              <div className="flex items-center justify-between mb-8">
+              <div className="hidden items-center justify-between mb-8 md:flex">
                 <div className="flex items-center gap-4">
                   <motion.img
                     layoutId={`app-logo-${app.id}`}
@@ -225,7 +246,7 @@ const AppDetailsModal: React.FC<AppDetailsModalProps> = ({
                 </button>
               </div>
 
-              <div className="mb-8 flex items-center gap-3">
+              <div className="hidden items-center gap-3 mb-8 md:flex">
                 <button
                   onClick={() => {
                     onClose();
