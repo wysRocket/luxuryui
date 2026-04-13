@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { motion, useScroll, useTransform, useSpring, useMotionValue } from 'framer-motion';
 import { AppItem } from '../types';
-import { Smartphone, Monitor, Maximize2, Bookmark, AlertTriangle, BadgeCheck, Sparkles } from 'lucide-react';
+import { Smartphone, Monitor, Maximize2, Bookmark } from 'lucide-react';
 import { getPublishedKitForAppSlug } from '../data/figmaKits';
 
 interface AppCardProps {
@@ -16,15 +16,6 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
   const assetOrigin = app?.assetOrigin ?? 'generated';
   const isVerified = sourceQuality === 'pass' && assetOrigin === 'real';
   const isWarn = sourceQuality === 'warn';
-  const qualityLabel = isVerified
-    ? 'Verified set'
-    : isWarn
-      ? 'Mixed quality'
-      : assetOrigin === 'generated'
-        ? 'Generated preview'
-        : 'Preview set';
-  const qualityIcon = isVerified ? BadgeCheck : isWarn ? AlertTriangle : Sparkles;
-  const QualityIcon = qualityIcon;
   
   // 1. Interactive 3D Tilt Logic
   const x = useMotionValue(0);
@@ -180,17 +171,6 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
           {app.screenCount} screens
         </motion.div>
 
-        {isVerified && (
-          <div
-            className="absolute right-5 bottom-5 rounded-full border px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.18em] z-40 transition-opacity duration-300 group-hover:opacity-0 border-emerald-300/20 bg-emerald-400/15 text-white"
-            style={{ transform: 'translateZ(74px)' }}
-          >
-            <span className="inline-flex items-center gap-1.5">
-              <QualityIcon size={11} />
-              {qualityLabel}
-            </span>
-          </div>
-        )}
 
         {hasKit && (
           <div
@@ -204,12 +184,9 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
         {/* Source Quality Footer */}
         <div className="absolute bottom-0 left-0 right-0 z-40" style={{ transform: "translateZ(100px)" }}>
            <div className="px-5 pb-5">
-              <div className="flex justify-between items-end gap-3 mb-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <span className="text-[10px] font-black text-white uppercase tracking-tighter shrink-0">
+              <div className="mb-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <span className="text-[10px] font-black text-white uppercase tracking-tighter">
                   {isVerified ? 'Premium preview' : 'Reference preview'}
-                </span>
-                <span className="text-[10px] font-black text-white/85 truncate text-right">
-                  {isVerified ? 'High-confidence source' : assetOrigin === 'generated' ? 'Generated fallback' : 'Use for research'}
                 </span>
               </div>
               <div className="h-[3px] w-full bg-white/20 rounded-full overflow-hidden backdrop-blur-sm">
