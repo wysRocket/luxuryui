@@ -23,9 +23,21 @@ if (!API_KEY) { console.error('❌ GEMINI_API_KEY not found in .env.local'); pro
 const appSlug = process.argv[2];
 if (!appSlug) { console.error('Usage: node scripts/gemini-enhance.mjs <app-slug> [--test]'); process.exit(1); }
 const testOnly = process.argv.includes('--test');
+const retrySmall = process.argv.includes('--retry-small');
+const RETRY_THRESHOLD_KB = 500;
 
 const appDir = path.join(projectRoot, 'public', 'assets', 'apps', appSlug);
-const files = (await readdir(appDir)).filter(f => f.startsWith('screen-') && f.endsWith('.webp')).sort();
+const allFiles = (await readdir(appDir)).filter(f => f.startsWith('screen-') && (f.endsWith('.webp') || f.endsWith('.png') || f.endsWith('.jpg') || f.endsWith('.jpeg'))).sort();
+
+let files = allFiles;
+if (retrySmall) {
+  const { statSync } = await import('node:fs');
+  files = allFiles.filter(f => {
+    const sizeKB = statSync(path.join(appDir, f)).size / 1024;
+    return sizeKB < RETRY_THRESHOLD_KB;
+  });
+  console.log(`🔁 Retry mode: ${files.length} screen(s) under ${RETRY_THRESHOLD_KB}KB\n`);
+}
 const targets = testOnly ? [files[0]] : files;
 
 console.log(`🎨 Enhancing ${targets.length} screen(s) for "${appSlug}" via Gemini Flash Image...\n`);
@@ -57,7 +69,7 @@ for (const filename of targets) {
       contents: [{
         role: 'user',
         parts: [
-          { inlineData: { mimeType: 'image/webp', data: base64 } },
+          { inlineData: { mimeType: filename.endsWith('.png') ? 'image/png' : 'image/webp', data: base64 } },
           { text: PROMPT },
         ],
       }],

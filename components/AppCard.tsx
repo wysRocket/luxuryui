@@ -180,23 +180,21 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
           {app.screenCount} screens
         </motion.div>
 
-        <div
-          className={`absolute right-5 ${hasKit ? 'bottom-[4.3rem]' : 'bottom-5'} rounded-full border px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.18em] z-40 ${
-            isVerified
-              ? 'border-emerald-300/20 bg-emerald-400/15 text-white'
-              : 'border-amber-200/15 bg-black/35 text-white/92'
-          }`}
-          style={{ transform: 'translateZ(74px)' }}
-        >
-          <span className="inline-flex items-center gap-1.5">
-            <QualityIcon size={11} />
-            {qualityLabel}
-          </span>
-        </div>
+        {isVerified && (
+          <div
+            className="absolute right-5 bottom-5 rounded-full border px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.18em] z-40 transition-opacity duration-300 group-hover:opacity-0 border-emerald-300/20 bg-emerald-400/15 text-white"
+            style={{ transform: 'translateZ(74px)' }}
+          >
+            <span className="inline-flex items-center gap-1.5">
+              <QualityIcon size={11} />
+              {qualityLabel}
+            </span>
+          </div>
+        )}
 
         {hasKit && (
           <div
-            className="absolute bottom-5 left-5 rounded-full border border-white/15 bg-emerald-400/15 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.18em] text-white z-40"
+            className="absolute bottom-5 left-5 rounded-full border border-white/15 bg-emerald-400/15 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.18em] text-white z-40 transition-opacity duration-300 group-hover:opacity-0"
             style={{ transform: "translateZ(70px)" }}
           >
             Figma kit
@@ -206,11 +204,11 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
         {/* Source Quality Footer */}
         <div className="absolute bottom-0 left-0 right-0 z-40" style={{ transform: "translateZ(100px)" }}>
            <div className="px-5 pb-5">
-              <div className="flex justify-between items-end mb-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <span className="text-[10px] font-black text-white uppercase tracking-tighter">
+              <div className="flex justify-between items-end gap-3 mb-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <span className="text-[10px] font-black text-white uppercase tracking-tighter shrink-0">
                   {isVerified ? 'Premium preview' : 'Reference preview'}
                 </span>
-                <span className="text-[10px] font-black text-white/85">
+                <span className="text-[10px] font-black text-white/85 truncate text-right">
                   {isVerified ? 'High-confidence source' : assetOrigin === 'generated' ? 'Generated fallback' : 'Use for research'}
                 </span>
               </div>
