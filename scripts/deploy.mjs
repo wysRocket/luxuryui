@@ -23,6 +23,7 @@ const requestHeaders = {
     Accept: 'application/json',
     Authorization: `Bearer ${API_TOKEN}`,
     'Content-Type': 'application/json',
+    'User-Agent': 'luxuryui-deploy/1.0.0',
 };
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -45,22 +46,6 @@ function validateArchiveFile(archivePath) {
     if (!archiveStats.isFile()) {
         throw new Error(`Archive path is not a file: ${archivePath}`);
     }
-}
-
-function formatTimestamp(date) {
-    const year = date.getUTCFullYear();
-    const month = String(date.getUTCMonth() + 1).padStart(2, '0');
-    const day = String(date.getUTCDate()).padStart(2, '0');
-    const hours = String(date.getUTCHours()).padStart(2, '0');
-    const minutes = String(date.getUTCMinutes()).padStart(2, '0');
-    const seconds = String(date.getUTCSeconds()).padStart(2, '0');
-    return `${year}${month}${day}_${hours}${minutes}${seconds}`;
-}
-
-function buildRemoteArchiveName(archivePath) {
-    const extension = path.extname(archivePath);
-    const basename = path.basename(archivePath, extension).replace(/[^a-zA-Z0-9._-]/g, '-');
-    return `${basename}_${formatTimestamp(new Date())}${extension}`;
 }
 
 function formatAxiosError(error) {
@@ -153,6 +138,8 @@ async function uploadArchive(localArchivePath, remoteArchiveName, uploadUrl, aut
         headers: uploadHeaders,
         timeout: 60000,
         validateStatus: (status) => status === 201,
+    }).catch((error) => {
+        throw new Error(`Pre-upload request failed: ${formatAxiosError(error)}`);
     });
 
     await new Promise((resolve, reject) => {
@@ -169,7 +156,7 @@ async function uploadArchive(localArchivePath, remoteArchiveName, uploadUrl, aut
                 filename: path.basename(remoteArchiveName),
             },
             onError: (error) => {
-                reject(new Error(`Upload failed: ${error.message}`));
+                reject(new Error(`Upload failed: ${error.message || String(error)}`));
             },
             onSuccess: resolve,
         });
@@ -232,7 +219,7 @@ async function run() {
     console.log(`Fetching upload credentials for ${DOMAIN}...`);
     const { uploadUrl, authToken, authRestToken } = await fetchUploadCredentials(username, DOMAIN);
 
-    const remoteArchiveName = buildRemoteArchiveName(ARCHIVE_PATH);
+    const remoteArchiveName = path.basename(ARCHIVE_PATH);
     console.log(`Uploading archive as ${remoteArchiveName}...`);
     await uploadArchive(ARCHIVE_PATH, remoteArchiveName, uploadUrl, authRestToken, authToken);
     console.log(`Successfully uploaded archive: ${remoteArchiveName}`);
