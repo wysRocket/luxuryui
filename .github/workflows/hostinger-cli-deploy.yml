@@ -29,9 +29,14 @@ jobs:
             exit 1
           fi
 
+      - name: Create deployment archive (excluding CDN assets)
+        run: |
+          cd dist && zip -r /tmp/dist.zip . -x 'assets/apps/*'
+          echo "Archive size: $(du -sh /tmp/dist.zip | cut -f1)"
+
       - name: Deploy via Hostinger CLI
         env:
           HOSTINGER_API_TOKEN: ${{ secrets.HOSTINGER_API_TOKEN }}
           HOSTINGER_DOMAIN: luxuryuilib.com
-          HOSTINGER_STATIC_PATH: ./dist
+          HOSTINGER_STATIC_PATH: /tmp/dist.zip
         run: node scripts/hostinger-mcp-deploy.mjs
