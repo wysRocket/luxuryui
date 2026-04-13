@@ -17,15 +17,20 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
 
       - name: Install Dependencies
-        run: npm ci || npm install
+        run: npm ci
 
       - name: Build Production Bundle
         run: npm run build
 
       - name: Create Timestamped Static Archive
         run: |
+          if [ ! -d "dist" ]; then
+            echo "Error: dist directory not found after build"
+            exit 1
+          fi
           ARCHIVE_NAME="luxuryui_$(date -u +%Y%m%d_%H%M%S).zip"
           cd dist
           zip -r "../${ARCHIVE_NAME}" .
