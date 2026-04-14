@@ -144,13 +144,31 @@ async function uploadArchive(localArchivePath, remoteArchiveName, uploadUrl, aut
         'upload-offset': '0',
     };
 
-    await axios.post(uploadUrlWithFile, '', {
-        headers: uploadHeaders,
-        timeout: 60000,
-        validateStatus: (status) => status === 201,
-    }).catch((error) => {
-        throw new Error(`Pre-upload request failed: ${formatAxiosError(error)}`);
-    });
+    const PRE_UPLOAD_RETRIES = 4;
+    const PRE_UPLOAD_RETRY_DELAY_MS = 5000;
+    let lastPreUploadError;
+    for (let attempt = 1; attempt <= PRE_UPLOAD_RETRIES; attempt++) {
+        try {
+            await axios.post(uploadUrlWithFile, '', {
+                headers: uploadHeaders,
+                timeout: 60000,
+                validateStatus: (status) => status === 200 || status === 201,
+            });
+            lastPreUploadError = null;
+            break;
+        } catch (error) {
+            const code = error.code ?? 'unknown';
+            const status = error.response?.status ?? 'no-response';
+            lastPreUploadError = error;
+            console.warn(`Pre-upload attempt ${attempt}/${PRE_UPLOAD_RETRIES} failed (code=${code}, status=${status}): ${formatAxiosError(error)}`);
+            if (attempt < PRE_UPLOAD_RETRIES) {
+                await sleep(PRE_UPLOAD_RETRY_DELAY_MS * attempt);
+            }
+        }
+    }
+    if (lastPreUploadError) {
+        throw new Error(`Pre-upload request failed after ${PRE_UPLOAD_RETRIES} attempts: ${formatAxiosError(lastPreUploadError)}`);
+    }
 
     await new Promise((resolve, reject) => {
         const upload = new tus.Upload(fileStream, {
