@@ -97,6 +97,25 @@ const Footer: React.FC = () => {
                 );
               })}
             </div>
+            <div className="mt-8 rounded-2xl border border-gray-100 bg-gray-50/80 p-5 dark:border-gray-800 dark:bg-gray-900/70">
+              <p className="text-[11px] font-black uppercase tracking-[0.22em] text-gray-400 dark:text-gray-500">
+                Registered Office
+              </p>
+              <div className="mt-3 space-y-1 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                <p className="font-semibold text-gray-900 dark:text-white">
+                  Kinman Tech LTD
+                </p>
+                <p>HE 490695</p>
+                <p>23 Boumpoulinas, Flat/Office 6</p>
+                <p>2019 Strovolos, Nicosia, Cyprus</p>
+                <a
+                  href="tel:+447537106904"
+                  className="inline-block pt-1 text-gray-900 transition-colors hover:text-gray-600 dark:text-white dark:hover:text-gray-300"
+                >
+                  +44 7537 106 904
+                </a>
+              </div>
+            </div>
           </div>
 
           {FOOTER_SECTIONS.map((section) => (

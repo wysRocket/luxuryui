@@ -31,6 +31,7 @@ interface ContentPageConfig {
   title: string;
   description: string;
   sections: { title: string; description: string }[];
+  contactDetails?: { label: string; value?: string; lines?: string[]; href?: string }[];
   primaryCtaLabel: string;
   primaryCtaPath: string;
   secondaryCtaLabel: string;
@@ -139,6 +140,19 @@ const CONTENT_PAGES: ContentPageConfig[] = [
     eyebrow: 'Support',
     title: 'Contact LuxuryUI',
     description: 'Reach out for product questions, credit purchase questions, partnership discussions, or support.',
+    contactDetails: [
+      { label: 'Company', value: 'Kinman Tech LTD' },
+      { label: 'Registration', value: 'HE 490695' },
+      {
+        label: 'Registered office',
+        lines: ['23 Boumpoulinas, Flat/Office 6', '2019 Strovolos, Nicosia', 'Cyprus'],
+      },
+      {
+        label: 'Phone',
+        value: '+44 7537 106 904',
+        href: 'tel:+447537106904',
+      },
+    ],
     sections: [
       { title: 'General Inquiries', description: 'Ask about platform capabilities, roadmaps, and onboarding suggestions.' },
       { title: 'Credit Questions', description: 'Get guidance on credit top-ups, kit unlock costs, and purchase flow details.' },
