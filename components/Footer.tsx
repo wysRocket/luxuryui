@@ -114,6 +114,12 @@ const Footer: React.FC = () => {
                 >
                   +44 7537 106 904
                 </a>
+                <a
+                  href="mailto:contact@luxuryuilib.com"
+                  className="inline-block text-gray-900 transition-colors hover:text-gray-600 dark:text-white dark:hover:text-gray-300"
+                >
+                  contact@luxuryuilib.com
+                </a>
               </div>
             </div>
           </div>

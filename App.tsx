@@ -152,6 +152,11 @@ const CONTENT_PAGES: ContentPageConfig[] = [
         value: '+44 7537 106 904',
         href: 'tel:+447537106904',
       },
+      {
+        label: 'Email',
+        value: 'contact@luxuryuilib.com',
+        href: 'mailto:contact@luxuryuilib.com',
+      },
     ],
     sections: [
       { title: 'General Inquiries', description: 'Ask about platform capabilities, roadmaps, and onboarding suggestions.' },
