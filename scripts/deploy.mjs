@@ -195,15 +195,21 @@ async function uploadArchive(localArchivePath, remoteArchiveName, uploadUrl, aut
     return remoteArchiveName;
 }
 
-async function triggerDeploy(username, domain, remoteArchiveName) {
+async function triggerDeploy(username, domain, remoteArchiveName, uploadUrl) {
+    // If the upload URL already scopes to public_html (ends with /public_html),
+    // the archive lands directly inside it — use just the filename.
+    // Otherwise the session root is the domain root, so prefix with public_html/.
+    const uploadBase = uploadUrl.replace(/\/$/, '').split('/api/tus/')[1] ?? '';
+    const archivePath = uploadBase.endsWith('public_html')
+        ? path.basename(remoteArchiveName)
+        : `public_html/${path.basename(remoteArchiveName)}`;
+    console.log(`Using archive_path: "${archivePath}" (upload base: "${uploadBase}")`);
+
     const response = await axios({
         method: 'post',
         url: buildApiUrl(`api/hosting/v1/accounts/${username}/websites/${domain}/deploy`),
         headers: requestHeaders,
-        data: {
-            // Upload URL puts files in public_html/, so archive lands at public_html/dist.zip
-            archive_path: `public_html/${path.basename(remoteArchiveName)}`,
-        },
+        data: { archive_path: archivePath },
         timeout: DEPLOY_REQUEST_TIMEOUT_MS,
         validateStatus: (status) => status < 500,
     });
@@ -215,14 +221,14 @@ async function triggerDeploy(username, domain, remoteArchiveName) {
     return response.data;
 }
 
-async function triggerDeployWithRetry(username, domain, remoteArchiveName) {
+async function triggerDeployWithRetry(username, domain, remoteArchiveName, uploadUrl) {
     console.log(`Waiting ${INITIAL_DEPLOY_DELAY_MS / 1000}s for Hostinger to index ${remoteArchiveName}...`);
     await sleep(INITIAL_DEPLOY_DELAY_MS);
 
     for (let attempt = 1; attempt <= MAX_DEPLOY_ATTEMPTS; attempt++) {
         try {
             console.log(`Triggering deployment (attempt ${attempt}/${MAX_DEPLOY_ATTEMPTS}) for ${DOMAIN}...`);
-            return await triggerDeploy(username, domain, remoteArchiveName);
+            return await triggerDeploy(username, domain, remoteArchiveName, uploadUrl);
         } catch (error) {
             if (!isTransientDeployError(error) || attempt === MAX_DEPLOY_ATTEMPTS) {
                 throw error;
@@ -254,7 +260,7 @@ async function run() {
     await uploadArchive(ARCHIVE_PATH, remoteArchiveName, uploadUrl, authRestToken, authToken);
     console.log(`Successfully uploaded archive: ${remoteArchiveName}`);
 
-    const deployResult = await triggerDeployWithRetry(username, DOMAIN, remoteArchiveName);
+    const deployResult = await triggerDeployWithRetry(username, DOMAIN, remoteArchiveName, uploadUrl);
     console.log('Deployment triggered successfully:', JSON.stringify(deployResult, null, 2));
 }
 
