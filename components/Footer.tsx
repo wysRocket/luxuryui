@@ -110,13 +110,13 @@ const Footer: React.FC = () => {
                 <p>2019 Strovolos, Nicosia, Cyprus</p>
                 <a
                   href="tel:+447537106904"
-                  className="inline-block pt-1 text-gray-900 transition-colors hover:text-gray-600 dark:text-white dark:hover:text-gray-300"
+                  className="block pt-1 text-gray-900 transition-colors hover:text-gray-600 dark:text-white dark:hover:text-gray-300"
                 >
                   +44 7537 106 904
                 </a>
                 <a
                   href="mailto:contact@luxuryuilib.com"
-                  className="inline-block text-gray-900 transition-colors hover:text-gray-600 dark:text-white dark:hover:text-gray-300"
+                  className="block text-gray-900 transition-colors hover:text-gray-600 dark:text-white dark:hover:text-gray-300"
                 >
                   contact@luxuryuilib.com
                 </a>
