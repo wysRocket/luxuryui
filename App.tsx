@@ -24,6 +24,7 @@ const AppScreensPage = lazy(() => import('./pages/AppScreensPage'));
 const FlowsPage = lazy(() => import('./pages/FlowsPage'));
 const FlowDetailPage = lazy(() => import('./pages/FlowDetailPage'));
 const SignupPage = lazy(() => import('./pages/SignupPage'));
+const CheckoutStatusPage = lazy(() => import('./pages/CheckoutStatusPage'));
 
 interface ContentPageConfig {
   path: string;
@@ -419,6 +420,14 @@ const App: React.FC = () => {
               ))}
               <Route path="/browse" element={<Navigate to="/" replace />} />
               <Route path="/plans" element={<Navigate to="/pricing" replace />} />
+              <Route
+                path="/checkout"
+                element={
+                  <ProtectedRoute>
+                    <CheckoutStatusPage />
+                  </ProtectedRoute>
+                }
+              />
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </Suspense>
