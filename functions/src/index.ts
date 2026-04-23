@@ -245,9 +245,10 @@ export const createPaymentSession = onCall(
     try {
       ({ checkoutUrl, providerTransactionId } = parseCreatePaymentResponse(providerText));
     } catch (err) {
+      const safeText = providerText.slice(0, 400);
       throw new HttpsError(
         "internal",
-        err instanceof Error ? err.message : "Invalid SafePay create-payment response.",
+        `SafePay response parse error: ${err instanceof Error ? err.message : "unknown"}. Raw (truncated): ${safeText}`,
       );
     }
 
