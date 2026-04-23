@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import {
   ArrowRight,
   Coins,
@@ -35,13 +35,20 @@ const CreditsPage: React.FC = () => {
     [availableCredits, quote.credits],
   );
 
-  // SafePay billing form state
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [countryCode, setCountryCode] = useState("GB");
-  const [city, setCity] = useState("");
-  const [currency, setCurrency] = useState<"EUR" | "GBP">("GBP");
+  // SafePay billing form state — persisted to localStorage
+  const [firstName, setFirstName] = useState(() => localStorage.getItem("billing_firstName") ?? "");
+  const [lastName, setLastName] = useState(() => localStorage.getItem("billing_lastName") ?? "");
+  const [phone, setPhone] = useState(() => localStorage.getItem("billing_phone") ?? "");
+  const [countryCode, setCountryCode] = useState(() => localStorage.getItem("billing_countryCode") ?? "GB");
+  const [city, setCity] = useState(() => localStorage.getItem("billing_city") ?? "");
+  const [currency, setCurrency] = useState<"EUR" | "GBP">(() => (localStorage.getItem("billing_currency") as "EUR" | "GBP") ?? "GBP");
+
+  useEffect(() => { localStorage.setItem("billing_firstName", firstName); }, [firstName]);
+  useEffect(() => { localStorage.setItem("billing_lastName", lastName); }, [lastName]);
+  useEffect(() => { localStorage.setItem("billing_phone", phone); }, [phone]);
+  useEffect(() => { localStorage.setItem("billing_countryCode", countryCode); }, [countryCode]);
+  useEffect(() => { localStorage.setItem("billing_city", city); }, [city]);
+  useEffect(() => { localStorage.setItem("billing_currency", currency); }, [currency]);
 
   const adjustCredits = (delta: number) => {
     setCredits((currentCredits) => clampCredits(currentCredits + delta));
@@ -341,12 +348,6 @@ const CreditsPage: React.FC = () => {
                   >
                     {isBusy ? "Redirecting to SafePay..." : "Proceed to SafePay"}
                   </button>
-                  <Link
-                    to="/account"
-                    className="inline-flex items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 px-6 py-3 text-sm font-bold text-gray-700 dark:text-gray-200"
-                  >
-                    Open buyer portal
-                  </Link>
                 </>
               ) : (
                 <>
