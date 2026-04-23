@@ -1,11 +1,13 @@
 import { FirebaseApp, getApp, getApps, initializeApp } from 'firebase/app';
 import { Auth, getAuth } from 'firebase/auth';
 import { Firestore, getFirestore } from 'firebase/firestore';
+import { Functions, getFunctions } from 'firebase/functions';
 import { assertRuntimeConfiguration, RUNTIME_CONFIG } from './runtimeConfig';
 
 let firebaseApp: FirebaseApp | null = null;
 let firebaseAuth: Auth | null = null;
 let firebaseFirestore: Firestore | null = null;
+let firebaseFunctions: Functions | null = null;
 
 const createFirebaseApp = (): FirebaseApp => {
   assertRuntimeConfiguration();
@@ -46,4 +48,13 @@ export const getFirebaseFirestoreClient = (): Firestore => {
 
   firebaseFirestore = getFirestore(createFirebaseApp());
   return firebaseFirestore;
+};
+
+export const getFirebaseFunctionsClient = (): Functions => {
+  if (firebaseFunctions) {
+    return firebaseFunctions;
+  }
+
+  firebaseFunctions = getFunctions(createFirebaseApp());
+  return firebaseFunctions;
 };

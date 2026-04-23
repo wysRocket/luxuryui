@@ -1,0 +1,20 @@
+{
+  "name": "functions",
+  "description": "Firebase Cloud Functions for LuxuryUI SafePay integration",
+  "scripts": {
+    "build": "tsc",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^13.4.0",
+    "firebase-functions": "^7.3.0"
+  },
+  "devDependencies": {
+    "typescript": "~5.8.2"
+  },
+  "private": true
+}
