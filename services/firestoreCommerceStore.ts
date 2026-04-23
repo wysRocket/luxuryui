@@ -257,6 +257,68 @@ export const topUpFirestoreWalletCredits = async (user: UserProfile, credits: nu
   return nextTopUp;
 };
 
+export const applyFirestoreSafepayCredits = async (
+  user: UserProfile,
+  params: {
+    credits: number;
+    invoiceId: string;
+    eurAmount: number;
+    gbpAmount: number;
+  }
+): Promise<CreditTopUp> => {
+  const { credits, invoiceId, eurAmount, gbpAmount } = params;
+  const createdAt = now();
+  const topUpId = sanitizeId(invoiceId);
+  const transactionId = `safepay_txn_${topUpId}`;
+  const ref = walletRef(user.uid);
+
+  const nextTopUp: CreditTopUp = {
+    id: topUpId,
+    userId: user.uid,
+    creditsPurchased: credits,
+    eurAmount,
+    gbpAmount,
+    stripeSessionId: invoiceId,
+    status: 'succeeded',
+    createdAt,
+  };
+
+  const nextTransaction: CreditTransaction = {
+    id: transactionId,
+    userId: user.uid,
+    type: 'topup',
+    creditsDelta: credits,
+    relatedOrderId: topUpId,
+    createdAt,
+  };
+
+  await runTransaction(db(), async (transaction) => {
+    const [walletSnapshot, topUpSnapshot] = await Promise.all([
+      transaction.get(ref),
+      transaction.get(topUpRef(user.uid, topUpId)),
+    ]);
+
+    // Idempotency guard: if we already recorded this top-up, skip
+    if (topUpSnapshot.exists()) {
+      return;
+    }
+
+    const currentWallet = mapWallet(walletSnapshot.data(), user.uid) ?? buildWallet(user.uid);
+    const nextWallet: CreditWallet = {
+      ...currentWallet,
+      balance: currentWallet.balance + credits,
+      lifetimePurchased: currentWallet.lifetimePurchased + credits,
+      updatedAt: createdAt,
+    };
+
+    transaction.set(ref, nextWallet);
+    transaction.set(topUpRef(user.uid, topUpId), nextTopUp);
+    transaction.set(transactionRef(user.uid, transactionId), nextTransaction);
+  });
+
+  return nextTopUp;
+};
+
 export const purchaseFirestoreKitWithCredits = async (
   user: UserProfile,
   kit: FigmaKitProduct
