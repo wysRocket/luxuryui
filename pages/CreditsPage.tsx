@@ -20,7 +20,7 @@ import {
 import { useAppSession } from "../contexts/AppSessionContext";
 
 const CreditsPage: React.FC = () => {
-  const { isAuthenticated, topUpCredits, wallet, isBusy } = useAppSession();
+  const { isAuthenticated, topUpCredits, initiateCheckout, paymentMode, wallet, isBusy } = useAppSession();
   const [credits, setCredits] = useState(CREDIT_PACK_CONFIG.defaultCredits);
   const [statusMessage, setStatusMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
@@ -33,6 +33,14 @@ const CreditsPage: React.FC = () => {
         .slice(0, 4),
     [availableCredits, quote.credits],
   );
+
+  // SafePay billing form state
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [countryCode, setCountryCode] = useState("GB");
+  const [city, setCity] = useState("");
+  const [currency, setCurrency] = useState<"EUR" | "GBP">("GBP");
 
   const adjustCredits = (delta: number) => {
     setCredits((currentCredits) => clampCredits(currentCredits + delta));
@@ -52,6 +60,37 @@ const CreditsPage: React.FC = () => {
         error instanceof Error
           ? error.message
           : "Could not complete the credit top-up.",
+      );
+    }
+  };
+
+  const handleSafepayCheckout = async () => {
+    setStatusMessage("");
+    setErrorMessage("");
+
+    if (!firstName.trim() || !lastName.trim() || !phone.trim() || !city.trim()) {
+      setErrorMessage("Please fill in all billing fields.");
+      return;
+    }
+
+    try {
+      await initiateCheckout({
+        credits,
+        currency,
+        customer: {
+          firstName: firstName.trim(),
+          lastName: lastName.trim(),
+          email: "",
+          phone: phone.trim(),
+          countryCode: countryCode.trim().toUpperCase().slice(0, 2),
+          city: city.trim(),
+        },
+      });
+    } catch (error) {
+      setErrorMessage(
+        error instanceof Error
+          ? error.message
+          : "Could not initiate checkout. Please try again.",
       );
     }
   };
@@ -204,6 +243,79 @@ const CreditsPage: React.FC = () => {
             </p>
           </div>
 
+          {/* SafePay billing form */}
+          {paymentMode === "safepay" && isAuthenticated && (
+            <div className="mb-6 rounded-[24px] border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-950/40 p-5 space-y-4">
+              <p className="text-xs font-black uppercase tracking-[0.16em] text-gray-400 dark:text-gray-500">
+                Billing Details
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1">First Name</label>
+                  <input
+                    type="text"
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
+                    placeholder="Jane"
+                    className="w-full rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1">Last Name</label>
+                  <input
+                    type="text"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
+                    placeholder="Smith"
+                    className="w-full rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1">Phone</label>
+                  <input
+                    type="tel"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    placeholder="+44 7700 900000"
+                    className="w-full rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1">City</label>
+                  <input
+                    type="text"
+                    value={city}
+                    onChange={(e) => setCity(e.target.value)}
+                    placeholder="London"
+                    className="w-full rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1">Country (ISO code)</label>
+                  <input
+                    type="text"
+                    value={countryCode}
+                    onChange={(e) => setCountryCode(e.target.value.toUpperCase().slice(0, 2))}
+                    placeholder="GB"
+                    maxLength={2}
+                    className="w-full rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1">Currency</label>
+                  <select
+                    value={currency}
+                    onChange={(e) => setCurrency(e.target.value as "EUR" | "GBP")}
+                    className="w-full rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white"
+                  >
+                    <option value="GBP">GBP (£)</option>
+                    <option value="EUR">EUR (€)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          )}
+
           {statusMessage && (
             <div className="mb-4 rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-4 text-sm text-emerald-900 dark:border-emerald-900/40 dark:bg-emerald-950/30 dark:text-emerald-100">
               {statusMessage}
@@ -218,22 +330,41 @@ const CreditsPage: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row gap-3 mb-6">
             {isAuthenticated ? (
-              <>
-                <Link
-                  to="/account"
-                  className="inline-flex items-center justify-center rounded-full bg-black dark:bg-white px-6 py-3 text-sm font-black text-white dark:text-black"
-                >
-                  Open buyer portal
-                </Link>
-                <button
-                  type="button"
-                  onClick={handleTopUp}
-                  disabled={isBusy}
-                  className="inline-flex items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 px-6 py-3 text-sm font-bold text-gray-700 dark:text-gray-200 disabled:opacity-60"
-                >
-                  {isBusy ? "Processing top-up..." : "Top up here instead"}
-                </button>
-              </>
+              paymentMode === "safepay" ? (
+                <>
+                  <button
+                    type="button"
+                    onClick={handleSafepayCheckout}
+                    disabled={isBusy}
+                    className="inline-flex items-center justify-center rounded-full bg-black dark:bg-white px-6 py-3 text-sm font-black text-white dark:text-black disabled:opacity-60"
+                  >
+                    {isBusy ? "Redirecting to SafePay..." : "Proceed to SafePay"}
+                  </button>
+                  <Link
+                    to="/account"
+                    className="inline-flex items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 px-6 py-3 text-sm font-bold text-gray-700 dark:text-gray-200"
+                  >
+                    Open buyer portal
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <Link
+                    to="/account"
+                    className="inline-flex items-center justify-center rounded-full bg-black dark:bg-white px-6 py-3 text-sm font-black text-white dark:text-black"
+                  >
+                    Open buyer portal
+                  </Link>
+                  <button
+                    type="button"
+                    onClick={handleTopUp}
+                    disabled={isBusy}
+                    className="inline-flex items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 px-6 py-3 text-sm font-bold text-gray-700 dark:text-gray-200 disabled:opacity-60"
+                  >
+                    {isBusy ? "Processing top-up..." : "Top up here instead"}
+                  </button>
+                </>
+              )
             ) : (
               <>
                 <Link
