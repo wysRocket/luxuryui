@@ -22,6 +22,7 @@ import {
   getAvailableToUnlockKits,
   getCreditState,
 } from "../services/presentationState";
+import { RUNTIME_CONFIG } from "../services/runtimeConfig";
 
 const AccountPage: FC = () => {
   const {
@@ -189,6 +190,7 @@ const AccountPage: FC = () => {
             </div>
           </div>
 
+          {RUNTIME_CONFIG.backendMode === "local" ? (
           <article className="rounded-[28px] border border-gray-100 bg-white/90 p-6 dark:border-gray-800 dark:bg-gray-950/60 md:p-8">
             <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div>
@@ -326,6 +328,27 @@ const AccountPage: FC = () => {
               the commercial catalog when you are ready to unlock a kit.
             </p>
           </article>
+          ) : (
+          <article className="rounded-[28px] border border-gray-100 bg-white/90 p-6 dark:border-gray-800 dark:bg-gray-950/60 md:p-8">
+            <p className="mb-3 text-xs font-black uppercase tracking-[0.2em] text-gray-400 dark:text-gray-500">
+              Top Up Credits
+            </p>
+            <h2 className="mb-3 text-3xl font-black tracking-tight text-gray-900 dark:text-white">
+              Add credits via SafePay
+            </h2>
+            <p className="mb-6 text-sm leading-relaxed text-gray-500 dark:text-gray-400">
+              Credits are added to your wallet after payment is confirmed.
+              Go to the pricing page to start a checkout.
+            </p>
+            <Link
+              to="/pricing"
+              className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-black text-white dark:bg-white dark:text-black"
+            >
+              Go to Pricing
+              <ArrowRight size={14} />
+            </Link>
+          </article>
+          )}
         </div>
       </section>
 
