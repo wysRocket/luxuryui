@@ -35,6 +35,12 @@ import {
 } from "../services/firestoreAdminStore";
 import { isFirestorePermissionDeniedError } from "../services/firebaseErrorUtils";
 import { getRuntimeWarnings, RUNTIME_CONFIG } from "../services/runtimeConfig";
+import {
+  createSafepayPaymentSession,
+  storePendingCheckout,
+  type SafepayCustomer,
+} from "../services/safepayService";
+import { getCreditQuote } from "../data/figmaKits";
 import type {
   AdminStatus,
   AppSessionState,
@@ -47,6 +53,12 @@ import type {
   UserProfile,
 } from "../types";
 
+export interface SafepayCheckoutParams {
+  credits: number;
+  currency: "EUR" | "GBP";
+  customer: SafepayCustomer;
+}
+
 interface AppSessionContextValue extends AppSessionState {
   isAuthenticated: boolean;
   isAdmin: boolean;
@@ -54,6 +66,7 @@ interface AppSessionContextValue extends AppSessionState {
   isBusy: boolean;
   warnings: string[];
   backendMode: "local" | "firebase";
+  paymentMode: "local" | "stripe" | "safepay";
   signUp: (input: {
     displayName: string;
     email: string;
@@ -63,6 +76,7 @@ interface AppSessionContextValue extends AppSessionState {
   signInWithGoogle: () => Promise<void>;
   signOut: () => Promise<void>;
   topUpCredits: (credits: number) => Promise<CreditTopUp>;
+  initiateCheckout: (params: SafepayCheckoutParams) => Promise<void>;
   purchaseKit: (kit: FigmaKitProduct) => Promise<KitUnlock>;
   hasUnlocked: (productId: string) => boolean;
   getUnlock: (productId: string) => KitUnlock | undefined;
@@ -384,6 +398,7 @@ export const AppSessionProvider: React.FC<{ children: React.ReactNode }> = ({
       isBusy,
       warnings: [...getRuntimeWarnings(), ...sessionWarnings],
       backendMode: RUNTIME_CONFIG.backendMode,
+      paymentMode: RUNTIME_CONFIG.paymentMode,
       signUp: async (input) => {
         await wrapAction(async () => {
           const nextUser = await authBackend.signUp(input);
@@ -424,6 +439,31 @@ export const AppSessionProvider: React.FC<{ children: React.ReactNode }> = ({
             ? topUpFirestoreWalletCredits(currentUserRef.current, credits)
             : topUpWalletCredits(currentUserRef.current, credits);
         }),
+      initiateCheckout: async (params) => {
+        const user = currentUserRef.current;
+        if (!user) {
+          throw new Error("Sign in before topping up credits.");
+        }
+
+        const quote = getCreditQuote(params.credits);
+        const result = await createSafepayPaymentSession({
+          credits: params.credits,
+          currency: params.currency,
+          customer: {
+            ...params.customer,
+            email: params.customer.email || user.email,
+          },
+        });
+
+        storePendingCheckout({
+          invoice: result.invoice,
+          credits: params.credits,
+          eurAmount: quote.eurTotal,
+          gbpAmount: quote.gbpTotal,
+        });
+
+        window.location.href = result.checkoutUrl;
+      },
       purchaseKit: async (kit) =>
         wrapAction(() => {
           if (!currentUserRef.current) {
