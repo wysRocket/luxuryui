@@ -54,10 +54,6 @@ export const RUNTIME_CONFIG = {
       .map((entry) => entry.trim())
       .filter(Boolean),
   },
-  supabase: {
-    url: readEnv("VITE_SUPABASE_URL") ?? "",
-    anonKey: readEnv("VITE_SUPABASE_ANON_KEY") ?? "",
-  },
   issues: [] as string[],
 };
 
@@ -84,19 +80,6 @@ if (
   RUNTIME_CONFIG.issues.push(
     "Missing VITE_STRIPE_PUBLISHABLE_KEY for Stripe mode.",
   );
-}
-
-if (RUNTIME_CONFIG.paymentMode === "safepay") {
-  if (!readEnv("VITE_SUPABASE_URL")) {
-    RUNTIME_CONFIG.issues.push(
-      "Missing VITE_SUPABASE_URL for SafePay mode.",
-    );
-  }
-  if (!readEnv("VITE_SUPABASE_ANON_KEY")) {
-    RUNTIME_CONFIG.issues.push(
-      "Missing VITE_SUPABASE_ANON_KEY for SafePay mode.",
-    );
-  }
 }
 
 export const getRuntimeWarnings = (): string[] => {

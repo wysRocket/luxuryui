@@ -32,19 +32,17 @@ const CheckoutStatusPage: React.FC = () => {
       if (hasApplied.current || !user) return;
       hasApplied.current = true;
 
-      if (result.balanceDelta > 0) {
-        await applyFirestoreSafepayCredits(user, {
-          credits: result.balanceDelta,
-          invoiceId: result.invoice,
-          eurAmount: checkout.eurAmount,
-          gbpAmount: checkout.gbpAmount,
-        });
-        setCreditsAdded(result.balanceDelta);
-      } else {
-        // Already applied server-side, use stored credits as fallback
-        setCreditsAdded(checkout.credits);
-      }
+      const credits = result.credits > 0 ? result.credits : checkout.credits;
+      const eurAmount = result.eurAmount > 0 ? result.eurAmount : checkout.eurAmount;
+      const gbpAmount = result.gbpAmount > 0 ? result.gbpAmount : checkout.gbpAmount;
 
+      await applyFirestoreSafepayCredits(user, {
+        credits,
+        invoiceId: result.invoice,
+        eurAmount,
+        gbpAmount,
+      });
+      setCreditsAdded(credits);
       clearPendingCheckout();
       setPageState('success');
     },

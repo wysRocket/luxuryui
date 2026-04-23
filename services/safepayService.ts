@@ -1,32 +1,6 @@
-import { getAuth } from 'firebase/auth';
+import { httpsCallable } from 'firebase/functions';
 import { getCreditQuote } from '../data/figmaKits';
-import { RUNTIME_CONFIG } from './runtimeConfig';
-
-async function getFirebaseIdToken(): Promise<string> {
-  const auth = getAuth();
-  const user = auth.currentUser;
-  if (!user) throw new Error('Sign in before topping up credits.');
-  return user.getIdToken();
-}
-
-async function callEdgeFunction<T>(path: string, body: unknown): Promise<T> {
-  const token = await getFirebaseIdToken();
-  const url = `${RUNTIME_CONFIG.supabase.url}/functions/v1/${path}`;
-
-  const response = await fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${token}`,
-      apikey: RUNTIME_CONFIG.supabase.anonKey,
-    },
-    body: JSON.stringify(body),
-  });
-
-  const data = await response.json();
-  if (!response.ok) throw new Error(data.error ?? 'Payment request failed.');
-  return data as T;
-}
+import { getFirebaseFunctionsClient } from './firebaseClient';
 
 export interface SafepayCustomer {
   firstName: string;
@@ -46,10 +20,9 @@ export interface SafepayCheckoutResult {
 export interface SafepayStatusResult {
   invoice: string;
   status: 'processing' | 'completed' | 'failed' | 'manual_review';
-  creditsApplied: boolean;
-  balanceDelta: number;
-  providerStatusId: number | null;
-  providerStatusText: string;
+  credits: number;
+  eurAmount: number;
+  gbpAmount: number;
 }
 
 export interface PendingCheckout {
@@ -67,19 +40,26 @@ export async function createSafepayPaymentSession(params: {
   customer: SafepayCustomer;
 }): Promise<SafepayCheckoutResult> {
   const quote = getCreditQuote(params.credits);
-  const amount = params.currency === 'EUR'
-    ? quote.eurTotal.toFixed(2)
-    : quote.gbpTotal.toFixed(2);
+  const amount =
+    params.currency === 'EUR'
+      ? quote.eurTotal.toFixed(2)
+      : quote.gbpTotal.toFixed(2);
 
-  return callEdgeFunction<SafepayCheckoutResult>('create-payment-session', {
-    amount,
-    currency: params.currency,
-    customer: params.customer,
-  });
+  const fn = httpsCallable<unknown, SafepayCheckoutResult>(
+    getFirebaseFunctionsClient(),
+    'createPaymentSession',
+  );
+  const result = await fn({ amount, currency: params.currency, customer: params.customer });
+  return result.data;
 }
 
 export async function refreshSafepayStatus(invoice: string): Promise<SafepayStatusResult> {
-  return callEdgeFunction<SafepayStatusResult>('refresh-payment-status', { invoice });
+  const fn = httpsCallable<unknown, SafepayStatusResult>(
+    getFirebaseFunctionsClient(),
+    'refreshPaymentStatus',
+  );
+  const result = await fn({ invoice });
+  return result.data;
 }
 
 export function storePendingCheckout(data: PendingCheckout): void {
