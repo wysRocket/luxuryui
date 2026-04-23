@@ -9,7 +9,6 @@ import {
   type PendingCheckout,
   type SafepayStatusResult,
 } from '../services/safepayService';
-import { applyFirestoreSafepayCredits } from '../services/firestoreCommerceStore';
 
 const POLL_INTERVAL_MS = 4000;
 const MAX_POLL_ATTEMPTS = 60; // ~4 minutes
@@ -32,16 +31,8 @@ const CheckoutStatusPage: React.FC = () => {
       if (hasApplied.current || !user) return;
       hasApplied.current = true;
 
+      // Credits are applied server-side by the Cloud Function when payment completes.
       const credits = result.credits > 0 ? result.credits : checkout.credits;
-      const eurAmount = result.eurAmount > 0 ? result.eurAmount : checkout.eurAmount;
-      const gbpAmount = result.gbpAmount > 0 ? result.gbpAmount : checkout.gbpAmount;
-
-      await applyFirestoreSafepayCredits(user, {
-        credits,
-        invoiceId: result.invoice,
-        eurAmount,
-        gbpAmount,
-      });
       setCreditsAdded(credits);
       clearPendingCheckout();
       setPageState('success');

@@ -435,6 +435,14 @@ export const AppSessionProvider: React.FC<{ children: React.ReactNode }> = ({
             );
           }
 
+          if (RUNTIME_CONFIG.paymentMode !== "local") {
+            return Promise.reject(
+              new Error(
+                "Direct top-ups are disabled. Please complete a checkout to add credits.",
+              ),
+            );
+          }
+
           return RUNTIME_CONFIG.backendMode === "firebase"
             ? topUpFirestoreWalletCredits(currentUserRef.current, credits)
             : topUpWalletCredits(currentUserRef.current, credits);

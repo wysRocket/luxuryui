@@ -35,16 +35,23 @@ service cloud.firestore {
 
     match /wallets/{userId} {
       allow read: if isOwner(userId) || isAdmin();
-      allow create, update: if isOwner(userId);
+      // Clients may create wallet (balance must start at 0) or update it
+      // only when balance is decreasing or unchanged (kit purchases).
+      // Balance increases require a server-side write via Cloud Functions.
+      allow create: if isOwner(userId)
+        && request.resource.data.balance == 0;
+      allow update: if isOwner(userId)
+        && request.resource.data.balance <= resource.data.balance;
 
       match /transactions/{transactionId} {
         allow read: if isOwner(userId) || isAdmin();
-        allow create, update: if isOwner(userId);
+        allow create: if isOwner(userId);
       }
 
+      // topUps are only written by Cloud Functions (Admin SDK bypasses rules).
+      // Clients must not create top-up records directly.
       match /topUps/{topUpId} {
         allow read: if isOwner(userId) || isAdmin();
-        allow create, update: if isOwner(userId);
       }
 
       match /orders/{orderId} {

@@ -276,6 +276,48 @@ exports.refreshPaymentStatus = (0, https_1.onCall)({ secrets: [SAFEPAY_MERCHANT_
     const newStatus = classifyPaymentState(statusId, providerStatusText);
     const now = new Date().toISOString();
     await orderRef.update(Object.assign({ status: newStatus, rawStatusResponse: providerJson, lastCheckedAt: now }, (newStatus === "completed" && !order.completedAt ? { completedAt: now } : {})));
+    // Apply credits server-side when payment completes — idempotent via topUp doc check
+    if (newStatus === "completed") {
+        const walletRef = db.collection("wallets").doc(uid);
+        const topUpId = `safepay_${invoice.replace(/[^a-zA-Z0-9_-]/g, "_")}`;
+        const topUpRef = walletRef.collection("topUps").doc(topUpId);
+        const transactionId = `safepay_txn_${topUpId}`;
+        const txRef = walletRef.collection("transactions").doc(transactionId);
+        await db.runTransaction(async (t) => {
+            var _a, _b;
+            const [walletSnap, topUpSnap] = await Promise.all([
+                t.get(walletRef),
+                t.get(topUpRef),
+            ]);
+            // Idempotency: skip if credits were already applied
+            if (topUpSnap.exists)
+                return;
+            const wallet = walletSnap.exists
+                ? walletSnap.data()
+                : { userId: uid, balance: 0, lifetimePurchased: 0, lifetimeSpent: 0, createdAt: now, updatedAt: now };
+            const nextTopUp = {
+                id: topUpId,
+                userId: uid,
+                creditsPurchased: order.creditsToAdd,
+                eurAmount,
+                gbpAmount,
+                stripeSessionId: invoice,
+                status: "succeeded",
+                createdAt: now,
+            };
+            const nextTx = {
+                id: transactionId,
+                userId: uid,
+                type: "topup",
+                creditsDelta: order.creditsToAdd,
+                relatedOrderId: topUpId,
+                createdAt: now,
+            };
+            t.set(walletRef, Object.assign(Object.assign({}, wallet), { balance: ((_a = wallet.balance) !== null && _a !== void 0 ? _a : 0) + order.creditsToAdd, lifetimePurchased: ((_b = wallet.lifetimePurchased) !== null && _b !== void 0 ? _b : 0) + order.creditsToAdd, updatedAt: now }));
+            t.set(topUpRef, nextTopUp);
+            t.set(txRef, nextTx);
+        });
+    }
     return { invoice, status: newStatus, credits: order.creditsToAdd, eurAmount, gbpAmount };
 });
 //# sourceMappingURL=index.js.map
