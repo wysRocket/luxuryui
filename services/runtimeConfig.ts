@@ -1,5 +1,5 @@
 export type BackendMode = "local" | "firebase";
-export type PaymentMode = "local" | "stripe";
+export type PaymentMode = "local" | "stripe" | "safepay";
 
 const readEnv = (key: string): string | undefined => {
   if (typeof import.meta !== "undefined" && import.meta.env) {
@@ -28,11 +28,15 @@ const readBooleanEnv = (key: string): boolean | undefined => {
   return undefined;
 };
 
+const rawPaymentMode = readEnv("VITE_PAYMENT_MODE");
+
 export const RUNTIME_CONFIG = {
   backendMode: (readEnv("VITE_BACKEND_MODE") === "firebase"
     ? "firebase"
     : "local") as BackendMode,
-  paymentMode: (readEnv("VITE_PAYMENT_MODE") === "stripe"
+  paymentMode: (rawPaymentMode === "safepay"
+    ? "safepay"
+    : rawPaymentMode === "stripe"
     ? "stripe"
     : "local") as PaymentMode,
   hasLiveConcierge: Boolean(
@@ -49,6 +53,10 @@ export const RUNTIME_CONFIG = {
       .split(",")
       .map((entry) => entry.trim())
       .filter(Boolean),
+  },
+  supabase: {
+    url: readEnv("VITE_SUPABASE_URL") ?? "",
+    anonKey: readEnv("VITE_SUPABASE_ANON_KEY") ?? "",
   },
   issues: [] as string[],
 };
@@ -78,6 +86,19 @@ if (
   );
 }
 
+if (RUNTIME_CONFIG.paymentMode === "safepay") {
+  if (!readEnv("VITE_SUPABASE_URL")) {
+    RUNTIME_CONFIG.issues.push(
+      "Missing VITE_SUPABASE_URL for SafePay mode.",
+    );
+  }
+  if (!readEnv("VITE_SUPABASE_ANON_KEY")) {
+    RUNTIME_CONFIG.issues.push(
+      "Missing VITE_SUPABASE_ANON_KEY for SafePay mode.",
+    );
+  }
+}
+
 export const getRuntimeWarnings = (): string[] => {
   const warnings: string[] = [];
 
@@ -87,7 +108,7 @@ export const getRuntimeWarnings = (): string[] => {
     );
   } else {
     warnings.push(
-      "Running with Firebase accounts and Firestore wallet sync. Payment processing is still mock/local until Stripe checkout is configured.",
+      "Running with Firebase accounts and Firestore wallet sync. Payment processing is still mock/local until SafePay checkout is configured.",
     );
 
     if (RUNTIME_CONFIG.firebase.googleAuthEnabled === false) {
@@ -111,7 +132,13 @@ export const getRuntimeWarnings = (): string[] => {
 
   if (RUNTIME_CONFIG.paymentMode === "local") {
     warnings.push(
-      "Credit top-ups are completed instantly in-app until a live Stripe checkout is configured.",
+      "Credit top-ups are completed instantly in-app until a live SafePay checkout is configured.",
+    );
+  }
+
+  if (RUNTIME_CONFIG.paymentMode === "safepay") {
+    warnings.push(
+      "Running with SafePay live checkout. Payments are processed via SafePay and credits are applied to Firebase wallet.",
     );
   }
 
