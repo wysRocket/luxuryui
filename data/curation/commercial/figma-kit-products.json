@@ -1,6 +1,6 @@
 {
   "schema": "2",
-  "generatedAt": "2026-04-24T00:43:12.702Z",
+  "generatedAt": "2026-04-24T05:12:16.286Z",
   "summary": {
     "totalProducts": 76,
     "publishedProducts": 0,
@@ -49,7 +49,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/monzo-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -118,7 +118,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/revolut-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -187,7 +187,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/mint-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -255,7 +255,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/robinhood-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -324,7 +324,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/paypal-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -393,7 +393,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/wallet-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -462,7 +462,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/wealthfront-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -531,7 +531,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/n26-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -600,7 +600,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/coinbase-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -668,7 +668,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/binance-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -737,7 +737,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/metamask-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -805,7 +805,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/kraken-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -874,7 +874,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/phantom-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -942,7 +942,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/uniswap-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1011,7 +1011,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/ledger-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1080,7 +1080,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/amazon-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1149,7 +1149,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/ebay-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1216,7 +1216,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/shopify-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1285,7 +1285,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/etsy-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1354,7 +1354,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/zara-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1423,7 +1423,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/asos-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1490,7 +1490,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/nike-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1559,7 +1559,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/stockx-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1628,7 +1628,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/instagram-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1696,7 +1696,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/twitter-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1763,7 +1763,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/linkedin-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1832,7 +1832,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/tiktok-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1901,7 +1901,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/snapchat-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1970,7 +1970,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/whatsapp-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2037,7 +2037,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/threads-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2104,7 +2104,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/bereal-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2171,7 +2171,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/airbnb-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2240,7 +2240,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/expedia-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2309,7 +2309,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/hopper-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2378,7 +2378,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/booking-com-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2447,7 +2447,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/skyscanner-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2516,7 +2516,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/tripadvisor-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2585,7 +2585,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/kayak-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2654,7 +2654,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/hoteltonight-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2722,7 +2722,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/slack-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2791,7 +2791,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/zoom-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2860,7 +2860,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/trello-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2929,7 +2929,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/notion-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2997,7 +2997,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/asana-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3065,7 +3065,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/monday-com-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3134,7 +3134,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/linear-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3201,7 +3201,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/loom-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3269,7 +3269,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/headspace-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3338,7 +3338,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/calm-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3407,7 +3407,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/strava-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3476,7 +3476,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/nike-run-club-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3545,7 +3545,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/myfitnesspal-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3614,7 +3614,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/fitbit-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3681,7 +3681,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/flo-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3750,7 +3750,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/sleep-cycle-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3819,7 +3819,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/spotify-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3888,7 +3888,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/apple-music-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3957,7 +3957,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/soundcloud-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4026,7 +4026,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/tidal-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4093,7 +4093,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/deezer-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4162,7 +4162,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/pandora-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4231,7 +4231,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/shazam-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4300,7 +4300,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/duolingo-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4369,7 +4369,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/coursera-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4436,7 +4436,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/masterclass-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4505,7 +4505,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/udemy-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4574,7 +4574,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/khan-academy-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4643,7 +4643,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/skillshare-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4712,7 +4712,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/babbel-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4781,7 +4781,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/the-new-york-times-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4850,7 +4850,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/bbc-news-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4919,7 +4919,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/cnn-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4986,7 +4986,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/reuters-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -5055,7 +5055,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/flipboard-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -5124,7 +5124,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/substack-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -5193,7 +5193,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-24T00:43:12.702Z",
+      "lastReviewedAt": "2026-04-24T05:12:16.286Z",
       "previewPath": "/kits/pocket-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {

@@ -142,6 +142,25 @@ const readJsonIfExists = async (filePath, fallback) => {
 
 const getRecordKey = (record) => record?.productId ?? record?.id ?? null;
 
+export const isFinalizationRecordForKit = (record, { kitSlug, productId }) =>
+  Boolean(record && record.kitSlug === kitSlug && record.productId === productId);
+
+export const readFinalizationIfExists = async (filePath) => {
+  try {
+    return JSON.parse(await readFile(filePath, 'utf8'));
+  } catch (error) {
+    if (error && typeof error === 'object' && 'code' in error && error.code === 'ENOENT') {
+      return null;
+    }
+
+    if (error instanceof SyntaxError) {
+      throw new Error(`Malformed finalization JSON at ${filePath}: ${error.message}`, { cause: error });
+    }
+
+    throw error;
+  }
+};
+
 export const mergeRecordsByProductId = (existingRecords = [], updatedRecords = []) => {
   const updatesByProductId = new Map(
     updatedRecords
@@ -178,6 +197,7 @@ export const loadGeneratedStitchRuns = async (runsPath = stitchRunsPath) => {
 
 export const buildGeneratedArtifactsBridge = ({
   productSlug,
+  productId = null,
   generatedAt,
   commercialReady,
   publishQualityStatus = null,
@@ -215,7 +235,10 @@ export const buildGeneratedArtifactsBridge = ({
     ? reconstruction.sourceAssetPaths
     : (reconstruction?.screenBlueprints ?? []).map((screen) => screen?.sourceAssetPath).filter(Boolean);
   const generationSource = reconstruction?.generationSource ?? latestRun?.generationSource ?? null;
-  const finalizationReady = isFinalizedForSale(finalization);
+  const matchedFinalization = isFinalizationRecordForKit(finalization, { kitSlug: productSlug, productId })
+    ? finalization
+    : null;
+  const finalizationReady = isFinalizedForSale(matchedFinalization);
 
   return {
     kitSlug: productSlug,
@@ -227,10 +250,10 @@ export const buildGeneratedArtifactsBridge = ({
     publishQualityStatus,
     publishReadyForSale: publishReadyForSale && isArtifactReady && finalizationReady,
     publishAssetOrigin,
-    finalizationStatus: finalization?.finalizationStatus ?? null,
-    auditClassification: finalization?.auditClassification ?? null,
-    finalAssetId: finalization?.exportEvidence?.finalAssetId ?? null,
-    finalAssetUrl: finalization?.exportEvidence?.finalAssetUrl ?? null,
+    finalizationStatus: matchedFinalization?.finalizationStatus ?? null,
+    auditClassification: matchedFinalization?.auditClassification ?? null,
+    finalAssetId: matchedFinalization?.exportEvidence?.finalAssetId ?? null,
+    finalAssetUrl: matchedFinalization?.exportEvidence?.finalAssetUrl ?? null,
     exportPackageFileName,
     previewCount,
     stitchProjectId: latestRun?.stitchProjectId ?? null,
@@ -292,11 +315,9 @@ export const run = async ({ only = parseOnlyArg(process.argv.slice(2)) } = {}) =
     } catch {
       // No reconstruction yet — that's fine, kit stays at 'generated' or earlier.
     }
-    try {
-      const raw = await readFile(finalizationPath, 'utf8');
-      finalizationBySlug.set(kitSlug, JSON.parse(raw));
-    } catch {
-      // No finalization yet — packaged metadata can exist, but it cannot publish.
+    const finalization = await readFinalizationIfExists(finalizationPath);
+    if (finalization) {
+      finalizationBySlug.set(kitSlug, finalization);
     }
   }
   const runsByKitSlug = new Map();
@@ -360,8 +381,12 @@ export const run = async ({ only = parseOnlyArg(process.argv.slice(2)) } = {}) =
     const includedComponents = FLOW_COMPONENTS[primaryFlowId] ?? FLOW_COMPONENTS.onboarding;
     const includedTokens = CATEGORY_TOKENS[entry.category] ?? CATEGORY_TOKENS.Business;
     const kitSlug = `${entry.slug}-figma-kit`;
+    const productId = `figma-kit:${entry.slug}`;
     const reconstruction = reconstructionBySlug.get(kitSlug) ?? null;
-    const finalization = finalizationBySlug.get(kitSlug) ?? null;
+    const loadedFinalization = finalizationBySlug.get(kitSlug) ?? null;
+    const finalization = isFinalizationRecordForKit(loadedFinalization, { kitSlug, productId })
+      ? loadedFinalization
+      : null;
     const latestStitchRun = selectGeneratedArtifactsRun(runsByKitSlug.get(kitSlug) ?? []);
     const reconstructionPreviewImages = getReconstructionPreviewImages(reconstruction);
     const hasSuccessfulStitchRun =
@@ -496,6 +521,7 @@ export const run = async ({ only = parseOnlyArg(process.argv.slice(2)) } = {}) =
       },
       generatedArtifacts: buildGeneratedArtifactsBridge({
         productSlug: kitSlug,
+        productId,
         generatedAt,
         commercialReady: isApproved,
         publishQualityStatus,
