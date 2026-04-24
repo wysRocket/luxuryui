@@ -6,7 +6,14 @@ const countTextItems = (value) => (Array.isArray(value) ? value.filter(hasText).
 
 const hasItems = (value) => countTextItems(value) > 0;
 
-const isValidTimestamp = (value) => hasText(value) && !Number.isNaN(Date.parse(value));
+const isValidTimestamp = (value) => {
+  if (!hasText(value)) {
+    return false;
+  }
+
+  const date = new Date(value);
+  return !Number.isNaN(date.getTime()) && date.toISOString() === value;
+};
 
 const isValidHttpUrl = (value) => {
   if (!hasText(value)) {
