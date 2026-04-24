@@ -281,6 +281,10 @@ export interface GeneratedKitArtifacts {
   publishQualityStatus?: PublishQualityStatus | null;
   publishReadyForSale?: boolean;
   publishAssetOrigin?: PublishAssetOrigin | null;
+  finalizationStatus?: KitFinalizationStatus | null;
+  auditClassification?: KitAuditClassification | null;
+  finalAssetId?: string | null;
+  finalAssetUrl?: string | null;
   exportPackageFileName: string;
   previewCount: number;
   stitchProjectId?: string | null;
