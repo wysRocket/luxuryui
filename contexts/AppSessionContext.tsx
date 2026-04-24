@@ -48,6 +48,7 @@ import type {
   CreditTopUp,
   CreditTransaction,
   FigmaKitProduct,
+  KitDeliveryAsset,
   KitOrder,
   KitUnlock,
   UserProfile,
@@ -80,7 +81,7 @@ interface AppSessionContextValue extends AppSessionState {
   purchaseKit: (kit: FigmaKitProduct) => Promise<KitUnlock>;
   hasUnlocked: (productId: string) => boolean;
   getUnlock: (productId: string) => KitUnlock | undefined;
-  createDownload: (productId: string) => { url: string; fileName: string };
+  createDownload: (productId: string) => KitDeliveryAsset;
   markDownloadStatus: (
     unlockId: string,
     status: KitUnlock["downloadStatus"],

@@ -159,6 +159,14 @@ export interface KitOrder {
   fulfilledAt: string | null;
 }
 
+export interface KitDeliveryAsset {
+  kind: "figma-final-asset";
+  url: string;
+  assetId: string | null;
+  metadataUrl: string | null;
+  fileName: string;
+}
+
 export interface FigmaKitProduct {
   id: string;
   slug: string;
