@@ -58,6 +58,23 @@ const isGitIgnored = async (filePath) => {
   }
 };
 
+const isGitTracked = async (filePath) => {
+  try {
+    await execFileAsync(
+      'git',
+      ['ls-files', '--error-unmatch', '--', path.relative(projectRoot, filePath)],
+      { cwd: projectRoot },
+    );
+    return true;
+  } catch (error) {
+    if (error?.code === 1) {
+      return false;
+    }
+
+    throw error;
+  }
+};
+
 const readReproducibleLedger = async (filePath) => {
   if (await isGitIgnored(filePath)) {
     return { runs: [] };
@@ -65,6 +82,17 @@ const readReproducibleLedger = async (filePath) => {
 
   return readJsonIfExists(filePath, { runs: [] });
 };
+
+const readTrackedJsonIfExists = async (filePath, fallback = null) => {
+  if (!(await isGitTracked(filePath))) {
+    return fallback;
+  }
+
+  return readJsonIfExists(filePath, fallback);
+};
+
+export const selectAuditTimestamp = ({ products, env = process.env, currentNow = new Date().toISOString() } = {}) =>
+  products?.generatedAt ?? env?.COMMERCIAL_FINALIZATION_AUDIT_NOW ?? currentNow;
 
 const toTime = (run) => {
   const candidate = run?.generatedAt ?? run?.completedAt ?? run?.updatedAt ?? run?.createdAt ?? null;
@@ -194,7 +222,7 @@ const loadReconstructionsBySlug = async (products) => {
     assertSafeKitSlug(product.slug);
 
     const reconstructionPath = path.join(generatedArtifactsRoot, product.slug, 'figma', 'reconstruction.json');
-    const reconstruction = await readJsonIfExists(reconstructionPath, null);
+    const reconstruction = await readTrackedJsonIfExists(reconstructionPath, null);
     if (reconstruction) {
       reconstructionsBySlug.set(product.slug, reconstruction);
     }
@@ -209,7 +237,10 @@ const loadFinalizationsBySlug = async (products) => {
   for (const product of products?.products ?? []) {
     assertSafeKitSlug(product.slug);
 
-    const finalization = await readJsonIfExists(getKitArtifactPaths(product.slug, projectRoot).finalizationPath, null);
+    const finalization = await readTrackedJsonIfExists(
+      getKitArtifactPaths(product.slug, projectRoot).finalizationPath,
+      null,
+    );
     if (finalization) {
       finalizationsBySlug.set(product.slug, finalization);
     }
@@ -245,6 +276,7 @@ const runCli = async () => {
     reconstructionsBySlug,
     stitchRunsBySlug: groupRunsBySlug(ledger.runs ?? []),
     finalizationsBySlug,
+    now: selectAuditTimestamp({ products }),
   });
 
   await writeAuditOutputs(audit);

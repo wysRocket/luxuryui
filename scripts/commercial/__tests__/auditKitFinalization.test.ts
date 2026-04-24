@@ -1,5 +1,10 @@
 import { describe, expect, it } from 'vitest';
-import { assertSafeKitSlug, buildFinalizationAudit, isSafeKitSlug } from '../audit-kit-finalization.mjs';
+import {
+  assertSafeKitSlug,
+  buildFinalizationAudit,
+  isSafeKitSlug,
+  selectAuditTimestamp,
+} from '../audit-kit-finalization.mjs';
 
 describe('commercial finalization audit', () => {
   it('creates conservative finalization records and summary counts', () => {
@@ -125,5 +130,23 @@ describe('commercial finalization audit', () => {
     expect(isSafeKitSlug('monzo/figma-kit')).toBe(false);
     expect(isSafeKitSlug('Monzo-figma-kit')).toBe(false);
     expect(() => assertSafeKitSlug('../monzo')).toThrow('Unsafe kit slug');
+  });
+
+  it('selects a stable audit timestamp from catalog metadata before env or current time', () => {
+    expect(selectAuditTimestamp({
+      products: { generatedAt: '2026-04-04T23:08:26.207Z' },
+      env: { COMMERCIAL_FINALIZATION_AUDIT_NOW: '2026-04-24T12:00:00.000Z' },
+      currentNow: '2026-04-25T12:00:00.000Z',
+    })).toBe('2026-04-04T23:08:26.207Z');
+    expect(selectAuditTimestamp({
+      products: {},
+      env: { COMMERCIAL_FINALIZATION_AUDIT_NOW: '2026-04-24T12:00:00.000Z' },
+      currentNow: '2026-04-25T12:00:00.000Z',
+    })).toBe('2026-04-24T12:00:00.000Z');
+    expect(selectAuditTimestamp({
+      products: {},
+      env: {},
+      currentNow: '2026-04-25T12:00:00.000Z',
+    })).toBe('2026-04-25T12:00:00.000Z');
   });
 });

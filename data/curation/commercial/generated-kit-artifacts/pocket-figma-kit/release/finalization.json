@@ -1,7 +1,7 @@
 {
   "productId": "figma-kit:pocket",
   "kitSlug": "pocket-figma-kit",
-  "auditedAt": "2026-04-24T00:33:14.911Z",
+  "auditedAt": "2026-04-04T23:08:26.207Z",
   "finalizationStatus": "blocked",
   "auditClassification": "must_regenerate",
   "exportEligibility": {
@@ -16,12 +16,13 @@
   },
   "contentVerification": {
     "status": "blocked",
-    "reconstructionStatus": "done",
+    "reconstructionStatus": null,
     "contentBuiltAt": null,
     "includedFrameCount": 13,
     "componentAbstractionCount": 4,
     "colorStyleCount": 3,
     "reasons": [
+      "blocked_reconstruction_incomplete",
       "blocked_missing_content_timestamp"
     ]
   },
@@ -43,6 +44,7 @@
   "blockingReasons": [
     "blocked_non_exportable_stitch_mode",
     "blocked_missing_stitch_project",
+    "blocked_reconstruction_incomplete",
     "blocked_missing_content_timestamp",
     "blocked_export_evidence_missing",
     "blocked_delivery_handoff_unverified",
