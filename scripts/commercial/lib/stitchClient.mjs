@@ -20,6 +20,13 @@ export const createStitchClient = async ({ apiKey = process.env.STITCH_API_KEY, 
   const stitch = new sdk.Stitch(toolClient);
 
   return {
+    async projects() {
+      if (typeof stitch.projects !== 'function') {
+        throw new Error('Stitch project listing is not available in this SDK.');
+      }
+
+      return stitch.projects();
+    },
     async createProject(title) {
       const project = await stitch.createProject(title);
       return project?.projectId ?? project?.id;
