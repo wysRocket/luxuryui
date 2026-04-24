@@ -1,16 +1,17 @@
 {
   "productId": "figma-kit:revolut",
   "kitSlug": "revolut-figma-kit",
-  "auditedAt": "2026-04-24T00:27:07.930Z",
+  "auditedAt": "2026-04-24T00:33:14.911Z",
   "finalizationStatus": "blocked",
   "auditClassification": "must_regenerate",
   "exportEligibility": {
     "status": "blocked",
-    "stitchProjectId": "8839260595483874478",
+    "stitchProjectId": null,
     "stitchMode": null,
     "normalizedStitchMode": null,
     "reasons": [
-      "blocked_non_exportable_stitch_mode"
+      "blocked_non_exportable_stitch_mode",
+      "blocked_missing_stitch_project"
     ]
   },
   "contentVerification": {
@@ -41,6 +42,7 @@
   "exportEvidence": null,
   "blockingReasons": [
     "blocked_non_exportable_stitch_mode",
+    "blocked_missing_stitch_project",
     "blocked_missing_content_timestamp",
     "blocked_export_evidence_missing",
     "blocked_delivery_handoff_unverified",

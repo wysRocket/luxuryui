@@ -1,8 +1,12 @@
+import { execFile } from 'node:child_process';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
+import { promisify } from 'node:util';
 import { fileURLToPath } from 'node:url';
 import { auditFinalizationState } from './lib/kitFinalization.mjs';
 import { getKitArtifactPaths } from './lib/commercialArtifactPaths.mjs';
+
+const execFileAsync = promisify(execFile);
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const commercialRoot = path.join(projectRoot, 'data', 'curation', 'commercial');
@@ -13,6 +17,16 @@ const ledgerPath = path.join(commercialRoot, 'generated-kit-runs.json');
 const generatedArtifactsRoot = path.join(commercialRoot, 'generated-kit-artifacts');
 
 const readJson = async (filePath) => JSON.parse(await readFile(filePath, 'utf8'));
+
+export const isSafeKitSlug = (slug) => typeof slug === 'string' && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug);
+
+export const assertSafeKitSlug = (slug) => {
+  if (!isSafeKitSlug(slug)) {
+    throw new Error(`Unsafe kit slug for commercial artifact path: ${slug}`);
+  }
+
+  return slug;
+};
 
 const readJsonIfExists = async (filePath, fallback = null) => {
   try {
@@ -29,6 +43,27 @@ const readJsonIfExists = async (filePath, fallback = null) => {
 const writeJson = async (filePath, payload) => {
   await mkdir(path.dirname(filePath), { recursive: true });
   await writeFile(filePath, `${JSON.stringify(payload, null, 2)}\n`);
+};
+
+const isGitIgnored = async (filePath) => {
+  try {
+    await execFileAsync('git', ['check-ignore', '--quiet', filePath], { cwd: projectRoot });
+    return true;
+  } catch (error) {
+    if (error?.code === 1) {
+      return false;
+    }
+
+    throw error;
+  }
+};
+
+const readReproducibleLedger = async (filePath) => {
+  if (await isGitIgnored(filePath)) {
+    return { runs: [] };
+  }
+
+  return readJsonIfExists(filePath, { runs: [] });
 };
 
 const toTime = (run) => {
@@ -114,6 +149,8 @@ export const buildFinalizationAudit = ({
   const integrityViolations = [];
 
   for (const product of products?.products ?? []) {
+    assertSafeKitSlug(product.slug);
+
     const stitchRun = selectLatestRun(stitchRunsBySlug.get(product.slug) ?? []);
     const existingFinalization = getFinalizationForSlug(finalizationsBySlug, product.slug);
     const baseRecord = auditFinalizationState({
@@ -154,6 +191,8 @@ const loadReconstructionsBySlug = async (products) => {
   const reconstructionsBySlug = new Map();
 
   for (const product of products?.products ?? []) {
+    assertSafeKitSlug(product.slug);
+
     const reconstructionPath = path.join(generatedArtifactsRoot, product.slug, 'figma', 'reconstruction.json');
     const reconstruction = await readJsonIfExists(reconstructionPath, null);
     if (reconstruction) {
@@ -168,6 +207,8 @@ const loadFinalizationsBySlug = async (products) => {
   const finalizationsBySlug = new Map();
 
   for (const product of products?.products ?? []) {
+    assertSafeKitSlug(product.slug);
+
     const finalization = await readJsonIfExists(getKitArtifactPaths(product.slug, projectRoot).finalizationPath, null);
     if (finalization) {
       finalizationsBySlug.set(product.slug, finalization);
@@ -179,6 +220,8 @@ const loadFinalizationsBySlug = async (products) => {
 
 const writeAuditOutputs = async (audit) => {
   for (const record of audit.records) {
+    assertSafeKitSlug(record.kitSlug);
+
     await writeJson(getKitArtifactPaths(record.kitSlug, projectRoot).finalizationPath, record);
   }
 
@@ -190,7 +233,7 @@ const runCli = async () => {
   const [products, specs, ledger] = await Promise.all([
     readJson(productsPath),
     readJson(specsPath),
-    readJsonIfExists(ledgerPath, { runs: [] }),
+    readReproducibleLedger(ledgerPath),
   ]);
   const [reconstructionsBySlug, finalizationsBySlug] = await Promise.all([
     loadReconstructionsBySlug(products),

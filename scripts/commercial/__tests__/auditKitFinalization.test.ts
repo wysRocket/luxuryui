@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { buildFinalizationAudit } from '../audit-kit-finalization.mjs';
+import { assertSafeKitSlug, buildFinalizationAudit, isSafeKitSlug } from '../audit-kit-finalization.mjs';
 
 describe('commercial finalization audit', () => {
   it('creates conservative finalization records and summary counts', () => {
@@ -117,5 +117,13 @@ describe('commercial finalization audit', () => {
     expect(result.summary.integrityViolations).toBe(0);
     expect(result.records[0].finalizationStatus).toBe('finalized');
     expect(result.records[0].exportEligibility.stitchProjectId).toBe('generated-project');
+  });
+
+  it('rejects unsafe kit slugs before artifact path use', () => {
+    expect(isSafeKitSlug('monzo-figma-kit')).toBe(true);
+    expect(isSafeKitSlug('../monzo')).toBe(false);
+    expect(isSafeKitSlug('monzo/figma-kit')).toBe(false);
+    expect(isSafeKitSlug('Monzo-figma-kit')).toBe(false);
+    expect(() => assertSafeKitSlug('../monzo')).toThrow('Unsafe kit slug');
   });
 });

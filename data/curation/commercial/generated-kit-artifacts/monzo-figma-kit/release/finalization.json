@@ -1,16 +1,17 @@
 {
   "productId": "figma-kit:monzo",
   "kitSlug": "monzo-figma-kit",
-  "auditedAt": "2026-04-24T00:27:07.930Z",
+  "auditedAt": "2026-04-24T00:33:14.911Z",
   "finalizationStatus": "blocked",
   "auditClassification": "must_regenerate",
   "exportEligibility": {
     "status": "blocked",
-    "stitchProjectId": "3437719771253114588",
+    "stitchProjectId": null,
     "stitchMode": null,
     "normalizedStitchMode": null,
     "reasons": [
-      "blocked_non_exportable_stitch_mode"
+      "blocked_non_exportable_stitch_mode",
+      "blocked_missing_stitch_project"
     ]
   },
   "contentVerification": {
@@ -39,6 +40,7 @@
   "exportEvidence": null,
   "blockingReasons": [
     "blocked_non_exportable_stitch_mode",
+    "blocked_missing_stitch_project",
     "blocked_export_evidence_missing",
     "blocked_delivery_handoff_unverified",
     "blocked_catalog_finalization_mismatch"
