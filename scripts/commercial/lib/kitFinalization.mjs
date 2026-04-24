@@ -39,22 +39,41 @@ export const normalizeStitchMode = (mode) => {
   return EXPORT_CAPABLE_STITCH_MODES.includes(normalizedMode) ? normalizedMode : null;
 };
 
-const auditExportEligibility = ({ stitchRun }) => {
-  const normalizedStitchMode = normalizeStitchMode(stitchRun?.stitchMode);
+const getTrackedExportEligibility = ({ stitchRun, existingFinalization }) => {
+  const finalizationEligibility = existingFinalization?.exportEligibility ?? {};
+
+  return {
+    stitchProjectId:
+      stitchRun?.stitchProjectId ??
+      finalizationEligibility.stitchProjectId ??
+      existingFinalization?.stitchProjectId ??
+      null,
+    stitchMode:
+      stitchRun?.stitchMode ??
+      finalizationEligibility.normalizedStitchMode ??
+      finalizationEligibility.stitchMode ??
+      existingFinalization?.stitchMode ??
+      null,
+  };
+};
+
+const auditExportEligibility = ({ stitchRun, existingFinalization }) => {
+  const trackedEligibility = getTrackedExportEligibility({ stitchRun, existingFinalization });
+  const normalizedStitchMode = normalizeStitchMode(trackedEligibility.stitchMode);
   const reasons = [];
 
   if (!normalizedStitchMode) {
     reasons.push('blocked_non_exportable_stitch_mode');
   }
 
-  if (!hasText(stitchRun?.stitchProjectId)) {
+  if (!hasText(trackedEligibility.stitchProjectId)) {
     reasons.push('blocked_missing_stitch_project');
   }
 
   return {
     status: reasons.length === 0 ? 'pass' : 'blocked',
-    stitchProjectId: stitchRun?.stitchProjectId ?? null,
-    stitchMode: stitchRun?.stitchMode ?? null,
+    stitchProjectId: trackedEligibility.stitchProjectId,
+    stitchMode: trackedEligibility.stitchMode,
     normalizedStitchMode,
     reasons,
   };
@@ -138,7 +157,7 @@ export const auditFinalizationState = ({
   existingFinalization,
   now = new Date().toISOString(),
 }) => {
-  const exportEligibility = auditExportEligibility({ stitchRun });
+  const exportEligibility = auditExportEligibility({ stitchRun, existingFinalization });
   const contentVerification = auditContentVerification({ spec, reconstruction });
   const exportVerification = auditExportEvidence({ existingFinalization });
   const deliveryVerification = auditDeliveryVerification({ existingFinalization });

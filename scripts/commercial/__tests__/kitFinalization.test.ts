@@ -61,6 +61,46 @@ describe('kit finalization', () => {
     expect(result.blockingReasons).toContain('blocked_non_exportable_stitch_mode');
   });
 
+  it('accepts tracked export eligibility from finalization evidence when the local Stitch ledger is unavailable', () => {
+    const result = auditFinalizationState({
+      productId: 'figma-kit:monzo',
+      kitSlug: 'monzo-figma-kit',
+      spec: { includedFrames: ['Cover page', 'Transformed screen 1'], componentAbstractions: ['Button'], colorStyles: ['Palette'] },
+      reconstruction: { reconstructionStatus: 'done', contentBuiltAt: '2026-04-24T10:00:00.000Z' },
+      stitchRun: null,
+      existingFinalization: {
+        exportEligibility: {
+          status: 'pass',
+          stitchProjectId: 'projects/monzo-final',
+          stitchMode: 'rapid',
+          normalizedStitchMode: 'rapid',
+          reasons: [],
+        },
+        exportEvidence: {
+          method: 'stitch-export-to-figma',
+          exportedAt: '2026-04-24T10:05:00.000Z',
+          finalAssetId: 'figma-123',
+          finalAssetUrl: 'https://www.figma.com/design/figma-123',
+          source: 'stitch',
+        },
+        deliveryVerification: {
+          status: 'pass',
+          reason: null,
+          verifiedAt: '2026-04-24T10:10:00.000Z',
+          fulfillmentType: 'stitch-figma-export',
+          handoffUrl: 'https://www.figma.com/design/figma-123',
+        },
+      },
+      now: '2026-04-24T12:00:00.000Z',
+    });
+
+    expect(result.finalizationStatus).toBe('finalized');
+    expect(result.auditClassification).toBe('finalized');
+    expect(result.exportEligibility.stitchProjectId).toBe('projects/monzo-final');
+    expect(result.exportEligibility.normalizedStitchMode).toBe('rapid');
+    expect(isFinalizedForSale(result)).toBe(true);
+  });
+
   it('classifies exported content without delivery verification as repairable', () => {
     const result = auditFinalizationState({
       productId: 'figma-kit:monzo',

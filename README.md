@@ -139,6 +139,10 @@ Audit final Figma asset readiness:
 
 `npm run commercial:audit:finalization`
 
+Record a verified Stitch-to-Figma export before auditing:
+
+`npm run commercial:record-finalization -- --kit=monzo-figma-kit --stitch-project-id=projects/... --stitch-mode=rapid --final-asset-url=https://www.figma.com/design/...`
+
 Only kits with finalized Stitch export, content verification, and delivery verification can be published by `npm run commercial:generate`.
 
 Validate that all published kits have specs, manifests, and approved reviews:

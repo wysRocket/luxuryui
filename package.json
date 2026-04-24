@@ -27,6 +27,7 @@
     "commercial:generate": "node scripts/commercial/generate-figma-kits.mjs",
     "commercial:readiness": "node scripts/commercial/validate-commercial-readiness.mjs",
     "commercial:audit:finalization": "node scripts/commercial/audit-kit-finalization.mjs",
+    "commercial:record-finalization": "node scripts/commercial/record-finalization-evidence.mjs",
     "figma:publish": "node scripts/commercial/publish-to-figma.mjs",
     "pipeline:health": "node scripts/ci-pipeline-health.mjs",
     "firebase:login": "npx -y firebase-tools@latest login",
