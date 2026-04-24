@@ -1,0 +1,209 @@
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { auditFinalizationState } from './lib/kitFinalization.mjs';
+import { getKitArtifactPaths } from './lib/commercialArtifactPaths.mjs';
+
+const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
+const commercialRoot = path.join(projectRoot, 'data', 'curation', 'commercial');
+
+const productsPath = path.join(commercialRoot, 'figma-kit-products.json');
+const specsPath = path.join(commercialRoot, 'figma-kit-specs.json');
+const ledgerPath = path.join(commercialRoot, 'generated-kit-runs.json');
+const generatedArtifactsRoot = path.join(commercialRoot, 'generated-kit-artifacts');
+
+const readJson = async (filePath) => JSON.parse(await readFile(filePath, 'utf8'));
+
+const readJsonIfExists = async (filePath, fallback = null) => {
+  try {
+    return await readJson(filePath);
+  } catch (error) {
+    if (error?.code === 'ENOENT') {
+      return fallback;
+    }
+
+    throw error;
+  }
+};
+
+const writeJson = async (filePath, payload) => {
+  await mkdir(path.dirname(filePath), { recursive: true });
+  await writeFile(filePath, `${JSON.stringify(payload, null, 2)}\n`);
+};
+
+const toTime = (run) => {
+  const candidate = run?.generatedAt ?? run?.completedAt ?? run?.updatedAt ?? run?.createdAt ?? null;
+  const timestamp = candidate ? Date.parse(candidate) : Number.NaN;
+  return Number.isNaN(timestamp) ? 0 : timestamp;
+};
+
+const isSuccessfulStitchRun = (run) => run?.generationStatus === 'completed' || run?.status === 'completed';
+
+const selectLatestRun = (runs = []) => {
+  const sortedRuns = [...runs].sort((a, b) => toTime(b) - toTime(a));
+  return sortedRuns.find(isSuccessfulStitchRun) ?? sortedRuns[0] ?? null;
+};
+
+const groupRunsBySlug = (runs = []) => {
+  const runsBySlug = new Map();
+
+  for (const run of runs) {
+    if (!run?.kitSlug) {
+      continue;
+    }
+
+    runsBySlug.set(run.kitSlug, [...(runsBySlug.get(run.kitSlug) ?? []), run]);
+  }
+
+  return runsBySlug;
+};
+
+const addBlockingReason = (record, reason) => ({
+  ...record,
+  blockingReasons: reason
+    ? [...new Set([...(record.blockingReasons ?? []), reason])]
+    : record.blockingReasons ?? [],
+});
+
+const getFinalizationForSlug = (finalizationsBySlug, slug) => {
+  const finalization = finalizationsBySlug.get(slug) ?? null;
+  const latestFinalization = Array.isArray(finalization) ? finalization[0] ?? null : finalization;
+
+  if (!latestFinalization) {
+    return null;
+  }
+
+  return {
+    ...latestFinalization,
+    deliveryVerification:
+      latestFinalization.deliveryVerification?.verification ?? latestFinalization.deliveryVerification ?? null,
+  };
+};
+
+const buildSummary = (records, integrityViolations) => ({
+  total: records.length,
+  finalized: records.filter((record) => record.auditClassification === 'finalized').length,
+  repairable: records.filter((record) => record.auditClassification === 'repairable').length,
+  mustRegenerate: records.filter((record) => record.auditClassification === 'must_regenerate').length,
+  blocked: records.filter((record) => record.auditClassification === 'blocked').length,
+  integrityViolations: integrityViolations.length,
+});
+
+export const buildFinalizationAudit = ({
+  products,
+  specs,
+  reconstructionsBySlug = new Map(),
+  stitchRunsBySlug = new Map(),
+  finalizationsBySlug = new Map(),
+  now = new Date().toISOString(),
+}) => {
+  const specByProductId = new Map((specs?.kitSpecs ?? []).map((spec) => [spec.productId, spec]));
+  const records = [];
+  const integrityViolations = [];
+
+  for (const product of products?.products ?? []) {
+    const stitchRun = selectLatestRun(stitchRunsBySlug.get(product.slug) ?? []);
+    const existingFinalization = getFinalizationForSlug(finalizationsBySlug, product.slug);
+    const baseRecord = auditFinalizationState({
+      productId: product.id,
+      kitSlug: product.slug,
+      spec: specByProductId.get(product.id) ?? null,
+      reconstruction: reconstructionsBySlug.get(product.slug) ?? null,
+      stitchRun,
+      existingFinalization,
+      now,
+    });
+    const isCatalogMismatch = product.status === 'published' && baseRecord.finalizationStatus !== 'finalized';
+    const record = {
+      ...addBlockingReason(
+        baseRecord,
+        isCatalogMismatch ? 'blocked_catalog_finalization_mismatch' : null,
+      ),
+      productStatus: product.status ?? null,
+    };
+
+    if (isCatalogMismatch) {
+      integrityViolations.push(`${product.slug} is published but finalizationStatus is ${baseRecord.finalizationStatus}`);
+    }
+
+    records.push(record);
+  }
+
+  return {
+    schema: '1',
+    auditedAt: now,
+    summary: buildSummary(records, integrityViolations),
+    integrityViolations,
+    records,
+  };
+};
+
+const loadReconstructionsBySlug = async (products) => {
+  const reconstructionsBySlug = new Map();
+
+  for (const product of products?.products ?? []) {
+    const reconstructionPath = path.join(generatedArtifactsRoot, product.slug, 'figma', 'reconstruction.json');
+    const reconstruction = await readJsonIfExists(reconstructionPath, null);
+    if (reconstruction) {
+      reconstructionsBySlug.set(product.slug, reconstruction);
+    }
+  }
+
+  return reconstructionsBySlug;
+};
+
+const loadFinalizationsBySlug = async (products) => {
+  const finalizationsBySlug = new Map();
+
+  for (const product of products?.products ?? []) {
+    const finalization = await readJsonIfExists(getKitArtifactPaths(product.slug, projectRoot).finalizationPath, null);
+    if (finalization) {
+      finalizationsBySlug.set(product.slug, finalization);
+    }
+  }
+
+  return finalizationsBySlug;
+};
+
+const writeAuditOutputs = async (audit) => {
+  for (const record of audit.records) {
+    await writeJson(getKitArtifactPaths(record.kitSlug, projectRoot).finalizationPath, record);
+  }
+
+  const auditPath = getKitArtifactPaths('catalog', projectRoot).finalizationAuditPath;
+  await writeJson(auditPath, audit);
+};
+
+const runCli = async () => {
+  const [products, specs, ledger] = await Promise.all([
+    readJson(productsPath),
+    readJson(specsPath),
+    readJsonIfExists(ledgerPath, { runs: [] }),
+  ]);
+  const [reconstructionsBySlug, finalizationsBySlug] = await Promise.all([
+    loadReconstructionsBySlug(products),
+    loadFinalizationsBySlug(products),
+  ]);
+  const audit = buildFinalizationAudit({
+    products,
+    specs,
+    reconstructionsBySlug,
+    stitchRunsBySlug: groupRunsBySlug(ledger.runs ?? []),
+    finalizationsBySlug,
+  });
+
+  await writeAuditOutputs(audit);
+
+  console.log(JSON.stringify(audit.summary, null, 2));
+
+  if (audit.integrityViolations.length > 0) {
+    process.exitCode = 1;
+  }
+};
+
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  runCli().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}

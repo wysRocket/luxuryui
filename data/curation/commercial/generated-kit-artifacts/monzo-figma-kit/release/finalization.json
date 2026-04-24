@@ -1,0 +1,53 @@
+{
+  "productId": "figma-kit:monzo",
+  "kitSlug": "monzo-figma-kit",
+  "auditedAt": "2026-04-24T00:22:38.760Z",
+  "finalizationStatus": "blocked",
+  "auditClassification": "must_regenerate",
+  "exportEligibility": {
+    "status": "blocked",
+    "stitchProjectId": "3437719771253114588",
+    "stitchMode": null,
+    "normalizedStitchMode": null,
+    "reasons": [
+      "blocked_non_exportable_stitch_mode"
+    ]
+  },
+  "contentVerification": {
+    "status": "pass",
+    "reconstructionStatus": "done",
+    "contentBuiltAt": "2026-04-07T12:57:01.629Z",
+    "includedFrameCount": 13,
+    "componentAbstractionCount": 4,
+    "colorStyleCount": 3,
+    "reasons": []
+  },
+  "exportVerification": {
+    "status": "blocked",
+    "evidence": null,
+    "reasons": [
+      "blocked_export_evidence_missing"
+    ]
+  },
+  "deliveryVerification": {
+    "status": "blocked",
+    "verification": {
+      "status": "blocked",
+      "verification": null,
+      "reasons": [
+        "blocked_delivery_handoff_unverified"
+      ]
+    },
+    "reasons": [
+      "blocked_delivery_handoff_unverified"
+    ]
+  },
+  "exportEvidence": null,
+  "blockingReasons": [
+    "blocked_non_exportable_stitch_mode",
+    "blocked_export_evidence_missing",
+    "blocked_delivery_handoff_unverified",
+    "blocked_catalog_finalization_mismatch"
+  ],
+  "productStatus": "published"
+}
