@@ -2,7 +2,24 @@ export const EXPORT_CAPABLE_STITCH_MODES = ['rapid', 'standard'];
 
 const hasText = (value) => typeof value === 'string' && value.trim().length > 0;
 
-const hasItems = (value) => Array.isArray(value) && value.filter(Boolean).length > 0;
+const countTextItems = (value) => (Array.isArray(value) ? value.filter(hasText).length : 0);
+
+const hasItems = (value) => countTextItems(value) > 0;
+
+const isValidTimestamp = (value) => hasText(value) && !Number.isNaN(Date.parse(value));
+
+const isValidHttpUrl = (value) => {
+  if (!hasText(value)) {
+    return false;
+  }
+
+  try {
+    const url = new URL(value);
+    return url.protocol === 'http:' || url.protocol === 'https:';
+  } catch {
+    return false;
+  }
+};
 
 const unique = (values) => [...new Set(values.filter(Boolean))];
 
@@ -43,7 +60,7 @@ const auditContentVerification = ({ spec, reconstruction }) => {
     reasons.push('blocked_reconstruction_incomplete');
   }
 
-  if (!hasText(reconstruction?.contentBuiltAt)) {
+  if (!isValidTimestamp(reconstruction?.contentBuiltAt)) {
     reasons.push('blocked_missing_content_timestamp');
   }
 
@@ -55,9 +72,9 @@ const auditContentVerification = ({ spec, reconstruction }) => {
     status: reasons.length === 0 ? 'pass' : 'blocked',
     reconstructionStatus: reconstruction?.reconstructionStatus ?? null,
     contentBuiltAt: reconstruction?.contentBuiltAt ?? null,
-    includedFrameCount: spec?.includedFrames?.filter(Boolean).length ?? 0,
-    componentAbstractionCount: spec?.componentAbstractions?.filter(Boolean).length ?? 0,
-    colorStyleCount: spec?.colorStyles?.filter(Boolean).length ?? 0,
+    includedFrameCount: countTextItems(spec?.includedFrames),
+    componentAbstractionCount: countTextItems(spec?.componentAbstractions),
+    colorStyleCount: countTextItems(spec?.colorStyles),
     reasons,
   };
 };
@@ -70,9 +87,9 @@ const auditExportEvidence = ({ existingFinalization }) => {
     reasons.push('blocked_export_evidence_missing');
   } else if (
     !hasText(exportEvidence.method) ||
-    !hasText(exportEvidence.exportedAt) ||
+    !isValidTimestamp(exportEvidence.exportedAt) ||
     !hasText(exportEvidence.finalAssetId) ||
-    !hasText(exportEvidence.finalAssetUrl) ||
+    !isValidHttpUrl(exportEvidence.finalAssetUrl) ||
     !hasText(exportEvidence.source)
   ) {
     reasons.push('blocked_export_evidence_incomplete');
@@ -91,9 +108,9 @@ const auditDeliveryVerification = ({ existingFinalization }) => {
 
   if (
     deliveryVerification?.status !== 'pass' ||
-    !hasText(deliveryVerification?.verifiedAt) ||
+    !isValidTimestamp(deliveryVerification?.verifiedAt) ||
     !hasText(deliveryVerification?.fulfillmentType) ||
-    !hasText(deliveryVerification?.handoffUrl)
+    !isValidHttpUrl(deliveryVerification?.handoffUrl)
   ) {
     reasons.push('blocked_delivery_handoff_unverified');
   }
