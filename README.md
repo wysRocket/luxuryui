@@ -135,6 +135,12 @@ Generate the storefront-ready Figma kit artifacts:
 
 `npm run commercial:generate`
 
+Audit final Figma asset readiness:
+
+`npm run commercial:audit:finalization`
+
+Only kits with finalized Stitch export, content verification, and delivery verification can be published by `npm run commercial:generate`.
+
 Validate that all published kits have specs, manifests, and approved reviews:
 
 `npm run commercial:readiness`

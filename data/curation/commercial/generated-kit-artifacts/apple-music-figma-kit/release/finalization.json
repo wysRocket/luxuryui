@@ -1,7 +1,7 @@
 {
   "productId": "figma-kit:apple-music",
   "kitSlug": "apple-music-figma-kit",
-  "auditedAt": "2026-04-04T23:08:26.207Z",
+  "auditedAt": "2026-04-24T05:12:16.286Z",
   "finalizationStatus": "blocked",
   "auditClassification": "must_regenerate",
   "exportEligibility": {
@@ -47,8 +47,7 @@
     "blocked_reconstruction_incomplete",
     "blocked_missing_content_timestamp",
     "blocked_export_evidence_missing",
-    "blocked_delivery_handoff_unverified",
-    "blocked_catalog_finalization_mismatch"
+    "blocked_delivery_handoff_unverified"
   ],
-  "productStatus": "published"
+  "productStatus": "blocked"
 }
