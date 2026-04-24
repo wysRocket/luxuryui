@@ -104,6 +104,28 @@ describe('commercial readiness finalization checks', () => {
     });
   });
 
+  it('fails when manifest final asset URL is missing', () => {
+    const findings = collectFindings({
+      manifest: buildManifest(null),
+    });
+
+    expect(findings).toContainEqual({
+      status: 'FAIL',
+      message: 'monzo-figma-kit manifest is missing final asset URL',
+    });
+  });
+
+  it('fails when finalization evidence final asset URL is missing', () => {
+    const findings = collectFindings({
+      finalization: buildFinalization({ finalAssetUrl: null }),
+    });
+
+    expect(findings).toContainEqual({
+      status: 'FAIL',
+      message: 'monzo-figma-kit finalization evidence is missing final asset URL',
+    });
+  });
+
   it('fails when neither manifest nor finalization provides a final asset URL', () => {
     const findings = collectFindings({
       manifest: buildManifest(null),
@@ -112,7 +134,11 @@ describe('commercial readiness finalization checks', () => {
 
     expect(findings).toContainEqual({
       status: 'FAIL',
-      message: 'monzo-figma-kit is published without a final asset URL',
+      message: 'monzo-figma-kit manifest is missing final asset URL',
+    });
+    expect(findings).toContainEqual({
+      status: 'FAIL',
+      message: 'monzo-figma-kit finalization evidence is missing final asset URL',
     });
   });
 });

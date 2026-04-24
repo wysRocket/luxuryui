@@ -125,12 +125,16 @@ export const collectCommercialReadinessFindings = ({
       const manifestFinalAssetUrl = manifest?.generatedArtifacts?.finalAssetUrl;
       const finalizationFinalAssetUrl = finalization?.exportEvidence?.finalAssetUrl;
 
-      if (hasText(manifestFinalAssetUrl) && hasText(finalizationFinalAssetUrl) && manifestFinalAssetUrl !== finalizationFinalAssetUrl) {
-        findings.push({ status: 'FAIL', message: `${product.slug} has conflicting final asset URLs between manifest and finalization evidence` });
+      if (!hasText(manifestFinalAssetUrl)) {
+        findings.push({ status: 'FAIL', message: `${product.slug} manifest is missing final asset URL` });
       }
 
-      if (!hasText(manifestFinalAssetUrl) && !hasText(finalizationFinalAssetUrl)) {
-        findings.push({ status: 'FAIL', message: `${product.slug} is published without a final asset URL` });
+      if (!hasText(finalizationFinalAssetUrl)) {
+        findings.push({ status: 'FAIL', message: `${product.slug} finalization evidence is missing final asset URL` });
+      }
+
+      if (hasText(manifestFinalAssetUrl) && hasText(finalizationFinalAssetUrl) && manifestFinalAssetUrl !== finalizationFinalAssetUrl) {
+        findings.push({ status: 'FAIL', message: `${product.slug} has conflicting final asset URLs between manifest and finalization evidence` });
       }
     }
   }
