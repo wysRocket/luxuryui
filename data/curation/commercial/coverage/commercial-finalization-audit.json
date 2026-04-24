@@ -1,6 +1,6 @@
 {
   "schema": "1",
-  "auditedAt": "2026-04-24T00:22:38.760Z",
+  "auditedAt": "2026-04-24T00:27:07.930Z",
   "summary": {
     "total": 76,
     "finalized": 0,
@@ -91,7 +91,7 @@
     {
       "productId": "figma-kit:monzo",
       "kitSlug": "monzo-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -121,13 +121,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -144,17 +138,16 @@
     {
       "productId": "figma-kit:revolut",
       "kitSlug": "revolut-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
         "status": "blocked",
-        "stitchProjectId": null,
+        "stitchProjectId": "8839260595483874478",
         "stitchMode": null,
         "normalizedStitchMode": null,
         "reasons": [
-          "blocked_non_exportable_stitch_mode",
-          "blocked_missing_stitch_project"
+          "blocked_non_exportable_stitch_mode"
         ]
       },
       "contentVerification": {
@@ -177,13 +170,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -191,7 +178,6 @@
       "exportEvidence": null,
       "blockingReasons": [
         "blocked_non_exportable_stitch_mode",
-        "blocked_missing_stitch_project",
         "blocked_missing_content_timestamp",
         "blocked_export_evidence_missing",
         "blocked_delivery_handoff_unverified",
@@ -202,7 +188,7 @@
     {
       "productId": "figma-kit:mint",
       "kitSlug": "mint-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -235,13 +221,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -260,17 +240,16 @@
     {
       "productId": "figma-kit:robinhood",
       "kitSlug": "robinhood-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
         "status": "blocked",
-        "stitchProjectId": null,
+        "stitchProjectId": "17140951997547467851",
         "stitchMode": null,
         "normalizedStitchMode": null,
         "reasons": [
-          "blocked_non_exportable_stitch_mode",
-          "blocked_missing_stitch_project"
+          "blocked_non_exportable_stitch_mode"
         ]
       },
       "contentVerification": {
@@ -293,13 +272,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -307,7 +280,6 @@
       "exportEvidence": null,
       "blockingReasons": [
         "blocked_non_exportable_stitch_mode",
-        "blocked_missing_stitch_project",
         "blocked_missing_content_timestamp",
         "blocked_export_evidence_missing",
         "blocked_delivery_handoff_unverified",
@@ -318,17 +290,16 @@
     {
       "productId": "figma-kit:paypal",
       "kitSlug": "paypal-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
         "status": "blocked",
-        "stitchProjectId": null,
+        "stitchProjectId": "6820294037935797896",
         "stitchMode": null,
         "normalizedStitchMode": null,
         "reasons": [
-          "blocked_non_exportable_stitch_mode",
-          "blocked_missing_stitch_project"
+          "blocked_non_exportable_stitch_mode"
         ]
       },
       "contentVerification": {
@@ -351,13 +322,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -365,7 +330,6 @@
       "exportEvidence": null,
       "blockingReasons": [
         "blocked_non_exportable_stitch_mode",
-        "blocked_missing_stitch_project",
         "blocked_missing_content_timestamp",
         "blocked_export_evidence_missing",
         "blocked_delivery_handoff_unverified",
@@ -376,17 +340,16 @@
     {
       "productId": "figma-kit:wallet",
       "kitSlug": "wallet-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
         "status": "blocked",
-        "stitchProjectId": null,
+        "stitchProjectId": "6392183742931596733",
         "stitchMode": null,
         "normalizedStitchMode": null,
         "reasons": [
-          "blocked_non_exportable_stitch_mode",
-          "blocked_missing_stitch_project"
+          "blocked_non_exportable_stitch_mode"
         ]
       },
       "contentVerification": {
@@ -409,13 +372,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -423,7 +380,6 @@
       "exportEvidence": null,
       "blockingReasons": [
         "blocked_non_exportable_stitch_mode",
-        "blocked_missing_stitch_project",
         "blocked_missing_content_timestamp",
         "blocked_export_evidence_missing",
         "blocked_delivery_handoff_unverified",
@@ -434,7 +390,7 @@
     {
       "productId": "figma-kit:wealthfront",
       "kitSlug": "wealthfront-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -467,13 +423,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -492,7 +442,7 @@
     {
       "productId": "figma-kit:n26",
       "kitSlug": "n26-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -525,13 +475,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -550,7 +494,7 @@
     {
       "productId": "figma-kit:coinbase",
       "kitSlug": "coinbase-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -583,13 +527,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -608,7 +546,7 @@
     {
       "productId": "figma-kit:binance",
       "kitSlug": "binance-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -641,13 +579,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -666,7 +598,7 @@
     {
       "productId": "figma-kit:metamask",
       "kitSlug": "metamask-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -699,13 +631,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -724,7 +650,7 @@
     {
       "productId": "figma-kit:kraken",
       "kitSlug": "kraken-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -757,13 +683,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -782,7 +702,7 @@
     {
       "productId": "figma-kit:phantom",
       "kitSlug": "phantom-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -815,13 +735,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -840,7 +754,7 @@
     {
       "productId": "figma-kit:uniswap",
       "kitSlug": "uniswap-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -873,13 +787,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -898,7 +806,7 @@
     {
       "productId": "figma-kit:ledger",
       "kitSlug": "ledger-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -931,13 +839,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -956,7 +858,7 @@
     {
       "productId": "figma-kit:amazon",
       "kitSlug": "amazon-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -989,13 +891,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -1014,7 +910,7 @@
     {
       "productId": "figma-kit:ebay",
       "kitSlug": "ebay-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1047,13 +943,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -1072,7 +962,7 @@
     {
       "productId": "figma-kit:shopify",
       "kitSlug": "shopify-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1105,13 +995,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -1130,7 +1014,7 @@
     {
       "productId": "figma-kit:etsy",
       "kitSlug": "etsy-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1163,13 +1047,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -1188,7 +1066,7 @@
     {
       "productId": "figma-kit:zara",
       "kitSlug": "zara-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1221,13 +1099,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -1246,7 +1118,7 @@
     {
       "productId": "figma-kit:asos",
       "kitSlug": "asos-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1279,13 +1151,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -1304,7 +1170,7 @@
     {
       "productId": "figma-kit:nike",
       "kitSlug": "nike-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1337,13 +1203,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -1362,7 +1222,7 @@
     {
       "productId": "figma-kit:stockx",
       "kitSlug": "stockx-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1395,13 +1255,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -1420,7 +1274,7 @@
     {
       "productId": "figma-kit:instagram",
       "kitSlug": "instagram-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1453,13 +1307,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -1478,7 +1326,7 @@
     {
       "productId": "figma-kit:twitter",
       "kitSlug": "twitter-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1511,13 +1359,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -1536,7 +1378,7 @@
     {
       "productId": "figma-kit:linkedin",
       "kitSlug": "linkedin-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1569,13 +1411,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -1594,7 +1430,7 @@
     {
       "productId": "figma-kit:tiktok",
       "kitSlug": "tiktok-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1627,13 +1463,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -1652,7 +1482,7 @@
     {
       "productId": "figma-kit:snapchat",
       "kitSlug": "snapchat-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1685,13 +1515,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -1710,7 +1534,7 @@
     {
       "productId": "figma-kit:whatsapp",
       "kitSlug": "whatsapp-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1743,13 +1567,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -1768,7 +1586,7 @@
     {
       "productId": "figma-kit:threads",
       "kitSlug": "threads-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1801,13 +1619,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -1826,7 +1638,7 @@
     {
       "productId": "figma-kit:bereal",
       "kitSlug": "bereal-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1859,13 +1671,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -1884,7 +1690,7 @@
     {
       "productId": "figma-kit:airbnb",
       "kitSlug": "airbnb-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1917,13 +1723,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -1942,7 +1742,7 @@
     {
       "productId": "figma-kit:expedia",
       "kitSlug": "expedia-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1975,13 +1775,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -2000,7 +1794,7 @@
     {
       "productId": "figma-kit:hopper",
       "kitSlug": "hopper-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2033,13 +1827,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -2058,7 +1846,7 @@
     {
       "productId": "figma-kit:booking-com",
       "kitSlug": "booking-com-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2091,13 +1879,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -2116,7 +1898,7 @@
     {
       "productId": "figma-kit:skyscanner",
       "kitSlug": "skyscanner-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2149,13 +1931,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -2174,7 +1950,7 @@
     {
       "productId": "figma-kit:tripadvisor",
       "kitSlug": "tripadvisor-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2207,13 +1983,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -2232,7 +2002,7 @@
     {
       "productId": "figma-kit:kayak",
       "kitSlug": "kayak-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2265,13 +2035,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -2290,7 +2054,7 @@
     {
       "productId": "figma-kit:hoteltonight",
       "kitSlug": "hoteltonight-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2323,13 +2087,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -2348,7 +2106,7 @@
     {
       "productId": "figma-kit:slack",
       "kitSlug": "slack-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2381,13 +2139,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -2406,7 +2158,7 @@
     {
       "productId": "figma-kit:zoom",
       "kitSlug": "zoom-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2439,13 +2191,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -2464,7 +2210,7 @@
     {
       "productId": "figma-kit:trello",
       "kitSlug": "trello-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2497,13 +2243,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -2522,7 +2262,7 @@
     {
       "productId": "figma-kit:notion",
       "kitSlug": "notion-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2555,13 +2295,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -2580,7 +2314,7 @@
     {
       "productId": "figma-kit:asana",
       "kitSlug": "asana-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2613,13 +2347,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -2638,7 +2366,7 @@
     {
       "productId": "figma-kit:monday-com",
       "kitSlug": "monday-com-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2671,13 +2399,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -2696,7 +2418,7 @@
     {
       "productId": "figma-kit:linear",
       "kitSlug": "linear-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2729,13 +2451,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -2754,7 +2470,7 @@
     {
       "productId": "figma-kit:loom",
       "kitSlug": "loom-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2787,13 +2503,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -2812,7 +2522,7 @@
     {
       "productId": "figma-kit:headspace",
       "kitSlug": "headspace-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2845,13 +2555,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -2870,7 +2574,7 @@
     {
       "productId": "figma-kit:calm",
       "kitSlug": "calm-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2903,13 +2607,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -2928,7 +2626,7 @@
     {
       "productId": "figma-kit:strava",
       "kitSlug": "strava-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2961,13 +2659,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -2986,7 +2678,7 @@
     {
       "productId": "figma-kit:nike-run-club",
       "kitSlug": "nike-run-club-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3019,13 +2711,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -3044,7 +2730,7 @@
     {
       "productId": "figma-kit:myfitnesspal",
       "kitSlug": "myfitnesspal-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3077,13 +2763,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -3102,7 +2782,7 @@
     {
       "productId": "figma-kit:fitbit",
       "kitSlug": "fitbit-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3135,13 +2815,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -3160,7 +2834,7 @@
     {
       "productId": "figma-kit:flo",
       "kitSlug": "flo-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3193,13 +2867,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -3218,7 +2886,7 @@
     {
       "productId": "figma-kit:sleep-cycle",
       "kitSlug": "sleep-cycle-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3251,13 +2919,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -3276,7 +2938,7 @@
     {
       "productId": "figma-kit:spotify",
       "kitSlug": "spotify-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3309,13 +2971,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -3334,7 +2990,7 @@
     {
       "productId": "figma-kit:apple-music",
       "kitSlug": "apple-music-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3367,13 +3023,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -3392,7 +3042,7 @@
     {
       "productId": "figma-kit:soundcloud",
       "kitSlug": "soundcloud-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3425,13 +3075,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -3450,7 +3094,7 @@
     {
       "productId": "figma-kit:tidal",
       "kitSlug": "tidal-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3483,13 +3127,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -3508,7 +3146,7 @@
     {
       "productId": "figma-kit:deezer",
       "kitSlug": "deezer-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3541,13 +3179,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -3566,7 +3198,7 @@
     {
       "productId": "figma-kit:pandora",
       "kitSlug": "pandora-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3599,13 +3231,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -3624,7 +3250,7 @@
     {
       "productId": "figma-kit:shazam",
       "kitSlug": "shazam-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3657,13 +3283,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -3682,7 +3302,7 @@
     {
       "productId": "figma-kit:duolingo",
       "kitSlug": "duolingo-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3715,13 +3335,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -3740,7 +3354,7 @@
     {
       "productId": "figma-kit:coursera",
       "kitSlug": "coursera-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3773,13 +3387,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -3798,7 +3406,7 @@
     {
       "productId": "figma-kit:masterclass",
       "kitSlug": "masterclass-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3831,13 +3439,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -3856,7 +3458,7 @@
     {
       "productId": "figma-kit:udemy",
       "kitSlug": "udemy-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3889,13 +3491,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -3914,7 +3510,7 @@
     {
       "productId": "figma-kit:khan-academy",
       "kitSlug": "khan-academy-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3947,13 +3543,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -3972,7 +3562,7 @@
     {
       "productId": "figma-kit:skillshare",
       "kitSlug": "skillshare-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -4005,13 +3595,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -4030,7 +3614,7 @@
     {
       "productId": "figma-kit:babbel",
       "kitSlug": "babbel-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -4063,13 +3647,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -4088,7 +3666,7 @@
     {
       "productId": "figma-kit:the-new-york-times",
       "kitSlug": "the-new-york-times-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -4121,13 +3699,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -4146,7 +3718,7 @@
     {
       "productId": "figma-kit:bbc-news",
       "kitSlug": "bbc-news-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -4179,13 +3751,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -4204,7 +3770,7 @@
     {
       "productId": "figma-kit:cnn",
       "kitSlug": "cnn-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -4237,13 +3803,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -4262,7 +3822,7 @@
     {
       "productId": "figma-kit:reuters",
       "kitSlug": "reuters-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -4295,13 +3855,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -4320,7 +3874,7 @@
     {
       "productId": "figma-kit:flipboard",
       "kitSlug": "flipboard-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -4353,13 +3907,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -4378,7 +3926,7 @@
     {
       "productId": "figma-kit:substack",
       "kitSlug": "substack-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -4411,13 +3959,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]
@@ -4436,7 +3978,7 @@
     {
       "productId": "figma-kit:pocket",
       "kitSlug": "pocket-figma-kit",
-      "auditedAt": "2026-04-24T00:22:38.760Z",
+      "auditedAt": "2026-04-24T00:27:07.930Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -4469,13 +4011,7 @@
       },
       "deliveryVerification": {
         "status": "blocked",
-        "verification": {
-          "status": "blocked",
-          "verification": null,
-          "reasons": [
-            "blocked_delivery_handoff_unverified"
-          ]
-        },
+        "verification": null,
         "reasons": [
           "blocked_delivery_handoff_unverified"
         ]

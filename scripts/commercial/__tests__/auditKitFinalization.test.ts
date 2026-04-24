@@ -59,4 +59,63 @@ describe('commercial finalization audit', () => {
       'revolut-figma-kit is published but finalizationStatus is blocked',
     ]);
   });
+
+  it('prefers an older generated Stitch run over a newer failed run', () => {
+    const result = buildFinalizationAudit({
+      products: {
+        products: [
+          { id: 'figma-kit:monzo', slug: 'monzo-figma-kit', status: 'published' },
+        ],
+      },
+      specs: {
+        kitSpecs: [
+          { productId: 'figma-kit:monzo', includedFrames: ['Cover page'], componentAbstractions: ['Button'], colorStyles: ['Palette'] },
+        ],
+      },
+      reconstructionsBySlug: new Map([
+        ['monzo-figma-kit', { reconstructionStatus: 'done', contentBuiltAt: '2026-04-24T10:00:00.000Z' }],
+      ]),
+      stitchRunsBySlug: new Map([
+        ['monzo-figma-kit', [
+          {
+            generatedAt: '2026-04-24T10:00:00.000Z',
+            generationStatus: 'generated',
+            status: 'generated',
+            stitchProjectId: 'generated-project',
+            stitchMode: 'rapid',
+          },
+          {
+            generatedAt: '2026-04-24T11:00:00.000Z',
+            generationStatus: 'failed',
+            status: 'blocked_missing_api_key',
+            stitchProjectId: null,
+            stitchMode: 'experimental',
+          },
+        ]],
+      ]),
+      finalizationsBySlug: new Map([
+        ['monzo-figma-kit', {
+          exportEvidence: {
+            method: 'stitch-export-to-figma',
+            exportedAt: '2026-04-24T10:05:00.000Z',
+            finalAssetId: 'figma-123',
+            finalAssetUrl: 'https://www.figma.com/design/figma-123',
+            source: 'stitch',
+          },
+          deliveryVerification: {
+            status: 'pass',
+            reason: null,
+            verifiedAt: '2026-04-24T10:10:00.000Z',
+            fulfillmentType: 'stitch-figma-export',
+            handoffUrl: 'https://www.figma.com/design/figma-123',
+          },
+        }],
+      ]),
+      now: '2026-04-24T12:00:00.000Z',
+    });
+
+    expect(result.summary.integrityViolations).toBe(0);
+    expect(result.records[0].finalizationStatus).toBe('finalized');
+    expect(result.records[0].exportEligibility.stitchProjectId).toBe('generated-project');
+  });
 });

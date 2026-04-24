@@ -37,7 +37,10 @@ const toTime = (run) => {
   return Number.isNaN(timestamp) ? 0 : timestamp;
 };
 
-const isSuccessfulStitchRun = (run) => run?.generationStatus === 'completed' || run?.status === 'completed';
+const SUCCESSFUL_STITCH_RUN_STATUSES = new Set(['generated', 'completed', 'success']);
+
+const isSuccessfulStitchRun = (run) =>
+  SUCCESSFUL_STITCH_RUN_STATUSES.has(run?.generationStatus) || SUCCESSFUL_STITCH_RUN_STATUSES.has(run?.status);
 
 const selectLatestRun = (runs = []) => {
   const sortedRuns = [...runs].sort((a, b) => toTime(b) - toTime(a));
@@ -75,9 +78,18 @@ const getFinalizationForSlug = (finalizationsBySlug, slug) => {
 
   return {
     ...latestFinalization,
-    deliveryVerification:
-      latestFinalization.deliveryVerification?.verification ?? latestFinalization.deliveryVerification ?? null,
+    deliveryVerification: unwrapDeliveryVerification(latestFinalization.deliveryVerification),
   };
+};
+
+const unwrapDeliveryVerification = (deliveryVerification) => {
+  let current = deliveryVerification ?? null;
+
+  while (current && Object.prototype.hasOwnProperty.call(current, 'verification')) {
+    current = current.verification ?? null;
+  }
+
+  return current;
 };
 
 const buildSummary = (records, integrityViolations) => ({

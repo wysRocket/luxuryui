@@ -1,7 +1,7 @@
 {
   "productId": "figma-kit:mint",
   "kitSlug": "mint-figma-kit",
-  "auditedAt": "2026-04-24T00:22:38.760Z",
+  "auditedAt": "2026-04-24T00:27:07.930Z",
   "finalizationStatus": "blocked",
   "auditClassification": "must_regenerate",
   "exportEligibility": {
@@ -34,13 +34,7 @@
   },
   "deliveryVerification": {
     "status": "blocked",
-    "verification": {
-      "status": "blocked",
-      "verification": null,
-      "reasons": [
-        "blocked_delivery_handoff_unverified"
-      ]
-    },
+    "verification": null,
     "reasons": [
       "blocked_delivery_handoff_unverified"
     ]
