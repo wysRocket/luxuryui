@@ -1,18 +1,15 @@
 {
   "productId": "figma-kit:monzo",
   "kitSlug": "monzo-figma-kit",
-  "auditedAt": "2026-04-24T05:12:16.286Z",
-  "finalizationStatus": "blocked",
-  "auditClassification": "must_regenerate",
+  "auditedAt": "2026-04-24T05:19:15.471Z",
+  "finalizationStatus": "finalized",
+  "auditClassification": "finalized",
   "exportEligibility": {
-    "status": "blocked",
-    "stitchProjectId": null,
-    "stitchMode": null,
-    "normalizedStitchMode": null,
-    "reasons": [
-      "blocked_non_exportable_stitch_mode",
-      "blocked_missing_stitch_project"
-    ]
+    "status": "pass",
+    "stitchProjectId": "manual-record:f2lUizLGCCeBxkQk5hTA7w",
+    "stitchMode": "standard",
+    "normalizedStitchMode": "standard",
+    "reasons": []
   },
   "contentVerification": {
     "status": "pass",
@@ -24,25 +21,34 @@
     "reasons": []
   },
   "exportVerification": {
-    "status": "blocked",
-    "evidence": null,
-    "reasons": [
-      "blocked_export_evidence_missing"
-    ]
+    "status": "pass",
+    "evidence": {
+      "method": "stitch-export-to-figma",
+      "exportedAt": "2026-04-24T07:19:06.100Z",
+      "finalAssetId": "f2lUizLGCCeBxkQk5hTA7w",
+      "finalAssetUrl": "https://www.figma.com/design/f2lUizLGCCeBxkQk5hTA7w/Monzo-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "source": "manual-record"
+    },
+    "reasons": []
   },
   "deliveryVerification": {
-    "status": "blocked",
-    "verification": null,
-    "reasons": [
-      "blocked_delivery_handoff_unverified"
-    ]
+    "status": "pass",
+    "verification": {
+      "status": "pass",
+      "reason": null,
+      "verifiedAt": "2026-04-24T07:19:06.100Z",
+      "fulfillmentType": "stitch-figma-export",
+      "handoffUrl": "https://www.figma.com/design/f2lUizLGCCeBxkQk5hTA7w/Monzo-%E2%80%94-Onboarding-Figma-Flow-Kit"
+    },
+    "reasons": []
   },
-  "exportEvidence": null,
-  "blockingReasons": [
-    "blocked_non_exportable_stitch_mode",
-    "blocked_missing_stitch_project",
-    "blocked_export_evidence_missing",
-    "blocked_delivery_handoff_unverified"
-  ],
+  "exportEvidence": {
+    "method": "stitch-export-to-figma",
+    "exportedAt": "2026-04-24T07:19:06.100Z",
+    "finalAssetId": "f2lUizLGCCeBxkQk5hTA7w",
+    "finalAssetUrl": "https://www.figma.com/design/f2lUizLGCCeBxkQk5hTA7w/Monzo-%E2%80%94-Onboarding-Figma-Flow-Kit",
+    "source": "manual-record"
+  },
+  "blockingReasons": [],
   "productStatus": "blocked"
 }

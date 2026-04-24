@@ -1,11 +1,11 @@
 {
   "schema": "1",
-  "auditedAt": "2026-04-24T05:12:16.286Z",
+  "auditedAt": "2026-04-24T05:19:15.471Z",
   "summary": {
     "total": 76,
-    "finalized": 0,
+    "finalized": 1,
     "repairable": 0,
-    "mustRegenerate": 76,
+    "mustRegenerate": 75,
     "blocked": 0,
     "integrityViolations": 0
   },
@@ -14,18 +14,15 @@
     {
       "productId": "figma-kit:monzo",
       "kitSlug": "monzo-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
-      "finalizationStatus": "blocked",
-      "auditClassification": "must_regenerate",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
+      "finalizationStatus": "finalized",
+      "auditClassification": "finalized",
       "exportEligibility": {
-        "status": "blocked",
-        "stitchProjectId": null,
-        "stitchMode": null,
-        "normalizedStitchMode": null,
-        "reasons": [
-          "blocked_non_exportable_stitch_mode",
-          "blocked_missing_stitch_project"
-        ]
+        "status": "pass",
+        "stitchProjectId": "manual-record:f2lUizLGCCeBxkQk5hTA7w",
+        "stitchMode": "standard",
+        "normalizedStitchMode": "standard",
+        "reasons": []
       },
       "contentVerification": {
         "status": "pass",
@@ -37,32 +34,41 @@
         "reasons": []
       },
       "exportVerification": {
-        "status": "blocked",
-        "evidence": null,
-        "reasons": [
-          "blocked_export_evidence_missing"
-        ]
+        "status": "pass",
+        "evidence": {
+          "method": "stitch-export-to-figma",
+          "exportedAt": "2026-04-24T07:19:06.100Z",
+          "finalAssetId": "f2lUizLGCCeBxkQk5hTA7w",
+          "finalAssetUrl": "https://www.figma.com/design/f2lUizLGCCeBxkQk5hTA7w/Monzo-%E2%80%94-Onboarding-Figma-Flow-Kit",
+          "source": "manual-record"
+        },
+        "reasons": []
       },
       "deliveryVerification": {
-        "status": "blocked",
-        "verification": null,
-        "reasons": [
-          "blocked_delivery_handoff_unverified"
-        ]
+        "status": "pass",
+        "verification": {
+          "status": "pass",
+          "reason": null,
+          "verifiedAt": "2026-04-24T07:19:06.100Z",
+          "fulfillmentType": "stitch-figma-export",
+          "handoffUrl": "https://www.figma.com/design/f2lUizLGCCeBxkQk5hTA7w/Monzo-%E2%80%94-Onboarding-Figma-Flow-Kit"
+        },
+        "reasons": []
       },
-      "exportEvidence": null,
-      "blockingReasons": [
-        "blocked_non_exportable_stitch_mode",
-        "blocked_missing_stitch_project",
-        "blocked_export_evidence_missing",
-        "blocked_delivery_handoff_unverified"
-      ],
+      "exportEvidence": {
+        "method": "stitch-export-to-figma",
+        "exportedAt": "2026-04-24T07:19:06.100Z",
+        "finalAssetId": "f2lUizLGCCeBxkQk5hTA7w",
+        "finalAssetUrl": "https://www.figma.com/design/f2lUizLGCCeBxkQk5hTA7w/Monzo-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "source": "manual-record"
+      },
+      "blockingReasons": [],
       "productStatus": "blocked"
     },
     {
       "productId": "figma-kit:revolut",
       "kitSlug": "revolut-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -115,7 +121,7 @@
     {
       "productId": "figma-kit:mint",
       "kitSlug": "mint-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -168,7 +174,7 @@
     {
       "productId": "figma-kit:robinhood",
       "kitSlug": "robinhood-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -221,7 +227,7 @@
     {
       "productId": "figma-kit:paypal",
       "kitSlug": "paypal-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -274,7 +280,7 @@
     {
       "productId": "figma-kit:wallet",
       "kitSlug": "wallet-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -327,7 +333,7 @@
     {
       "productId": "figma-kit:wealthfront",
       "kitSlug": "wealthfront-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -380,7 +386,7 @@
     {
       "productId": "figma-kit:n26",
       "kitSlug": "n26-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -433,7 +439,7 @@
     {
       "productId": "figma-kit:coinbase",
       "kitSlug": "coinbase-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -486,7 +492,7 @@
     {
       "productId": "figma-kit:binance",
       "kitSlug": "binance-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -539,7 +545,7 @@
     {
       "productId": "figma-kit:metamask",
       "kitSlug": "metamask-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -592,7 +598,7 @@
     {
       "productId": "figma-kit:kraken",
       "kitSlug": "kraken-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -645,7 +651,7 @@
     {
       "productId": "figma-kit:phantom",
       "kitSlug": "phantom-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -698,7 +704,7 @@
     {
       "productId": "figma-kit:uniswap",
       "kitSlug": "uniswap-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -751,7 +757,7 @@
     {
       "productId": "figma-kit:ledger",
       "kitSlug": "ledger-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -804,7 +810,7 @@
     {
       "productId": "figma-kit:amazon",
       "kitSlug": "amazon-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -857,7 +863,7 @@
     {
       "productId": "figma-kit:ebay",
       "kitSlug": "ebay-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -910,7 +916,7 @@
     {
       "productId": "figma-kit:shopify",
       "kitSlug": "shopify-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -963,7 +969,7 @@
     {
       "productId": "figma-kit:etsy",
       "kitSlug": "etsy-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1016,7 +1022,7 @@
     {
       "productId": "figma-kit:zara",
       "kitSlug": "zara-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1069,7 +1075,7 @@
     {
       "productId": "figma-kit:asos",
       "kitSlug": "asos-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1122,7 +1128,7 @@
     {
       "productId": "figma-kit:nike",
       "kitSlug": "nike-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1175,7 +1181,7 @@
     {
       "productId": "figma-kit:stockx",
       "kitSlug": "stockx-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1228,7 +1234,7 @@
     {
       "productId": "figma-kit:instagram",
       "kitSlug": "instagram-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1281,7 +1287,7 @@
     {
       "productId": "figma-kit:twitter",
       "kitSlug": "twitter-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1334,7 +1340,7 @@
     {
       "productId": "figma-kit:linkedin",
       "kitSlug": "linkedin-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1387,7 +1393,7 @@
     {
       "productId": "figma-kit:tiktok",
       "kitSlug": "tiktok-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1440,7 +1446,7 @@
     {
       "productId": "figma-kit:snapchat",
       "kitSlug": "snapchat-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1493,7 +1499,7 @@
     {
       "productId": "figma-kit:whatsapp",
       "kitSlug": "whatsapp-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1546,7 +1552,7 @@
     {
       "productId": "figma-kit:threads",
       "kitSlug": "threads-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1599,7 +1605,7 @@
     {
       "productId": "figma-kit:bereal",
       "kitSlug": "bereal-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1652,7 +1658,7 @@
     {
       "productId": "figma-kit:airbnb",
       "kitSlug": "airbnb-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1705,7 +1711,7 @@
     {
       "productId": "figma-kit:expedia",
       "kitSlug": "expedia-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1758,7 +1764,7 @@
     {
       "productId": "figma-kit:hopper",
       "kitSlug": "hopper-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1811,7 +1817,7 @@
     {
       "productId": "figma-kit:booking-com",
       "kitSlug": "booking-com-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1864,7 +1870,7 @@
     {
       "productId": "figma-kit:skyscanner",
       "kitSlug": "skyscanner-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1917,7 +1923,7 @@
     {
       "productId": "figma-kit:tripadvisor",
       "kitSlug": "tripadvisor-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -1970,7 +1976,7 @@
     {
       "productId": "figma-kit:kayak",
       "kitSlug": "kayak-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2023,7 +2029,7 @@
     {
       "productId": "figma-kit:hoteltonight",
       "kitSlug": "hoteltonight-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2076,7 +2082,7 @@
     {
       "productId": "figma-kit:slack",
       "kitSlug": "slack-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2129,7 +2135,7 @@
     {
       "productId": "figma-kit:zoom",
       "kitSlug": "zoom-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2182,7 +2188,7 @@
     {
       "productId": "figma-kit:trello",
       "kitSlug": "trello-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2235,7 +2241,7 @@
     {
       "productId": "figma-kit:notion",
       "kitSlug": "notion-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2288,7 +2294,7 @@
     {
       "productId": "figma-kit:asana",
       "kitSlug": "asana-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2341,7 +2347,7 @@
     {
       "productId": "figma-kit:monday-com",
       "kitSlug": "monday-com-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2394,7 +2400,7 @@
     {
       "productId": "figma-kit:linear",
       "kitSlug": "linear-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2447,7 +2453,7 @@
     {
       "productId": "figma-kit:loom",
       "kitSlug": "loom-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2500,7 +2506,7 @@
     {
       "productId": "figma-kit:headspace",
       "kitSlug": "headspace-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2553,7 +2559,7 @@
     {
       "productId": "figma-kit:calm",
       "kitSlug": "calm-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2606,7 +2612,7 @@
     {
       "productId": "figma-kit:strava",
       "kitSlug": "strava-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2659,7 +2665,7 @@
     {
       "productId": "figma-kit:nike-run-club",
       "kitSlug": "nike-run-club-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2712,7 +2718,7 @@
     {
       "productId": "figma-kit:myfitnesspal",
       "kitSlug": "myfitnesspal-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2765,7 +2771,7 @@
     {
       "productId": "figma-kit:fitbit",
       "kitSlug": "fitbit-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2818,7 +2824,7 @@
     {
       "productId": "figma-kit:flo",
       "kitSlug": "flo-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2871,7 +2877,7 @@
     {
       "productId": "figma-kit:sleep-cycle",
       "kitSlug": "sleep-cycle-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2924,7 +2930,7 @@
     {
       "productId": "figma-kit:spotify",
       "kitSlug": "spotify-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -2977,7 +2983,7 @@
     {
       "productId": "figma-kit:apple-music",
       "kitSlug": "apple-music-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3030,7 +3036,7 @@
     {
       "productId": "figma-kit:soundcloud",
       "kitSlug": "soundcloud-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3083,7 +3089,7 @@
     {
       "productId": "figma-kit:tidal",
       "kitSlug": "tidal-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3136,7 +3142,7 @@
     {
       "productId": "figma-kit:deezer",
       "kitSlug": "deezer-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3189,7 +3195,7 @@
     {
       "productId": "figma-kit:pandora",
       "kitSlug": "pandora-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3242,7 +3248,7 @@
     {
       "productId": "figma-kit:shazam",
       "kitSlug": "shazam-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3295,7 +3301,7 @@
     {
       "productId": "figma-kit:duolingo",
       "kitSlug": "duolingo-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3348,7 +3354,7 @@
     {
       "productId": "figma-kit:coursera",
       "kitSlug": "coursera-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3401,7 +3407,7 @@
     {
       "productId": "figma-kit:masterclass",
       "kitSlug": "masterclass-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3454,7 +3460,7 @@
     {
       "productId": "figma-kit:udemy",
       "kitSlug": "udemy-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3507,7 +3513,7 @@
     {
       "productId": "figma-kit:khan-academy",
       "kitSlug": "khan-academy-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3560,7 +3566,7 @@
     {
       "productId": "figma-kit:skillshare",
       "kitSlug": "skillshare-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3613,7 +3619,7 @@
     {
       "productId": "figma-kit:babbel",
       "kitSlug": "babbel-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3666,7 +3672,7 @@
     {
       "productId": "figma-kit:the-new-york-times",
       "kitSlug": "the-new-york-times-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3719,7 +3725,7 @@
     {
       "productId": "figma-kit:bbc-news",
       "kitSlug": "bbc-news-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3772,7 +3778,7 @@
     {
       "productId": "figma-kit:cnn",
       "kitSlug": "cnn-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3825,7 +3831,7 @@
     {
       "productId": "figma-kit:reuters",
       "kitSlug": "reuters-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3878,7 +3884,7 @@
     {
       "productId": "figma-kit:flipboard",
       "kitSlug": "flipboard-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3931,7 +3937,7 @@
     {
       "productId": "figma-kit:substack",
       "kitSlug": "substack-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
@@ -3984,7 +3990,7 @@
     {
       "productId": "figma-kit:pocket",
       "kitSlug": "pocket-figma-kit",
-      "auditedAt": "2026-04-24T05:12:16.286Z",
+      "auditedAt": "2026-04-24T05:19:15.471Z",
       "finalizationStatus": "blocked",
       "auditClassification": "must_regenerate",
       "exportEligibility": {
