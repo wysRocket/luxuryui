@@ -1,6 +1,6 @@
 {
   "schema": "1",
-  "generatedAt": "2026-04-26T20:33:36.265Z",
+  "generatedAt": "2026-04-26T23:07:43.731Z",
   "summary": {
     "totalProducts": 76,
     "publishedProducts": 76,
@@ -28,7 +28,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:revolut",
@@ -50,7 +50,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:mint",
@@ -72,7 +72,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:robinhood",
@@ -94,7 +94,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:paypal",
@@ -116,7 +116,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:wallet",
@@ -138,7 +138,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:wealthfront",
@@ -160,7 +160,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:n26",
@@ -182,7 +182,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:coinbase",
@@ -204,7 +204,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:binance",
@@ -226,7 +226,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:metamask",
@@ -248,7 +248,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:kraken",
@@ -270,7 +270,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:phantom",
@@ -292,7 +292,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:uniswap",
@@ -314,7 +314,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:ledger",
@@ -336,7 +336,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:amazon",
@@ -358,7 +358,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:ebay",
@@ -380,7 +380,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:shopify",
@@ -402,7 +402,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:etsy",
@@ -424,7 +424,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:zara",
@@ -446,7 +446,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:asos",
@@ -468,7 +468,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:nike",
@@ -490,7 +490,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:stockx",
@@ -512,7 +512,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:instagram",
@@ -534,7 +534,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:twitter",
@@ -556,7 +556,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:linkedin",
@@ -578,7 +578,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:tiktok",
@@ -600,7 +600,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:snapchat",
@@ -622,7 +622,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:whatsapp",
@@ -644,7 +644,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:threads",
@@ -666,7 +666,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:bereal",
@@ -688,7 +688,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:airbnb",
@@ -710,7 +710,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:expedia",
@@ -732,7 +732,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:hopper",
@@ -754,7 +754,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:booking-com",
@@ -776,7 +776,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:skyscanner",
@@ -798,7 +798,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:tripadvisor",
@@ -820,7 +820,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:kayak",
@@ -842,7 +842,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:hoteltonight",
@@ -864,7 +864,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:slack",
@@ -886,7 +886,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:zoom",
@@ -908,7 +908,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:trello",
@@ -930,7 +930,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:notion",
@@ -952,7 +952,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:asana",
@@ -974,7 +974,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:monday-com",
@@ -996,7 +996,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:linear",
@@ -1018,7 +1018,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:loom",
@@ -1040,7 +1040,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:headspace",
@@ -1062,7 +1062,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:calm",
@@ -1084,7 +1084,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:strava",
@@ -1106,7 +1106,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:nike-run-club",
@@ -1128,7 +1128,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:myfitnesspal",
@@ -1150,7 +1150,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:fitbit",
@@ -1172,7 +1172,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:flo",
@@ -1194,7 +1194,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:sleep-cycle",
@@ -1216,7 +1216,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:spotify",
@@ -1238,7 +1238,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:apple-music",
@@ -1260,7 +1260,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:soundcloud",
@@ -1282,7 +1282,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:tidal",
@@ -1304,7 +1304,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:deezer",
@@ -1326,7 +1326,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:pandora",
@@ -1348,7 +1348,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:shazam",
@@ -1370,7 +1370,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:duolingo",
@@ -1392,7 +1392,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:coursera",
@@ -1414,7 +1414,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:masterclass",
@@ -1436,7 +1436,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:udemy",
@@ -1458,7 +1458,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:khan-academy",
@@ -1480,7 +1480,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:skillshare",
@@ -1502,7 +1502,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:babbel",
@@ -1524,7 +1524,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:the-new-york-times",
@@ -1546,7 +1546,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:bbc-news",
@@ -1568,7 +1568,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:cnn",
@@ -1590,7 +1590,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:reuters",
@@ -1612,7 +1612,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:flipboard",
@@ -1634,7 +1634,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:substack",
@@ -1656,7 +1656,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     },
     {
       "productId": "figma-kit:pocket",
@@ -1678,7 +1678,7 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-26T20:33:36.265Z"
+      "reviewedAt": "2026-04-26T23:07:43.731Z"
     }
   ]
 }
