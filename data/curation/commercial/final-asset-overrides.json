@@ -12,6 +12,306 @@
       "source": "verified-figma-file"
     },
     {
+      "kitSlug": "revolut-figma-kit",
+      "figmaFileKey": "6zI3kpmankQ433Eogt145B",
+      "figmaPublishedAt": "2026-04-05T05:26:34.890Z",
+      "finalAssetUrl": "https://www.figma.com/design/6zI3kpmankQ433Eogt145B/Revolut-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:26:34.890Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "mint-figma-kit",
+      "figmaFileKey": "9D5DkUgAjuDNF6bTYbG033",
+      "figmaPublishedAt": "2026-04-05T05:25:22.475Z",
+      "finalAssetUrl": "https://www.figma.com/design/9D5DkUgAjuDNF6bTYbG033/Mint-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:25:22.475Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "robinhood-figma-kit",
+      "figmaFileKey": "4Rpq7QyIpiphKGST5K8khL",
+      "figmaPublishedAt": "2026-04-05T05:26:39.748Z",
+      "finalAssetUrl": "https://www.figma.com/design/4Rpq7QyIpiphKGST5K8khL/Robinhood-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:26:39.748Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "paypal-figma-kit",
+      "figmaFileKey": "UxPcrs9Wrg5z51080DH2Jy",
+      "figmaPublishedAt": "2026-04-05T05:26:10.271Z",
+      "finalAssetUrl": "https://www.figma.com/design/UxPcrs9Wrg5z51080DH2Jy/PayPal-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:26:10.271Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "wallet-figma-kit",
+      "figmaFileKey": "BAi1nmxUVLvVZTVTNQWWCW",
+      "figmaPublishedAt": "2026-04-05T05:29:03.660Z",
+      "finalAssetUrl": "https://www.figma.com/design/BAi1nmxUVLvVZTVTNQWWCW/Wallet-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:29:03.660Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "wealthfront-figma-kit",
+      "figmaFileKey": "HaMwiFAYUWyMla3af3grQs",
+      "figmaPublishedAt": "2026-04-05T05:29:09.592Z",
+      "finalAssetUrl": "https://www.figma.com/design/HaMwiFAYUWyMla3af3grQs/Wealthfront-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:29:09.592Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "n26-figma-kit",
+      "figmaFileKey": "pnRIPS11HTtikt7Bzf5Eq9",
+      "figmaPublishedAt": "2026-04-05T05:25:45.939Z",
+      "finalAssetUrl": "https://www.figma.com/design/pnRIPS11HTtikt7Bzf5Eq9/N26-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:25:45.939Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "coinbase-figma-kit",
+      "figmaFileKey": "Zkhqox2Km0zHPMt9ceNsud",
+      "figmaPublishedAt": "2026-04-05T05:23:06.435Z",
+      "finalAssetUrl": "https://www.figma.com/design/Zkhqox2Km0zHPMt9ceNsud/Coinbase-%E2%80%94-Account-Settings-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:23:06.435Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "binance-figma-kit",
+      "figmaFileKey": "e6M0cXKkQgOtIu6KygheHz",
+      "figmaPublishedAt": "2026-04-05T05:22:26.363Z",
+      "finalAssetUrl": "https://www.figma.com/design/e6M0cXKkQgOtIu6KygheHz/Binance-%E2%80%94-Account-Settings-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:22:26.363Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "metamask-figma-kit",
+      "figmaFileKey": "9obVj8nh8tz1MeTTCzIu0e",
+      "figmaPublishedAt": "2026-04-05T05:25:16.996Z",
+      "finalAssetUrl": "https://www.figma.com/design/9obVj8nh8tz1MeTTCzIu0e/MetaMask-%E2%80%94-Account-Settings-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:25:16.996Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "kraken-figma-kit",
+      "figmaFileKey": "uPLfi1flttOyTCao96ITOv",
+      "figmaPublishedAt": "2026-04-05T05:24:41.043Z",
+      "finalAssetUrl": "https://www.figma.com/design/uPLfi1flttOyTCao96ITOv/Kraken-%E2%80%94-Account-Settings-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:24:41.043Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "phantom-figma-kit",
+      "figmaFileKey": "qlKeLS4or5lhJSD3gtNbte",
+      "figmaPublishedAt": "2026-04-05T05:26:18.230Z",
+      "finalAssetUrl": "https://www.figma.com/design/qlKeLS4or5lhJSD3gtNbte/Phantom-%E2%80%94-Account-Settings-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:26:18.230Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "uniswap-figma-kit",
+      "figmaFileKey": "qM7MYyUsJz2dJJypDM724G",
+      "figmaPublishedAt": "2026-04-05T05:28:53.935Z",
+      "finalAssetUrl": "https://www.figma.com/design/qM7MYyUsJz2dJJypDM724G/Uniswap-%E2%80%94-Account-Settings-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:28:53.935Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "ledger-figma-kit",
+      "figmaFileKey": "kxtiqwdR8ZvWEyIKoGYd68",
+      "figmaPublishedAt": "2026-04-05T05:24:46.194Z",
+      "finalAssetUrl": "https://www.figma.com/design/kxtiqwdR8ZvWEyIKoGYd68/Ledger-%E2%80%94-Account-Settings-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:24:46.194Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "amazon-figma-kit",
+      "figmaFileKey": "vw9RosirSJeGGHq36aVS7f",
+      "figmaPublishedAt": "2026-04-05T05:21:40.881Z",
+      "finalAssetUrl": "https://www.figma.com/design/vw9RosirSJeGGHq36aVS7f/Amazon-%E2%80%94-Checkout-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:21:40.881Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "ebay-figma-kit",
+      "figmaFileKey": "g58rqBFnVkyU8lhRmNGlOW",
+      "figmaPublishedAt": "2026-04-05T05:23:35.428Z",
+      "finalAssetUrl": "https://www.figma.com/design/g58rqBFnVkyU8lhRmNGlOW/eBay-%E2%80%94-Checkout-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:23:35.428Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "shopify-figma-kit",
+      "figmaFileKey": "oNQCDjRkkDX3bMs3jC6HKN",
+      "figmaPublishedAt": "2026-04-05T05:26:52.435Z",
+      "finalAssetUrl": "https://www.figma.com/design/oNQCDjRkkDX3bMs3jC6HKN/Shopify-%E2%80%94-Checkout-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:26:52.435Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "etsy-figma-kit",
+      "figmaFileKey": "mO1apOYu8jM89KoBJjnsRn",
+      "figmaPublishedAt": "2026-04-05T05:23:40.363Z",
+      "finalAssetUrl": "https://www.figma.com/design/mO1apOYu8jM89KoBJjnsRn/Etsy-%E2%80%94-Checkout-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:23:40.363Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "zara-figma-kit",
+      "figmaFileKey": "XJeRTjbRVq0ZTjfyu1EuRw",
+      "figmaPublishedAt": "2026-04-05T05:29:20.126Z",
+      "finalAssetUrl": "https://www.figma.com/design/XJeRTjbRVq0ZTjfyu1EuRw/Zara-%E2%80%94-Checkout-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:29:20.126Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "asos-figma-kit",
+      "figmaFileKey": "j8Z1TnFFMTnv5XXDBAclPk",
+      "figmaPublishedAt": "2026-04-05T05:21:59.691Z",
+      "finalAssetUrl": "https://www.figma.com/design/j8Z1TnFFMTnv5XXDBAclPk/ASOS-%E2%80%94-Checkout-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:21:59.691Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "nike-figma-kit",
+      "figmaFileKey": "zcGv9Ce3jX2gkMV2pIjEUQ",
+      "figmaPublishedAt": "2026-04-05T05:25:51.523Z",
+      "finalAssetUrl": "https://www.figma.com/design/zcGv9Ce3jX2gkMV2pIjEUQ/Nike-%E2%80%94-Checkout-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:25:51.523Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "stockx-figma-kit",
+      "figmaFileKey": "ItFoDYFYuOJITuiOM5xt2K",
+      "figmaPublishedAt": "2026-04-05T05:27:43.699Z",
+      "finalAssetUrl": "https://www.figma.com/design/ItFoDYFYuOJITuiOM5xt2K/StockX-%E2%80%94-Checkout-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:27:43.699Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "instagram-figma-kit",
+      "figmaFileKey": "BXUHz0Rn5FLLjcWsFsJDfi",
+      "figmaPublishedAt": "2026-04-05T05:24:23.518Z",
+      "finalAssetUrl": "https://www.figma.com/design/BXUHz0Rn5FLLjcWsFsJDfi/Instagram-%E2%80%94-Social-Engagement-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:24:23.518Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "twitter-figma-kit",
+      "figmaFileKey": "kBSaDsLWYAYMeTGwmI9XBE",
+      "figmaPublishedAt": "2026-04-05T05:28:39.010Z",
+      "finalAssetUrl": "https://www.figma.com/design/kBSaDsLWYAYMeTGwmI9XBE/Twitter-%E2%80%94-Social-Engagement-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:28:39.010Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "linkedin-figma-kit",
+      "figmaFileKey": "30Pvx7Zg7boUkNIH90KaAn",
+      "figmaPublishedAt": "2026-04-05T05:24:58.441Z",
+      "finalAssetUrl": "https://www.figma.com/design/30Pvx7Zg7boUkNIH90KaAn/LinkedIn-%E2%80%94-Social-Engagement-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:24:58.441Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "tiktok-figma-kit",
+      "figmaFileKey": "5Pef8Q4IYusVq2eC4pK6oj",
+      "figmaPublishedAt": "2026-04-05T05:28:20.879Z",
+      "finalAssetUrl": "https://www.figma.com/design/5Pef8Q4IYusVq2eC4pK6oj/TikTok-%E2%80%94-Social-Engagement-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:28:20.879Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "snapchat-figma-kit",
+      "figmaFileKey": "FIrDMcNIYBY9oAJfHBBTyV",
+      "figmaPublishedAt": "2026-04-05T05:27:23.323Z",
+      "finalAssetUrl": "https://www.figma.com/design/FIrDMcNIYBY9oAJfHBBTyV/Snapchat-%E2%80%94-Social-Engagement-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:27:23.323Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "whatsapp-figma-kit",
+      "figmaFileKey": "hkOI39RECtn163G8YVTrdR",
+      "figmaPublishedAt": "2026-04-05T05:29:14.608Z",
+      "finalAssetUrl": "https://www.figma.com/design/hkOI39RECtn163G8YVTrdR/WhatsApp-%E2%80%94-Social-Engagement-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:29:14.608Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "threads-figma-kit",
+      "figmaFileKey": "od4whujhtAxrkMRu6H2uoE",
+      "figmaPublishedAt": "2026-04-05T05:28:06.176Z",
+      "finalAssetUrl": "https://www.figma.com/design/od4whujhtAxrkMRu6H2uoE/Threads-%E2%80%94-Social-Engagement-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:28:06.176Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "bereal-figma-kit",
+      "figmaFileKey": "JdSPjA4YqVJbfew021F12d",
+      "figmaPublishedAt": "2026-04-05T05:22:19.025Z",
+      "finalAssetUrl": "https://www.figma.com/design/JdSPjA4YqVJbfew021F12d/BeReal-%E2%80%94-Social-Engagement-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:22:19.025Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
       "kitSlug": "airbnb-figma-kit",
       "figmaFileKey": "Ifh6R8PmR4m9IhJ35kQulx",
       "figmaPublishedAt": "2026-04-26T20:03:52.550Z",
@@ -20,6 +320,446 @@
       "backupAssetUrl": null,
       "contentBuiltAt": "2026-04-26T20:03:52.551Z",
       "source": "verified-figma-file"
+    },
+    {
+      "kitSlug": "expedia-figma-kit",
+      "figmaFileKey": "aOkZpRhDSuHVKkltDl7yW3",
+      "figmaPublishedAt": "2026-04-05T05:23:45.585Z",
+      "finalAssetUrl": "https://www.figma.com/design/aOkZpRhDSuHVKkltDl7yW3/Expedia-%E2%80%94-Checkout-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:23:45.585Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "hopper-figma-kit",
+      "figmaFileKey": "LFILHhTaKWGerYWBLmtZGP",
+      "figmaPublishedAt": "2026-04-05T05:24:13.302Z",
+      "finalAssetUrl": "https://www.figma.com/design/LFILHhTaKWGerYWBLmtZGP/Hopper-%E2%80%94-Checkout-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:24:13.302Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "booking-com-figma-kit",
+      "figmaFileKey": "DQ0kaJFziXKWnLuZCIHwIi",
+      "figmaPublishedAt": "2026-04-05T05:22:33.253Z",
+      "finalAssetUrl": "https://www.figma.com/design/DQ0kaJFziXKWnLuZCIHwIi/Booking.com-%E2%80%94-Checkout-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:22:33.253Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "skyscanner-figma-kit",
+      "figmaFileKey": "HgEWEAmTaxLPVLC1nddQdU",
+      "figmaPublishedAt": "2026-04-05T05:27:04.776Z",
+      "finalAssetUrl": "https://www.figma.com/design/HgEWEAmTaxLPVLC1nddQdU/Skyscanner-%E2%80%94-Checkout-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:27:04.776Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "tripadvisor-figma-kit",
+      "figmaFileKey": "m0GajiBHMxiLt5jooCogY4",
+      "figmaPublishedAt": "2026-04-05T05:28:33.163Z",
+      "finalAssetUrl": "https://www.figma.com/design/m0GajiBHMxiLt5jooCogY4/TripAdvisor-%E2%80%94-Checkout-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:28:33.163Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "kayak-figma-kit",
+      "figmaFileKey": "sNVbBXuMdk6H8cfVG9Gj45",
+      "figmaPublishedAt": "2026-04-05T05:24:29.553Z",
+      "finalAssetUrl": "https://www.figma.com/design/sNVbBXuMdk6H8cfVG9Gj45/KAYAK-%E2%80%94-Checkout-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:24:29.553Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "hoteltonight-figma-kit",
+      "figmaFileKey": "GTDbW2ip1Q9vXCdbCHY7gQ",
+      "figmaPublishedAt": "2026-04-05T05:24:19.234Z",
+      "finalAssetUrl": "https://www.figma.com/design/GTDbW2ip1Q9vXCdbCHY7gQ/HotelTonight-%E2%80%94-Checkout-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:24:19.234Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "slack-figma-kit",
+      "figmaFileKey": "YhCOJ6ZUoafEk1Dl4mc9a5",
+      "figmaPublishedAt": "2026-04-05T05:27:12.161Z",
+      "finalAssetUrl": "https://www.figma.com/design/YhCOJ6ZUoafEk1Dl4mc9a5/Slack-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:27:12.161Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "zoom-figma-kit",
+      "figmaFileKey": "BfQr9qOfclxC2mHYM7hBfQ",
+      "figmaPublishedAt": "2026-04-05T05:29:26.670Z",
+      "finalAssetUrl": "https://www.figma.com/design/BfQr9qOfclxC2mHYM7hBfQ/Zoom-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:29:26.670Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "trello-figma-kit",
+      "figmaFileKey": "YZsWGejlEIwXMKzDtQybnp",
+      "figmaPublishedAt": "2026-04-05T05:28:27.717Z",
+      "finalAssetUrl": "https://www.figma.com/design/YZsWGejlEIwXMKzDtQybnp/Trello-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:28:27.717Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "notion-figma-kit",
+      "figmaFileKey": "I8Dv3bp4Iuh7ax3gUyPSD5",
+      "figmaPublishedAt": "2026-04-05T05:26:00.878Z",
+      "finalAssetUrl": "https://www.figma.com/design/I8Dv3bp4Iuh7ax3gUyPSD5/Notion-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:26:00.878Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "asana-figma-kit",
+      "figmaFileKey": "AB6qw6iOYBuIubaZZiKCXQ",
+      "figmaPublishedAt": "2026-04-05T05:21:53.199Z",
+      "finalAssetUrl": "https://www.figma.com/design/AB6qw6iOYBuIubaZZiKCXQ/Asana-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:21:53.199Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "monday-com-figma-kit",
+      "figmaFileKey": "akDLr6s9JdMlXuIDPri40S",
+      "figmaPublishedAt": "2026-04-05T05:25:28.252Z",
+      "finalAssetUrl": "https://www.figma.com/design/akDLr6s9JdMlXuIDPri40S/Monday.com-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:25:28.252Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "linear-figma-kit",
+      "figmaFileKey": "7yJfhXeoLQFP3vxQEmP1g9",
+      "figmaPublishedAt": "2026-04-05T05:24:52.758Z",
+      "finalAssetUrl": "https://www.figma.com/design/7yJfhXeoLQFP3vxQEmP1g9/Linear-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:24:52.758Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "loom-figma-kit",
+      "figmaFileKey": "hKa1xqrRS168F9uQ3FTWWF",
+      "figmaPublishedAt": "2026-04-05T05:25:04.388Z",
+      "finalAssetUrl": "https://www.figma.com/design/hKa1xqrRS168F9uQ3FTWWF/Loom-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:25:04.388Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "headspace-figma-kit",
+      "figmaFileKey": "SG4v9Vv28OLtKSSdVwPZ1O",
+      "figmaPublishedAt": "2026-04-05T05:24:07.396Z",
+      "finalAssetUrl": "https://www.figma.com/design/SG4v9Vv28OLtKSSdVwPZ1O/Headspace-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:24:07.396Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "calm-figma-kit",
+      "figmaFileKey": "ls0gQpnLMRF7nVhL2FouN2",
+      "figmaPublishedAt": "2026-04-05T05:22:55.629Z",
+      "finalAssetUrl": "https://www.figma.com/design/ls0gQpnLMRF7nVhL2FouN2/Calm-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:22:55.629Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "strava-figma-kit",
+      "figmaFileKey": "INdb1FAWaszhr1mhW08qIT",
+      "figmaPublishedAt": "2026-04-05T05:27:48.743Z",
+      "finalAssetUrl": "https://www.figma.com/design/INdb1FAWaszhr1mhW08qIT/Strava-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:27:48.743Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "nike-run-club-figma-kit",
+      "figmaFileKey": "8NoFNebsFj2Fd6iFnplYXl",
+      "figmaPublishedAt": "2026-04-05T05:25:56.672Z",
+      "finalAssetUrl": "https://www.figma.com/design/8NoFNebsFj2Fd6iFnplYXl/Nike-Run-Club-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:25:56.672Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "myfitnesspal-figma-kit",
+      "figmaFileKey": "72XKcKIl8phYccv5eV4YBT",
+      "figmaPublishedAt": "2026-04-05T05:25:40.292Z",
+      "finalAssetUrl": "https://www.figma.com/design/72XKcKIl8phYccv5eV4YBT/MyFitnessPal-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:25:40.292Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "fitbit-figma-kit",
+      "figmaFileKey": "gKFaqhyylPtJUKud7RT5WL",
+      "figmaPublishedAt": "2026-04-05T05:23:50.815Z",
+      "finalAssetUrl": "https://www.figma.com/design/gKFaqhyylPtJUKud7RT5WL/Fitbit-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:23:50.815Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "flo-figma-kit",
+      "figmaFileKey": "BqbumVee0jTJAGE8HZZOif",
+      "figmaPublishedAt": "2026-04-05T05:24:01.909Z",
+      "finalAssetUrl": "https://www.figma.com/design/BqbumVee0jTJAGE8HZZOif/Flo-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:24:01.909Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "sleep-cycle-figma-kit",
+      "figmaFileKey": "IT67Mv1sQCsLXnD1IoWFWa",
+      "figmaPublishedAt": "2026-04-05T05:27:16.996Z",
+      "finalAssetUrl": "https://www.figma.com/design/IT67Mv1sQCsLXnD1IoWFWa/Sleep-Cycle-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:27:16.996Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "spotify-figma-kit",
+      "figmaFileKey": "oJmv5djBOIvWZPH7LdnARJ",
+      "figmaPublishedAt": "2026-04-05T05:27:38.010Z",
+      "finalAssetUrl": "https://www.figma.com/design/oJmv5djBOIvWZPH7LdnARJ/Spotify-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:27:38.010Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "apple-music-figma-kit",
+      "figmaFileKey": "QQhpVpgHSAi9GD2Ckt5T5c",
+      "figmaPublishedAt": "2026-04-05T05:21:46.410Z",
+      "finalAssetUrl": "https://www.figma.com/design/QQhpVpgHSAi9GD2Ckt5T5c/Apple-Music-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:21:46.410Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "soundcloud-figma-kit",
+      "figmaFileKey": "azVKVDi6OXyQWBewSfAWJM",
+      "figmaPublishedAt": "2026-04-05T05:27:30.202Z",
+      "finalAssetUrl": "https://www.figma.com/design/azVKVDi6OXyQWBewSfAWJM/SoundCloud-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:27:30.202Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "tidal-figma-kit",
+      "figmaFileKey": "hj0COPQtUGokxoHxqxnM8X",
+      "figmaPublishedAt": "2026-04-05T05:28:14.388Z",
+      "finalAssetUrl": "https://www.figma.com/design/hj0COPQtUGokxoHxqxnM8X/Tidal-%E2%80%94-Subscription-Upgrade-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:28:14.388Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "deezer-figma-kit",
+      "figmaFileKey": "L2aUhEBc4K9st2B2FvNKRG",
+      "figmaPublishedAt": "2026-04-05T05:23:17.655Z",
+      "finalAssetUrl": "https://www.figma.com/design/L2aUhEBc4K9st2B2FvNKRG/Deezer-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:23:17.655Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "pandora-figma-kit",
+      "figmaFileKey": "VKUjPUJ4M2huFWsUKkwhl6",
+      "figmaPublishedAt": "2026-04-05T05:26:05.868Z",
+      "finalAssetUrl": "https://www.figma.com/design/VKUjPUJ4M2huFWsUKkwhl6/Pandora-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:26:05.868Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "shazam-figma-kit",
+      "figmaFileKey": "uM11NkFjHHHQA6BA3MOZTD",
+      "figmaPublishedAt": "2026-04-05T05:26:45.155Z",
+      "finalAssetUrl": "https://www.figma.com/design/uM11NkFjHHHQA6BA3MOZTD/Shazam-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:26:45.155Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "duolingo-figma-kit",
+      "figmaFileKey": "w9XIzulDYS5DdfSfa4ECPV",
+      "figmaPublishedAt": "2026-04-05T05:23:24.575Z",
+      "finalAssetUrl": "https://www.figma.com/design/w9XIzulDYS5DdfSfa4ECPV/Duolingo-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:23:24.575Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "coursera-figma-kit",
+      "figmaFileKey": "KCw4PyMuPofqQUtxKwAOVi",
+      "figmaPublishedAt": "2026-04-05T05:23:10.854Z",
+      "finalAssetUrl": "https://www.figma.com/design/KCw4PyMuPofqQUtxKwAOVi/Coursera-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:23:10.854Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "masterclass-figma-kit",
+      "figmaFileKey": "f5yBnHDK9ZNGE8Ig4xbSsj",
+      "figmaPublishedAt": "2026-04-05T05:25:12.659Z",
+      "finalAssetUrl": "https://www.figma.com/design/f5yBnHDK9ZNGE8Ig4xbSsj/Masterclass-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:25:12.659Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "udemy-figma-kit",
+      "figmaFileKey": "F6ddvGF3JkXUqJh16aSxWM",
+      "figmaPublishedAt": "2026-04-05T05:28:48.116Z",
+      "finalAssetUrl": "https://www.figma.com/design/F6ddvGF3JkXUqJh16aSxWM/Udemy-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:28:48.116Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "khan-academy-figma-kit",
+      "figmaFileKey": "tqz970UaYJDCr7b2csHVmp",
+      "figmaPublishedAt": "2026-04-05T05:24:34.683Z",
+      "finalAssetUrl": "https://www.figma.com/design/tqz970UaYJDCr7b2csHVmp/Khan-Academy-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:24:34.683Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "skillshare-figma-kit",
+      "figmaFileKey": "3WH73htwuybxonNYLJ14rJ",
+      "figmaPublishedAt": "2026-04-05T05:26:57.694Z",
+      "finalAssetUrl": "https://www.figma.com/design/3WH73htwuybxonNYLJ14rJ/Skillshare-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:26:57.694Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "babbel-figma-kit",
+      "figmaFileKey": "bjL0VTlJoLst9Q0lOoE914",
+      "figmaPublishedAt": "2026-04-05T05:22:06.300Z",
+      "finalAssetUrl": "https://www.figma.com/design/bjL0VTlJoLst9Q0lOoE914/Babbel-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:22:06.300Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "the-new-york-times-figma-kit",
+      "figmaFileKey": "aXfYJrvhSa9Sh5gmydr8aF",
+      "figmaPublishedAt": "2026-04-05T05:27:59.560Z",
+      "finalAssetUrl": "https://www.figma.com/design/aXfYJrvhSa9Sh5gmydr8aF/The-New-York-Times-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:27:59.560Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "bbc-news-figma-kit",
+      "figmaFileKey": "QJE304CBjIWEXYMgMIxKGb",
+      "figmaPublishedAt": "2026-04-05T05:22:12.794Z",
+      "finalAssetUrl": "https://www.figma.com/design/QJE304CBjIWEXYMgMIxKGb/BBC-News-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:22:12.794Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "cnn-figma-kit",
+      "figmaFileKey": "RTMwxXJET35EiwbWOaLt5r",
+      "figmaPublishedAt": "2026-04-05T05:22:59.853Z",
+      "finalAssetUrl": "https://www.figma.com/design/RTMwxXJET35EiwbWOaLt5r/CNN-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:22:59.853Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "reuters-figma-kit",
+      "figmaFileKey": "QbrN7DcYiiMEx0Y1sml8uS",
+      "figmaPublishedAt": "2026-04-05T05:26:28.348Z",
+      "finalAssetUrl": "https://www.figma.com/design/QbrN7DcYiiMEx0Y1sml8uS/Reuters-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:26:28.348Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "flipboard-figma-kit",
+      "figmaFileKey": "8aJDuRIUFr9CIG2OZewLxq",
+      "figmaPublishedAt": "2026-04-05T05:23:57.426Z",
+      "finalAssetUrl": "https://www.figma.com/design/8aJDuRIUFr9CIG2OZewLxq/Flipboard-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:23:57.426Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "substack-figma-kit",
+      "figmaFileKey": "HGsR3DrfyQlZXYkkRmdN1F",
+      "figmaPublishedAt": "2026-04-05T05:27:54.965Z",
+      "finalAssetUrl": "https://www.figma.com/design/HGsR3DrfyQlZXYkkRmdN1F/Substack-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:27:54.965Z",
+      "source": "verified-figma-drafts-inventory"
+    },
+    {
+      "kitSlug": "pocket-figma-kit",
+      "figmaFileKey": "cJnbRMy4cBl8JlFBSSh1oQ",
+      "figmaPublishedAt": "2026-04-05T05:26:24.084Z",
+      "finalAssetUrl": "https://www.figma.com/design/cJnbRMy4cBl8JlFBSSh1oQ/Pocket-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-05T05:26:24.084Z",
+      "source": "verified-figma-drafts-inventory"
     }
   ]
 }

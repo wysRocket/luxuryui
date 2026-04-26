@@ -1,11 +1,11 @@
 {
   "schema": "1",
-  "generatedAt": "2026-04-26T20:08:38.639Z",
+  "generatedAt": "2026-04-26T20:33:36.265Z",
   "summary": {
     "totalProducts": 76,
-    "publishedProducts": 2,
-    "blockedProducts": 74,
-    "flowsRepresented": 2
+    "publishedProducts": 76,
+    "blockedProducts": 0,
+    "flowsRepresented": 6
   },
   "manifests": [
     {
@@ -142,7 +142,7 @@
     {
       "productId": "figma-kit:revolut",
       "productSlug": "revolut-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "6zI3kpmankQ433Eogt145B",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -201,7 +201,7 @@
       "exportPackage": {
         "fileName": "revolut-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "revolut-figma-kit",
@@ -209,13 +209,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/6zI3kpmankQ433Eogt145B/Revolut-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "revolut-figma-kit.fig",
         "previewCount": 3,
@@ -273,7 +273,7 @@
     {
       "productId": "figma-kit:mint",
       "productSlug": "mint-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "9D5DkUgAjuDNF6bTYbG033",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -331,7 +331,7 @@
       "exportPackage": {
         "fileName": "mint-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "mint-figma-kit",
@@ -339,13 +339,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "warn",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/9D5DkUgAjuDNF6bTYbG033/Mint-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "mint-figma-kit.fig",
         "previewCount": 3,
@@ -375,7 +375,7 @@
     {
       "productId": "figma-kit:robinhood",
       "productSlug": "robinhood-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "4Rpq7QyIpiphKGST5K8khL",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -434,7 +434,7 @@
       "exportPackage": {
         "fileName": "robinhood-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "robinhood-figma-kit",
@@ -442,13 +442,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/4Rpq7QyIpiphKGST5K8khL/Robinhood-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "robinhood-figma-kit.fig",
         "previewCount": 3,
@@ -506,7 +506,7 @@
     {
       "productId": "figma-kit:paypal",
       "productSlug": "paypal-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "UxPcrs9Wrg5z51080DH2Jy",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -565,7 +565,7 @@
       "exportPackage": {
         "fileName": "paypal-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "paypal-figma-kit",
@@ -573,13 +573,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/UxPcrs9Wrg5z51080DH2Jy/PayPal-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "paypal-figma-kit.fig",
         "previewCount": 3,
@@ -637,7 +637,7 @@
     {
       "productId": "figma-kit:wallet",
       "productSlug": "wallet-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "BAi1nmxUVLvVZTVTNQWWCW",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -696,7 +696,7 @@
       "exportPackage": {
         "fileName": "wallet-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "wallet-figma-kit",
@@ -704,13 +704,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/BAi1nmxUVLvVZTVTNQWWCW/Wallet-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "wallet-figma-kit.fig",
         "previewCount": 3,
@@ -768,7 +768,7 @@
     {
       "productId": "figma-kit:wealthfront",
       "productSlug": "wealthfront-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "HaMwiFAYUWyMla3af3grQs",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -827,7 +827,7 @@
       "exportPackage": {
         "fileName": "wealthfront-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "wealthfront-figma-kit",
@@ -835,13 +835,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/HaMwiFAYUWyMla3af3grQs/Wealthfront-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "wealthfront-figma-kit.fig",
         "previewCount": 3,
@@ -872,7 +872,7 @@
     {
       "productId": "figma-kit:n26",
       "productSlug": "n26-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "pnRIPS11HTtikt7Bzf5Eq9",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -931,7 +931,7 @@
       "exportPackage": {
         "fileName": "n26-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "n26-figma-kit",
@@ -939,13 +939,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/pnRIPS11HTtikt7Bzf5Eq9/N26-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "n26-figma-kit.fig",
         "previewCount": 3,
@@ -976,7 +976,7 @@
     {
       "productId": "figma-kit:coinbase",
       "productSlug": "coinbase-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "Zkhqox2Km0zHPMt9ceNsud",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -1034,7 +1034,7 @@
       "exportPackage": {
         "fileName": "coinbase-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "coinbase-figma-kit",
@@ -1042,13 +1042,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "warn",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/Zkhqox2Km0zHPMt9ceNsud/Coinbase-%E2%80%94-Account-Settings-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "coinbase-figma-kit.fig",
         "previewCount": 3,
@@ -1078,7 +1078,7 @@
     {
       "productId": "figma-kit:binance",
       "productSlug": "binance-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "e6M0cXKkQgOtIu6KygheHz",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -1137,7 +1137,7 @@
       "exportPackage": {
         "fileName": "binance-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "binance-figma-kit",
@@ -1145,13 +1145,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/e6M0cXKkQgOtIu6KygheHz/Binance-%E2%80%94-Account-Settings-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "binance-figma-kit.fig",
         "previewCount": 3,
@@ -1182,7 +1182,7 @@
     {
       "productId": "figma-kit:metamask",
       "productSlug": "metamask-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "9obVj8nh8tz1MeTTCzIu0e",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -1240,7 +1240,7 @@
       "exportPackage": {
         "fileName": "metamask-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "metamask-figma-kit",
@@ -1248,13 +1248,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "warn",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/9obVj8nh8tz1MeTTCzIu0e/MetaMask-%E2%80%94-Account-Settings-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "metamask-figma-kit.fig",
         "previewCount": 3,
@@ -1284,7 +1284,7 @@
     {
       "productId": "figma-kit:kraken",
       "productSlug": "kraken-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "uPLfi1flttOyTCao96ITOv",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -1343,7 +1343,7 @@
       "exportPackage": {
         "fileName": "kraken-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "kraken-figma-kit",
@@ -1351,13 +1351,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/uPLfi1flttOyTCao96ITOv/Kraken-%E2%80%94-Account-Settings-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "kraken-figma-kit.fig",
         "previewCount": 3,
@@ -1388,7 +1388,7 @@
     {
       "productId": "figma-kit:phantom",
       "productSlug": "phantom-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "qlKeLS4or5lhJSD3gtNbte",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -1446,7 +1446,7 @@
       "exportPackage": {
         "fileName": "phantom-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "phantom-figma-kit",
@@ -1454,13 +1454,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "warn",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/qlKeLS4or5lhJSD3gtNbte/Phantom-%E2%80%94-Account-Settings-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "phantom-figma-kit.fig",
         "previewCount": 3,
@@ -1490,7 +1490,7 @@
     {
       "productId": "figma-kit:uniswap",
       "productSlug": "uniswap-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "qM7MYyUsJz2dJJypDM724G",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -1549,7 +1549,7 @@
       "exportPackage": {
         "fileName": "uniswap-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "uniswap-figma-kit",
@@ -1557,13 +1557,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/qM7MYyUsJz2dJJypDM724G/Uniswap-%E2%80%94-Account-Settings-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "uniswap-figma-kit.fig",
         "previewCount": 3,
@@ -1594,7 +1594,7 @@
     {
       "productId": "figma-kit:ledger",
       "productSlug": "ledger-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "kxtiqwdR8ZvWEyIKoGYd68",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -1653,7 +1653,7 @@
       "exportPackage": {
         "fileName": "ledger-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "ledger-figma-kit",
@@ -1661,13 +1661,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/kxtiqwdR8ZvWEyIKoGYd68/Ledger-%E2%80%94-Account-Settings-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "ledger-figma-kit.fig",
         "previewCount": 3,
@@ -1698,7 +1698,7 @@
     {
       "productId": "figma-kit:amazon",
       "productSlug": "amazon-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "vw9RosirSJeGGHq36aVS7f",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -1757,7 +1757,7 @@
       "exportPackage": {
         "fileName": "amazon-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "amazon-figma-kit",
@@ -1765,13 +1765,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/vw9RosirSJeGGHq36aVS7f/Amazon-%E2%80%94-Checkout-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "amazon-figma-kit.fig",
         "previewCount": 3,
@@ -1802,7 +1802,7 @@
     {
       "productId": "figma-kit:ebay",
       "productSlug": "ebay-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "g58rqBFnVkyU8lhRmNGlOW",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -1859,7 +1859,7 @@
       "exportPackage": {
         "fileName": "ebay-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "ebay-figma-kit",
@@ -1867,13 +1867,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "warn",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/g58rqBFnVkyU8lhRmNGlOW/eBay-%E2%80%94-Checkout-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "ebay-figma-kit.fig",
         "previewCount": 3,
@@ -1902,7 +1902,7 @@
     {
       "productId": "figma-kit:shopify",
       "productSlug": "shopify-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "oNQCDjRkkDX3bMs3jC6HKN",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -1961,7 +1961,7 @@
       "exportPackage": {
         "fileName": "shopify-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "shopify-figma-kit",
@@ -1969,13 +1969,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/oNQCDjRkkDX3bMs3jC6HKN/Shopify-%E2%80%94-Checkout-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "shopify-figma-kit.fig",
         "previewCount": 3,
@@ -2006,7 +2006,7 @@
     {
       "productId": "figma-kit:etsy",
       "productSlug": "etsy-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "mO1apOYu8jM89KoBJjnsRn",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -2065,7 +2065,7 @@
       "exportPackage": {
         "fileName": "etsy-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "etsy-figma-kit",
@@ -2073,13 +2073,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/mO1apOYu8jM89KoBJjnsRn/Etsy-%E2%80%94-Checkout-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "etsy-figma-kit.fig",
         "previewCount": 3,
@@ -2110,7 +2110,7 @@
     {
       "productId": "figma-kit:zara",
       "productSlug": "zara-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "XJeRTjbRVq0ZTjfyu1EuRw",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -2169,7 +2169,7 @@
       "exportPackage": {
         "fileName": "zara-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "zara-figma-kit",
@@ -2177,13 +2177,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/XJeRTjbRVq0ZTjfyu1EuRw/Zara-%E2%80%94-Checkout-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "zara-figma-kit.fig",
         "previewCount": 3,
@@ -2214,7 +2214,7 @@
     {
       "productId": "figma-kit:asos",
       "productSlug": "asos-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "j8Z1TnFFMTnv5XXDBAclPk",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -2271,7 +2271,7 @@
       "exportPackage": {
         "fileName": "asos-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "asos-figma-kit",
@@ -2279,13 +2279,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "warn",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/j8Z1TnFFMTnv5XXDBAclPk/ASOS-%E2%80%94-Checkout-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "asos-figma-kit.fig",
         "previewCount": 3,
@@ -2314,7 +2314,7 @@
     {
       "productId": "figma-kit:nike",
       "productSlug": "nike-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "zcGv9Ce3jX2gkMV2pIjEUQ",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -2373,7 +2373,7 @@
       "exportPackage": {
         "fileName": "nike-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "nike-figma-kit",
@@ -2381,13 +2381,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/zcGv9Ce3jX2gkMV2pIjEUQ/Nike-%E2%80%94-Checkout-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "nike-figma-kit.fig",
         "previewCount": 3,
@@ -2418,7 +2418,7 @@
     {
       "productId": "figma-kit:stockx",
       "productSlug": "stockx-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "ItFoDYFYuOJITuiOM5xt2K",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -2477,7 +2477,7 @@
       "exportPackage": {
         "fileName": "stockx-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "stockx-figma-kit",
@@ -2485,13 +2485,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/ItFoDYFYuOJITuiOM5xt2K/StockX-%E2%80%94-Checkout-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "stockx-figma-kit.fig",
         "previewCount": 3,
@@ -2522,7 +2522,7 @@
     {
       "productId": "figma-kit:instagram",
       "productSlug": "instagram-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "BXUHz0Rn5FLLjcWsFsJDfi",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -2580,7 +2580,7 @@
       "exportPackage": {
         "fileName": "instagram-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "instagram-figma-kit",
@@ -2588,13 +2588,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "warn",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/BXUHz0Rn5FLLjcWsFsJDfi/Instagram-%E2%80%94-Social-Engagement-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "instagram-figma-kit.fig",
         "previewCount": 3,
@@ -2624,7 +2624,7 @@
     {
       "productId": "figma-kit:twitter",
       "productSlug": "twitter-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "kBSaDsLWYAYMeTGwmI9XBE",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -2681,21 +2681,21 @@
       "exportPackage": {
         "fileName": "twitter-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "twitter-figma-kit",
-        "generatedAt": "2026-04-26T20:08:38.639Z",
+        "generatedAt": "2026-04-26T20:33:36.265Z",
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "warn",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "rescued",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/kBSaDsLWYAYMeTGwmI9XBE/Twitter-%E2%80%94-Social-Engagement-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "twitter-figma-kit.fig",
         "previewCount": 3,
@@ -2724,7 +2724,7 @@
     {
       "productId": "figma-kit:linkedin",
       "productSlug": "linkedin-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "30Pvx7Zg7boUkNIH90KaAn",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -2783,7 +2783,7 @@
       "exportPackage": {
         "fileName": "linkedin-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "linkedin-figma-kit",
@@ -2791,13 +2791,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/30Pvx7Zg7boUkNIH90KaAn/LinkedIn-%E2%80%94-Social-Engagement-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "linkedin-figma-kit.fig",
         "previewCount": 3,
@@ -2828,7 +2828,7 @@
     {
       "productId": "figma-kit:tiktok",
       "productSlug": "tiktok-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "5Pef8Q4IYusVq2eC4pK6oj",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -2887,7 +2887,7 @@
       "exportPackage": {
         "fileName": "tiktok-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "tiktok-figma-kit",
@@ -2895,13 +2895,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/5Pef8Q4IYusVq2eC4pK6oj/TikTok-%E2%80%94-Social-Engagement-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "tiktok-figma-kit.fig",
         "previewCount": 3,
@@ -2932,7 +2932,7 @@
     {
       "productId": "figma-kit:snapchat",
       "productSlug": "snapchat-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "FIrDMcNIYBY9oAJfHBBTyV",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -2991,7 +2991,7 @@
       "exportPackage": {
         "fileName": "snapchat-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "snapchat-figma-kit",
@@ -2999,13 +2999,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/FIrDMcNIYBY9oAJfHBBTyV/Snapchat-%E2%80%94-Social-Engagement-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "snapchat-figma-kit.fig",
         "previewCount": 3,
@@ -3036,7 +3036,7 @@
     {
       "productId": "figma-kit:whatsapp",
       "productSlug": "whatsapp-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "hkOI39RECtn163G8YVTrdR",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -3093,21 +3093,21 @@
       "exportPackage": {
         "fileName": "whatsapp-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "whatsapp-figma-kit",
-        "generatedAt": "2026-04-26T20:08:38.639Z",
+        "generatedAt": "2026-04-26T20:33:36.265Z",
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "warn",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "rescued",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/hkOI39RECtn163G8YVTrdR/WhatsApp-%E2%80%94-Social-Engagement-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "whatsapp-figma-kit.fig",
         "previewCount": 3,
@@ -3136,7 +3136,7 @@
     {
       "productId": "figma-kit:threads",
       "productSlug": "threads-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "od4whujhtAxrkMRu6H2uoE",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -3193,7 +3193,7 @@
       "exportPackage": {
         "fileName": "threads-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "threads-figma-kit",
@@ -3201,13 +3201,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "warn",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/od4whujhtAxrkMRu6H2uoE/Threads-%E2%80%94-Social-Engagement-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "threads-figma-kit.fig",
         "previewCount": 3,
@@ -3236,7 +3236,7 @@
     {
       "productId": "figma-kit:bereal",
       "productSlug": "bereal-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "JdSPjA4YqVJbfew021F12d",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -3293,7 +3293,7 @@
       "exportPackage": {
         "fileName": "bereal-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "bereal-figma-kit",
@@ -3301,13 +3301,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "warn",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/JdSPjA4YqVJbfew021F12d/BeReal-%E2%80%94-Social-Engagement-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "bereal-figma-kit.fig",
         "previewCount": 3,
@@ -3440,7 +3440,7 @@
     {
       "productId": "figma-kit:expedia",
       "productSlug": "expedia-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "aOkZpRhDSuHVKkltDl7yW3",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -3499,7 +3499,7 @@
       "exportPackage": {
         "fileName": "expedia-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "expedia-figma-kit",
@@ -3507,13 +3507,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/aOkZpRhDSuHVKkltDl7yW3/Expedia-%E2%80%94-Checkout-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "expedia-figma-kit.fig",
         "previewCount": 3,
@@ -3544,7 +3544,7 @@
     {
       "productId": "figma-kit:hopper",
       "productSlug": "hopper-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "LFILHhTaKWGerYWBLmtZGP",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -3603,7 +3603,7 @@
       "exportPackage": {
         "fileName": "hopper-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "hopper-figma-kit",
@@ -3611,13 +3611,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/LFILHhTaKWGerYWBLmtZGP/Hopper-%E2%80%94-Checkout-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "hopper-figma-kit.fig",
         "previewCount": 3,
@@ -3648,7 +3648,7 @@
     {
       "productId": "figma-kit:booking-com",
       "productSlug": "booking-com-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "DQ0kaJFziXKWnLuZCIHwIi",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -3707,7 +3707,7 @@
       "exportPackage": {
         "fileName": "booking-com-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "booking-com-figma-kit",
@@ -3715,13 +3715,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/DQ0kaJFziXKWnLuZCIHwIi/Booking.com-%E2%80%94-Checkout-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "booking-com-figma-kit.fig",
         "previewCount": 3,
@@ -3752,7 +3752,7 @@
     {
       "productId": "figma-kit:skyscanner",
       "productSlug": "skyscanner-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "HgEWEAmTaxLPVLC1nddQdU",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -3811,7 +3811,7 @@
       "exportPackage": {
         "fileName": "skyscanner-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "skyscanner-figma-kit",
@@ -3819,13 +3819,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/HgEWEAmTaxLPVLC1nddQdU/Skyscanner-%E2%80%94-Checkout-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "skyscanner-figma-kit.fig",
         "previewCount": 3,
@@ -3856,7 +3856,7 @@
     {
       "productId": "figma-kit:tripadvisor",
       "productSlug": "tripadvisor-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "m0GajiBHMxiLt5jooCogY4",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -3915,7 +3915,7 @@
       "exportPackage": {
         "fileName": "tripadvisor-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "tripadvisor-figma-kit",
@@ -3923,13 +3923,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/m0GajiBHMxiLt5jooCogY4/TripAdvisor-%E2%80%94-Checkout-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "tripadvisor-figma-kit.fig",
         "previewCount": 3,
@@ -3960,7 +3960,7 @@
     {
       "productId": "figma-kit:kayak",
       "productSlug": "kayak-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "sNVbBXuMdk6H8cfVG9Gj45",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -4019,7 +4019,7 @@
       "exportPackage": {
         "fileName": "kayak-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "kayak-figma-kit",
@@ -4027,13 +4027,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/sNVbBXuMdk6H8cfVG9Gj45/KAYAK-%E2%80%94-Checkout-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "kayak-figma-kit.fig",
         "previewCount": 3,
@@ -4064,7 +4064,7 @@
     {
       "productId": "figma-kit:hoteltonight",
       "productSlug": "hoteltonight-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "GTDbW2ip1Q9vXCdbCHY7gQ",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -4122,7 +4122,7 @@
       "exportPackage": {
         "fileName": "hoteltonight-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "hoteltonight-figma-kit",
@@ -4130,13 +4130,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "warn",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/GTDbW2ip1Q9vXCdbCHY7gQ/HotelTonight-%E2%80%94-Checkout-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "hoteltonight-figma-kit.fig",
         "previewCount": 3,
@@ -4166,7 +4166,7 @@
     {
       "productId": "figma-kit:slack",
       "productSlug": "slack-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "YhCOJ6ZUoafEk1Dl4mc9a5",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -4225,7 +4225,7 @@
       "exportPackage": {
         "fileName": "slack-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "slack-figma-kit",
@@ -4233,13 +4233,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/YhCOJ6ZUoafEk1Dl4mc9a5/Slack-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "slack-figma-kit.fig",
         "previewCount": 3,
@@ -4270,7 +4270,7 @@
     {
       "productId": "figma-kit:zoom",
       "productSlug": "zoom-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "BfQr9qOfclxC2mHYM7hBfQ",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -4329,7 +4329,7 @@
       "exportPackage": {
         "fileName": "zoom-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "zoom-figma-kit",
@@ -4337,13 +4337,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/BfQr9qOfclxC2mHYM7hBfQ/Zoom-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "zoom-figma-kit.fig",
         "previewCount": 3,
@@ -4374,7 +4374,7 @@
     {
       "productId": "figma-kit:trello",
       "productSlug": "trello-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "YZsWGejlEIwXMKzDtQybnp",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -4433,7 +4433,7 @@
       "exportPackage": {
         "fileName": "trello-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "trello-figma-kit",
@@ -4441,13 +4441,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/YZsWGejlEIwXMKzDtQybnp/Trello-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "trello-figma-kit.fig",
         "previewCount": 3,
@@ -4478,7 +4478,7 @@
     {
       "productId": "figma-kit:notion",
       "productSlug": "notion-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "I8Dv3bp4Iuh7ax3gUyPSD5",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -4536,7 +4536,7 @@
       "exportPackage": {
         "fileName": "notion-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "notion-figma-kit",
@@ -4544,13 +4544,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "warn",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/I8Dv3bp4Iuh7ax3gUyPSD5/Notion-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "notion-figma-kit.fig",
         "previewCount": 3,
@@ -4580,7 +4580,7 @@
     {
       "productId": "figma-kit:asana",
       "productSlug": "asana-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "AB6qw6iOYBuIubaZZiKCXQ",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -4638,7 +4638,7 @@
       "exportPackage": {
         "fileName": "asana-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "asana-figma-kit",
@@ -4646,13 +4646,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "warn",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/AB6qw6iOYBuIubaZZiKCXQ/Asana-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "asana-figma-kit.fig",
         "previewCount": 3,
@@ -4682,7 +4682,7 @@
     {
       "productId": "figma-kit:monday-com",
       "productSlug": "monday-com-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "akDLr6s9JdMlXuIDPri40S",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -4741,7 +4741,7 @@
       "exportPackage": {
         "fileName": "monday-com-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "monday-com-figma-kit",
@@ -4749,13 +4749,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/akDLr6s9JdMlXuIDPri40S/Monday.com-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "monday-com-figma-kit.fig",
         "previewCount": 3,
@@ -4786,7 +4786,7 @@
     {
       "productId": "figma-kit:linear",
       "productSlug": "linear-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "7yJfhXeoLQFP3vxQEmP1g9",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -4843,7 +4843,7 @@
       "exportPackage": {
         "fileName": "linear-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "linear-figma-kit",
@@ -4851,13 +4851,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "warn",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/7yJfhXeoLQFP3vxQEmP1g9/Linear-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "linear-figma-kit.fig",
         "previewCount": 3,
@@ -4886,7 +4886,7 @@
     {
       "productId": "figma-kit:loom",
       "productSlug": "loom-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "hKa1xqrRS168F9uQ3FTWWF",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -4944,7 +4944,7 @@
       "exportPackage": {
         "fileName": "loom-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "loom-figma-kit",
@@ -4952,13 +4952,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "warn",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/hKa1xqrRS168F9uQ3FTWWF/Loom-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "loom-figma-kit.fig",
         "previewCount": 3,
@@ -4988,7 +4988,7 @@
     {
       "productId": "figma-kit:headspace",
       "productSlug": "headspace-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "SG4v9Vv28OLtKSSdVwPZ1O",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -5047,7 +5047,7 @@
       "exportPackage": {
         "fileName": "headspace-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "headspace-figma-kit",
@@ -5055,13 +5055,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/SG4v9Vv28OLtKSSdVwPZ1O/Headspace-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "headspace-figma-kit.fig",
         "previewCount": 3,
@@ -5092,7 +5092,7 @@
     {
       "productId": "figma-kit:calm",
       "productSlug": "calm-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "ls0gQpnLMRF7nVhL2FouN2",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -5151,7 +5151,7 @@
       "exportPackage": {
         "fileName": "calm-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "calm-figma-kit",
@@ -5159,13 +5159,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/ls0gQpnLMRF7nVhL2FouN2/Calm-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "calm-figma-kit.fig",
         "previewCount": 3,
@@ -5196,7 +5196,7 @@
     {
       "productId": "figma-kit:strava",
       "productSlug": "strava-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "INdb1FAWaszhr1mhW08qIT",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -5255,7 +5255,7 @@
       "exportPackage": {
         "fileName": "strava-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "strava-figma-kit",
@@ -5263,13 +5263,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/INdb1FAWaszhr1mhW08qIT/Strava-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "strava-figma-kit.fig",
         "previewCount": 3,
@@ -5300,7 +5300,7 @@
     {
       "productId": "figma-kit:nike-run-club",
       "productSlug": "nike-run-club-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "8NoFNebsFj2Fd6iFnplYXl",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -5359,7 +5359,7 @@
       "exportPackage": {
         "fileName": "nike-run-club-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "nike-run-club-figma-kit",
@@ -5367,13 +5367,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/8NoFNebsFj2Fd6iFnplYXl/Nike-Run-Club-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "nike-run-club-figma-kit.fig",
         "previewCount": 3,
@@ -5404,7 +5404,7 @@
     {
       "productId": "figma-kit:myfitnesspal",
       "productSlug": "myfitnesspal-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "72XKcKIl8phYccv5eV4YBT",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -5463,7 +5463,7 @@
       "exportPackage": {
         "fileName": "myfitnesspal-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "myfitnesspal-figma-kit",
@@ -5471,13 +5471,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/72XKcKIl8phYccv5eV4YBT/MyFitnessPal-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "myfitnesspal-figma-kit.fig",
         "previewCount": 3,
@@ -5508,7 +5508,7 @@
     {
       "productId": "figma-kit:fitbit",
       "productSlug": "fitbit-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "gKFaqhyylPtJUKud7RT5WL",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -5565,7 +5565,7 @@
       "exportPackage": {
         "fileName": "fitbit-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "fitbit-figma-kit",
@@ -5573,13 +5573,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "warn",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/gKFaqhyylPtJUKud7RT5WL/Fitbit-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "fitbit-figma-kit.fig",
         "previewCount": 3,
@@ -5608,7 +5608,7 @@
     {
       "productId": "figma-kit:flo",
       "productSlug": "flo-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "BqbumVee0jTJAGE8HZZOif",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -5667,7 +5667,7 @@
       "exportPackage": {
         "fileName": "flo-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "flo-figma-kit",
@@ -5675,13 +5675,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/BqbumVee0jTJAGE8HZZOif/Flo-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "flo-figma-kit.fig",
         "previewCount": 3,
@@ -5712,7 +5712,7 @@
     {
       "productId": "figma-kit:sleep-cycle",
       "productSlug": "sleep-cycle-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "IT67Mv1sQCsLXnD1IoWFWa",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -5771,7 +5771,7 @@
       "exportPackage": {
         "fileName": "sleep-cycle-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "sleep-cycle-figma-kit",
@@ -5779,13 +5779,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/IT67Mv1sQCsLXnD1IoWFWa/Sleep-Cycle-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "sleep-cycle-figma-kit.fig",
         "previewCount": 3,
@@ -5816,7 +5816,7 @@
     {
       "productId": "figma-kit:spotify",
       "productSlug": "spotify-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "oJmv5djBOIvWZPH7LdnARJ",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -5875,7 +5875,7 @@
       "exportPackage": {
         "fileName": "spotify-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "spotify-figma-kit",
@@ -5883,13 +5883,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/oJmv5djBOIvWZPH7LdnARJ/Spotify-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "spotify-figma-kit.fig",
         "previewCount": 3,
@@ -5920,7 +5920,7 @@
     {
       "productId": "figma-kit:apple-music",
       "productSlug": "apple-music-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "QQhpVpgHSAi9GD2Ckt5T5c",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -5979,7 +5979,7 @@
       "exportPackage": {
         "fileName": "apple-music-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "apple-music-figma-kit",
@@ -5987,13 +5987,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/QQhpVpgHSAi9GD2Ckt5T5c/Apple-Music-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "apple-music-figma-kit.fig",
         "previewCount": 3,
@@ -6024,7 +6024,7 @@
     {
       "productId": "figma-kit:soundcloud",
       "productSlug": "soundcloud-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "azVKVDi6OXyQWBewSfAWJM",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -6083,7 +6083,7 @@
       "exportPackage": {
         "fileName": "soundcloud-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "soundcloud-figma-kit",
@@ -6091,13 +6091,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/azVKVDi6OXyQWBewSfAWJM/SoundCloud-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "soundcloud-figma-kit.fig",
         "previewCount": 3,
@@ -6128,7 +6128,7 @@
     {
       "productId": "figma-kit:tidal",
       "productSlug": "tidal-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "hj0COPQtUGokxoHxqxnM8X",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -6185,21 +6185,21 @@
       "exportPackage": {
         "fileName": "tidal-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "tidal-figma-kit",
-        "generatedAt": "2026-04-26T20:08:38.639Z",
+        "generatedAt": "2026-04-26T20:33:36.265Z",
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "warn",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "rescued",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/hj0COPQtUGokxoHxqxnM8X/Tidal-%E2%80%94-Subscription-Upgrade-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "tidal-figma-kit.fig",
         "previewCount": 3,
@@ -6228,7 +6228,7 @@
     {
       "productId": "figma-kit:deezer",
       "productSlug": "deezer-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "L2aUhEBc4K9st2B2FvNKRG",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -6287,7 +6287,7 @@
       "exportPackage": {
         "fileName": "deezer-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "deezer-figma-kit",
@@ -6295,13 +6295,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/L2aUhEBc4K9st2B2FvNKRG/Deezer-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "deezer-figma-kit.fig",
         "previewCount": 3,
@@ -6332,7 +6332,7 @@
     {
       "productId": "figma-kit:pandora",
       "productSlug": "pandora-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "VKUjPUJ4M2huFWsUKkwhl6",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -6391,7 +6391,7 @@
       "exportPackage": {
         "fileName": "pandora-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "pandora-figma-kit",
@@ -6399,13 +6399,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/VKUjPUJ4M2huFWsUKkwhl6/Pandora-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "pandora-figma-kit.fig",
         "previewCount": 3,
@@ -6436,7 +6436,7 @@
     {
       "productId": "figma-kit:shazam",
       "productSlug": "shazam-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "uM11NkFjHHHQA6BA3MOZTD",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -6495,7 +6495,7 @@
       "exportPackage": {
         "fileName": "shazam-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "shazam-figma-kit",
@@ -6503,13 +6503,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/uM11NkFjHHHQA6BA3MOZTD/Shazam-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "shazam-figma-kit.fig",
         "previewCount": 3,
@@ -6540,7 +6540,7 @@
     {
       "productId": "figma-kit:duolingo",
       "productSlug": "duolingo-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "w9XIzulDYS5DdfSfa4ECPV",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -6599,7 +6599,7 @@
       "exportPackage": {
         "fileName": "duolingo-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "duolingo-figma-kit",
@@ -6607,13 +6607,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/w9XIzulDYS5DdfSfa4ECPV/Duolingo-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "duolingo-figma-kit.fig",
         "previewCount": 3,
@@ -6644,7 +6644,7 @@
     {
       "productId": "figma-kit:coursera",
       "productSlug": "coursera-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "KCw4PyMuPofqQUtxKwAOVi",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -6701,21 +6701,21 @@
       "exportPackage": {
         "fileName": "coursera-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "coursera-figma-kit",
-        "generatedAt": "2026-04-26T20:08:38.639Z",
+        "generatedAt": "2026-04-26T20:33:36.265Z",
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "warn",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "rescued",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/KCw4PyMuPofqQUtxKwAOVi/Coursera-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "coursera-figma-kit.fig",
         "previewCount": 3,
@@ -6744,7 +6744,7 @@
     {
       "productId": "figma-kit:masterclass",
       "productSlug": "masterclass-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "f5yBnHDK9ZNGE8Ig4xbSsj",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -6803,7 +6803,7 @@
       "exportPackage": {
         "fileName": "masterclass-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "masterclass-figma-kit",
@@ -6811,13 +6811,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/f5yBnHDK9ZNGE8Ig4xbSsj/Masterclass-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "masterclass-figma-kit.fig",
         "previewCount": 3,
@@ -6848,7 +6848,7 @@
     {
       "productId": "figma-kit:udemy",
       "productSlug": "udemy-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "F6ddvGF3JkXUqJh16aSxWM",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -6907,7 +6907,7 @@
       "exportPackage": {
         "fileName": "udemy-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "udemy-figma-kit",
@@ -6915,13 +6915,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/F6ddvGF3JkXUqJh16aSxWM/Udemy-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "udemy-figma-kit.fig",
         "previewCount": 3,
@@ -6952,7 +6952,7 @@
     {
       "productId": "figma-kit:khan-academy",
       "productSlug": "khan-academy-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "tqz970UaYJDCr7b2csHVmp",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -7011,7 +7011,7 @@
       "exportPackage": {
         "fileName": "khan-academy-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "khan-academy-figma-kit",
@@ -7019,13 +7019,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/tqz970UaYJDCr7b2csHVmp/Khan-Academy-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "khan-academy-figma-kit.fig",
         "previewCount": 3,
@@ -7056,7 +7056,7 @@
     {
       "productId": "figma-kit:skillshare",
       "productSlug": "skillshare-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "3WH73htwuybxonNYLJ14rJ",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -7115,7 +7115,7 @@
       "exportPackage": {
         "fileName": "skillshare-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "skillshare-figma-kit",
@@ -7123,13 +7123,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/3WH73htwuybxonNYLJ14rJ/Skillshare-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "skillshare-figma-kit.fig",
         "previewCount": 3,
@@ -7160,7 +7160,7 @@
     {
       "productId": "figma-kit:babbel",
       "productSlug": "babbel-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "bjL0VTlJoLst9Q0lOoE914",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -7219,7 +7219,7 @@
       "exportPackage": {
         "fileName": "babbel-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "babbel-figma-kit",
@@ -7227,13 +7227,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/bjL0VTlJoLst9Q0lOoE914/Babbel-%E2%80%94-Onboarding-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "babbel-figma-kit.fig",
         "previewCount": 3,
@@ -7264,7 +7264,7 @@
     {
       "productId": "figma-kit:the-new-york-times",
       "productSlug": "the-new-york-times-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "aXfYJrvhSa9Sh5gmydr8aF",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -7323,7 +7323,7 @@
       "exportPackage": {
         "fileName": "the-new-york-times-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "the-new-york-times-figma-kit",
@@ -7331,13 +7331,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/aXfYJrvhSa9Sh5gmydr8aF/The-New-York-Times-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "the-new-york-times-figma-kit.fig",
         "previewCount": 3,
@@ -7368,7 +7368,7 @@
     {
       "productId": "figma-kit:bbc-news",
       "productSlug": "bbc-news-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "QJE304CBjIWEXYMgMIxKGb",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -7427,7 +7427,7 @@
       "exportPackage": {
         "fileName": "bbc-news-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "bbc-news-figma-kit",
@@ -7435,13 +7435,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/QJE304CBjIWEXYMgMIxKGb/BBC-News-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "bbc-news-figma-kit.fig",
         "previewCount": 3,
@@ -7472,7 +7472,7 @@
     {
       "productId": "figma-kit:cnn",
       "productSlug": "cnn-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "RTMwxXJET35EiwbWOaLt5r",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -7529,21 +7529,21 @@
       "exportPackage": {
         "fileName": "cnn-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "cnn-figma-kit",
-        "generatedAt": "2026-04-26T20:08:38.639Z",
+        "generatedAt": "2026-04-26T20:33:36.265Z",
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "warn",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "rescued",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/RTMwxXJET35EiwbWOaLt5r/CNN-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "cnn-figma-kit.fig",
         "previewCount": 3,
@@ -7572,7 +7572,7 @@
     {
       "productId": "figma-kit:reuters",
       "productSlug": "reuters-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "QbrN7DcYiiMEx0Y1sml8uS",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -7631,7 +7631,7 @@
       "exportPackage": {
         "fileName": "reuters-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "reuters-figma-kit",
@@ -7639,13 +7639,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/QbrN7DcYiiMEx0Y1sml8uS/Reuters-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "reuters-figma-kit.fig",
         "previewCount": 3,
@@ -7676,7 +7676,7 @@
     {
       "productId": "figma-kit:flipboard",
       "productSlug": "flipboard-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "8aJDuRIUFr9CIG2OZewLxq",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -7735,7 +7735,7 @@
       "exportPackage": {
         "fileName": "flipboard-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "flipboard-figma-kit",
@@ -7743,13 +7743,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/8aJDuRIUFr9CIG2OZewLxq/Flipboard-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "flipboard-figma-kit.fig",
         "previewCount": 3,
@@ -7780,7 +7780,7 @@
     {
       "productId": "figma-kit:substack",
       "productSlug": "substack-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "HGsR3DrfyQlZXYkkRmdN1F",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -7839,7 +7839,7 @@
       "exportPackage": {
         "fileName": "substack-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "substack-figma-kit",
@@ -7847,13 +7847,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "raw",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/HGsR3DrfyQlZXYkkRmdN1F/Substack-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "substack-figma-kit.fig",
         "previewCount": 3,
@@ -7884,7 +7884,7 @@
     {
       "productId": "figma-kit:pocket",
       "productSlug": "pocket-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "cJnbRMy4cBl8JlFBSSh1oQ",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -7943,7 +7943,7 @@
       "exportPackage": {
         "fileName": "pocket-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "pocket-figma-kit",
@@ -7951,13 +7951,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/cJnbRMy4cBl8JlFBSSh1oQ/Pocket-%E2%80%94-Search-Discovery-Figma-Flow-Kit",
+        "finalAssetVerifiedAt": "2026-04-26T20:31:14.733Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "pocket-figma-kit.fig",
         "previewCount": 3,
