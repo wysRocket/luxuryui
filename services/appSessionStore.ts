@@ -349,9 +349,23 @@ export const createDeliveryDownload = (
   const spec = getFigmaKitSpec(productId);
   const review = getCommercialReview(productId);
   const manifest = getFigmaManifest(productId);
+  const finalAssetUrl = manifest?.generatedArtifacts?.finalAssetUrl ?? null;
+
+  if (
+    manifest?.generatedArtifacts?.finalizationStatus !== 'finalized' ||
+    !finalAssetUrl ||
+    !manifest?.generatedArtifacts?.finalAssetVerifiedAt
+  ) {
+    throw new Error('This kit does not have a verified final Figma asset yet.');
+  }
 
   const payload = {
     exportedAt: now(),
+    finalAsset: {
+      url: finalAssetUrl,
+      verifiedAt: manifest.generatedArtifacts.finalAssetVerifiedAt,
+      backupUrl: manifest.generatedArtifacts.backupAssetUrl ?? null,
+    },
     unlockedBy: {
       uid: user.uid,
       email: user.email,

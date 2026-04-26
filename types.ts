@@ -186,6 +186,8 @@ export interface FigmaKitProduct {
   delivery: {
     format: string;
     fulfillment: string;
+    finalAssetUrl?: string | null;
+    backupAssetUrl?: string | null;
     includes: string[];
   };
 }
@@ -212,6 +214,7 @@ export type GeneratedKitGenerationStatus = "pending" | "generated" | "packaged" 
 export type GeneratedKitSource = "stitch" | "direct";
 export type PublishQualityStatus = "pass" | "warn" | "fail" | "unknown";
 export type PublishAssetOrigin = "raw" | "upscaled" | "rescued";
+export type KitFinalizationStatus = "blocked" | "finalized";
 
 export interface GeneratedKitArtifactPaths {
   generatedArtifactsRootDir: string;
@@ -230,6 +233,10 @@ export interface GeneratedKitArtifacts {
   publishQualityStatus?: PublishQualityStatus | null;
   publishReadyForSale?: boolean;
   publishAssetOrigin?: PublishAssetOrigin | null;
+  finalizationStatus?: KitFinalizationStatus | null;
+  finalAssetUrl?: string | null;
+  finalAssetVerifiedAt?: string | null;
+  backupAssetUrl?: string | null;
   exportPackageFileName: string;
   previewCount: number;
   stitchProjectId?: string | null;

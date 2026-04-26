@@ -165,7 +165,7 @@ const checkCommercialArtifacts = async () => {
   info(`Commercial kits: ${result.summary.publishedProducts}/${result.summary.totalProducts} published`);
 
   if (result.findings.length === 0) {
-    pass('Published Figma kits have matching specs, manifests, and approved reviews');
+    pass('Published Figma kits have matching specs, manifests, approved reviews, and verified final Figma assets');
     return;
   }
 

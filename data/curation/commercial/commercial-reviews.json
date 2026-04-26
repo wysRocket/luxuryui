@@ -1,11 +1,11 @@
 {
   "schema": "1",
-  "generatedAt": "2026-04-04T23:08:26.207Z",
+  "generatedAt": "2026-04-26T19:46:38.635Z",
   "summary": {
     "totalProducts": 76,
-    "publishedProducts": 76,
-    "blockedProducts": 0,
-    "flowsRepresented": 6
+    "publishedProducts": 1,
+    "blockedProducts": 75,
+    "flowsRepresented": 1
   },
   "reviews": [
     {
@@ -28,1657 +28,1657 @@
       "editorialNotes": [
         "Approved for storefront merchandising as an original transformed kit."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:revolut",
       "productSlug": "revolut-figma-kit",
       "sourceAppSlug": "revolut",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:mint",
       "productSlug": "mint-figma-kit",
       "sourceAppSlug": "mint",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "warn",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:robinhood",
       "productSlug": "robinhood-figma-kit",
       "sourceAppSlug": "robinhood",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:paypal",
       "productSlug": "paypal-figma-kit",
       "sourceAppSlug": "paypal",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:wallet",
       "productSlug": "wallet-figma-kit",
       "sourceAppSlug": "wallet",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:wealthfront",
       "productSlug": "wealthfront-figma-kit",
       "sourceAppSlug": "wealthfront",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:n26",
       "productSlug": "n26-figma-kit",
       "sourceAppSlug": "n26",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:coinbase",
       "productSlug": "coinbase-figma-kit",
       "sourceAppSlug": "coinbase",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "warn",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:binance",
       "productSlug": "binance-figma-kit",
       "sourceAppSlug": "binance",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:metamask",
       "productSlug": "metamask-figma-kit",
       "sourceAppSlug": "metamask",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "warn",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:kraken",
       "productSlug": "kraken-figma-kit",
       "sourceAppSlug": "kraken",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:phantom",
       "productSlug": "phantom-figma-kit",
       "sourceAppSlug": "phantom",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "warn",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:uniswap",
       "productSlug": "uniswap-figma-kit",
       "sourceAppSlug": "uniswap",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:ledger",
       "productSlug": "ledger-figma-kit",
       "sourceAppSlug": "ledger",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:amazon",
       "productSlug": "amazon-figma-kit",
       "sourceAppSlug": "amazon",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:ebay",
       "productSlug": "ebay-figma-kit",
       "sourceAppSlug": "ebay",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "warn",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:shopify",
       "productSlug": "shopify-figma-kit",
       "sourceAppSlug": "shopify",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:etsy",
       "productSlug": "etsy-figma-kit",
       "sourceAppSlug": "etsy",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:zara",
       "productSlug": "zara-figma-kit",
       "sourceAppSlug": "zara",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:asos",
       "productSlug": "asos-figma-kit",
       "sourceAppSlug": "asos",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "warn",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:nike",
       "productSlug": "nike-figma-kit",
       "sourceAppSlug": "nike",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:stockx",
       "productSlug": "stockx-figma-kit",
       "sourceAppSlug": "stockx",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:instagram",
       "productSlug": "instagram-figma-kit",
       "sourceAppSlug": "instagram",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "warn",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:twitter",
       "productSlug": "twitter-figma-kit",
       "sourceAppSlug": "twitter",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "fail",
       "publishQualityStatus": "warn",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "rescued",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:linkedin",
       "productSlug": "linkedin-figma-kit",
       "sourceAppSlug": "linkedin",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:tiktok",
       "productSlug": "tiktok-figma-kit",
       "sourceAppSlug": "tiktok",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:snapchat",
       "productSlug": "snapchat-figma-kit",
       "sourceAppSlug": "snapchat",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:whatsapp",
       "productSlug": "whatsapp-figma-kit",
       "sourceAppSlug": "whatsapp",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "fail",
       "publishQualityStatus": "warn",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "rescued",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:threads",
       "productSlug": "threads-figma-kit",
       "sourceAppSlug": "threads",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "warn",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:bereal",
       "productSlug": "bereal-figma-kit",
       "sourceAppSlug": "bereal",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "warn",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:airbnb",
       "productSlug": "airbnb-figma-kit",
       "sourceAppSlug": "airbnb",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:expedia",
       "productSlug": "expedia-figma-kit",
       "sourceAppSlug": "expedia",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:hopper",
       "productSlug": "hopper-figma-kit",
       "sourceAppSlug": "hopper",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:booking-com",
       "productSlug": "booking-com-figma-kit",
       "sourceAppSlug": "booking-com",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:skyscanner",
       "productSlug": "skyscanner-figma-kit",
       "sourceAppSlug": "skyscanner",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:tripadvisor",
       "productSlug": "tripadvisor-figma-kit",
       "sourceAppSlug": "tripadvisor",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:kayak",
       "productSlug": "kayak-figma-kit",
       "sourceAppSlug": "kayak",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:hoteltonight",
       "productSlug": "hoteltonight-figma-kit",
       "sourceAppSlug": "hoteltonight",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "warn",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:slack",
       "productSlug": "slack-figma-kit",
       "sourceAppSlug": "slack",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:zoom",
       "productSlug": "zoom-figma-kit",
       "sourceAppSlug": "zoom",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:trello",
       "productSlug": "trello-figma-kit",
       "sourceAppSlug": "trello",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:notion",
       "productSlug": "notion-figma-kit",
       "sourceAppSlug": "notion",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "warn",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:asana",
       "productSlug": "asana-figma-kit",
       "sourceAppSlug": "asana",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "warn",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:monday-com",
       "productSlug": "monday-com-figma-kit",
       "sourceAppSlug": "monday-com",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:linear",
       "productSlug": "linear-figma-kit",
       "sourceAppSlug": "linear",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "warn",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:loom",
       "productSlug": "loom-figma-kit",
       "sourceAppSlug": "loom",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "warn",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:headspace",
       "productSlug": "headspace-figma-kit",
       "sourceAppSlug": "headspace",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:calm",
       "productSlug": "calm-figma-kit",
       "sourceAppSlug": "calm",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:strava",
       "productSlug": "strava-figma-kit",
       "sourceAppSlug": "strava",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:nike-run-club",
       "productSlug": "nike-run-club-figma-kit",
       "sourceAppSlug": "nike-run-club",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:myfitnesspal",
       "productSlug": "myfitnesspal-figma-kit",
       "sourceAppSlug": "myfitnesspal",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:fitbit",
       "productSlug": "fitbit-figma-kit",
       "sourceAppSlug": "fitbit",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "warn",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:flo",
       "productSlug": "flo-figma-kit",
       "sourceAppSlug": "flo",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:sleep-cycle",
       "productSlug": "sleep-cycle-figma-kit",
       "sourceAppSlug": "sleep-cycle",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:spotify",
       "productSlug": "spotify-figma-kit",
       "sourceAppSlug": "spotify",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:apple-music",
       "productSlug": "apple-music-figma-kit",
       "sourceAppSlug": "apple-music",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:soundcloud",
       "productSlug": "soundcloud-figma-kit",
       "sourceAppSlug": "soundcloud",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:tidal",
       "productSlug": "tidal-figma-kit",
       "sourceAppSlug": "tidal",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "fail",
       "publishQualityStatus": "warn",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "rescued",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:deezer",
       "productSlug": "deezer-figma-kit",
       "sourceAppSlug": "deezer",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:pandora",
       "productSlug": "pandora-figma-kit",
       "sourceAppSlug": "pandora",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:shazam",
       "productSlug": "shazam-figma-kit",
       "sourceAppSlug": "shazam",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:duolingo",
       "productSlug": "duolingo-figma-kit",
       "sourceAppSlug": "duolingo",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:coursera",
       "productSlug": "coursera-figma-kit",
       "sourceAppSlug": "coursera",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "fail",
       "publishQualityStatus": "warn",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "rescued",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:masterclass",
       "productSlug": "masterclass-figma-kit",
       "sourceAppSlug": "masterclass",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:udemy",
       "productSlug": "udemy-figma-kit",
       "sourceAppSlug": "udemy",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:khan-academy",
       "productSlug": "khan-academy-figma-kit",
       "sourceAppSlug": "khan-academy",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:skillshare",
       "productSlug": "skillshare-figma-kit",
       "sourceAppSlug": "skillshare",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:babbel",
       "productSlug": "babbel-figma-kit",
       "sourceAppSlug": "babbel",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:the-new-york-times",
       "productSlug": "the-new-york-times-figma-kit",
       "sourceAppSlug": "the-new-york-times",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:bbc-news",
       "productSlug": "bbc-news-figma-kit",
       "sourceAppSlug": "bbc-news",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:cnn",
       "productSlug": "cnn-figma-kit",
       "sourceAppSlug": "cnn",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "fail",
       "publishQualityStatus": "warn",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "rescued",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:reuters",
       "productSlug": "reuters-figma-kit",
       "sourceAppSlug": "reuters",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:flipboard",
       "productSlug": "flipboard-figma-kit",
       "sourceAppSlug": "flipboard",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:substack",
       "productSlug": "substack-figma-kit",
       "sourceAppSlug": "substack",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "pass",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "raw",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     },
     {
       "productId": "figma-kit:pocket",
       "productSlug": "pocket-figma-kit",
       "sourceAppSlug": "pocket",
-      "reviewStatus": "approved",
+      "reviewStatus": "blocked",
       "sourceQuality": "warn",
       "publishQualityStatus": "pass",
       "originalityStatus": "transformed",
-      "completenessStatus": "pass",
+      "completenessStatus": "fail",
       "provenanceStatus": "linked",
-      "readyForSale": true,
-      "publishReadyForSale": true,
+      "readyForSale": false,
+      "publishReadyForSale": false,
       "publishAssetOrigin": "upscaled",
       "legalNotes": [
         "Use source screenshots as research evidence only.",
         "Do not sell source screenshots or source-identical layouts as the deliverable."
       ],
       "editorialNotes": [
-        "Approved for storefront merchandising as an original transformed kit."
+        "Blocked until publish-quality assets and catalog readiness improve."
       ],
-      "reviewedAt": "2026-04-04T23:08:26.207Z"
+      "reviewedAt": "2026-04-26T19:46:38.635Z"
     }
   ]
 }

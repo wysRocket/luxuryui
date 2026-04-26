@@ -124,6 +124,9 @@
     "Keep tone premium, but not source-identical."
   ],
   "reconstructionStatus": "done",
+  "finalAssetUrl": "https://www.figma.com/design/f2lUizLGCCeBxkQk5hTA7w/Monzo-%E2%80%94-Onboarding-Figma-Flow-Kit",
+  "finalAssetVerifiedAt": "2026-04-24T07:35:00.000Z",
+  "backupAssetUrl": null,
   "nextAction": "publish-via-figma-workflow",
   "reconstructedAt": "2026-04-07T10:08:57.210Z",
   "contentBuiltAt": "2026-04-07T12:57:01.629Z"

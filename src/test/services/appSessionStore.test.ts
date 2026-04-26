@@ -55,4 +55,14 @@ describe("appSessionStore commerce", () => {
       "Not enough credits",
     );
   });
+
+  it("blocks unfinalized kits even when the wallet has enough credits", async () => {
+    const kit = getFigmaKitBySlug("revolut-figma-kit");
+
+    expect(kit).toBeTruthy();
+    await topUpWalletCredits(user, 1000);
+    await expect(purchaseKitWithCredits(user, kit!)).rejects.toThrow(
+      "research-only",
+    );
+  });
 });

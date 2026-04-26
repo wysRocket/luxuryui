@@ -72,6 +72,18 @@ export const checkCommercialReadiness = async () => {
         findings.push({ status: 'FAIL', message: `${product.slug} is published without publish-quality approved generated artifacts` });
       }
 
+      if (
+        manifest?.generatedArtifacts?.finalizationStatus !== 'finalized' ||
+        !manifest?.generatedArtifacts?.finalAssetUrl ||
+        !manifest?.generatedArtifacts?.finalAssetVerifiedAt
+      ) {
+        findings.push({ status: 'FAIL', message: `${product.slug} is published without a verified final Figma asset` });
+      }
+
+      if (product.delivery?.finalAssetUrl !== manifest?.generatedArtifacts?.finalAssetUrl) {
+        findings.push({ status: 'FAIL', message: `${product.slug} delivery does not point to the verified final Figma asset` });
+      }
+
       if (!product.thumbnail || product.gallery.length === 0) {
         findings.push({ status: 'FAIL', message: `${product.slug} is published without storefront previews` });
       }
@@ -99,7 +111,7 @@ const run = async () => {
   console.log(`Published products: ${result.summary.publishedProducts}/${result.summary.totalProducts}`);
 
   if (result.findings.length === 0) {
-    console.log('✓ All published Figma kits have specs, manifests, approved commercial reviews, and valid credit pricing.');
+    console.log('✓ All published Figma kits have specs, manifests, approved reviews, pricing, and verified final Figma assets.');
     return;
   }
 

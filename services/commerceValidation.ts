@@ -1,4 +1,4 @@
-import { getCommercialReview } from "../data/figmaKits";
+import { getCommercialReview, getGeneratedArtifactsForKit } from "../data/figmaKits";
 import type { FigmaKitProduct } from "../types";
 
 export const assertPurchasableKit = (kit: FigmaKitProduct): void => {
@@ -6,6 +6,16 @@ export const assertPurchasableKit = (kit: FigmaKitProduct): void => {
 
   if (!review?.readyForSale || kit.status !== "published") {
     throw new Error("This kit is still research-only and cannot be unlocked yet.");
+  }
+
+  const artifacts = getGeneratedArtifactsForKit(kit.id);
+
+  if (
+    artifacts?.finalizationStatus !== "finalized" ||
+    !artifacts.finalAssetUrl ||
+    !artifacts.finalAssetVerifiedAt
+  ) {
+    throw new Error("This kit is missing a verified final Figma asset and cannot be unlocked yet.");
   }
 
   if (

@@ -198,6 +198,7 @@ describe('generate-figma-kits Stitch artifact bridge', () => {
     expect(
       deriveCommercialPublication({
         isPackaged: true,
+        hasFinalAsset: true,
         publishQualityStatus: 'pass',
         validScreenshotCount: 6,
       }),
@@ -213,6 +214,7 @@ describe('generate-figma-kits Stitch artifact bridge', () => {
     expect(
       deriveCommercialPublication({
         isPackaged: true,
+        hasFinalAsset: true,
         publishQualityStatus: 'fail',
         validScreenshotCount: 5,
       }),
@@ -228,6 +230,7 @@ describe('generate-figma-kits Stitch artifact bridge', () => {
     expect(
       deriveCommercialPublication({
         isPackaged: true,
+        hasFinalAsset: true,
         publishQualityStatus: 'warn',
         publishReadyForSale: true,
         validScreenshotCount: 6,
@@ -237,6 +240,22 @@ describe('generate-figma-kits Stitch artifact bridge', () => {
       reviewStatus: 'approved',
       publishReadyForSale: true,
       completenessStatus: 'pass',
+    });
+  });
+
+  it('blocks packaged kits until a verified final Figma asset is recorded', () => {
+    expect(
+      deriveCommercialPublication({
+        isPackaged: true,
+        hasFinalAsset: false,
+        publishQualityStatus: 'pass',
+        validScreenshotCount: 8,
+      }),
+    ).toEqual({
+      status: 'blocked',
+      reviewStatus: 'blocked',
+      publishReadyForSale: false,
+      completenessStatus: 'fail',
     });
   });
 });

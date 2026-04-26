@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
-import { Download, FileArchive, ShieldCheck } from 'lucide-react';
+import { Download, ExternalLink, FileArchive, ShieldCheck } from 'lucide-react';
 import { useAppSession } from '../contexts/AppSessionContext';
 import { getFigmaKitBySlug, getFigmaManifest } from '../data/figmaKits';
 
@@ -22,6 +22,12 @@ const KitDeliveryPage: React.FC = () => {
 
   const unlock = getUnlock(kit.id);
   const manifest = getFigmaManifest(kit.id);
+  const generatedArtifacts = manifest?.generatedArtifacts;
+  const finalAssetUrl = generatedArtifacts?.finalAssetUrl ?? kit.delivery?.finalAssetUrl ?? null;
+  const isFinalized =
+    generatedArtifacts?.finalizationStatus === 'finalized' &&
+    Boolean(finalAssetUrl) &&
+    Boolean(generatedArtifacts?.finalAssetVerifiedAt);
 
   const handleDownload = async () => {
     setDownloadError('');
@@ -51,7 +57,7 @@ const KitDeliveryPage: React.FC = () => {
         <p className="text-xs font-black uppercase tracking-[0.24em] text-gray-400 dark:text-gray-500 mb-4">Delivery</p>
         <h1 className="text-4xl md:text-5xl font-black tracking-tight text-gray-900 dark:text-white mb-4">{kit.title}</h1>
         <p className="text-[15px] leading-relaxed text-gray-600 dark:text-gray-400 mb-8">
-          Your kit is unlocked. Download the delivery package, review the file blueprint, and return here any time from your account library.
+          Your kit is unlocked. Open the editable Figma asset first; the metadata pack is available only as supporting proof for your purchase and license.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
@@ -68,18 +74,36 @@ const KitDeliveryPage: React.FC = () => {
           </div>
           <div className="rounded-[24px] border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-950/40 p-5">
             <div className="text-xs font-black uppercase tracking-[0.16em] text-gray-400 dark:text-gray-500 mb-3">Download</div>
-            <div className="text-sm font-bold text-gray-900 dark:text-white">{unlock?.downloadStatus ?? 'available'}</div>
+            <div className="text-sm font-bold text-gray-900 dark:text-white">{isFinalized ? 'Figma asset ready' : 'Asset pending'}</div>
           </div>
         </div>
 
+        {!isFinalized && (
+          <div className="mb-6 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-4 text-sm font-semibold text-amber-900 dark:border-amber-900/50 dark:bg-amber-950/30 dark:text-amber-200">
+            This kit is unlocked in your account, but the final Figma asset has not been verified yet. We will not serve a placeholder JSON file as the product.
+          </div>
+        )}
+
         <div className="flex flex-col sm:flex-row gap-3">
+          {isFinalized && finalAssetUrl && (
+            <a
+              href={finalAssetUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-black dark:bg-white px-6 py-3 text-sm font-black text-white dark:text-black"
+            >
+              <ExternalLink size={16} />
+              Open editable Figma file
+            </a>
+          )}
           <button
             type="button"
             onClick={handleDownload}
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-black dark:bg-white px-6 py-3 text-sm font-black text-white dark:text-black"
+            disabled={!isFinalized}
+            className="inline-flex items-center justify-center gap-2 rounded-full border border-gray-200 px-6 py-3 text-sm font-bold text-gray-700 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-200"
           >
             <Download size={16} />
-            Download delivery pack
+            Download support metadata
           </button>
           <Link
             to="/account"
@@ -100,8 +124,13 @@ const KitDeliveryPage: React.FC = () => {
         <section className="rounded-[32px] border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 p-8">
           <div className="flex items-center gap-2 text-xs font-black uppercase tracking-[0.2em] text-gray-400 dark:text-gray-500 mb-5">
             <FileArchive size={14} />
-            Delivery blueprint
+            Asset blueprint
           </div>
+          {isFinalized && finalAssetUrl && (
+            <div className="mb-5 rounded-2xl border border-emerald-100 bg-emerald-50 px-4 py-4 text-sm text-emerald-800 dark:border-emerald-900/50 dark:bg-emerald-950/30 dark:text-emerald-200">
+              Verified final asset: <a className="font-black underline" href={finalAssetUrl} target="_blank" rel="noreferrer">Figma source file</a>
+            </div>
+          )}
           <div className="space-y-4">
             {manifest.pageBlueprints.map((page) => (
               <div key={page.name} className="rounded-2xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-950/40 px-4 py-4">

@@ -102,6 +102,7 @@ export const parseOnlyArg = (argv = process.argv.slice(2)) => {
 
 export const deriveCommercialPublication = ({
   isPackaged,
+  hasFinalAsset = false,
   publishQualityStatus,
   publishReadyForSale: publishReadySignal,
   validScreenshotCount,
@@ -116,8 +117,9 @@ export const deriveCommercialPublication = ({
           validScreenshotCount >= minimumCount
         );
 
-  // Packaging is always required — asset readiness alone is not sufficient.
-  const publishReadyForSale = Boolean(isPackaged && assetReady);
+  // Packaging and verified final asset handoff are always required — asset
+  // readiness alone is not sufficient for a customer-facing sale.
+  const publishReadyForSale = Boolean(isPackaged && hasFinalAsset && assetReady);
 
   return {
     status: publishReadyForSale ? 'published' : 'blocked',
@@ -213,6 +215,10 @@ export const buildGeneratedArtifactsBridge = ({
     ? reconstruction.sourceAssetPaths
     : (reconstruction?.screenBlueprints ?? []).map((screen) => screen?.sourceAssetPath).filter(Boolean);
   const generationSource = reconstruction?.generationSource ?? latestRun?.generationSource ?? null;
+  const finalAssetUrl = reconstruction?.finalAssetUrl ?? null;
+  const finalAssetVerifiedAt = reconstruction?.finalAssetVerifiedAt ?? null;
+  const backupAssetUrl = reconstruction?.backupAssetUrl ?? null;
+  const finalizationStatus = finalAssetUrl && finalAssetVerifiedAt ? 'finalized' : 'blocked';
 
   return {
     kitSlug: productSlug,
@@ -224,6 +230,10 @@ export const buildGeneratedArtifactsBridge = ({
     publishQualityStatus,
     publishReadyForSale: publishReadyForSale && isArtifactReady,
     publishAssetOrigin,
+    finalizationStatus,
+    finalAssetUrl,
+    finalAssetVerifiedAt,
+    backupAssetUrl,
     exportPackageFileName,
     previewCount,
     stitchProjectId: latestRun?.stitchProjectId ?? null,
@@ -349,6 +359,7 @@ export const run = async ({ only = parseOnlyArg(process.argv.slice(2)) } = {}) =
       latestStitchRun?.generationStatus === 'generated' || latestStitchRun?.generationStatus === 'completed';
     const hasDirectPacket =
       reconstruction?.generationSource === 'direct' && reconstruction?.reconstructionStatus === 'done';
+    const hasFinalAsset = Boolean(reconstruction?.finalAssetUrl && reconstruction?.finalAssetVerifiedAt);
     // A kit is approved only when source quality passes AND the full generation pipeline
     // has completed (Stitch run succeeded + Figma reconstruction packet written).
     const isPackaged =
@@ -356,6 +367,7 @@ export const run = async ({ only = parseOnlyArg(process.argv.slice(2)) } = {}) =
       (hasSuccessfulStitchRun || hasDirectPacket);
     const publication = deriveCommercialPublication({
       isPackaged,
+      hasFinalAsset,
       publishQualityStatus,
       publishReadyForSale: publishQuality?.publishReadyForSale,
       validScreenshotCount: publishValidScreenshotCount,
@@ -400,7 +412,9 @@ export const run = async ({ only = parseOnlyArg(process.argv.slice(2)) } = {}) =
       purchasePath: '/pricing',
       delivery: {
         format: 'Figma file',
-        fulfillment: 'Own-site delivery pack',
+        fulfillment: hasFinalAsset ? 'Verified Figma final asset' : 'Blocked until final Figma asset is recorded',
+        finalAssetUrl: reconstruction?.finalAssetUrl ?? null,
+        backupAssetUrl: reconstruction?.backupAssetUrl ?? null,
         artifactFormat: 'figma-source-packet',
         artifactVersion: 1,
         downloadFileName: `${kitSlug}-delivery-pack.json`,
