@@ -11,13 +11,18 @@ function cleanString(value) {
 	return String(value || "").trim();
 }
 
+function normalizeCountryCode(value) {
+	const normalizedValue = cleanString(value).toUpperCase();
+	return /^[A-Z]{2}$/.test(normalizedValue) ? normalizedValue : "";
+}
+
 export function normalizeCustomerProfile(input = {}) {
 	return {
 		firstName: cleanString(input.firstName),
 		lastName: cleanString(input.lastName),
 		email: cleanString(input.email).toLowerCase(),
 		phone: cleanString(input.phone),
-		countryCode: cleanString(input.countryCode).toUpperCase(),
+		countryCode: normalizeCountryCode(input.countryCode),
 		city: cleanString(input.city),
 	};
 }

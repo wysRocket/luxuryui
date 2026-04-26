@@ -14,10 +14,30 @@ service cloud.firestore {
       return /databases/$(database)/documents/userRoles/$(request.auth.uid);
     }
 
+    function walletPath(userId) {
+      return /databases/$(database)/documents/wallets/$(userId);
+    }
+
     function isAdmin() {
       return isSignedIn()
         && exists(adminRolePath())
         && get(adminRolePath()).data.roles.hasAny(['admin']);
+    }
+
+    function isPositiveCredits(value) {
+      return value is int && value > 0;
+    }
+
+    function hasPurchaseDebit(userId, credits) {
+      return exists(walletPath(userId))
+        && isPositiveCredits(credits)
+        && getAfter(walletPath(userId)).data.balance == get(walletPath(userId)).data.balance - credits
+        && getAfter(walletPath(userId)).data.balance >= 0
+        && getAfter(walletPath(userId)).data.lifetimeSpent == get(walletPath(userId)).data.lifetimeSpent + credits;
+    }
+
+    function onlyChanged(keys) {
+      return request.resource.data.diff(resource.data).affectedKeys().hasOnly(keys);
     }
 
     match /userProfiles/{userId} {
@@ -41,11 +61,17 @@ service cloud.firestore {
       allow create: if isOwner(userId)
         && request.resource.data.balance == 0;
       allow update: if isOwner(userId)
-        && request.resource.data.balance <= resource.data.balance;
+        && request.resource.data.balance <= resource.data.balance
+        && request.resource.data.balance >= 0;
 
       match /transactions/{transactionId} {
         allow read: if isOwner(userId) || isAdmin();
-        allow create: if isOwner(userId);
+        allow create: if isOwner(userId)
+          && request.resource.data.userId == userId
+          && request.resource.data.type == 'purchase'
+          && request.resource.data.creditsDelta is int
+          && request.resource.data.creditsDelta < 0
+          && hasPurchaseDebit(userId, -request.resource.data.creditsDelta);
       }
 
       // topUps are only written by Cloud Functions (Admin SDK bypasses rules).
@@ -56,12 +82,30 @@ service cloud.firestore {
 
       match /orders/{orderId} {
         allow read: if isOwner(userId) || isAdmin();
-        allow create, update: if isOwner(userId);
+        allow create: if isOwner(userId)
+          && request.resource.data.userId == userId
+          && request.resource.data.status == 'unlocked'
+          && hasPurchaseDebit(userId, request.resource.data.creditCost);
+        allow update: if isOwner(userId)
+          && request.resource.data.userId == resource.data.userId
+          && request.resource.data.productId == resource.data.productId
+          && request.resource.data.creditCost == resource.data.creditCost
+          && onlyChanged(['status', 'fulfilledAt'])
+          && request.resource.data.status in ['unlocked', 'fulfilled'];
       }
 
       match /unlocks/{unlockId} {
         allow read: if isOwner(userId) || isAdmin();
-        allow create, update: if isOwner(userId);
+        allow create: if isOwner(userId)
+          && request.resource.data.userId == userId
+          && request.resource.data.downloadStatus == 'available'
+          && hasPurchaseDebit(userId, request.resource.data.creditsSpent);
+        allow update: if isOwner(userId)
+          && request.resource.data.userId == resource.data.userId
+          && request.resource.data.productId == resource.data.productId
+          && request.resource.data.creditsSpent == resource.data.creditsSpent
+          && onlyChanged(['downloadStatus'])
+          && request.resource.data.downloadStatus in ['available', 'downloaded'];
       }
     }
   }

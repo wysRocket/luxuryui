@@ -17,6 +17,7 @@ import {
   getCreditQuote,
   getPublishedFigmaKits,
 } from "../data/figmaKits";
+import { COUNTRY_OPTIONS, normalizeCountryCode } from "../data/countryOptions";
 import { useAppSession } from "../contexts/AppSessionContext";
 import { RUNTIME_CONFIG } from "../services/runtimeConfig";
 
@@ -39,7 +40,9 @@ const CreditsPage: React.FC = () => {
   const [firstName, setFirstName] = useState(() => localStorage.getItem("billing_firstName") ?? "");
   const [lastName, setLastName] = useState(() => localStorage.getItem("billing_lastName") ?? "");
   const [phone, setPhone] = useState(() => localStorage.getItem("billing_phone") ?? "");
-  const [countryCode, setCountryCode] = useState(() => localStorage.getItem("billing_countryCode") ?? "GB");
+  const [countryCode, setCountryCode] = useState(() =>
+    normalizeCountryCode(localStorage.getItem("billing_countryCode") ?? "GB"),
+  );
   const [city, setCity] = useState(() => localStorage.getItem("billing_city") ?? "");
   const [currency, setCurrency] = useState<"EUR" | "GBP">(() => (localStorage.getItem("billing_currency") as "EUR" | "GBP") ?? "GBP");
 
@@ -90,7 +93,7 @@ const CreditsPage: React.FC = () => {
           lastName: lastName.trim(),
           email: "",
           phone: phone.trim(),
-          countryCode: countryCode.trim().toUpperCase().slice(0, 2),
+          countryCode: normalizeCountryCode(countryCode),
           city: city.trim(),
         },
       });
@@ -299,15 +302,18 @@ const CreditsPage: React.FC = () => {
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1">Country (ISO code)</label>
-                  <input
-                    type="text"
+                  <label className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1">Country</label>
+                  <select
                     value={countryCode}
-                    onChange={(e) => setCountryCode(e.target.value.toUpperCase().slice(0, 2))}
-                    placeholder="GB"
-                    maxLength={2}
+                    onChange={(e) => setCountryCode(normalizeCountryCode(e.target.value))}
                     className="w-full rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white"
-                  />
+                  >
+                    {COUNTRY_OPTIONS.map((country) => (
+                      <option key={country.code} value={country.code}>
+                        {country.name} ({country.code})
+                      </option>
+                    ))}
+                  </select>
                 </div>
                 <div>
                   <label className="block text-xs font-bold text-gray-500 dark:text-gray-400 mb-1">Currency</label>

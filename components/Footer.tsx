@@ -9,6 +9,7 @@ import {
   Github,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import BrandLogo from "./BrandLogo";
 import { useAppSession } from "../contexts/AppSessionContext";
 
 interface FooterLink {
@@ -70,10 +71,11 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 lg:gap-8">
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-2 mb-6 group w-fit">
-              <div className="w-8 h-8 bg-black dark:bg-white rounded-lg transition-transform group-hover:rotate-12" />
-              <span className="text-2xl font-black tracking-tighter dark:text-white">
-                LuxuryUI
-              </span>
+              <BrandLogo
+                className="flex items-center gap-3"
+                iconClassName="h-8 w-8 transition-transform duration-300 group-hover:rotate-6 group-hover:scale-[1.03]"
+                textClassName="text-2xl tracking-[-0.07em] text-gray-950 dark:text-white"
+              />
             </Link>
             <p className="text-gray-500 dark:text-gray-400 max-w-xs text-[15px] leading-relaxed mb-8">
               Browse the research library, then unlock transformed Figma kits

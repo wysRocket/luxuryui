@@ -20,6 +20,7 @@ const FigmaKitsPage = lazy(() => import('./pages/FigmaKitsPage'));
 const KitDeliveryPage = lazy(() => import('./pages/KitDeliveryPage'));
 const LoginPage = lazy(() => import('./pages/LoginPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
+const LogoRefinementPage = lazy(() => import('./pages/LogoRefinementPage'));
 const AppScreensPage = lazy(() => import('./pages/AppScreensPage'));
 const FlowsPage = lazy(() => import('./pages/FlowsPage'));
 const FlowDetailPage = lazy(() => import('./pages/FlowDetailPage'));
@@ -415,6 +416,7 @@ const App: React.FC = () => {
                 }
               />
               <Route path="/apps/:appId/screens" element={<AppScreensPage />} />
+              <Route path="/brand/logo-refinements" element={<LogoRefinementPage />} />
               {CONTENT_PAGES.filter((page) => !['/login', '/signup'].includes(page.path)).map((page) => (
                 <Route key={page.path} path={page.path} element={<ContentPage {...page} />} />
               ))}

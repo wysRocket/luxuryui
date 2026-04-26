@@ -97,7 +97,7 @@ export const COMMERCIAL_REVIEWS = figmaKitReviews;
 export const FIGMA_CONTENT_MANIFESTS = figmaKitManifests;
 
 export const CREDIT_PACK_CONFIG: CreditPackConfig = {
-  minCredits: 25,
+  minCredits: 1,
   maxCredits: 20_000,
   defaultCredits: 120,
   sliderStep: 1,

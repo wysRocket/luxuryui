@@ -21,8 +21,8 @@ interface CurrencyConfig {
 }
 
 const CURRENCIES: Record<string, CurrencyConfig> = {
-  EUR: { minorUnitScale: 100, minAmountMinor: 100, maxAmountMinor: 2000000, creditsPerMajorUnit: 100 },
-  GBP: { minorUnitScale: 100, minAmountMinor: 100, maxAmountMinor: 2000000, creditsPerMajorUnit: 117 },
+  EUR: { minorUnitScale: 100, minAmountMinor: 1, maxAmountMinor: 20000, creditsPerMajorUnit: 100 },
+  GBP: { minorUnitScale: 100, minAmountMinor: 1, maxAmountMinor: 20000, creditsPerMajorUnit: 117 },
 };
 
 function amountMajorToMinor(amount: unknown, currency: string): number {
@@ -45,6 +45,11 @@ function creditsFromMinorAmount(amountMinor: number, currency: string): number {
   const cfg = CURRENCIES[currency];
   if (!cfg) throw new Error(`Unsupported currency: ${currency}`);
   return Math.floor((amountMinor * cfg.creditsPerMajorUnit) / cfg.minorUnitScale);
+}
+
+function normalizeCountryCode(value: unknown): string {
+  const countryCode = String(value ?? "").trim().toUpperCase();
+  return /^[A-Z]{2}$/.test(countryCode) ? countryCode : "";
 }
 
 function md5(value: string): string {
@@ -189,7 +194,7 @@ export const createPaymentSession = onCall(
         .trim()
         .toLowerCase(),
       phone: String(rawCustomer.phone ?? "").trim(),
-      countryCode: String(rawCustomer.countryCode ?? "").trim().toUpperCase(),
+      countryCode: normalizeCountryCode(rawCustomer.countryCode),
       city: String(rawCustomer.city ?? "").trim(),
     };
 

@@ -7,8 +7,9 @@ import {
   query,
   runTransaction,
 } from 'firebase/firestore';
-import { CREDIT_PACK_CONFIG, getCommercialReview, getCreditQuote } from '../data/figmaKits';
+import { CREDIT_PACK_CONFIG, getCreditQuote } from '../data/figmaKits';
 import { CreditTopUp, CreditTransaction, CreditWallet, FigmaKitProduct, KitOrder, KitUnlock, UserProfile } from '../types';
+import { assertPurchasableKit } from './commerceValidation';
 import { getFirebaseFirestoreClient } from './firebaseClient';
 import { assertRuntimeConfiguration } from './runtimeConfig';
 
@@ -323,10 +324,7 @@ export const purchaseFirestoreKitWithCredits = async (
   user: UserProfile,
   kit: FigmaKitProduct
 ): Promise<KitUnlock> => {
-  const review = getCommercialReview(kit.id);
-  if (!review?.readyForSale || kit.status !== 'published') {
-    throw new Error('This kit is still research-only and cannot be unlocked yet.');
-  }
+  assertPurchasableKit(kit);
 
   const walletDocument = walletRef(user.uid);
   const unlockId = sanitizeId(kit.id);

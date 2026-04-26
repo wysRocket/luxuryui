@@ -6,6 +6,15 @@ import {
 } from "@/data/figmaKits";
 
 describe("figmaKits pricing math", () => {
+  it("allows one-credit top-ups as the pricing floor", () => {
+    expect(CREDIT_PACK_CONFIG.minCredits).toBe(1);
+    expect(getCreditQuote(1)).toEqual({
+      credits: 1,
+      eurTotal: 0.01,
+      gbpTotal: 0.01,
+    });
+  });
+
   it("matches the cloudbase max top-up amount", () => {
     const maxQuote = getCreditQuote(CREDIT_PACK_CONFIG.maxCredits);
 

@@ -1,6 +1,5 @@
 import {
   CREDIT_PACK_CONFIG,
-  getCommercialReview,
   getCreditQuote,
   getFigmaKitById,
   getFigmaManifest,
@@ -15,6 +14,7 @@ import {
   KitUnlock,
   UserProfile,
 } from '../types';
+import { assertPurchasableKit } from './commerceValidation';
 import { assertRuntimeConfiguration } from './runtimeConfig';
 
 interface PersistedState {
@@ -227,10 +227,7 @@ export const topUpWalletCredits = async (user: UserProfile | null, credits: numb
 export const purchaseKitWithCredits = async (user: UserProfile | null, kit: FigmaKitProduct): Promise<KitUnlock> => {
   assertRuntimeConfiguration();
 
-  const review = getCommercialReview(kit.id);
-  if (!review?.readyForSale || kit.status !== 'published') {
-    throw new Error('This kit is still research-only and cannot be unlocked yet.');
-  }
+  assertPurchasableKit(kit);
 
   if (!user) {
     throw new Error('Sign in before buying with credits.');

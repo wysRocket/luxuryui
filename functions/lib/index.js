@@ -44,8 +44,8 @@ const SAFEPAY_MERCHANT_ID = (0, params_1.defineSecret)("SAFEPAY_MERCHANT_ID");
 const SAFEPAY_MERCHANT_SECRET = (0, params_1.defineSecret)("SAFEPAY_MERCHANT_SECRET");
 const GATEWAY_URL = "https://www.safepayto.me/new/gateway/";
 const CURRENCIES = {
-    EUR: { minorUnitScale: 100, minAmountMinor: 100, maxAmountMinor: 2000000, creditsPerMajorUnit: 100 },
-    GBP: { minorUnitScale: 100, minAmountMinor: 100, maxAmountMinor: 2000000, creditsPerMajorUnit: 117 },
+    EUR: { minorUnitScale: 100, minAmountMinor: 1, maxAmountMinor: 20000, creditsPerMajorUnit: 100 },
+    GBP: { minorUnitScale: 100, minAmountMinor: 1, maxAmountMinor: 20000, creditsPerMajorUnit: 117 },
 };
 function amountMajorToMinor(amount, currency) {
     const str = String(amount !== null && amount !== void 0 ? amount : "").trim();
@@ -67,6 +67,10 @@ function creditsFromMinorAmount(amountMinor, currency) {
     if (!cfg)
         throw new Error(`Unsupported currency: ${currency}`);
     return Math.floor((amountMinor * cfg.creditsPerMajorUnit) / cfg.minorUnitScale);
+}
+function normalizeCountryCode(value) {
+    const countryCode = String(value !== null && value !== void 0 ? value : "").trim().toUpperCase();
+    return /^[A-Z]{2}$/.test(countryCode) ? countryCode : "";
 }
 function md5(value) {
     return (0, crypto_1.createHash)("md5").update(value).digest("hex");
@@ -122,7 +126,7 @@ function classifyPaymentState(statusId, providerStatusText) {
 }
 // ─── Cloud Functions ──────────────────────────────────────────────────────────
 exports.createPaymentSession = (0, https_1.onCall)({ secrets: [SAFEPAY_MERCHANT_ID, SAFEPAY_MERCHANT_SECRET] }, async (request) => {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j;
     if (!request.auth)
         throw new https_1.HttpsError("unauthenticated", "Must be signed in.");
     const uid = request.auth.uid;
@@ -148,8 +152,8 @@ exports.createPaymentSession = (0, https_1.onCall)({ secrets: [SAFEPAY_MERCHANT_
             .trim()
             .toLowerCase(),
         phone: String((_h = rawCustomer.phone) !== null && _h !== void 0 ? _h : "").trim(),
-        countryCode: String((_j = rawCustomer.countryCode) !== null && _j !== void 0 ? _j : "").trim().toUpperCase(),
-        city: String((_k = rawCustomer.city) !== null && _k !== void 0 ? _k : "").trim(),
+        countryCode: normalizeCountryCode(rawCustomer.countryCode),
+        city: String((_j = rawCustomer.city) !== null && _j !== void 0 ? _j : "").trim(),
     };
     const missingFields = ["firstName", "lastName", "email", "phone", "countryCode", "city"].filter((f) => !customer[f]);
     if (missingFields.length > 0) {
@@ -190,7 +194,8 @@ exports.createPaymentSession = (0, https_1.onCall)({ secrets: [SAFEPAY_MERCHANT_
         ({ checkoutUrl, providerTransactionId } = parseCreatePaymentResponse(providerText));
     }
     catch (err) {
-        throw new https_1.HttpsError("internal", err instanceof Error ? err.message : "Invalid SafePay create-payment response.");
+        const safeText = providerText.slice(0, 400);
+        throw new https_1.HttpsError("internal", `SafePay response parse error: ${err instanceof Error ? err.message : "unknown"}. Raw (truncated): ${safeText}`);
     }
     const now = new Date().toISOString();
     const order = {

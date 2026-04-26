@@ -1,6 +1,7 @@
 import React from 'react';
 import { Monitor, Smartphone } from 'lucide-react';
 import { Link, NavLink } from 'react-router-dom';
+import BrandLogo from './BrandLogo';
 import { NAV_ITEMS } from '../constants';
 import { useAppSession } from '../contexts/AppSessionContext';
 import { NavItem } from '../types';
@@ -18,9 +19,12 @@ const Sidebar: React.FC = () => {
     <aside className="fixed left-0 top-0 h-screen w-64 border-r border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 hidden lg:flex flex-col z-40 transition-colors duration-300">
       {/* Logo Area */}
       <div className="h-16 flex items-center px-6 border-b border-gray-100 dark:border-gray-900">
-        <Link to="/" className="font-bold text-xl tracking-tight flex items-center gap-2 dark:text-white">
-            <div className="w-6 h-6 bg-black dark:bg-white rounded-md"></div>
-            LuxuryUI
+        <Link to="/" className="dark:text-white">
+          <BrandLogo
+            className="flex items-center gap-3"
+            iconClassName="h-6 w-6"
+            textClassName="text-xl tracking-[-0.06em] text-gray-950 dark:text-white"
+          />
         </Link>
       </div>
 

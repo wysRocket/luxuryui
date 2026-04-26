@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Search, Sparkles, Sun, Moon, X, ArrowLeft, TrendingUp, Zap, Clock, Menu } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
+import BrandLogo from './BrandLogo';
 import { MOCK_APPS, FILTER_TAGS, NAV_ITEMS } from '../constants';
 import { useAppSession } from '../contexts/AppSessionContext';
 
@@ -60,7 +61,13 @@ const Header: React.FC<HeaderProps> = ({
         
         {/* Left Side: Brand (Mobile) and Desktop Search */}
         <div className="flex items-center flex-1 min-w-0">
-          <Link to="/" className="lg:hidden font-black text-xl sm:text-2xl tracking-tighter dark:text-white shrink-0 mr-3 sm:mr-5">LuxuryUI</Link>
+          <Link to="/" className="lg:hidden shrink-0 mr-3 sm:mr-5 dark:text-white">
+            <BrandLogo
+              className="flex items-center gap-2.5"
+              iconClassName="h-6 w-6 sm:h-7 sm:w-7"
+              textClassName="text-xl sm:text-2xl tracking-[-0.07em] text-gray-950 dark:text-white"
+            />
+          </Link>
           
           {/* Desktop Search Bar: Optimized to occupy all free space */}
           <div className="hidden xl:flex flex-1 max-w-4xl items-center relative" ref={searchRef}>
@@ -322,7 +329,13 @@ const Header: React.FC<HeaderProps> = ({
                 <div className="flex items-center justify-between border-b border-gray-100 dark:border-gray-900 px-5 py-4">
                   <div>
                     <p className="text-xs font-black uppercase tracking-[0.18em] text-gray-400 dark:text-gray-500">Navigation</p>
-                    <p className="mt-1 text-xl font-black tracking-tight text-gray-900 dark:text-white">LuxuryUI</p>
+                    <div className="mt-2">
+                      <BrandLogo
+                        className="flex items-center gap-3"
+                        iconClassName="h-7 w-7"
+                        textClassName="text-xl tracking-[-0.06em] text-gray-950 dark:text-white"
+                      />
+                    </div>
                   </div>
                   <button
                     type="button"
