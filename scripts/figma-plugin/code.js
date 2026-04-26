@@ -361,6 +361,13 @@ figma.ui.onmessage = async function(msg) {
         figma.ui.postMessage({ type: 'status', message: statusMsg });
       });
       try {
+        if (figma.fileKey) {
+          await fetch(SERVER + '/figma-key', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ kitSlug: kitSlug, figmaFileKey: figma.fileKey }),
+          });
+        }
         await fetch(SERVER + '/content-built', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },

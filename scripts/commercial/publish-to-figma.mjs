@@ -11,6 +11,8 @@ const PORT = 7777;
 const ARTIFACTS_DIR = path.join(projectRoot, 'data', 'curation', 'commercial', 'generated-kit-artifacts');
 const PUBLIC_DIR = path.join(projectRoot, 'public');
 
+const PLUGIN_MANIFEST = path.join(projectRoot, 'scripts', 'figma-plugin', 'manifest.json');
+
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
 const readJson = async (p) => JSON.parse(await readFile(p, 'utf8'));
@@ -34,6 +36,40 @@ const collectBody = (req) =>
     req.on('end', () => resolve(body));
     req.on('error', reject);
   });
+
+const buildFigmaDesignUrl = (figmaFileKey) => `https://www.figma.com/design/${figmaFileKey}`;
+
+const hasFinalAsset = (packet) => Boolean(packet.finalAssetUrl && packet.finalAssetVerifiedAt);
+
+const isPublishedPacket = (packet) => Boolean(packet.figmaFileKey || hasFinalAsset(packet));
+
+const packetWriteQueues = new Map();
+
+const withPacketWriteLock = (kitSlug, action) => {
+  const previous = packetWriteQueues.get(kitSlug) ?? Promise.resolve();
+  const run = previous.catch(() => {}).then(action);
+  const cleanup = run.finally(() => {
+    if (packetWriteQueues.get(kitSlug) === cleanup) {
+      packetWriteQueues.delete(kitSlug);
+    }
+  });
+  packetWriteQueues.set(kitSlug, cleanup);
+  return run;
+};
+
+const updatePacket = async (kitSlug, mutate) => withPacketWriteLock(kitSlug, async () => {
+  const packetPath = path.join(ARTIFACTS_DIR, kitSlug, 'figma', 'reconstruction.json');
+  let packet;
+  try {
+    packet = await readJson(packetPath);
+  } catch {
+    throw new Error(`No reconstruction.json found for ${kitSlug}`);
+  }
+
+  mutate(packet);
+  await writeFile(packetPath, `${JSON.stringify(packet, null, 2)}\n`);
+  return packet;
+});
 
 // ─── Load all reconstruction packets ────────────────────────────────────────
 
@@ -65,20 +101,15 @@ const loadAllPackets = async () => {
 // ─── Update figmaFileKey in a reconstruction.json ───────────────────────────
 
 const updateFigmaFileKey = async (kitSlug, figmaFileKey) => {
-  const packetPath = path.join(ARTIFACTS_DIR, kitSlug, 'figma', 'reconstruction.json');
-  let packet;
-  try {
-    packet = await readJson(packetPath);
-  } catch {
-    throw new Error(`No reconstruction.json found for ${kitSlug}`);
-  }
-
-  packet.figmaFileKey = figmaFileKey;
-  packet.figmaPublishedAt = new Date().toISOString();
-  packet.nextAction = 'done';
-
-  await writeFile(packetPath, `${JSON.stringify(packet, null, 2)}\n`);
-  return packet;
+  return updatePacket(kitSlug, (packet) => {
+    const publishedAt = new Date().toISOString();
+    packet.figmaFileKey = figmaFileKey;
+    packet.figmaPublishedAt = publishedAt;
+    packet.finalAssetUrl = packet.finalAssetUrl ?? buildFigmaDesignUrl(figmaFileKey);
+    packet.finalAssetVerifiedAt = packet.finalAssetVerifiedAt ?? publishedAt;
+    packet.backupAssetUrl = packet.backupAssetUrl ?? null;
+    packet.nextAction = 'done';
+  });
 };
 
 // ─── Request router ─────────────────────────────────────────────────────────
@@ -152,11 +183,11 @@ const handleRequest = async (req, res) => {
     return;
   }
 
-  // GET /kits — return all reconstruction packets that need a figmaFileKey
+  // GET /kits — return all reconstruction packets that need a verified final asset
   if (req.method === 'GET' && url.pathname === '/kits') {
     const all = await loadAllPackets();
-    const pending = all.filter(({ packet }) => !packet.figmaFileKey);
-    const done = all.filter(({ packet }) => Boolean(packet.figmaFileKey));
+    const pending = all.filter(({ packet }) => !isPublishedPacket(packet));
+    const done = all.filter(({ packet }) => isPublishedPacket(packet));
     json(res, 200, {
       total: all.length,
       pending: pending.length,
@@ -179,7 +210,7 @@ const handleRequest = async (req, res) => {
   // GET /progress — summary of how many are done
   if (req.method === 'GET' && url.pathname === '/progress') {
     const all = await loadAllPackets();
-    const done = all.filter(({ packet }) => Boolean(packet.figmaFileKey));
+    const done = all.filter(({ packet }) => isPublishedPacket(packet));
     const built = all.filter(({ packet }) => Boolean(packet.contentBuiltAt));
     json(res, 200, {
       total: all.length,
@@ -190,7 +221,9 @@ const handleRequest = async (req, res) => {
       completedKits: done.map(({ kitSlug, packet }) => ({
         kitSlug,
         figmaFileKey: packet.figmaFileKey,
-        figmaUrl: `https://www.figma.com/design/${packet.figmaFileKey}`,
+        figmaUrl: packet.finalAssetUrl ?? (packet.figmaFileKey ? buildFigmaDesignUrl(packet.figmaFileKey) : null),
+        finalAssetUrl: packet.finalAssetUrl ?? null,
+        finalAssetVerifiedAt: packet.finalAssetVerifiedAt ?? null,
         publishedAt: packet.figmaPublishedAt,
         contentBuilt: Boolean(packet.contentBuiltAt),
       })),
@@ -213,11 +246,10 @@ const handleRequest = async (req, res) => {
       json(res, 400, { error: 'kitSlug is required' });
       return;
     }
-    const packetPath = path.join(ARTIFACTS_DIR, kitSlug, 'figma', 'reconstruction.json');
     try {
-      const packet = JSON.parse(await readFile(packetPath, 'utf8'));
-      packet.contentBuiltAt = new Date().toISOString();
-      await writeFile(packetPath, JSON.stringify(packet, null, 2) + '\n');
+      const packet = await updatePacket(kitSlug, (draft) => {
+        draft.contentBuiltAt = new Date().toISOString();
+      });
       console.log(`  🎨 ${kitSlug} — content built`);
       json(res, 200, { ok: true, kitSlug, contentBuiltAt: packet.contentBuiltAt });
     } catch (err) {
@@ -245,8 +277,15 @@ const handleRequest = async (req, res) => {
 
     try {
       const updated = await updateFigmaFileKey(kitSlug, figmaFileKey);
-      console.log(`  ✅ ${kitSlug} → figma.com/file/${figmaFileKey}`);
-      json(res, 200, { ok: true, kitSlug, figmaFileKey, updatedAt: updated.figmaPublishedAt });
+      console.log(`  ✅ ${kitSlug} → ${updated.finalAssetUrl}`);
+      json(res, 200, {
+        ok: true,
+        kitSlug,
+        figmaFileKey,
+        finalAssetUrl: updated.finalAssetUrl,
+        finalAssetVerifiedAt: updated.finalAssetVerifiedAt,
+        updatedAt: updated.figmaPublishedAt,
+      });
     } catch (err) {
       json(res, 404, { error: err.message });
     }
@@ -271,9 +310,15 @@ const handleRequest = async (req, res) => {
     const results = [];
     for (const { kitSlug, figmaFileKey } of body) {
       try {
-        await updateFigmaFileKey(kitSlug, figmaFileKey);
-        console.log(`  ✅ ${kitSlug} → figma.com/file/${figmaFileKey}`);
-        results.push({ kitSlug, ok: true, figmaFileKey });
+        const updated = await updateFigmaFileKey(kitSlug, figmaFileKey);
+        console.log(`  ✅ ${kitSlug} → ${updated.finalAssetUrl}`);
+        results.push({
+          kitSlug,
+          ok: true,
+          figmaFileKey,
+          finalAssetUrl: updated.finalAssetUrl,
+          finalAssetVerifiedAt: updated.finalAssetVerifiedAt,
+        });
       } catch (err) {
         results.push({ kitSlug, ok: false, error: err.message });
       }
@@ -323,8 +368,8 @@ const server = createServer(async (req, res) => {
 
 server.listen(PORT, async () => {
   const all = await loadAllPackets();
-  const pending = all.filter(({ packet }) => !packet.figmaFileKey);
-  const done = all.filter(({ packet }) => Boolean(packet.figmaFileKey));
+  const pending = all.filter(({ packet }) => !isPublishedPacket(packet));
+  const done = all.filter(({ packet }) => isPublishedPacket(packet));
 
   console.log('\n🎨 LuxuryUI Figma Publisher Server');
   console.log(`   http://localhost:${PORT}\n`);
@@ -332,12 +377,12 @@ server.listen(PORT, async () => {
   console.log(`   Published:    ${done.length}`);
   console.log(`   Pending:      ${pending.length}\n`);
   console.log('─'.repeat(50));
-  console.log('STEP 1 — Open Figma desktop app');
+  console.log('STEP 1 — Create/open the Figma file for one kit');
   console.log('STEP 2 — Plugins → Development → Import plugin from manifest');
-  console.log(`         Select: ${path.join(__dirname, 'figma-plugin', 'manifest.json')}`);
-  console.log('STEP 3 — Run the plugin from any Figma file');
-  console.log('STEP 4 — Click "Publish All Kits" in the plugin UI');
-  console.log('STEP 5 — Plugin will create files and POST figmaFileKeys here');
+  console.log(`         Select: ${PLUGIN_MANIFEST}`);
+  console.log('STEP 3 — Run the plugin in that file');
+  console.log('STEP 4 — Pick the matching kit and click "Build Kit Content"');
+  console.log('STEP 5 — Plugin builds pages and posts the verified final Figma URL here');
   console.log('─'.repeat(50));
   console.log('\nEndpoints:');
   console.log(`  GET  http://localhost:${PORT}/kits       — pending kit specs`);

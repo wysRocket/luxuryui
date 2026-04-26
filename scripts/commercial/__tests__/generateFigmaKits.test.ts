@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import {
+  applyFinalAssetOverride,
   buildGeneratedArtifactsBridge,
   deriveCommercialPublication,
   mergeRecordsByProductId,
@@ -256,6 +257,32 @@ describe('generate-figma-kits Stitch artifact bridge', () => {
       reviewStatus: 'blocked',
       publishReadyForSale: false,
       completenessStatus: 'fail',
+    });
+  });
+
+  it('applies tracked final asset overrides to generated reconstruction packets', () => {
+    const reconstruction = applyFinalAssetOverride(
+      {
+        figmaFileKey: null,
+        reconstructionStatus: 'done',
+        generationSource: 'direct',
+        nextAction: 'publish-via-figma-workflow',
+      },
+      {
+        figmaFileKey: 'file-123',
+        figmaPublishedAt: '2026-04-26T20:00:00.000Z',
+        finalAssetUrl: 'https://www.figma.com/design/file-123',
+        finalAssetVerifiedAt: '2026-04-26T20:00:00.000Z',
+        contentBuiltAt: '2026-04-26T20:01:00.000Z',
+      },
+    );
+
+    expect(reconstruction).toMatchObject({
+      figmaFileKey: 'file-123',
+      finalAssetUrl: 'https://www.figma.com/design/file-123',
+      finalAssetVerifiedAt: '2026-04-26T20:00:00.000Z',
+      contentBuiltAt: '2026-04-26T20:01:00.000Z',
+      nextAction: 'done',
     });
   });
 });

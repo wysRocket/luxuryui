@@ -1,17 +1,17 @@
 {
   "schema": "1",
-  "generatedAt": "2026-04-26T19:46:38.635Z",
+  "generatedAt": "2026-04-26T20:08:38.639Z",
   "summary": {
     "totalProducts": 76,
-    "publishedProducts": 1,
-    "blockedProducts": 75,
-    "flowsRepresented": 1
+    "publishedProducts": 2,
+    "blockedProducts": 74,
+    "flowsRepresented": 2
   },
   "manifests": [
     {
       "productId": "figma-kit:monzo",
       "productSlug": "monzo-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "f2lUizLGCCeBxkQk5hTA7w",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -2685,7 +2685,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "twitter-figma-kit",
-        "generatedAt": "2026-04-26T19:46:38.635Z",
+        "generatedAt": "2026-04-26T20:08:38.639Z",
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
@@ -3097,7 +3097,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "whatsapp-figma-kit",
-        "generatedAt": "2026-04-26T19:46:38.635Z",
+        "generatedAt": "2026-04-26T20:08:38.639Z",
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
@@ -3336,7 +3336,7 @@
     {
       "productId": "figma-kit:airbnb",
       "productSlug": "airbnb-figma-kit",
-      "figmaFileKey": null,
+      "figmaFileKey": "Ifh6R8PmR4m9IhJ35kQulx",
       "pageOrder": [
         "Cover",
         "Flow",
@@ -3395,7 +3395,7 @@
       "exportPackage": {
         "fileName": "airbnb-figma-kit.fig",
         "previewCount": 3,
-        "commercialReady": false
+        "commercialReady": true
       },
       "generatedArtifacts": {
         "kitSlug": "airbnb-figma-kit",
@@ -3403,13 +3403,13 @@
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
-        "commercialReady": false,
+        "commercialReady": true,
         "publishQualityStatus": "pass",
-        "publishReadyForSale": false,
+        "publishReadyForSale": true,
         "publishAssetOrigin": "upscaled",
-        "finalizationStatus": "blocked",
-        "finalAssetUrl": null,
-        "finalAssetVerifiedAt": null,
+        "finalizationStatus": "finalized",
+        "finalAssetUrl": "https://www.figma.com/design/Ifh6R8PmR4m9IhJ35kQulx",
+        "finalAssetVerifiedAt": "2026-04-26T20:03:52.550Z",
         "backupAssetUrl": null,
         "exportPackageFileName": "airbnb-figma-kit.fig",
         "previewCount": 3,
@@ -6189,7 +6189,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "tidal-figma-kit",
-        "generatedAt": "2026-04-26T19:46:38.635Z",
+        "generatedAt": "2026-04-26T20:08:38.639Z",
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
@@ -6705,7 +6705,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "coursera-figma-kit",
-        "generatedAt": "2026-04-26T19:46:38.635Z",
+        "generatedAt": "2026-04-26T20:08:38.639Z",
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",
@@ -7533,7 +7533,7 @@
       },
       "generatedArtifacts": {
         "kitSlug": "cnn-figma-kit",
-        "generatedAt": "2026-04-26T19:46:38.635Z",
+        "generatedAt": "2026-04-26T20:08:38.639Z",
         "stage": "packaged",
         "generationStatus": "packaged",
         "generationSource": "direct",

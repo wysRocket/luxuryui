@@ -1,11 +1,11 @@
 {
   "schema": "1",
-  "generatedAt": "2026-04-26T19:46:38.635Z",
+  "generatedAt": "2026-04-26T20:08:38.639Z",
   "summary": {
     "totalProducts": 76,
-    "publishedProducts": 1,
-    "blockedProducts": 75,
-    "flowsRepresented": 1
+    "publishedProducts": 2,
+    "blockedProducts": 74,
+    "flowsRepresented": 2
   },
   "kitSpecs": [
     {

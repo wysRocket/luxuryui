@@ -18,6 +18,7 @@ const publishQualityReportPath = path.join(
 );
 const flowPacksPath = path.join(projectRoot, 'data', 'curation', 'flows', 'screensdesign-flow-packs.json');
 const stitchRunsPath = path.join(projectRoot, 'data', 'curation', 'commercial', 'generated-kit-runs.json');
+const finalAssetOverridesPath = path.join(projectRoot, 'data', 'curation', 'commercial', 'final-asset-overrides.json');
 const rubricPath = path.join(projectRoot, 'config', 'quality', 'asset-rubric.json');
 const outputDir = path.join(projectRoot, 'data', 'curation', 'commercial');
 
@@ -177,6 +178,31 @@ export const loadGeneratedStitchRuns = async (runsPath = stitchRunsPath) => {
   }
 };
 
+export const loadFinalAssetOverrides = async (overridesPath = finalAssetOverridesPath) => {
+  const overrides = await readJsonIfExists(overridesPath, { assets: [] });
+  return Array.isArray(overrides.assets) ? overrides.assets : [];
+};
+
+export const applyFinalAssetOverride = (reconstruction, override) => {
+  if (!reconstruction || !override) {
+    return reconstruction;
+  }
+
+  return {
+    ...reconstruction,
+    figmaFileKey: override.figmaFileKey ?? reconstruction.figmaFileKey ?? null,
+    figmaPublishedAt: override.figmaPublishedAt ?? reconstruction.figmaPublishedAt ?? null,
+    finalAssetUrl: override.finalAssetUrl ?? reconstruction.finalAssetUrl ?? null,
+    finalAssetVerifiedAt: override.finalAssetVerifiedAt ?? reconstruction.finalAssetVerifiedAt ?? null,
+    backupAssetUrl: override.backupAssetUrl ?? reconstruction.backupAssetUrl ?? null,
+    contentBuiltAt: override.contentBuiltAt ?? reconstruction.contentBuiltAt,
+    nextAction:
+      override.finalAssetUrl && override.finalAssetVerifiedAt
+        ? 'done'
+        : reconstruction.nextAction,
+  };
+};
+
 export const buildGeneratedArtifactsBridge = ({
   productSlug,
   generatedAt,
@@ -267,14 +293,20 @@ const getReconstructionPreviewImages = (reconstruction) => {
 };
 
 export const run = async ({ only = parseOnlyArg(process.argv.slice(2)) } = {}) => {
-  const [qualityReport, publishQualityReport, flowPacks, stitchRuns, rubric] = await Promise.all([
+  const [qualityReport, publishQualityReport, flowPacks, stitchRuns, finalAssetOverrides, rubric] = await Promise.all([
     readFile(qualityReportPath, 'utf8').then((raw) => JSON.parse(raw)),
     readJsonIfExists(publishQualityReportPath, null),
     readFile(flowPacksPath, 'utf8').then((raw) => JSON.parse(raw)),
     loadGeneratedStitchRuns(),
+    loadFinalAssetOverrides(),
     readJsonIfExists(rubricPath, null),
   ]);
   const minimumScreenshotCount = rubric?.assets?.screenshots?.minimumCount ?? 6;
+  const finalAssetOverrideByKitSlug = new Map(
+    finalAssetOverrides
+      .filter((asset) => asset?.kitSlug)
+      .map((asset) => [asset.kitSlug, asset])
+  );
 
   // Load figma reconstruction packets to determine 'packaged' status.
   const reconstructionBySlug = new Map();
@@ -352,7 +384,10 @@ export const run = async ({ only = parseOnlyArg(process.argv.slice(2)) } = {}) =
     const includedComponents = FLOW_COMPONENTS[primaryFlowId] ?? FLOW_COMPONENTS.onboarding;
     const includedTokens = CATEGORY_TOKENS[entry.category] ?? CATEGORY_TOKENS.Business;
     const kitSlug = `${entry.slug}-figma-kit`;
-    const reconstruction = reconstructionBySlug.get(kitSlug) ?? null;
+    const reconstruction = applyFinalAssetOverride(
+      reconstructionBySlug.get(kitSlug) ?? null,
+      finalAssetOverrideByKitSlug.get(kitSlug) ?? null
+    );
     const latestStitchRun = selectGeneratedArtifactsRun(runsByKitSlug.get(kitSlug) ?? []);
     const reconstructionPreviewImages = getReconstructionPreviewImages(reconstruction);
     const hasSuccessfulStitchRun =

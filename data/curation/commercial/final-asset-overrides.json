@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "assets": [
+    {
+      "kitSlug": "monzo-figma-kit",
+      "figmaFileKey": "f2lUizLGCCeBxkQk5hTA7w",
+      "figmaPublishedAt": "2026-04-26T20:04:02.306Z",
+      "finalAssetUrl": "https://www.figma.com/design/f2lUizLGCCeBxkQk5hTA7w/Monzo-%E2%80%94-Onboarding-Figma-Flow-Kit",
+      "finalAssetVerifiedAt": "2026-04-24T07:35:00.000Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-24T07:35:00.000Z",
+      "source": "verified-figma-file"
+    },
+    {
+      "kitSlug": "airbnb-figma-kit",
+      "figmaFileKey": "Ifh6R8PmR4m9IhJ35kQulx",
+      "figmaPublishedAt": "2026-04-26T20:03:52.550Z",
+      "finalAssetUrl": "https://www.figma.com/design/Ifh6R8PmR4m9IhJ35kQulx",
+      "finalAssetVerifiedAt": "2026-04-26T20:03:52.550Z",
+      "backupAssetUrl": null,
+      "contentBuiltAt": "2026-04-26T20:03:52.551Z",
+      "source": "verified-figma-file"
+    }
+  ]
+}
