@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { CATALOG_ENTRIES, slugify } from '../../data/catalog.js';
 import { getKitArtifactPaths } from './lib/commercialArtifactPaths.mjs';
+import { isFinalizedForSale } from './lib/kitFinalization.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -141,6 +142,25 @@ const readJsonIfExists = async (filePath, fallback) => {
 
 const getRecordKey = (record) => record?.productId ?? record?.id ?? null;
 
+export const isFinalizationRecordForKit = (record, { kitSlug, productId }) =>
+  Boolean(record && record.kitSlug === kitSlug && record.productId === productId);
+
+export const readFinalizationIfExists = async (filePath) => {
+  try {
+    return JSON.parse(await readFile(filePath, 'utf8'));
+  } catch (error) {
+    if (error && typeof error === 'object' && 'code' in error && error.code === 'ENOENT') {
+      return null;
+    }
+
+    if (error instanceof SyntaxError) {
+      throw new Error(`Malformed finalization JSON at ${filePath}: ${error.message}`, { cause: error });
+    }
+
+    throw error;
+  }
+};
+
 export const mergeRecordsByProductId = (existingRecords = [], updatedRecords = []) => {
   const updatesByProductId = new Map(
     updatedRecords
@@ -177,6 +197,7 @@ export const loadGeneratedStitchRuns = async (runsPath = stitchRunsPath) => {
 
 export const buildGeneratedArtifactsBridge = ({
   productSlug,
+  productId = null,
   generatedAt,
   commercialReady,
   publishQualityStatus = null,
@@ -186,6 +207,7 @@ export const buildGeneratedArtifactsBridge = ({
   previewCount,
   latestRun,
   reconstruction = null,
+  finalization = null,
   rootDir = projectRoot,
 }) => {
   const paths = getKitArtifactPaths(productSlug, rootDir);
@@ -213,6 +235,10 @@ export const buildGeneratedArtifactsBridge = ({
     ? reconstruction.sourceAssetPaths
     : (reconstruction?.screenBlueprints ?? []).map((screen) => screen?.sourceAssetPath).filter(Boolean);
   const generationSource = reconstruction?.generationSource ?? latestRun?.generationSource ?? null;
+  const matchedFinalization = isFinalizationRecordForKit(finalization, { kitSlug: productSlug, productId })
+    ? finalization
+    : null;
+  const finalizationReady = isFinalizedForSale(matchedFinalization);
 
   return {
     kitSlug: productSlug,
@@ -220,10 +246,14 @@ export const buildGeneratedArtifactsBridge = ({
     stage: latestRun || isDirectReconstructionReady ? generationStatus : 'pending',
     generationStatus,
     generationSource,
-    commercialReady: commercialReady && isArtifactReady,
+    commercialReady: commercialReady && isArtifactReady && finalizationReady,
     publishQualityStatus,
-    publishReadyForSale: publishReadyForSale && isArtifactReady,
+    publishReadyForSale: publishReadyForSale && isArtifactReady && finalizationReady,
     publishAssetOrigin,
+    finalizationStatus: matchedFinalization?.finalizationStatus ?? null,
+    auditClassification: matchedFinalization?.auditClassification ?? null,
+    finalAssetId: matchedFinalization?.exportEvidence?.finalAssetId ?? null,
+    finalAssetUrl: matchedFinalization?.exportEvidence?.finalAssetUrl ?? null,
     exportPackageFileName,
     previewCount,
     stitchProjectId: latestRun?.stitchProjectId ?? null,
@@ -268,17 +298,26 @@ export const run = async ({ only = parseOnlyArg(process.argv.slice(2)) } = {}) =
 
   // Load figma reconstruction packets to determine 'packaged' status.
   const reconstructionBySlug = new Map();
+  const finalizationBySlug = new Map();
   for (const entry of CATALOG_ENTRIES) {
     const kitSlug = `${entry.slug}-figma-kit`;
     const packetPath = path.join(
       projectRoot, 'data', 'curation', 'commercial', 'generated-kit-artifacts',
       kitSlug, 'figma', 'reconstruction.json'
     );
+    const finalizationPath = path.join(
+      projectRoot, 'data', 'curation', 'commercial', 'generated-kit-artifacts',
+      kitSlug, 'release', 'finalization.json'
+    );
     try {
       const raw = await readFile(packetPath, 'utf8');
       reconstructionBySlug.set(kitSlug, JSON.parse(raw));
     } catch {
       // No reconstruction yet — that's fine, kit stays at 'generated' or earlier.
+    }
+    const finalization = await readFinalizationIfExists(finalizationPath);
+    if (finalization) {
+      finalizationBySlug.set(kitSlug, finalization);
     }
   }
   const runsByKitSlug = new Map();
@@ -342,7 +381,12 @@ export const run = async ({ only = parseOnlyArg(process.argv.slice(2)) } = {}) =
     const includedComponents = FLOW_COMPONENTS[primaryFlowId] ?? FLOW_COMPONENTS.onboarding;
     const includedTokens = CATEGORY_TOKENS[entry.category] ?? CATEGORY_TOKENS.Business;
     const kitSlug = `${entry.slug}-figma-kit`;
+    const productId = `figma-kit:${entry.slug}`;
     const reconstruction = reconstructionBySlug.get(kitSlug) ?? null;
+    const loadedFinalization = finalizationBySlug.get(kitSlug) ?? null;
+    const finalization = isFinalizationRecordForKit(loadedFinalization, { kitSlug, productId })
+      ? loadedFinalization
+      : null;
     const latestStitchRun = selectGeneratedArtifactsRun(runsByKitSlug.get(kitSlug) ?? []);
     const reconstructionPreviewImages = getReconstructionPreviewImages(reconstruction);
     const hasSuccessfulStitchRun =
@@ -354,8 +398,10 @@ export const run = async ({ only = parseOnlyArg(process.argv.slice(2)) } = {}) =
     const isPackaged =
       reconstruction?.reconstructionStatus === 'done' &&
       (hasSuccessfulStitchRun || hasDirectPacket);
+    const finalizationReady = isFinalizedForSale(finalization);
+    const isFinalized = isPackaged && finalizationReady;
     const publication = deriveCommercialPublication({
-      isPackaged,
+      isPackaged: isFinalized,
       publishQualityStatus,
       publishReadyForSale: publishQuality?.publishReadyForSale,
       validScreenshotCount: publishValidScreenshotCount,
@@ -475,6 +521,7 @@ export const run = async ({ only = parseOnlyArg(process.argv.slice(2)) } = {}) =
       },
       generatedArtifacts: buildGeneratedArtifactsBridge({
         productSlug: kitSlug,
+        productId,
         generatedAt,
         commercialReady: isApproved,
         publishQualityStatus,
@@ -484,6 +531,7 @@ export const run = async ({ only = parseOnlyArg(process.argv.slice(2)) } = {}) =
         previewCount: gallery.length,
         latestRun: latestStitchRun,
         reconstruction,
+        finalization,
       }),
     });
 

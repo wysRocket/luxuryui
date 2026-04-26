@@ -1,11 +1,11 @@
 {
   "schema": "2",
-  "generatedAt": "2026-04-04T23:08:26.207Z",
+  "generatedAt": "2026-04-24T07:19:21.113Z",
   "summary": {
     "totalProducts": 76,
-    "publishedProducts": 76,
-    "blockedProducts": 0,
-    "flowsRepresented": 6
+    "publishedProducts": 1,
+    "blockedProducts": 75,
+    "flowsRepresented": 1
   },
   "products": [
     {
@@ -17,7 +17,7 @@
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
       "status": "published",
-      "figmaFileKey": "f2lUizLGCCeBxkQk5hTA7w",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/monzo/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/monzo/screen-1.png",
@@ -49,7 +49,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/monzo-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -59,14 +59,14 @@
         "artifactVersion": 1,
         "downloadFileName": "monzo-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://lh3.googleusercontent.com/aida/ADBb0uiqTBuO9VBQeZ5ERRPrj594wHT2mT3vmAyUqJ9fVPaaIvMhQbviEAdKWGONhP6CB3mg4edy0wz1d4OWhLHvoMKdzej9XK7hk_Dm0cnZ9e9mUz35PQAc3HBxdfasfjAwcMoSKZc3VR96XM1R0PocaPYOfx8qTVqpHLlKJJSP8rnh5PxxauVdZ3rXSDtOmDFctf5-W48pN9q4QXBxYztGU0PTwyoT0_Hollvy1XGEPuRQpaVWoE-OmI_e0cgP",
-          "https://lh3.googleusercontent.com/aida/ADBb0uiNgL_rsVv4WVbmjQ3KZnC6RPj8pmQH_vs9RZ4Y9yVjMv-jok48Z8OGc3QX4OZVgig2gmvqz0gPBrWsNxOYBxbSgcTHVMnNA_eN2DN1Wz66N501aisGOf9vY0gdzqXt7KUsInlknMjrjoJbUVNFIaOjjOFrj9Ic4cTQm-eFp38tDEQukIxKzb6rF0Q07oAux08a7_TzAaF8UjH4-6qf-xSDThSxcFPX6WstaekF_LJ0V6ZoHofxmO6W1RA",
-          "https://lh3.googleusercontent.com/aida/ADBb0uhWZHZAiNCuQZThztiJDLpQ_h36ggGPyeTB4WMIZs2Q74akaHZUqAJnERMpfcJISgMnEm7tuMOOo78s2nnuFblRAijhLK-BXNO53iRrVewaJX1VGn8ripiskQLvvL-d0gCKveEjlSg76IYyo4y-8uwI3NlXb-w8Jv0eiUSFjbZmXtAAd16u8A_hTqpK4P4yHI6FHdSnPDaQwKZcv5QBedNpcegGlIlFzbdWC8DlQaq0U5HX8ds8axGfxgs",
-          "https://lh3.googleusercontent.com/aida/ADBb0uhrsOHFI2XyKzHWjJgXAHiuIbStQDHsDIWthfbYYvXWjNLkWoU8Ed3iQ_PXBzfQuRE3cDPLxyWqLFzkATV2JyMdMD_B7VsPqDl9OwGp13JrbyiehKtnm30s7BtQ-mWMwIy3Le5xccp4UJ0fD_BI8Kgda61Su-1m80hGUxNGX_XPoSMLJ0bQX6ZpS3SjNsR6q4J-CZmoLGhMO7GtedpUvHVM_F3a9o2A0E23k6XLR9BZYS_w2066RBa4fIw",
-          "https://lh3.googleusercontent.com/aida/ADBb0uiu031jOAyX6e5fYE_5ye-pf0dj0fS-OD9h1NQqPVlLreyp1cOWrQKPYmFRUGxw-h_Ejzvv2a0oQXcjYV6Kb6Ohn8TIXHdroqeDaTn6UpGRcIy5GZSfqbxV7pPARugb75h_C55wguGSgDmRdeP7HBGSkgtemnEdsCs586ljPzM4EHyo57FBrQDllPafbHHjchE-x3q1JghKdMvCCTGl3ZfPEyetQyKJJyrLCW_7QFf5_Zt0eI2GIWF7c0Y",
-          "https://lh3.googleusercontent.com/aida/ADBb0uiM-VzC297gskK7a7CGkY6IZsYL-m4Wbvbf7Gyv0Gu-TqmJe5b4a_uSlwp3KQOdKaCgYzJBlYJyZ9z2mFDOdhmiTtNk7GXF1CREGRuFEsvrd39Qa83jgpxrUiUIyO_lQTnvrCUCIyTTiaHqkxODfVd4lPclFUx-TrTNsknXzwGfdrfp4mx1nhtkFusCt40fL31Y1fOEEm32zmVxBDsRtrovOpyqQ174GIcRqmWF62lfBf7SwGTvCYaa8WWh",
-          "https://lh3.googleusercontent.com/aida/ADBb0ui3NhVTLF9oPTE2ReX7tIpcLr9LEo3MhvCrnQLO6elIZBXzhb_hly71W71DWje2JIEJ0JqnpMB74HXfkrUJgB3Ayx2AAhtqNg71L1av6S2qiqZ191eSozNSXAnLhMDE_UV21tN0e2YLEp5LewKivGB1yVFUxKpDr6nGYsOjKGszSGx_3E1vQfO49_24D_Br_AcJolD_FEZBsTQrzVGafBygCm_boA0xdTs2zrS1-iCgVLsqcBBZix0G5iiR",
-          "https://lh3.googleusercontent.com/aida/ADBb0uhfvITi-epHU3Acgw5KTQ8Y69WlsWM6dgPK1FcZQV-AkODLlOIX3o95auU0YiPa2olx_Wv_Il6iZptofjUHdyPRKfitP8X836ZDEwG-zuPp4IbU_EV2Nb5khNwDKgwWomTnx0W3MT4Jm_ESqDm4LQ1CpckRXPVIbc-EDVNXshgEP3tPNF64NO-ezRMQLQ1eXdaRH2rka3v7rq5rZUeddyvf0AnWO3T3b12YwaDBuL4ifIOZxQ50i9FQHfuH"
+          "https://lh3.googleusercontent.com/aida/ADBb0ujSxEgmC55WHLHJBcoOaXdWCKEf-0Xh5EnGh6MPeWdl3HZevBYuvfF67EymScReDNS8qeM4aUlzycy2G5rjKlgvvTzs6A3ZULdTlzQsNi2TtehogdlwG-4ycM5dUSCmY6ej5qpM655hLXCXYs1smDkdmmjQmihM5U6bRoR0JLptmwh1690IOGjWKAmXTekW_5Cdpjd18d8dhVZsASlMNW3a0pUzfpQDHH-x6b-x3e4gsp6DG7qwAoEyKTo",
+          "https://lh3.googleusercontent.com/aida/ADBb0ujyl2-9FXZ8oub7rflsIJ8PDqg73JvFqKc8tqBqY1zesyZPe973_nc4AEJLCW-x7g3p5KeFTNKHZ9eFc1OGmZbQZC0-TKGPGe7mtbUEvNb3EMnohPtbj3CzUnsEi6Q8o3HOoxBMU-oQ6DpXUM5Rgp0tsBNpVxsW1Q-jyr2Kul97s5szTWtYVIhrzBS8knOQ5QsCu3cF5OvIQSMXfNqW4gCIMrklc4jylAkJ5TGvT4XOk-ydLxT0LwibssI",
+          "https://lh3.googleusercontent.com/aida/ADBb0ugowpaUho9pnv6smi7DXUwMkxSDnJOT83XZlwd3RIhmFjfvz2LLbxyCYTgABWKPD_VMFTNqv5DNouR79WrzKtk3ahPQayL3P38Sp3ZwhERANF3y9PLjgDridnwik33ZrafzJIAQTjrYlLq8OD79ayEBS4dlHyQHDcKnFLmd-LL-RuNSfr0pzHKrGyYgtYLfS1nCXN8JjVQiya_EDmjuYkNIeJQlmrS8oxfSoLkbLBSkGbW4hzi2g7YLvLU",
+          "https://lh3.googleusercontent.com/aida/ADBb0uhm0SZH0HyIlyJVCBTZ5OxPvjGHIwiZY5cMTamqvpmKrwoP6FCxC1kMaKpNHyxWQeh4nu2c_N-SbHupSzRv_uLIOi4BQ2nL-HIwi0F11PQCJY0YiqBu114zbFdP3Id_vQ1d54nqupCekzjrKOl1Hyh_CaDBRXiK3oKFnfA4FP0w25BR1vU4A0ERWJl3VXPuYoG2kM7H3-3cbA2uebyNmtaFTl9BIcLjb8KnfBpOrthDddUOboY4s5Q14Q",
+          "https://lh3.googleusercontent.com/aida/ADBb0uhVuomvrkQlaCWqkhYK-I8H2Cph1bi-epbgYCSvv0Qo6sd6BSgEod7ZQCJZM4JDzFuFIcxVIY1QZvaTEUHvPFyGKEgwygO4XUJP_4yUDGM_u5t1kZAbpzPVmJtJf5LrBTqmwIYaF32IYoyNOW26Off1gs1CzR2M8Ymq9LKokbcjmdTrd60zlVXkldMY4GuT8rxNr7FaNy6gGT75jkGVnImPSRt4oJJ_YpPfuhREh9eE5YEM5zlggh0ZjQo",
+          "https://lh3.googleusercontent.com/aida/ADBb0uiAsGYOg1VKaFgD3L1S6u_5lsfo7RbVPG84TBl393wzd0vawDVKXTlumN4s5MyCDxhEXtNMcvY2dpieeNlWfYfd3jO2gcBeCdSTKN2Lp0WuSEIeWOeuKj6P4mBv50yYtWKSNGy_4CZfRNTpwmX6vZNBetQUyt_ZLXu8fv4HFqXbMiiWWnrCgs3DkYYvD3gFy_X3t042-fjPbALVce-E_QqGVXY7tjgd0EoCqxbGNaAFsuM38bgD0wx-XNk",
+          "https://lh3.googleusercontent.com/aida/ADBb0uidIw0tsTvx6piOZfNhCHACVTPmZXtrNqyCxea8Q_Oh2nqZEPtEt1baPXbTUADSOjeLKBDnjLFUdZEiWClOn2ITgi9myru5VMc6ywGBbvs9Y-ouQMJEOQRb3ub8DKxAj98rNbkHyV2BPxo5KnA3dT1boh8bczOEoTRDBdLNK8Mtpg-ucMYLIWHgcEJKhedxnFNhYxn1qVImpLhS5-2K-rucMDBj43Ngov95CKfc-yC7k7h02uEbid5eNbE",
+          "https://lh3.googleusercontent.com/aida/ADBb0uiEMwt-XnJlm4j757MuTxLdgbQtrtHOqX4SpjoWO8Th4i_sqzRj5jb5c809KzXfbHiwZ2jJPxpAqcrIq4gVnsD6MEQdkB6xlpocRxUtzvGXmt7zskN6BoZQcp-FQ844sJoIw2xSnUn7mhsdDcy-3iLE3_gWn9LeIdM4jYRFIulXFa6Bt_SX60EXp7OZbTBM2QmWemSbyLFWk8_fG6AlpCmXjCDA-lify55Rwa2uj8OND5H8Vxm6iFIlYaU"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -75,8 +75,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/f2lUizLGCCeBxkQk5hTA7w"
+      }
     },
     {
       "id": "figma-kit:revolut",
@@ -86,13 +85,13 @@
       "sourceAppName": "Revolut",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "6zI3kpmankQ433Eogt145B",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/revolut/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/revolut/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/revolut/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/revolut/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/revolut/screen-3.png"
+        "/assets/publish-ready/apps/revolut/screen-1.jpg",
+        "/assets/publish-ready/apps/revolut/screen-2.jpg",
+        "/assets/publish-ready/apps/revolut/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -119,7 +118,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/revolut-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -145,8 +144,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/6zI3kpmankQ433Eogt145B"
+      }
     },
     {
       "id": "figma-kit:mint",
@@ -156,8 +154,8 @@
       "sourceAppName": "Mint",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "9D5DkUgAjuDNF6bTYbG033",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/mint/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/mint/screen-1.png",
@@ -189,7 +187,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/mint-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -214,8 +212,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/9D5DkUgAjuDNF6bTYbG033"
+      }
     },
     {
       "id": "figma-kit:robinhood",
@@ -225,8 +222,8 @@
       "sourceAppName": "Robinhood",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "4Rpq7QyIpiphKGST5K8khL",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/robinhood/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/robinhood/screen-1.png",
@@ -258,7 +255,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/robinhood-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -284,8 +281,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/4Rpq7QyIpiphKGST5K8khL"
+      }
     },
     {
       "id": "figma-kit:paypal",
@@ -295,13 +291,13 @@
       "sourceAppName": "PayPal",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "UxPcrs9Wrg5z51080DH2Jy",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/paypal/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/paypal/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/paypal/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/paypal/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/paypal/screen-3.png"
+        "/assets/publish-ready/apps/paypal/screen-1.jpg",
+        "/assets/publish-ready/apps/paypal/screen-2.jpg",
+        "/assets/publish-ready/apps/paypal/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -328,7 +324,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/paypal-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -354,8 +350,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/UxPcrs9Wrg5z51080DH2Jy"
+      }
     },
     {
       "id": "figma-kit:wallet",
@@ -365,13 +360,13 @@
       "sourceAppName": "Wallet",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "BAi1nmxUVLvVZTVTNQWWCW",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wallet/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wallet/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wallet/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wallet/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wallet/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wallet/screen-1.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wallet/screen-2.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wallet/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -398,7 +393,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/wallet-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -424,8 +419,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/BAi1nmxUVLvVZTVTNQWWCW"
+      }
     },
     {
       "id": "figma-kit:wealthfront",
@@ -435,8 +429,8 @@
       "sourceAppName": "Wealthfront",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "HaMwiFAYUWyMla3af3grQs",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wealthfront/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/wealthfront/screen-1.png",
@@ -468,7 +462,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/wealthfront-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -494,8 +488,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/HaMwiFAYUWyMla3af3grQs"
+      }
     },
     {
       "id": "figma-kit:n26",
@@ -505,13 +498,13 @@
       "sourceAppName": "N26",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "pnRIPS11HTtikt7Bzf5Eq9",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/n26/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-3.png"
+        "/assets/publish-ready/apps/n26/screen-1.jpg",
+        "/assets/publish-ready/apps/n26/screen-2.jpg",
+        "/assets/publish-ready/apps/n26/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -538,7 +531,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/n26-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -548,14 +541,14 @@
         "artifactVersion": 1,
         "downloadFileName": "n26-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/n26/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -564,8 +557,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/pnRIPS11HTtikt7Bzf5Eq9"
+      }
     },
     {
       "id": "figma-kit:coinbase",
@@ -575,8 +567,8 @@
       "sourceAppName": "Coinbase",
       "primaryFlowId": "account-settings",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "Zkhqox2Km0zHPMt9ceNsud",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coinbase/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coinbase/screen-1.png",
@@ -608,7 +600,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/coinbase-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -633,8 +625,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/Zkhqox2Km0zHPMt9ceNsud"
+      }
     },
     {
       "id": "figma-kit:binance",
@@ -644,13 +635,13 @@
       "sourceAppName": "Binance",
       "primaryFlowId": "account-settings",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "e6M0cXKkQgOtIu6KygheHz",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/binance/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-3.png"
+        "/assets/publish-ready/apps/binance/screen-1.jpg",
+        "/assets/publish-ready/apps/binance/screen-2.jpg",
+        "/assets/publish-ready/apps/binance/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -677,7 +668,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/binance-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -687,14 +678,14 @@
         "artifactVersion": 1,
         "downloadFileName": "binance-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/binance/screen-8.png"
+          "/assets/publish-ready/apps/binance/screen-1.jpg",
+          "/assets/publish-ready/apps/binance/screen-2.jpg",
+          "/assets/publish-ready/apps/binance/screen-3.jpg",
+          "/assets/publish-ready/apps/binance/screen-4.jpg",
+          "/assets/publish-ready/apps/binance/screen-5.jpg",
+          "/assets/publish-ready/apps/binance/screen-6.jpg",
+          "/assets/publish-ready/apps/binance/screen-7.jpg",
+          "/assets/publish-ready/apps/binance/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -703,8 +694,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/e6M0cXKkQgOtIu6KygheHz"
+      }
     },
     {
       "id": "figma-kit:metamask",
@@ -714,13 +704,13 @@
       "sourceAppName": "MetaMask",
       "primaryFlowId": "account-settings",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "9obVj8nh8tz1MeTTCzIu0e",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/metamask/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-3.png"
+        "/assets/publish-ready/apps/metamask/screen-1.jpg",
+        "/assets/publish-ready/apps/metamask/screen-2.jpg",
+        "/assets/publish-ready/apps/metamask/screen-3.jpg"
       ],
       "includedScreens": 7,
       "includedComponents": [
@@ -747,7 +737,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/metamask-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -757,13 +747,13 @@
         "artifactVersion": 1,
         "downloadFileName": "metamask-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/metamask/screen-7.png"
+          "/assets/publish-ready/apps/metamask/screen-1.jpg",
+          "/assets/publish-ready/apps/metamask/screen-2.jpg",
+          "/assets/publish-ready/apps/metamask/screen-3.jpg",
+          "/assets/publish-ready/apps/metamask/screen-4.jpg",
+          "/assets/publish-ready/apps/metamask/screen-5.jpg",
+          "/assets/publish-ready/apps/metamask/screen-6.jpg",
+          "/assets/publish-ready/apps/metamask/screen-7.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -772,8 +762,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/9obVj8nh8tz1MeTTCzIu0e"
+      }
     },
     {
       "id": "figma-kit:kraken",
@@ -783,13 +772,13 @@
       "sourceAppName": "Kraken",
       "primaryFlowId": "account-settings",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "uPLfi1flttOyTCao96ITOv",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-1.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-2.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -816,7 +805,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/kraken-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -826,14 +815,14 @@
         "artifactVersion": 1,
         "downloadFileName": "kraken-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kraken/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -842,8 +831,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/uPLfi1flttOyTCao96ITOv"
+      }
     },
     {
       "id": "figma-kit:phantom",
@@ -853,13 +841,13 @@
       "sourceAppName": "Phantom",
       "primaryFlowId": "account-settings",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "qlKeLS4or5lhJSD3gtNbte",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-1.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-2.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-3.jpg"
       ],
       "includedScreens": 7,
       "includedComponents": [
@@ -886,7 +874,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/phantom-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -896,13 +884,13 @@
         "artifactVersion": 1,
         "downloadFileName": "phantom-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-7.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/phantom/screen-7.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -911,8 +899,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/qlKeLS4or5lhJSD3gtNbte"
+      }
     },
     {
       "id": "figma-kit:uniswap",
@@ -922,13 +909,13 @@
       "sourceAppName": "Uniswap",
       "primaryFlowId": "account-settings",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "qM7MYyUsJz2dJJypDM724G",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-1.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-2.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -955,7 +942,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/uniswap-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -965,14 +952,14 @@
         "artifactVersion": 1,
         "downloadFileName": "uniswap-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/uniswap/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -981,8 +968,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/qM7MYyUsJz2dJJypDM724G"
+      }
     },
     {
       "id": "figma-kit:ledger",
@@ -992,13 +978,13 @@
       "sourceAppName": "Ledger",
       "primaryFlowId": "account-settings",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "kxtiqwdR8ZvWEyIKoGYd68",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/ledger/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-3.png"
+        "/assets/publish-ready/apps/ledger/screen-1.jpg",
+        "/assets/publish-ready/apps/ledger/screen-2.jpg",
+        "/assets/publish-ready/apps/ledger/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -1025,7 +1011,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/ledger-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1035,14 +1021,14 @@
         "artifactVersion": 1,
         "downloadFileName": "ledger-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ledger/screen-8.png"
+          "/assets/publish-ready/apps/ledger/screen-1.jpg",
+          "/assets/publish-ready/apps/ledger/screen-2.jpg",
+          "/assets/publish-ready/apps/ledger/screen-3.jpg",
+          "/assets/publish-ready/apps/ledger/screen-4.jpg",
+          "/assets/publish-ready/apps/ledger/screen-5.jpg",
+          "/assets/publish-ready/apps/ledger/screen-6.jpg",
+          "/assets/publish-ready/apps/ledger/screen-7.jpg",
+          "/assets/publish-ready/apps/ledger/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1051,8 +1037,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/kxtiqwdR8ZvWEyIKoGYd68"
+      }
     },
     {
       "id": "figma-kit:amazon",
@@ -1062,13 +1047,13 @@
       "sourceAppName": "Amazon",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "vw9RosirSJeGGHq36aVS7f",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-1.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-2.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -1095,7 +1080,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/amazon-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1105,14 +1090,14 @@
         "artifactVersion": 1,
         "downloadFileName": "amazon-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/amazon/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1121,8 +1106,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/vw9RosirSJeGGHq36aVS7f"
+      }
     },
     {
       "id": "figma-kit:ebay",
@@ -1132,8 +1116,8 @@
       "sourceAppName": "eBay",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "g58rqBFnVkyU8lhRmNGlOW",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ebay/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/ebay/screen-1.png",
@@ -1165,7 +1149,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/ebay-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1189,8 +1173,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/g58rqBFnVkyU8lhRmNGlOW"
+      }
     },
     {
       "id": "figma-kit:shopify",
@@ -1200,13 +1183,13 @@
       "sourceAppName": "Shopify",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "oNQCDjRkkDX3bMs3jC6HKN",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/shopify/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-3.png"
+        "/assets/publish-ready/apps/shopify/screen-1.jpg",
+        "/assets/publish-ready/apps/shopify/screen-2.jpg",
+        "/assets/publish-ready/apps/shopify/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -1233,7 +1216,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/shopify-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1243,14 +1226,14 @@
         "artifactVersion": 1,
         "downloadFileName": "shopify-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shopify/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1259,8 +1242,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/oNQCDjRkkDX3bMs3jC6HKN"
+      }
     },
     {
       "id": "figma-kit:etsy",
@@ -1270,13 +1252,13 @@
       "sourceAppName": "Etsy",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "mO1apOYu8jM89KoBJjnsRn",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-1.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-2.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -1303,7 +1285,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/etsy-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1313,14 +1295,14 @@
         "artifactVersion": 1,
         "downloadFileName": "etsy-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/etsy/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1329,8 +1311,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/mO1apOYu8jM89KoBJjnsRn"
+      }
     },
     {
       "id": "figma-kit:zara",
@@ -1340,13 +1321,13 @@
       "sourceAppName": "Zara",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "XJeRTjbRVq0ZTjfyu1EuRw",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/zara/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-3.png"
+        "/assets/publish-ready/apps/zara/screen-1.jpg",
+        "/assets/publish-ready/apps/zara/screen-2.jpg",
+        "/assets/publish-ready/apps/zara/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -1373,7 +1354,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/zara-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1383,14 +1364,14 @@
         "artifactVersion": 1,
         "downloadFileName": "zara-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zara/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1399,8 +1380,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/XJeRTjbRVq0ZTjfyu1EuRw"
+      }
     },
     {
       "id": "figma-kit:asos",
@@ -1410,8 +1390,8 @@
       "sourceAppName": "ASOS",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "j8Z1TnFFMTnv5XXDBAclPk",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asos/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asos/screen-1.png",
@@ -1443,7 +1423,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/asos-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1467,8 +1447,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/j8Z1TnFFMTnv5XXDBAclPk"
+      }
     },
     {
       "id": "figma-kit:nike",
@@ -1478,8 +1457,8 @@
       "sourceAppName": "Nike",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "zcGv9Ce3jX2gkMV2pIjEUQ",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike/screen-1.png",
@@ -1511,7 +1490,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/nike-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1537,8 +1516,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/zcGv9Ce3jX2gkMV2pIjEUQ"
+      }
     },
     {
       "id": "figma-kit:stockx",
@@ -1548,13 +1526,13 @@
       "sourceAppName": "StockX",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "ItFoDYFYuOJITuiOM5xt2K",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/stockx/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-3.png"
+        "/assets/publish-ready/apps/stockx/screen-1.jpg",
+        "/assets/publish-ready/apps/stockx/screen-2.jpg",
+        "/assets/publish-ready/apps/stockx/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -1581,7 +1559,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/stockx-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1591,14 +1569,14 @@
         "artifactVersion": 1,
         "downloadFileName": "stockx-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/stockx/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1607,8 +1585,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/ItFoDYFYuOJITuiOM5xt2K"
+      }
     },
     {
       "id": "figma-kit:instagram",
@@ -1618,13 +1595,13 @@
       "sourceAppName": "Instagram",
       "primaryFlowId": "social-engagement",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "BXUHz0Rn5FLLjcWsFsJDfi",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-1.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-2.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-3.jpg"
       ],
       "includedScreens": 7,
       "includedComponents": [
@@ -1651,7 +1628,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/instagram-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1661,13 +1638,13 @@
         "artifactVersion": 1,
         "downloadFileName": "instagram-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-7.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/instagram/screen-7.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1676,8 +1653,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/BXUHz0Rn5FLLjcWsFsJDfi"
+      }
     },
     {
       "id": "figma-kit:twitter",
@@ -1687,12 +1663,13 @@
       "sourceAppName": "Twitter",
       "primaryFlowId": "social-engagement",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "kBSaDsLWYAYMeTGwmI9XBE",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/twitter/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/twitter/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/twitter/screen-2.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/twitter/screen-2.png",
+        "/assets/publish-ready/apps/twitter/rescue-screen-1.png"
       ],
       "includedScreens": 6,
       "includedComponents": [
@@ -1719,7 +1696,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/twitter-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1730,7 +1707,11 @@
         "downloadFileName": "twitter-figma-kit-delivery-pack.json",
         "previewImages": [
           "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/twitter/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/twitter/screen-2.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/twitter/screen-2.png",
+          "/assets/publish-ready/apps/twitter/rescue-screen-1.png",
+          "/assets/publish-ready/apps/twitter/rescue-screen-2.png",
+          "/assets/publish-ready/apps/twitter/rescue-screen-3.jpg",
+          "/assets/publish-ready/apps/twitter/rescue-screen-4.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1739,8 +1720,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/kBSaDsLWYAYMeTGwmI9XBE"
+      }
     },
     {
       "id": "figma-kit:linkedin",
@@ -1750,8 +1730,8 @@
       "sourceAppName": "LinkedIn",
       "primaryFlowId": "social-engagement",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "30Pvx7Zg7boUkNIH90KaAn",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linkedin/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linkedin/screen-1.png",
@@ -1783,7 +1763,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/linkedin-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1809,8 +1789,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/30Pvx7Zg7boUkNIH90KaAn"
+      }
     },
     {
       "id": "figma-kit:tiktok",
@@ -1820,8 +1799,8 @@
       "sourceAppName": "TikTok",
       "primaryFlowId": "social-engagement",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "5Pef8Q4IYusVq2eC4pK6oj",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tiktok/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tiktok/screen-1.png",
@@ -1853,7 +1832,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/tiktok-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1870,7 +1849,7 @@
           "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tiktok/screen-5.png",
           "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tiktok/screen-6.png",
           "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tiktok/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tiktok/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tiktok/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1879,8 +1858,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/5Pef8Q4IYusVq2eC4pK6oj"
+      }
     },
     {
       "id": "figma-kit:snapchat",
@@ -1890,13 +1868,13 @@
       "sourceAppName": "Snapchat",
       "primaryFlowId": "social-engagement",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "FIrDMcNIYBY9oAJfHBBTyV",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-1.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-2.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -1923,7 +1901,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/snapchat-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -1933,14 +1911,14 @@
         "artifactVersion": 1,
         "downloadFileName": "snapchat-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/snapchat/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -1949,8 +1927,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/FIrDMcNIYBY9oAJfHBBTyV"
+      }
     },
     {
       "id": "figma-kit:whatsapp",
@@ -1960,8 +1937,8 @@
       "sourceAppName": "WhatsApp",
       "primaryFlowId": "social-engagement",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "hkOI39RECtn163G8YVTrdR",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/whatsapp/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/whatsapp/screen-1.png",
@@ -1993,7 +1970,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/whatsapp-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2017,8 +1994,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/hkOI39RECtn163G8YVTrdR"
+      }
     },
     {
       "id": "figma-kit:threads",
@@ -2028,13 +2004,13 @@
       "sourceAppName": "Threads",
       "primaryFlowId": "social-engagement",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "od4whujhtAxrkMRu6H2uoE",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/threads/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-3.png"
+        "/assets/publish-ready/apps/threads/screen-1.jpg",
+        "/assets/publish-ready/apps/threads/screen-2.jpg",
+        "/assets/publish-ready/apps/threads/screen-3.jpg"
       ],
       "includedScreens": 6,
       "includedComponents": [
@@ -2061,7 +2037,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/threads-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2071,12 +2047,12 @@
         "artifactVersion": 1,
         "downloadFileName": "threads-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-6.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/threads/screen-6.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2085,8 +2061,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/od4whujhtAxrkMRu6H2uoE"
+      }
     },
     {
       "id": "figma-kit:bereal",
@@ -2096,13 +2071,13 @@
       "sourceAppName": "BeReal",
       "primaryFlowId": "social-engagement",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "JdSPjA4YqVJbfew021F12d",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/bereal/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-3.png"
+        "/assets/publish-ready/apps/bereal/screen-1.jpg",
+        "/assets/publish-ready/apps/bereal/screen-2.jpg",
+        "/assets/publish-ready/apps/bereal/screen-3.jpg"
       ],
       "includedScreens": 6,
       "includedComponents": [
@@ -2129,7 +2104,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/bereal-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2139,12 +2114,12 @@
         "artifactVersion": 1,
         "downloadFileName": "bereal-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-6.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bereal/screen-6.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2153,8 +2128,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/JdSPjA4YqVJbfew021F12d"
+      }
     },
     {
       "id": "figma-kit:airbnb",
@@ -2164,13 +2138,13 @@
       "sourceAppName": "Airbnb",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "Ifh6R8PmR4m9IhJ35kQulx",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/airbnb/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-3.png"
+        "/assets/publish-ready/apps/airbnb/screen-1.jpg",
+        "/assets/publish-ready/apps/airbnb/screen-2.jpg",
+        "/assets/publish-ready/apps/airbnb/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2197,7 +2171,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/airbnb-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2207,14 +2181,14 @@
         "artifactVersion": 1,
         "downloadFileName": "airbnb-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/airbnb/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2223,8 +2197,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/Ifh6R8PmR4m9IhJ35kQulx"
+      }
     },
     {
       "id": "figma-kit:expedia",
@@ -2234,13 +2207,13 @@
       "sourceAppName": "Expedia",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "aOkZpRhDSuHVKkltDl7yW3",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/expedia/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-3.png"
+        "/assets/publish-ready/apps/expedia/screen-1.jpg",
+        "/assets/publish-ready/apps/expedia/screen-2.jpg",
+        "/assets/publish-ready/apps/expedia/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2267,7 +2240,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/expedia-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2277,14 +2250,14 @@
         "artifactVersion": 1,
         "downloadFileName": "expedia-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/expedia/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2293,8 +2266,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/aOkZpRhDSuHVKkltDl7yW3"
+      }
     },
     {
       "id": "figma-kit:hopper",
@@ -2304,13 +2276,13 @@
       "sourceAppName": "Hopper",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "LFILHhTaKWGerYWBLmtZGP",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/hopper/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-3.png"
+        "/assets/publish-ready/apps/hopper/screen-1.jpg",
+        "/assets/publish-ready/apps/hopper/screen-2.jpg",
+        "/assets/publish-ready/apps/hopper/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2337,7 +2309,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/hopper-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2347,14 +2319,14 @@
         "artifactVersion": 1,
         "downloadFileName": "hopper-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hopper/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2363,8 +2335,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/LFILHhTaKWGerYWBLmtZGP"
+      }
     },
     {
       "id": "figma-kit:booking-com",
@@ -2374,13 +2345,13 @@
       "sourceAppName": "Booking.com",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "DQ0kaJFziXKWnLuZCIHwIi",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-1.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-2.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2407,7 +2378,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/booking-com-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2417,14 +2388,14 @@
         "artifactVersion": 1,
         "downloadFileName": "booking-com-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-4.jpg",
           "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/booking-com/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2433,8 +2404,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/DQ0kaJFziXKWnLuZCIHwIi"
+      }
     },
     {
       "id": "figma-kit:skyscanner",
@@ -2444,8 +2414,8 @@
       "sourceAppName": "Skyscanner",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "HgEWEAmTaxLPVLC1nddQdU",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skyscanner/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skyscanner/screen-1.png",
@@ -2477,7 +2447,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/skyscanner-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2503,8 +2473,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/HgEWEAmTaxLPVLC1nddQdU"
+      }
     },
     {
       "id": "figma-kit:tripadvisor",
@@ -2514,8 +2483,8 @@
       "sourceAppName": "TripAdvisor",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "m0GajiBHMxiLt5jooCogY4",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tripadvisor/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tripadvisor/screen-1.png",
@@ -2547,7 +2516,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/tripadvisor-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2573,8 +2542,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/m0GajiBHMxiLt5jooCogY4"
+      }
     },
     {
       "id": "figma-kit:kayak",
@@ -2584,13 +2552,13 @@
       "sourceAppName": "Kayak",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "sNVbBXuMdk6H8cfVG9Gj45",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/kayak/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-3.png"
+        "/assets/publish-ready/apps/kayak/screen-1.jpg",
+        "/assets/publish-ready/apps/kayak/screen-2.jpg",
+        "/assets/publish-ready/apps/kayak/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2617,7 +2585,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/kayak-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2627,14 +2595,14 @@
         "artifactVersion": 1,
         "downloadFileName": "kayak-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/kayak/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2643,8 +2611,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/sNVbBXuMdk6H8cfVG9Gj45"
+      }
     },
     {
       "id": "figma-kit:hoteltonight",
@@ -2654,13 +2621,13 @@
       "sourceAppName": "HotelTonight",
       "primaryFlowId": "checkout",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "GTDbW2ip1Q9vXCdbCHY7gQ",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/hoteltonight/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-3.png"
+        "/assets/publish-ready/apps/hoteltonight/screen-1.jpg",
+        "/assets/publish-ready/apps/hoteltonight/screen-2.jpg",
+        "/assets/publish-ready/apps/hoteltonight/screen-3.jpg"
       ],
       "includedScreens": 7,
       "includedComponents": [
@@ -2687,7 +2654,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/hoteltonight-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2697,13 +2664,13 @@
         "artifactVersion": 1,
         "downloadFileName": "hoteltonight-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-7.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/hoteltonight/screen-7.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2712,8 +2679,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/GTDbW2ip1Q9vXCdbCHY7gQ"
+      }
     },
     {
       "id": "figma-kit:slack",
@@ -2723,8 +2689,8 @@
       "sourceAppName": "Slack",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "YhCOJ6ZUoafEk1Dl4mc9a5",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/slack/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/slack/screen-1.png",
@@ -2756,7 +2722,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/slack-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2773,7 +2739,7 @@
           "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/slack/screen-5.png",
           "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/slack/screen-6.png",
           "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/slack/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/slack/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/slack/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2782,8 +2748,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/YhCOJ6ZUoafEk1Dl4mc9a5"
+      }
     },
     {
       "id": "figma-kit:zoom",
@@ -2793,13 +2758,13 @@
       "sourceAppName": "Zoom",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "BfQr9qOfclxC2mHYM7hBfQ",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/zoom/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-3.png"
+        "/assets/publish-ready/apps/zoom/screen-1.jpg",
+        "/assets/publish-ready/apps/zoom/screen-2.jpg",
+        "/assets/publish-ready/apps/zoom/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2826,7 +2791,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/zoom-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2836,14 +2801,14 @@
         "artifactVersion": 1,
         "downloadFileName": "zoom-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/zoom/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2852,8 +2817,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/BfQr9qOfclxC2mHYM7hBfQ"
+      }
     },
     {
       "id": "figma-kit:trello",
@@ -2863,13 +2827,13 @@
       "sourceAppName": "Trello",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "YZsWGejlEIwXMKzDtQybnp",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/trello/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-3.png"
+        "/assets/publish-ready/apps/trello/screen-1.jpg",
+        "/assets/publish-ready/apps/trello/screen-2.jpg",
+        "/assets/publish-ready/apps/trello/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -2896,7 +2860,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/trello-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2906,14 +2870,14 @@
         "artifactVersion": 1,
         "downloadFileName": "trello-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/trello/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -2922,8 +2886,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/YZsWGejlEIwXMKzDtQybnp"
+      }
     },
     {
       "id": "figma-kit:notion",
@@ -2933,8 +2896,8 @@
       "sourceAppName": "Notion",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "I8Dv3bp4Iuh7ax3gUyPSD5",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/notion/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/notion/screen-1.png",
@@ -2966,7 +2929,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/notion-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -2991,8 +2954,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/I8Dv3bp4Iuh7ax3gUyPSD5"
+      }
     },
     {
       "id": "figma-kit:asana",
@@ -3002,13 +2964,13 @@
       "sourceAppName": "Asana",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "AB6qw6iOYBuIubaZZiKCXQ",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/asana/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-3.png"
+        "/assets/publish-ready/apps/asana/screen-1.jpg",
+        "/assets/publish-ready/apps/asana/screen-2.jpg",
+        "/assets/publish-ready/apps/asana/screen-3.jpg"
       ],
       "includedScreens": 7,
       "includedComponents": [
@@ -3035,7 +2997,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/asana-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3045,13 +3007,13 @@
         "artifactVersion": 1,
         "downloadFileName": "asana-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-7.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/asana/screen-7.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3060,8 +3022,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/AB6qw6iOYBuIubaZZiKCXQ"
+      }
     },
     {
       "id": "figma-kit:monday-com",
@@ -3071,8 +3032,8 @@
       "sourceAppName": "Monday.com",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "akDLr6s9JdMlXuIDPri40S",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/monday-com/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/monday-com/screen-1.png",
@@ -3104,7 +3065,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/monday-com-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3130,8 +3091,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/akDLr6s9JdMlXuIDPri40S"
+      }
     },
     {
       "id": "figma-kit:linear",
@@ -3141,8 +3101,8 @@
       "sourceAppName": "Linear",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "7yJfhXeoLQFP3vxQEmP1g9",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linear/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/linear/screen-1.png",
@@ -3174,7 +3134,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/linear-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3198,8 +3158,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/7yJfhXeoLQFP3vxQEmP1g9"
+      }
     },
     {
       "id": "figma-kit:loom",
@@ -3209,13 +3168,13 @@
       "sourceAppName": "Loom",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "hKa1xqrRS168F9uQ3FTWWF",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/loom/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-3.png"
+        "/assets/publish-ready/apps/loom/screen-1.jpg",
+        "/assets/publish-ready/apps/loom/screen-2.jpg",
+        "/assets/publish-ready/apps/loom/screen-3.jpg"
       ],
       "includedScreens": 7,
       "includedComponents": [
@@ -3242,7 +3201,7 @@
       ],
       "qualityScore": 69,
       "completenessScore": 68,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/loom-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3252,13 +3211,13 @@
         "artifactVersion": 1,
         "downloadFileName": "loom-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-7.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/loom/screen-7.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3267,8 +3226,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/hKa1xqrRS168F9uQ3FTWWF"
+      }
     },
     {
       "id": "figma-kit:headspace",
@@ -3278,8 +3236,8 @@
       "sourceAppName": "Headspace",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "SG4v9Vv28OLtKSSdVwPZ1O",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/headspace/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/headspace/screen-1.png",
@@ -3311,7 +3269,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/headspace-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3337,8 +3295,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/SG4v9Vv28OLtKSSdVwPZ1O"
+      }
     },
     {
       "id": "figma-kit:calm",
@@ -3348,8 +3305,8 @@
       "sourceAppName": "Calm",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "ls0gQpnLMRF7nVhL2FouN2",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/calm/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/calm/screen-1.png",
@@ -3381,7 +3338,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/calm-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3407,8 +3364,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/ls0gQpnLMRF7nVhL2FouN2"
+      }
     },
     {
       "id": "figma-kit:strava",
@@ -3418,13 +3374,13 @@
       "sourceAppName": "Strava",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "INdb1FAWaszhr1mhW08qIT",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-1.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-2.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -3451,7 +3407,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/strava-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3461,14 +3417,14 @@
         "artifactVersion": 1,
         "downloadFileName": "strava-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/strava/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3477,8 +3433,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/INdb1FAWaszhr1mhW08qIT"
+      }
     },
     {
       "id": "figma-kit:nike-run-club",
@@ -3488,8 +3443,8 @@
       "sourceAppName": "Nike Run Club",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "8NoFNebsFj2Fd6iFnplYXl",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike-run-club/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/nike-run-club/screen-1.png",
@@ -3521,7 +3476,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/nike-run-club-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3547,8 +3502,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/8NoFNebsFj2Fd6iFnplYXl"
+      }
     },
     {
       "id": "figma-kit:myfitnesspal",
@@ -3558,13 +3512,13 @@
       "sourceAppName": "MyFitnessPal",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "72XKcKIl8phYccv5eV4YBT",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/myfitnesspal/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-3.png"
+        "/assets/publish-ready/apps/myfitnesspal/screen-1.jpg",
+        "/assets/publish-ready/apps/myfitnesspal/screen-2.jpg",
+        "/assets/publish-ready/apps/myfitnesspal/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -3591,7 +3545,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/myfitnesspal-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3601,14 +3555,14 @@
         "artifactVersion": 1,
         "downloadFileName": "myfitnesspal-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/myfitnesspal/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3617,8 +3571,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/72XKcKIl8phYccv5eV4YBT"
+      }
     },
     {
       "id": "figma-kit:fitbit",
@@ -3628,13 +3581,13 @@
       "sourceAppName": "Fitbit",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "gKFaqhyylPtJUKud7RT5WL",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-1.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-2.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-3.jpg"
       ],
       "includedScreens": 6,
       "includedComponents": [
@@ -3661,7 +3614,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/fitbit-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3671,12 +3624,12 @@
         "artifactVersion": 1,
         "downloadFileName": "fitbit-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-6.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/fitbit/screen-6.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3685,8 +3638,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/gKFaqhyylPtJUKud7RT5WL"
+      }
     },
     {
       "id": "figma-kit:flo",
@@ -3696,13 +3648,13 @@
       "sourceAppName": "Flo",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "BqbumVee0jTJAGE8HZZOif",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-1.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-2.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -3729,7 +3681,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/flo-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3739,14 +3691,14 @@
         "artifactVersion": 1,
         "downloadFileName": "flo-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flo/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3755,8 +3707,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/BqbumVee0jTJAGE8HZZOif"
+      }
     },
     {
       "id": "figma-kit:sleep-cycle",
@@ -3766,13 +3717,13 @@
       "sourceAppName": "Sleep Cycle",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "IT67Mv1sQCsLXnD1IoWFWa",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/sleep-cycle/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-3.png"
+        "/assets/publish-ready/apps/sleep-cycle/screen-1.jpg",
+        "/assets/publish-ready/apps/sleep-cycle/screen-2.jpg",
+        "/assets/publish-ready/apps/sleep-cycle/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -3799,7 +3750,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/sleep-cycle-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3809,14 +3760,14 @@
         "artifactVersion": 1,
         "downloadFileName": "sleep-cycle-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/sleep-cycle/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -3825,8 +3776,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/IT67Mv1sQCsLXnD1IoWFWa"
+      }
     },
     {
       "id": "figma-kit:spotify",
@@ -3836,8 +3786,8 @@
       "sourceAppName": "Spotify",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "oJmv5djBOIvWZPH7LdnARJ",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/spotify/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/spotify/screen-1.png",
@@ -3869,7 +3819,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/spotify-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3895,8 +3845,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/oJmv5djBOIvWZPH7LdnARJ"
+      }
     },
     {
       "id": "figma-kit:apple-music",
@@ -3906,8 +3855,8 @@
       "sourceAppName": "Apple Music",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "QQhpVpgHSAi9GD2Ckt5T5c",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/apple-music/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/apple-music/screen-1.png",
@@ -3939,7 +3888,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/apple-music-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -3965,8 +3914,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/QQhpVpgHSAi9GD2Ckt5T5c"
+      }
     },
     {
       "id": "figma-kit:soundcloud",
@@ -3976,8 +3924,8 @@
       "sourceAppName": "SoundCloud",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "azVKVDi6OXyQWBewSfAWJM",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/soundcloud/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/soundcloud/screen-1.png",
@@ -4009,7 +3957,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/soundcloud-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4035,8 +3983,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/azVKVDi6OXyQWBewSfAWJM"
+      }
     },
     {
       "id": "figma-kit:tidal",
@@ -4046,13 +3993,13 @@
       "sourceAppName": "Tidal",
       "primaryFlowId": "subscription-upgrade",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "hj0COPQtUGokxoHxqxnM8X",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-1.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-2.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-3.jpg"
       ],
       "includedScreens": 6,
       "includedComponents": [
@@ -4079,7 +4026,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/tidal-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4089,10 +4036,10 @@
         "artifactVersion": 1,
         "downloadFileName": "tidal-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-4.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/tidal/screen-4.jpg",
           "/assets/publish-ready/apps/tidal/rescue-screen-1.jpg",
           "/assets/publish-ready/apps/tidal/rescue-screen-2.jpg"
         ],
@@ -4103,8 +4050,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/hj0COPQtUGokxoHxqxnM8X"
+      }
     },
     {
       "id": "figma-kit:deezer",
@@ -4114,13 +4060,13 @@
       "sourceAppName": "Deezer",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "L2aUhEBc4K9st2B2FvNKRG",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/deezer/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-3.png"
+        "/assets/publish-ready/apps/deezer/screen-1.jpg",
+        "/assets/publish-ready/apps/deezer/screen-2.jpg",
+        "/assets/publish-ready/apps/deezer/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -4147,7 +4093,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/deezer-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4157,14 +4103,14 @@
         "artifactVersion": 1,
         "downloadFileName": "deezer-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/deezer/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4173,8 +4119,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/L2aUhEBc4K9st2B2FvNKRG"
+      }
     },
     {
       "id": "figma-kit:pandora",
@@ -4184,13 +4129,13 @@
       "sourceAppName": "Pandora",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "VKUjPUJ4M2huFWsUKkwhl6",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-1.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-2.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -4217,7 +4162,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/pandora-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4227,14 +4172,14 @@
         "artifactVersion": 1,
         "downloadFileName": "pandora-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pandora/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4243,8 +4188,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/VKUjPUJ4M2huFWsUKkwhl6"
+      }
     },
     {
       "id": "figma-kit:shazam",
@@ -4254,8 +4198,8 @@
       "sourceAppName": "Shazam",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "uM11NkFjHHHQA6BA3MOZTD",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shazam/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/shazam/screen-1.png",
@@ -4287,7 +4231,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/shazam-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4313,8 +4257,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/uM11NkFjHHHQA6BA3MOZTD"
+      }
     },
     {
       "id": "figma-kit:duolingo",
@@ -4324,13 +4267,13 @@
       "sourceAppName": "Duolingo",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "w9XIzulDYS5DdfSfa4ECPV",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/duolingo/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-3.png"
+        "/assets/publish-ready/apps/duolingo/screen-1.jpg",
+        "/assets/publish-ready/apps/duolingo/screen-2.jpg",
+        "/assets/publish-ready/apps/duolingo/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -4357,7 +4300,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/duolingo-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4367,14 +4310,14 @@
         "artifactVersion": 1,
         "downloadFileName": "duolingo-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/duolingo/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4383,8 +4326,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/w9XIzulDYS5DdfSfa4ECPV"
+      }
     },
     {
       "id": "figma-kit:coursera",
@@ -4394,8 +4336,8 @@
       "sourceAppName": "Coursera",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "KCw4PyMuPofqQUtxKwAOVi",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coursera/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/coursera/screen-1.png",
@@ -4427,7 +4369,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/coursera-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4451,8 +4393,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/KCw4PyMuPofqQUtxKwAOVi"
+      }
     },
     {
       "id": "figma-kit:masterclass",
@@ -4462,8 +4403,8 @@
       "sourceAppName": "MasterClass",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "f5yBnHDK9ZNGE8Ig4xbSsj",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/masterclass/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/masterclass/screen-1.png",
@@ -4495,7 +4436,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/masterclass-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4521,8 +4462,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/f5yBnHDK9ZNGE8Ig4xbSsj"
+      }
     },
     {
       "id": "figma-kit:udemy",
@@ -4532,13 +4472,13 @@
       "sourceAppName": "Udemy",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "F6ddvGF3JkXUqJh16aSxWM",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-1.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-2.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -4565,7 +4505,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/udemy-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4575,14 +4515,14 @@
         "artifactVersion": 1,
         "downloadFileName": "udemy-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/udemy/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4591,8 +4531,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/F6ddvGF3JkXUqJh16aSxWM"
+      }
     },
     {
       "id": "figma-kit:khan-academy",
@@ -4602,8 +4541,8 @@
       "sourceAppName": "Khan Academy",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "tqz970UaYJDCr7b2csHVmp",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/khan-academy/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/khan-academy/screen-1.png",
@@ -4635,7 +4574,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/khan-academy-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4661,8 +4600,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/tqz970UaYJDCr7b2csHVmp"
+      }
     },
     {
       "id": "figma-kit:skillshare",
@@ -4672,8 +4610,8 @@
       "sourceAppName": "Skillshare",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "3WH73htwuybxonNYLJ14rJ",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skillshare/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/skillshare/screen-1.png",
@@ -4705,7 +4643,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/skillshare-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4731,8 +4669,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/3WH73htwuybxonNYLJ14rJ"
+      }
     },
     {
       "id": "figma-kit:babbel",
@@ -4742,13 +4679,13 @@
       "sourceAppName": "Babbel",
       "primaryFlowId": "onboarding",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "bjL0VTlJoLst9Q0lOoE914",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-1.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-2.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -4775,7 +4712,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/babbel-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4785,14 +4722,14 @@
         "artifactVersion": 1,
         "downloadFileName": "babbel-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/babbel/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -4801,8 +4738,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/bjL0VTlJoLst9Q0lOoE914"
+      }
     },
     {
       "id": "figma-kit:the-new-york-times",
@@ -4812,8 +4748,8 @@
       "sourceAppName": "The New York Times",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "aXfYJrvhSa9Sh5gmydr8aF",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/the-new-york-times/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/the-new-york-times/screen-1.png",
@@ -4845,7 +4781,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/the-new-york-times-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4871,8 +4807,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/aXfYJrvhSa9Sh5gmydr8aF"
+      }
     },
     {
       "id": "figma-kit:bbc-news",
@@ -4882,8 +4817,8 @@
       "sourceAppName": "BBC News",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "QJE304CBjIWEXYMgMIxKGb",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bbc-news/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/bbc-news/screen-1.png",
@@ -4915,7 +4850,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/bbc-news-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4941,8 +4876,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/QJE304CBjIWEXYMgMIxKGb"
+      }
     },
     {
       "id": "figma-kit:cnn",
@@ -4952,13 +4886,13 @@
       "sourceAppName": "CNN",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "RTMwxXJET35EiwbWOaLt5r",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/cnn/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/cnn/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/cnn/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/cnn/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/cnn/screen-3.png"
+        "/assets/publish-ready/apps/cnn/screen-1.jpg",
+        "/assets/publish-ready/apps/cnn/screen-2.jpg",
+        "/assets/publish-ready/apps/cnn/screen-3.jpg"
       ],
       "includedScreens": 6,
       "includedComponents": [
@@ -4985,7 +4919,7 @@
       ],
       "qualityScore": 68,
       "completenessScore": 66,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/cnn-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -4995,11 +4929,11 @@
         "artifactVersion": 1,
         "downloadFileName": "cnn-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/cnn/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/cnn/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/cnn/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/cnn/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/cnn/screen-5.png",
+          "/assets/publish-ready/apps/cnn/screen-1.jpg",
+          "/assets/publish-ready/apps/cnn/screen-2.jpg",
+          "/assets/publish-ready/apps/cnn/screen-3.jpg",
+          "/assets/publish-ready/apps/cnn/screen-4.jpg",
+          "/assets/publish-ready/apps/cnn/screen-5.jpg",
           "/assets/publish-ready/apps/cnn/rescue-screen-1.jpg"
         ],
         "includes": [
@@ -5009,8 +4943,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/RTMwxXJET35EiwbWOaLt5r"
+      }
     },
     {
       "id": "figma-kit:reuters",
@@ -5020,13 +4953,13 @@
       "sourceAppName": "Reuters",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "QbrN7DcYiiMEx0Y1sml8uS",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/reuters/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-3.png"
+        "/assets/publish-ready/apps/reuters/screen-1.jpg",
+        "/assets/publish-ready/apps/reuters/screen-2.jpg",
+        "/assets/publish-ready/apps/reuters/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -5053,7 +4986,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/reuters-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -5063,14 +4996,14 @@
         "artifactVersion": 1,
         "downloadFileName": "reuters-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/reuters/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -5079,8 +5012,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/QbrN7DcYiiMEx0Y1sml8uS"
+      }
     },
     {
       "id": "figma-kit:flipboard",
@@ -5090,8 +5022,8 @@
       "sourceAppName": "Flipboard",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "8aJDuRIUFr9CIG2OZewLxq",
+      "status": "blocked",
+      "figmaFileKey": null,
       "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flipboard/screen-1.png",
       "gallery": [
         "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/flipboard/screen-1.png",
@@ -5123,7 +5055,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/flipboard-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -5149,8 +5081,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/8aJDuRIUFr9CIG2OZewLxq"
+      }
     },
     {
       "id": "figma-kit:substack",
@@ -5160,13 +5091,13 @@
       "sourceAppName": "Substack",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "HGsR3DrfyQlZXYkkRmdN1F",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-3.png"
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-1.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-2.jpg",
+        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -5193,7 +5124,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/substack-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -5203,13 +5134,13 @@
         "artifactVersion": 1,
         "downloadFileName": "substack-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-7.png",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-7.jpg",
           "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/substack/screen-8.png"
         ],
         "includes": [
@@ -5219,8 +5150,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/HGsR3DrfyQlZXYkkRmdN1F"
+      }
     },
     {
       "id": "figma-kit:pocket",
@@ -5230,13 +5160,13 @@
       "sourceAppName": "Pocket",
       "primaryFlowId": "search-discovery",
       "type": "flow-kit",
-      "status": "published",
-      "figmaFileKey": "cJnbRMy4cBl8JlFBSSh1oQ",
-      "thumbnail": "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-1.png",
+      "status": "blocked",
+      "figmaFileKey": null,
+      "thumbnail": "/assets/publish-ready/apps/pocket/screen-1.jpg",
       "gallery": [
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-1.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-2.png",
-        "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-3.png"
+        "/assets/publish-ready/apps/pocket/screen-1.jpg",
+        "/assets/publish-ready/apps/pocket/screen-2.jpg",
+        "/assets/publish-ready/apps/pocket/screen-3.jpg"
       ],
       "includedScreens": 8,
       "includedComponents": [
@@ -5263,7 +5193,7 @@
       ],
       "qualityScore": 96,
       "completenessScore": 100,
-      "lastReviewedAt": "2026-04-04T23:08:26.207Z",
+      "lastReviewedAt": "2026-04-24T07:19:21.113Z",
       "previewPath": "/kits/pocket-figma-kit",
       "purchasePath": "/pricing",
       "delivery": {
@@ -5273,14 +5203,14 @@
         "artifactVersion": 1,
         "downloadFileName": "pocket-figma-kit-delivery-pack.json",
         "previewImages": [
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-1.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-2.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-3.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-4.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-5.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-6.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-7.png",
-          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-8.png"
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-1.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-2.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-3.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-4.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-5.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-6.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-7.jpg",
+          "https://pub-bd75af0a80eb4157a917245b7ae0359b.r2.dev/apps/pocket/screen-8.jpg"
         ],
         "includes": [
           "Editable Figma flow file",
@@ -5289,8 +5219,7 @@
           "Color and text style tokens",
           "Commercial license summary"
         ]
-      },
-      "figmaFileUrl": "https://www.figma.com/design/cJnbRMy4cBl8JlFBSSh1oQ"
+      }
     }
   ]
 }

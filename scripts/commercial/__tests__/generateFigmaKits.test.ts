@@ -1,10 +1,34 @@
+import { mkdtemp, rm, writeFile } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 import {
   buildGeneratedArtifactsBridge,
   deriveCommercialPublication,
+  isFinalizationRecordForKit,
   mergeRecordsByProductId,
+  readFinalizationIfExists,
   selectGeneratedArtifactsRun,
 } from '../generate-figma-kits.mjs';
+import { isFinalizedForSale } from '../lib/kitFinalization.mjs';
+
+const buildFinalizedRecord = ({
+  kitSlug = 'monzo-figma-kit',
+  productId = 'figma-kit:monzo',
+} = {}) => ({
+  kitSlug,
+  productId,
+  finalizationStatus: 'finalized',
+  auditClassification: 'finalized',
+  exportEligibility: { status: 'pass' },
+  contentVerification: { status: 'pass' },
+  exportVerification: { status: 'pass' },
+  deliveryVerification: { status: 'pass' },
+  exportEvidence: {
+    finalAssetId: 'figma-file-123',
+    finalAssetUrl: 'https://www.figma.com/file/figma-file-123/Monzo',
+  },
+});
 
 describe('generate-figma-kits Stitch artifact bridge', () => {
   it('seeds generated artifact metadata from the latest Stitch ledger run when available', () => {
@@ -37,7 +61,7 @@ describe('generate-figma-kits Stitch artifact bridge', () => {
     expect(generatedArtifacts.commercialReady).toBe(false);
   });
 
-  it('marks a kit as packaged and commercially ready when Stitch run and figma reconstruction are both done', () => {
+  it('marks a kit as packaged but not commercially ready when finalization is missing', () => {
     const generatedArtifacts = buildGeneratedArtifactsBridge({
       productSlug: 'monzo-figma-kit',
       generatedAt: '2026-04-03T00:00:00.000Z',
@@ -58,7 +82,7 @@ describe('generate-figma-kits Stitch artifact bridge', () => {
 
     expect(generatedArtifacts.generationStatus).toBe('packaged');
     expect(generatedArtifacts.stage).toBe('packaged');
-    expect(generatedArtifacts.commercialReady).toBe(true);
+    expect(generatedArtifacts.commercialReady).toBe(false);
   });
 
   it('falls back to pending pre-generation metadata when no Stitch ledger run exists', () => {
@@ -82,7 +106,7 @@ describe('generate-figma-kits Stitch artifact bridge', () => {
     expect(generatedArtifacts.commercialReady).toBe(false);
   });
 
-  it('marks a direct reconstruction packet as packaged without a Stitch run', () => {
+  it('marks a direct reconstruction packet as packaged without making it commercially ready', () => {
     const generatedArtifacts = buildGeneratedArtifactsBridge({
       productSlug: 'monzo-figma-kit',
       generatedAt: '2026-04-03T00:00:00.000Z',
@@ -112,7 +136,7 @@ describe('generate-figma-kits Stitch artifact bridge', () => {
       '/assets/apps/monzo/screen-1.png',
       '/assets/apps/monzo/screen-2.png',
     ]);
-    expect(generatedArtifacts.commercialReady).toBe(true);
+    expect(generatedArtifacts.commercialReady).toBe(false);
   });
 
   it('prefers the last successful generated run over a newer failed run', () => {
@@ -238,5 +262,147 @@ describe('generate-figma-kits Stitch artifact bridge', () => {
       publishReadyForSale: true,
       completenessStatus: 'pass',
     });
+  });
+
+  it('requires finalized/pass checks before a finalization record is sale-ready', () => {
+    const finalized = buildFinalizedRecord();
+
+    expect(isFinalizedForSale(finalized)).toBe(true);
+    expect(isFinalizedForSale({ ...finalized, finalizationStatus: 'content_verified' })).toBe(false);
+    expect(isFinalizedForSale({ ...finalized, auditClassification: 'repairable' })).toBe(false);
+    expect(
+      isFinalizedForSale({
+        ...finalized,
+        deliveryVerification: { status: 'fail' },
+      }),
+    ).toBe(false);
+  });
+
+  it('requires finalization identity to match the current catalog item', () => {
+    const finalized = buildFinalizedRecord();
+
+    expect(
+      isFinalizationRecordForKit(finalized, {
+        kitSlug: 'monzo-figma-kit',
+        productId: 'figma-kit:monzo',
+      }),
+    ).toBe(true);
+    expect(
+      isFinalizationRecordForKit(finalized, {
+        kitSlug: 'revolut-figma-kit',
+        productId: 'figma-kit:monzo',
+      }),
+    ).toBe(false);
+    expect(
+      isFinalizationRecordForKit(finalized, {
+        kitSlug: 'monzo-figma-kit',
+        productId: 'figma-kit:revolut',
+      }),
+    ).toBe(false);
+  });
+
+  it('keeps packaged generated artifacts blocked when finalization is missing', () => {
+    const generatedArtifacts = buildGeneratedArtifactsBridge({
+      productSlug: 'monzo-figma-kit',
+      generatedAt: '2026-04-03T00:00:00.000Z',
+      commercialReady: true,
+      publishReadyForSale: true,
+      exportPackageFileName: 'monzo-figma-kit.fig',
+      previewCount: 3,
+      latestRun: {
+        generatedAt: '2026-04-03T01:00:00.000Z',
+        generationStatus: 'generated',
+        stitchProjectId: 'projects/project-123',
+        selectedScreenIds: ['screen-123'],
+        stitchHtmlFiles: ['https://example.com/screen.html'],
+        stitchPreviewImages: ['https://example.com/screen.png'],
+      },
+      reconstruction: { reconstructionStatus: 'done' },
+      finalization: null,
+      rootDir: '/workspace',
+    });
+
+    expect(generatedArtifacts.generationStatus).toBe('packaged');
+    expect(generatedArtifacts.commercialReady).toBe(false);
+    expect(generatedArtifacts.publishReadyForSale).toBe(false);
+  });
+
+  it('marks packaged generated artifacts commercially ready when finalization passes', () => {
+    const generatedArtifacts = buildGeneratedArtifactsBridge({
+      productSlug: 'monzo-figma-kit',
+      productId: 'figma-kit:monzo',
+      generatedAt: '2026-04-03T00:00:00.000Z',
+      commercialReady: true,
+      publishReadyForSale: true,
+      exportPackageFileName: 'monzo-figma-kit.fig',
+      previewCount: 3,
+      latestRun: {
+        generatedAt: '2026-04-03T01:00:00.000Z',
+        generationStatus: 'generated',
+        stitchProjectId: 'projects/project-123',
+        selectedScreenIds: ['screen-123'],
+        stitchHtmlFiles: ['https://example.com/screen.html'],
+        stitchPreviewImages: ['https://example.com/screen.png'],
+      },
+      reconstruction: { reconstructionStatus: 'done' },
+      finalization: buildFinalizedRecord(),
+      rootDir: '/workspace',
+    });
+
+    expect(generatedArtifacts.commercialReady).toBe(true);
+    expect(generatedArtifacts.publishReadyForSale).toBe(true);
+    expect(generatedArtifacts.finalizationStatus).toBe('finalized');
+    expect(generatedArtifacts.auditClassification).toBe('finalized');
+    expect(generatedArtifacts.finalAssetId).toBe('figma-file-123');
+    expect(generatedArtifacts.finalAssetUrl).toBe('https://www.figma.com/file/figma-file-123/Monzo');
+  });
+
+  it('ignores finalized records copied into the wrong kit folder', () => {
+    const generatedArtifacts = buildGeneratedArtifactsBridge({
+      productSlug: 'monzo-figma-kit',
+      productId: 'figma-kit:monzo',
+      generatedAt: '2026-04-03T00:00:00.000Z',
+      commercialReady: true,
+      publishReadyForSale: true,
+      exportPackageFileName: 'monzo-figma-kit.fig',
+      previewCount: 3,
+      latestRun: {
+        generatedAt: '2026-04-03T01:00:00.000Z',
+        generationStatus: 'generated',
+        stitchProjectId: 'projects/project-123',
+        selectedScreenIds: ['screen-123'],
+        stitchHtmlFiles: ['https://example.com/screen.html'],
+        stitchPreviewImages: ['https://example.com/screen.png'],
+      },
+      reconstruction: { reconstructionStatus: 'done' },
+      finalization: buildFinalizedRecord({
+        kitSlug: 'revolut-figma-kit',
+        productId: 'figma-kit:revolut',
+      }),
+      rootDir: '/workspace',
+    });
+
+    expect(generatedArtifacts.generationStatus).toBe('packaged');
+    expect(generatedArtifacts.commercialReady).toBe(false);
+    expect(generatedArtifacts.publishReadyForSale).toBe(false);
+    expect(generatedArtifacts.finalizationStatus).toBe(null);
+    expect(generatedArtifacts.finalAssetId).toBe(null);
+  });
+
+  it('returns null for missing finalization files and throws on malformed finalization JSON', async () => {
+    const missingPath = path.join(tmpdir(), `missing-finalization-${Date.now()}.json`);
+    await expect(readFinalizationIfExists(missingPath)).resolves.toBe(null);
+
+    const tempDir = await mkdtemp(path.join(tmpdir(), 'luxuryui-finalization-'));
+    const malformedPath = path.join(tempDir, 'finalization.json');
+
+    try {
+      await writeFile(malformedPath, '{ not-json', 'utf8');
+      await expect(readFinalizationIfExists(malformedPath)).rejects.toThrow(
+        `Malformed finalization JSON at ${malformedPath}`,
+      );
+    } finally {
+      await rm(tempDir, { recursive: true, force: true });
+    }
   });
 });

@@ -22,26 +22,26 @@ const KitDeliveryPage: React.FC = () => {
 
   const unlock = getUnlock(kit.id);
   const manifest = getFigmaManifest(kit.id);
+  const finalAssetUrl = manifest?.generatedArtifacts.finalAssetUrl ?? null;
+  const isFinalized = manifest?.generatedArtifacts.finalizationStatus === 'finalized';
 
   const handleDownload = async () => {
     setDownloadError('');
 
     try {
-      const { url, fileName } = createDownload(kit.id);
-      const anchor = document.createElement('a');
-      anchor.href = url;
-      anchor.download = fileName;
-      document.body.appendChild(anchor);
-      anchor.click();
-      document.body.removeChild(anchor);
-      window.setTimeout(() => URL.revokeObjectURL(url), 0);
+      const { url, metadataUrl } = createDownload(kit.id);
+      window.open(url, '_blank', 'noopener,noreferrer');
+
+      if (metadataUrl) {
+        window.setTimeout(() => URL.revokeObjectURL(metadataUrl), 0);
+      }
 
       if (unlock) {
         await markDownloadStatus(unlock.id, 'downloaded');
       }
       setDownloadedAt(new Date().toLocaleTimeString());
     } catch (error) {
-      setDownloadError(error instanceof Error ? error.message : 'Could not generate the delivery package.');
+      setDownloadError(error instanceof Error ? error.message : 'Could not open the final Figma asset.');
     }
   };
 
@@ -51,7 +51,7 @@ const KitDeliveryPage: React.FC = () => {
         <p className="text-xs font-black uppercase tracking-[0.24em] text-gray-400 dark:text-gray-500 mb-4">Delivery</p>
         <h1 className="text-4xl md:text-5xl font-black tracking-tight text-gray-900 dark:text-white mb-4">{kit.title}</h1>
         <p className="text-[15px] leading-relaxed text-gray-600 dark:text-gray-400 mb-8">
-          Your kit is unlocked. Download the delivery package, review the file blueprint, and return here any time from your account library.
+          Your kit is unlocked. Open the final Figma asset and keep the delivery blueprint here for provenance and support.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
@@ -73,14 +73,20 @@ const KitDeliveryPage: React.FC = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-3">
-          <button
-            type="button"
-            onClick={handleDownload}
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-black dark:bg-white px-6 py-3 text-sm font-black text-white dark:text-black"
-          >
-            <Download size={16} />
-            Download delivery pack
-          </button>
+          {!isFinalized || !finalAssetUrl ? (
+            <div className="rounded-2xl border border-amber-200 bg-amber-50 px-4 py-4 text-sm font-semibold text-amber-800 dark:border-amber-900/50 dark:bg-amber-950/30 dark:text-amber-200">
+              Final asset delivery is not available for this kit yet.
+            </div>
+          ) : (
+            <button
+              type="button"
+              onClick={handleDownload}
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-black dark:bg-white px-6 py-3 text-sm font-black text-white dark:text-black"
+            >
+              <Download size={16} />
+              Open final Figma asset
+            </button>
+          )}
           <Link
             to="/account"
             className="inline-flex items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 px-6 py-3 text-sm font-bold text-gray-700 dark:text-gray-200"
@@ -91,7 +97,7 @@ const KitDeliveryPage: React.FC = () => {
 
         {(downloadError || downloadedAt) && (
           <div className="mt-5 rounded-2xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-950/40 px-4 py-4 text-sm text-gray-600 dark:text-gray-300">
-            {downloadError || `Delivery package downloaded at ${downloadedAt}.`}
+            {downloadError || `Final Figma asset opened at ${downloadedAt}.`}
           </div>
         )}
       </section>

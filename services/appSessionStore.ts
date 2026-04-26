@@ -10,6 +10,7 @@ import {
   CreditTransaction,
   CreditWallet,
   FigmaKitProduct,
+  KitDeliveryAsset,
   KitOrder,
   KitUnlock,
   UserProfile,
@@ -336,7 +337,7 @@ export const createDeliveryDownload = (
   user: UserProfile | null,
   unlock: KitUnlock | undefined,
   productId: string
-): { url: string; fileName: string } => {
+): KitDeliveryAsset => {
   if (!user) {
     throw new Error('Sign in before downloading this package.');
   }
@@ -349,8 +350,15 @@ export const createDeliveryDownload = (
   const spec = getFigmaKitSpec(productId);
   const review = getCommercialReview(productId);
   const manifest = getFigmaManifest(productId);
+  const finalAssetUrl = manifest?.generatedArtifacts.finalAssetUrl ?? null;
+  const finalAssetId = manifest?.generatedArtifacts.finalAssetId ?? kit?.figmaFileKey ?? null;
+  const isFinalized = manifest?.generatedArtifacts.finalizationStatus === 'finalized';
 
-  const payload = {
+  if (!kit || !manifest || !isFinalized || !finalAssetUrl) {
+    throw new Error('This kit is not finalized for delivery yet.');
+  }
+
+  const supportPayload = {
     exportedAt: now(),
     unlockedBy: {
       uid: user.uid,
@@ -365,9 +373,15 @@ export const createDeliveryDownload = (
     manifest,
   };
 
-  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
-  const url = URL.createObjectURL(blob);
-  const fileName = `${productId.replace(':', '-')}-delivery-pack.json`;
+  const blob = new Blob([JSON.stringify(supportPayload, null, 2)], { type: 'application/json' });
+  const metadataUrl = URL.createObjectURL(blob);
+  const fileName = `${kit.slug}.figma-url`;
 
-  return { url, fileName };
+  return {
+    kind: 'figma-final-asset',
+    url: finalAssetUrl,
+    fileName,
+    assetId: finalAssetId,
+    metadataUrl,
+  };
 };

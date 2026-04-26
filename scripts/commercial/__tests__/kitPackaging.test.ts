@@ -11,6 +11,8 @@ describe('commercial artifact paths', () => {
     expect(paths.generatedKitArtifactsDir).toBe('/workspace/data/curation/commercial/generated-kit-artifacts/monzo-figma-kit');
     expect(paths.deliveryPacksDir).toBe('/workspace/data/curation/commercial/delivery-packs');
     expect(paths.deliveryPackPath).toBe('/workspace/data/curation/commercial/delivery-packs/monzo-figma-kit.json');
+    expect(paths.finalizationPath).toBe('/workspace/data/curation/commercial/generated-kit-artifacts/monzo-figma-kit/release/finalization.json');
+    expect(paths.finalizationAuditPath).toBe('/workspace/data/curation/commercial/coverage/commercial-finalization-audit.json');
   });
 
   it('keeps rootDir slash roots absolute', () => {

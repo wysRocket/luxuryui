@@ -1,0 +1,53 @@
+{
+  "productId": "figma-kit:skillshare",
+  "kitSlug": "skillshare-figma-kit",
+  "auditedAt": "2026-04-24T05:19:15.471Z",
+  "finalizationStatus": "blocked",
+  "auditClassification": "must_regenerate",
+  "exportEligibility": {
+    "status": "blocked",
+    "stitchProjectId": null,
+    "stitchMode": null,
+    "normalizedStitchMode": null,
+    "reasons": [
+      "blocked_non_exportable_stitch_mode",
+      "blocked_missing_stitch_project"
+    ]
+  },
+  "contentVerification": {
+    "status": "blocked",
+    "reconstructionStatus": null,
+    "contentBuiltAt": null,
+    "includedFrameCount": 13,
+    "componentAbstractionCount": 4,
+    "colorStyleCount": 3,
+    "reasons": [
+      "blocked_reconstruction_incomplete",
+      "blocked_missing_content_timestamp"
+    ]
+  },
+  "exportVerification": {
+    "status": "blocked",
+    "evidence": null,
+    "reasons": [
+      "blocked_export_evidence_missing"
+    ]
+  },
+  "deliveryVerification": {
+    "status": "blocked",
+    "verification": null,
+    "reasons": [
+      "blocked_delivery_handoff_unverified"
+    ]
+  },
+  "exportEvidence": null,
+  "blockingReasons": [
+    "blocked_non_exportable_stitch_mode",
+    "blocked_missing_stitch_project",
+    "blocked_reconstruction_incomplete",
+    "blocked_missing_content_timestamp",
+    "blocked_export_evidence_missing",
+    "blocked_delivery_handoff_unverified"
+  ],
+  "productStatus": "blocked"
+}

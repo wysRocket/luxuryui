@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { getKitArtifactPaths } from './lib/commercialArtifactPaths.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -11,14 +12,43 @@ const reviewsPath = path.join(projectRoot, 'data', 'curation', 'commercial', 'co
 const specsPath = path.join(projectRoot, 'data', 'curation', 'commercial', 'figma-kit-specs.json');
 const manifestsPath = path.join(projectRoot, 'data', 'curation', 'commercial', 'figma-content-manifests.json');
 
-export const checkCommercialReadiness = async () => {
-  const [productsDoc, reviewsDoc, specsDoc, manifestsDoc] = await Promise.all([
-    readFile(productsPath, 'utf8').then((raw) => JSON.parse(raw)),
-    readFile(reviewsPath, 'utf8').then((raw) => JSON.parse(raw)),
-    readFile(specsPath, 'utf8').then((raw) => JSON.parse(raw)),
-    readFile(manifestsPath, 'utf8').then((raw) => JSON.parse(raw)),
-  ]);
+const hasText = (value) => typeof value === 'string' && value.trim().length > 0;
 
+const readJsonIfExists = async (filePath) => {
+  try {
+    return JSON.parse(await readFile(filePath, 'utf8'));
+  } catch (error) {
+    if (error?.code === 'ENOENT') {
+      return null;
+    }
+
+    throw error;
+  }
+};
+
+const loadFinalizationsBySlug = async (productsDoc) => {
+  const finalizationsBySlug = new Map();
+
+  for (const product of productsDoc.products ?? []) {
+    const finalization = await readJsonIfExists(
+      getKitArtifactPaths(product.slug, projectRoot).finalizationPath,
+    );
+
+    if (finalization) {
+      finalizationsBySlug.set(product.slug, finalization);
+    }
+  }
+
+  return finalizationsBySlug;
+};
+
+export const collectCommercialReadinessFindings = ({
+  productsDoc,
+  reviewsDoc,
+  specsDoc,
+  manifestsDoc,
+  finalizationsBySlug = new Map(),
+}) => {
   const reviewById = new Map(reviewsDoc.reviews.map((review) => [review.productId, review]));
   const specById = new Map(specsDoc.kitSpecs.map((spec) => [spec.productId, spec]));
   const manifestById = new Map(manifestsDoc.manifests.map((manifest) => [manifest.productId, manifest]));
@@ -29,6 +59,7 @@ export const checkCommercialReadiness = async () => {
     const review = reviewById.get(product.id);
     const spec = specById.get(product.id);
     const manifest = manifestById.get(product.id);
+    const finalization = finalizationsBySlug.get(product.slug);
 
     if (!review) {
       findings.push({ status: 'FAIL', message: `${product.slug} is missing a commercial review` });
@@ -79,8 +110,54 @@ export const checkCommercialReadiness = async () => {
       if (product.purchasePath !== '/pricing') {
         findings.push({ status: 'FAIL', message: `${product.slug} does not point to the credits top-up flow` });
       }
+
+      if (
+        finalization?.finalizationStatus !== 'finalized' ||
+        finalization?.auditClassification !== 'finalized'
+      ) {
+        findings.push({ status: 'FAIL', message: `${product.slug} is published without finalized commercial finalization evidence` });
+      }
+
+      if (finalization?.deliveryVerification?.status !== 'pass') {
+        findings.push({ status: 'FAIL', message: `${product.slug} is published without delivery-ready finalization evidence` });
+      }
+
+      const manifestFinalAssetUrl = manifest?.generatedArtifacts?.finalAssetUrl;
+      const finalizationFinalAssetUrl = finalization?.exportEvidence?.finalAssetUrl;
+
+      if (!hasText(manifestFinalAssetUrl)) {
+        findings.push({ status: 'FAIL', message: `${product.slug} manifest is missing final asset URL` });
+      }
+
+      if (!hasText(finalizationFinalAssetUrl)) {
+        findings.push({ status: 'FAIL', message: `${product.slug} finalization evidence is missing final asset URL` });
+      }
+
+      if (hasText(manifestFinalAssetUrl) && hasText(finalizationFinalAssetUrl) && manifestFinalAssetUrl !== finalizationFinalAssetUrl) {
+        findings.push({ status: 'FAIL', message: `${product.slug} has conflicting final asset URLs between manifest and finalization evidence` });
+      }
     }
   }
+
+  return findings;
+};
+
+export const checkCommercialReadiness = async () => {
+  const [productsDoc, reviewsDoc, specsDoc, manifestsDoc] = await Promise.all([
+    readFile(productsPath, 'utf8').then((raw) => JSON.parse(raw)),
+    readFile(reviewsPath, 'utf8').then((raw) => JSON.parse(raw)),
+    readFile(specsPath, 'utf8').then((raw) => JSON.parse(raw)),
+    readFile(manifestsPath, 'utf8').then((raw) => JSON.parse(raw)),
+  ]);
+
+  const finalizationsBySlug = await loadFinalizationsBySlug(productsDoc);
+  const findings = collectCommercialReadinessFindings({
+    productsDoc,
+    reviewsDoc,
+    specsDoc,
+    manifestsDoc,
+    finalizationsBySlug,
+  });
 
   return {
     summary: {
@@ -99,7 +176,7 @@ const run = async () => {
   console.log(`Published products: ${result.summary.publishedProducts}/${result.summary.totalProducts}`);
 
   if (result.findings.length === 0) {
-    console.log('✓ All published Figma kits have specs, manifests, approved commercial reviews, and valid credit pricing.');
+    console.log('✓ All published Figma kits have specs, manifests, approved commercial reviews, valid credit pricing, and finalized delivery evidence.');
     return;
   }
 

@@ -159,6 +159,14 @@ export interface KitOrder {
   fulfilledAt: string | null;
 }
 
+export interface KitDeliveryAsset {
+  kind: "figma-final-asset";
+  url: string;
+  assetId: string | null;
+  metadataUrl: string | null;
+  fileName: string;
+}
+
 export interface FigmaKitProduct {
   id: string;
   slug: string;
@@ -213,6 +221,57 @@ export type GeneratedKitSource = "stitch" | "direct";
 export type PublishQualityStatus = "pass" | "warn" | "fail" | "unknown";
 export type PublishAssetOrigin = "raw" | "upscaled" | "rescued";
 
+export type KitFinalizationStatus =
+  | "blocked"
+  | "audited"
+  | "eligible_for_export"
+  | "exported_from_stitch"
+  | "content_verified"
+  | "delivery_verified"
+  | "finalized";
+
+export type KitAuditClassification = "finalized" | "repairable" | "must_regenerate" | "blocked";
+export type StitchExportMode = "rapid" | "standard";
+export type FinalizationCheckStatus = "pass" | "fail";
+
+export interface KitFinalizationCheck {
+  status: FinalizationCheckStatus;
+  reason: string | null;
+  verifiedAt: string | null;
+}
+
+export interface KitExportEvidence {
+  method: "stitch-export-to-figma";
+  exportedAt: string | null;
+  finalAssetId: string | null;
+  finalAssetUrl: string | null;
+  source: "stitch" | "manual-record";
+}
+
+export interface KitFinalizationRecord {
+  schema: "1";
+  kitSlug: string;
+  productId: string;
+  finalizationStatus: KitFinalizationStatus;
+  auditClassification: KitAuditClassification;
+  stitchProjectId: string | null;
+  stitchMode: StitchExportMode | null;
+  exportEligibility: KitFinalizationCheck;
+  exportEvidence: KitExportEvidence;
+  contentVerification: KitFinalizationCheck & {
+    requiredPages: string[];
+    expectedScreenCount: number;
+    expectedComponentCount: number;
+    expectedTokenCount: number;
+  };
+  deliveryVerification: KitFinalizationCheck & {
+    fulfillmentType: "stitch-figma-export" | "none";
+    handoffUrl: string | null;
+  };
+  blockingReasons: string[];
+  updatedAt: string;
+}
+
 export interface GeneratedKitArtifactPaths {
   generatedArtifactsRootDir: string;
   generatedKitArtifactsDir: string;
@@ -230,6 +289,10 @@ export interface GeneratedKitArtifacts {
   publishQualityStatus?: PublishQualityStatus | null;
   publishReadyForSale?: boolean;
   publishAssetOrigin?: PublishAssetOrigin | null;
+  finalizationStatus?: KitFinalizationStatus | null;
+  auditClassification?: KitAuditClassification | null;
+  finalAssetId?: string | null;
+  finalAssetUrl?: string | null;
   exportPackageFileName: string;
   previewCount: number;
   stitchProjectId?: string | null;
