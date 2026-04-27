@@ -1,6 +1,38 @@
-# Design System Inspired by Kraken
+---
+name: Kraken
+colors:
+  tertiary: "#5741D9"
+  neutral: "#1C1C28"
+  primary: "#5741D9"
+typography:
+  h2:
+    fontSize: 20px
+    fontWeight: 700
+    lineHeight: 1.2
+  h3:
+    fontSize: 16px
+    fontWeight: 600
+    lineHeight: 1.3
+  body-md:
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.5
+  caption:
+    fontSize: 11px
+    fontWeight: 400
+    lineHeight: 1.4
+rounded:
+  sm: 4px
+  md: 8px
+  lg: 12px
+spacing:
+  xs: 4px
+  sm: 8px
+  md: 16px
+  lg: 32px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Kraken's design language positions the exchange as the professional-grade platform for serious crypto traders. The interface runs almost entirely on a dark charcoal palette — `#1C1C28` as the deepest background, with progressively lighter surfaces at `#242435` and `#2D2D42` — creating a multi-layer depth system that keeps dense trading data readable without eye strain during long sessions.
 
@@ -18,7 +50,7 @@ Typography skews dense: the platform uses Inter for UI chrome and DM Mono / Robo
 - Low-border approach: 1px `rgba(255,255,255,0.07)` separators on dark surfaces
 - No rounded corners above 8px — sharp, precise, professional aesthetic
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Kraken Purple** (`#5741D9`): brand primary, CTAs, selected tabs, progress indicators
@@ -39,7 +71,7 @@ Typography skews dense: the platform uses Inter for UI chrome and DM Mono / Robo
 - **Input Background** (`rgba(255,255,255,0.05)`): form field fills
 - **Hover Row** (`rgba(87,65,217,0.12)`): order book row hover
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Inter**: `"Inter", sans-serif` — all UI chrome, labels, navigation, headings
@@ -58,7 +90,30 @@ Typography skews dense: the platform uses Inter for UI chrome and DM Mono / Robo
 | Label/Tag | Inter | 11px | 600 | 1.2 | Uppercase, 0.08em tracking |
 | Caption | Inter | 11px | 400 | 1.4 | Timestamps, footnotes |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 4px
+- Scale: 4, 8, 12, 16, 20, 24, 32, 40
+- Trading UI default density: 4px vertical row padding in order book
+- Panel padding: 16px
+
+### Border Radius Scale
+- **0px** — order book rows, table rows
+- **4px** — buy/sell buttons, input fields
+- **6px** — primary CTA buttons
+- **8px** — panel cards, chart containers
+- **12px** — modal dialogs, drawers
+
+## Elevation & Depth
+
+- **Level 0** (base): `#1C1C28` — app background
+- **Level 1** (panel): `#242435` — main content panels
+- **Level 2** (elevated): `#2D2D42` — dropdowns, hover rows
+- **Level 3** (modal): `box-shadow: 0 8px 40px rgba(0,0,0,0.60)` on `#2D2D42`
+- **Purple focus ring**: `box-shadow: 0 0 0 2px rgba(87,65,217,0.50)` on inputs
+
+## Components
 
 ### Buttons
 - **Primary**: `background: #5741D9`, `color: #FFFFFF`, `border-radius: 6px`, `padding: 12px 24px`, `font: Inter 14px 700`
@@ -74,30 +129,7 @@ Typography skews dense: the platform uses Inter for UI chrome and DM Mono / Robo
 - **Chart Container**: `background: #1C1C28`, `border-radius: 4px`
 - **Modal**: `background: #2D2D42`, `border-radius: 12px`, `box-shadow: 0 8px 40px rgba(0,0,0,0.60)`
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 4px
-- Scale: 4, 8, 12, 16, 20, 24, 32, 40
-- Trading UI default density: 4px vertical row padding in order book
-- Panel padding: 16px
-
-### Border Radius Scale
-- **0px** — order book rows, table rows
-- **4px** — buy/sell buttons, input fields
-- **6px** — primary CTA buttons
-- **8px** — panel cards, chart containers
-- **12px** — modal dialogs, drawers
-
-## 6. Depth & Elevation
-
-- **Level 0** (base): `#1C1C28` — app background
-- **Level 1** (panel): `#242435` — main content panels
-- **Level 2** (elevated): `#2D2D42` — dropdowns, hover rows
-- **Level 3** (modal): `box-shadow: 0 8px 40px rgba(0,0,0,0.60)` on `#2D2D42`
-- **Purple focus ring**: `box-shadow: 0 0 0 2px rgba(87,65,217,0.50)` on inputs
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use DM Mono for every number that users compare side-by-side
@@ -112,7 +144,8 @@ Typography skews dense: the platform uses Inter for UI chrome and DM Mono / Robo
 - Don't round order book rows — 0px radius is intentional
 - Don't use purple for gain/loss coloring — reserve it strictly for brand/CTA
 
-## 8. Responsive Behavior
+## Responsive Behavior
+
 Breakpoints: 375px (mobile), 768px (tablet), 1024px (desktop), 1440px (pro wide)
 
 - **375px**: single panel at a time; tab bar switches between Chart / Order Book / Trade
@@ -120,7 +153,7 @@ Breakpoints: 375px (mobile), 768px (tablet), 1024px (desktop), 1440px (pro wide)
 - **1024px**: 3-panel layout: order book | chart | trade ticket
 - **1440px**: full pro layout with depth chart + extended order history
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand: `#5741D9`

@@ -1,6 +1,31 @@
-# Design System Inspired by Pandora
+---
+name: Pandora
+colors:
+  tertiary: "#224099"
+  neutral: "#FFFFFF"
+  primary: "#224099"
+  secondary: "#787878"
+typography:
+  label:
+    fontSize: 14px
+    fontWeight: 700
+    lineHeight: 20
+  caption:
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 16
+rounded:
+  sm: 4px
+  md: 12px
+  lg: 24px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Pandora's design language centers on the album artwork — every station, playlist, and track makes the cover art the visual hero of the interface. The structural palette is a clean blue (`#224099` for brand headers, `#005483` for interactive elements) layered over white surfaces, creating a trustworthy, accessible audio platform aesthetic that never competes with the colorful album art it frames. This is a design system built for visual neutrality: the chrome recedes so the music's visual identity can breathe.
 
@@ -18,7 +43,7 @@ Light mode is the primary experience — white backgrounds with blue interactive
 - Soft gray `#F5F7FA` for section backgrounds and alternating rows
 - Minimal icon set — play, pause, skip, thumb-up, thumb-down, menu
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Brand Blue** (`#224099`): App bar, wordmark, section dividers, brand moments
@@ -51,7 +76,7 @@ Light mode is the primary experience — white backgrounds with blue interactive
 - **Card Background** (`#FFFFFF`): Station cards, track rows
 - **Section Header BG** (`rgba(34, 64, 153, 0.05)`): Tinted section backgrounds
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **SF Pro Display**: `-apple-system, BlinkMacSystemFont, sans-serif` — iOS primary
@@ -74,7 +99,40 @@ Light mode is the primary experience — white backgrounds with blue interactive
 | Caption | SF Pro / Roboto | 12px | 400 | 16px | Gray `#999999` |
 | Genre Label | SF Pro / Roboto | 11px | 600 | 14px | Uppercase, blue `#005483` |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px
+- Card grid gap: 12px mobile, 16px desktop
+- Section padding: 16px top/bottom, page margin 16px
+- Player bar: fixed 64px height, adds 64px bottom padding to content
+- Station grid: 2 columns mobile, 3-4 columns tablet, 5-6 desktop
+
+### Border Radius Scale
+- `4px` — Tags, genre chips, small elements
+- `8px` — Station cards, track rows
+- `12px` — Modal panels, large cards
+- `24px` — Pill buttons
+- `50%` — Avatar, circular play button
+
+### Grid
+- Mobile: 2-column station grid, 16px margins
+- Tablet: 3-column grid, 24px margins
+- Desktop: 5-6 column grid, 40px margins, max-width 1200px
+
+## Elevation & Depth
+
+```
+Level 0 - Background: #F5F7FA (section) / #FFFFFF (content)
+Level 1 - Card:       0 2px 8px rgba(0,0,0,0.10)
+Level 2 - Dropdown:   0 4px 16px rgba(0,0,0,0.15)
+Level 3 - Player:     0 -2px 20px rgba(0,0,0,0.20) (cast upward)
+Level 4 - Modal:      0 8px 32px rgba(0,0,0,0.25)
+Header shadow:        0 2px 4px rgba(0,0,0,0.10)
+```
+
+## Components
 
 ### Buttons
 
@@ -149,40 +207,7 @@ hover: background #F5F7FA
 playing: left border 3px solid #005483
 ```
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px
-- Card grid gap: 12px mobile, 16px desktop
-- Section padding: 16px top/bottom, page margin 16px
-- Player bar: fixed 64px height, adds 64px bottom padding to content
-- Station grid: 2 columns mobile, 3-4 columns tablet, 5-6 desktop
-
-### Border Radius Scale
-- `4px` — Tags, genre chips, small elements
-- `8px` — Station cards, track rows
-- `12px` — Modal panels, large cards
-- `24px` — Pill buttons
-- `50%` — Avatar, circular play button
-
-### Grid
-- Mobile: 2-column station grid, 16px margins
-- Tablet: 3-column grid, 24px margins
-- Desktop: 5-6 column grid, 40px margins, max-width 1200px
-
-## 6. Depth & Elevation
-
-```
-Level 0 - Background: #F5F7FA (section) / #FFFFFF (content)
-Level 1 - Card:       0 2px 8px rgba(0,0,0,0.10)
-Level 2 - Dropdown:   0 4px 16px rgba(0,0,0,0.15)
-Level 3 - Player:     0 -2px 20px rgba(0,0,0,0.20) (cast upward)
-Level 4 - Modal:      0 8px 32px rgba(0,0,0,0.25)
-Header shadow:        0 2px 4px rgba(0,0,0,0.10)
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Display station artwork at large sizes (160px+) — it's the primary visual element
@@ -197,7 +222,7 @@ Header shadow:        0 2px 4px rgba(0,0,0,0.10)
 - Don't hide the thumb rating UI — it's Pandora's core interaction model
 - Don't apply heavy shadows to station art cards — soft shadows only
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `375px` — Mobile: 2-column station grid, bottom player
@@ -212,7 +237,7 @@ Header shadow:        0 2px 4px rgba(0,0,0,0.10)
 - Navigation: bottom tab mobile → left sidebar desktop
 - Station art: 140px mobile → 180px desktop cards
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 ```

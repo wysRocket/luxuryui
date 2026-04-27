@@ -1,6 +1,33 @@
-# Design System Inspired by Flo
+---
+name: Flo
+colors:
+  neutral: "#0D0D1A"
+  primary: "#6D28D9"
+  tertiary: "#7C3AED"
+  secondary: "#9CA3AF"
+typography:
+  body-md:
+    fontFamily: Inter
+    fontSize: 15px
+    fontWeight: 400
+    lineHeight: 1.6
+  caption:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 1.4
+rounded:
+  sm: 8px
+  md: 16px
+  lg: 28px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Flo's design is intimate, premium, and deeply personal — a femtech product that must earn trust in one of the most private areas of a person's life. The visual language combines deep purple-violet gradients (`#8B5CF6` to `#6D28D9`) with soft dark surfaces to create a premium, spa-like atmosphere that feels protective and calm. This contrasts deliberately with clinical white medical apps — Flo communicates "personal companion" not "medical dashboard."
 
@@ -17,7 +44,7 @@ Premium membership ("Flo Premium") elevates the visual treatment further: deeper
 - Rounded, organic shapes throughout (12px–50% radius)
 - White text on dark: always high-contrast for health data legibility
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Flo Purple** (`#8B5CF6`): Active states, selected cycle days, CTAs
@@ -43,7 +70,7 @@ Premium membership ("Flo Premium") elevates the visual treatment further: deeper
 - **PMS Amber** (`#FBBF24`): PMS prediction zone
 - **Premium Gold** (`#F59E0B`): Premium badge, upsell moments
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Primary**: `Inter` / SF Pro — clean geometric, all UI text
@@ -66,7 +93,28 @@ Premium membership ("Flo Premium") elevates the visual treatment further: deeper
 | Caption | Inter | 12px | 400 | 1.40 | Footnotes, citations |
 | Premium Badge | Inter | 12px | 700 | 1.00 | "PRO" badge label |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px
+
+### Border Radius Scale
+- Small (8px): Tags, inline badges
+- Medium (12px): Symptom chips (alternative)
+- Standard (16px): Insight cards, widget cards
+- Large (24px): Modals, bottom sheets
+- Pill (28px–50%): CTA buttons, cycle calendar
+
+## Elevation & Depth
+
+- **Base**: `#0D0D1A` — no elevation
+- **Cards**: `box-shadow: 0 4px 16px rgba(0,0,0,0.4)`
+- **Purple glow**: `box-shadow: 0 0 32px rgba(139,92,246,0.25)` — selected/active
+- **Modal**: `box-shadow: 0 24px 64px rgba(0,0,0,0.7)`
+- **Gradient orb decor**: `filter: blur(60px)` opacity 0.3 — ambient background glow
+
+## Components
 
 ### Buttons
 
@@ -93,28 +141,7 @@ Premium membership ("Flo Premium") elevates the visual treatment further: deeper
 - Purple accent bar: 3px top border `linear-gradient(90deg, #8B5CF6, #6D28D9)`
 - Cycle calendar: circular SVG, period days in `#F87171`, fertile in `#34D399`
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px
-
-### Border Radius Scale
-- Small (8px): Tags, inline badges
-- Medium (12px): Symptom chips (alternative)
-- Standard (16px): Insight cards, widget cards
-- Large (24px): Modals, bottom sheets
-- Pill (28px–50%): CTA buttons, cycle calendar
-
-## 6. Depth & Elevation
-
-- **Base**: `#0D0D1A` — no elevation
-- **Cards**: `box-shadow: 0 4px 16px rgba(0,0,0,0.4)`
-- **Purple glow**: `box-shadow: 0 0 32px rgba(139,92,246,0.25)` — selected/active
-- **Modal**: `box-shadow: 0 24px 64px rgba(0,0,0,0.7)`
-- **Gradient orb decor**: `filter: blur(60px)` opacity 0.3 — ambient background glow
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use the purple gradient for CTAs and primary active states — it's the trust anchor
@@ -129,14 +156,14 @@ Premium membership ("Flo Premium") elevates the visual treatment further: deeper
 - Don't show explicit medical diagnoses — always frame as "insights" not "diagnoses"
 - Don't use aggressive urgency patterns — this audience requires calm, supportive UX
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints: 320px, 375px, 428px (iPhone sizes), 768px, 1024px
 - Mobile: Single-column, circular calendar hero, swipeable insight cards
 - Tablet: Calendar + insights side by side
 - Web app: 3-panel layout — nav, calendar, detail panel
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Purple: `#8B5CF6`

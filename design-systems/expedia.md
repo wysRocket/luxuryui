@@ -1,6 +1,33 @@
-# Design System Inspired by Expedia
+---
+name: Expedia
+colors:
+  tertiary: "#FFCC00"
+  neutral: "#FFFFFF"
+  primary: "#1E3A5F"
+  secondary: "#5A6271"
+typography:
+  page-title:
+    fontFamily: Expedia Sans
+    fontSize: 32px
+    fontWeight: 700
+    lineHeight: 1.2
+  label:
+    fontFamily: Expedia Sans
+    fontSize: 16px
+    fontWeight: 700
+    lineHeight: 1
+rounded:
+  sm: 2px
+  md: 8px
+  lg: 16px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Expedia's design is bold, search-centric, and aspiration-driven — every interface decision is optimized to get travelers from intent to booking as efficiently as possible. The brand yellow (`#FFCC00`), a vivid golden hue, energizes the primary CTA and the distinctive yellow header band, immediately signaling action and warmth. Below the fold, the palette shifts to trustworthy navy (`#1E3A5F`) for informational hierarchy and deep-travel imagery backdrops that evoke wanderlust.
 
@@ -17,7 +44,7 @@ The overall atmosphere is confident and efficient — "we'll handle the complexi
 - Search widget as the #1 UI priority — always sticky or prominent
 - Price as primary hierarchy in listing cards (large, bold, right-aligned)
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Expedia Yellow** (`#FFCC00`): Primary CTA, logo accent, active tabs
@@ -41,7 +68,7 @@ The overall atmosphere is confident and efficient — "we'll handle the complexi
 - **Rating Orange** (`#F5A623`): Star ratings, VIP badge
 - **Verified Blue** (`#0073BB`): Verified property badge
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Primary**: `Expedia Sans` — proprietary, all UI text
@@ -63,7 +90,27 @@ The overall atmosphere is confident and efficient — "we'll handle the complexi
 | CTA Button | Expedia Sans | 16px | 700 | 1.00 | "Search", "Book now" |
 | Navigation | Expedia Sans | 14px | 500 | 1.00 | Top nav items |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px
+
+### Border Radius Scale
+- Sharp (0px–2px): Legacy form elements
+- Small (4px): Buttons, cards, inputs (primary Expedia radius)
+- Medium (8px): Cards, badges, chips
+- Large (16px): Modals, bottom sheets
+
+## Elevation & Depth
+
+- **Cards**: `box-shadow: 0 1px 4px rgba(0,0,0,0.08)` default
+- **Hover**: `box-shadow: 0 4px 16px rgba(0,0,0,0.12)` + translateY(-2px)
+- **Search widget**: `box-shadow: 0 4px 24px rgba(0,0,0,0.2)` — prominent
+- **Modals**: `box-shadow: 0 16px 48px rgba(0,0,0,0.25)`
+- **Sticky header**: `box-shadow: 0 2px 8px rgba(30,58,95,0.15)` — navy-tinted
+
+## Components
 
 ### Buttons
 
@@ -92,27 +139,7 @@ The overall atmosphere is confident and efficient — "we'll handle the complexi
 - Price section: right-aligned, yellow "Book" CTA below
 - Hover: `box-shadow: 0 4px 16px rgba(0,0,0,0.12)`
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px
-
-### Border Radius Scale
-- Sharp (0px–2px): Legacy form elements
-- Small (4px): Buttons, cards, inputs (primary Expedia radius)
-- Medium (8px): Cards, badges, chips
-- Large (16px): Modals, bottom sheets
-
-## 6. Depth & Elevation
-
-- **Cards**: `box-shadow: 0 1px 4px rgba(0,0,0,0.08)` default
-- **Hover**: `box-shadow: 0 4px 16px rgba(0,0,0,0.12)` + translateY(-2px)
-- **Search widget**: `box-shadow: 0 4px 24px rgba(0,0,0,0.2)` — prominent
-- **Modals**: `box-shadow: 0 16px 48px rgba(0,0,0,0.25)`
-- **Sticky header**: `box-shadow: 0 2px 8px rgba(30,58,95,0.15)` — navy-tinted
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Make the search widget the most prominent element on every page
@@ -127,14 +154,14 @@ The overall atmosphere is confident and efficient — "we'll handle the complexi
 - Don't hide fees — total price transparency is a brand promise
 - Don't bury social proof — star ratings and review counts near the price
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints: 320px, 480px, 768px, 1024px, 1280px, 1440px
 - Mobile: Stacked search fields, single-column results, bottom sheet filters
 - Tablet: 2-column search widget row, side-by-side card layout
 - Desktop: Inline search bar, map + list split view, filter sidebar 280px
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - CTA yellow: `#FFCC00`

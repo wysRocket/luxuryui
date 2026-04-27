@@ -1,6 +1,29 @@
-# Design System Inspired by Threads
+---
+name: Threads
+colors:
+  neutral: "#000000"
+  primary: "#FFFFFF"
+  tertiary: "#0095F6"
+typography:
+  body-md:
+    fontSize: 15px
+    fontWeight: 400
+    lineHeight: 22
+  label:
+    fontSize: 14px
+    fontWeight: 700
+    lineHeight: 20
+  h1:
+    fontSize: 18px
+    fontWeight: 700
+    lineHeight: 24
+rounded:
+  sm: 8px
+  md: 12px
+  lg: 20px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Threads — Meta's text-centric social platform, launched as an Instagram companion — is one of the most minimal consumer social apps ever shipped at scale. The design is almost aggressively simple: pure black or white backgrounds, system typefaces at comfortable reading sizes, and near-zero decorative elements. This restraint is a deliberate positioning choice: Threads is for text, ideas, and conversation — the anti-media, anti-algorithm antidote to visual-first social media.
 
@@ -18,7 +41,7 @@ Thread stitching — the vertical line connecting a series of reply posts — is
 - Thread line: `1.5px solid rgba(255,255,255,0.2)` (dark) / `rgba(0,0,0,0.15)` (light)
 - Border radius: minimal — 12px for bottom sheets, 0 on post cards
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Light Mode
 - **Canvas** (`#FFFFFF`): Page background, all surfaces
@@ -44,7 +67,7 @@ Thread stitching — the vertical line connecting a series of reply posts — is
 - **Link Blue** (`#0095F6`): Instagram's blue, used for hyperlinks in post body
 - **Like Red** (`#FF3040`): Heart icon when liked (same red as Instagram)
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **SF Pro Display**: `'SF Pro Display', -apple-system, sans-serif` — iOS headings, display text
@@ -69,7 +92,43 @@ Thread stitching — the vertical line connecting a series of reply posts — is
 | Link in Post | System | 15px | 400 | 22px | URL, colored `#0095F6` |
 | Quoted Thread | System | 14px | 400 | 20px | Quoted/embedded thread text |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base unit: **4px**
+- Scale: `4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px`
+- Post horizontal padding: `12px`
+- Avatar to content gap: `12px`
+- Post vertical padding: `12px 0`
+- Between post gap: `0` (flush, separated by thread line / whitespace)
+- Bottom navigation height: `83px` (iOS safe area included)
+
+### Core Layout
+- Avatar column: 48px wide (fixed)
+- Content column: `flex: 1` fluid right of avatar
+- Max-width: `600px` for web Threads
+
+### Border Radius Scale
+| Token | Value | Usage |
+|-------|-------|-------|
+| `--radius-none` | 0px | Post cards, page surfaces |
+| `--radius-sm` | 8px | Action sheets inner items |
+| `--radius-md` | 10px | Follow button |
+| `--radius-lg` | 12px | Quoted thread, media |
+| `--radius-xl` | 20px | Bottom sheet top corners |
+| `--radius-full` | 9999px | Avatars |
+
+## Elevation & Depth
+
+Threads uses near-zero elevation — the black canvas provides all the context needed:
+
+- **Base** (post canvas): `#000000` — no shadow, no depth
+- **Bottom Sheet**: `box-shadow: 0 -4px 30px rgba(0,0,0,0.5)` on dark, lighter on light
+- **Modal**: `box-shadow: 0 8px 40px rgba(0,0,0,0.6)`
+- **Tooltip**: flat, `background: #1A1A1A` (dark) text white
+- **Quote thread**: color/border only, no shadow
+
+## Components
 
 ### Buttons
 **Follow Button (unfollowed)**
@@ -132,43 +191,7 @@ Thread stitching — the vertical line connecting a series of reply posts — is
 - Top handle: 4px × 36px, `rgba(255,255,255,0.3)` (dark) / `rgba(0,0,0,0.2)` (light)
 - Padding: `20px 16px`
 
-## 5. Layout Principles
-
-### Spacing System
-- Base unit: **4px**
-- Scale: `4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px`
-- Post horizontal padding: `12px`
-- Avatar to content gap: `12px`
-- Post vertical padding: `12px 0`
-- Between post gap: `0` (flush, separated by thread line / whitespace)
-- Bottom navigation height: `83px` (iOS safe area included)
-
-### Core Layout
-- Avatar column: 48px wide (fixed)
-- Content column: `flex: 1` fluid right of avatar
-- Max-width: `600px` for web Threads
-
-### Border Radius Scale
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--radius-none` | 0px | Post cards, page surfaces |
-| `--radius-sm` | 8px | Action sheets inner items |
-| `--radius-md` | 10px | Follow button |
-| `--radius-lg` | 12px | Quoted thread, media |
-| `--radius-xl` | 20px | Bottom sheet top corners |
-| `--radius-full` | 9999px | Avatars |
-
-## 6. Depth & Elevation
-
-Threads uses near-zero elevation — the black canvas provides all the context needed:
-
-- **Base** (post canvas): `#000000` — no shadow, no depth
-- **Bottom Sheet**: `box-shadow: 0 -4px 30px rgba(0,0,0,0.5)` on dark, lighter on light
-- **Modal**: `box-shadow: 0 8px 40px rgba(0,0,0,0.6)`
-- **Tooltip**: flat, `background: #1A1A1A` (dark) text white
-- **Quote thread**: color/border only, no shadow
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use pure `#000000` for dark mode — not `#121212` or `#1C1C1E`; Threads goes all-black
@@ -184,7 +207,7 @@ Threads uses near-zero elevation — the black canvas provides all the context n
 - Don't put more than 5 items in the bottom navigation — Threads has 5 exact
 - Avoid introducing any custom typeface — system font only, always
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints (mobile-first native app):**
 - `xs`: 320px — compact, all elements minimum viable
@@ -196,7 +219,7 @@ Threads uses near-zero elevation — the black canvas provides all the context n
 
 **Gestures:** Swipe-right to go back; pull-to-refresh; long-press post for share sheet
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Dark canvas: `#000000`

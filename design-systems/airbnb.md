@@ -1,6 +1,47 @@
-# Design System Inspired by Airbnb
+---
+name: Airbnb
+colors:
+  neutral: "#ffffff"
+  tertiary: "#ff385c"
+  secondary: "#6a6a6a"
+typography:
+  h1:
+    fontFamily: Airbnb Cereal VF
+    fontSize: 28px
+    fontWeight: 700
+    lineHeight: 1.43
+  h3:
+    fontFamily: Airbnb Cereal VF
+    fontSize: 21px
+    fontWeight: 700
+    lineHeight: 1.43
+  label:
+    fontFamily: Airbnb Cereal VF
+    fontSize: 16px
+    fontWeight: 500
+    lineHeight: 1.25
+  body-md:
+    fontFamily: Airbnb Cereal VF
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.43
+  caption:
+    fontFamily: Airbnb Cereal VF
+    fontSize: 14px
+    fontWeight: 600
+    lineHeight: 1.43
+rounded:
+  sm: 4px
+  md: 14px
+  lg: 32px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Airbnb's website is a warm, photography-forward marketplace that feels like flipping through a travel magazine where every page invites you to book. The design operates on a foundation of pure white (`#ffffff`) with the iconic Rausch Red (`#ff385c`) — named after Airbnb's first street address — serving as the singular brand accent. The result is a clean, airy canvas where listing photography, category icons, and the red CTA button are the only sources of color.
 
@@ -19,7 +60,7 @@ What distinguishes Airbnb is its palette-based token system (`--palette-*`) and 
 - Near-black text (`#222222`) — warm, not cold
 - Luxe Purple (`#460479`) and Plus Magenta (`#92174d`) for premium tiers
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary Brand
 - **Rausch Red** (`#ff385c`): `--palette-bg-primary-core`, primary CTA, brand accent, active states
@@ -48,7 +89,7 @@ What distinguishes Airbnb is its palette-based token system (`--palette-*`) and 
 - **Card Shadow** (`rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px`): Three-layer warm lift
 - **Hover Shadow** (`rgba(0,0,0,0.08) 0px 4px 12px`): Button hover elevation
 
-## 3. Typography Rules
+## Typography
 
 ### Font Family
 - **Primary**: `Airbnb Cereal VF`, fallbacks: `Circular, -apple-system, system-ui, Roboto, Helvetica Neue`
@@ -80,7 +121,43 @@ What distinguishes Airbnb is its palette-based token system (`--palette-*`) and 
 - **"salt" OpenType feature**: Stylistic alternates on specific UI elements (badges, captions) create subtle glyph variations that add visual interest.
 - **Variable font precision**: Cereal VF enables continuous weight interpolation, though the design system uses discrete stops at 500, 600, and 700.
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base unit: 8px
+- Scale: 2px, 3px, 4px, 6px, 8px, 10px, 11px, 12px, 15px, 16px, 22px, 24px, 32px
+
+### Grid & Container
+- Full-width header with centered search
+- Category pill bar: horizontal scrollable row
+- Listing grid: responsive multi-column (3–5 columns on desktop)
+- Full-width footer with link columns
+
+### Whitespace Philosophy
+- **Travel-magazine spacing**: Generous vertical padding between sections creates a leisurely browsing pace — you're meant to scroll slowly, like browsing a magazine.
+- **Photography density**: Listing cards are packed relatively tightly, but each image is large enough to feel immersive.
+- **Search bar prominence**: The search bar gets maximum vertical space in the header — finding your destination is the primary action.
+
+### Border Radius Scale
+- Subtle (4px): Small links
+- Standard (8px): Buttons, tabs, search elements
+- Badge (14px): Status badges, labels
+- Card (20px): Feature cards, large buttons
+- Large (32px): Large containers, hero elements
+- Circle (50%): Nav controls, avatars, icons
+
+## Elevation & Depth
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Flat (Level 0) | No shadow | Page background, text blocks |
+| Card (Level 1) | `rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px` | Listing cards, search bar |
+| Hover (Level 2) | `rgba(0,0,0,0.08) 0px 4px 12px` | Button hover, interactive lift |
+| Active Focus (Level 3) | `rgb(255,255,255) 0px 0px 0px 4px` + focus ring | Active/focused elements |
+
+**Shadow Philosophy**: Airbnb's three-layer shadow system creates a warm, natural lift. Layer 1 (`0px 0px 0px 1px` at 0.02 opacity) is an ultra-subtle border. Layer 2 (`0px 2px 6px` at 0.04) provides soft ambient shadow. Layer 3 (`0px 4px 8px` at 0.1) adds the primary lift. This graduated approach creates shadows that feel like natural light rather than CSS effects.
+
+## Components
 
 ### Buttons
 
@@ -125,43 +202,7 @@ What distinguishes Airbnb is its palette-based token system (`--palette-*`) and 
 - Heart/wishlist icon overlay on images
 - 8px–14px radius on contained images
 
-## 5. Layout Principles
-
-### Spacing System
-- Base unit: 8px
-- Scale: 2px, 3px, 4px, 6px, 8px, 10px, 11px, 12px, 15px, 16px, 22px, 24px, 32px
-
-### Grid & Container
-- Full-width header with centered search
-- Category pill bar: horizontal scrollable row
-- Listing grid: responsive multi-column (3–5 columns on desktop)
-- Full-width footer with link columns
-
-### Whitespace Philosophy
-- **Travel-magazine spacing**: Generous vertical padding between sections creates a leisurely browsing pace — you're meant to scroll slowly, like browsing a magazine.
-- **Photography density**: Listing cards are packed relatively tightly, but each image is large enough to feel immersive.
-- **Search bar prominence**: The search bar gets maximum vertical space in the header — finding your destination is the primary action.
-
-### Border Radius Scale
-- Subtle (4px): Small links
-- Standard (8px): Buttons, tabs, search elements
-- Badge (14px): Status badges, labels
-- Card (20px): Feature cards, large buttons
-- Large (32px): Large containers, hero elements
-- Circle (50%): Nav controls, avatars, icons
-
-## 6. Depth & Elevation
-
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Flat (Level 0) | No shadow | Page background, text blocks |
-| Card (Level 1) | `rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px` | Listing cards, search bar |
-| Hover (Level 2) | `rgba(0,0,0,0.08) 0px 4px 12px` | Button hover, interactive lift |
-| Active Focus (Level 3) | `rgb(255,255,255) 0px 0px 0px 4px` + focus ring | Active/focused elements |
-
-**Shadow Philosophy**: Airbnb's three-layer shadow system creates a warm, natural lift. Layer 1 (`0px 0px 0px 1px` at 0.02 opacity) is an ultra-subtle border. Layer 2 (`0px 2px 6px` at 0.04) provides soft ambient shadow. Layer 3 (`0px 4px 8px` at 0.1) adds the primary lift. This graduated approach creates shadows that feel like natural light rather than CSS effects.
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use `#222222` (warm near-black) for text — never pure `#000000`
@@ -182,7 +223,7 @@ What distinguishes Airbnb is its palette-based token system (`--palette-*`) and 
 - Don't introduce additional brand colors beyond the Rausch/Luxe/Plus system
 - Don't override the palette token system — use `--palette-*` variables consistently
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 ### Breakpoints
 | Name | Width | Key Changes |
@@ -217,7 +258,7 @@ What distinguishes Airbnb is its palette-based token system (`--palette-*`) and 
 - Heart overlay positioned consistently across sizes
 - Photo quality adjusts based on viewport
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Background: Pure White (`#ffffff`)

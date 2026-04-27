@@ -1,6 +1,27 @@
-# Design System Inspired by Flipboard
+---
+name: Flipboard
+colors:
+  tertiary: "#E12828"
+  secondary: "#1C1C1C"
+  primary: "#E12828"
+  neutral: "#F8F8F8"
+typography:
+  body-md:
+    fontSize: 18px
+    fontWeight: 400
+    lineHeight: 1.8
+rounded:
+  sm: 2px
+  md: 4px
+  lg: 8px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Flipboard's design is a love letter to print journalism translated to digital — it captures the tactile drama of magazine page flips and the editorial boldness of newsstand covers. The brand red (`#E12828`) is vivid, authoritative, and urgent: it anchors the logo, marks unread counts, and appears on featured section headers. The signature UI interaction — the 3D flip tile animation — is both a navigational metaphor and a brand identity statement.
 
@@ -18,7 +39,7 @@ Flipboard supports both dark and light modes with equal fidelity. In dark mode (
 - Generous typography spacing — optimized for reading
 - Minimal UI chrome — content takes maximum space
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Flipboard Red** (`#E12828`): Logo, unread badge, section accent
@@ -38,7 +59,7 @@ Flipboard supports both dark and light modes with equal fidelity. In dark mode (
 - **Body Text Dark** (`#1C1C1C`): Article body in light mode
 - **Body Text Light** (`#E8E8E8`): Article body in dark mode
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Editorial / Headline**: `Georgia` / `Merriweather` — serif for story titles
@@ -60,7 +81,28 @@ Flipboard supports both dark and light modes with equal fidelity. In dark mode (
 | Nav | Helvetica Neue | 14px | 600 | 1.00 | Top navigation |
 | Badge | Helvetica Neue | 11px | 700 | 1.00 | Unread count |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4px, 8px, 12px, 16px, 24px, 32px, 48px, 64px
+- Tile gap: 2px–4px (magazine tight grid)
+
+### Border Radius Scale
+- None (0px): Image tiles, story cards — magazine feel
+- Subtle (2px): Buttons in some contexts
+- Small (4px): Buttons, badges, tag chips
+- Medium (8px): Modals, bottom sheets
+
+## Elevation & Depth
+
+- **Tiles**: No shadow — image contrast creates definition
+- **Scrim**: `background: linear-gradient(transparent, rgba(0,0,0,0.75))` over image
+- **Sticky nav**: `box-shadow: 0 2px 8px rgba(0,0,0,0.2)`
+- **Modal**: `box-shadow: 0 16px 48px rgba(0,0,0,0.5)`
+- **Flip animation**: `perspective: 1000px`, rotateY 180deg
+
+## Components
 
 ### Buttons
 
@@ -87,28 +129,7 @@ Flipboard supports both dark and light modes with equal fidelity. In dark mode (
 - No border-radius on tiles (magazine-style sharp edges: 0px–2px)
 - Section header: `E12828` left border 3px, label all-caps
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4px, 8px, 12px, 16px, 24px, 32px, 48px, 64px
-- Tile gap: 2px–4px (magazine tight grid)
-
-### Border Radius Scale
-- None (0px): Image tiles, story cards — magazine feel
-- Subtle (2px): Buttons in some contexts
-- Small (4px): Buttons, badges, tag chips
-- Medium (8px): Modals, bottom sheets
-
-## 6. Depth & Elevation
-
-- **Tiles**: No shadow — image contrast creates definition
-- **Scrim**: `background: linear-gradient(transparent, rgba(0,0,0,0.75))` over image
-- **Sticky nav**: `box-shadow: 0 2px 8px rgba(0,0,0,0.2)`
-- **Modal**: `box-shadow: 0 16px 48px rgba(0,0,0,0.5)`
-- **Flip animation**: `perspective: 1000px`, rotateY 180deg
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use full-bleed photography — never crop or constrain images in tiles
@@ -123,14 +144,14 @@ Flipboard supports both dark and light modes with equal fidelity. In dark mode (
 - Don't add excessive UI chrome — content coverage is the interface
 - Don't use decorative colors — red, black, and photography carry the visual weight
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints: 320px, 480px, 768px, 1024px, 1280px
 - Mobile: Single-column stacked tiles, swipe navigation between sections
 - Tablet: 2-column magazine grid, side panel for section nav
 - Desktop: 3-column grid, persistent left nav, article in center column
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand red: `#E12828`

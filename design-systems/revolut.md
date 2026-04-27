@@ -1,6 +1,46 @@
-# Design System Inspired by Revolut
+---
+name: Revolut
+colors:
+  neutral: "#ffffff"
+  primary: "#191c1f"
+  secondary: "#505a63"
+typography:
+  display-hero:
+    fontSize: 80px
+    fontWeight: 500
+    lineHeight: 1
+    letterSpacing: -0.8px
+  h1:
+    fontSize: 48px
+    fontWeight: 500
+    lineHeight: 1.21
+    letterSpacing: -0.48px
+  h3:
+    fontSize: 40px
+    fontWeight: 500
+    lineHeight: 1.2
+    letterSpacing: -0.4px
+  body-lg:
+    fontSize: 18px
+    fontWeight: 400
+    lineHeight: 1.56
+    letterSpacing: -0.09px
+  body-md:
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.5
+    letterSpacing: 0.24px
+rounded:
+  sm: 12px
+  md: 20px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Revolut's website is fintech confidence distilled into pixels — a design system that communicates "your money is in capable hands" through massive typography, generous whitespace, and a disciplined neutral palette. The visual language is built on Aeonik Pro, a geometric grotesque that creates billboard-scale headlines at 136px with weight 500 and aggressive negative tracking (-2.72px). This isn't subtle branding; it's fintech at stadium scale.
 
@@ -17,7 +57,7 @@ What distinguishes Revolut is its pill-everything button system. Every button us
 - Zero shadows detected — depth through color contrast only
 - Tight display line-heights (1.00) with relaxed body (1.50–1.56)
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Revolut Dark** (`#191c1f`): Primary dark surface, button background, near-black text
@@ -46,7 +86,7 @@ What distinguishes Revolut is its pill-everything button system. Every button us
 - **Cool Gray** (`#8d969e`): Muted text, tertiary
 - **Gray Tone** (`#c9c9cd`): `--rui-color-grey-tone-20`, borders/dividers
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Display**: `Aeonik Pro` — geometric grotesque, no detected fallbacks
@@ -74,7 +114,28 @@ What distinguishes Revolut is its pill-everything button system. Every button us
 - **Billboard tracking**: -2.72px at 136px is extremely compressed — text designed to be read at a glance, like airport signage.
 - **Positive tracking on body**: Inter uses +0.16px to +0.24px, creating airy, well-spaced reading text that contrasts with the compressed headings.
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base unit: 8px
+- Scale: 4px, 6px, 8px, 14px, 16px, 20px, 24px, 32px, 40px, 48px, 80px, 88px, 120px
+- Large section spacing: 80px–120px
+
+### Border Radius Scale
+- Standard (12px): Navigation, small buttons
+- Card (20px): Feature cards
+- Pill (9999px): All buttons
+
+## Elevation & Depth
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Flat (Level 0) | No shadow | Everything — Revolut uses zero shadows |
+| Focus | `0 0 0 0.125rem` ring | Accessibility focus |
+
+**Shadow Philosophy**: Revolut uses ZERO shadows. Depth comes entirely from the dark/light section contrast and the generous whitespace between elements.
+
+## Components
 
 ### Buttons
 
@@ -117,28 +178,7 @@ What distinguishes Revolut is its pill-everything button system. Every button us
 - Clean header, hamburger toggle at 12px radius
 - Pill CTAs right-aligned
 
-## 5. Layout Principles
-
-### Spacing System
-- Base unit: 8px
-- Scale: 4px, 6px, 8px, 14px, 16px, 20px, 24px, 32px, 40px, 48px, 80px, 88px, 120px
-- Large section spacing: 80px–120px
-
-### Border Radius Scale
-- Standard (12px): Navigation, small buttons
-- Card (20px): Feature cards
-- Pill (9999px): All buttons
-
-## 6. Depth & Elevation
-
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Flat (Level 0) | No shadow | Everything — Revolut uses zero shadows |
-| Focus | `0 0 0 0.125rem` ring | Accessibility focus |
-
-**Shadow Philosophy**: Revolut uses ZERO shadows. Depth comes entirely from the dark/light section contrast and the generous whitespace between elements.
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use Aeonik Pro weight 500 for all display headings
@@ -153,7 +193,7 @@ What distinguishes Revolut is its pill-everything button system. Every button us
 - Don't use small buttons — the generous padding is intentional
 - Don't apply semantic colors to marketing surfaces — they're for the product
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 ### Breakpoints
 | Name | Width | Key Changes |
@@ -164,7 +204,7 @@ What distinguishes Revolut is its pill-everything button system. Every button us
 | Desktop | 1024–1280px | Standard desktop |
 | Large | 1280–1920px | Full layout |
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Dark: Revolut Dark (`#191c1f`)

@@ -1,6 +1,43 @@
-# Design System Inspired by CNN
+---
+name: CNN
+colors:
+  neutral: "#141414"
+  secondary: "#666666"
+  primary: "#CC0000"
+  tertiary: "#A00000"
+typography:
+  h1:
+    fontSize: 36px
+    fontWeight: 700
+    lineHeight: 44
+  h2:
+    fontSize: 22px
+    fontWeight: 700
+    lineHeight: 28
+  h3:
+    fontSize: 18px
+    fontWeight: 700
+    lineHeight: 24
+  body-md:
+    fontSize: 18px
+    fontWeight: 400
+    lineHeight: 30
+  caption:
+    fontSize: 13px
+    fontWeight: 400
+    lineHeight: 18
+  label:
+    fontSize: 14px
+    fontWeight: 700
+    lineHeight: 18
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 CNN's design language is urgency institutionalized. The brand red (`#CC0000`) demands immediate attention — it signals breaking news, live broadcasts, and the weight of real-time events. Against a near-black background (`#141414`) for the video-first interface, or stark white for article pages, the red creates an immediate sense of tension and importance. This is not a relaxing reading experience — it's a news wire made visual.
 
@@ -18,7 +55,7 @@ The editorial grid is dense and layered. The top-of-homepage "hero" zone feature
 - Font: CNN Sans (custom neo-grotesque)
 - Section divider: 3px `#CC0000` rule
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **CNN Red** (`#CC0000`): Logo, breaking news, live badges, section dividers, primary CTA
@@ -37,7 +74,7 @@ The editorial grid is dense and layered. The top-of-homepage "hero" zone feature
 - **Dark Panel** (`#1A1A1A`): Video-adjacent panels, dark-mode cards
 - **Live Overlay** (`rgba(204,0,0,0.9)`): Live badge background
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **CNN Sans**: `"CNN Sans", "Helvetica Neue", Arial, sans-serif` — all UI contexts, all sizes
@@ -62,7 +99,56 @@ The editorial grid is dense and layered. The top-of-homepage "hero" zone feature
 | Live Badge | CNN Sans | 11px | 700 | 14px | Uppercase, white on red |
 | Legal | CNN Sans | 12px | 400 | 16px | Footer copyright |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4, 8, 12, 16, 20, 24, 32, 48, 64px
+- Section top border + padding: 3px rule + 16px
+- Article max-width: 720px (left-aligned at desktop)
+- Grid: 12-column
+
+### Border Radius Scale
+- CNN uses **0px** throughout all editorial and news surfaces — zero radius = urgency and authority
+- Exception: video play button: 50%
+- Exception: author avatar: 50%
+- Exception: profile icon in nav: 50%
+
+## Elevation & Depth
+
+CNN's editorial surfaces are flat — the editorial grid and color create hierarchy:
+
+**All story cards (light mode):**
+```
+border: none;
+background: #FFFFFF;
+/* No shadow — flat editorial grid */
+```
+
+**Sticky navigation (dark):**
+```
+background: #141414;
+box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+```
+
+**Video player overlay:**
+```
+background: rgba(0,0,0,0.7);
+```
+
+**Breaking news bar:**
+```
+background: #CC0000;
+/* No shadow — pure flat authority */
+```
+
+**Modal:**
+```
+background: #FFFFFF;
+box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+```
+
+## Components
 
 ### Buttons
 **Primary (Subscribe / Watch Live):**
@@ -106,56 +192,7 @@ The editorial grid is dense and layered. The top-of-homepage "hero" zone feature
 - Padding-top: 16px
 - Margin-bottom: 32px
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4, 8, 12, 16, 20, 24, 32, 48, 64px
-- Section top border + padding: 3px rule + 16px
-- Article max-width: 720px (left-aligned at desktop)
-- Grid: 12-column
-
-### Border Radius Scale
-- CNN uses **0px** throughout all editorial and news surfaces — zero radius = urgency and authority
-- Exception: video play button: 50%
-- Exception: author avatar: 50%
-- Exception: profile icon in nav: 50%
-
-## 6. Depth & Elevation
-
-CNN's editorial surfaces are flat — the editorial grid and color create hierarchy:
-
-**All story cards (light mode):**
-```
-border: none;
-background: #FFFFFF;
-/* No shadow — flat editorial grid */
-```
-
-**Sticky navigation (dark):**
-```
-background: #141414;
-box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-```
-
-**Video player overlay:**
-```
-background: rgba(0,0,0,0.7);
-```
-
-**Breaking news bar:**
-```
-background: #CC0000;
-/* No shadow — pure flat authority */
-```
-
-**Modal:**
-```
-background: #FFFFFF;
-box-shadow: 0 8px 32px rgba(0,0,0,0.25);
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use the 3px `#CC0000` red top-rule on every editorial section — it's the CNN visual grammar
@@ -170,7 +207,7 @@ box-shadow: 0 8px 32px rgba(0,0,0,0.25);
 - Don't use a font other than CNN Sans — it was commissioned specifically for CNN's authority voice
 - Don't reduce article body text below 18px — CNN's readership spans a wide age range
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints:
 - Mobile: 0–640px — single column; sticky top bar with logo and hamburger
@@ -178,7 +215,7 @@ Breakpoints:
 - Desktop: 1025–1280px — 3-column lead layout; persistent sidebar
 - Wide: 1281px+ — hero story full-width; below-fold 3–4 column grid
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - CNN Red: `#CC0000`

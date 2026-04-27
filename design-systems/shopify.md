@@ -1,6 +1,30 @@
-# Design System Inspired by Shopify
+---
+name: Shopify
+colors:
+  tertiary: "#008060"
+  neutral: "#F6F6F7"
+  primary: "#202223"
+  secondary: "#6D7175"
+typography:
+  body-md:
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 24
+  caption:
+    fontSize: 11px
+    fontWeight: 400
+    lineHeight: 16
+  label:
+    fontSize: 14px
+    fontWeight: 500
+    lineHeight: 20
+rounded:
+  sm: 4px
+  md: 8px
+  lg: 12px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Shopify's design system — Polaris — is built around a merchant-first philosophy: clear, functional, and trustworthy. The interface prioritises clarity over decoration, using a restrained palette anchored by Shopify's signature green to signal commerce, growth, and action. Every surface is designed to reduce cognitive load for busy store owners managing inventory, orders, and analytics simultaneously.
 
@@ -18,7 +42,7 @@ Typography is set in Shopify Sans (a custom typeface) for brand moments and Inte
 - Spacing base unit: 4px (scale: 4, 8, 12, 16, 20, 24, 32, 40, 48, 64)
 - Elevation via subtle box shadows — no dramatic depth; flat-leaning design
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Shopify Green** (`#008060`): Primary CTA buttons, success states, brand accent, active nav indicators
@@ -52,7 +76,7 @@ Typography is set in Shopify Sans (a custom typeface) for brand moments and Inte
 - **Info** (`#006FBB`): Informational banners, tip callouts
 - **Highlight** (`#EBF9FC`): Info badge backgrounds
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Shopify Sans**: `'Shopify Sans', sans-serif` — Brand headings, admin hero text, marketing surfaces
@@ -75,7 +99,42 @@ Typography is set in Shopify Sans (a custom typeface) for brand moments and Inte
 | Code | SF Mono | 13px | 400 | 20px | API keys, code blocks |
 | Button | Inter | 14px | 500 | 20px | All button labels |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base unit: **4px**
+- Scale: `4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px`
+- Component padding: typically `16px` or `20px`
+- Section gaps: `24px` or `32px`
+- Page margins: `16px` (mobile), `32px` (tablet), `32px` auto-centered (desktop, max-width 1280px)
+
+### Grid
+- 12-column grid
+- Gutter: `16px`
+- Admin sidebar width: `240px` (collapsed: `72px`)
+- Content max-width: `1280px`
+
+### Border Radius Scale
+| Token | Value | Usage |
+|-------|-------|-------|
+| `--radius-sm` | 4px | Inputs, small badges, checkboxes |
+| `--radius-md` | 6px | Buttons, dropdowns |
+| `--radius-lg` | 8px | Cards, modals, panels |
+| `--radius-xl` | 12px | Large containers |
+| `--radius-full` | 9999px | Pill badges, avatar chips |
+
+## Elevation & Depth
+
+Shopify uses subtle, functional elevation — no dramatic shadows or glassmorphism. The elevation system communicates layer relationships rather than aesthetic depth.
+
+**Elevation Scale:**
+- **Level 0** (flat): No shadow — page backgrounds, inline elements
+- **Level 1** (card): `box-shadow: 0 0 0 1px rgba(63,63,68,0.05), 0 1px 3px 0 rgba(63,63,68,0.15)` — standard cards
+- **Level 2** (raised): `box-shadow: 0 2px 6px rgba(0,0,0,0.1), 0 0 1px rgba(0,0,0,0.12)` — dropdowns, popovers
+- **Level 3** (overlay): `box-shadow: 0 4px 16px rgba(0,0,0,0.15), 0 0 2px rgba(0,0,0,0.1)` — modals, toasts
+- **Level 4** (modal): `box-shadow: 0 8px 24px rgba(0,0,0,0.2)` — command bar, contextual menus
+
+## Components
 
 ### Buttons
 **Primary Button**
@@ -145,42 +204,7 @@ Typography is set in Shopify Sans (a custom typeface) for brand moments and Inte
 - Warning: bg `#FFEA8A`, text `#4E2400`
 - Critical: bg `#FED3D1`, text `#4E0900`
 
-## 5. Layout Principles
-
-### Spacing System
-- Base unit: **4px**
-- Scale: `4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px`
-- Component padding: typically `16px` or `20px`
-- Section gaps: `24px` or `32px`
-- Page margins: `16px` (mobile), `32px` (tablet), `32px` auto-centered (desktop, max-width 1280px)
-
-### Grid
-- 12-column grid
-- Gutter: `16px`
-- Admin sidebar width: `240px` (collapsed: `72px`)
-- Content max-width: `1280px`
-
-### Border Radius Scale
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--radius-sm` | 4px | Inputs, small badges, checkboxes |
-| `--radius-md` | 6px | Buttons, dropdowns |
-| `--radius-lg` | 8px | Cards, modals, panels |
-| `--radius-xl` | 12px | Large containers |
-| `--radius-full` | 9999px | Pill badges, avatar chips |
-
-## 6. Depth & Elevation
-
-Shopify uses subtle, functional elevation — no dramatic shadows or glassmorphism. The elevation system communicates layer relationships rather than aesthetic depth.
-
-**Elevation Scale:**
-- **Level 0** (flat): No shadow — page backgrounds, inline elements
-- **Level 1** (card): `box-shadow: 0 0 0 1px rgba(63,63,68,0.05), 0 1px 3px 0 rgba(63,63,68,0.15)` — standard cards
-- **Level 2** (raised): `box-shadow: 0 2px 6px rgba(0,0,0,0.1), 0 0 1px rgba(0,0,0,0.12)` — dropdowns, popovers
-- **Level 3** (overlay): `box-shadow: 0 4px 16px rgba(0,0,0,0.15), 0 0 2px rgba(0,0,0,0.1)` — modals, toasts
-- **Level 4** (modal): `box-shadow: 0 8px 24px rgba(0,0,0,0.2)` — command bar, contextual menus
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use `#008060` exclusively for primary CTAs — it signals "the most important action on screen"
@@ -197,7 +221,7 @@ Shopify uses subtle, functional elevation — no dramatic shadows or glassmorphi
 - Don't use color alone to communicate status — always pair with icon or text label
 - Avoid centered layouts for data-heavy pages — use left-aligned grid with sidebar navigation
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `xs`: 0–490px — single column, full-width cards, hamburger nav
@@ -212,7 +236,7 @@ Shopify uses subtle, functional elevation — no dramatic shadows or glassmorphi
 
 **Data tables:** Horizontal scroll enabled at `<768px`; priority columns hidden at `<490px`
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Primary action: `#008060`

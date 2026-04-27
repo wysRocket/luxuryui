@@ -1,6 +1,39 @@
-# Design System Inspired by Etsy
+---
+name: Etsy
+colors:
+  tertiary: "#F1641E"
+  neutral: "#FAF7F4"
+  primary: "#222222"
+  secondary: "#6D6D6D"
+typography:
+  h1:
+    fontSize: 24px
+    fontWeight: 600
+    lineHeight: 1.25
+  body-md:
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.6
+  label:
+    fontSize: 15px
+    fontWeight: 600
+    lineHeight: 1
+  caption:
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 1.4
+rounded:
+  sm: 4px
+  md: 12px
+  lg: 28px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Etsy's design evokes warmth, craft, and human connection — a deliberate counter to the sterile efficiency of mass-market e-commerce. The brand orange (`#F1641E`) is expressive and handmade-feeling, not corporate: it appears on the wordmark, primary CTAs, and critical UI moments. The surface palette leans warm — off-whites (`#FAF7F4`), warm grays, and earth tones — creating a tactile, artisanal atmosphere that mirrors the handcrafted products being sold.
 
@@ -18,7 +51,7 @@ The product grid gives each item breathing room with generous whitespace, favori
 - Rounded corners moderate: 4px–12px, never pill-shaped CTAs
 - "Story" copy sections with artisan photography backgrounds
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Etsy Orange** (`#F1641E`): Logo, primary CTA, active states, links
@@ -43,7 +76,7 @@ The product grid gives each item breathing room with generous whitespace, favori
 - **Success Green** (`#2E7D32`): "In stock", order confirmed
 - **Sale Tag** (`#D32F2F`): Sale price labels
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Editorial**: `Guardian Egyptian` — serif, homepage heroes, category stories
@@ -67,7 +100,27 @@ The product grid gives each item breathing room with generous whitespace, favori
 | Button | Graphik | 15px | 600 | 1.00 | CTA text |
 | Caption | Graphik | 12px | 400 | 1.40 | Tags, metadata |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4px, 8px, 12px, 16px, 24px, 32px, 40px, 56px, 80px
+
+### Border Radius Scale
+- Small (4px): Badges, status chips
+- Medium (8px): Cards, images
+- Large (12px): Modals, feature containers
+- Pill (28px): CTA buttons
+
+## Elevation & Depth
+
+- **Default cards**: No border, no shadow — clean white
+- **Hover elevation**: `box-shadow: 0 4px 16px rgba(0,0,0,0.10)`, translateY(-2px)
+- **Sticky nav**: `box-shadow: 0 2px 8px rgba(0,0,0,0.08)`
+- **Modals**: `box-shadow: 0 12px 40px rgba(0,0,0,0.18)`
+- **Philosophy**: Elevate on interaction, not at rest
+
+## Components
 
 ### Buttons
 
@@ -97,27 +150,7 @@ The product grid gives each item breathing room with generous whitespace, favori
 - Image: aspect-ratio 1:1 or 4:3, top of card
 - Favorites button top-right corner overlay
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4px, 8px, 12px, 16px, 24px, 32px, 40px, 56px, 80px
-
-### Border Radius Scale
-- Small (4px): Badges, status chips
-- Medium (8px): Cards, images
-- Large (12px): Modals, feature containers
-- Pill (28px): CTA buttons
-
-## 6. Depth & Elevation
-
-- **Default cards**: No border, no shadow — clean white
-- **Hover elevation**: `box-shadow: 0 4px 16px rgba(0,0,0,0.10)`, translateY(-2px)
-- **Sticky nav**: `box-shadow: 0 2px 8px rgba(0,0,0,0.08)`
-- **Modals**: `box-shadow: 0 12px 40px rgba(0,0,0,0.18)`
-- **Philosophy**: Elevate on interaction, not at rest
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Let product photography be the hero — don't compete with it
@@ -132,14 +165,14 @@ The product grid gives each item breathing room with generous whitespace, favori
 - Don't compress the product grid — quality over density
 - Don't omit review stars and counts — social proof is critical here
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints: 320px, 480px, 640px, 768px, 1024px, 1280px, 1600px
 - Mobile: 2-column grid, hamburger nav, full-width CTAs
 - Tablet: 3-column grid, filter bar horizontal scroll
 - Desktop: 4-column grid, top category rail, left filter sidebar on search
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand orange: `#F1641E`

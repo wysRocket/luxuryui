@@ -1,6 +1,42 @@
-# Design System Inspired by Monday.com
+---
+name: Monday.com
+colors:
+  tertiary: "#0073EA"
+  neutral: "#FFFFFF"
+  primary: "#0073EA"
+  secondary: "#676879"
+typography:
+  h1:
+    fontSize: 24px
+    fontWeight: 700
+    lineHeight: 1.2
+  h2:
+    fontSize: 18px
+    fontWeight: 600
+    lineHeight: 1.3
+  h3:
+    fontSize: 15px
+    fontWeight: 600
+    lineHeight: 1.35
+  caption:
+    fontSize: 11px
+    fontWeight: 400
+    lineHeight: 1.3
+  label:
+    fontSize: 14px
+    fontWeight: 600
+    lineHeight: 1
+rounded:
+  sm: 4px
+  md: 8px
+spacing:
+  xs: 4px
+  sm: 8px
+  md: 16px
+  lg: 32px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Monday.com's design language is built on a radical premise: project management doesn't have to be gray. The Work OS uses a vibrant, multi-color column system where status, priority, and category fields each carry their own color identity — hot pink, vivid purple, electric orange, sky blue, and bright green all coexist in the same board view. The visual result is somewhere between a spreadsheet and a stained-glass window, and it works because of a disciplined underlying system.
 
@@ -18,7 +54,7 @@ The design philosophy is "colorful clarity" — the colors aren't decorative; ea
 - Dark mode: `#1F1F2E` background variant available
 - Hover states reveal action icons (edit, checkbox, menu)
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Monday Blue** (`#0073EA`): brand, primary CTAs, nav active states
@@ -45,7 +81,7 @@ The design philosophy is "colorful clarity" — the colors aren't decorative; ea
 - **Cell Border** (`rgba(0,0,0,0.06)`): grid lines
 - **Group Header Tint** (10% of group color): colored group row fill
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Poppins**: `"Poppins", "Inter", sans-serif` — all text
@@ -64,22 +100,7 @@ The design philosophy is "colorful clarity" — the colors aren't decorative; ea
 | Caption | Poppins | 11px | 400 | 1.3 | Timestamps, IDs |
 | Button | Poppins | 14px | 600 | 1.0 | CTA text |
 
-## 4. Component Stylings
-
-### Buttons
-- **Primary**: `background: #0073EA`, `color: #FFFFFF`, `border-radius: 4px`, `padding: 10px 20px`, `font: Poppins 14px 600`
-- **Hover**: `background: #0060D0`
-- **Secondary**: `border: 1px solid #0073EA`, `color: #0073EA`, `background: transparent`, `border-radius: 4px`
-- **Add Item**: `color: #676879`, dashed `border: 1px dashed #C4C4C4`, `border-radius: 4px`, hover → blue fill
-- **Status Pill**: filled with semantic color, `border-radius: 4px`, Poppins 12px 600 uppercase, white text
-
-### Cards & Containers
-- **Board Cell**: `border-right: 1px solid rgba(0,0,0,0.06)`, `border-bottom: 1px solid rgba(0,0,0,0.06)`, `padding: 0 12px`, 40px row height
-- **Group Header Row**: left border 4px solid group color, fill group-color at 10% opacity, Poppins 15px 600
-- **Card View Card**: `background: #FFFFFF`, `border-radius: 8px`, `border: 1px solid rgba(0,0,0,0.08)`, colored status stripe top
-- **Widget Container**: `background: #FFFFFF`, `border-radius: 8px`, `border: 1px solid rgba(0,0,0,0.10)`, `padding: 20px`
-
-## 5. Layout Principles
+## Layout
 
 ### Spacing System
 - Base: 4px
@@ -94,7 +115,7 @@ The design philosophy is "colorful clarity" — the colors aren't decorative; ea
 - **8px** — card view cards, widgets, modals
 - **50%** — member avatars in cells
 
-## 6. Depth & Elevation
+## Elevation & Depth
 
 - **Level 0** (board): flat grid, hairline borders
 - **Level 1** (widget): `box-shadow: 0 2px 8px rgba(0,0,0,0.08)` — dashboard widgets
@@ -102,7 +123,22 @@ The design philosophy is "colorful clarity" — the colors aren't decorative; ea
 - **Level 3** (modal): `box-shadow: 0 8px 32px rgba(0,0,0,0.18)` — full modals
 - **Status pill drop shadow**: none — flat pills read more clearly in dense grids
 
-## 7. Do's and Don'ts
+## Components
+
+### Buttons
+- **Primary**: `background: #0073EA`, `color: #FFFFFF`, `border-radius: 4px`, `padding: 10px 20px`, `font: Poppins 14px 600`
+- **Hover**: `background: #0060D0`
+- **Secondary**: `border: 1px solid #0073EA`, `color: #0073EA`, `background: transparent`, `border-radius: 4px`
+- **Add Item**: `color: #676879`, dashed `border: 1px dashed #C4C4C4`, `border-radius: 4px`, hover → blue fill
+- **Status Pill**: filled with semantic color, `border-radius: 4px`, Poppins 12px 600 uppercase, white text
+
+### Cards & Containers
+- **Board Cell**: `border-right: 1px solid rgba(0,0,0,0.06)`, `border-bottom: 1px solid rgba(0,0,0,0.06)`, `padding: 0 12px`, 40px row height
+- **Group Header Row**: left border 4px solid group color, fill group-color at 10% opacity, Poppins 15px 600
+- **Card View Card**: `background: #FFFFFF`, `border-radius: 8px`, `border: 1px solid rgba(0,0,0,0.08)`, colored status stripe top
+- **Widget Container**: `background: #FFFFFF`, `border-radius: 8px`, `border: 1px solid rgba(0,0,0,0.10)`, `padding: 20px`
+
+## Do's and Don'ts
 
 ### Do
 - Use the semantic color system consistently — never assign colors arbitrarily
@@ -117,7 +153,8 @@ The design philosophy is "colorful clarity" — the colors aren't decorative; ea
 - Don't use drop shadows on status pills — flat fills read better at density
 - Don't use blue for status meanings — reserve it for brand/interactive elements
 
-## 8. Responsive Behavior
+## Responsive Behavior
+
 Breakpoints: 375px (mobile), 768px (tablet), 1024px (desktop), 1440px (full board)
 
 - **375px**: card view default; board view requires horizontal scroll; bottom nav
@@ -125,7 +162,7 @@ Breakpoints: 375px (mobile), 768px (tablet), 1024px (desktop), 1440px (full boar
 - **1024px**: full board view; sidebar expanded at 260px
 - **1440px**: wide board with all columns; dashboard grid 3-column
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand: `#0073EA`

@@ -1,6 +1,27 @@
-# Design System Inspired by HotelTonight
+---
+name: HotelTonight
+colors:
+  neutral: "#1A1A2E"
+  tertiary: "#FFFFFF"
+  primary: "#1A1A2E"
+typography:
+  body-md:
+    fontFamily: Tiempos Headline
+    fontSize: 15px
+    fontWeight: 400
+    lineHeight: 1.6
+rounded:
+  sm: 4px
+  md: 12px
+  lg: 20px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 HotelTonight's design is bold, decisive, and luxuriously dark — a product built for last-minute hotel booking where confidence and speed matter above all else. The deep navy (`#1A1A2E`) and near-black backgrounds (`#0D0D17`) create a premium, nighttime atmosphere perfectly aligned with the last-minute travel use case. Bold photography bleeds edge-to-edge, making each hotel feel like a visual destination rather than a commodity listing.
 
@@ -18,7 +39,7 @@ The product is mobile-first in philosophy and design: swipeable hotel cards, a s
 - Swipeable card interactions on mobile
 - Premium editorial curation aesthetic — not a search engine
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Deep Navy** (`#1A1A2E`): Primary app background
@@ -41,7 +62,7 @@ The product is mobile-first in philosophy and design: swipeable hotel cards, a s
 - **Available Amber** (`#F39C12`): Limited availability warning
 - **Sold Out Gray** (`#555577`): Grayed-out unavailable hotels
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Primary**: `Tiempos Headline` / `Georgia` — serif for hotel names (editorial weight)
@@ -63,7 +84,27 @@ The product is mobile-first in philosophy and design: swipeable hotel cards, a s
 | Book CTA | Graphik | 18px | 700 | 1.00 | "Book" — the only CTA |
 | Timer | Graphik | 16px | 700 | 1.00 | "3 rooms left" urgency |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px
+
+### Border Radius Scale
+- Small (4px): Status badges, tags
+- Standard (8px): Buttons, form inputs
+- Medium (12px): Hotel cards, containers
+- Large (20px): Modals, bottom sheets
+
+## Elevation & Depth
+
+- **Hotel cards**: `box-shadow: 0 8px 32px rgba(0,0,0,0.5)` — strong dark shadow
+- **Active card**: `box-shadow: 0 16px 48px rgba(0,0,0,0.7)` + scale(1.02)
+- **Booking modal**: `box-shadow: 0 24px 80px rgba(0,0,0,0.8)`
+- **Top nav bar**: `backdrop-filter: blur(12px)`, `background: rgba(13,13,23,0.85)`
+- **No elevation between surface layers** — depth comes from photography contrast
+
+## Components
 
 ### Buttons
 
@@ -93,27 +134,7 @@ The product is mobile-first in philosophy and design: swipeable hotel cards, a s
 - Radius: 12px, overflow: hidden
 - Swipeable horizontally on mobile
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px
-
-### Border Radius Scale
-- Small (4px): Status badges, tags
-- Standard (8px): Buttons, form inputs
-- Medium (12px): Hotel cards, containers
-- Large (20px): Modals, bottom sheets
-
-## 6. Depth & Elevation
-
-- **Hotel cards**: `box-shadow: 0 8px 32px rgba(0,0,0,0.5)` — strong dark shadow
-- **Active card**: `box-shadow: 0 16px 48px rgba(0,0,0,0.7)` + scale(1.02)
-- **Booking modal**: `box-shadow: 0 24px 80px rgba(0,0,0,0.8)`
-- **Top nav bar**: `backdrop-filter: blur(12px)`, `background: rgba(13,13,23,0.85)`
-- **No elevation between surface layers** — depth comes from photography contrast
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Let hotel photography fill the entire card — no white mats or padding
@@ -128,14 +149,14 @@ The product is mobile-first in philosophy and design: swipeable hotel cards, a s
 - Don't add filter sidebars or sort dropdowns — simplicity is the differentiator
 - Don't use colored CTAs — white button on dark is the HotelTonight signature
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints: 320px, 375px, 428px, 768px, 1024px
 - Mobile: Full-screen hotel cards, swipe left/right navigation, 1-tap booking
 - Tablet: 2-column card grid, map view toggle
 - Web: Split screen — map left (60%), curated list right (40%)
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Background: `#1A1A2E`

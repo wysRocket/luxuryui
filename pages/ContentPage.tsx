@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { submitContactForm } from '../services/contactService';
 
 interface ContentSection {
   title: string;
@@ -25,6 +26,107 @@ interface ContentPageProps {
   secondaryCtaLabel: string;
   secondaryCtaPath: string;
 }
+
+type FormState = 'idle' | 'submitting' | 'success' | 'error';
+
+const ContactFormSection: React.FC = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  const [state, setState] = useState<FormState>('idle');
+  const [errorMsg, setErrorMsg] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setState('submitting');
+    setErrorMsg('');
+    try {
+      await submitContactForm({ name, email, subject, message });
+      setState('success');
+      setName(''); setEmail(''); setSubject(''); setMessage('');
+    } catch {
+      setState('error');
+      setErrorMsg('Something went wrong. Please email us directly at contact@luxuryuilib.com');
+    }
+  };
+
+  return (
+    <motion.section
+      initial={{ opacity: 0, y: 16 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, delay: 0.14 }}
+      className="mt-6 rounded-3xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 md:p-8"
+    >
+      <p className="text-xs font-black uppercase tracking-[0.22em] text-gray-400 dark:text-gray-500 mb-1">Send a Message</p>
+      <h2 className="text-2xl font-black tracking-tight text-gray-900 dark:text-white mb-6">Get in touch</h2>
+
+      {state === 'success' ? (
+        <p className="text-sm font-semibold text-green-600 dark:text-green-400">
+          Message sent — we'll get back to you shortly.
+        </p>
+      ) : (
+        <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div className="flex flex-col gap-1">
+            <label className="text-[11px] font-black uppercase tracking-[0.18em] text-gray-400 dark:text-gray-500">Name</label>
+            <input
+              type="text"
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 px-4 py-3 text-sm text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white"
+              placeholder="Your name"
+            />
+          </div>
+          <div className="flex flex-col gap-1">
+            <label className="text-[11px] font-black uppercase tracking-[0.18em] text-gray-400 dark:text-gray-500">Email</label>
+            <input
+              type="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 px-4 py-3 text-sm text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white"
+              placeholder="you@example.com"
+            />
+          </div>
+          <div className="flex flex-col gap-1 md:col-span-2">
+            <label className="text-[11px] font-black uppercase tracking-[0.18em] text-gray-400 dark:text-gray-500">Subject</label>
+            <input
+              type="text"
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
+              className="rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 px-4 py-3 text-sm text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white"
+              placeholder="General inquiry, billing, support…"
+            />
+          </div>
+          <div className="flex flex-col gap-1 md:col-span-2">
+            <label className="text-[11px] font-black uppercase tracking-[0.18em] text-gray-400 dark:text-gray-500">Message</label>
+            <textarea
+              required
+              rows={5}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              className="rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 px-4 py-3 text-sm text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white resize-none"
+              placeholder="Tell us how we can help…"
+            />
+          </div>
+          {state === 'error' && (
+            <p className="md:col-span-2 text-sm text-red-500">{errorMsg}</p>
+          )}
+          <div className="md:col-span-2">
+            <button
+              type="submit"
+              disabled={state === 'submitting'}
+              className="inline-flex items-center justify-center rounded-full bg-black dark:bg-white text-white dark:text-black px-6 py-3 text-sm font-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors disabled:opacity-50"
+            >
+              {state === 'submitting' ? 'Sending…' : 'Send Message'}
+            </button>
+          </div>
+        </form>
+      )}
+    </motion.section>
+  );
+};
 
 const ContentPage: React.FC<ContentPageProps> = ({
   eyebrow,
@@ -128,6 +230,8 @@ const ContentPage: React.FC<ContentPageProps> = ({
           </div>
         </motion.section>
       ) : null}
+
+      {contactDetails?.length ? <ContactFormSection /> : null}
 
       <section className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
         {sections.map((section, index) => (

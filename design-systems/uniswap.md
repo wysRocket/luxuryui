@@ -1,6 +1,22 @@
-# Design System Inspired by Uniswap
+---
+name: Uniswap
+colors:
+  neutral: "#0D0E0F"
+  primary: "#FF007A"
+  tertiary: "#E6006E"
+typography:
+  label:
+    fontFamily: Inter
+    fontSize: 20px
+    fontWeight: 600
+    lineHeight: 28
+rounded:
+  sm: 6px
+  md: 16px
+  lg: 20px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Uniswap's design language establishes a new visual category for decentralized finance: it is the first DeFi product to feel genuinely consumer-grade. The interface strips away the intimidating complexity of DEX mechanics and presents them through a design vocabulary borrowed from fintech — clean surfaces, confident typography, precise color usage. The result is an interface that feels as approachable as a currency exchange app while hiding extraordinary cryptographic complexity underneath.
 
@@ -18,7 +34,7 @@ Inter typeface provides a technical-adjacent character through its extensive Ope
 - Liquidity pool depth visualization using subtle gradient graphs
 - Web3 connection badge showing chain logo + address truncated
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Hot Pink** (`#FF007A`): Swap CTA button, brand logo, selected tab indicator
@@ -51,7 +67,7 @@ Inter typeface provides a technical-adjacent character through its extensive Ope
 - **Pool Fee** (`rgba(255,0,122,0.20)`): Fee tier badge background
 - **Chain Badge** (`#6B3FCC`): Ethereum chain indicator
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Primary**: `"Inter", -apple-system, "Helvetica Neue", sans-serif` — all text
@@ -73,7 +89,45 @@ Inter typeface provides a technical-adjacent character through its extensive Ope
 | Nav Label | Inter | 16px | 500 | 22px | Top navigation |
 | Wallet Address | Inter | 14px | 500 | 20px | Truncated `0x123…abcd` |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: `8px`
+- Scale: `4, 8, 12, 16, 20, 24, 32, 48px`
+- Card padding: `8px` outer, `16px` per input panel
+- Gap between swap panels: `2px` (flip button bridges it)
+- Navigation height: `72px`
+- Page padding: `16px` mobile, `0px` desktop (card centered)
+
+### Layout Structure
+- Max-width for swap card: `480px`
+- Centered in viewport vertically (slightly above center) and horizontally
+- Pools table: full-width, max-width `1400px`
+- Tokens table: same as pools
+- Left nav (desktop): hidden; top nav only
+
+### Border Radius Scale
+- `0px` — price impact lines, chart lines
+- `6px` — small badges, fee tier chips
+- `12px` — tooltips, small dropdowns
+- `16px` — token input panels
+- `20px` — main swap card, swap button
+- `100px` — connect wallet, token selector pill
+
+## Elevation & Depth
+
+### Shadow Scale
+- **Base Page** — no shadow (dark background provides context)
+- **Swap Card** — `0 4px 32px rgba(0,0,0,0.40)`
+- **Token Dropdown** — `0 4px 24px rgba(0,0,0,0.60)`, border radius 20px
+- **Tooltip** — `0 4px 16px rgba(0,0,0,0.50)`
+- **Modal** — `0 8px 40px rgba(0,0,0,0.70)`
+
+### Depth Cues
+- Nested panels use progressively lighter surface colors (Surface 1 → 2 → 3 → 4)
+- No gradients used as depth metaphors — pure flat color steps
+
+## Components
 
 ### Buttons
 
@@ -143,45 +197,7 @@ Inter typeface provides a technical-adjacent character through its extensive Ope
 - Label-value pairs at 14px
 - Route display: token → token with hop steps
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: `8px`
-- Scale: `4, 8, 12, 16, 20, 24, 32, 48px`
-- Card padding: `8px` outer, `16px` per input panel
-- Gap between swap panels: `2px` (flip button bridges it)
-- Navigation height: `72px`
-- Page padding: `16px` mobile, `0px` desktop (card centered)
-
-### Layout Structure
-- Max-width for swap card: `480px`
-- Centered in viewport vertically (slightly above center) and horizontally
-- Pools table: full-width, max-width `1400px`
-- Tokens table: same as pools
-- Left nav (desktop): hidden; top nav only
-
-### Border Radius Scale
-- `0px` — price impact lines, chart lines
-- `6px` — small badges, fee tier chips
-- `12px` — tooltips, small dropdowns
-- `16px` — token input panels
-- `20px` — main swap card, swap button
-- `100px` — connect wallet, token selector pill
-
-## 6. Depth & Elevation
-
-### Shadow Scale
-- **Base Page** — no shadow (dark background provides context)
-- **Swap Card** — `0 4px 32px rgba(0,0,0,0.40)`
-- **Token Dropdown** — `0 4px 24px rgba(0,0,0,0.60)`, border radius 20px
-- **Tooltip** — `0 4px 16px rgba(0,0,0,0.50)`
-- **Modal** — `0 8px 40px rgba(0,0,0,0.70)`
-
-### Depth Cues
-- Nested panels use progressively lighter surface colors (Surface 1 → 2 → 3 → 4)
-- No gradients used as depth metaphors — pure flat color steps
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Reserve `#FF007A` exclusively for the swap CTA and logo — diluting it destroys its signal value
@@ -196,7 +212,7 @@ Inter typeface provides a technical-adjacent character through its extensive Ope
 - Don't show token amounts without USD equivalents — cross-reference is essential
 - Don't animate the swap card position — it should feel stable and anchored
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `375px` — mobile: full-width card, bottom nav tabs (Swap/Pool/Tokens/NFTs)
@@ -209,7 +225,7 @@ Inter typeface provides a technical-adjacent character through its extensive Ope
 - Token search: full-screen overlay on mobile, dropdown on desktop
 - Transaction history: bottom sheet on mobile, right panel on desktop
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Hot Pink: `#FF007A`

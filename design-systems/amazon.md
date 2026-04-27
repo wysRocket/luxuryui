@@ -1,6 +1,42 @@
-# Design System Inspired by Amazon
+---
+name: Amazon
+colors:
+  tertiary: "#FF9900"
+  primary: "#131921"
+  neutral: "#FFFFFF"
+typography:
+  h1:
+    fontSize: 21px
+    fontWeight: 400
+    lineHeight: 29
+  h2:
+    fontSize: 24px
+    fontWeight: 700
+    lineHeight: 32
+  h3:
+    fontSize: 18px
+    fontWeight: 700
+    lineHeight: 24
+  body-md:
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 20
+  label:
+    fontSize: 13px
+    fontWeight: 700
+    lineHeight: 18
+rounded:
+  sm: 3px
+  md: 8px
+  lg: 24px
+spacing:
+  xs: 4px
+  sm: 8px
+  md: 16px
+  lg: 32px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Amazon's design language is utilitarian commerce at scale — every pixel earns its place by driving conversion or reducing friction. The palette pairs a rich navy header (`#131921`) with crisp white content surfaces, punctuated by the signature Amazon orange (`#FF9900`) that draws the eye to every actionable element. The result is a no-nonsense density that communicates abundance: Amazon has everything, and you can find it right now.
 
@@ -18,7 +54,7 @@ Spacing is tight by modern standards, reflecting years of A/B testing that shows
 - Stock positive: `#007600` (dark green)
 - Border radius: 4px maximum — intentionally minimal
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Amazon Orange** (`#FF9900`): Primary CTA button background, "Add to Cart", promotional badges
@@ -36,7 +72,7 @@ Spacing is tight by modern standards, reflecting years of A/B testing that shows
 - **Mid Gray** (`#DDDDDD`): Divider lines, card borders
 - **Overlay Dark** (`rgba(0,0,0,0.65)`): Modal overlays and mega-menu backdrops
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Amazon Ember**: `"Amazon Ember", Arial, sans-serif` — primary for all UI text, product copy, and navigation
@@ -58,7 +94,42 @@ Spacing is tight by modern standards, reflecting years of A/B testing that shows
 | Badge text | Amazon Ember | 11px | 700 | 14px | "Prime", "Best Seller" labels |
 | Legal / footnote | Amazon Ember | 11px | 400 | 16px | `#767676` on white |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 4px
+- Scale: 4, 8, 12, 16, 20, 24, 32, 48, 64px
+- Column gutter: 16px standard; 12px on mobile
+- Content max-width: 1500px centered
+
+### Border Radius Scale
+- Micro (badges, tags): 3px
+- Default (cards, inputs, buttons): 8px
+- Pill (Prime badge): 24px
+- Avatar: 50% circle
+
+## Elevation & Depth
+
+Amazon uses a minimal two-level elevation system:
+
+**Level 1 — Card resting:**
+```
+box-shadow: 0 2px 5px rgba(213,217,217,0.5), 0 1px 2px rgba(0,0,0,0.15);
+```
+
+**Level 2 — Hover / dropdown:**
+```
+box-shadow: 0 6px 12px rgba(0,0,0,0.2), 0 2px 4px rgba(0,0,0,0.12);
+```
+
+**Level 3 — Modal / mega-menu:**
+```
+box-shadow: 0 8px 28px rgba(0,0,0,0.28);
+```
+
+No blurred glass or layered translucency — pure hard shadow realism.
+
+## Components
 
 ### Buttons
 **Primary (Add to Cart):**
@@ -90,42 +161,7 @@ Spacing is tight by modern standards, reflecting years of A/B testing that shows
 - Padding: 16px
 - Image container: square ratio with `object-fit: contain` on white background
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 4px
-- Scale: 4, 8, 12, 16, 20, 24, 32, 48, 64px
-- Column gutter: 16px standard; 12px on mobile
-- Content max-width: 1500px centered
-
-### Border Radius Scale
-- Micro (badges, tags): 3px
-- Default (cards, inputs, buttons): 8px
-- Pill (Prime badge): 24px
-- Avatar: 50% circle
-
-## 6. Depth & Elevation
-
-Amazon uses a minimal two-level elevation system:
-
-**Level 1 — Card resting:**
-```
-box-shadow: 0 2px 5px rgba(213,217,217,0.5), 0 1px 2px rgba(0,0,0,0.15);
-```
-
-**Level 2 — Hover / dropdown:**
-```
-box-shadow: 0 6px 12px rgba(0,0,0,0.2), 0 2px 4px rgba(0,0,0,0.12);
-```
-
-**Level 3 — Modal / mega-menu:**
-```
-box-shadow: 0 8px 28px rgba(0,0,0,0.28);
-```
-
-No blurred glass or layered translucency — pure hard shadow realism.
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use `#FF9900` exclusively for promotional highlights and badges — never for body text
@@ -140,7 +176,7 @@ No blurred glass or layered translucency — pure hard shadow realism.
 - Don't use orange (`#FF9900`) as a link color — it conflicts with CTA hierarchy
 - Don't increase card radius above 8px — it softens the utilitarian brand feel
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints:
 - Mobile: 0–480px — single column, sticky header compresses to search-dominant
@@ -149,7 +185,7 @@ Breakpoints:
 - Desktop LG: 1025–1500px — 5–6 column grid with sponsored slots
 - Wide: 1500px+ — grid caps at 7 items; outer gutters expand
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand Orange: `#FF9900`

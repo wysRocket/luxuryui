@@ -1,6 +1,42 @@
-# Design System Inspired by Khan Academy
+---
+name: Khan Academy
+colors:
+  tertiary: "#14BF96"
+  neutral: "#F7F8FA"
+  primary: "#1865F2"
+typography:
+  h1:
+    fontSize: 32px
+    fontWeight: 700
+    lineHeight: 1.2
+  h2:
+    fontSize: 24px
+    fontWeight: 700
+    lineHeight: 1.3
+  h3:
+    fontSize: 20px
+    fontWeight: 600
+    lineHeight: 1.35
+  body-lg:
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.65
+  body-md:
+    fontSize: 15px
+    fontWeight: 400
+    lineHeight: 1.6
+rounded:
+  sm: 4px
+  md: 12px
+  lg: 16px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Khan Academy's design language is built on the principle that learning should feel approachable, encouraging, and free from anxiety. The interface uses a clean white canvas with a confident teal-green (#14BF96) as the primary brand color — a hue that communicates growth, health, and forward momentum. A secondary blue (#1865F2) handles interactive elements and links, creating a clear two-tone system that guides students intuitively through content.
 
@@ -18,7 +54,7 @@ Progress and mastery visualization is central to the UI. The green accent appear
 - Flat, inclusive illustration style — no photography in core UI
 - High contrast text for accessibility (WCAG AA minimum)
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Khan Green** (`#14BF96`): mastery indicators, progress fills, success states, brand
@@ -38,7 +74,7 @@ Progress and mastery visualization is central to the UI. The green accent appear
 - **Border** (`rgba(33,36,44,0.12)`): card outlines, input borders
 - **Mastery 1–5** (`#FFFFFF`, `#D6F0E8`, `#70C6A8`, `#14BF96`, `#0E8A6A`): mastery grid spectrum
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Lato**: `"Lato", sans-serif` — primary typeface for all UI text and body content
@@ -58,22 +94,7 @@ Progress and mastery visualization is central to the UI. The green accent appear
 | Label | Lato | 12px | 700 | 1.2 | Uppercase badge text, 0.06em tracking |
 | Tiny | Lato | 11px | 400 | 1.4 | Legal, fine print |
 
-## 4. Component Stylings
-
-### Buttons
-- **Primary**: `background: #1865F2`, `color: #FFFFFF`, `border-radius: 8px`, `padding: 12px 20px`, `font-size: 16px`, `font-weight: 700`
-- **Hover**: `background: #1454CE`
-- **Green Primary**: `background: #14BF96`, `color: #FFFFFF` — used on "Start learning" CTAs
-- **Secondary / Ghost**: `border: 2px solid #1865F2`, `color: #1865F2`, `background: transparent`, `border-radius: 8px`
-- **Disabled**: `background: #C8CACE`, `color: #7D8189`
-
-### Cards & Containers
-- **Course Card**: `background: #FFFFFF`, `border-radius: 12px`, `border: 1px solid rgba(33,36,44,0.12)`, `padding: 20px`, `box-shadow: 0 1px 4px rgba(33,36,44,0.08)`
-- **Exercise Container**: `border-radius: 8px`, `background: #FFFFFF`, inner shadow on focus state
-- **Mastery Grid Cell**: 36×36px, rounded 4px, background based on mastery level 1–5
-- **Progress Ring**: SVG circle, green stroke `#14BF96` on gray `#E5E7EB` track
-
-## 5. Layout Principles
+## Layout
 
 ### Spacing System
 - Base: 8px
@@ -88,7 +109,7 @@ Progress and mastery visualization is central to the UI. The green accent appear
 - **16px** — modal dialogs, onboarding panels
 - **9999px** — progress bars, pill badges
 
-## 6. Depth & Elevation
+## Elevation & Depth
 
 - **Level 0** (inline): no shadow, border only — exercise step items
 - **Level 1** (card): `box-shadow: 0 1px 4px rgba(33,36,44,0.08)` — course cards
@@ -96,7 +117,22 @@ Progress and mastery visualization is central to the UI. The green accent appear
 - **Level 3** (modal): `box-shadow: 0 8px 32px rgba(33,36,44,0.18)` — modal dialogs
 - Green glow on success: `box-shadow: 0 0 0 3px rgba(20,191,150,0.30)` — correct answer ring
 
-## 7. Do's and Don'ts
+## Components
+
+### Buttons
+- **Primary**: `background: #1865F2`, `color: #FFFFFF`, `border-radius: 8px`, `padding: 12px 20px`, `font-size: 16px`, `font-weight: 700`
+- **Hover**: `background: #1454CE`
+- **Green Primary**: `background: #14BF96`, `color: #FFFFFF` — used on "Start learning" CTAs
+- **Secondary / Ghost**: `border: 2px solid #1865F2`, `color: #1865F2`, `background: transparent`, `border-radius: 8px`
+- **Disabled**: `background: #C8CACE`, `color: #7D8189`
+
+### Cards & Containers
+- **Course Card**: `background: #FFFFFF`, `border-radius: 12px`, `border: 1px solid rgba(33,36,44,0.12)`, `padding: 20px`, `box-shadow: 0 1px 4px rgba(33,36,44,0.08)`
+- **Exercise Container**: `border-radius: 8px`, `background: #FFFFFF`, inner shadow on focus state
+- **Mastery Grid Cell**: 36×36px, rounded 4px, background based on mastery level 1–5
+- **Progress Ring**: SVG circle, green stroke `#14BF96` on gray `#E5E7EB` track
+
+## Do's and Don'ts
 
 ### Do
 - Use green exclusively for mastery, success, and progress signals
@@ -111,7 +147,8 @@ Progress and mastery visualization is central to the UI. The green accent appear
 - Don't mix display typefaces into learning content — Lato only
 - Don't use shadows heavier than level 2 in content areas
 
-## 8. Responsive Behavior
+## Responsive Behavior
+
 Breakpoints: 360px (mobile), 600px (tablet portrait), 960px (tablet landscape), 1280px (desktop)
 
 - **360px**: single column; collapsible sidebar; stacked mastery cells
@@ -119,7 +156,7 @@ Breakpoints: 360px (mobile), 600px (tablet portrait), 960px (tablet landscape), 
 - **960px**: full sidebar visible; 2-column course grid; video at 100% width
 - **1280px**: 3-column course grid; wide dashboard mastery view
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand: `#14BF96`

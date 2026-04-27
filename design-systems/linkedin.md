@@ -1,6 +1,47 @@
-# Design System Inspired by LinkedIn
+---
+name: LinkedIn
+colors:
+  tertiary: "#0A66C2"
+  neutral: "#F3F2EF"
+  primary: "#0A66C2"
+  secondary: "#666666"
+typography:
+  h1:
+    fontSize: 24px
+    fontWeight: 700
+    lineHeight: 1.2
+  h2:
+    fontSize: 20px
+    fontWeight: 700
+    lineHeight: 1.25
+  h3:
+    fontSize: 16px
+    fontWeight: 600
+    lineHeight: 1.3
+  body-lg:
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.6
+  body-md:
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.5
+  caption:
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 1.4
+rounded:
+  sm: 4px
+  md: 8px
+  lg: 24px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 LinkedIn's design system is purpose-built for professional trust and ambient social proof. The dominant palette — LinkedIn Blue (`#0A66C2`) against white — signals corporate reliability in a way that no other color pairing does for a professional audience. The interface is clean without being sterile, warm without being casual. Every element is calibrated to read "office-appropriate" at all times.
 
@@ -18,7 +59,7 @@ The design prioritizes connection and engagement signals: profile photos are cir
 - Gray system: `#F3F2EF` background, `#666666` secondary text
 - Connection degree badges: 1st, 2nd, 3rd with blue/gray coloring
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **LinkedIn Blue** (`#0A66C2`): primary buttons, links, active states, brand
@@ -39,7 +80,7 @@ The design prioritizes connection and engagement signals: profile photos are cir
 - **Border** (`rgba(0,0,0,0.08)`): card outlines, dividers
 - **Notification Red** (`#E34E2E`): unread badge on nav
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Source Sans Pro**: `"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif` — all text
@@ -58,7 +99,30 @@ The design prioritizes connection and engagement signals: profile photos are cir
 | Label | Source Sans Pro | 12px | 700 | 1.2 | Button text, tags |
 | Notification | Source Sans Pro | 11px | 700 | 1.0 | Badge count, red dot |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4, 8, 12, 16, 20, 24, 32, 40, 48
+- Feed max-width: 552px centered
+- Left sidebar: 225px fixed
+- Right sidebar: 300px fixed
+
+### Border Radius Scale
+- **4px** — skill tags, small badges
+- **8px** — cards, modals, sidebars
+- **24px** — primary and secondary buttons (pill shape)
+- **50%** — profile photos, avatar circles
+
+## Elevation & Depth
+
+- **Level 0** (background): `#F3F2EF` — page canvas
+- **Level 1** (card): `box-shadow: 0 0 0 1px rgba(0,0,0,0.08)` — feed cards, flat
+- **Level 2** (dropdown): `box-shadow: 0 2px 8px rgba(0,0,0,0.14)` — nav dropdowns
+- **Level 3** (modal): `box-shadow: 0 4px 24px rgba(0,0,0,0.20)` — full modals
+- **Blue underline** (active nav): `border-bottom: 2px solid #0A66C2`, 48px height
+
+## Components
 
 ### Buttons
 - **Primary**: `background: #0A66C2`, `color: #FFFFFF`, `border-radius: 24px`, `padding: 10px 24px`, `font: Source Sans Pro 16px 600`
@@ -74,30 +138,7 @@ The design prioritizes connection and engagement signals: profile photos are cir
 - **Sidebar Widget**: `background: #FFFFFF`, `border-radius: 8px`, `border: 1px solid rgba(0,0,0,0.08)`
 - **Modal**: `background: #FFFFFF`, `border-radius: 8px`, `box-shadow: 0 4px 24px rgba(0,0,0,0.20)`
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4, 8, 12, 16, 20, 24, 32, 40, 48
-- Feed max-width: 552px centered
-- Left sidebar: 225px fixed
-- Right sidebar: 300px fixed
-
-### Border Radius Scale
-- **4px** — skill tags, small badges
-- **8px** — cards, modals, sidebars
-- **24px** — primary and secondary buttons (pill shape)
-- **50%** — profile photos, avatar circles
-
-## 6. Depth & Elevation
-
-- **Level 0** (background): `#F3F2EF` — page canvas
-- **Level 1** (card): `box-shadow: 0 0 0 1px rgba(0,0,0,0.08)` — feed cards, flat
-- **Level 2** (dropdown): `box-shadow: 0 2px 8px rgba(0,0,0,0.14)` — nav dropdowns
-- **Level 3** (modal): `box-shadow: 0 4px 24px rgba(0,0,0,0.20)` — full modals
-- **Blue underline** (active nav): `border-bottom: 2px solid #0A66C2`, 48px height
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Always use circular profile photos — never rectangular
@@ -112,14 +153,15 @@ The design prioritizes connection and engagement signals: profile photos are cir
 - Don't use red except for notification badges
 - Don't exceed 552px feed card width — professional reading context
 
-## 8. Responsive Behavior
+## Responsive Behavior
+
 Breakpoints: 375px (mobile), 768px (tablet), 1128px (desktop)
 
 - **375px**: single-column; bottom tab navigation; collapsed sidebars
 - **768px**: feed + right sidebar; hamburger for left sidebar
 - **1128px**: full 3-column: left profile sidebar | feed | right sidebar
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand: `#0A66C2`

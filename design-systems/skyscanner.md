@@ -1,6 +1,26 @@
-# Design System Inspired by Skyscanner
+---
+name: Skyscanner
+colors:
+  secondary: "#444560"
+  neutral: "#FFFFFF"
+  primary: "#0770E3"
+  tertiary: "#0654B2"
+typography:
+  body-md:
+    fontSize: 18px
+    fontWeight: 400
+    lineHeight: 28
+  caption:
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 16
+rounded:
+  sm: 4px
+  md: 12px
+  lg: 16px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Skyscanner's design language — Backpack — is optimised for the search-first, comparison-heavy workflow of flight booking. The interface is airy and open: predominantly white surfaces with a confident sky-blue accent (`#0770E3`) that immediately evokes travel, altitude, and forward movement. The visual design de-clutters the complex task of comparing hundreds of routes, dates, and prices by using rigorous whitespace, clear typographic hierarchy, and a minimal color vocabulary.
 
@@ -18,7 +38,7 @@ Skyscanner uses its proprietary "Skyscanner" typeface for brand and UI text — 
 - Date picker grid cells: 36px × 36px minimum touch target
 - Price "best deal" badge: `#D74100` (dark orange-red accent, used sparingly)
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Sky Blue** (`#0770E3`): Search CTA, "View deal" buttons, selected date highlights, flight links
@@ -49,7 +69,7 @@ Skyscanner uses its proprietary "Skyscanner" typeface for brand and UI text — 
 - **Alert** (`#FF7110`): Delays, disruptions, attention banners
 - **Error** (`#E00`): Hard errors, unavailable routes
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Skyscanner**: `'Skyscanner', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif` — Primary UI typeface for all text
@@ -70,7 +90,40 @@ Skyscanner uses its proprietary "Skyscanner" typeface for brand and UI text — 
 | Price Display | Skyscanner | 24px | 700 | 32px | Fare prices, bold and blue |
 | Badge | Skyscanner | 11px | 700 | 16px | "CHEAPEST", "FASTEST", "ECO" pills |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base unit: **4px**
+- Scale: `4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px`
+- Card padding: `20px 24px`
+- Section gaps: `32px`
+- Page max-width: `1296px`
+- Left sidebar (filters): `260px` fixed
+
+### Grid
+- Results list: single fluid column after 260px filter sidebar
+- Mobile: no sidebar, filters via bottom sheet
+- Date picker: 7-column calendar grid
+
+### Border Radius Scale
+| Token | Value | Usage |
+|-------|-------|-------|
+| `--radius-xs` | 4px | Input fields, tags |
+| `--radius-sm` | 8px | Dropdowns, tooltips |
+| `--radius-md` | 12px | Cards, search form |
+| `--radius-lg` | 16px | Modals, drawers |
+| `--radius-full` | 9999px | Buttons, chips, pills |
+
+## Elevation & Depth
+
+- **Flat** (page bg): No shadow
+- **Card** (result): `box-shadow: 0 1px 4px rgba(17,18,54,0.08)` — default
+- **Card Hover**: `box-shadow: 0 4px 16px rgba(17,18,54,0.12)` — hovered flight result
+- **Search Form**: `box-shadow: 0 8px 32px rgba(17,18,54,0.15)` — main search widget
+- **Modal**: `box-shadow: 0 16px 48px rgba(17,18,54,0.25)` — drawer/modal panels
+- **Tooltip**: `box-shadow: 0 4px 12px rgba(17,18,54,0.15)` — price tooltips on calendar
+
+## Components
 
 ### Buttons
 **Primary Button (Search / Book)**
@@ -122,40 +175,7 @@ Skyscanner uses its proprietary "Skyscanner" typeface for brand and UI text — 
 - Border: `1px solid #DDDDE5`
 - White background
 
-## 5. Layout Principles
-
-### Spacing System
-- Base unit: **4px**
-- Scale: `4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px`
-- Card padding: `20px 24px`
-- Section gaps: `32px`
-- Page max-width: `1296px`
-- Left sidebar (filters): `260px` fixed
-
-### Grid
-- Results list: single fluid column after 260px filter sidebar
-- Mobile: no sidebar, filters via bottom sheet
-- Date picker: 7-column calendar grid
-
-### Border Radius Scale
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--radius-xs` | 4px | Input fields, tags |
-| `--radius-sm` | 8px | Dropdowns, tooltips |
-| `--radius-md` | 12px | Cards, search form |
-| `--radius-lg` | 16px | Modals, drawers |
-| `--radius-full` | 9999px | Buttons, chips, pills |
-
-## 6. Depth & Elevation
-
-- **Flat** (page bg): No shadow
-- **Card** (result): `box-shadow: 0 1px 4px rgba(17,18,54,0.08)` — default
-- **Card Hover**: `box-shadow: 0 4px 16px rgba(17,18,54,0.12)` — hovered flight result
-- **Search Form**: `box-shadow: 0 8px 32px rgba(17,18,54,0.15)` — main search widget
-- **Modal**: `box-shadow: 0 16px 48px rgba(17,18,54,0.25)` — drawer/modal panels
-- **Tooltip**: `box-shadow: 0 4px 12px rgba(17,18,54,0.15)` — price tooltips on calendar
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Place the search bar at the very top — it IS the product; give it max vertical space
@@ -171,7 +191,7 @@ Skyscanner uses its proprietary "Skyscanner" typeface for brand and UI text — 
 - Don't use radio buttons for single-selection filters — use chip toggles instead
 - Avoid animating the price grid — users are scanning rapidly; animations distract
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `xs`: 0–480px — stacked search form, full-screen date picker, no filters sidebar
@@ -184,7 +204,7 @@ Skyscanner uses its proprietary "Skyscanner" typeface for brand and UI text — 
 
 **Filters:** Bottom sheet on mobile; persistent left sidebar on desktop (`≥1024px`)
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Primary blue: `#0770E3`

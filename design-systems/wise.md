@@ -1,6 +1,49 @@
-# Design System Inspired by Wise
+---
+name: Wise
+colors:
+  neutral: "#ffffff"
+  tertiary: "#9fe870"
+  secondary: "#868685"
+typography:
+  display-hero:
+    fontSize: 96px
+    fontWeight: 900
+    lineHeight: 0.85
+  h1:
+    fontSize: 64px
+    fontWeight: 900
+    lineHeight: 0.85
+  h3:
+    fontSize: 40px
+    fontWeight: 900
+    lineHeight: 0.85
+  body-md:
+    fontSize: 18px
+    fontWeight: 400
+    lineHeight: 1.44
+    letterSpacing: 0.18px
+  label:
+    fontSize: 18px
+    fontWeight: 600
+    lineHeight: 1
+    letterSpacing: -0.108px
+  caption:
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.5
+    letterSpacing: -0.084px
+rounded:
+  sm: 2px
+  md: 16px
+  lg: 30px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Wise's website is a bold, confident fintech platform that communicates "money without borders" through massive typography and a distinctive lime-green accent. The design operates on a warm off-white canvas with near-black text (`#0e0f0c`) and a signature Wise Green (`#9fe870`) — a fresh, lime-bright color that feels alive and optimistic, unlike the corporate blues of traditional banking.
 
@@ -18,7 +61,7 @@ What distinguishes Wise is its green-on-white-on-black material palette. Lime Gr
 - Pill buttons (9999px) and large rounded cards (30px–40px)
 - Semantic color system with comprehensive state management
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary Brand
 - **Near Black** (`#0e0f0c`): Primary text, background for dark sections
@@ -39,7 +82,7 @@ What distinguishes Wise is its green-on-white-on-black material palette. Lime Gr
 - **Gray** (`#868685`): Muted text, tertiary
 - **Light Surface** (`#e8ebe6`): Subtle green-tinted light surface
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Display**: `Wise Sans`, fallback: `Inter` — OpenType `"calt"` on all text
@@ -68,7 +111,34 @@ What distinguishes Wise is its green-on-white-on-black material palette. Lime Gr
 - **"calt" everywhere**: Contextual alternates enabled on ALL text — both Wise Sans and Inter.
 - **Weight 600 as body default**: Inter Semibold is the standard reading weight — confident, not light.
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base unit: 8px
+- Scale: 1px, 2px, 3px, 4px, 5px, 8px, 10px, 11px, 12px, 16px, 18px, 19px, 20px, 22px, 24px
+
+### Border Radius Scale
+- Minimal (2px): Links, inputs
+- Standard (10px): Comboboxes, inputs
+- Card (16px): Small cards, buttons, radio
+- Medium (20px): Links, medium cards
+- Large (30px): Feature cards
+- Section (40px): Tables, large cards
+- Mega (1000px): Presentation elements
+- Pill (9999px): All buttons, images
+- Circle (50%): Icons, badges
+
+## Elevation & Depth
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Flat (Level 0) | No shadow | Default |
+| Ring (Level 1) | `rgba(14,15,12,0.12) 0px 0px 0px 1px` | Card borders |
+| Inset (Level 2) | `rgb(134,134,133) 0px 0px 0px 1px inset` | Input focus |
+
+**Shadow Philosophy**: Wise uses minimal shadows — ring shadows only. Depth comes from the bold green accent against the neutral canvas.
+
+## Components
 
 ### Buttons
 
@@ -98,34 +168,7 @@ What distinguishes Wise is its green-on-white-on-black material palette. Lime Gr
 - Clean header with Wise wordmark
 - Pill CTAs right-aligned
 
-## 5. Layout Principles
-
-### Spacing System
-- Base unit: 8px
-- Scale: 1px, 2px, 3px, 4px, 5px, 8px, 10px, 11px, 12px, 16px, 18px, 19px, 20px, 22px, 24px
-
-### Border Radius Scale
-- Minimal (2px): Links, inputs
-- Standard (10px): Comboboxes, inputs
-- Card (16px): Small cards, buttons, radio
-- Medium (20px): Links, medium cards
-- Large (30px): Feature cards
-- Section (40px): Tables, large cards
-- Mega (1000px): Presentation elements
-- Pill (9999px): All buttons, images
-- Circle (50%): Icons, badges
-
-## 6. Depth & Elevation
-
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Flat (Level 0) | No shadow | Default |
-| Ring (Level 1) | `rgba(14,15,12,0.12) 0px 0px 0px 1px` | Card borders |
-| Inset (Level 2) | `rgb(134,134,133) 0px 0px 0px 1px inset` | Input focus |
-
-**Shadow Philosophy**: Wise uses minimal shadows — ring shadows only. Depth comes from the bold green accent against the neutral canvas.
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use Wise Sans weight 900 for display — the extreme boldness IS the brand
@@ -142,7 +185,7 @@ What distinguishes Wise is its green-on-white-on-black material palette. Lime Gr
 - Don't skip the scale animation on buttons
 - Don't use traditional shadows — ring shadows only
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 ### Breakpoints
 | Name | Width | Key Changes |
@@ -152,7 +195,7 @@ What distinguishes Wise is its green-on-white-on-black material palette. Lime Gr
 | Desktop | 992–1440px | Full layout |
 | Large | >1440px | Expanded |
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Text: Near Black (`#0e0f0c`)

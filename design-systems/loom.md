@@ -1,6 +1,42 @@
-# Design System Inspired by Loom
+---
+name: Loom
+colors:
+  tertiary: "#625DF5"
+  neutral: "#F5F4FF"
+  primary: "#625DF5"
+typography:
+  h1:
+    fontSize: 28px
+    fontWeight: 700
+    lineHeight: 1.2
+  h2:
+    fontSize: 22px
+    fontWeight: 700
+    lineHeight: 1.25
+  h3:
+    fontSize: 18px
+    fontWeight: 600
+    lineHeight: 1.3
+  body-lg:
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.6
+  body-md:
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.5
+rounded:
+  sm: 4px
+  md: 8px
+  lg: 12px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Loom's design language occupies the intersection of consumer delight and enterprise trustworthiness. The primary purple (`#625DF5`) is vibrant enough to communicate creative energy, yet controlled enough for B2B SaaS contexts. It appears against clean white surfaces for the primary product UI, and against dark overlays for the video player — creating two distinct visual registers that cleanly separate "creating" from "watching."
 
@@ -18,7 +54,7 @@ Typography is set in Inter for all UI chrome. Body text in the video feed and de
 - 12px border-radius on cards — friendly, not corporate
 - Player controls appear on hover, fade at 0.3s
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Loom Purple** (`#625DF5`): primary CTAs, selected states, recording indicator ring, brand
@@ -39,7 +75,7 @@ Typography is set in Inter for all UI chrome. Body text in the video feed and de
 - **Player Dark** (`#1A1A2E`): video player, fullscreen background
 - **Scrubber Filled** (`#625DF5`): progress fill on video scrubber
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Inter**: `"Inter", sans-serif` — all UI text
@@ -58,7 +94,29 @@ Typography is set in Inter for all UI chrome. Body text in the video feed and de
 | Micro | Inter | 11px | 400 | 1.3 | Timestamps, keyboard hints |
 | Player Time | Inter | 13px | 500 | 1.0 | Monospaced feel; current/total time |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4, 8, 12, 16, 20, 24, 32, 40, 48, 64
+- Library grid: 3 columns at desktop, 2 at tablet, 1 at mobile
+- Card gap: 16px
+
+### Border Radius Scale
+- **4px** — tags, duration badges
+- **8px** — buttons, inputs, thumbnail inner
+- **12px** — video cards, player, modals
+- **50%** — camera bubble, avatar, record button
+
+## Elevation & Depth
+
+- **Level 0** (background): `#F5F4FF` — library canvas
+- **Level 1** (card): `1px solid rgba(0,0,0,0.08)` — video cards flat
+- **Level 2** (hover card): `box-shadow: 0 4px 16px rgba(0,0,0,0.12)` — hover state
+- **Level 3** (modal): `box-shadow: 0 8px 32px rgba(0,0,0,0.20)` — share modal
+- **Record glow**: `box-shadow: 0 0 0 8px rgba(255,59,48,0.35)` — animated pulse
+
+## Components
 
 ### Buttons
 - **Primary**: `background: #625DF5`, `color: #FFFFFF`, `border-radius: 8px`, `padding: 10px 20px`, `font: Inter 14px 600`
@@ -73,29 +131,7 @@ Typography is set in Inter for all UI chrome. Body text in the video feed and de
 - **Camera Bubble**: 80px circle, floating bottom-right during recording, `border: 3px solid #FF3B30`
 - **Player Container**: `background: #1A1A2E`, `border-radius: 12px`, controls overlay fade in on hover
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4, 8, 12, 16, 20, 24, 32, 40, 48, 64
-- Library grid: 3 columns at desktop, 2 at tablet, 1 at mobile
-- Card gap: 16px
-
-### Border Radius Scale
-- **4px** — tags, duration badges
-- **8px** — buttons, inputs, thumbnail inner
-- **12px** — video cards, player, modals
-- **50%** — camera bubble, avatar, record button
-
-## 6. Depth & Elevation
-
-- **Level 0** (background): `#F5F4FF` — library canvas
-- **Level 1** (card): `1px solid rgba(0,0,0,0.08)` — video cards flat
-- **Level 2** (hover card): `box-shadow: 0 4px 16px rgba(0,0,0,0.12)` — hover state
-- **Level 3** (modal): `box-shadow: 0 8px 32px rgba(0,0,0,0.20)` — share modal
-- **Record glow**: `box-shadow: 0 0 0 8px rgba(255,59,48,0.35)` — animated pulse
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use the camera-bubble-on-recording metaphor consistently for live recording states
@@ -110,14 +146,15 @@ Typography is set in Inter for all UI chrome. Body text in the video feed and de
 - Don't use purple backgrounds outside of CTA buttons
 - Don't use border-radius above 12px on the player
 
-## 8. Responsive Behavior
+## Responsive Behavior
+
 Breakpoints: 375px (mobile), 768px (tablet), 1024px (desktop)
 
 - **375px**: single-column library; full-screen player; bottom sheet for settings
 - **768px**: 2-column grid; sidebar collapses; player at 100% width
 - **1024px**: 3-column grid; persistent left nav; player max 960px wide centered
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand: `#625DF5`

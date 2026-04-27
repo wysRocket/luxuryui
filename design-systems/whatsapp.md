@@ -1,6 +1,17 @@
-# Design System Inspired by WhatsApp
+---
+name: WhatsApp
+colors:
+  tertiary: "#25D366"
+  primary: "#128C7E"
+  neutral: "#FFFFFF"
+  secondary: "#667781"
+rounded:
+  sm: 8px
+  md: 12px
+  lg: 16px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 WhatsApp's design system is defined by intimacy and reliability. The interface is the visual equivalent of a trusted neighbor — warm, unassuming, and immediately familiar across dozens of cultures and contexts. Its signature greens are among the most recognized brand colors on the planet: the vibrant `#25D366` for brand identity and light-mode accents, with the deeper `#128C7E` providing the dark teal used in headers and active states. This dual-green palette communicates both freshness and depth — the surface-level green is social and approachable; the darker teal carries the weight of a communication service you can depend on.
 
@@ -18,7 +29,7 @@ Typography is handled through the device's system font — a deliberate choice t
 - Wallpaper background in chat view — tiled pattern or photo, never solid
 - Voice message waveform in chat bubbles; 40px height, green bars
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **WhatsApp Green** (`#25D366`): Header icon highlights, new message FAB, primary brand
@@ -48,7 +59,7 @@ Typography is handled through the device's system font — a deliberate choice t
 - **Secondary** (`#667781`): Timestamps, metadata, secondary labels (light)
 - **Secondary Dark** (`#8696A0`): Timestamps in dark mode
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **iOS**: `-apple-system, "SF Pro Text", "Helvetica Neue"` — system default
@@ -71,7 +82,45 @@ Typography is handled through the device's system font — a deliberate choice t
 | Voice Note Duration | System | 13px | 400 | 16px | "0:34" playback time |
 | Notification Count | System | 12px | 700 | 16px | App badge, list badge |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: `8px`
+- Scale: `4, 8, 12, 16, 20, 24px`
+- Bubble horizontal padding: `12px`
+- Bubble vertical padding: `8px`
+- Gap between bubbles from same sender: `4px`
+- Gap between bubbles from different senders: `12px`
+- Chat input bar height: `56px`
+
+### Chat Layout
+- Chat list: full-width, header `56px`, search `48px`, list below
+- Chat view: full-screen with wallpaper background, bubbles over wallpaper
+- Input bar: sticky bottom, `56px`, contains mic/attach/send
+- Bubble max-width: `65vw` (mobile), `50%` (desktop sidebar)
+
+### Border Radius Scale
+- `0px` + tail — message bubbles (unique directional radius)
+- `8px` — standard bubble radius (non-tail corners)
+- `12px` — audio/video message containers
+- `16px` — modals, bottom sheets
+- `100px` — input field in chat bar
+- `50%` — avatars, FAB
+
+## Elevation & Depth
+
+### Shadow Scale
+- **Chat List Row Hover** — `none` (background color change only)
+- **FAB** — `0 4px 12px rgba(0,0,0,0.20)`
+- **Header Bar** — `0 1px 3px rgba(0,0,0,0.12)`
+- **Context Menu** — `0 4px 24px rgba(0,0,0,0.20)`
+- **Modal** — `0 8px 40px rgba(0,0,0,0.24)`
+
+### Wallpaper Treatment
+- Chat background: repeating decorative pattern or user photo
+- Bubbles float above wallpaper — no additional blur or overlay on wallpaper itself
+
+## Components
 
 ### Buttons
 
@@ -129,45 +178,7 @@ Typography is handled through the device's system font — a deliberate choice t
 - Play button: 36px circle, dark grey icon
 - Duration: 13px grey, right of waveform
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: `8px`
-- Scale: `4, 8, 12, 16, 20, 24px`
-- Bubble horizontal padding: `12px`
-- Bubble vertical padding: `8px`
-- Gap between bubbles from same sender: `4px`
-- Gap between bubbles from different senders: `12px`
-- Chat input bar height: `56px`
-
-### Chat Layout
-- Chat list: full-width, header `56px`, search `48px`, list below
-- Chat view: full-screen with wallpaper background, bubbles over wallpaper
-- Input bar: sticky bottom, `56px`, contains mic/attach/send
-- Bubble max-width: `65vw` (mobile), `50%` (desktop sidebar)
-
-### Border Radius Scale
-- `0px` + tail — message bubbles (unique directional radius)
-- `8px` — standard bubble radius (non-tail corners)
-- `12px` — audio/video message containers
-- `16px` — modals, bottom sheets
-- `100px` — input field in chat bar
-- `50%` — avatars, FAB
-
-## 6. Depth & Elevation
-
-### Shadow Scale
-- **Chat List Row Hover** — `none` (background color change only)
-- **FAB** — `0 4px 12px rgba(0,0,0,0.20)`
-- **Header Bar** — `0 1px 3px rgba(0,0,0,0.12)`
-- **Context Menu** — `0 4px 24px rgba(0,0,0,0.20)`
-- **Modal** — `0 8px 40px rgba(0,0,0,0.24)`
-
-### Wallpaper Treatment
-- Chat background: repeating decorative pattern or user photo
-- Bubbles float above wallpaper — no additional blur or overlay on wallpaper itself
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Maintain sent/received bubble distinction absolutely — it's the foundation of chat readability
@@ -182,7 +193,7 @@ Typography is handled through the device's system font — a deliberate choice t
 - Don't use custom colors in message text — maintain black/dark on all bubbles
 - Don't change the green FAB for new chats — it's a global navigation anchor
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `375px` — primary mobile; full-screen chat, bottom tab navigation
@@ -196,7 +207,7 @@ Typography is handled through the device's system font — a deliberate choice t
 - Voice/video call: full-screen overlay on mobile, floating pip on desktop
 - Status: stories-style full-screen on mobile, grid view on desktop
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand Green: `#25D366`

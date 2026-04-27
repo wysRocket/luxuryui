@@ -1,6 +1,42 @@
-# Design System Inspired by Binance
+---
+name: Binance
+colors:
+  neutral: "#0B0E11"
+  tertiary: "#F0B90B"
+  primary: "#0B0E11"
+typography:
+  page-title:
+    fontSize: 24px
+    fontWeight: 700
+    lineHeight: 32
+  h2:
+    fontSize: 16px
+    fontWeight: 600
+    lineHeight: 22
+  h3:
+    fontSize: 14px
+    fontWeight: 600
+    lineHeight: 20
+  label:
+    fontSize: 14px
+    fontWeight: 500
+    lineHeight: 20
+  caption:
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 16
+rounded:
+  sm: 2px
+  md: 4px
+  lg: 8px
+spacing:
+  xs: 4px
+  sm: 8px
+  md: 16px
+  lg: 32px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Binance is pure trading-desk power: data-dense, dark-first, and unapologetically complex. The signature yellow (`#F0B90B`) on a near-black background (`#0B0E11`) creates a visual combination that reads financial confidence and technical authority — the color of gold against a midnight terminal. This is not a consumer-friendly simplification of crypto; it's the real thing, and the UI says so.
 
@@ -20,7 +56,7 @@ Yellow is the action color: CTAs, active tab indicators, highlighted prices, nav
 - Font: Roboto throughout
 - Border: `#2B3139` (panel separation)
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Binance Yellow** (`#F0B90B`): Brand, primary CTAs, active tabs, selected nav, highlights
@@ -40,7 +76,7 @@ Yellow is the action color: CTAs, active tab indicators, highlighted prices, nav
 - **Divider** (`rgba(255,255,255,0.08)`): Panel separators, table dividers
 - **Input Background** (`#2B3139`): Form inputs and search fields
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Roboto**: `"Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif` — all UI, monospace numbers in Roboto Mono for price data
@@ -62,7 +98,56 @@ Yellow is the action color: CTAs, active tab indicators, highlighted prices, nav
 | Badge / Tag | Roboto | 11px | 600 | 14px | Yellow / status tags |
 | Caption | Roboto | 12px | 400 | 16px | `#848E9C` metadata |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 4px
+- Scale: 4, 8, 12, 16, 20, 24, 32px
+- Trading view panel gutter: 4px (ultra-tight)
+- Dashboard card gutter: 12px
+
+### Border Radius Scale
+- Data table rows: 0px
+- Input fields: 4px
+- Buttons: 4px
+- Cards (dashboard): 8px
+- Modal: 8px
+- Avatar: 50%
+- Pill (tag): 2px
+
+## Elevation & Depth
+
+Binance uses border-based panel separation, not shadow:
+
+**Primary panel:**
+```
+background: #1E2329;
+border: 1px solid #2B3139;
+border-radius: 4px;
+```
+
+**Secondary inner surface:**
+```
+background: #2B3139;
+border-bottom: 1px solid rgba(255,255,255,0.08);
+```
+
+**Dropdown / context menu:**
+```
+background: #1E2329;
+border: 1px solid #2B3139;
+box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+```
+
+**Modal:**
+```
+background: #1E2329;
+border: 1px solid #2B3139;
+box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+border-radius: 8px;
+```
+
+## Components
 
 ### Buttons
 **Primary Buy:**
@@ -107,56 +192,7 @@ Yellow is the action color: CTAs, active tab indicators, highlighted prices, nav
 - Padding: 16px
 - Hover: background `#2B3139`
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 4px
-- Scale: 4, 8, 12, 16, 20, 24, 32px
-- Trading view panel gutter: 4px (ultra-tight)
-- Dashboard card gutter: 12px
-
-### Border Radius Scale
-- Data table rows: 0px
-- Input fields: 4px
-- Buttons: 4px
-- Cards (dashboard): 8px
-- Modal: 8px
-- Avatar: 50%
-- Pill (tag): 2px
-
-## 6. Depth & Elevation
-
-Binance uses border-based panel separation, not shadow:
-
-**Primary panel:**
-```
-background: #1E2329;
-border: 1px solid #2B3139;
-border-radius: 4px;
-```
-
-**Secondary inner surface:**
-```
-background: #2B3139;
-border-bottom: 1px solid rgba(255,255,255,0.08);
-```
-
-**Dropdown / context menu:**
-```
-background: #1E2329;
-border: 1px solid #2B3139;
-box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-```
-
-**Modal:**
-```
-background: #1E2329;
-border: 1px solid #2B3139;
-box-shadow: 0 8px 32px rgba(0,0,0,0.6);
-border-radius: 8px;
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use green (`#0ECB81`) exclusively for "buy" and price increase — never for non-financial positive states
@@ -171,7 +207,7 @@ border-radius: 8px;
 - Don't add decorative shadows in the trading interface — border separation is the convention
 - Don't use light backgrounds anywhere in the main app — Binance is dark-first always
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints:
 - Mobile: 0–768px — simplified single-column view; full trading UI on dedicated app only
@@ -179,7 +215,7 @@ Breakpoints:
 - Desktop: 1025–1440px — full 3-panel trading layout with chart, order book, trade history
 - Wide: 1441px+ — panels expand; chart gains more real estate; sidebar stays fixed
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Background: `#0B0E11`

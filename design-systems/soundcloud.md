@@ -1,6 +1,22 @@
-# Design System Inspired by SoundCloud
+---
+name: SoundCloud
+colors:
+  neutral: "#1A1A1A"
+  primary: "#FFFFFF"
+  secondary: "#999999"
+  tertiary: "#E64D00"
+typography:
+  label:
+    fontSize: 14px
+    fontWeight: 700
+    lineHeight: 20
+rounded:
+  sm: 2px
+  md: 8px
+  lg: 12px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 SoundCloud's visual identity is defined by its signature orange — a warm, energetic `#FF5500` that has become synonymous with independent music, emerging artists, and direct creator-to-listener relationships. Against the deep near-black canvas (`#1A1A1A`), this orange reads as electric warmth: campfire energy on a dark stage. The design celebrates rawness and authenticity rather than the polished, curated aesthetics of Spotify; SoundCloud's creators upload bedroom recordings and street-recorded freestyles alongside professionally mixed tracks.
 
@@ -18,7 +34,7 @@ Typography uses a custom SoundCloud typeface for logotype, while the interface i
 - Border radius: minimal — 4px for cards, 2px for waveform, 50% for avatars
 - Orange gradient: `linear-gradient(to right, #FF5500, #FF7A00)` on gradients
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **SoundCloud Orange** (`#FF5500`): Waveform fill (played), primary CTA, follow button, active states
@@ -49,7 +65,7 @@ Typography uses a custom SoundCloud typeface for logotype, while the interface i
 - **Unplayed** (`#4D4D4D`): Right of playhead, default waveform
 - **Comment Dot** (`#FF5500`): Comment marker on waveform timeline
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **SoundCloud Sans (custom)**: `'SoundCloudSans', sans-serif` — Logotype only
@@ -71,7 +87,40 @@ Typography uses a custom SoundCloud typeface for logotype, while the interface i
 | Section Header | System | 12px | 700 | 16px | Section headings, uppercase |
 | Button Label | System | 14px | 700 | 20px | Follow, Like, Repost buttons |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base unit: **8px**
+- Scale: `4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px`
+- Card padding: `16px`
+- Feed item gap: `0` (contiguous rows with dividers)
+- Profile page horizontal padding: `24px`
+- Max-width: `1180px`
+
+### Grid
+- Feed: single column, full-width track cards
+- Tracks tab on profile: 3-column grid at `≥768px`
+- Sidebar (web): `240px` fixed, primary content fluid
+
+### Border Radius Scale
+| Token | Value | Usage |
+|-------|-------|-------|
+| `--radius-xs` | 2px | Waveform bars |
+| `--radius-sm` | 4px | Cards, buttons, artwork thumbnails |
+| `--radius-md` | 8px | Dropdowns, popovers |
+| `--radius-lg` | 12px | Modals |
+| `--radius-full` | 9999px | Avatars, play dots |
+
+## Elevation & Depth
+
+- **Base** (canvas): `#1A1A1A` — no shadow
+- **Card**: `#232323` — elevated by color, no box-shadow by default
+- **Card Hover**: `#2A2A2A` — color shift only, no shadow
+- **Player Bar**: `#111111` + `border-top: 1px solid rgba(255,255,255,0.1)` — fixed bottom layer
+- **Popover / Tooltip**: `#313131`, `box-shadow: 0 4px 16px rgba(0,0,0,0.5)`
+- **Modal**: `#232323`, `box-shadow: 0 8px 32px rgba(0,0,0,0.7)`
+
+## Components
 
 ### Buttons
 **Follow Button**
@@ -121,40 +170,7 @@ Typography uses a custom SoundCloud typeface for logotype, while the interface i
 - Artwork: 48px square left, track info center, controls right
 - Progress bar: 3px full-width, orange filled / gray unfilled
 
-## 5. Layout Principles
-
-### Spacing System
-- Base unit: **8px**
-- Scale: `4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px`
-- Card padding: `16px`
-- Feed item gap: `0` (contiguous rows with dividers)
-- Profile page horizontal padding: `24px`
-- Max-width: `1180px`
-
-### Grid
-- Feed: single column, full-width track cards
-- Tracks tab on profile: 3-column grid at `≥768px`
-- Sidebar (web): `240px` fixed, primary content fluid
-
-### Border Radius Scale
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--radius-xs` | 2px | Waveform bars |
-| `--radius-sm` | 4px | Cards, buttons, artwork thumbnails |
-| `--radius-md` | 8px | Dropdowns, popovers |
-| `--radius-lg` | 12px | Modals |
-| `--radius-full` | 9999px | Avatars, play dots |
-
-## 6. Depth & Elevation
-
-- **Base** (canvas): `#1A1A1A` — no shadow
-- **Card**: `#232323` — elevated by color, no box-shadow by default
-- **Card Hover**: `#2A2A2A` — color shift only, no shadow
-- **Player Bar**: `#111111` + `border-top: 1px solid rgba(255,255,255,0.1)` — fixed bottom layer
-- **Popover / Tooltip**: `#313131`, `box-shadow: 0 4px 16px rgba(0,0,0,0.5)`
-- **Modal**: `#232323`, `box-shadow: 0 8px 32px rgba(0,0,0,0.7)`
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use orange (`#FF5500`) for every waveform played-region — it's the core UX signal
@@ -170,7 +186,7 @@ Typography uses a custom SoundCloud typeface for logotype, while the interface i
 - Don't truncate track titles at less than 2 lines — music titles are identity; they deserve space
 - Avoid placing CTAs in orange unless they are the primary action — orange must remain a power signal
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `xs`: 0–480px — single-column feed, track cards stack vertically, full-width waveform
@@ -181,7 +197,7 @@ Typography uses a custom SoundCloud typeface for logotype, while the interface i
 
 **Player bar:** Always fixed at bottom, full-width, all breakpoints
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Orange: `#FF5500`

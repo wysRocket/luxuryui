@@ -1,6 +1,42 @@
-# Design System Inspired by Coursera
+---
+name: Coursera
+colors:
+  tertiary: "#0056D2"
+  neutral: "#FFFFFF"
+  primary: "#0056D2"
+typography:
+  h1:
+    fontSize: 32px
+    fontWeight: 700
+    lineHeight: 40
+  h2:
+    fontSize: 24px
+    fontWeight: 700
+    lineHeight: 32
+  h3:
+    fontSize: 18px
+    fontWeight: 700
+    lineHeight: 25
+  body-md:
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 26
+  caption:
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 16
+rounded:
+  sm: 4px
+  md: 8px
+  lg: 20px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Coursera's visual system embodies trusted academia made accessible — the authority of a university combined with the approachability of modern SaaS. The brand is organized around a clear primary blue (`#0056D2`) that feels educational and reliable, paired with generous white surfaces that give breathing room to the complex credential and course content hierarchy. This is not an entertainment platform; every design decision serves a learner who is invested, goal-oriented, and time-conscious.
 
@@ -20,7 +56,7 @@ Progress tracking is a primary UX concern — learners return to see how far the
 - Font: Open Sans
 - Border radius: 8px cards
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Coursera Blue** (`#0056D2`): CTAs, nav active, progress bars, links, enrolled state
@@ -39,7 +75,7 @@ Progress tracking is a primary UX concern — learners return to see how far the
 - **Light Blue Tint** (`#E8F1FB`): Section highlights, enrolled state background
 - **Gold** (`#D6AE54`): Certificate and badge accent
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Open Sans**: `"Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif` — all text
@@ -64,7 +100,58 @@ Progress tracking is a primary UX concern — learners return to see how far the
 | Caption / Metadata | Open Sans | 12px | 400 | 16px | `#636363` timestamp, credits |
 | Legal | Open Sans | 11px | 400 | 16px | `#888888` footer |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4, 8, 12, 16, 20, 24, 32, 48, 64px
+- Card gutter: 16px
+- Content max-width: 1200px
+- Section vertical padding: 48px
+
+### Border Radius Scale
+- Micro (tags, badges): 4px
+- Input / button: 4px
+- Course card: 8px
+- Modal: 8px
+- Pill (difficulty badge): 20px
+- Avatar / partner logo: 4px (square-ish logos) or 50%
+- Progress bar: 4px
+
+## Elevation & Depth
+
+**Resting course card:**
+```
+box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+border: 1px solid #E0E0E0;
+border-radius: 8px;
+```
+
+**Hover course card:**
+```
+box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+border-color: #0056D2;
+```
+
+**Certificate card:**
+```
+box-shadow: 0 4px 16px rgba(214,174,84,0.2);
+border: 2px solid #D6AE54;
+```
+
+**Modal:**
+```
+box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+border-radius: 8px;
+```
+
+**Sticky nav:**
+```
+box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+background: #FFFFFF;
+```
+
+## Components
 
 ### Buttons
 **Primary (Enroll / Start):**
@@ -117,58 +204,7 @@ Progress tracking is a primary UX concern — learners return to see how far the
 - Gold accent header strip
 - Box-shadow: `0 4px 16px rgba(214,174,84,0.2)`
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4, 8, 12, 16, 20, 24, 32, 48, 64px
-- Card gutter: 16px
-- Content max-width: 1200px
-- Section vertical padding: 48px
-
-### Border Radius Scale
-- Micro (tags, badges): 4px
-- Input / button: 4px
-- Course card: 8px
-- Modal: 8px
-- Pill (difficulty badge): 20px
-- Avatar / partner logo: 4px (square-ish logos) or 50%
-- Progress bar: 4px
-
-## 6. Depth & Elevation
-
-**Resting course card:**
-```
-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-border: 1px solid #E0E0E0;
-border-radius: 8px;
-```
-
-**Hover course card:**
-```
-box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-border-color: #0056D2;
-```
-
-**Certificate card:**
-```
-box-shadow: 0 4px 16px rgba(214,174,84,0.2);
-border: 2px solid #D6AE54;
-```
-
-**Modal:**
-```
-box-shadow: 0 8px 32px rgba(0,0,0,0.16);
-border-radius: 8px;
-```
-
-**Sticky nav:**
-```
-box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-background: #FFFFFF;
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use `#0056D2` blue for all progress bars, enrollment states, and primary actions — learning = blue
@@ -183,7 +219,7 @@ background: #FFFFFF;
 - Don't omit the difficulty/duration/skill tags from course cards — they're primary decision signals
 - Don't use the certificate gold for interactive elements — diluting the credential ceremony moment is harmful
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints:
 - Mobile: 0–640px — single column course list; bottom tab nav; progress widget top-right
@@ -191,7 +227,7 @@ Breakpoints:
 - Desktop: 1025–1440px — 3-column grid; left filter sidebar 240px
 - Wide: 1441px+ — 4-column grid; sidebar stays 240px; content caps at 1200px
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand Blue: `#0056D2`

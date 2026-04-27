@@ -33,16 +33,30 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.refreshPaymentStatus = exports.createPaymentSession = void 0;
+exports.submitContactForm = exports.refreshPaymentStatus = exports.createPaymentSession = void 0;
 const admin = __importStar(require("firebase-admin"));
 const https_1 = require("firebase-functions/v2/https");
 const params_1 = require("firebase-functions/params");
 const crypto_1 = require("crypto");
+const nodemailer = __importStar(require("nodemailer"));
 admin.initializeApp();
 const db = admin.firestore();
 const SAFEPAY_MERCHANT_ID = (0, params_1.defineSecret)("SAFEPAY_MERCHANT_ID");
 const SAFEPAY_MERCHANT_SECRET = (0, params_1.defineSecret)("SAFEPAY_MERCHANT_SECRET");
+const SMTP_USER = (0, params_1.defineSecret)("SMTP_USER");
+const SMTP_PASS = (0, params_1.defineSecret)("SMTP_PASS");
 const GATEWAY_URL = "https://www.safepayto.me/new/gateway/";
+const SMTP_HOST = "smtp.hostinger.com";
+const SMTP_PORT = 465;
+const SUPPORT_EMAIL = "contact@luxuryuilib.com";
+function escapeHtml(value) {
+    return value
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+}
 const CURRENCIES = {
     EUR: { minorUnitScale: 100, minAmountMinor: 1, maxAmountMinor: 20000, creditsPerMajorUnit: 100 },
     GBP: { minorUnitScale: 100, minAmountMinor: 1, maxAmountMinor: 20000, creditsPerMajorUnit: 117 },
@@ -123,6 +137,43 @@ function classifyPaymentState(statusId, providerStatusText) {
     if (FAILURE_HINTS.test(providerStatusText))
         return "failed";
     return "manual_review";
+}
+// ─── Email helper ─────────────────────────────────────────────────────────────
+function createTransport(user, pass) {
+    return nodemailer.createTransport({
+        host: SMTP_HOST,
+        port: SMTP_PORT,
+        secure: true,
+        auth: { user, pass },
+    });
+}
+async function sendEmail(params) {
+    const transport = createTransport(params.smtpUser, params.smtpPass);
+    await transport.sendMail({
+        from: params.smtpUser,
+        to: params.to,
+        subject: params.subject,
+        html: params.html,
+        replyTo: params.replyTo,
+    });
+}
+function buildPaymentEmailHtml(order) {
+    var _a;
+    const amountFormatted = (order.amountMinor / 100).toFixed(2);
+    return `
+    <h2>New Payment - ${escapeHtml(order.invoice)}</h2>
+    <table cellpadding="6" style="border-collapse:collapse;font-family:sans-serif;font-size:14px">
+      <tr><td><strong>Customer</strong></td><td>${escapeHtml(order.customer.firstName)} ${escapeHtml(order.customer.lastName)}</td></tr>
+      <tr><td><strong>Email</strong></td><td>${escapeHtml(order.customer.email)}</td></tr>
+      <tr><td><strong>Phone</strong></td><td>${escapeHtml(order.customer.phone || "-")}</td></tr>
+      <tr><td><strong>Country</strong></td><td>${escapeHtml(order.customer.countryCode)}</td></tr>
+      <tr><td><strong>Amount</strong></td><td>${amountFormatted} ${escapeHtml(order.currency)}</td></tr>
+      <tr><td><strong>Credits</strong></td><td>${order.creditsToAdd}</td></tr>
+      <tr><td><strong>Invoice</strong></td><td>${escapeHtml(order.invoice)}</td></tr>
+      <tr><td><strong>Transaction ID</strong></td><td>${escapeHtml(order.providerTransactionId)}</td></tr>
+      <tr><td><strong>Completed at</strong></td><td>${(_a = order.completedAt) !== null && _a !== void 0 ? _a : new Date().toISOString()}</td></tr>
+    </table>
+  `;
 }
 // ─── Cloud Functions ──────────────────────────────────────────────────────────
 exports.createPaymentSession = (0, https_1.onCall)({ secrets: [SAFEPAY_MERCHANT_ID, SAFEPAY_MERCHANT_SECRET] }, async (request) => {
@@ -217,7 +268,7 @@ exports.createPaymentSession = (0, https_1.onCall)({ secrets: [SAFEPAY_MERCHANT_
     await db.collection("paymentOrders").doc(invoice).set(order);
     return { paymentId: providerTransactionId, invoice, checkoutUrl };
 });
-exports.refreshPaymentStatus = (0, https_1.onCall)({ secrets: [SAFEPAY_MERCHANT_ID, SAFEPAY_MERCHANT_SECRET] }, async (request) => {
+exports.refreshPaymentStatus = (0, https_1.onCall)({ secrets: [SAFEPAY_MERCHANT_ID, SAFEPAY_MERCHANT_SECRET, SMTP_USER, SMTP_PASS] }, async (request) => {
     var _a;
     if (!request.auth)
         throw new https_1.HttpsError("unauthenticated", "Must be signed in.");
@@ -234,7 +285,6 @@ exports.refreshPaymentStatus = (0, https_1.onCall)({ secrets: [SAFEPAY_MERCHANT_
         throw new https_1.HttpsError("permission-denied", "Access denied.");
     const eurAmount = order.currency === "EUR" ? order.amountMinor / 100 : 0;
     const gbpAmount = order.currency === "GBP" ? order.amountMinor / 100 : 0;
-    // Already terminal — return cached result without hitting SafePay
     if (order.status === "completed" || order.status === "failed") {
         return { invoice, status: order.status, credits: order.creditsToAdd, eurAmount, gbpAmount };
     }
@@ -258,7 +308,6 @@ exports.refreshPaymentStatus = (0, https_1.onCall)({ secrets: [SAFEPAY_MERCHANT_
         providerJson = JSON.parse(providerText);
     }
     catch (_b) {
-        // Unparseable — treat as still processing
         return {
             invoice,
             status: "processing",
@@ -281,7 +330,6 @@ exports.refreshPaymentStatus = (0, https_1.onCall)({ secrets: [SAFEPAY_MERCHANT_
     const newStatus = classifyPaymentState(statusId, providerStatusText);
     const now = new Date().toISOString();
     await orderRef.update(Object.assign({ status: newStatus, rawStatusResponse: providerJson, lastCheckedAt: now }, (newStatus === "completed" && !order.completedAt ? { completedAt: now } : {})));
-    // Apply credits server-side when payment completes — idempotent via topUp doc check
     if (newStatus === "completed") {
         const walletRef = db.collection("wallets").doc(uid);
         const topUpId = `safepay_${invoice.replace(/[^a-zA-Z0-9_-]/g, "_")}`;
@@ -294,7 +342,6 @@ exports.refreshPaymentStatus = (0, https_1.onCall)({ secrets: [SAFEPAY_MERCHANT_
                 t.get(walletRef),
                 t.get(topUpRef),
             ]);
-            // Idempotency: skip if credits were already applied
             if (topUpSnap.exists)
                 return;
             const wallet = walletSnap.exists
@@ -322,7 +369,52 @@ exports.refreshPaymentStatus = (0, https_1.onCall)({ secrets: [SAFEPAY_MERCHANT_
             t.set(topUpRef, nextTopUp);
             t.set(txRef, nextTx);
         });
+        // Fire-and-forget: non-critical, must not fail the payment flow
+        sendEmail({
+            to: SUPPORT_EMAIL,
+            subject: `New Payment - ${invoice}`,
+            html: buildPaymentEmailHtml(Object.assign(Object.assign({}, order), { completedAt: now })),
+            smtpUser: SMTP_USER.value(),
+            smtpPass: SMTP_PASS.value(),
+        }).catch(() => { });
     }
     return { invoice, status: newStatus, credits: order.creditsToAdd, eurAmount, gbpAmount };
+});
+exports.submitContactForm = (0, https_1.onCall)({ secrets: [SMTP_USER, SMTP_PASS] }, async (request) => {
+    var _a, _b, _c, _d;
+    const body = request.data;
+    const name = String((_a = body === null || body === void 0 ? void 0 : body.name) !== null && _a !== void 0 ? _a : "").trim();
+    const email = String((_b = body === null || body === void 0 ? void 0 : body.email) !== null && _b !== void 0 ? _b : "").trim().toLowerCase();
+    const subject = String((_c = body === null || body === void 0 ? void 0 : body.subject) !== null && _c !== void 0 ? _c : "").trim();
+    const message = String((_d = body === null || body === void 0 ? void 0 : body.message) !== null && _d !== void 0 ? _d : "").trim();
+    if (!name || !email || !message) {
+        throw new https_1.HttpsError("invalid-argument", "Name, email, and message are required.");
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        throw new https_1.HttpsError("invalid-argument", "Invalid email address.");
+    }
+    if (message.length > 5000) {
+        throw new https_1.HttpsError("invalid-argument", "Message is too long.");
+    }
+    const html = `
+      <h2>New Contact Form Submission - LuxuryUI</h2>
+      <table cellpadding="6" style="border-collapse:collapse;font-family:sans-serif;font-size:14px">
+        <tr><td><strong>Name</strong></td><td>${escapeHtml(name)}</td></tr>
+        <tr><td><strong>Email</strong></td><td><a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></td></tr>
+        ${subject ? `<tr><td><strong>Subject</strong></td><td>${escapeHtml(subject)}</td></tr>` : ""}
+        <tr><td><strong>Submitted</strong></td><td>${new Date().toISOString()}</td></tr>
+      </table>
+      <h3>Message</h3>
+      <p style="white-space:pre-wrap;font-family:sans-serif;font-size:14px">${escapeHtml(message)}</p>
+    `;
+    await sendEmail({
+        to: SUPPORT_EMAIL,
+        subject: `Contact Form: ${subject || name}`,
+        html,
+        smtpUser: SMTP_USER.value(),
+        smtpPass: SMTP_PASS.value(),
+        replyTo: email,
+    });
+    return { ok: true };
 });
 //# sourceMappingURL=index.js.map

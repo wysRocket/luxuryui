@@ -1,6 +1,52 @@
-# Design System Inspired by Notion
+---
+name: Notion
+colors:
+  tertiary: "#2382C4"
+  neutral: "#F7F7F7"
+  secondary: "#787774"
+  primary: "#191919"
+typography:
+  page-title:
+    fontSize: 40px
+    fontWeight: 700
+    lineHeight: 1.2
+  h1:
+    fontSize: 30px
+    fontWeight: 700
+    lineHeight: 1.3
+  h2:
+    fontSize: 24px
+    fontWeight: 600
+    lineHeight: 1.3
+  h3:
+    fontSize: 20px
+    fontWeight: 600
+    lineHeight: 1.4
+  body-md:
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.6
+  caption:
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 1.4
+  code:
+    fontFamily: Notion Mono
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.7
+rounded:
+  sm: 2px
+  md: 4px
+  lg: 8px
+spacing:
+  xs: 4px
+  sm: 8px
+  md: 16px
+  lg: 32px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Notion's design language is built around the concept of a blank sheet of paper — infinitely flexible, quietly structured, never imposing. The near-black text (`#191919`) on pure white (`#FFFFFF`) creates a reading experience that references print typography rather than digital interfaces. Every element of the UI recedes to make the content primary; the tool disappears so the thinking can emerge.
 
@@ -18,7 +64,7 @@ Accent colors appear as block type indicators and database property labels — b
 - Dark mode: `#191919` surface, `#FFFFFF` text, warm darks throughout
 - Block-based editing model: every content unit is a draggable, transformable block
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Near Black** (`#191919`): Default text color, icon fills, primary UI elements
@@ -54,7 +100,7 @@ Accent colors appear as block type indicators and database property labels — b
 - **Dark Border** (`#37352F`): Dividers, subtle borders
 - **Dark Hover** (`#2F2F2F`): Hover state on dark
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Notion (Custom)**: `ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif` — All UI and content text
@@ -77,7 +123,41 @@ Accent colors appear as block type indicators and database property labels — b
 | Database Cell | Notion | 14px | 400 | 1.5 | Compact table reading |
 | Breadcrumb | Notion | 13px | 400 | 1.4 | Gray secondary |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 4px
+- Scale: 2px, 4px, 6px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px
+- Page content max-width: 900px (full), 720px (center column default)
+- Block vertical spacing: 1px between inline blocks, 4px between block-types
+- Sidebar width: 240px default, collapsible to 0
+- Page padding: 96px left/right (desktop), 16px (mobile)
+
+### Border Radius Scale
+- `2px` — Tags, property badges, inline elements
+- `4px` — Buttons, cards, callout blocks, code blocks, inputs
+- `8px` — Modals, dropdown menus, command palette
+- `50%` — Avatar icons, circular selection dots
+
+### Grid
+- Mobile: Single column, 16px margins
+- Tablet: 240px sidebar + flexible content
+- Desktop: 240px sidebar + 900px max-width content centered
+- Database views: Full-width within content column, horizontal scroll
+
+## Elevation & Depth
+
+```
+Level 0 - Canvas:    #FFFFFF, no shadow (page background)
+Level 1 - Hover:     rgba(0,0,0,0.04) background only (no shadow)
+Level 2 - Card:      0 1px 3px rgba(0,0,0,0.10) (database gallery cards)
+Level 3 - Dropdown:  0 4px 12px rgba(15,15,15,0.1), 0 1px 2px rgba(15,15,15,0.08)
+Level 4 - Modal:     0 8px 40px rgba(15,15,15,0.20)
+Popover:             0 0 0 1px rgba(15,15,15,0.05), 0 3px 6px rgba(15,15,15,0.1)
+Notion avoids deep shadows — space and border create hierarchy
+```
+
+## Components
 
 ### Buttons
 
@@ -165,41 +245,7 @@ hover: background #F2F2F2
 active: background rgba(35,130,196,0.08), color link blue
 ```
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 4px
-- Scale: 2px, 4px, 6px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px
-- Page content max-width: 900px (full), 720px (center column default)
-- Block vertical spacing: 1px between inline blocks, 4px between block-types
-- Sidebar width: 240px default, collapsible to 0
-- Page padding: 96px left/right (desktop), 16px (mobile)
-
-### Border Radius Scale
-- `2px` — Tags, property badges, inline elements
-- `4px` — Buttons, cards, callout blocks, code blocks, inputs
-- `8px` — Modals, dropdown menus, command palette
-- `50%` — Avatar icons, circular selection dots
-
-### Grid
-- Mobile: Single column, 16px margins
-- Tablet: 240px sidebar + flexible content
-- Desktop: 240px sidebar + 900px max-width content centered
-- Database views: Full-width within content column, horizontal scroll
-
-## 6. Depth & Elevation
-
-```
-Level 0 - Canvas:    #FFFFFF, no shadow (page background)
-Level 1 - Hover:     rgba(0,0,0,0.04) background only (no shadow)
-Level 2 - Card:      0 1px 3px rgba(0,0,0,0.10) (database gallery cards)
-Level 3 - Dropdown:  0 4px 12px rgba(15,15,15,0.1), 0 1px 2px rgba(15,15,15,0.08)
-Level 4 - Modal:     0 8px 40px rgba(15,15,15,0.20)
-Popover:             0 0 0 1px rgba(15,15,15,0.05), 0 3px 6px rgba(15,15,15,0.1)
-Notion avoids deep shadows — space and border create hierarchy
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use `#F2F2F2` as the only hover color — Notion's ghost interactions must feel subtle
@@ -215,7 +261,7 @@ Notion avoids deep shadows — space and border create hierarchy
 - Don't use bright, saturated block colors — they compete with content priority
 - Don't persist toolbar/action buttons — they should appear contextually on selection only
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `375px` — Mobile: sidebar collapses to drawer, full-width content
@@ -230,7 +276,7 @@ Notion avoids deep shadows — space and border create hierarchy
 - Content padding: 96px desktop → 16px mobile
 - Database: scroll-x on mobile → full table on desktop
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 ```

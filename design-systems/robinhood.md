@@ -1,6 +1,26 @@
-# Design System Inspired by Robinhood
+---
+name: Robinhood
+colors:
+  neutral: "#1B1B1B"
+  primary: "#1B1B1B"
+  tertiary: "#00AA04"
+  secondary: "#888888"
+typography:
+  label:
+    fontSize: 17px
+    fontWeight: 600
+    lineHeight: 24
+rounded:
+  sm: 8px
+  md: 12px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Robinhood's design language democratizes finance through radical visual simplicity. The signature green (`#00C805`) on white — or its dark-mode variant on deep charcoal (`#1B1B1B`) — creates an interface that feels optimistic, approachable, and distinctly un-bank-like. This is financial software designed to attract a generation that grew up with consumer apps, not brokerage firms. Every design decision strips away traditional finance UI complexity in favor of consumer-grade clarity.
 
@@ -18,7 +38,7 @@ Typography historically used Snell Roundhand (a script typeface) for the wordmar
 - Large portfolio balance display: 48px+ at top of home screen
 - Minimal chrome — bottom tabs only, no persistent headers on stock pages
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Gain Green** (`#00C805`): Positive performance, gains, portfolio up, buy actions
@@ -57,7 +77,7 @@ Typography historically used Snell Roundhand (a script typeface) for the wordmar
 - **Dark Border** (`#333333`): Dividers
 - **Dark Text Secondary** (`#888888`): Metadata on dark
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **SF Pro Display**: `-apple-system, BlinkMacSystemFont, sans-serif` — iOS (primary)
@@ -81,7 +101,40 @@ Typography historically used Snell Roundhand (a script typeface) for the wordmar
 | Section Label | SF Pro | 13px | 600 | 18px | Uppercase, gray |
 | Order Detail | SF Pro | 15px | 400 | 22px | Order confirmation text |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px
+- Horizontal margin: 20px standard
+- Chart: 0 margin (full-bleed)
+- Touch targets: 48px minimum
+- Section spacing: 32px
+
+### Border Radius Scale
+- `8px` — Time filter pills, chips
+- `12px` — Cards, modals (light radius)
+- `50px` — All buttons (pill)
+- `50%` — Stock icon circles
+
+### Grid
+- Mobile: Single column, 20px margins
+- Stock detail: full-bleed chart, content below
+- Watchlist: single column list
+- Web: max-width 480px centered (mobile-first)
+
+## Elevation & Depth
+
+```
+Level 0 - Background: #FFFFFF (light) / #1B1B1B (dark)
+Level 1 - Card:       0 1px 0 #F5F5F5 (border-bottom only)
+Level 2 - Modal:      0 8px 32px rgba(0,0,0,0.20)
+Level 3 - Bottom Sheet: 0 -4px 24px rgba(0,0,0,0.15)
+Buy/Sell buttons:     0 3px 12px rgba(0,200,5,0.30) or red variant
+Robinhood avoids decorative shadows — flat, clean surfaces
+```
+
+## Components
 
 ### Buttons
 
@@ -157,40 +210,7 @@ return: green (positive) / red (negative), 16px bold
 chart: small sparkline 60px right
 ```
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px
-- Horizontal margin: 20px standard
-- Chart: 0 margin (full-bleed)
-- Touch targets: 48px minimum
-- Section spacing: 32px
-
-### Border Radius Scale
-- `8px` — Time filter pills, chips
-- `12px` — Cards, modals (light radius)
-- `50px` — All buttons (pill)
-- `50%` — Stock icon circles
-
-### Grid
-- Mobile: Single column, 20px margins
-- Stock detail: full-bleed chart, content below
-- Watchlist: single column list
-- Web: max-width 480px centered (mobile-first)
-
-## 6. Depth & Elevation
-
-```
-Level 0 - Background: #FFFFFF (light) / #1B1B1B (dark)
-Level 1 - Card:       0 1px 0 #F5F5F5 (border-bottom only)
-Level 2 - Modal:      0 8px 32px rgba(0,0,0,0.20)
-Level 3 - Bottom Sheet: 0 -4px 24px rgba(0,0,0,0.15)
-Buy/Sell buttons:     0 3px 12px rgba(0,200,5,0.30) or red variant
-Robinhood avoids decorative shadows — flat, clean surfaces
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use `#00C805` exclusively for gains, buy actions, and positive states
@@ -206,7 +226,7 @@ Robinhood avoids decorative shadows — flat, clean surfaces
 - Don't add heavy shadows or gradients to non-chart UI elements
 - Don't display complex order types prominently — simplicity is the brand promise
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `390px` — Primary mobile (iPhone, full-screen charts)
@@ -221,7 +241,7 @@ Robinhood avoids decorative shadows — flat, clean surfaces
 - Buttons: full-width mobile → auto side-by-side desktop
 - Watchlist: list mobile → table with sortable columns desktop
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 ```

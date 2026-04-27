@@ -1,6 +1,41 @@
-# Design System Inspired by Calm
+---
+name: Calm
+colors:
+  tertiary: "#F5A623"
+  primary: "#1B3D6E"
+typography:
+  h1:
+    fontSize: 26px
+    fontWeight: 600
+    lineHeight: 34
+  h2:
+    fontSize: 20px
+    fontWeight: 600
+    lineHeight: 27
+  h3:
+    fontSize: 17px
+    fontWeight: 500
+    lineHeight: 24
+  body-md:
+    fontSize: 15px
+    fontWeight: 400
+    lineHeight: 23
+  label:
+    fontSize: 16px
+    fontWeight: 600
+    lineHeight: 22
+rounded:
+  sm: 8px
+  md: 20px
+  lg: 24px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Calm is perhaps the most atmospherically cohesive app in existence — every design decision serves the emotional goal of reducing stress and evoking serenity. The foundation is a deep blue-to-indigo gradient (`#1B3D6E` to `#4A90D9`) that reads like looking up into a twilight sky. Over this, nature photography — forests, oceans, sunrises — creates an immediate sensory transportation. The UI disappears into this environment as much as possible.
 
@@ -18,7 +53,7 @@ The overall layout philosophy is "as little chrome as possible." Navigation is m
 - Nature photography: full-bleed background at all times
 - Border radius: 16–24px (generous, soft)
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Deep Blue** (`#1B3D6E`): Gradient start, deepest background layer
@@ -36,7 +71,7 @@ The overall layout philosophy is "as little chrome as possible." Navigation is m
 - **Divider** (`rgba(255,255,255,0.15)`): Separator lines on dark backgrounds
 - **Overlay Light** (`rgba(255,255,255,0.08)`): Subtle section separation
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Calm Custom (rounded sans)**: `"Circular", "Nunito", -apple-system, BlinkMacSystemFont, sans-serif` — warm, rounded, soft-edged
@@ -59,7 +94,55 @@ The overall layout philosophy is "as little chrome as possible." Navigation is m
 | Quote / Affirmation | Circular/Nunito | 22px | 300 | 32px | Italic, centered, breathing room |
 | Legal | Circular/Nunito | 11px | 400 | 15px | `rgba(255,255,255,0.4)` |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4, 8, 12, 16, 20, 24, 32, 48, 64px
+- Session card grid gap: 16px
+- Player vertical centering: full viewport height
+- Content max-width: 480px (mobile-optimized even on web)
+
+### Border Radius Scale
+- Tags / badges: 8px
+- Input fields: 12px
+- Session cards: 20px
+- Modal sheets: 24px top corners
+- Buttons: 980px pill
+- Avatar: 50%
+- Progress ring: 50% (SVG circle)
+
+## Elevation & Depth
+
+Calm uses atmospheric depth through blur and transparency rather than shadow:
+
+**Session card floating:**
+```
+background: rgba(255,255,255,0.12);
+backdrop-filter: blur(16px) saturate(120%);
+border: 1px solid rgba(255,255,255,0.18);
+box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+```
+
+**Player control bar:**
+```
+background: rgba(0,0,0,0.3);
+backdrop-filter: blur(20px);
+```
+
+**Bottom modal sheet:**
+```
+background: rgba(27,61,110,0.95);
+backdrop-filter: blur(24px);
+border-radius: 24px 24px 0 0;
+```
+
+**Gold CTA hover:**
+```
+box-shadow: 0 4px 16px rgba(245,166,35,0.4);
+```
+
+## Components
 
 ### Buttons
 **Primary (Start Session / Subscribe):**
@@ -99,55 +182,7 @@ The overall layout philosophy is "as little chrome as possible." Navigation is m
 - Overlay gradient: `linear-gradient(to bottom, rgba(27,61,110,0.3), rgba(27,61,110,0.7))`
 - Border radius: 16px for card context
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4, 8, 12, 16, 20, 24, 32, 48, 64px
-- Session card grid gap: 16px
-- Player vertical centering: full viewport height
-- Content max-width: 480px (mobile-optimized even on web)
-
-### Border Radius Scale
-- Tags / badges: 8px
-- Input fields: 12px
-- Session cards: 20px
-- Modal sheets: 24px top corners
-- Buttons: 980px pill
-- Avatar: 50%
-- Progress ring: 50% (SVG circle)
-
-## 6. Depth & Elevation
-
-Calm uses atmospheric depth through blur and transparency rather than shadow:
-
-**Session card floating:**
-```
-background: rgba(255,255,255,0.12);
-backdrop-filter: blur(16px) saturate(120%);
-border: 1px solid rgba(255,255,255,0.18);
-box-shadow: 0 4px 24px rgba(0,0,0,0.2);
-```
-
-**Player control bar:**
-```
-background: rgba(0,0,0,0.3);
-backdrop-filter: blur(20px);
-```
-
-**Bottom modal sheet:**
-```
-background: rgba(27,61,110,0.95);
-backdrop-filter: blur(24px);
-border-radius: 24px 24px 0 0;
-```
-
-**Gold CTA hover:**
-```
-box-shadow: 0 4px 16px rgba(245,166,35,0.4);
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Always place UI over nature photography or the blue gradient — never on plain white
@@ -162,7 +197,7 @@ box-shadow: 0 4px 16px rgba(245,166,35,0.4);
 - Don't use any bright, saturated accent beyond gold — the palette restraint creates the atmosphere
 - Don't display dense information tables or lists — minimalism in content density is the product
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints:
 - Mobile: 0–640px — single column, full-bleed imagery, bottom tab nav — native feel
@@ -170,7 +205,7 @@ Breakpoints:
 - Desktop: 1025px+ — centered content column max 960px; ambient nature video background
 - Wide: 1280px+ — video background fills screen; content stays centered in 960px column
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Gradient: `#1B3D6E` → `#4A90D9`

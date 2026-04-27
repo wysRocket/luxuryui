@@ -1,6 +1,34 @@
-# Design System Inspired by Pocket
+---
+name: Pocket
+colors:
+  tertiary: "#EF4056"
+  neutral: "#FFFFFF"
+  secondary: "#555555"
+typography:
+  body-md:
+    fontSize: 19px
+    fontWeight: 400
+    lineHeight: 1.65
+  label:
+    fontSize: 15px
+    fontWeight: 600
+    lineHeight: 20
+  caption:
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 16
+rounded:
+  sm: 4px
+  md: 8px
+  lg: 28px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Pocket's design language is optimized for one thing above all else: the reading experience. The interface disappears when you're consuming content, and reasserts itself with a confident, clean identity when you're managing your saved article library. The signature red (`#EF4056`) is the brand's single color statement — vivid, energetic, and decisive against the otherwise stark white-and-gray system. This red signals "save this," "this is important," and "your attention belongs here."
 
@@ -18,7 +46,7 @@ Dark mode is a true dark reading environment — not just a dark chrome with lig
 - Save button: distinctive 28px radius, full red, bold label
 - Configurable reading: font size, font family, background (white/sepia/dark)
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Pocket Red** (`#EF4056`): Brand accent — save button, tag fills, active states, CTAs
@@ -49,7 +77,7 @@ Dark mode is a true dark reading environment — not just a dark chrome with lig
 - **Gray 200** (`#E0E0E0`): Dividers, borders, input outlines
 - **Gray 100** (`#F5F5F5`): Subtle backgrounds, hover states (light)
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **SF Pro (UI)**: `-apple-system, BlinkMacSystemFont, sans-serif` — All library/nav UI
@@ -73,7 +101,41 @@ Dark mode is a true dark reading environment — not just a dark chrome with lig
 | Button Label | SF Pro | 15px | 600 | 20px | White on red |
 | Caption | SF Pro | 12px | 400 | 16px | Gray `#888888` |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px
+- Article card padding: 16px
+- Reading content padding: 24px sides, 40px top
+- Reading max-width: 680px (comfortable line measure)
+- Tag chip spacing: 8px horizontal, 4px vertical between chips
+- Section gaps: 24px
+
+### Border Radius Scale
+- `4px` — Tag chips, small badges
+- `6px` — Thumbnail images in cards
+- `8px` — Settings panels, input fields
+- `12px` — Modal sheets, bottom drawers
+- `28px` — All pill buttons
+
+### Grid
+- Mobile: Single column list, 0 margins (edge-to-edge cards)
+- Tablet: 2-column article grid, 16px margins
+- Reading: centered column 680px max-width
+
+## Elevation & Depth
+
+```
+Level 0 - Background: #FAFAFA (section) / #1C1C1E (dark)
+Level 1 - Card:       0 1px 0 #E0E0E0 (border-bottom only, flat-adjacent)
+Level 2 - Nav:        0 0.5px 0 rgba(0,0,0,0.12)
+Level 3 - Bottom Sheet: 0 -4px 24px rgba(0,0,0,0.15)
+Level 4 - Modal:      0 8px 32px rgba(0,0,0,0.25)
+Save button:          0 2px 8px rgba(239,64,86,0.35)
+```
+
+## Components
 
 ### Buttons
 
@@ -152,41 +214,7 @@ sub: SF Pro 16px 400 gray center
 CTA: red pill button below
 ```
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px
-- Article card padding: 16px
-- Reading content padding: 24px sides, 40px top
-- Reading max-width: 680px (comfortable line measure)
-- Tag chip spacing: 8px horizontal, 4px vertical between chips
-- Section gaps: 24px
-
-### Border Radius Scale
-- `4px` — Tag chips, small badges
-- `6px` — Thumbnail images in cards
-- `8px` — Settings panels, input fields
-- `12px` — Modal sheets, bottom drawers
-- `28px` — All pill buttons
-
-### Grid
-- Mobile: Single column list, 0 margins (edge-to-edge cards)
-- Tablet: 2-column article grid, 16px margins
-- Reading: centered column 680px max-width
-
-## 6. Depth & Elevation
-
-```
-Level 0 - Background: #FAFAFA (section) / #1C1C1E (dark)
-Level 1 - Card:       0 1px 0 #E0E0E0 (border-bottom only, flat-adjacent)
-Level 2 - Nav:        0 0.5px 0 rgba(0,0,0,0.12)
-Level 3 - Bottom Sheet: 0 -4px 24px rgba(0,0,0,0.15)
-Level 4 - Modal:      0 8px 32px rgba(0,0,0,0.25)
-Save button:          0 2px 8px rgba(239,64,86,0.35)
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use `#EF4056` red exclusively — it's the single color that makes Pocket identifiable
@@ -202,7 +230,7 @@ Save button:          0 2px 8px rgba(239,64,86,0.35)
 - Don't persist heavy navigation in reading mode — zero chrome for reading
 - Don't use decorative elements in article cards — content metadata is sufficient
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `375px` — Mobile: single-column list, full-width cards
@@ -217,7 +245,7 @@ Save button:          0 2px 8px rgba(239,64,86,0.35)
 - Navigation: bottom tab mobile → left sidebar desktop
 - Save button: fixed bottom (mobile) → nav bar (desktop)
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 ```

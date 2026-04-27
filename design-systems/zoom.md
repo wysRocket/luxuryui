@@ -1,6 +1,32 @@
-# Design System Inspired by Zoom
+---
+name: Zoom
+colors:
+  neutral: "#FFFFFF"
+  primary: "#0B5CFF"
+  tertiary: "#0048D4"
+  secondary: "#747487"
+typography:
+  page-title:
+    fontFamily: Zoom Sans
+    fontSize: 28px
+    fontWeight: 700
+    lineHeight: 36
+  body-md:
+    fontFamily: Zoom Sans
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 22
+  label:
+    fontFamily: Zoom Sans
+    fontSize: 14px
+    fontWeight: 600
+    lineHeight: 20
+rounded:
+  sm: 4px
+  md: 8px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Zoom's design system is purpose-built for reliability and focus. As the world's most widely-used video conferencing platform, its interface must disappear during meetings — enabling human connection without the software calling attention to itself. The palette centers on two distinct blues: the deep, authoritative `#0B5CFF` for primary brand and navigation elements, and the brighter, more accessible `#2D8CFF` for interactive states and in-meeting controls. Together they project the calm competence of enterprise technology made friendly.
 
@@ -18,7 +44,7 @@ Outside of meetings, Zoom presents a clean SaaS dashboard: white surfaces, the Z
 - Meeting control bar: dark (`#282828`) pill or bar at bottom, frosted glass option
 - 49-participant Speaker View / Gallery View toggling
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Deep Blue** (`#0B5CFF`): Navigation, primary brand, CTA buttons, selected states
@@ -52,7 +78,7 @@ Outside of meetings, Zoom presents a clean SaaS dashboard: white surfaces, the Z
 - **Orange Warning** (`#FF8C00`): Poor connection, bandwidth warning
 - **Yellow Reaction** (`#FFD700`): Raise hand, emoji reaction overlays
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Primary**: `"Zoom Sans", "Helvetica Neue", -apple-system, sans-serif` — all UI text
@@ -75,7 +101,50 @@ Outside of meetings, Zoom presents a clean SaaS dashboard: white surfaces, the Z
 | Badge Text | Zoom Sans | 11px | 700 | 14px | "Host", "Co-host", role labels |
 | Metadata | Zoom Sans | 13px | 400 | 18px | Attendee count, duration |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: `8px`
+- Scale: `4, 8, 12, 16, 20, 24, 32, 40, 48, 64px`
+- Card padding: `16px 20px`
+- Dashboard sidebar: `240px` width
+- Content area padding: `24px`
+- Section vertical gap: `32px`
+
+### Meeting Layout
+- Gallery view: responsive grid of 16:9 video tiles; 4×4 max per page
+- Speaker view: 1 large tile (70–80% width) + thumbnail strip (right or bottom)
+- Control bar: sticky bottom, full-width or floating pill
+- Panel sidebar (chat/participants): `320px`, slides over content
+
+### Border Radius Scale
+- `0px` — full-width control bar (when non-floating)
+- `4px` — small badges, status indicators
+- `8px` — cards, video tiles, buttons, panels
+- `100px` — floating control bar pill, pill buttons
+- `50%` — avatar circles, icon-only round buttons
+
+## Elevation & Depth
+
+### Shadow Scale
+- **Meeting Card Default** — `0 1px 4px rgba(0,0,0,0.08)`
+- **Meeting Card Hover** — `0 4px 12px rgba(0,0,0,0.12)`
+- **Floating Control Bar** — `0 8px 24px rgba(0,0,0,0.24)`
+- **Participant Panel** — `none` (border only)
+- **Modal** — `0 8px 32px rgba(0,0,0,0.20)`
+- **Tooltip** — `0 2px 8px rgba(0,0,0,0.16)`
+
+### Active Speaker Animation
+```
+@keyframes speakerPulse {
+  0%, 100% { opacity: 0.40; }
+  50%       { opacity: 1.00; }
+}
+border: 2px solid #2D8CFF;
+animation: speakerPulse 1.5s ease-in-out infinite;
+```
+
+## Components
 
 ### Buttons
 
@@ -140,50 +209,7 @@ Outside of meetings, Zoom presents a clean SaaS dashboard: white surfaces, the Z
 - Border-left: `1px solid rgba(0,0,0,0.10)`
 - Participant row: 48px height, avatar + name + mute status
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: `8px`
-- Scale: `4, 8, 12, 16, 20, 24, 32, 40, 48, 64px`
-- Card padding: `16px 20px`
-- Dashboard sidebar: `240px` width
-- Content area padding: `24px`
-- Section vertical gap: `32px`
-
-### Meeting Layout
-- Gallery view: responsive grid of 16:9 video tiles; 4×4 max per page
-- Speaker view: 1 large tile (70–80% width) + thumbnail strip (right or bottom)
-- Control bar: sticky bottom, full-width or floating pill
-- Panel sidebar (chat/participants): `320px`, slides over content
-
-### Border Radius Scale
-- `0px` — full-width control bar (when non-floating)
-- `4px` — small badges, status indicators
-- `8px` — cards, video tiles, buttons, panels
-- `100px` — floating control bar pill, pill buttons
-- `50%` — avatar circles, icon-only round buttons
-
-## 6. Depth & Elevation
-
-### Shadow Scale
-- **Meeting Card Default** — `0 1px 4px rgba(0,0,0,0.08)`
-- **Meeting Card Hover** — `0 4px 12px rgba(0,0,0,0.12)`
-- **Floating Control Bar** — `0 8px 24px rgba(0,0,0,0.24)`
-- **Participant Panel** — `none` (border only)
-- **Modal** — `0 8px 32px rgba(0,0,0,0.20)`
-- **Tooltip** — `0 2px 8px rgba(0,0,0,0.16)`
-
-### Active Speaker Animation
-```
-@keyframes speakerPulse {
-  0%, 100% { opacity: 0.40; }
-  50%       { opacity: 1.00; }
-}
-border: 2px solid #2D8CFF;
-animation: speakerPulse 1.5s ease-in-out infinite;
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Apply the active speaker pulse ring to exactly one tile at a time — clarity over animation
@@ -199,7 +225,7 @@ animation: speakerPulse 1.5s ease-in-out infinite;
 - Don't truncate participant names beyond 20 characters without a tooltip
 - Don't remove the "Muted" indicator — it's a critical accessibility and etiquette signal
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `375px` — mobile: speaker view only, control icons without labels
@@ -213,7 +239,7 @@ animation: speakerPulse 1.5s ease-in-out infinite;
 - Desktop: full control bar with all options, floating labels
 - Web: browser-native full-screen API, overlay controls
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Primary Blue: `#0B5CFF`

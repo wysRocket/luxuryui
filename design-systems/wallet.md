@@ -1,6 +1,22 @@
-# Design System Inspired by Crypto Wallet
+---
+name: Crypto Wallet
+colors:
+  neutral: "#0A0A0A"
+  tertiary: "#00D18C"
+  primary: "#0A0A0A"
+typography:
+  label:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: 600
+    lineHeight: 22
+rounded:
+  sm: 8px
+  md: 16px
+  lg: 20px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 The generic crypto wallet design system establishes a visual language that communicates security, precision, and forward momentum. Built on a near-black canvas (`#0A0A0A`) with elevated dark surfaces, it creates a digital vault aesthetic — the interface feels protected, intentional, and serious. This is not a casual app; every design decision should reinforce the message that the user's assets are held with care and professionalism.
 
@@ -18,7 +34,7 @@ Portfolio visualization is the design's emotional core: a centered balance displ
 - Transaction list: directional icon (green receive / red send) + amount + hash
 - QR code modal for receive addresses on dark background
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Background** (`#0A0A0A`): Deepest surface — page, behind all content
@@ -51,7 +67,7 @@ Portfolio visualization is the design's emotional core: a centered balance displ
 - **Pending Yellow** (`#F5B400`): Pending transaction, awaiting confirmation
 - **Network Badge** (`#6B3FCC`): Ethereum badge; varies by network
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Primary**: `"Inter", -apple-system, "Helvetica Neue", sans-serif` — all text
@@ -73,7 +89,45 @@ Portfolio visualization is the design's emotional core: a centered balance displ
 | CTA Button | Inter | 16px | 600 | 22px | "Send", "Receive", "Swap" |
 | Address | Inter | 13px | 400 | 18px | `0x1234…abcd`, truncated |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: `8px`
+- Scale: `4, 8, 12, 16, 20, 24, 32, 48px`
+- Row padding: `16px` horizontal
+- Section gap: `24px`
+- Page horizontal padding: `16px` mobile, `24px` desktop
+- Hero section top padding: `40px`
+
+### Layout Structure
+- Mobile-first single column
+- Balance hero centered, `100%` width
+- Action pills: 4-up horizontal row below balance
+- Assets: full-width list below action pills
+- Tab bar (bottom): Home | Assets | Activity | Settings (56px height)
+
+### Border Radius Scale
+- `0px` — sparkline charts, horizontal bars
+- `8px` — tags, network badges
+- `12px` — buttons, input fields
+- `16px` — asset rows (grouped card view)
+- `20px` — main portfolio card, modals, bottom sheets
+- `50%` — token logos, transaction direction icons
+
+## Elevation & Depth
+
+### Shadow Scale
+- **Base** — no shadow (dark bg is grounding layer)
+- **Asset Card Group** — `0 2px 16px rgba(0,0,0,0.40)`
+- **Modal / Sheet** — `0 -8px 40px rgba(0,0,0,0.60)`
+- **Confirmation** — `0 8px 40px rgba(0,0,0,0.70)`
+- **Green Glow (CTA)** — `0 0 20px rgba(0,209,140,0.20)` — on primary confirm button
+
+### Overlay Treatments
+- Bottom sheet: slides from bottom, background blurs via `backdrop-filter: blur(16px)`
+- QR code modal: white QR on `#1A1A1A` surface with green border frame
+
+## Components
 
 ### Buttons
 
@@ -137,45 +191,7 @@ Portfolio visualization is the design's emotional core: a centered balance displ
 - Gas estimate row at 14px secondary
 - Confirm button full-width green at bottom
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: `8px`
-- Scale: `4, 8, 12, 16, 20, 24, 32, 48px`
-- Row padding: `16px` horizontal
-- Section gap: `24px`
-- Page horizontal padding: `16px` mobile, `24px` desktop
-- Hero section top padding: `40px`
-
-### Layout Structure
-- Mobile-first single column
-- Balance hero centered, `100%` width
-- Action pills: 4-up horizontal row below balance
-- Assets: full-width list below action pills
-- Tab bar (bottom): Home | Assets | Activity | Settings (56px height)
-
-### Border Radius Scale
-- `0px` — sparkline charts, horizontal bars
-- `8px` — tags, network badges
-- `12px` — buttons, input fields
-- `16px` — asset rows (grouped card view)
-- `20px` — main portfolio card, modals, bottom sheets
-- `50%` — token logos, transaction direction icons
-
-## 6. Depth & Elevation
-
-### Shadow Scale
-- **Base** — no shadow (dark bg is grounding layer)
-- **Asset Card Group** — `0 2px 16px rgba(0,0,0,0.40)`
-- **Modal / Sheet** — `0 -8px 40px rgba(0,0,0,0.60)`
-- **Confirmation** — `0 8px 40px rgba(0,0,0,0.70)`
-- **Green Glow (CTA)** — `0 0 20px rgba(0,209,140,0.20)` — on primary confirm button
-
-### Overlay Treatments
-- Bottom sheet: slides from bottom, background blurs via `backdrop-filter: blur(16px)`
-- QR code modal: white QR on `#1A1A1A` surface with green border frame
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Always display USD equivalents alongside crypto amounts — dual denomination is essential
@@ -190,7 +206,7 @@ Portfolio visualization is the design's emotional core: a centered balance displ
 - Don't use rounded token logos that clip logos with transparency — use circle crop with fallback
 - Don't animate balance numbers on load without easing — jarring number jumps damage trust
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `375px` — primary mobile target; all content single-column
@@ -204,7 +220,7 @@ Portfolio visualization is the design's emotional core: a centered balance displ
 - Address input: hardware keyboard with monospace display
 - Desktop: web3 wallet connection (MetaMask etc.) via browser extension
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Background: `#0A0A0A`

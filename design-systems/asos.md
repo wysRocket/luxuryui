@@ -1,6 +1,46 @@
-# Design System Inspired by ASOS
+---
+name: ASOS
+colors:
+  tertiary: "#000000"
+  secondary: "#696969"
+  primary: "#000000"
+  neutral: "#F0F0F0"
+typography:
+  h2:
+    fontFamily: Arial
+    fontSize: 22px
+    fontWeight: 700
+    lineHeight: 28
+  h3:
+    fontFamily: Arial
+    fontSize: 18px
+    fontWeight: 700
+    lineHeight: 24
+  label:
+    fontFamily: Arial
+    fontSize: 14px
+    fontWeight: 700
+    lineHeight: 20
+  body-md:
+    fontFamily: Arial
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 22
+  caption:
+    fontFamily: Arial
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 16
+rounded:
+  sm: 2px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 ASOS operates with radical simplicity: black, white, and product photography. The brand's design philosophy treats every non-product pixel as potential noise — the UI's job is to disappear so that fashion imagery can dominate. The signature accent is a sharp red (`#CC0202`) reserved exclusively for sale pricing, promotional banners, and error states, creating an immediate Pavlovian association: red means discount.
 
@@ -18,7 +58,7 @@ Dark mode is a deliberate black (`#000000`) header and footer frame sandwiching 
 - Border: `#D4D4D4`
 - Font: Arial, Helvetica, sans-serif
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **ASOS Black** (`#000000`): Header, footer, primary navigation, CTA button default
@@ -36,7 +76,7 @@ Dark mode is a deliberate black (`#000000`) header and footer frame sandwiching 
 - **Mid Gray** (`#D4D4D4`): Card borders, input outlines, dividers
 - **Overlay Dark** (`rgba(0,0,0,0.5)`): Hover product overlay, modal backdrop
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Primary**: `Arial, Helvetica, "Helvetica Neue", sans-serif` — all UI contexts
@@ -59,7 +99,47 @@ Dark mode is a deliberate black (`#000000`) header and footer frame sandwiching 
 | Caption / Label | Arial | 12px | 400 | 16px | `#696969` size guide, color label |
 | Legal | Arial | 11px | 400 | 16px | `#A0A0A0` footer terms |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4, 8, 12, 16, 24, 32, 48px
+- Product grid gutter: 16px
+- Content max-width: 1280px
+
+### Border Radius Scale
+- ASOS uses **0px** throughout all product and commerce surfaces — square corners are the brand
+- Exception: avatar/profile: 50%
+- Exception: tag/badge pill: 2px (very slight rounding only)
+
+## Elevation & Depth
+
+ASOS keeps elevation nearly flat — the fashion photography provides visual hierarchy:
+
+**Resting product card:**
+```
+border: 1px solid #D4D4D4;
+/* No shadow */
+```
+
+**Hover product card:**
+```
+border-color: #000000;
+/* No shadow — hard border sharpens on hover */
+```
+
+**Dropdown / mega-menu:**
+```
+box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+background: #FFFFFF;
+```
+
+**Modal:**
+```
+box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+```
+
+## Components
 
 ### Buttons
 **Primary (Add to Bag):**
@@ -100,47 +180,7 @@ Dark mode is a deliberate black (`#000000`) header and footer frame sandwiching 
 - Border-right: `1px solid #D4D4D4`
 - Border radius: 0px
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4, 8, 12, 16, 24, 32, 48px
-- Product grid gutter: 16px
-- Content max-width: 1280px
-
-### Border Radius Scale
-- ASOS uses **0px** throughout all product and commerce surfaces — square corners are the brand
-- Exception: avatar/profile: 50%
-- Exception: tag/badge pill: 2px (very slight rounding only)
-
-## 6. Depth & Elevation
-
-ASOS keeps elevation nearly flat — the fashion photography provides visual hierarchy:
-
-**Resting product card:**
-```
-border: 1px solid #D4D4D4;
-/* No shadow */
-```
-
-**Hover product card:**
-```
-border-color: #000000;
-/* No shadow — hard border sharpens on hover */
-```
-
-**Dropdown / mega-menu:**
-```
-box-shadow: 0 8px 16px rgba(0,0,0,0.12);
-background: #FFFFFF;
-```
-
-**Modal:**
-```
-box-shadow: 0 4px 24px rgba(0,0,0,0.2);
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Keep all border radii at 0px for commerce-facing elements — square is the ASOS identity
@@ -155,7 +195,7 @@ box-shadow: 0 4px 24px rgba(0,0,0,0.2);
 - Don't use decorative shadows on product cards — flat borders maintain editorial crispness
 - Don't vary the font — Arial/Helvetica uniformity is intentional and must be maintained
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints:
 - Mobile: 0–640px — 2-column grid; filters collapse to slide-up bottom sheet
@@ -163,7 +203,7 @@ Breakpoints:
 - Desktop SM: 1025–1280px — 4-column grid; left filter sidebar permanent (220px)
 - Desktop LG: 1281px+ — 5-column grid; top filter bar option appears
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand Black: `#000000`

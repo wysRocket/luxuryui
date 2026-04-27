@@ -1,6 +1,32 @@
-# Design System Inspired by Nike Run Club
+---
+name: Nike Run Club
+colors:
+  neutral: "#000000"
+  tertiary: "#C8F04F"
+  secondary: "#888888"
+  primary: "#000000"
+typography:
+  body-md:
+    fontSize: 15px
+    fontWeight: 400
+    lineHeight: 24
+  label:
+    fontSize: 15px
+    fontWeight: 700
+    lineHeight: 20
+    letterSpacing: 0.5px
+rounded:
+  sm: 8px
+  md: 16px
+  lg: 24px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Nike Run Club's design language is engineered for the dark — a pure black (`#000000`) canvas that serves as the athlete's night sky, against which neon yellow-green (`#C8F04F`) pulses like a heartbeat monitor. This is sport-performance UI: every element is designed to be readable at a glance while running, during post-run review in variable light, and in the analytics deep-dive at the desktop. The darkness isn't aesthetic preference — it reduces eye strain during outdoor use and makes GPS data and achievement visuals pop with maximum luminance contrast.
 
@@ -18,7 +44,7 @@ Secondary type is handled in gray gradients, allowing a rich hierarchy on the da
 - Data-dense split tables: compact 12px Roboto Mono for pace data
 - Elevation and pace charts: area fill in neon at 30% opacity + solid stroke
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **True Black** (`#000000`): App background, base surface, nav bar
@@ -49,7 +75,7 @@ Secondary type is handled in gray gradients, allowing a rich hierarchy on the da
 - **Neon Hover** (`#D4F570`): Neon button hover (lightened)
 - **Neon Dim** (`rgba(200, 240, 79, 0.15)`): Ghost button, selected state background
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **NRC Display (Custom)**: `'NRC Display', 'Helvetica Neue', sans-serif` — Pace, distance, time large readouts
@@ -73,7 +99,42 @@ Secondary type is handled in gray gradients, allowing a rich hierarchy on the da
 | Button Label | Helvetica Neue | 15px | 700 | 20px | Uppercase tracked +0.5px |
 | Coach Prompt | Helvetica Neue | 17px | 400 | 26px | Light italic, guidance text |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px
+- Card padding: 20px standard
+- Live run screen: 24px margins, centered metric display
+- Split table row: 48px height, 16px horizontal padding
+- Section gaps: 32px between sections
+
+### Border Radius Scale
+- `8px` — Data chips, metric badges
+- `12px` — Small cards, filter pills
+- `16px` — Run history cards, achievement cards
+- `24px` — Large modal sheets
+- `50px` — All CTA buttons (pill)
+- `50%` — Start/stop circular buttons, avatar
+
+### Grid
+- Mobile (primary): Single column, 16px margins
+- Run screen: Full-bleed, 0 margin (immersive)
+- Metrics row: 3-column flex, equal widths
+- Split table: 6-column fixed-width grid
+
+## Elevation & Depth
+
+```
+Level 0 - Base:        #000000 background
+Level 1 - Surface:     #1A1A1A (cards) + no shadow (dark system)
+Level 2 - Elevated:    #242424 + 0 4px 16px rgba(0,0,0,0.4)
+Level 3 - Modal Sheet: #1A1A1A + 0 -8px 40px rgba(0,0,0,0.6)
+Neon Glow:             0 0 20px rgba(200,240,79,0.35) — used on active states only
+Map Card:              0 8px 24px rgba(0,0,0,0.5)
+```
+
+## Components
 
 ### Buttons
 
@@ -153,42 +214,7 @@ y-axis: Roboto Mono 11px gray
 grid lines: rgba(255,255,255,0.05) horizontal
 ```
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px
-- Card padding: 20px standard
-- Live run screen: 24px margins, centered metric display
-- Split table row: 48px height, 16px horizontal padding
-- Section gaps: 32px between sections
-
-### Border Radius Scale
-- `8px` — Data chips, metric badges
-- `12px` — Small cards, filter pills
-- `16px` — Run history cards, achievement cards
-- `24px` — Large modal sheets
-- `50px` — All CTA buttons (pill)
-- `50%` — Start/stop circular buttons, avatar
-
-### Grid
-- Mobile (primary): Single column, 16px margins
-- Run screen: Full-bleed, 0 margin (immersive)
-- Metrics row: 3-column flex, equal widths
-- Split table: 6-column fixed-width grid
-
-## 6. Depth & Elevation
-
-```
-Level 0 - Base:        #000000 background
-Level 1 - Surface:     #1A1A1A (cards) + no shadow (dark system)
-Level 2 - Elevated:    #242424 + 0 4px 16px rgba(0,0,0,0.4)
-Level 3 - Modal Sheet: #1A1A1A + 0 -8px 40px rgba(0,0,0,0.6)
-Neon Glow:             0 0 20px rgba(200,240,79,0.35) — used on active states only
-Map Card:              0 8px 24px rgba(0,0,0,0.5)
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use `#C8F04F` neon exclusively for primary active states, PRs, and CTA buttons
@@ -204,7 +230,7 @@ Map Card:              0 8px 24px rgba(0,0,0,0.5)
 - Don't use neon text below 14px — luminance contrast is harsh at small sizes
 - Don't use border-radius below 8px — soft rounding is part of the sport-premium feel
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `390px` — Primary mobile target, full-screen run mode
@@ -218,7 +244,7 @@ Map Card:              0 8px 24px rgba(0,0,0,0.5)
 - Activity rings: 80px card → 160px detail view → 240px dashboard
 - Split table: scrollable horizontal mobile → full table desktop
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 ```

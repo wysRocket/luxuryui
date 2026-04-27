@@ -1,6 +1,35 @@
-# Design System Inspired by Apple Music
+---
+name: Apple Music
+colors:
+  tertiary: "#FA2D48"
+  neutral: "#000000"
+  secondary: "#FFFFFF"
+  primary: "#000000"
+typography:
+  h1:
+    fontSize: 28px
+    fontWeight: 700
+    lineHeight: 34
+  h2:
+    fontSize: 22px
+    fontWeight: 700
+    lineHeight: 28
+  h3:
+    fontSize: 20px
+    fontWeight: 600
+    lineHeight: 25
+rounded:
+  sm: 2px
+  md: 12px
+  lg: 16px
+spacing:
+  xs: 4px
+  sm: 8px
+  md: 16px
+  lg: 32px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Apple Music operates in near-total darkness — a true black (`#000000`) canvas that makes album artwork explode with color. Every element defers to the music's visual identity: the app itself recedes so the content leads. This approach is grounded in the SF Pro typeface and Apple's Human Interface Guidelines, giving the product an unmistakable premium character even before a single interaction.
 
@@ -18,7 +47,7 @@ SF Pro Display handles headings with optical kerning tightened at large sizes; S
 - Glass surface: `rgba(28,28,30,0.85)` + `backdrop-filter: blur(24px)`
 - Border radius: 12px cards, 50% for avatar/artist circles
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **True Black** (`#000000`): Root page background, fullscreen player
@@ -36,7 +65,7 @@ SF Pro Display handles headings with optical kerning tightened at large sizes; S
 - **Glass** (`rgba(28,28,30,0.85)`): Translucent sidebar and mini-player
 - **Overlay** (`rgba(0,0,0,0.6)`): Modal backdrop dimmer
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **SF Pro Display**: `-apple-system, "SF Pro Display", BlinkMacSystemFont, sans-serif` — all headings ≥ 20px
@@ -59,7 +88,51 @@ SF Pro Display handles headings with optical kerning tightened at large sizes; S
 | Now Playing Controls | SF Pro Text | 13px | 600 | 17px | Time stamps, shuffle/repeat labels |
 | Legal / Footnote | SF Pro Text | 11px | 400 | 14px | `rgba(255,255,255,0.3)` |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 4px
+- Scale: 4, 8, 12, 16, 20, 24, 32, 44, 64px
+- Section vertical padding: 32px
+- Card grid gutter: 16px
+- Mini-player height: 64px fixed
+
+### Border Radius Scale
+- Micro (progress bar): 2px
+- Tag/badge: 6px
+- Card artwork: 12px
+- Sheet modal: 16px top corners
+- Button/pill: 980px (fully rounded)
+- Avatar/disc: 50%
+
+## Elevation & Depth
+
+Apple Music creates depth entirely through darkness gradients and blur, not box-shadow:
+
+**Resting card:**
+```
+box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+```
+
+**Glass surface (sidebar, mini-player):**
+```
+background: rgba(28,28,30,0.85);
+backdrop-filter: blur(24px) saturate(180%);
+```
+
+**Fullscreen player (vibrant artwork background):**
+```
+background: [artwork-dominant-color];
+/* overlaid with rgba(0,0,0,0.4) gradient to bottom */
+```
+
+**Modal overlay:**
+```
+background: rgba(0,0,0,0.6);
+backdrop-filter: blur(8px);
+```
+
+## Components
 
 ### Buttons
 **Primary (Subscribe / Download):**
@@ -97,51 +170,7 @@ SF Pro Display handles headings with optical kerning tightened at large sizes; S
 - Border-top: `1px solid rgba(255,255,255,0.08)`
 - Border radius (sheet): 16px top corners
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 4px
-- Scale: 4, 8, 12, 16, 20, 24, 32, 44, 64px
-- Section vertical padding: 32px
-- Card grid gutter: 16px
-- Mini-player height: 64px fixed
-
-### Border Radius Scale
-- Micro (progress bar): 2px
-- Tag/badge: 6px
-- Card artwork: 12px
-- Sheet modal: 16px top corners
-- Button/pill: 980px (fully rounded)
-- Avatar/disc: 50%
-
-## 6. Depth & Elevation
-
-Apple Music creates depth entirely through darkness gradients and blur, not box-shadow:
-
-**Resting card:**
-```
-box-shadow: 0 4px 16px rgba(0,0,0,0.6);
-```
-
-**Glass surface (sidebar, mini-player):**
-```
-background: rgba(28,28,30,0.85);
-backdrop-filter: blur(24px) saturate(180%);
-```
-
-**Fullscreen player (vibrant artwork background):**
-```
-background: [artwork-dominant-color];
-/* overlaid with rgba(0,0,0,0.4) gradient to bottom */
-```
-
-**Modal overlay:**
-```
-background: rgba(0,0,0,0.6);
-backdrop-filter: blur(8px);
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use true `#000000` (not `#0a0a0a`) for the root background — artwork pops harder
@@ -156,7 +185,7 @@ backdrop-filter: blur(8px);
 - Don't use system blue or any non-red accent — the monochrome-plus-red system is strict
 - Don't use light mode patterns in Apple Music UI contexts — the product is dark-first
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints:
 - Mobile (iOS): 390px — single column, bottom tab bar, floating mini-player
@@ -164,7 +193,7 @@ Breakpoints:
 - Desktop (macOS): 1024px+ — persistent sidebar at 240px, main content 3–4 columns
 - Wide: 1440px+ — grid expands to 5–6 album columns; sidebar stays fixed
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand Red: `#FA2D48`

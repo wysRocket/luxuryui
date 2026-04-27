@@ -1,6 +1,34 @@
-# Design System Inspired by Substack
+---
+name: Substack
+colors:
+  tertiary: "#FF6719"
+  secondary: "#0F0F0F"
+  neutral: "#FFFFFF"
+  primary: "#0F0F0F"
+typography:
+  h1:
+    fontSize: 28px
+    fontWeight: 700
+    lineHeight: 36
+  body-md:
+    fontSize: 19px
+    fontWeight: 400
+    lineHeight: 34
+  label:
+    fontSize: 15px
+    fontWeight: 700
+    lineHeight: 22
+  caption:
+    fontSize: 13px
+    fontWeight: 400
+    lineHeight: 18
+rounded:
+  sm: 2px
+  md: 6px
+  lg: 8px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Substack's design philosophy is radical simplicity in service of writing. The platform is built around a single conviction: great writing deserves great reading conditions, and nothing should compete with the text. The dominant white canvas, generous line lengths, and Georgia serif body text create reading conditions reminiscent of a quality magazine or newspaper — intentionally removed from the scrolling, stimulus-heavy norm of social media platforms.
 
@@ -18,7 +46,7 @@ Typography is the design system's primary creative statement. Georgia serif for 
 - Body text: 18–20px with 1.7–1.8 line-height — generous reading spec
 - Border radius: 6px for buttons, 4px for small elements
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Near-Black** (`#0F0F0F`): Body text, headings, primary content
@@ -49,7 +77,7 @@ Typography is the design system's primary creative statement. Georgia serif for 
 - **Success** (`#22C55E`): Subscription confirmed, payment success
 - **Error** (`#EF4444`): Form errors, payment failures
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Georgia**: `Georgia, 'Times New Roman', serif` — Article body text, editorial headings, post titles
@@ -73,7 +101,42 @@ Typography is the design system's primary creative statement. Georgia serif for 
 | Caption | System | 13px | 400 | 18px | Image captions, footnotes |
 | Tag / Category | System | 12px | 600 | 16px | Category tags, pill labels |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base unit: **4px**
+- Scale: `4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px`
+- Article content max-width: `680px`
+- Card padding: `24px`
+- Section vertical rhythm: `48px` between sections
+- Page horizontal padding: `16px` (mobile), `32px` (tablet), `auto` (desktop with max-width)
+
+### Grid
+- Home feed: single column, max-width `720px` centered
+- Publication homepage: 2-column article grid at `≥768px`
+- Article page: single column, max-width `680px`
+
+### Border Radius Scale
+| Token | Value | Usage |
+|-------|-------|-------|
+| `--radius-xs` | 2px | Tags, tiny elements |
+| `--radius-sm` | 4px | Inline chips |
+| `--radius-md` | 6px | Buttons |
+| `--radius-lg` | 8px | Cards |
+| `--radius-full` | 9999px | Avatar, pill tags |
+
+## Elevation & Depth
+
+Substack uses almost no shadows — the editorial aesthetic is flat and clean:
+
+- **Base** (page): `#FFFFFF` — flat white
+- **Feed Card**: `border: 1px solid #E6E6E6` — border only
+- **Nav (scrolled)**: `box-shadow: 0 1px 4px rgba(0,0,0,0.08)` — very subtle
+- **Subscribe Modal**: `box-shadow: 0 8px 32px rgba(0,0,0,0.15)`, backdrop 40% dark
+- **Tooltip**: `box-shadow: 0 4px 12px rgba(0,0,0,0.1)`, bg `#0F0F0F` text white
+- **Focus Ring**: `box-shadow: 0 0 0 3px rgba(255,103,25,0.25)` on focused inputs/buttons
+
+## Components
 
 ### Buttons
 **Primary Subscribe Button**
@@ -137,42 +200,7 @@ Typography is the design system's primary creative statement. Georgia serif for 
 - Below fade: orange subscribe button full-width
 - Subtext: System 14px `#666666` "This post is for subscribers only"
 
-## 5. Layout Principles
-
-### Spacing System
-- Base unit: **4px**
-- Scale: `4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px`
-- Article content max-width: `680px`
-- Card padding: `24px`
-- Section vertical rhythm: `48px` between sections
-- Page horizontal padding: `16px` (mobile), `32px` (tablet), `auto` (desktop with max-width)
-
-### Grid
-- Home feed: single column, max-width `720px` centered
-- Publication homepage: 2-column article grid at `≥768px`
-- Article page: single column, max-width `680px`
-
-### Border Radius Scale
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--radius-xs` | 2px | Tags, tiny elements |
-| `--radius-sm` | 4px | Inline chips |
-| `--radius-md` | 6px | Buttons |
-| `--radius-lg` | 8px | Cards |
-| `--radius-full` | 9999px | Avatar, pill tags |
-
-## 6. Depth & Elevation
-
-Substack uses almost no shadows — the editorial aesthetic is flat and clean:
-
-- **Base** (page): `#FFFFFF` — flat white
-- **Feed Card**: `border: 1px solid #E6E6E6` — border only
-- **Nav (scrolled)**: `box-shadow: 0 1px 4px rgba(0,0,0,0.08)` — very subtle
-- **Subscribe Modal**: `box-shadow: 0 8px 32px rgba(0,0,0,0.15)`, backdrop 40% dark
-- **Tooltip**: `box-shadow: 0 4px 12px rgba(0,0,0,0.1)`, bg `#0F0F0F` text white
-- **Focus Ring**: `box-shadow: 0 0 0 3px rgba(255,103,25,0.25)` on focused inputs/buttons
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Set article body text in Georgia 19px with line-height 34px — reading is the product
@@ -188,7 +216,7 @@ Substack uses almost no shadows — the editorial aesthetic is flat and clean:
 - Don't use orange for body text links — links are underlined in black; orange on hover only
 - Avoid truncating article headlines — titles deserve full visibility in the feed
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `xs`: 0–480px — single column, 16px padding, body text 17px
@@ -200,7 +228,7 @@ Substack uses almost no shadows — the editorial aesthetic is flat and clean:
 
 **Paywall:** Fade overlay on last paragraph → full-width orange subscribe button at all widths
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Orange CTA: `#FF6719`

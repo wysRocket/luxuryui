@@ -1,6 +1,21 @@
-# Design System Inspired by Udemy
+---
+name: Udemy
+colors:
+  tertiary: "#A435F0"
+  neutral: "#FFFFFF"
+  primary: "#A435F0"
+  secondary: "#6A6F73"
+typography:
+  label:
+    fontSize: 16px
+    fontWeight: 700
+    lineHeight: 22
+rounded:
+  sm: 4px
+  md: 8px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Udemy's design system is built to communicate both aspiration and accessibility. The platform must simultaneously convince users that learning is achievable and that the content is high-quality — a balance expressed through a warm, approachable color palette anchored by Udemy Purple. The primary purple (`#A435F0`) is vibrant and motivating, appearing on CTAs, promotions, and brand moments. The darker shade (`#6A1FA1`) grounds the system for hover states and deeper UI contexts.
 
@@ -18,7 +33,7 @@ The platform's mass-market positioning means the design must work for first-time
 - Course thumbnail: 16:9 aspect ratio, full-color, no borders
 - Price display: crossed-out original + purple sale price
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Udemy Purple** (`#A435F0`): Primary CTA, "Add to cart", sale price, brand accent
@@ -51,7 +66,7 @@ The platform's mass-market positioning means the design must work for first-time
 - **New Badge** (`#A435F0`): "New" label on recent courses
 - **Success** (`#2D7A00`): Enrollment confirmation, completion check
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Headings**: `"Udemy Sans", "SuisseWorks", "Helvetica Neue", sans-serif` — course names, section titles
@@ -74,7 +89,38 @@ The platform's mass-market positioning means the design must work for first-time
 | Description | Udemy Sans | 15px | 400 | 22px | Course about section |
 | Curriculum Item | Udemy Sans | 14px | 400 | 20px | Lecture list items |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: `8px`
+- Scale: `4, 8, 12, 16, 20, 24, 32, 40, 48, 64px`
+- Card internal padding: `12px`
+- Section horizontal padding: `16px` mobile, `24px` tablet, `48px` desktop
+- Section vertical spacing: `40px` between sections
+
+### Grid System
+- Mobile: 1-column course cards
+- Tablet: 2-column course cards
+- Desktop: 3-4 column grid, max-width `1340px`
+- Course page: `calc(100% - 360px)` content | `360px` sidebar
+- Card gap: `16px`
+
+### Border Radius Scale
+- `0px` — course cards, thumbnails (flat Udemy aesthetic)
+- `4px` — buttons, badges, tags
+- `8px` — modals, dropdowns
+- `100px` — pill search bar
+
+## Elevation & Depth
+
+### Shadow Scale
+- **Card Default** — `none` (border only)
+- **Card Hover** — `0 2px 4px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.08)`
+- **Purchase Sidebar** — `0 2px 8px rgba(0,0,0,0.12)`
+- **Modal** — `0 4px 24px rgba(0,0,0,0.20)`
+- **Tooltip** — `0 2px 8px rgba(0,0,0,0.24)`
+
+## Components
 
 ### Buttons
 
@@ -132,38 +178,7 @@ The platform's mass-market positioning means the design must work for first-time
 - Hover: background `#F7F9FA`
 - Completed: checkmark icon `#2D7A00`
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: `8px`
-- Scale: `4, 8, 12, 16, 20, 24, 32, 40, 48, 64px`
-- Card internal padding: `12px`
-- Section horizontal padding: `16px` mobile, `24px` tablet, `48px` desktop
-- Section vertical spacing: `40px` between sections
-
-### Grid System
-- Mobile: 1-column course cards
-- Tablet: 2-column course cards
-- Desktop: 3-4 column grid, max-width `1340px`
-- Course page: `calc(100% - 360px)` content | `360px` sidebar
-- Card gap: `16px`
-
-### Border Radius Scale
-- `0px` — course cards, thumbnails (flat Udemy aesthetic)
-- `4px` — buttons, badges, tags
-- `8px` — modals, dropdowns
-- `100px` — pill search bar
-
-## 6. Depth & Elevation
-
-### Shadow Scale
-- **Card Default** — `none` (border only)
-- **Card Hover** — `0 2px 4px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.08)`
-- **Purchase Sidebar** — `0 2px 8px rgba(0,0,0,0.12)`
-- **Modal** — `0 4px 24px rgba(0,0,0,0.20)`
-- **Tooltip** — `0 2px 8px rgba(0,0,0,0.24)`
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Show the original crossed-out price alongside the sale price — the discount drives conversion
@@ -178,7 +193,7 @@ The platform's mass-market positioning means the design must work for first-time
 - Don't display prices without context (discount, original price) in promotional contexts
 - Don't reduce title to 1-line clamp on cards — 2 lines maintains scannable grid
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `375px` — mobile: 1-column, purchase bar is bottom-sticky
@@ -192,7 +207,7 @@ The platform's mass-market positioning means the design must work for first-time
 - Search filters: drawer on mobile, left sidebar on desktop
 - Course previews: autoplay on hover (desktop), tap to preview (mobile)
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand Purple: `#A435F0`

@@ -1,6 +1,39 @@
-# Design System Inspired by Linear
+---
+name: Linear
+colors:
+  tertiary: "#5E6AD2"
+  neutral: "#1C1C1E"
+  secondary: "#9898A6"
+  primary: "#5E6AD2"
+typography:
+  h1:
+    fontSize: 22px
+    fontWeight: 700
+    lineHeight: 1.2
+  h2:
+    fontSize: 18px
+    fontWeight: 600
+    lineHeight: 1.25
+  h3:
+    fontSize: 15px
+    fontWeight: 600
+    lineHeight: 1.3
+  body-md:
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.5
+rounded:
+  sm: 4px
+  md: 8px
+  lg: 12px
+spacing:
+  xs: 4px
+  sm: 8px
+  md: 16px
+  lg: 32px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Linear's design system is perhaps the most influential in modern SaaS UI — a near-perfect expression of the philosophy that excellent software should feel inevitable. The palette is near-black (`#1C1C1E`) with purple-tinted accents (`#5E6AD2`) and a surface hierarchy so subtle it's defined by 4–5% lightness increments rather than hard borders. The result is a UI that feels simultaneously minimal and information-dense.
 
@@ -18,7 +51,7 @@ Linear is famous for its performance aesthetics: instant feedback, 60fps transit
 - Icon style: custom 16px, 1.5px stroke, geometric
 - Keyboard shortcut hints visible on all commands
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Linear Purple** (`#5E6AD2`): active items, selected states, primary CTA
@@ -40,7 +73,7 @@ Linear is famous for its performance aesthetics: instant feedback, 60fps transit
 - **Border Default** (`rgba(255,255,255,0.12)`): input outlines
 - **Overlay** (`rgba(0,0,0,0.50)`): modal backdrops
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Inter**: `"Inter", sans-serif` — sole typeface for all text at all sizes
@@ -58,22 +91,7 @@ Linear is famous for its performance aesthetics: instant feedback, 60fps transit
 | Micro | Inter | 11px | 400 | 1.3 | Keyboard hints, timestamps |
 | Keyboard | Inter | 11px | 500 | 1.0 | kbd style, `background: #353539`, 4px radius |
 
-## 4. Component Stylings
-
-### Buttons
-- **Primary**: `background: #5E6AD2`, `color: #FFFFFF`, `border-radius: 6px`, `padding: 8px 16px`, `font: Inter 14px 500`, `height: 32px`
-- **Hover**: `background: #4F5BBF`
-- **Ghost**: `background: transparent`, `color: #E8E8ED`, hover `background: #353539`, `border-radius: 6px`
-- **Destructive**: `background: #E5484D`, `color: #FFFFFF`
-- **Icon Button**: 28px×28px, `border-radius: 6px`, hover `background: #353539`
-
-### Cards & Containers
-- **Issue Row**: `padding: 8px 12px`, `border-bottom: 1px solid rgba(255,255,255,0.07)`, hover `background: #2C2C30`
-- **Panel**: `background: #232326`, `border-right: 1px solid rgba(255,255,255,0.07)`
-- **Command Palette**: `background: #2C2C30`, `border-radius: 12px`, `border: 1px solid rgba(255,255,255,0.12)`, `box-shadow: 0 8px 48px rgba(0,0,0,0.70)`, max-width 640px
-- **Modal**: `background: #232326`, `border-radius: 10px`, `box-shadow: 0 16px 64px rgba(0,0,0,0.60)`
-
-## 5. Layout Principles
+## Layout
 
 ### Spacing System
 - Base: 4px
@@ -89,7 +107,7 @@ Linear is famous for its performance aesthetics: instant feedback, 60fps transit
 - **10px** — modals
 - **12px** — command palette
 
-## 6. Depth & Elevation
+## Elevation & Depth
 
 - **Level 0** (shell): `#1C1C1E` — background
 - **Level 1** (panel): `#232326` — sidebar, panels
@@ -98,7 +116,22 @@ Linear is famous for its performance aesthetics: instant feedback, 60fps transit
 - **Level 4** (overlay): `box-shadow: 0 16px 64px rgba(0,0,0,0.60)` — modals
 - **Command Palette**: `box-shadow: 0 8px 48px rgba(0,0,0,0.70)` — highest drama
 
-## 7. Do's and Don'ts
+## Components
+
+### Buttons
+- **Primary**: `background: #5E6AD2`, `color: #FFFFFF`, `border-radius: 6px`, `padding: 8px 16px`, `font: Inter 14px 500`, `height: 32px`
+- **Hover**: `background: #4F5BBF`
+- **Ghost**: `background: transparent`, `color: #E8E8ED`, hover `background: #353539`, `border-radius: 6px`
+- **Destructive**: `background: #E5484D`, `color: #FFFFFF`
+- **Icon Button**: 28px×28px, `border-radius: 6px`, hover `background: #353539`
+
+### Cards & Containers
+- **Issue Row**: `padding: 8px 12px`, `border-bottom: 1px solid rgba(255,255,255,0.07)`, hover `background: #2C2C30`
+- **Panel**: `background: #232326`, `border-right: 1px solid rgba(255,255,255,0.07)`
+- **Command Palette**: `background: #2C2C30`, `border-radius: 12px`, `border: 1px solid rgba(255,255,255,0.12)`, `box-shadow: 0 8px 48px rgba(0,0,0,0.70)`, max-width 640px
+- **Modal**: `background: #232326`, `border-radius: 10px`, `box-shadow: 0 16px 64px rgba(0,0,0,0.60)`
+
+## Do's and Don'ts
 
 ### Do
 - Use exactly Inter at pixel-precise sizes — no size between the defined scale
@@ -113,14 +146,15 @@ Linear is famous for its performance aesthetics: instant feedback, 60fps transit
 - Don't add decorative elements — no gradients, no illustrations, no photography
 - Don't exceed 12px border-radius in main UI chrome
 
-## 8. Responsive Behavior
+## Responsive Behavior
+
 Breakpoints: 768px (tablet), 1024px (desktop), 1440px (wide)
 
 - **768px**: sidebar collapses to icon rail (48px); full-screen issue detail on tap
 - **1024px**: standard 3-panel: sidebar | list | detail
 - **1440px**: wider detail panel; enhanced sidebar with project counts
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand: `#5E6AD2`

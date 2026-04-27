@@ -1,6 +1,29 @@
-# Design System Inspired by BeReal
+---
+name: BeReal
+colors:
+  neutral: "#000000"
+  tertiary: "#FFE500"
+  primary: "#000000"
+typography:
+  label:
+    fontSize: 16px
+    fontWeight: 700
+    lineHeight: 22
+  caption:
+    fontSize: 13px
+    fontWeight: 400
+    lineHeight: 18
+rounded:
+  sm: 12px
+  md: 20px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 BeReal's design aesthetic is a radical statement against polished social media. Where Instagram is aspirational and curated, BeReal is deliberately raw, immediate, and anti-design. The entire visual system is built on pure black (`#000000`) backgrounds, stark white text, and a single yellow accent (`#FFE500`) that marks the brand's most critical interaction: the "Time to BeReal" notification moment. Everything else is stripped away.
 
@@ -17,7 +40,7 @@ The UI is sparse to the point of minimalism — almost nothing on screen compete
 - No gradients, no decorative shadows, no color variety
 - Secondary gray: `rgba(255,255,255,0.5)` for metadata
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **True Black** (`#000000`): Every background surface — no exceptions
@@ -35,7 +58,7 @@ The UI is sparse to the point of minimalism — almost nothing on screen compete
 - **Glass Card** (`rgba(255,255,255,0.1)`): Subtle card separation when needed
 - **Reaction Bar** (`rgba(0,0,0,0.75)`): Emoji reaction overlay on photos
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Helvetica Neue**: `"Helvetica Neue", Helvetica, Arial, sans-serif` — exclusively used throughout
@@ -56,7 +79,51 @@ The UI is sparse to the point of minimalism — almost nothing on screen compete
 | Button label | Helvetica Neue | 16px | 700 | 22px | "BeReal" yellow button text (black) |
 | Caption | Helvetica Neue | 13px | 400 | 18px | `rgba(255,255,255,0.55)` |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4, 8, 12, 16, 20, 24, 32px
+- Content inset: 16px left/right margins
+- Feed item vertical spacing: 24px gap
+- Camera inset position: 8px from top-left of back camera
+
+### Border Radius Scale
+- Camera inset / photo corners: 12px
+- Modal / bottom sheet: 20px top corners
+- Buttons: 980px (full pill exclusively)
+- Icon buttons: 50%
+- "Late" badge: 980px pill
+
+## Elevation & Depth
+
+BeReal has no elevation hierarchy — flat black is the canvas:
+
+**Photo overlay text:**
+```
+text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+```
+
+**Front camera inset border:**
+```
+border: 2px solid #FFFFFF;
+border-radius: 12px;
+```
+
+**Glass action buttons:**
+```
+background: rgba(255,255,255,0.15);
+backdrop-filter: blur(8px);
+```
+
+**Bottom sheet modal:**
+```
+background: #111111;
+border-radius: 20px 20px 0 0;
+/* No shadow — darkness is separation enough */
+```
+
+## Components
 
 ### Buttons
 **Primary (Time to BeReal):**
@@ -95,51 +162,7 @@ The UI is sparse to the point of minimalism — almost nothing on screen compete
 - No card chrome — photos are edge-to-edge
 - Username white bold above; timestamp and "Late" badge below-left of image
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4, 8, 12, 16, 20, 24, 32px
-- Content inset: 16px left/right margins
-- Feed item vertical spacing: 24px gap
-- Camera inset position: 8px from top-left of back camera
-
-### Border Radius Scale
-- Camera inset / photo corners: 12px
-- Modal / bottom sheet: 20px top corners
-- Buttons: 980px (full pill exclusively)
-- Icon buttons: 50%
-- "Late" badge: 980px pill
-
-## 6. Depth & Elevation
-
-BeReal has no elevation hierarchy — flat black is the canvas:
-
-**Photo overlay text:**
-```
-text-shadow: 0 1px 3px rgba(0,0,0,0.8);
-```
-
-**Front camera inset border:**
-```
-border: 2px solid #FFFFFF;
-border-radius: 12px;
-```
-
-**Glass action buttons:**
-```
-background: rgba(255,255,255,0.15);
-backdrop-filter: blur(8px);
-```
-
-**Bottom sheet modal:**
-```
-background: #111111;
-border-radius: 20px 20px 0 0;
-/* No shadow — darkness is separation enough */
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use `#FFE500` yellow exclusively for the "Time to BeReal" notification CTA — nowhere else
@@ -154,14 +177,14 @@ border-radius: 20px 20px 0 0;
 - Don't use any typeface other than Helvetica Neue
 - Don't add rounded corners to the photo itself at the feed level — edge-to-edge is authentic
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints (mobile-first always):
 - Mobile: 0–480px — full-screen native experience; this is a mobile-native product
 - Tablet: 481–768px — centered post card max 480px wide; black sidebar fill
 - Desktop (web): 769px+ — single centered column 480px; black margins; minimal header
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Background: `#000000`

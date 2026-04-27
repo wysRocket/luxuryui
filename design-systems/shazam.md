@@ -1,6 +1,30 @@
-# Design System Inspired by Shazam
+---
+name: Shazam
+colors:
+  tertiary: "#08F7E6"
+  neutral: "#FFFFFF"
+  primary: "#1A2A6C"
+typography:
+  label:
+    fontSize: 15px
+    fontWeight: 600
+    lineHeight: 20
+  caption:
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 16
+rounded:
+  sm: 8px
+  md: 16px
+  lg: 24px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Shazam's design language is defined by a single transcendent moment: the deep blue pulse of the recognition button, expanding outward in concentric rings, waiting to name the song filling the room. The entire design system orbits this interaction. The background is a deep navy-to-midnight blue gradient (`#3668C0` to `#1A2A6C`) that creates the sensation of digital space — vast, calm, and receptive. Against this dark canvas, the cyan-teal accent (`#08F7E6`) vibrates with the frequency of music itself, used for recognition pulses, active states, and moments of discovery.
 
@@ -18,7 +42,7 @@ Discovery and history form the secondary surfaces of the experience. After a suc
 - Minimal chrome — the recognition button is the only persistent primary UI
 - Blur-glass result cards: `backdrop-filter blur(40px)` with dark tint over album art
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Deep Midnight** (`#1A2A6C`): Dark base of gradient background
@@ -55,7 +79,7 @@ Discovery and history form the secondary surfaces of the experience. After a suc
 - **Listening Pulse** (`rgba(8,247,230,0.6)`): Active listening animation
 - **Error Red** (`#FF453A`): Recognition failed, no result
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **SF Pro Display**: `-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif` — All display text, headers
@@ -78,7 +102,42 @@ Discovery and history form the secondary surfaces of the experience. After a suc
 | Caption | SF Pro Text | 12px | 400 | 16px | White 60% alpha |
 | Count Badge | SF Pro Rounded | 12px | 700 | 16px | White on cyan/blue pill |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px
+- Recognition screen: button centered vertically, 20px horizontal margins
+- Library list: 8px between items, 20px horizontal margins
+- Result card: 24px internal padding
+- Safe areas: iOS safe area insets honored (Dynamic Island support)
+
+### Border Radius Scale
+- `8px` — Album art in lists, secondary buttons
+- `12px` — Discover cards, library rows
+- `16px` — Album art on result card
+- `22px` — Pill action buttons
+- `24px` — Result bottom sheet card
+- `50%` — Main recognition button
+
+### Grid
+- Mobile: Single column, 20px margins (recognition-first design)
+- Discover grid: 2-column, 12px gap
+- Library: single column list
+- Desktop/web: centered 390px, blue gradient full-bleed background
+
+## Elevation & Depth
+
+```
+Level 0 - BG Gradient:    radial-gradient deep navy to black
+Level 1 - Library Rows:   rgba(255,255,255,0.06) + 0 shadow
+Level 2 - Cards:          rgba(255,255,255,0.10) + 0 8px 24px rgba(0,0,0,0.40)
+Level 3 - Result Sheet:   rgba(0,0,0,0.50) + blur(40px) + 0 -8px 40px rgba(0,0,0,0.5)
+Button Glow:              0 0 60px rgba(8,247,230,0.50) (essential)
+Shazam button:            central; highest visual z-weight in system
+```
+
+## Components
 
 ### Buttons
 
@@ -161,42 +220,7 @@ text: white track + artist bottom-left
 shadow: 0 8px 24px rgba(0,0,0,0.40)
 ```
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px
-- Recognition screen: button centered vertically, 20px horizontal margins
-- Library list: 8px between items, 20px horizontal margins
-- Result card: 24px internal padding
-- Safe areas: iOS safe area insets honored (Dynamic Island support)
-
-### Border Radius Scale
-- `8px` — Album art in lists, secondary buttons
-- `12px` — Discover cards, library rows
-- `16px` — Album art on result card
-- `22px` — Pill action buttons
-- `24px` — Result bottom sheet card
-- `50%` — Main recognition button
-
-### Grid
-- Mobile: Single column, 20px margins (recognition-first design)
-- Discover grid: 2-column, 12px gap
-- Library: single column list
-- Desktop/web: centered 390px, blue gradient full-bleed background
-
-## 6. Depth & Elevation
-
-```
-Level 0 - BG Gradient:    radial-gradient deep navy to black
-Level 1 - Library Rows:   rgba(255,255,255,0.06) + 0 shadow
-Level 2 - Cards:          rgba(255,255,255,0.10) + 0 8px 24px rgba(0,0,0,0.40)
-Level 3 - Result Sheet:   rgba(0,0,0,0.50) + blur(40px) + 0 -8px 40px rgba(0,0,0,0.5)
-Button Glow:              0 0 60px rgba(8,247,230,0.50) (essential)
-Shazam button:            central; highest visual z-weight in system
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Center the Shazam button as the single primary focal point of the recognition screen
@@ -212,7 +236,7 @@ Shazam button:            central; highest visual z-weight in system
 - Don't break the dark blue gradient for light mode — Shazam is dark-first always
 - Don't reduce the recognition button below 120px — it must be confident and unmissable
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `390px` — Primary iPhone target: recognition button centered, full gradient bg
@@ -226,7 +250,7 @@ Shazam button:            central; highest visual z-weight in system
 - Result card: bottom sheet (mobile) → centered floating card (desktop)
 - Library: full-width list mobile → 2-column desktop
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 ```

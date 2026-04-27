@@ -1,6 +1,47 @@
-# Design System Inspired by Monzo
+---
+name: Monzo
+colors:
+  tertiary: "#FF3B6E"
+  neutral: "#FFFFFF"
+  primary: "#1A1A2E"
+  secondary: "#8A8FA4"
+typography:
+  h1:
+    fontSize: 28px
+    fontWeight: 700
+    lineHeight: 1.15
+  h2:
+    fontSize: 22px
+    fontWeight: 700
+    lineHeight: 1.2
+  h3:
+    fontSize: 18px
+    fontWeight: 600
+    lineHeight: 1.3
+  body-lg:
+    fontSize: 17px
+    fontWeight: 400
+    lineHeight: 1.6
+  body-md:
+    fontSize: 15px
+    fontWeight: 400
+    lineHeight: 1.5
+  caption:
+    fontSize: 13px
+    fontWeight: 400
+    lineHeight: 1.4
+rounded:
+  sm: 8px
+  md: 14px
+  lg: 24px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Monzo redefined what a bank could look like: approachable, transparent, and designed around the card — specifically, its iconic hot coral card (`#FF3B6E`). The design system is built on the tension between this warm, expressive coral and a clean, modern white surface that keeps banking information crystal clear. Dark mode is a first-class citizen, using a sophisticated near-black (`#1A1A2E`) that maintains the coral's vibrancy against dark contexts.
 
@@ -18,7 +59,7 @@ The design philosophy is "banking made human." Transactions are categorized and 
 - Category color system: 10 distinct colors for spending insights
 - Smooth iOS-native feel: spring animations, swipe gestures
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Monzo Coral** (`#FF3B6E`): brand, primary CTAs, active states, card color
@@ -42,7 +83,7 @@ The design philosophy is "banking made human." Transactions are categorized and 
 - **Border Dark** (`rgba(255,255,255,0.08)`): dividers in dark mode
 - **Category Colors**: Groceries `#FF6B35`, Transport `#5C9BD6`, Entertainment `#784BD1`, Eating Out `#FF3B6E`, Shopping `#FDAB3D`, Bills `#00C875`, Health `#00CC88`, Travel `#4EC9B0`, Personal `#AB47BC`, General `#8A8FA4`
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Monzo (Custom)**: `"Monzo", -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif` — all text
@@ -62,23 +103,7 @@ The design philosophy is "banking made human." Transactions are categorized and 
 | Caption | Monzo | 13px | 400 | 1.4 | Dates, merchant categories |
 | Micro | Monzo | 11px | 500 | 1.3 | Badge text, card number hint |
 
-## 4. Component Stylings
-
-### Buttons
-- **Primary**: `background: #FF3B6E`, `color: #FFFFFF`, `border-radius: 14px`, `padding: 16px 24px`, `font: Monzo 17px 700`, width 100% on mobile
-- **Hover / Pressed**: `background: #E02E5F`, scale: 0.98
-- **Secondary**: `background: rgba(255,59,110,0.10)`, `color: #FF3B6E`, `border-radius: 14px`
-- **Ghost**: `border: 1.5px solid rgba(0,0,0,0.15)`, `color: #0D1120`, `background: transparent`, `border-radius: 14px`
-- **Dark mode primary**: identical coral on `#1A1A2E` — coral reads even more vibrantly
-
-### Cards & Containers
-- **Transaction Row**: 60px height, merchant icon 40px circle left, name + category, amount right (coral/red or positive green), 1px border-bottom
-- **Pot Card**: `border-radius: 16px`, illustration top half, coral header accent, progress bar with coral fill
-- **Payment Card Render**: the physical Monzo card — `border-radius: 16px`, coral gradient surface, white Monzo wordmark, embossed card number
-- **Insight Widget**: `border-radius: 14px`, `background: #F5F6FA`, spending chart + summary text
-- **Modal / Sheet**: `border-radius: 24px` top corners only (bottom sheet pattern), `background: #FFFFFF`
-
-## 5. Layout Principles
+## Layout
 
 ### Spacing System
 - Base: 8px
@@ -95,7 +120,7 @@ The design philosophy is "banking made human." Transactions are categorized and 
 - **24px** — bottom sheets, modal drawers
 - **50%** — merchant icons, avatar circles
 
-## 6. Depth & Elevation
+## Elevation & Depth
 
 - **Level 0** (background): `#FFFFFF` light / `#1A1A2E` dark
 - **Level 1** (list): `#F5F6FA` light / `#252840` dark — list item surfaces
@@ -104,7 +129,23 @@ The design philosophy is "banking made human." Transactions are categorized and 
 - **Coral card shadow**: `box-shadow: 0 8px 32px rgba(255,59,110,0.30)` — physical card
 - **Focus ring**: `box-shadow: 0 0 0 3px rgba(255,59,110,0.25)`
 
-## 7. Do's and Don'ts
+## Components
+
+### Buttons
+- **Primary**: `background: #FF3B6E`, `color: #FFFFFF`, `border-radius: 14px`, `padding: 16px 24px`, `font: Monzo 17px 700`, width 100% on mobile
+- **Hover / Pressed**: `background: #E02E5F`, scale: 0.98
+- **Secondary**: `background: rgba(255,59,110,0.10)`, `color: #FF3B6E`, `border-radius: 14px`
+- **Ghost**: `border: 1.5px solid rgba(0,0,0,0.15)`, `color: #0D1120`, `background: transparent`, `border-radius: 14px`
+- **Dark mode primary**: identical coral on `#1A1A2E` — coral reads even more vibrantly
+
+### Cards & Containers
+- **Transaction Row**: 60px height, merchant icon 40px circle left, name + category, amount right (coral/red or positive green), 1px border-bottom
+- **Pot Card**: `border-radius: 16px`, illustration top half, coral header accent, progress bar with coral fill
+- **Payment Card Render**: the physical Monzo card — `border-radius: 16px`, coral gradient surface, white Monzo wordmark, embossed card number
+- **Insight Widget**: `border-radius: 14px`, `background: #F5F6FA`, spending chart + summary text
+- **Modal / Sheet**: `border-radius: 24px` top corners only (bottom sheet pattern), `background: #FFFFFF`
+
+## Do's and Don'ts
 
 ### Do
 - Use the physical card render prominently on the home screen
@@ -119,14 +160,15 @@ The design philosophy is "banking made human." Transactions are categorized and 
 - Don't exceed 24px border-radius on anything except bottom sheets
 - Don't show full card numbers in the UI — mask to last 4 digits always
 
-## 8. Responsive Behavior
+## Responsive Behavior
+
 Breakpoints: 375px (iPhone SE), 390px (iPhone 15 Pro), 430px (iPhone 15 Pro Max), 768px (iPad)
 
 - **375px**: standard single-column; fixed bottom tab bar; 60px transaction rows
 - **390–430px**: slightly larger type scale (+1px); wider card render
 - **768px (iPad)**: 2-column layout; persistent left sidebar; wider pots grid
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand: `#FF3B6E`

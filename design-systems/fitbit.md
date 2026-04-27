@@ -1,6 +1,33 @@
-# Design System Inspired by Fitbit
+---
+name: Fitbit
+colors:
+  tertiary: "#00B0B9"
+  neutral: "#121212"
+  primary: "#121212"
+  secondary: "#9E9E9E"
+typography:
+  body-md:
+    fontFamily: Proxima Nova
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.5
+  caption:
+    fontFamily: Proxima Nova
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 1.3
+rounded:
+  sm: 4px
+  md: 12px
+  lg: 24px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Fitbit's design is clean, data-forward, and motivational — a digital health dashboard that transforms raw biometric data into actionable personal insight. The teal/cyan accent (`#00B0B9`) is the brand's primary energizer: it appears on progress rings, active metric callouts, heart rate indicators, and primary CTAs, conveying wellness, clarity, and momentum. The base surfaces are predominantly dark (`#121212`, `#1E1E1E`) for the device-adjacent dashboard experience, though the companion app also supports a clean white mode.
 
@@ -18,7 +45,7 @@ The overall atmosphere is "precision wellness technology" — premium but not ex
 - 12px border radius on cards and widgets
 - Minimal use of color outside of the teal accent
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Fitbit Teal** (`#00B0B9`): Progress rings, active metrics, CTAs
@@ -42,7 +69,7 @@ The overall atmosphere is "precision wellness technology" — premium but not ex
 - **Active Green** (`#4CAF50`): Goals met, positive delta
 - **Calories Orange** (`#FF6B35`): Caloric data tracks
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Primary**: `Proxima Nova` — all UI text
@@ -63,7 +90,28 @@ The overall atmosphere is "precision wellness technology" — premium but not ex
 | Caption | Proxima Nova | 12px | 400 | 1.30 | Timestamps, fine print |
 | Navigation | Proxima Nova | 11px | 600 | 1.00 | Bottom tab labels |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px
+
+### Border Radius Scale
+- Small (4px): Badges, inline tags
+- Medium (8px): Slider tracks, progress bars
+- Standard (12px): Dashboard widgets, cards
+- Large (20px): Bottom sheets, modals
+- Pill (24px–50%): CTA buttons, progress rings
+
+## Elevation & Depth
+
+- **Base surface**: `#121212` — no shadow
+- **Cards**: `box-shadow: 0 2px 12px rgba(0,0,0,0.3)`
+- **Active/featured**: `box-shadow: 0 4px 20px rgba(0,176,185,0.3)` — teal glow
+- **Modals**: `box-shadow: 0 16px 48px rgba(0,0,0,0.7)`
+- **Progress ring glow**: `filter: drop-shadow(0 0 8px rgba(0,176,185,0.6))`
+
+## Components
 
 ### Buttons
 
@@ -91,28 +139,7 @@ The overall atmosphere is "precision wellness technology" — premium but not ex
 - Progress ring: centered 120px–160px circle, teal stroke
 - `box-shadow: 0 2px 12px rgba(0,0,0,0.3)` baseline
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px
-
-### Border Radius Scale
-- Small (4px): Badges, inline tags
-- Medium (8px): Slider tracks, progress bars
-- Standard (12px): Dashboard widgets, cards
-- Large (20px): Bottom sheets, modals
-- Pill (24px–50%): CTA buttons, progress rings
-
-## 6. Depth & Elevation
-
-- **Base surface**: `#121212` — no shadow
-- **Cards**: `box-shadow: 0 2px 12px rgba(0,0,0,0.3)`
-- **Active/featured**: `box-shadow: 0 4px 20px rgba(0,176,185,0.3)` — teal glow
-- **Modals**: `box-shadow: 0 16px 48px rgba(0,0,0,0.7)`
-- **Progress ring glow**: `filter: drop-shadow(0 0 8px rgba(0,176,185,0.6))`
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use large, bold numeric displays for key health metrics — the number IS the interface
@@ -127,7 +154,7 @@ The overall atmosphere is "precision wellness technology" — premium but not ex
 - Don't use more than 2 accent colors at once on a dashboard view
 - Don't animate constantly — reserve motion for goal achievement moments
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints: 320px, 480px, 768px, 1024px, 1280px
 - Mobile: Single-column scrolling dashboard, bottom tab bar
@@ -135,7 +162,7 @@ Breakpoints: 320px, 480px, 768px, 1024px, 1280px
 - Web: 3-column grid dashboard, left navigation sidebar
 - Companion watch UI: minimal — large text, single metric per screen
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Teal accent: `#00B0B9`

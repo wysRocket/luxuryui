@@ -1,6 +1,31 @@
-# Design System Inspired by Kayak
+---
+name: Kayak
+colors:
+  tertiary: "#FF690F"
+  neutral: "#FFFFFF"
+  primary: "#1A1A1A"
+typography:
+  h1:
+    fontSize: 16px
+    fontWeight: 700
+    lineHeight: 1.25
+    letterSpacing: 0.05em
+  body-md:
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.5
+rounded:
+  sm: 2px
+  md: 8px
+  lg: 20px
+spacing:
+  xs: 4px
+  sm: 8px
+  md: 16px
+  lg: 32px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Kayak's design language is defined by confident utility and travel optimism. The interface is built around a brilliant orange (#FF690F) that commands attention without overwhelming the white-dominant canvas beneath it. Every pixel is tuned for rapid decision-making — users arrive with a destination in mind, and the UI compresses the path from search intent to booking confidence as tightly as possible.
 
@@ -18,7 +43,7 @@ Color is deployed sparingly as a signal layer — orange for primary calls-to-ac
 - Icon style: filled, monochromatic, 20–24px; airplane, hotel bed, car icons
 - Elevation: flat with hairline separators; no drop shadows in results lists
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Kayak Orange** (`#FF690F`): primary CTA buttons, active tab indicators, brand color
@@ -38,7 +63,7 @@ Color is deployed sparingly as a signal layer — orange for primary calls-to-ac
 - **Border Hairline** (`rgba(0,0,0,0.10)`): separators between results, input outlines
 - **Filter Chip** (`rgba(255,105,15,0.10)`): active filter chip fill with orange border
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **System UI**: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif` — all text
@@ -56,22 +81,7 @@ Color is deployed sparingly as a signal layer — orange for primary calls-to-ac
 | Label / Tag | System UI | 12px | 600 | 1.2 | Filter chips, badges |
 | Legal / Fine Print | System UI | 11px | 400 | 1.4 | Fees, disclaimers |
 
-## 4. Component Stylings
-
-### Buttons
-- **Primary CTA**: `background: #FF690F`, `color: #FFFFFF`, `border-radius: 6px`, `padding: 14px 24px`, `font-weight: 700`, `font-size: 16px`
-- **Hover state**: `background: #E55A00`, `box-shadow: 0 2px 8px rgba(255,105,15,0.35)`
-- **Disabled**: `background: #CCCCCC`, `color: #888888`, `cursor: not-allowed`
-- **Secondary**: `border: 2px solid #FF690F`, `color: #FF690F`, `background: transparent`, `border-radius: 6px`
-- **Filter Chip**: `border: 1px solid #E0E0E0`, `border-radius: 20px`, `padding: 6px 14px`, `font-size: 13px`, active uses `border-color: #FF690F`, `background: rgba(255,105,15,0.08)`
-
-### Cards & Containers
-- **Result Card**: `background: #FFFFFF`, `border-radius: 8px`, `border: 1px solid rgba(0,0,0,0.08)`, `padding: 16px`
-- **Selected Card**: adds `border: 2px solid #FF690F`
-- **Search Box**: `border-radius: 12px`, `padding: 20px`, `background: #FFFFFF`, `box-shadow: 0 4px 16px rgba(0,0,0,0.12)`
-- **Modal**: `border-radius: 16px`, `background: #FFFFFF`, `box-shadow: 0 8px 40px rgba(0,0,0,0.18)`
-
-## 5. Layout Principles
+## Layout
 
 ### Spacing System
 - Base: 4px
@@ -88,7 +98,7 @@ Color is deployed sparingly as a signal layer — orange for primary calls-to-ac
 - **16px** — modal dialogs, bottom sheets
 - **20px** — filter pill chips, badge lozenges
 
-## 6. Depth & Elevation
+## Elevation & Depth
 
 - **Level 0** (flat): hairline border `1px solid rgba(0,0,0,0.08)` — result rows
 - **Level 1** (card): `box-shadow: 0 1px 4px rgba(0,0,0,0.10)` — result cards
@@ -96,7 +106,22 @@ Color is deployed sparingly as a signal layer — orange for primary calls-to-ac
 - **Level 3** (modal): `box-shadow: 0 8px 40px rgba(0,0,0,0.20)` — booking modal, alerts
 - **Orange glow** (CTA hover): `box-shadow: 0 2px 8px rgba(255,105,15,0.35)`
 
-## 7. Do's and Don'ts
+## Components
+
+### Buttons
+- **Primary CTA**: `background: #FF690F`, `color: #FFFFFF`, `border-radius: 6px`, `padding: 14px 24px`, `font-weight: 700`, `font-size: 16px`
+- **Hover state**: `background: #E55A00`, `box-shadow: 0 2px 8px rgba(255,105,15,0.35)`
+- **Disabled**: `background: #CCCCCC`, `color: #888888`, `cursor: not-allowed`
+- **Secondary**: `border: 2px solid #FF690F`, `color: #FF690F`, `background: transparent`, `border-radius: 6px`
+- **Filter Chip**: `border: 1px solid #E0E0E0`, `border-radius: 20px`, `padding: 6px 14px`, `font-size: 13px`, active uses `border-color: #FF690F`, `background: rgba(255,105,15,0.08)`
+
+### Cards & Containers
+- **Result Card**: `background: #FFFFFF`, `border-radius: 8px`, `border: 1px solid rgba(0,0,0,0.08)`, `padding: 16px`
+- **Selected Card**: adds `border: 2px solid #FF690F`
+- **Search Box**: `border-radius: 12px`, `padding: 20px`, `background: #FFFFFF`, `box-shadow: 0 4px 16px rgba(0,0,0,0.12)`
+- **Modal**: `border-radius: 16px`, `background: #FFFFFF`, `box-shadow: 0 8px 40px rgba(0,0,0,0.18)`
+
+## Do's and Don'ts
 
 ### Do
 - Use orange exclusively for primary CTAs and active/selected states
@@ -111,7 +136,8 @@ Color is deployed sparingly as a signal layer — orange for primary calls-to-ac
 - Don't crowd filter chips — maintain 8px gap and horizontal scroll for overflow
 - Don't animate price values — stability signals trustworthiness in fare display
 
-## 8. Responsive Behavior
+## Responsive Behavior
+
 Breakpoints: 375px (mobile), 768px (tablet), 1024px (desktop), 1280px (wide)
 
 - **375px**: single-column result stack; sticky search bar at top; bottom sheet for filters
@@ -119,7 +145,7 @@ Breakpoints: 375px (mobile), 768px (tablet), 1024px (desktop), 1280px (wide)
 - **1024px**: three-panel layout (filters | results | map preview)
 - **1280px**: expanded price comparison grid with additional columns
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand: `#FF690F`

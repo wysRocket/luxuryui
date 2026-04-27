@@ -1,6 +1,25 @@
-# Design System Inspired by Zara
+---
+name: Zara
+colors:
+  neutral: "#FFFFFF"
+  primary: "#000000"
+  tertiary: "#000000"
+typography:
+  label:
+    fontSize: 13px
+    fontWeight: 400
+    lineHeight: 18
+  body-md:
+    fontSize: 14px
+    fontWeight: 300
+    lineHeight: 22
+  caption:
+    fontSize: 11px
+    fontWeight: 400
+    lineHeight: 16
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Zara's design system is the digital expression of a fashion philosophy: that luxury can be fast, that minimalism is the ultimate sophistication, and that the product — not the interface — is what demands attention. The visual language is radically reduced to pure black (`#000000`) and pure white (`#FFFFFF`), with no accent colors, no gradients, no decorative elements of any kind. Color, in the conventional UI sense, is simply absent. The fashion photography does all the communicating that color would otherwise handle.
 
@@ -18,7 +37,7 @@ Products appear in a clean two-column grid with generous whitespace, product nam
 - Typography scale is very controlled — few sizes, distinct roles
 - Shopping bag: minimal slide-in panel, line-item list in mono-weight type
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Black** (`#000000`): All text, all icons, all borders, header, footer
@@ -48,7 +67,7 @@ Products appear in a clean two-column grid with generous whitespace, product nam
 - **Sale Red** (`#B12704`): The only non-black/white color; sale price tag ONLY
 - **New Badge** (`#000000` bg, `#FFFFFF` text): "New" product label
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Display / Editorial**: `"Zara", "Larken", "Georgia", serif` — hero headings, campaign text, editorial
@@ -71,7 +90,41 @@ Products appear in a clean two-column grid with generous whitespace, product nam
 | Filter Label | Helvetica Neue | 12px | 400 | 16px | Category/color filter chips |
 | Caption | Helvetica Neue | 11px | 400 | 16px | Photo credits, material care icons |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: `8px`
+- Scale: `4, 8, 12, 16, 24, 32, 40, 48, 64, 80px`
+- Product grid gap: `8px` (extremely tight — fashion editorial density)
+- Page horizontal padding: `16px` (mobile), `24px` (tablet), `40px` (desktop)
+- Section vertical gap: `64px`
+- Product name top margin: `8px` below image
+
+### Grid System
+- Mobile: 2-column product grid, `8px` gap
+- Tablet: 3-column product grid
+- Desktop: 4-column product grid, max-width `1440px`
+- Hero: full-bleed, no constraints
+- Gap between image and text metadata: `8px`
+
+### Border Radius Scale
+- `0px` — absolutely everything: buttons, inputs, cards, modals, images, panels
+- Zero radius is a brand-level requirement, not a style preference
+
+## Elevation & Depth
+
+### Shadow Scale
+- **No shadows of any kind** — this is a hard rule for Zara's aesthetic
+- Hierarchy is established through whitespace, type size, and opacity alone
+- Shopping bag panel uses a left border, not a shadow
+- Modal overlays use background color change, not box-shadow
+
+### Overlay Treatments
+- Modal backdrop: `rgba(0,0,0,0.40)` — simple, no blur
+- Editorial text overlay: pure white or black text directly on image
+- No frosted glass, no backdrop-filter, no blur effects
+
+## Components
 
 ### Buttons
 
@@ -135,41 +188,7 @@ Products appear in a clean two-column grid with generous whitespace, product nam
 - Border: `1px solid rgba(0,0,0,0.12)`
 - Overlay: `rgba(0,0,0,0.40)`
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: `8px`
-- Scale: `4, 8, 12, 16, 24, 32, 40, 48, 64, 80px`
-- Product grid gap: `8px` (extremely tight — fashion editorial density)
-- Page horizontal padding: `16px` (mobile), `24px` (tablet), `40px` (desktop)
-- Section vertical gap: `64px`
-- Product name top margin: `8px` below image
-
-### Grid System
-- Mobile: 2-column product grid, `8px` gap
-- Tablet: 3-column product grid
-- Desktop: 4-column product grid, max-width `1440px`
-- Hero: full-bleed, no constraints
-- Gap between image and text metadata: `8px`
-
-### Border Radius Scale
-- `0px` — absolutely everything: buttons, inputs, cards, modals, images, panels
-- Zero radius is a brand-level requirement, not a style preference
-
-## 6. Depth & Elevation
-
-### Shadow Scale
-- **No shadows of any kind** — this is a hard rule for Zara's aesthetic
-- Hierarchy is established through whitespace, type size, and opacity alone
-- Shopping bag panel uses a left border, not a shadow
-- Modal overlays use background color change, not box-shadow
-
-### Overlay Treatments
-- Modal backdrop: `rgba(0,0,0,0.40)` — simple, no blur
-- Editorial text overlay: pure white or black text directly on image
-- No frosted glass, no backdrop-filter, no blur effects
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use full-bleed editorial photography at maximum fidelity — it's the entire design
@@ -185,7 +204,7 @@ Products appear in a clean two-column grid with generous whitespace, product nam
 - Don't crop images to non-standard ratios — always 2:3 portrait for products
 - Don't add hover animations beyond opacity or image crossfade
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `375px` — mobile; 2-column grid, full-bleed hero, slide-out bag
@@ -199,7 +218,7 @@ Products appear in a clean two-column grid with generous whitespace, product nam
 - Desktop: image crossfade on hover, persistent navigation bar
 - Bag: slide-in panel on desktop, full-page on mobile
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Background: `#FFFFFF`

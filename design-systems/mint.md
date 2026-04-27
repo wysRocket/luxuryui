@@ -1,6 +1,47 @@
-# Design System Inspired by Mint
+---
+name: Mint
+colors:
+  tertiary: "#00A651"
+  neutral: "#F5F5F5"
+  primary: "#00A651"
+  secondary: "#757575"
+typography:
+  h1:
+    fontSize: 28px
+    fontWeight: 800
+    lineHeight: 1.15
+  h2:
+    fontSize: 22px
+    fontWeight: 700
+    lineHeight: 1.2
+  h3:
+    fontSize: 18px
+    fontWeight: 700
+    lineHeight: 1.3
+  body-lg:
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.6
+  body-md:
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.5
+  caption:
+    fontSize: 11px
+    fontWeight: 400
+    lineHeight: 1.4
+rounded:
+  sm: 4px
+  md: 12px
+  lg: 24px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Mint by Intuit established the design language for modern personal finance apps — clean white surfaces, confidently green accents, and a data-visualization-forward approach that makes budgets feel manageable rather than stressful. The primary green (`#00A651`) communicates money, health, and growth without the anxiety-inducing red that financial apps often default to for alerts. A secondary mint-teal (`#2AB27B`) provides depth and hover states.
 
@@ -18,7 +59,7 @@ Navigation is category-centric: Accounts, Budgets, Transactions, Bills, Trends, 
 - Smooth donut charts for budget categories
 - Red `#E53935` reserved only for overspent / alerts
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Mint Green** (`#00A651`): brand, primary CTAs, income indicators, on-track budgets
@@ -38,7 +79,7 @@ Navigation is category-centric: Accounts, Budgets, Transactions, Bills, Trends, 
 - **Border** (`rgba(0,0,0,0.08)`): card outlines, row separators
 - **Chart Track** (`#E8E8E8`): donut/progress bar unfilled track
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Avenir**: `"Avenir", "Avenir Next", "Nunito", sans-serif` — all text at all sizes
@@ -57,22 +98,7 @@ Navigation is category-centric: Accounts, Budgets, Transactions, Bills, Trends, 
 | Label | Avenir | 12px | 700 | 1.2 | Category tags, uppercase |
 | Caption | Avenir | 11px | 400 | 1.4 | Dates, metadata |
 
-## 4. Component Stylings
-
-### Buttons
-- **Primary**: `background: #00A651`, `color: #FFFFFF`, `border-radius: 24px`, `padding: 12px 24px`, `font: Avenir 16px 800`
-- **Hover**: `background: #00843F`
-- **Secondary**: `border: 2px solid #00A651`, `color: #00A651`, `background: transparent`, `border-radius: 24px`
-- **Alert / Destructive**: `background: #E53935`, `color: #FFFFFF`, `border-radius: 24px`
-- **Ghost**: `color: #00A651`, no border, hover underline
-
-### Cards & Containers
-- **Account Card**: `background: #FFFFFF`, `border-radius: 12px`, `border: 1px solid rgba(0,0,0,0.08)`, `padding: 20px`, account name + total + institution logo
-- **Transaction Row**: `padding: 12px 16px`, `border-bottom: 1px solid rgba(0,0,0,0.06)`, category dot left, merchant name, amount right (green positive / red negative)
-- **Budget Card**: `border-radius: 12px`, progress bar with color, remaining amount
-- **Chart Container**: `background: #FFFFFF`, `border-radius: 12px`, padding 16px, donut or bar chart centered
-
-## 5. Layout Principles
+## Layout
 
 ### Spacing System
 - Base: 8px
@@ -87,7 +113,7 @@ Navigation is category-centric: Accounts, Budgets, Transactions, Bills, Trends, 
 - **24px** — primary buttons (pill)
 - **50%** — account institution logos, avatar circles
 
-## 6. Depth & Elevation
+## Elevation & Depth
 
 - **Level 0** (page): `#F5F5F5` — neutral background
 - **Level 1** (card): `1px solid rgba(0,0,0,0.08)` — flat cards
@@ -95,7 +121,22 @@ Navigation is category-centric: Accounts, Budgets, Transactions, Bills, Trends, 
 - **Level 3** (modal): `box-shadow: 0 8px 32px rgba(0,0,0,0.18)` — full dialog
 - **Green progress glow**: `box-shadow: 0 0 0 2px rgba(0,166,81,0.25)` — focus state
 
-## 7. Do's and Don'ts
+## Components
+
+### Buttons
+- **Primary**: `background: #00A651`, `color: #FFFFFF`, `border-radius: 24px`, `padding: 12px 24px`, `font: Avenir 16px 800`
+- **Hover**: `background: #00843F`
+- **Secondary**: `border: 2px solid #00A651`, `color: #00A651`, `background: transparent`, `border-radius: 24px`
+- **Alert / Destructive**: `background: #E53935`, `color: #FFFFFF`, `border-radius: 24px`
+- **Ghost**: `color: #00A651`, no border, hover underline
+
+### Cards & Containers
+- **Account Card**: `background: #FFFFFF`, `border-radius: 12px`, `border: 1px solid rgba(0,0,0,0.08)`, `padding: 20px`, account name + total + institution logo
+- **Transaction Row**: `padding: 12px 16px`, `border-bottom: 1px solid rgba(0,0,0,0.06)`, category dot left, merchant name, amount right (green positive / red negative)
+- **Budget Card**: `border-radius: 12px`, progress bar with color, remaining amount
+- **Chart Container**: `background: #FFFFFF`, `border-radius: 12px`, padding 16px, donut or bar chart centered
+
+## Do's and Don'ts
 
 ### Do
 - Color transaction amounts green (income/positive) or red (expense) consistently
@@ -110,14 +151,15 @@ Navigation is category-centric: Accounts, Budgets, Transactions, Bills, Trends, 
 - Don't animate financial totals with counting effects — trustworthiness requires stability
 - Don't use more than 8 category colors — consistency aids pattern recognition
 
-## 8. Responsive Behavior
+## Responsive Behavior
+
 Breakpoints: 375px (mobile), 768px (tablet), 1024px (desktop)
 
 - **375px**: single-column; bottom tab navigation; stacked account cards
 - **768px**: 2-column dashboard; sidebar navigation; wider charts
 - **1024px**: full dashboard: account sidebar | transactions | budget overview
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand: `#00A651`

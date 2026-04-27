@@ -1,6 +1,32 @@
-# Design System Inspired by Wealthfront
+---
+name: Wealthfront
+colors:
+  neutral: "#1B2C4B"
+  tertiary: "#0096FF"
+  primary: "#1B2C4B"
+typography:
+  body-md:
+    fontFamily: Avenir Next
+    fontSize: 15px
+    fontWeight: 400
+    lineHeight: 24
+  label:
+    fontFamily: Avenir Next
+    fontSize: 16px
+    fontWeight: 600
+    lineHeight: 22
+  caption:
+    fontFamily: Avenir Next
+    fontSize: 11px
+    fontWeight: 400
+    lineHeight: 16
+rounded:
+  sm: 4px
+  md: 12px
+  lg: 16px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Wealthfront's design system communicates one idea above all others: trustworthy sophistication. As a robo-advisor managing billions in client assets, the interface must project the calm confidence of a seasoned wealth manager while remaining approachable to first-time investors. The dark navy foundation (`#1B2C4B`) evokes the deep midnight blue of private banking suites — authoritative, grounded, and reassuringly stable. It is never harsh or cold; it reads as executive, not austere.
 
@@ -18,7 +44,7 @@ Avenir is the typeface of choice: a geometric humanist sans-serif with roots in 
 - Goal progress bars in light blue against dark surface
 - CTA buttons: `#0096FF` pill, high contrast on dark backgrounds
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Navy Base** (`#1B2C4B`): Primary dark surface, backgrounds, hero sections
@@ -52,7 +78,7 @@ Avenir is the typeface of choice: a geometric humanist sans-serif with roots in 
 - **Primary Light Bg** (`#1B2C4B`): Text on white surfaces
 - **Accent Blue** (`#0096FF`): Highlighted figures, active values
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Primary**: `"Avenir Next", "Avenir", -apple-system, "Helvetica Neue", sans-serif` — all UI text
@@ -73,7 +99,45 @@ Avenir is the typeface of choice: a geometric humanist sans-serif with roots in 
 | Metadata | Avenir Next | 13px | 400 | 18px | Last updated, account details |
 | Caption | Avenir Next | 11px | 400 | 16px | Regulatory disclosures, footnotes |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: `8px`
+- Scale: `4, 8, 12, 16, 20, 24, 32, 40, 48, 64px`
+- Card padding: `24px`
+- Section gap: `32px`
+- Page padding: `16px` mobile, `32px` tablet, `64px` desktop
+
+### Grid System
+- Mobile: single column, full-width cards
+- Tablet: 2-column card grid
+- Desktop: main content area + `320px` sidebar
+- Dashboard max-width: `1200px`, centered
+- Chart: always full-width within its container
+
+### Border Radius Scale
+- `0px` — chart lines, table cell edges
+- `4px` — small badges, tag chips
+- `8px` — progress bar fills, small elements
+- `12px` — compact cards, menu items
+- `16px` — main cards, panels
+- `100px` — CTA buttons, pills
+
+## Elevation & Depth
+
+### Shadow Scale
+- **Surface Card** — `0 4px 24px rgba(0,0,0,0.30)`
+- **Sticky Header** — `0 2px 8px rgba(0,0,0,0.40)`
+- **Tooltip / Chart Callout** — `0 4px 16px rgba(0,0,0,0.50)`
+- **Modal** — `0 8px 48px rgba(0,0,0,0.60)`
+- **Blue Accent Glow** — `0 0 16px rgba(0,150,255,0.15)` — CTA buttons
+
+### Chart Depth Cues
+- Area fill under performance line: `rgba(0,150,255,0.12)` to transparent gradient
+- Grid lines: `rgba(255,255,255,0.06)` — barely visible
+- Hover crosshair: `rgba(255,255,255,0.20)` vertical line
+
+## Components
 
 ### Buttons
 
@@ -131,45 +195,7 @@ Avenir is the typeface of choice: a geometric humanist sans-serif with roots in 
 - Time selector tabs: 1M | 3M | YTD | 1Y | ALL
 - Tooltip: dark card with precise date + value + delta
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: `8px`
-- Scale: `4, 8, 12, 16, 20, 24, 32, 40, 48, 64px`
-- Card padding: `24px`
-- Section gap: `32px`
-- Page padding: `16px` mobile, `32px` tablet, `64px` desktop
-
-### Grid System
-- Mobile: single column, full-width cards
-- Tablet: 2-column card grid
-- Desktop: main content area + `320px` sidebar
-- Dashboard max-width: `1200px`, centered
-- Chart: always full-width within its container
-
-### Border Radius Scale
-- `0px` — chart lines, table cell edges
-- `4px` — small badges, tag chips
-- `8px` — progress bar fills, small elements
-- `12px` — compact cards, menu items
-- `16px` — main cards, panels
-- `100px` — CTA buttons, pills
-
-## 6. Depth & Elevation
-
-### Shadow Scale
-- **Surface Card** — `0 4px 24px rgba(0,0,0,0.30)`
-- **Sticky Header** — `0 2px 8px rgba(0,0,0,0.40)`
-- **Tooltip / Chart Callout** — `0 4px 16px rgba(0,0,0,0.50)`
-- **Modal** — `0 8px 48px rgba(0,0,0,0.60)`
-- **Blue Accent Glow** — `0 0 16px rgba(0,150,255,0.15)` — CTA buttons
-
-### Chart Depth Cues
-- Area fill under performance line: `rgba(0,150,255,0.12)` to transparent gradient
-- Grid lines: `rgba(255,255,255,0.06)` — barely visible
-- Hover crosshair: `rgba(255,255,255,0.20)` vertical line
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Display the portfolio performance chart prominently — it's the product's emotional payoff
@@ -185,7 +211,7 @@ Avenir is the typeface of choice: a geometric humanist sans-serif with roots in 
 - Don't use red for general UI states — it signals financial loss and should be reserved for it
 - Don't round financial figures beyond two decimal places without explicit compact notation
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `375px` — mobile: stacked cards, tab-switched performance/allocation
@@ -199,7 +225,7 @@ Avenir is the typeface of choice: a geometric humanist sans-serif with roots in 
 - Deposit flow: multi-step modal on desktop, full-page flow on mobile
 - Goal projections: interactive sliders on desktop, tap-to-edit on mobile
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Navy Background: `#1B2C4B`

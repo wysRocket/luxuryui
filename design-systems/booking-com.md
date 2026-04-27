@@ -1,6 +1,46 @@
-# Design System Inspired by Booking.com
+---
+name: Booking.com
+colors:
+  tertiary: "#0071C2"
+  neutral: "#FFFFFF"
+  primary: "#003580"
+typography:
+  h1:
+    fontSize: 28px
+    fontWeight: 700
+    lineHeight: 36
+  h2:
+    fontSize: 22px
+    fontWeight: 700
+    lineHeight: 28
+  h3:
+    fontSize: 16px
+    fontWeight: 700
+    lineHeight: 22
+  body-md:
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 22
+  label:
+    fontSize: 14px
+    fontWeight: 700
+    lineHeight: 20
+  caption:
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 16
+rounded:
+  sm: 2px
+  md: 4px
+  lg: 8px
+spacing:
+  xs: 4px
+  sm: 8px
+  md: 16px
+  lg: 32px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Booking.com is the most blue website on the internet — and intentionally so. The entire brand is built around two shades of blue: the deep navy-blue (`#003580`) for authority and trust, and the bright action blue (`#0071C2`) for every interactive element and CTA. Blue dominates navigation, buttons, links, dates, badges, and highlights. This chromatic focus creates instant brand recognition and, more practically, funnels attention to every actionable surface through color consistency.
 
@@ -19,7 +59,7 @@ Spacing is intentionally tight on results pages — Booking.com's A/B testing hi
 - Font: Open Sans across all surfaces
 - Link hover: `#00224F`
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Booking Dark Blue** (`#003580`): Header background, review score badges, Genius loyalty UI, footer
@@ -38,7 +78,7 @@ Spacing is intentionally tight on results pages — Booking.com's A/B testing hi
 - **Border** (`#CDCDCD`): Card borders, input outlines, dividers
 - **Overlay** (`rgba(0,0,0,0.5)`): Modal backdrop
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Open Sans**: `"Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif` — all UI contexts
@@ -62,7 +102,54 @@ Spacing is intentionally tight on results pages — Booking.com's A/B testing hi
 | Filter / Tag | Open Sans | 13px | 600 | 18px | Filter pill labels |
 | Caption | Open Sans | 12px | 400 | 16px | `#6B6B6B` photo caption, footnote |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 4px
+- Scale: 4, 8, 12, 16, 20, 24, 32, 48px
+- Card gutter: 12px
+- Content max-width: 1200px
+- Results list: single column on results; 2-col grid on map view
+
+### Border Radius Scale
+- Input fields: 2px
+- Buttons: 2px — Booking uses intentionally minimal radius
+- Cards: 4px
+- Review score badge: 8px (notched corner only — distinctive Booking shape)
+- Avatar: 50%
+- Tags/pills: 4px
+
+## Elevation & Depth
+
+**Resting property card:**
+```
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+border: 1px solid #CDCDCD;
+```
+
+**Hover property card:**
+```
+box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+```
+
+**Search widget on hero:**
+```
+box-shadow: 0 2px 16px rgba(0,0,0,0.25);
+```
+
+**Modal:**
+```
+box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+border-radius: 4px;
+```
+
+**Date picker dropdown:**
+```
+box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+border: 1px solid #CDCDCD;
+```
+
+## Components
 
 ### Buttons
 **Primary (Search / Reserve):**
@@ -104,54 +191,7 @@ Spacing is intentionally tight on results pages — Booking.com's A/B testing hi
 - Padding: 16px
 - Sits on `#003580` dark blue hero background
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 4px
-- Scale: 4, 8, 12, 16, 20, 24, 32, 48px
-- Card gutter: 12px
-- Content max-width: 1200px
-- Results list: single column on results; 2-col grid on map view
-
-### Border Radius Scale
-- Input fields: 2px
-- Buttons: 2px — Booking uses intentionally minimal radius
-- Cards: 4px
-- Review score badge: 8px (notched corner only — distinctive Booking shape)
-- Avatar: 50%
-- Tags/pills: 4px
-
-## 6. Depth & Elevation
-
-**Resting property card:**
-```
-box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-border: 1px solid #CDCDCD;
-```
-
-**Hover property card:**
-```
-box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-```
-
-**Search widget on hero:**
-```
-box-shadow: 0 2px 16px rgba(0,0,0,0.25);
-```
-
-**Modal:**
-```
-box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-border-radius: 4px;
-```
-
-**Date picker dropdown:**
-```
-box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-border: 1px solid #CDCDCD;
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use `#0071C2` for all actionable elements — Booking's blue monoculture is its power
@@ -166,7 +206,7 @@ border: 1px solid #CDCDCD;
 - Don't use alternative accent colors for CTAs — the all-blue convention is intentional and must not dilute
 - Don't reduce information density on results pages — denser = higher conversion in this context
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints:
 - Mobile: 0–576px — full-width vertical property cards; bottom search bar sticky
@@ -174,7 +214,7 @@ Breakpoints:
 - Desktop: 993–1200px — single-column wide list view; filter sidebar 220px fixed
 - Wide: 1200px+ — map split view option; list 600px / map remainder
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Action Blue: `#0071C2`

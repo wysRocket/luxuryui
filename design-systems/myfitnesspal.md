@@ -1,6 +1,35 @@
-# Design System Inspired by MyFitnessPal
+---
+name: MyFitnessPal
+colors:
+  tertiary: "#005594"
+  primary: "#005594"
+  neutral: "#FFFFFF"
+typography:
+  body-md:
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 20
+  caption:
+    fontSize: 11px
+    fontWeight: 400
+    lineHeight: 16
+  label:
+    fontSize: 14px
+    fontWeight: 700
+    lineHeight: 20
+    letterSpacing: 0.5px
+rounded:
+  sm: 2px
+  md: 8px
+  lg: 12px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 MyFitnessPal's design language centers on clarity, density, and motivation. The primary navy blue (`#005594`) anchors a trustworthy, clinical aesthetic that signals data accuracy and health authority. Against white backgrounds (`#FFFFFF`) and light gray surfaces (`#F5F7FA`), the navy creates strong contrast that makes dense calorie logs and macro breakdowns scannable at a glance. The palette is deliberately restrained — this is utility software where the user's data is the hero, not decorative chrome.
 
@@ -18,7 +47,7 @@ The interface mood is purposeful and clinical with bursts of achievement energy.
 - Divider lines `#E0E4E9` separate log entries without heavy visual weight
 - Card elevation via shadow `0 1px 3px rgba(0,0,0,0.12)` — flat-adjacent, minimal depth
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Navy Blue** (`#005594`): Brand anchor — nav bar, primary buttons, section headers, progress fills
@@ -47,7 +76,7 @@ The interface mood is purposeful and clinical with bursts of achievement energy.
 - **Divider** (`rgba(224, 228, 233, 1.0)`): Row separators, section lines
 - **Card Shadow** (`rgba(0, 0, 0, 0.08)`): Subtle card lift
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Roboto**: `'Roboto', sans-serif` — All UI text, data tables, input labels, navigation
@@ -70,7 +99,39 @@ The interface mood is purposeful and clinical with bursts of achievement energy.
 | Input Placeholder | Roboto | 14px | 400 | 20px | `#AAAAAA` |
 | Tab Label | Roboto | 12px | 500 | 16px | Active navy, inactive gray |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px
+- Component padding: 16px standard, 12px compact (data rows)
+- Section gaps: 24px between content sections
+- List item height: 48px minimum touch target
+
+### Border Radius Scale
+- `2px` — Input fields, table cells (near-flat)
+- `4px` — Buttons, chips, small badges
+- `8px` — Standard cards, modals
+- `12px` — Summary cards, donut card containers
+- `50%` — Avatar images, FAB add button
+
+### Grid
+- Mobile: single column, 16px horizontal margins
+- Tablet: 2-column log + summary split at 768px
+- Web: left sidebar nav (240px) + main content (flexible)
+
+## Elevation & Depth
+
+```
+Level 0 - Flat:      no shadow (table rows, backgrounds)
+Level 1 - Card:      0 1px 3px rgba(0,0,0,0.10), 0 1px 2px rgba(0,0,0,0.06)
+Level 2 - Modal:     0 4px 12px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.08)
+Level 3 - FAB:       0 4px 16px rgba(0,85,148,0.30)
+Level 4 - Drawer:    0 8px 24px rgba(0,0,0,0.20)
+Nav Bar:             0 2px 4px rgba(0,0,0,0.12) (persistent shadow)
+```
+
+## Components
 
 ### Buttons
 
@@ -155,39 +216,7 @@ border-radius: 3px
 animation: width ease-out 0.4s
 ```
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px
-- Component padding: 16px standard, 12px compact (data rows)
-- Section gaps: 24px between content sections
-- List item height: 48px minimum touch target
-
-### Border Radius Scale
-- `2px` — Input fields, table cells (near-flat)
-- `4px` — Buttons, chips, small badges
-- `8px` — Standard cards, modals
-- `12px` — Summary cards, donut card containers
-- `50%` — Avatar images, FAB add button
-
-### Grid
-- Mobile: single column, 16px horizontal margins
-- Tablet: 2-column log + summary split at 768px
-- Web: left sidebar nav (240px) + main content (flexible)
-
-## 6. Depth & Elevation
-
-```
-Level 0 - Flat:      no shadow (table rows, backgrounds)
-Level 1 - Card:      0 1px 3px rgba(0,0,0,0.10), 0 1px 2px rgba(0,0,0,0.06)
-Level 2 - Modal:     0 4px 12px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.08)
-Level 3 - FAB:       0 4px 16px rgba(0,85,148,0.30)
-Level 4 - Drawer:    0 8px 24px rgba(0,0,0,0.20)
-Nav Bar:             0 2px 4px rgba(0,0,0,0.12) (persistent shadow)
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use `#005594` navy exclusively for primary interactive elements and brand surfaces
@@ -203,7 +232,7 @@ Nav Bar:             0 2px 4px rgba(0,0,0,0.12) (persistent shadow)
 - Don't use typefaces other than Roboto in the core app UI
 - Don't place CTAs or ads inline in food log rows — preserve data table integrity
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `320px` — Minimum mobile: single-column, full-width cards, 12px margins
@@ -218,7 +247,7 @@ Nav Bar:             0 2px 4px rgba(0,0,0,0.12) (persistent shadow)
 - Food log: full-width rows mobile → fixed-width table desktop with sortable columns
 - Calorie counter: centered hero mobile → top summary bar desktop
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 ```

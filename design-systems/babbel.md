@@ -1,6 +1,39 @@
-# Design System Inspired by Babbel
+---
+name: Babbel
+colors:
+  tertiary: "#6CC24A"
+  neutral: "#F4F9F6"
+  secondary: "#5C7269"
+  primary: "#003D2B"
+typography:
+  h2:
+    fontSize: 20px
+    fontWeight: 700
+    lineHeight: 26
+  h3:
+    fontSize: 17px
+    fontWeight: 600
+    lineHeight: 24
+  body-md:
+    fontSize: 15px
+    fontWeight: 400
+    lineHeight: 22
+  caption:
+    fontSize: 13px
+    fontWeight: 400
+    lineHeight: 18
+rounded:
+  sm: 4px
+  md: 12px
+  lg: 16px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Babbel's visual language communicates progress, warmth, and confident approachability — the antithesis of the intimidating language classroom. The palette is rooted in deep, rich greens: a near-black forest green (`#003D2B`) anchors the brand with gravitas, while a vibrant lime-accented green (`#6CC24A`) energizes CTAs and progress elements. Together they read as: natural, growing, alive — a clever metaphor for language acquisition itself.
 
@@ -19,7 +52,7 @@ Progress is the primary narrative. The UI is saturated with streaks, XP bars, pr
 - Warning/hint: `#F5A623`
 - Border radius: 12–20px consistently
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Forest Green** (`#003D2B`): Navigation header, primary badge backgrounds, brand anchor
@@ -38,7 +71,7 @@ Progress is the primary narrative. The UI is saturated with streaks, XP bars, pr
 - **Correct Tint** (`#EFF7EA`): Selected correct answer highlight background
 - **Error Tint** (`#FDECEA`): Incorrect answer highlight background
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Babbel uses a custom typeface** based on a friendly humanist sans: `"Source Sans Pro", "Nunito", -apple-system, sans-serif`
@@ -61,7 +94,52 @@ Progress is the primary narrative. The UI is saturated with streaks, XP bars, pr
 | Badge / Level | Custom | 11px | 700 | 14px | Level badge, XP pill |
 | Legal | Custom | 11px | 400 | 16px | `#8A9E96` footer text |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4, 8, 12, 16, 20, 24, 32, 48, 64px
+- Lesson card padding: 24px
+- Answer grid gap: 12px
+- Bottom nav height: 60px
+- Progress bar height: 8px
+
+### Border Radius Scale
+- Tag / badge: 6px
+- Input / option button: 12px
+- Card / panel: 16px
+- Primary CTA: 14px (slightly less than card for visual variety)
+- Progress bar: 4px (pill)
+- Avatar / streak flame icon: 50%
+
+## Elevation & Depth
+
+Babbel uses soft, warm-green-tinted shadows to reinforce the brand palette:
+
+**Resting card:**
+```
+box-shadow: 0 2px 8px rgba(0,61,43,0.08);
+```
+
+**Hover card:**
+```
+box-shadow: 0 4px 16px rgba(0,61,43,0.14);
+transform: translateY(-2px);
+```
+
+**Primary CTA button hover:**
+```
+box-shadow: 0 4px 12px rgba(108,194,74,0.35);
+transform: translateY(-1px);
+```
+
+**Modal:**
+```
+box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+border-radius: 20px;
+```
+
+## Components
 
 ### Buttons
 **Primary (Continue / Start Lesson):**
@@ -105,52 +183,7 @@ Progress is the primary narrative. The UI is saturated with streaks, XP bars, pr
 - Padding: 20px
 - Text: white and `#6CC24A` for stats
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4, 8, 12, 16, 20, 24, 32, 48, 64px
-- Lesson card padding: 24px
-- Answer grid gap: 12px
-- Bottom nav height: 60px
-- Progress bar height: 8px
-
-### Border Radius Scale
-- Tag / badge: 6px
-- Input / option button: 12px
-- Card / panel: 16px
-- Primary CTA: 14px (slightly less than card for visual variety)
-- Progress bar: 4px (pill)
-- Avatar / streak flame icon: 50%
-
-## 6. Depth & Elevation
-
-Babbel uses soft, warm-green-tinted shadows to reinforce the brand palette:
-
-**Resting card:**
-```
-box-shadow: 0 2px 8px rgba(0,61,43,0.08);
-```
-
-**Hover card:**
-```
-box-shadow: 0 4px 16px rgba(0,61,43,0.14);
-transform: translateY(-2px);
-```
-
-**Primary CTA button hover:**
-```
-box-shadow: 0 4px 12px rgba(108,194,74,0.35);
-transform: translateY(-1px);
-```
-
-**Modal:**
-```
-box-shadow: 0 8px 32px rgba(0,0,0,0.16);
-border-radius: 20px;
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use `#6CC24A` vivid green for all positive, forward-moving actions (Continue, Submit, Correct)
@@ -165,14 +198,14 @@ border-radius: 20px;
 - Don't put two different green shades side-by-side without clear role differentiation
 - Don't underuse the progress system — it's the primary engagement mechanic
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints:
 - Mobile: 0–640px — single column lesson flow; bottom tab navigation
 - Tablet: 641–1024px — side navigation appears; 2-column course grid
 - Desktop: 1025px+ — 3-column course grid; lesson experience remains centered 640px max-width
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Dark Green: `#003D2B`

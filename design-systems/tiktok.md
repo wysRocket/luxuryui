@@ -1,6 +1,21 @@
-# Design System Inspired by TikTok
+---
+name: TikTok
+colors:
+  neutral: "#000000"
+  tertiary: "#EE1D52"
+  primary: "#000000"
+typography:
+  caption:
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 20
+rounded:
+  sm: 4px
+  md: 12px
+  lg: 16px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 TikTok's design system is built around a single core truth: the video is the interface. Every structural decision — the pure black base, the full-screen vertical frame, the minimal chrome — exists to eliminate distraction and let content claim 100% of the user's attention. The app is a stage, and the UI is a transparent curtain that drops out of sight the moment a video begins. This content-first philosophy has defined a generation of short-video UI patterns.
 
@@ -18,7 +33,7 @@ Typography is powered by Proxima Nova — a geometric humanist sans-serif that b
 - Heart animation uses hot pink fill on like tap
 - Record button: pink-to-cyan gradient ring, 68px white center
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Pure Black** (`#000000`): Page background, video container background
@@ -46,7 +61,7 @@ Typography is powered by Proxima Nova — a geometric humanist sans-serif that b
 - **Verified Badge** (`#20D5EC`): Creator verified checkmark
 - **Live Badge** (`#FE2C55`): Live indicator on thumbnails
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Primary UI**: `"Proxima Nova", "Proxima Nova A", -apple-system, "Helvetica Neue", sans-serif` — all UI text
@@ -67,7 +82,40 @@ Typography is powered by Proxima Nova — a geometric humanist sans-serif that b
 | Duet/Stitch Label | Proxima Nova | 12px | 500 | 16px | Collaboration metadata |
 | Badge Text | Proxima Nova | 10px | 700 | 12px | "LIVE", "NEW" badges |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: `8px`
+- Scale: `4, 8, 12, 16, 20, 24, 32, 48px`
+- Right engagement rail: `16px` from edge, icons spaced `28px` apart vertically
+- Bottom overlay (username, caption): `16px` from bottom of video, `16px` left margin
+
+### Grid System
+- Feed: single-column full-screen — 100vw × 100vh per video
+- Discover/Search: 2-column grid, `2px` gap between cells
+- Profile grid: 3-column grid, `2px` gap, 9:16 cells
+
+### Border Radius Scale
+- `0px` — video cells in grid, full-screen video
+- `4px` — profile grid cells, small cards
+- `8px` — tags, filter chips
+- `12px` — notification items
+- `16px` — comment sheet, bottom sheets
+- `50%` — avatars, icon action circles
+
+## Elevation & Depth
+
+### Shadow Scale
+- **Video Overlay Text** — `text-shadow: 0 1px 8px rgba(0,0,0,0.80)` — caption legibility on video
+- **Icon Glow (Hot Pink)** — `drop-filter: drop-shadow(0 0 8px rgba(238,29,82,0.60))` — liked state heart
+- **Comment Sheet** — `box-shadow: 0 -4px 24px rgba(0,0,0,0.60)`
+- **Nav Glass** — `backdrop-filter: blur(20px) saturate(180%)`
+
+### Overlay Treatments
+- Bottom caption gradient: `linear-gradient(to top, rgba(0,0,0,0.70) 0%, transparent 50%)`
+- Right rail gradient: `linear-gradient(to left, rgba(0,0,0,0.40) 0%, transparent 40%)`
+
+## Components
 
 ### Buttons
 
@@ -119,40 +167,7 @@ Typography is powered by Proxima Nova — a geometric humanist sans-serif that b
 - Username: 16px, bold, white
 - Stats row: follower/following/likes in 15px bold, labels in 12px muted
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: `8px`
-- Scale: `4, 8, 12, 16, 20, 24, 32, 48px`
-- Right engagement rail: `16px` from edge, icons spaced `28px` apart vertically
-- Bottom overlay (username, caption): `16px` from bottom of video, `16px` left margin
-
-### Grid System
-- Feed: single-column full-screen — 100vw × 100vh per video
-- Discover/Search: 2-column grid, `2px` gap between cells
-- Profile grid: 3-column grid, `2px` gap, 9:16 cells
-
-### Border Radius Scale
-- `0px` — video cells in grid, full-screen video
-- `4px` — profile grid cells, small cards
-- `8px` — tags, filter chips
-- `12px` — notification items
-- `16px` — comment sheet, bottom sheets
-- `50%` — avatars, icon action circles
-
-## 6. Depth & Elevation
-
-### Shadow Scale
-- **Video Overlay Text** — `text-shadow: 0 1px 8px rgba(0,0,0,0.80)` — caption legibility on video
-- **Icon Glow (Hot Pink)** — `drop-filter: drop-shadow(0 0 8px rgba(238,29,82,0.60))` — liked state heart
-- **Comment Sheet** — `box-shadow: 0 -4px 24px rgba(0,0,0,0.60)`
-- **Nav Glass** — `backdrop-filter: blur(20px) saturate(180%)`
-
-### Overlay Treatments
-- Bottom caption gradient: `linear-gradient(to top, rgba(0,0,0,0.70) 0%, transparent 50%)`
-- Right rail gradient: `linear-gradient(to left, rgba(0,0,0,0.40) 0%, transparent 40%)`
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Keep the video at 100% viewport — never crop or add borders to the video frame
@@ -168,7 +183,7 @@ Typography is powered by Proxima Nova — a geometric humanist sans-serif that b
 - Don't paginate the feed — infinite swipe is the core interaction model
 - Don't show skeleton loaders on video frames — fade-in from black instead
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `375px` — primary design target; full-screen video feed
@@ -182,7 +197,7 @@ Typography is powered by Proxima Nova — a geometric humanist sans-serif that b
 - Mobile: swipe-up for next, swipe-right for camera, double-tap to like
 - Desktop: keyboard shortcuts (Space = pause, Right = next, L = like)
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Background: `#000000`

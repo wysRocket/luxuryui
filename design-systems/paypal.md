@@ -1,6 +1,31 @@
-# Design System Inspired by PayPal
+---
+name: PayPal
+colors:
+  tertiary: "#009CDE"
+  secondary: "#2C2E2F"
+  primary: "#003087"
+  neutral: "#FFFFFF"
+typography:
+  label:
+    fontSize: 16px
+    fontWeight: 700
+    lineHeight: 24
+  caption:
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 18
+rounded:
+  sm: 4px
+  md: 12px
+  lg: 25px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 PayPal's design language is built entirely on trust. The dominant dark blue (`#003087`) combined with lighter sky blue (`#009CDE`) creates the reassuring two-tone blue system that signals financial authority and security. These are not accidental colors — they carry decades of association with banking, stability, and global reach. Every design decision reinforces this trust signal: generous white space, clean Roboto typography, and conservative use of color create an interface that feels safe to conduct financial transactions within.
 
@@ -18,7 +43,7 @@ Dark mode adapts the palette intelligently: `#003087` becomes a deep navy surfac
 - Security badge language integrated at checkout confirmation steps
 - High-contrast bold amounts: large font, right-aligned in transaction lists
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Dark Navy Blue** (`#003087`): App bar, primary buttons, nav, brand surfaces
@@ -50,7 +75,7 @@ Dark mode adapts the palette intelligently: `#003087` becomes a deep navy surfac
 - **Section BG** (`#F5F7FA`): Alternate surfaces
 - **Nav Dark** (`#003087`): Full-width dark blue nav
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Roboto**: `'Roboto', 'Helvetica Neue', Arial, sans-serif` — All text
@@ -72,7 +97,40 @@ Dark mode adapts the palette intelligently: `#003087` becomes a deep navy surfac
 | Status Badge | Roboto | 12px | 700 | 16px | Uppercase, status color |
 | Caption | Roboto | 12px | 400 | 18px | Gray `#9DA3A6` |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px
+- Page margins: 20px mobile, 40px tablet
+- Card padding: 20px standard, 24px summary cards
+- Section spacing: 32px between sections
+- Touch targets: 48px minimum for all interactive elements
+
+### Border Radius Scale
+- `4px` — Status badges, small pills
+- `8px` — Input fields, section containers
+- `12px` — Large cards, modals, card visuals
+- `16px` — Balance card, primary dashboard card
+- `25px` — All buttons (pill — PayPal signature)
+
+### Grid
+- Mobile: 1-column, 20px margins
+- Tablet: 2-column (action + summary)
+- Desktop: 3-column or 2-column split, max-width 1200px
+
+## Elevation & Depth
+
+```
+Level 0 - Page:    #F5F7FA section backgrounds
+Level 1 - Card:    0 2px 8px rgba(0,0,0,0.08)
+Level 2 - Modal:   0 8px 32px rgba(0,0,0,0.16)
+Level 3 - Pay CTA: 0 4px 14px rgba(0,48,135,0.35)
+Level 4 - Drawer:  0 -4px 24px rgba(0,0,0,0.20)
+Nav bar:           0 2px 4px rgba(0,0,0,0.10)
+```
+
+## Components
 
 ### Buttons
 
@@ -162,40 +220,7 @@ card-number: 18px light tracked
 PayPal logo + Mastercard logo bottom row
 ```
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px
-- Page margins: 20px mobile, 40px tablet
-- Card padding: 20px standard, 24px summary cards
-- Section spacing: 32px between sections
-- Touch targets: 48px minimum for all interactive elements
-
-### Border Radius Scale
-- `4px` — Status badges, small pills
-- `8px` — Input fields, section containers
-- `12px` — Large cards, modals, card visuals
-- `16px` — Balance card, primary dashboard card
-- `25px` — All buttons (pill — PayPal signature)
-
-### Grid
-- Mobile: 1-column, 20px margins
-- Tablet: 2-column (action + summary)
-- Desktop: 3-column or 2-column split, max-width 1200px
-
-## 6. Depth & Elevation
-
-```
-Level 0 - Page:    #F5F7FA section backgrounds
-Level 1 - Card:    0 2px 8px rgba(0,0,0,0.08)
-Level 2 - Modal:   0 8px 32px rgba(0,0,0,0.16)
-Level 3 - Pay CTA: 0 4px 14px rgba(0,48,135,0.35)
-Level 4 - Drawer:  0 -4px 24px rgba(0,0,0,0.20)
-Nav bar:           0 2px 4px rgba(0,0,0,0.10)
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use pill buttons (`border-radius: 25px`) for all primary CTAs — it's the PayPal signature
@@ -211,7 +236,7 @@ Nav bar:           0 2px 4px rgba(0,0,0,0.10)
 - Don't omit security badges on checkout flows — trust signals are mandatory
 - Don't show payment amounts in red on non-error states — red signals failure
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `375px` — Mobile: single column, pill buttons full-width
@@ -226,7 +251,7 @@ Nav bar:           0 2px 4px rgba(0,0,0,0.10)
 - Checkout: stacked mobile → split 60/40 desktop
 - Transaction list: compact mobile → expanded row with more detail desktop
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 ```

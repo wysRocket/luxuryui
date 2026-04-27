@@ -1,6 +1,28 @@
-# Design System Inspired by eBay
+---
+name: eBay
+colors:
+  tertiary: "#0064D2"
+  neutral: "#FFFFFF"
+  primary: "#0064D2"
+  secondary: "#767676"
+typography:
+  label:
+    fontFamily: Market Sans
+    fontSize: 16px
+    fontWeight: 700
+    lineHeight: 1
+rounded:
+  sm: 4px
+  md: 8px
+  lg: 24px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 eBay's design is dense, utilitarian, and marketplace-first — every pixel is optimized for product discovery and conversion. The iconic four-color wordmark (red `#E53238`, blue `#0064D2`, yellow `#F5AF02`, green `#86B817`) creates a playful brand identity that contrasts with the otherwise restrained, white-dominant UI. The design philosophy prioritizes information density: tight grids, compact product tiles, and minimal whitespace to maximize the number of items visible above the fold.
 
@@ -17,7 +39,7 @@ The interaction model is search-first: the top search bar is always prominent, a
 - Dense 4–6 column product grid with compact 8px gaps
 - Border radius conservative: 4px–8px throughout
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **eBay Blue** (`#0064D2`): Links, primary CTA, trusted badge, header
@@ -40,7 +62,7 @@ The interaction model is search-first: the top search bar is always prominent, a
 - **Green** (`#86B817`): Free shipping badge, positive indicators
 - **Orange** (`#FF6900`): "Hot" label, deals
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Primary**: `Market Sans` — all UI text, proprietary eBay typeface
@@ -62,7 +84,27 @@ The interaction model is search-first: the top search bar is always prominent, a
 | CTA Button | Market Sans | 16px | 700 | 1.00 | "Buy It Now", "Place Bid" |
 | Navigation | Market Sans | 14px | 400 | 1.00 | Category nav |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4px, 8px, 12px, 16px, 24px, 32px, 40px, 48px
+
+### Border Radius Scale
+- Minimal (0px): Table rows, input fields (no radius)
+- Small (4px): Product cards, image containers
+- Medium (8px): Category chips, filter pills
+- Pill (24px): CTA buttons, action buttons
+
+## Elevation & Depth
+
+- **Cards default**: `border: 1px solid #D8D8D8`, no shadow
+- **Cards hover**: `box-shadow: 0 4px 12px rgba(0,0,0,0.12)`
+- **Modals**: `box-shadow: 0 8px 32px rgba(0,0,0,0.2)`
+- **Sticky header**: `box-shadow: 0 2px 4px rgba(0,0,0,0.08)`
+- Philosophy: border-first, shadow only on interaction
+
+## Components
 
 ### Buttons
 
@@ -91,27 +133,7 @@ The interaction model is search-first: the top search bar is always prominent, a
 - Image ratio: 1:1 (square), object-fit: contain, white bg
 - Price bold and large — most prominent element
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4px, 8px, 12px, 16px, 24px, 32px, 40px, 48px
-
-### Border Radius Scale
-- Minimal (0px): Table rows, input fields (no radius)
-- Small (4px): Product cards, image containers
-- Medium (8px): Category chips, filter pills
-- Pill (24px): CTA buttons, action buttons
-
-## 6. Depth & Elevation
-
-- **Cards default**: `border: 1px solid #D8D8D8`, no shadow
-- **Cards hover**: `box-shadow: 0 4px 12px rgba(0,0,0,0.12)`
-- **Modals**: `box-shadow: 0 8px 32px rgba(0,0,0,0.2)`
-- **Sticky header**: `box-shadow: 0 2px 4px rgba(0,0,0,0.08)`
-- Philosophy: border-first, shadow only on interaction
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Lead with price as the dominant card element — it's the decision driver
@@ -126,7 +148,7 @@ The interaction model is search-first: the top search bar is always prominent, a
 - Don't use gradients or complex backgrounds — white surfaces only
 - Don't hide shipping costs — price transparency is a eBay trust signal
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints: 320px, 480px, 768px, 1024px, 1280px, 1600px
 - Mobile: 2-column grid, stacked category chips, bottom search
@@ -134,7 +156,7 @@ Breakpoints: 320px, 480px, 768px, 1024px, 1280px, 1600px
 - Desktop: 4–6 column grid, persistent left filter rail (220px)
 - Left nav filter rail persists at 1024px+
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - CTA blue: `#0064D2`

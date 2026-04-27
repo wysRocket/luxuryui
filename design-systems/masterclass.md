@@ -1,6 +1,45 @@
-# Design System Inspired by MasterClass
+---
+name: MasterClass
+colors:
+  tertiary: "#D4A853"
+  neutral: "#000000"
+  primary: "#000000"
+typography:
+  h1:
+    fontSize: 52px
+    fontWeight: 700
+    lineHeight: 1
+  h2:
+    fontSize: 36px
+    fontWeight: 600
+    lineHeight: 1.1
+  h3:
+    fontSize: 24px
+    fontWeight: 600
+    lineHeight: 1.2
+  body-lg:
+    fontSize: 18px
+    fontWeight: 400
+    lineHeight: 1.7
+  body-md:
+    fontSize: 15px
+    fontWeight: 400
+    lineHeight: 1.65
+  caption:
+    fontSize: 11px
+    fontWeight: 400
+    lineHeight: 1.4
+rounded:
+  sm: 4px
+  md: 8px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 MasterClass operates at the highest tier of online education — its design system communicates cinematic quality, exclusivity, and access to mastery. The dominant palette is pure black (`#000000`) as the canvas, against which gold (`#D4A853`) and white create a palette that feels like a luxury film credit sequence. Every page feels like an opening scene from a documentary about someone extraordinary.
 
@@ -18,7 +57,7 @@ Typography is the second hero element. MasterClass uses Tiempos Headline — a p
 - Card overlays: `linear-gradient(to top, rgba(0,0,0,0.85) 40%, transparent)`
 - Vertical rhythm dictated by 8px base, generous 64–96px section spacing
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **MasterClass Gold** (`#D4A853`): primary CTA buttons, star ratings, hover accents
@@ -38,7 +77,7 @@ Typography is the second hero element. MasterClass uses Tiempos Headline — a p
 - **Border Subtle** (`rgba(255,255,255,0.10)`): dividers on dark backgrounds
 - **Gold Border** (`rgba(212,168,83,0.30)`): form inputs, emphasized containers
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Tiempos Headline**: `"Tiempos Headline", "Georgia", serif` — all display headings (H1–H3)
@@ -58,22 +97,7 @@ Typography is the second hero element. MasterClass uses Tiempos Headline — a p
 | Caption | Inter | 11px | 400 | 1.4 | Duration, dates |
 | Navigation | Inter | 14px | 500 | 1.0 | Nav links |
 
-## 4. Component Stylings
-
-### Buttons
-- **Primary CTA**: `background: #D4A853`, `color: #000000`, `border-radius: 4px`, `padding: 16px 32px`, `font: Inter 16px 700`, `text-transform: uppercase`, `letter-spacing: 0.08em`
-- **Hover**: `background: #C49B43`
-- **Ghost / Secondary**: `border: 1px solid rgba(255,255,255,0.50)`, `color: #FFFFFF`, `background: transparent`, hover `border-color: #FFFFFF`
-- **Enroll CTA** (large): full-width on mobile, 56px height, uppercase gold
-- **Play Button**: 64px circle, white fill, `background: rgba(255,255,255,0.15)` backdrop-blur
-
-### Cards & Containers
-- **Course Card**: full-bleed image, `border-radius: 4px`, gradient overlay, title at bottom in Tiempos Headline white
-- **Instructor Card**: 3:4 portrait ratio, B&W photo, name in Tiempos Headline at bottom
-- **Lesson Row**: `background: transparent`, `border-bottom: 1px solid rgba(255,255,255,0.10)`, hover `background: rgba(255,255,255,0.05)`
-- **Modal**: `background: #000000`, `border: 1px solid rgba(255,255,255,0.15)`, `border-radius: 8px`
-
-## 5. Layout Principles
+## Layout
 
 ### Spacing System
 - Base: 8px
@@ -88,7 +112,7 @@ Typography is the second hero element. MasterClass uses Tiempos Headline — a p
 - **8px** — modals, tooltips
 - **50%** — play button, avatar circles
 
-## 6. Depth & Elevation
+## Elevation & Depth
 
 - **Level 0** (base): `#000000` — cinematic black canvas
 - **Level 1** (panel): `#0A0A0A` — slightly lifted content areas
@@ -96,7 +120,22 @@ Typography is the second hero element. MasterClass uses Tiempos Headline — a p
 - **Level 3** (modal): `box-shadow: 0 16px 64px rgba(0,0,0,0.90)`, `border: 1px solid rgba(255,255,255,0.15)`
 - **Gold focus**: `box-shadow: 0 0 0 2px rgba(212,168,83,0.40)`
 
-## 7. Do's and Don'ts
+## Components
+
+### Buttons
+- **Primary CTA**: `background: #D4A853`, `color: #000000`, `border-radius: 4px`, `padding: 16px 32px`, `font: Inter 16px 700`, `text-transform: uppercase`, `letter-spacing: 0.08em`
+- **Hover**: `background: #C49B43`
+- **Ghost / Secondary**: `border: 1px solid rgba(255,255,255,0.50)`, `color: #FFFFFF`, `background: transparent`, hover `border-color: #FFFFFF`
+- **Enroll CTA** (large): full-width on mobile, 56px height, uppercase gold
+- **Play Button**: 64px circle, white fill, `background: rgba(255,255,255,0.15)` backdrop-blur
+
+### Cards & Containers
+- **Course Card**: full-bleed image, `border-radius: 4px`, gradient overlay, title at bottom in Tiempos Headline white
+- **Instructor Card**: 3:4 portrait ratio, B&W photo, name in Tiempos Headline at bottom
+- **Lesson Row**: `background: transparent`, `border-bottom: 1px solid rgba(255,255,255,0.10)`, hover `background: rgba(255,255,255,0.05)`
+- **Modal**: `background: #000000`, `border: 1px solid rgba(255,255,255,0.15)`, `border-radius: 8px`
+
+## Do's and Don'ts
 
 ### Do
 - Use Tiempos Headline for all H1–H3 — it is non-negotiable for brand identity
@@ -111,7 +150,8 @@ Typography is the second hero element. MasterClass uses Tiempos Headline — a p
 - Don't use border-radius above 8px — it conflicts with the editorial aesthetic
 - Don't mix serif and sans-serif at the same hierarchy level
 
-## 8. Responsive Behavior
+## Responsive Behavior
+
 Breakpoints: 375px (mobile), 768px (tablet), 1024px (desktop), 1440px (cinematic wide)
 
 - **375px**: full-bleed hero; stacked course cards; bottom sticky CTA
@@ -119,7 +159,7 @@ Breakpoints: 375px (mobile), 768px (tablet), 1024px (desktop), 1440px (cinematic
 - **1024px**: 3-column grid; hero at full viewport height
 - **1440px**: expanded typography scale; wider image gutters
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand gold: `#D4A853`

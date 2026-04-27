@@ -1,6 +1,31 @@
-# Design System Inspired by Instagram
+---
+name: Instagram
+colors:
+  tertiary: "#0095F6"
+  neutral: "#FFFFFF"
+  primary: "#262626"
+  secondary: "#737373"
+typography:
+  caption:
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.5
+  label:
+    fontSize: 14px
+    fontWeight: 600
+    lineHeight: 1
+rounded:
+  sm: 2px
+  md: 8px
+  lg: 16px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Instagram's design is the definitive visual-first social interface — every decision defers to the photography and video content that makes up the feed. The UI is intentionally invisible: pure white backgrounds (`#FFFFFF`), thin hairline borders, and minimal chrome ensure that user-generated content reads as the only visual hierarchy that matters. The iconic gradient logo (purple `#8A3AB9` → pink `#E95950` → orange `#FCCC63`) is the rare exception — a vivid brand moment in an otherwise restrained UI.
 
@@ -18,7 +43,7 @@ Stories — the horizontal bubble-tray of circular avatars at the top of the fee
 - Near-black (`#262626`) for all primary text
 - Stories, Feed, and Reels as three distinct visual contexts
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Instagram Blue** (`#0095F6`): Follow button, links, interactive text
@@ -43,7 +68,7 @@ Stories — the horizontal bubble-tray of circular avatars at the top of the fee
 - **Card Dark** (`#121212`): Post containers in dark mode
 - **Text Dark** (`#FAFAFA`): Primary text in dark mode
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **iOS**: `SF Pro Display` / `SF Pro Text` — system default
@@ -66,7 +91,32 @@ Stories — the horizontal bubble-tray of circular avatars at the top of the fee
 | Button | System | 14px | 600 | 1.00 | "Follow", "Message" |
 | Explore Tag | System | 12px | 700 | 1.20 | Category chips |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px
+- Post padding: 12px horizontal
+- Story bubble: 60px width, 4px gap between bubbles
+
+### Border Radius Scale
+- None (0px): Post image containers — full bleed
+- Small (4px): Category chips in Explore
+- Standard (8px): Buttons, badges
+- Large (16px): Bottom sheets
+- Circle (50%): Story avatars, profile photos
+- Story ring: 66px circle with 2px gradient border
+
+## Elevation & Depth
+
+- **Feed**: No shadows — pure flat, border-defined
+- **Stories tray**: No shadow — hairline bottom border
+- **Modal sheets**: `box-shadow: 0 -2px 20px rgba(0,0,0,0.15)`
+- **Story viewer**: Full-screen, no UI chrome — zero elevation needed
+- **Action sheet**: `box-shadow: 0 -4px 16px rgba(0,0,0,0.1)`
+- **Dark mode**: Contrast only — no shadows needed on black surfaces
+
+## Components
 
 ### Buttons
 
@@ -95,32 +145,7 @@ Stories — the horizontal bubble-tray of circular avatars at the top of the fee
 - Header: username 14px/600 + 3-dot menu
 - Footer: heart, comment, share, bookmark icons + likes count
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px
-- Post padding: 12px horizontal
-- Story bubble: 60px width, 4px gap between bubbles
-
-### Border Radius Scale
-- None (0px): Post image containers — full bleed
-- Small (4px): Category chips in Explore
-- Standard (8px): Buttons, badges
-- Large (16px): Bottom sheets
-- Circle (50%): Story avatars, profile photos
-- Story ring: 66px circle with 2px gradient border
-
-## 6. Depth & Elevation
-
-- **Feed**: No shadows — pure flat, border-defined
-- **Stories tray**: No shadow — hairline bottom border
-- **Modal sheets**: `box-shadow: 0 -2px 20px rgba(0,0,0,0.15)`
-- **Story viewer**: Full-screen, no UI chrome — zero elevation needed
-- **Action sheet**: `box-shadow: 0 -4px 16px rgba(0,0,0,0.1)`
-- **Dark mode**: Contrast only — no shadows needed on black surfaces
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Make content the only visual hierarchy — UI should be invisible
@@ -136,14 +161,14 @@ Stories — the horizontal bubble-tray of circular avatars at the top of the fee
 - Don't add icons or labels that compete with content
 - Don't apply border-radius to post images — they bleed edge to edge
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints: 320px, 480px, 768px, 1024px, 1280px (web.instagram.com)
 - Mobile: Single-column feed, full-width images, fixed bottom nav
 - Tablet: 2-column Explore grid, larger story bubbles
 - Web: 3-column layout — feed center (470px), suggestions right sidebar
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Blue (CTA): `#0095F6`

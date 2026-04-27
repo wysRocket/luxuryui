@@ -1,6 +1,27 @@
-# Design System Inspired by Slack
+---
+name: Slack
+colors:
+  neutral: "#4A154B"
+  tertiary: "#1264A3"
+  primary: "#1D1C1D"
+  secondary: "#616061"
+typography:
+  body-md:
+    fontSize: 15px
+    fontWeight: 400
+    lineHeight: 22
+  code:
+    fontFamily: Slack Mono
+    fontSize: 13px
+    fontWeight: 400
+    lineHeight: 20
+rounded:
+  sm: 2px
+  md: 6px
+  lg: 8px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Slack's design language is defined by the tension between its bold aubergine brand identity and its deliberately neutral work surface. The sidebar — saturated, dark, and richly colored — signals "this is Slack," while the main message canvas is almost aggressively white and spacious, ensuring that the actual work content (code snippets, images, links, threads) receives zero visual competition. This bifurcated approach is intentional: branding lives in the chrome, work lives in the center.
 
@@ -18,7 +39,7 @@ Typography is Lato — a humanist sans-serif that balances warmth with technical
 - Message bubble border-radius: 4px (flat/functional, not bubbly)
 - Emoji reactions: `border: 1px solid #D1D2D3`, 28px pill with count
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary Brand
 - **Aubergine** (`#4A154B`): Sidebar background (default), brand primary
@@ -54,7 +75,7 @@ Typography is Lato — a humanist sans-serif that balances warmth with technical
 - **DND** (`#E01E5A`): Red DND indicator
 - **Offline** (`transparent` with gray border): Offline presence
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Lato**: `'Lato', -apple-system, BlinkMacSystemFont, sans-serif` — All text throughout the application
@@ -77,7 +98,40 @@ Typography is Lato — a humanist sans-serif that balances warmth with technical
 | Emoji Reaction | Lato | 13px | 400 | 18px | Reaction count beside emoji |
 | Input Text | Lato | 15px | 400 | 22px | Message composer text |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base unit: **4px**
+- Scale: `4px, 8px, 12px, 16px, 20px, 24px, 28px, 32px`
+- Message vertical padding: `8px 20px`
+- Sidebar item padding: `6px 16px`
+- Section headers uppercase spacing: letter-spacing `0.08em`
+
+### Fixed Layout Structure
+- Sidebar: `220px` fixed left (channels/DM list)
+- Main message area: fluid center
+- Thread panel (if open): `400px` fixed right
+- No horizontal scroll at desktop widths
+
+### Border Radius Scale
+| Token | Value | Usage |
+|-------|-------|-------|
+| `--radius-xs` | 2px | Inline elements |
+| `--radius-sm` | 4px | Avatars, buttons, tags, code blocks |
+| `--radius-md` | 6px | Nav items, popovers |
+| `--radius-lg` | 8px | Message composer, modals |
+| `--radius-full` | 9999px | Presence dots, reaction pills, badges |
+
+## Elevation & Depth
+
+- **Flat** (canvas): `#FFFFFF` — no shadow; messages are intentionally flat
+- **Toolbar / Action Bar**: `box-shadow: 0 1px 4px rgba(0,0,0,0.15)` — message action menu
+- **Popover / Emoji Picker**: `box-shadow: 0 4px 20px rgba(0,0,0,0.2)`, `border: 1px solid #DDDDDD`
+- **Modal**: `box-shadow: 0 8px 32px rgba(0,0,0,0.25)`, backdrop `rgba(0,0,0,0.5)`
+- **Notification Toast**: `box-shadow: 0 4px 12px rgba(0,0,0,0.15)`, bg `#1D1C1D` text white
+- **Sidebar**: flat, no shadow — contained by background color difference from canvas
+
+## Components
 
 ### Buttons
 **Primary Button**
@@ -147,40 +201,7 @@ Typography is Lato — a humanist sans-serif that balances warmth with technical
 - Focus: `border-color: rgba(29,28,29,0.5)`, `box-shadow: 0 0 0 3px rgba(18,100,163,0.15)`
 - Toolbar icons: 20px, `#616061`, hover `#1D1C1D`
 
-## 5. Layout Principles
-
-### Spacing System
-- Base unit: **4px**
-- Scale: `4px, 8px, 12px, 16px, 20px, 24px, 28px, 32px`
-- Message vertical padding: `8px 20px`
-- Sidebar item padding: `6px 16px`
-- Section headers uppercase spacing: letter-spacing `0.08em`
-
-### Fixed Layout Structure
-- Sidebar: `220px` fixed left (channels/DM list)
-- Main message area: fluid center
-- Thread panel (if open): `400px` fixed right
-- No horizontal scroll at desktop widths
-
-### Border Radius Scale
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--radius-xs` | 2px | Inline elements |
-| `--radius-sm` | 4px | Avatars, buttons, tags, code blocks |
-| `--radius-md` | 6px | Nav items, popovers |
-| `--radius-lg` | 8px | Message composer, modals |
-| `--radius-full` | 9999px | Presence dots, reaction pills, badges |
-
-## 6. Depth & Elevation
-
-- **Flat** (canvas): `#FFFFFF` — no shadow; messages are intentionally flat
-- **Toolbar / Action Bar**: `box-shadow: 0 1px 4px rgba(0,0,0,0.15)` — message action menu
-- **Popover / Emoji Picker**: `box-shadow: 0 4px 20px rgba(0,0,0,0.2)`, `border: 1px solid #DDDDDD`
-- **Modal**: `box-shadow: 0 8px 32px rgba(0,0,0,0.25)`, backdrop `rgba(0,0,0,0.5)`
-- **Notification Toast**: `box-shadow: 0 4px 12px rgba(0,0,0,0.15)`, bg `#1D1C1D` text white
-- **Sidebar**: flat, no shadow — contained by background color difference from canvas
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Keep the main message canvas pure white — every distraction away from messages is a UX failure
@@ -196,7 +217,7 @@ Typography is Lato — a humanist sans-serif that balances warmth with technical
 - Don't add borders between individual messages — use whitespace for separation
 - Avoid custom fonts in code blocks — mono must be consistent for code readability
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `xs`: 0–480px — sidebar hidden, bottom navigation tabs (Home/DMs/Activity), full-screen message view
@@ -207,7 +228,7 @@ Typography is Lato — a humanist sans-serif that balances warmth with technical
 
 **Thread panel:** Opens as overlay at `<1280px`, inline panel at `≥1280px`
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Sidebar background: `#4A154B`

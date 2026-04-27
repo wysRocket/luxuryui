@@ -1,6 +1,39 @@
-# Design System Inspired by MetaMask
+---
+name: MetaMask
+colors:
+  tertiary: "#E2761B"
+  neutral: "#24272A"
+  primary: "#24272A"
+  secondary: "#9FA6AE"
+typography:
+  h1:
+    fontSize: 22px
+    fontWeight: 700
+    lineHeight: 1.2
+  h2:
+    fontSize: 18px
+    fontWeight: 600
+    lineHeight: 1.25
+  body-md:
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 1.5
+  caption:
+    fontSize: 11px
+    fontWeight: 400
+    lineHeight: 1.3
+rounded:
+  sm: 4px
+  md: 10px
+  lg: 12px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 MetaMask is the browser gateway to Web3 — a crypto wallet that must simultaneously communicate trustworthiness for holding financial assets and approachability for onboarding newcomers to an intimidating paradigm. The signature orange (`#E2761B`) derives from the fox mascot's vibrant fur, and it anchors the brand identity across the fox-themed iconography, primary buttons, and accent highlights. The interface shell runs on dark charcoal (`#24272A`) in the browser extension, with lighter surfaces for transaction confirmation dialogs.
 
@@ -18,7 +51,7 @@ Trust is signaled through consistency rather than decoration: the fox logo appea
 - Fox mascot: never altered, always present in header
 - Gas fee display: always prominent, never hidden
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **MetaMask Orange** (`#E2761B`): primary CTAs, confirm button, active highlights
@@ -39,7 +72,7 @@ Trust is signaled through consistency rather than decoration: the fox logo appea
 - **Overlay** (`rgba(0,0,0,0.60)`): modal backdrop
 - **Pending Gray** (`#6A737D`): pending transaction state
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Roboto**: `"Roboto", "Inter", sans-serif` — all UI text, labels, instructions
@@ -58,22 +91,7 @@ Trust is signaled through consistency rather than decoration: the fox logo appea
 | Label | Roboto | 12px | 700 | 1.2 | Uppercase tags |
 | Caption | Roboto | 11px | 400 | 1.3 | Timestamps, network name |
 
-## 4. Component Stylings
-
-### Buttons
-- **Confirm (Primary)**: `background: #E2761B`, `color: #FFFFFF`, `border-radius: 8px`, `padding: 14px 24px`, `font: Roboto 16px 700`, width 100%
-- **Hover**: `background: #D16918`
-- **Reject (Secondary)**: `border: 1px solid rgba(255,255,255,0.25)`, `color: #FFFFFF`, `background: transparent`, `border-radius: 8px`, width 100%
-- **Add Network**: `border: 1px solid #E2761B`, `color: #E2761B`, `background: transparent`
-- **Danger**: `background: #FF3355` — for disconnect wallet, revoke permission
-
-### Cards & Containers
-- **Transaction Card**: `background: #3B3D42`, `border-radius: 10px`, `border: 1px solid rgba(255,255,255,0.10)`, `padding: 16px`
-- **Address Display**: `background: #2D3035`, `border-radius: 8px`, `padding: 12px`, `font-family: Roboto Mono 13px`
-- **Gas Selector**: 3 options (low/market/aggressive), radio pill group, `border-radius: 8px`, selected state orange border
-- **Token Row**: 44px height, token icon left, name + balance, price change right
-
-## 5. Layout Principles
+## Layout
 
 ### Spacing System
 - Base: 8px
@@ -88,7 +106,7 @@ Trust is signaled through consistency rather than decoration: the fox logo appea
 - **12px** — modal containers
 - **50%** — token icons, account avatars
 
-## 6. Depth & Elevation
+## Elevation & Depth
 
 - **Level 0** (shell): `#24272A` — extension background
 - **Level 1** (card): `#3B3D42` — transaction and token panels
@@ -97,7 +115,22 @@ Trust is signaled through consistency rather than decoration: the fox logo appea
 - **Orange focus**: `box-shadow: 0 0 0 2px rgba(226,118,27,0.45)`
 - **Red risk glow**: `box-shadow: 0 0 0 2px rgba(255,51,85,0.45)` — high-risk warnings
 
-## 7. Do's and Don'ts
+## Components
+
+### Buttons
+- **Confirm (Primary)**: `background: #E2761B`, `color: #FFFFFF`, `border-radius: 8px`, `padding: 14px 24px`, `font: Roboto 16px 700`, width 100%
+- **Hover**: `background: #D16918`
+- **Reject (Secondary)**: `border: 1px solid rgba(255,255,255,0.25)`, `color: #FFFFFF`, `background: transparent`, `border-radius: 8px`, width 100%
+- **Add Network**: `border: 1px solid #E2761B`, `color: #E2761B`, `background: transparent`
+- **Danger**: `background: #FF3355` — for disconnect wallet, revoke permission
+
+### Cards & Containers
+- **Transaction Card**: `background: #3B3D42`, `border-radius: 10px`, `border: 1px solid rgba(255,255,255,0.10)`, `padding: 16px`
+- **Address Display**: `background: #2D3035`, `border-radius: 8px`, `padding: 12px`, `font-family: Roboto Mono 13px`
+- **Gas Selector**: 3 options (low/market/aggressive), radio pill group, `border-radius: 8px`, selected state orange border
+- **Token Row**: 44px height, token icon left, name + balance, price change right
+
+## Do's and Don'ts
 
 ### Do
 - Always use Roboto Mono for addresses — readability of hex is a security concern
@@ -112,14 +145,15 @@ Trust is signaled through consistency rather than decoration: the fox logo appea
 - Don't animate the confirmation UI — stability signals security
 - Don't use bright backgrounds — the dark shell is a trust signal
 
-## 8. Responsive Behavior
+## Responsive Behavior
+
 Breakpoints: 360px (extension popup fixed), 768px (mobile web), 1024px (desktop web)
 
 - **360px extension**: fixed popup; scrollable confirmation details above sticky buttons
 - **768px**: full-screen mobile wallet; bottom sheet for confirmations
 - **1024px**: dashboard view with sidebar navigation
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand: `#E2761B`

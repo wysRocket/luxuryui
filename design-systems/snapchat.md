@@ -1,6 +1,21 @@
-# Design System Inspired by Snapchat
+---
+name: Snapchat
+colors:
+  tertiary: "#FFFC00"
+  neutral: "#000000"
+  primary: "#FFFFFF"
+typography:
+  caption:
+    fontSize: 18px
+    fontWeight: 500
+    lineHeight: 24
+rounded:
+  sm: 6px
+  md: 16px
+  lg: 20px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Snapchat's design language is defined by one of the most audacious color choices in consumer technology: a full-saturation yellow (`#FFFC00`) on a black canvas, with the ghost mascot (Ghostface Chillah) serving as the singular, unmistakable brand icon. This combination is instantly recognisable, playful, and youthful — a deliberate rejection of the blue/white corporate palette that dominates social media. The camera is not a feature of Snapchat; it IS Snapchat, and the UI is built around making it invisible.
 
@@ -18,7 +33,7 @@ Typography uses Helvetica Neue — clean, Swiss, and deliberately unemotional. T
 - Camera viewfinder: 100vw × 100vh, fullscreen
 - Lens/filter buttons: 60px circles with yellow active state
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Snap Yellow** (`#FFFC00`): App icon, primary CTAs, active camera controls, highlights
@@ -50,7 +65,7 @@ Typography uses Helvetica Neue — clean, Swiss, and deliberately unemotional. T
 - **Blue** (`#007AFF`): Opened snaps, chat messages (iOS blue)
 - **Purple** (`#6B1FD4`): Discover content category accent
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Helvetica Neue**: `'Helvetica Neue', Helvetica, Arial, sans-serif` — All UI text
@@ -71,7 +86,40 @@ Typography uses Helvetica Neue — clean, Swiss, and deliberately unemotional. T
 | Notification | Helvetica Neue | 13px | 400 | 18px | Push notification text |
 | Snap Timer | Helvetica Neue | 28px | 700 | 36px | Countdown timer on snap |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base unit: **4px**
+- Scale: `4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px`
+- Chat list row height: `72px`
+- Story ring margin: `12px` horizontal
+- Bottom navigation height: `83px` (includes iOS safe area)
+
+### Core Layout
+- Camera: 100vw × 100vh fullscreen — the zero-chrome baseline
+- Bottom navigation: 5 tabs fixed bottom (Map, Chat, Camera, Stories, Profile)
+- Camera tab is always the center tab — largest icon, always yellow-active
+- Content areas: Dark `#111111` surfaces sliding in from sides
+
+### Border Radius Scale
+| Token | Value | Usage |
+|-------|-------|-------|
+| `--radius-sm` | 6px | Notification badges |
+| `--radius-md` | 12px | Story cards, Discover tiles |
+| `--radius-lg` | 16px | Bottom sheets, media overlays |
+| `--radius-xl` | 20px | Large panels |
+| `--radius-full` | 9999px | Buttons, avatars, capture button |
+
+## Elevation & Depth
+
+- **Camera Layer** (base): `#000000` viewfinder — deepest layer
+- **Camera Overlay Controls**: `rgba(255,255,255,0.1)` glass buttons — float over camera
+- **Story Overlay**: `rgba(0,0,0,0.6)` gradient over story content for text legibility
+- **Chat Surface**: `#111111` — first elevated surface above camera
+- **Bottom Sheet**: `#111111` + top shadow `0 -4px 20px rgba(0,0,0,0.5)`
+- **Modal**: `#1C1C1E` + `box-shadow: 0 -8px 40px rgba(0,0,0,0.7)`
+
+## Components
 
 ### Buttons
 **Primary Button**
@@ -126,40 +174,7 @@ Typography uses Helvetica Neue — clean, Swiss, and deliberately unemotional. T
 - Top drag handle: 4px × 36px, `background: rgba(255,255,255,0.3)`, centered
 - Border-radius: `20px 20px 0 0`
 
-## 5. Layout Principles
-
-### Spacing System
-- Base unit: **4px**
-- Scale: `4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px`
-- Chat list row height: `72px`
-- Story ring margin: `12px` horizontal
-- Bottom navigation height: `83px` (includes iOS safe area)
-
-### Core Layout
-- Camera: 100vw × 100vh fullscreen — the zero-chrome baseline
-- Bottom navigation: 5 tabs fixed bottom (Map, Chat, Camera, Stories, Profile)
-- Camera tab is always the center tab — largest icon, always yellow-active
-- Content areas: Dark `#111111` surfaces sliding in from sides
-
-### Border Radius Scale
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--radius-sm` | 6px | Notification badges |
-| `--radius-md` | 12px | Story cards, Discover tiles |
-| `--radius-lg` | 16px | Bottom sheets, media overlays |
-| `--radius-xl` | 20px | Large panels |
-| `--radius-full` | 9999px | Buttons, avatars, capture button |
-
-## 6. Depth & Elevation
-
-- **Camera Layer** (base): `#000000` viewfinder — deepest layer
-- **Camera Overlay Controls**: `rgba(255,255,255,0.1)` glass buttons — float over camera
-- **Story Overlay**: `rgba(0,0,0,0.6)` gradient over story content for text legibility
-- **Chat Surface**: `#111111` — first elevated surface above camera
-- **Bottom Sheet**: `#111111` + top shadow `0 -4px 20px rgba(0,0,0,0.5)`
-- **Modal**: `#1C1C1E` + `box-shadow: 0 -8px 40px rgba(0,0,0,0.7)`
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Make the camera the center of everything — all navigation radiates from it
@@ -175,7 +190,7 @@ Typography uses Helvetica Neue — clean, Swiss, and deliberately unemotional. T
 - Don't use color for text inside the camera view except white — colored text on camera imagery fails
 - Avoid using red except for notification indicators — red means "new snap from someone"
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints (mobile-first native app):**
 - `xs`: 320px — compact camera, minimized bottom nav labels
@@ -185,7 +200,7 @@ Typography uses Helvetica Neue — clean, Swiss, and deliberately unemotional. T
 
 **Native gestures:** Swipe left → chat; swipe right → stories; swipe up → Discover; pinch = zoom camera
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand yellow: `#FFFC00`

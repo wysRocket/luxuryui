@@ -1,6 +1,46 @@
-# Design System Inspired by Ledger
+---
+name: Ledger
+colors:
+  tertiary: "#FF4B00"
+  neutral: "#000000"
+  primary: "#000000"
+typography:
+  h1:
+    fontSize: 40px
+    fontWeight: 700
+    lineHeight: 1.1
+  h2:
+    fontSize: 28px
+    fontWeight: 700
+    lineHeight: 1.2
+  h3:
+    fontSize: 20px
+    fontWeight: 600
+    lineHeight: 1.3
+  body-lg:
+    fontSize: 17px
+    fontWeight: 400
+    lineHeight: 1.6
+  body-md:
+    fontSize: 15px
+    fontWeight: 400
+    lineHeight: 1.55
+  caption:
+    fontSize: 11px
+    fontWeight: 400
+    lineHeight: 1.4
+rounded:
+  sm: 4px
+  md: 8px
+  lg: 12px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Ledger is the world's leading hardware crypto wallet brand, and its design system reflects a singular focus: security meets premium hardware aesthetics. The brand operates at the intersection of consumer electronics and financial grade security — the same emotional territory as Apple Watch or a high-end vault. The interface is strikingly minimal, dominated by pure black (`#000000`) backgrounds and sharp white typography, with a singular accent orange (`#FF4B00`) deployed only at moments of critical action.
 
@@ -18,7 +58,7 @@ Typography is set in Basis Grotesque — a geometric sans-serif that pairs techn
 - Icon style: 2px stroke, geometric, 24px grid
 - Hardware device centered prominently in onboarding flows
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Ledger Orange** (`#FF4B00`): primary CTA, confirm action, active state, brand mark
@@ -38,7 +78,7 @@ Typography is set in Basis Grotesque — a geometric sans-serif that pairs techn
 - **Light Card** (`#FFFFFF`): cards in light/onboarding contexts
 - **Light Border** (`rgba(0,0,0,0.10)`): separators in light UI
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Basis Grotesque**: `"Basis Grotesque Pro", "Inter", sans-serif` — all headings and UI text
@@ -58,7 +98,29 @@ Typography is set in Basis Grotesque — a geometric sans-serif that pairs techn
 | Label | Basis Grotesque | 12px | 700 | 1.2 | Uppercase, 0.1em tracking |
 | Caption | Basis Grotesque | 11px | 400 | 1.4 | Help text, metadata |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 8, 16, 24, 32, 40, 48, 64, 80, 96
+- Onboarding step max-width: 480px centered
+- Hardware visual: min-height 240px centered in viewport
+
+### Border Radius Scale
+- **0px** — sharp corners for seed phrase cells, address rows (security = precision)
+- **4px** — buttons, input fields, address containers
+- **8px** — panel cards
+- **12px** — modal dialogs
+
+## Elevation & Depth
+
+- **Level 0** (base): `#000000` — app background
+- **Level 1** (card): `#111111` — panels and containers
+- **Level 2** (modal): `box-shadow: 0 16px 64px rgba(0,0,0,0.90)` — maximum drama
+- **Orange focus**: `box-shadow: 0 0 0 2px rgba(255,75,0,0.40)` — input and button focus
+- **Success glow**: `box-shadow: 0 0 0 2px rgba(0,217,126,0.30)` — confirmed transaction
+
+## Components
 
 ### Buttons
 - **Primary (Dark BG)**: `background: #FF4B00`, `color: #FFFFFF`, `border-radius: 4px`, `padding: 16px 32px`, `font: Basis Grotesque 16px 700`
@@ -74,29 +136,7 @@ Typography is set in Basis Grotesque — a geometric sans-serif that pairs techn
 - **Seed Phrase Grid**: 4-column grid, each word in `#111111` cell with monospace text, numbered
 - **Modal**: `background: #000000`, `border-radius: 12px`, `border: 1px solid rgba(255,255,255,0.15)`, `box-shadow: 0 16px 64px rgba(0,0,0,0.90)`
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 8, 16, 24, 32, 40, 48, 64, 80, 96
-- Onboarding step max-width: 480px centered
-- Hardware visual: min-height 240px centered in viewport
-
-### Border Radius Scale
-- **0px** — sharp corners for seed phrase cells, address rows (security = precision)
-- **4px** — buttons, input fields, address containers
-- **8px** — panel cards
-- **12px** — modal dialogs
-
-## 6. Depth & Elevation
-
-- **Level 0** (base): `#000000` — app background
-- **Level 1** (card): `#111111` — panels and containers
-- **Level 2** (modal): `box-shadow: 0 16px 64px rgba(0,0,0,0.90)` — maximum drama
-- **Orange focus**: `box-shadow: 0 0 0 2px rgba(255,75,0,0.40)` — input and button focus
-- **Success glow**: `box-shadow: 0 0 0 2px rgba(0,217,126,0.30)` — confirmed transaction
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Reserve orange exclusively for confirmation and action moments — it signals "proceed"
@@ -111,14 +151,15 @@ Typography is set in Basis Grotesque — a geometric sans-serif that pairs techn
 - Don't round corners beyond 12px — it conflicts with the hardware industrial aesthetic
 - Don't introduce photography or illustration into the transaction confirmation UI
 
-## 8. Responsive Behavior
+## Responsive Behavior
+
 Breakpoints: 375px (mobile), 768px (tablet), 1024px (desktop)
 
 - **375px**: single-column; onboarding wizard fills full screen; device visual above fold
 - **768px**: 2-column: device visual left, step content right
 - **1024px**: centered max-width 1000px; feature grid 3-column
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand: `#FF4B00`

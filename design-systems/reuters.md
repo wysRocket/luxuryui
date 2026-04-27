@@ -1,6 +1,26 @@
-# Design System Inspired by Reuters
+---
+name: Reuters
+colors:
+  tertiary: "#FF8000"
+  neutral: "#1A1A1A"
+  primary: "#001440"
+  secondary: "#6B6B6B"
+typography:
+  body-md:
+    fontSize: 18px
+    fontWeight: 400
+    lineHeight: 1.7
+rounded:
+  sm: 2px
+  md: 4px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Reuters' design language is rooted in journalism's oldest virtues: clarity, speed, and authority. The brand orange (`#FF8000`) cuts through noise with the visual urgency of a breaking news ticker — it signals immediacy, importance, and the wire-service DNA that has defined Reuters for 170 years. Against a dark navy editorial palette (`#001440` / `#0A2240`), the orange vibrates with the energy of live information, while deep backgrounds evoke the seriousness of global financial and geopolitical news coverage.
 
@@ -18,7 +38,7 @@ Layout principles favor information density over decoration. The editorial grid 
 - Live indicator: pulsing orange dot + "LIVE" badge for real-time content
 - Market data strip: persistent top or bottom, dark bg, green/red price moves
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Reuters Orange** (`#FF8000`): Breaking news, live indicators, primary CTAs, brand
@@ -54,7 +74,7 @@ Layout principles favor information density over decoration. The editorial grid 
 - **Navy Link** (`#003399`): Inline article links (light mode)
 - **Orange Link** (`#FF8000`): Interactive links on dark surfaces
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Reuters Slab (Custom)**: `'Reuters Slab', 'Rockwell', 'Courier New', serif` — All headlines, section titles, display text
@@ -79,7 +99,41 @@ Layout principles favor information density over decoration. The editorial grid 
 | Price Change | Roboto Mono | 14px | 700 | 20px | Green or red |
 | Navigation | Roboto | 14px | 500 | 20px | Dark navy or white |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px
+- Article content max-width: 720px
+- Page margins: 16px mobile, 24px tablet, 40px desktop
+- Editorial grid: 12-column CSS grid
+- Story gap: 1px solid #EBEBEB (tight — news density)
+- Section spacing: 32px between sections
+
+### Border Radius Scale
+- `0px` — All editorial containers, cards, buttons (flat = authoritative)
+- `2px` — Minimal radius for UI controls (badges, chips)
+- `4px` — Dropdown menus, tooltips
+- Reuters uses minimal border-radius throughout for editorial authority
+
+### Grid
+- Mobile: Single column, 16px margins
+- Tablet: 2-column grid, 24px margins
+- Desktop: 12-column grid, max-width 1440px, 40px margins
+- Article: centered 720px max-width column
+
+## Elevation & Depth
+
+```
+Level 0 - Flat:   #F8F8F6 background, no shadow (editorial flat design)
+Level 1 - Card:   1px border #EBEBEB only, no shadow
+Level 2 - Nav:    0 2px 4px rgba(0,0,0,0.10)
+Level 3 - Modal:  0 4px 20px rgba(0,0,0,0.20)
+Level 4 - Ticker: 0 2px 8px rgba(0,20,64,0.30)
+Reuters avoids shadows in editorial content — flat authority
+```
+
+## Components
 
 ### Buttons
 
@@ -167,41 +221,7 @@ border-radius: 2px
 pulse dot: white 6px circle, opacity 1→0.3 1s ease-in-out infinite
 ```
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px
-- Article content max-width: 720px
-- Page margins: 16px mobile, 24px tablet, 40px desktop
-- Editorial grid: 12-column CSS grid
-- Story gap: 1px solid #EBEBEB (tight — news density)
-- Section spacing: 32px between sections
-
-### Border Radius Scale
-- `0px` — All editorial containers, cards, buttons (flat = authoritative)
-- `2px` — Minimal radius for UI controls (badges, chips)
-- `4px` — Dropdown menus, tooltips
-- Reuters uses minimal border-radius throughout for editorial authority
-
-### Grid
-- Mobile: Single column, 16px margins
-- Tablet: 2-column grid, 24px margins
-- Desktop: 12-column grid, max-width 1440px, 40px margins
-- Article: centered 720px max-width column
-
-## 6. Depth & Elevation
-
-```
-Level 0 - Flat:   #F8F8F6 background, no shadow (editorial flat design)
-Level 1 - Card:   1px border #EBEBEB only, no shadow
-Level 2 - Nav:    0 2px 4px rgba(0,0,0,0.10)
-Level 3 - Modal:  0 4px 20px rgba(0,0,0,0.20)
-Level 4 - Ticker: 0 2px 8px rgba(0,20,64,0.30)
-Reuters avoids shadows in editorial content — flat authority
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use `#FF8000` orange for breaking news and live content — it signals urgency
@@ -217,7 +237,7 @@ Reuters avoids shadows in editorial content — flat authority
 - Don't use light typography weights for headlines — bold/700 minimum for authority
 - Don't pad the editorial grid generously — information density is the editorial value
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `375px` — Mobile: single column, full-width stories
@@ -232,7 +252,7 @@ Reuters avoids shadows in editorial content — flat authority
 - Breaking banner: stacked (mobile) → horizontal inline (desktop)
 - Article: full-width (mobile) → 720px centered (desktop)
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 ```

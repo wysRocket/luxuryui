@@ -1,6 +1,31 @@
-# Design System Inspired by Deezer
+---
+name: Deezer
+colors:
+  tertiary: "#A238FF"
+  neutral: "#1A1A2A"
+  primary: "#FFFFFF"
+  secondary: "#B2B2C9"
+typography:
+  page-title:
+    fontSize: 36px
+    fontWeight: 800
+    lineHeight: 1.1
+  caption:
+    fontSize: 11px
+    fontWeight: 400
+    lineHeight: 1.45
+rounded:
+  sm: 4px
+  md: 12px
+  lg: 20px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Deezer's design is an energetic, music-first experience defined by a bold magenta-to-violet gradient and deep dark surfaces. The primary accent, Deezer Pink (`#A238FF` to `#EF5466`), pulses with energy across playback controls, progress bars, and highlighted UI states. The dark base (`#1A1A2A`) creates a cinematic backdrop that makes album artwork and gradient accents visually pop — a strategy that puts music discovery at the center of the visual hierarchy.
 
@@ -18,7 +43,7 @@ The overall feeling is "premium nightclub meets music magazine" — dark, energe
 - Progress bar and waveform tinted with hot pink gradient
 - 8px base spacing grid with 16/24/32px rhythm
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Deezer Magenta** (`#EF5466`): CTA buttons, now-playing bar, highlight states
@@ -36,7 +61,7 @@ The overall feeling is "premium nightclub meets music magazine" — dark, energe
 - **Elevated Surface** (`#2E2E44`): Modals, dropdowns, hover card
 - **Overlay** (`rgba(26,26,42,0.85)`): Backdrop blur overlays
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Primary UI**: `DeezerText` / `Circular` — navigation, body, labels
@@ -57,7 +82,29 @@ The overall feeling is "premium nightclub meets music magazine" — dark, energe
 | Player Artist | Circular | 12px | 400 | 1.20 | Mini-player artist |
 | Caption | Circular | 11px | 400 | 1.45 | Timestamps, metadata |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 48px, 64px, 80px
+
+### Border Radius Scale
+- Subtle (4px): Progress bars, sliders
+- Small (8px): Tags, badges
+- Medium (12px): Album cards
+- Large (20px): Modals, feature cards
+- Pill (50px): CTA buttons
+- Circle (50%): Album art, avatar, play button
+
+## Elevation & Depth
+
+- **Level 0**: Base `#1A1A2A` — no shadow
+- **Level 1**: `box-shadow: 0 2px 8px rgba(0,0,0,0.4)` — cards
+- **Level 2**: `box-shadow: 0 8px 32px rgba(162,56,255,0.25)` — hover, featured
+- **Level 3**: `box-shadow: 0 16px 48px rgba(0,0,0,0.7)` — modals
+- **Glow**: `box-shadow: 0 0 24px rgba(239,84,102,0.5)` — active player
+
+## Components
 
 ### Buttons
 
@@ -85,29 +132,7 @@ The overall feeling is "premium nightclub meets music magazine" — dark, energe
 - Grid: 4–6 columns desktop, 2–3 mobile
 - Padding: 16px internal
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 48px, 64px, 80px
-
-### Border Radius Scale
-- Subtle (4px): Progress bars, sliders
-- Small (8px): Tags, badges
-- Medium (12px): Album cards
-- Large (20px): Modals, feature cards
-- Pill (50px): CTA buttons
-- Circle (50%): Album art, avatar, play button
-
-## 6. Depth & Elevation
-
-- **Level 0**: Base `#1A1A2A` — no shadow
-- **Level 1**: `box-shadow: 0 2px 8px rgba(0,0,0,0.4)` — cards
-- **Level 2**: `box-shadow: 0 8px 32px rgba(162,56,255,0.25)` — hover, featured
-- **Level 3**: `box-shadow: 0 16px 48px rgba(0,0,0,0.7)` — modals
-- **Glow**: `box-shadow: 0 0 24px rgba(239,84,102,0.5)` — active player
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use the gradient (`#A238FF` → `#EF5466`) for primary actions and brand moments
@@ -122,14 +147,14 @@ The overall feeling is "premium nightclub meets music magazine" — dark, energe
 - Don't overlay text directly on album art without a gradient scrim
 - Don't use light/white backgrounds — Deezer is always dark-native
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints: 320px, 640px, 768px, 1024px, 1280px, 1440px
 - Mobile: 2-col grid, bottom mini-player bar, collapsed sidebar
 - Tablet: 3-col grid, slide-out sidebar
 - Desktop: 4–6 col grid, persistent left sidebar (240px), fixed bottom player (90px)
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand gradient: `linear-gradient(135deg, #A238FF, #EF5466)`

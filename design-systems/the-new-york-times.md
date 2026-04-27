@@ -1,6 +1,23 @@
-# Design System Inspired by The New York Times
+---
+name: The New York Times
+colors:
+  neutral: "#FFFFFF"
+  secondary: "#727272"
+  tertiary: "#121212"
+typography:
+  body-md:
+    fontSize: 18px
+    fontWeight: 400
+    lineHeight: 28
+  caption:
+    fontSize: 13px
+    fontWeight: 400
+    lineHeight: 18
+rounded:
+  sm: 2px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 The New York Times digital design is an exercise in translating 170 years of print authority into pixels. The visual system is unapologetically classical: black text on white paper, NYT Cheltenham serif for news headings, and a grid system that directly references the newspaper's column-based layout. There is no color in the traditional sense — black, white, and shades of gray do all the work, with color appearing only for section labeling (Opinion, Arts, Travel) and the rare interactive data visualization.
 
@@ -18,7 +35,7 @@ The paywall experience is handled with the same authority as the rest of the pro
 - Grid: 6-column base, newspaper-style with vertical rules
 - No border radius on article cards (sharp edges = newspaper authority)
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary (Monochrome System)
 - **Near-Black** (`#121212`): Headlines, body text, primary content
@@ -45,7 +62,7 @@ The paywall experience is handled with the same authority as the rest of the pro
 - **Metadata** (`#727272`): Timestamps, section labels, read time
 - **Caption** (`#666666`): Photo captions, chart labels
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **NYT Cheltenham**: `'nyt-cheltenham', Georgia, serif` — All editorial headings, article titles (licensed serif)
@@ -69,7 +86,41 @@ The paywall experience is handled with the same authority as the rest of the pro
 | Kicker | NYT Franklin | 12px | 700 | 16px | Story type label above headline |
 | Pull Quote | NYT Cheltenham | 24px | 300 | 32px | Light weight serif pull quote |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base unit: **4px** (print grid influences: uses multiples of 4–8)
+- Scale: `4px, 8px, 12px, 16px,24px, 32px, 40px, 48px, 64px, 80px`
+- Column gutter: `16px` (web), `24px` (desktop)
+- Article body max-width: `680px`
+- Homepage content max-width: `1260px`
+
+### Grid (Newspaper-Inspired)
+- 6-column grid on desktop
+- Column rules: `1px solid #E2E2E2` between content columns
+- Lead story: spans 4–6 columns
+- Secondary stories: 2–3 columns
+- Mobile: single column
+
+### Border Radius Scale
+| Token | Value | Usage |
+|-------|-------|-------|
+| `--radius-none` | 0px | ALL cards, ALL buttons — never rounded |
+| `--radius-sm` | 2px | Only interactive tags in very rare UI contexts |
+
+The NYT design system explicitly avoids all border-radius on editorial elements.
+
+## Elevation & Depth
+
+The NYT design system has virtually no elevation. Authority is communicated through typographic hierarchy and column structure, not shadow:
+
+- **Page** (base): `#FFFFFF` — no shadow anywhere
+- **Navigation** (scrolled): `border-bottom: 1px solid #E2E2E2` — no shadow
+- **Tooltip**: `background: #121212`, text white — no shadow, flat dark
+- **Subscribe Modal**: `box-shadow: 0 4px 16px rgba(0,0,0,0.15)` — one of the only shadows in the system
+- **Sticky Nav**: flat, no shadow — border-bottom only
+
+## Components
 
 ### Buttons
 **Subscribe Button**
@@ -125,41 +176,7 @@ The paywall experience is handled with the same authority as the rest of the pro
 - Subhead: NYT Franklin 14px `#727272`
 - Subscribe button: full-width `#121212`
 
-## 5. Layout Principles
-
-### Spacing System
-- Base unit: **4px** (print grid influences: uses multiples of 4–8)
-- Scale: `4px, 8px, 12px, 16px,24px, 32px, 40px, 48px, 64px, 80px`
-- Column gutter: `16px` (web), `24px` (desktop)
-- Article body max-width: `680px`
-- Homepage content max-width: `1260px`
-
-### Grid (Newspaper-Inspired)
-- 6-column grid on desktop
-- Column rules: `1px solid #E2E2E2` between content columns
-- Lead story: spans 4–6 columns
-- Secondary stories: 2–3 columns
-- Mobile: single column
-
-### Border Radius Scale
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--radius-none` | 0px | ALL cards, ALL buttons — never rounded |
-| `--radius-sm` | 2px | Only interactive tags in very rare UI contexts |
-
-The NYT design system explicitly avoids all border-radius on editorial elements.
-
-## 6. Depth & Elevation
-
-The NYT design system has virtually no elevation. Authority is communicated through typographic hierarchy and column structure, not shadow:
-
-- **Page** (base): `#FFFFFF` — no shadow anywhere
-- **Navigation** (scrolled): `border-bottom: 1px solid #E2E2E2` — no shadow
-- **Tooltip**: `background: #121212`, text white — no shadow, flat dark
-- **Subscribe Modal**: `box-shadow: 0 4px 16px rgba(0,0,0,0.15)` — one of the only shadows in the system
-- **Sticky Nav**: flat, no shadow — border-bottom only
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use NYT Cheltenham for all editorial headings — the serif is the brand voice, not the orange
@@ -175,7 +192,7 @@ The NYT design system has virtually no elevation. Authority is communicated thro
 - Never apply border-radius to article card images — sharp crops are the standard
 - Don't use thin weights for headlines — NYT Cheltenham must be weight 700 for authority
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `xs`: 0–480px — single column, headline 28px, body 17px
@@ -188,7 +205,7 @@ The NYT design system has virtually no elevation. Authority is communicated thro
 
 **Paywall:** Soft fade at paragraph 5 on mobile, paragraph 8 on desktop
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Near-black: `#121212`

@@ -1,6 +1,22 @@
-# Design System Inspired by Trello
+---
+name: Trello
+colors:
+  neutral: "#FFFFFF"
+  primary: "#0052CC"
+  tertiary: "#0065FF"
+  secondary: "#8993A4"
+typography:
+  label:
+    fontFamily: Lato
+    fontSize: 14px
+    fontWeight: 700
+    lineHeight: 20
+rounded:
+  sm: 2px
+  md: 3px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Trello pioneered the kanban board as consumer software — and its design system reflects that origin: approachable, tactile, and clear. The interface is built on white and light neutral surfaces, with Trello Blue (`#0052CC`) anchoring the brand identity across headers, active states, and primary calls to action. The aesthetic is firmly SaaS productivity: clean, scannable, and optimized for information density without feeling clinical.
 
@@ -18,7 +34,7 @@ Background customization is a unique Trello brand element — users can set full
 - Drag-and-drop ghost: 8° rotation, 0.9 opacity, elevated shadow
 - Horizontal scrolling board with sticky list headers
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Trello Blue** (`#0052CC`): Primary button, link, active state, focused input border
@@ -49,7 +65,7 @@ Background customization is a unique Trello brand element — users can set full
 - Purple (`#C377E0`), Blue (`#0079BF`), Sky (`#00C2E0`), Lime (`#51E898`)
 - Pink (`#FF78CB`), Black (`#344563`), and 4 additional semantic tones
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Primary**: `"Lato", -apple-system, "Helvetica Neue", sans-serif` — all UI text
@@ -70,7 +86,39 @@ Background customization is a unique Trello brand element — users can set full
 | Member Name | Lato | 12px | 400 | 16px | Comment author, tooltip |
 | Section Header | Lato | 12px | 700 | 16px | Card back section labels, uppercase |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: `8px`
+- Scale: `4, 8, 12, 16, 24, 32, 40, 48, 64px`
+- Card vertical padding: `8px`
+- Card horizontal padding: `8px`
+- Gap between cards: `8px`
+- Gap between lists: `8px`
+- Board padding: `8px 8px 0`
+
+### Board Layout
+- Header bar: 40px height, sticky
+- Board horizontal scroll: lists in flex row, horizontal overflow scroll
+- List width: `272px` (fixed, non-responsive)
+- Add List button: same width `272px` as list
+
+### Border Radius Scale
+- `2px` — color labels, member avatars (square variant)
+- `3px` — cards, lists, buttons, input fields
+- `50%` — member avatar circles
+- `100px` — pills for tags/badges
+
+## Elevation & Depth
+
+### Shadow Scale
+- **Card Default** — `0 1px 0 rgba(9,30,66,0.25)`
+- **Card Hover** — `0 4px 8px -2px rgba(9,30,66,0.25), 0 0 0 1px rgba(9,30,66,0.08)`
+- **Card Dragging** — `0 8px 16px -4px rgba(9,30,66,0.45)`
+- **Modal** — `0 8px 16px -4px rgba(9,30,66,0.25), 0 0 0 1px rgba(9,30,66,0.08)`
+- **Dropdown** — `0 4px 8px -2px rgba(9,30,66,0.25), 0 0 0 1px rgba(9,30,66,0.08)`
+
+## Components
 
 ### Buttons
 
@@ -134,39 +182,7 @@ Background customization is a unique Trello brand element — users can set full
 - Border radius: `3px`
 - Height matches card height estimate
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: `8px`
-- Scale: `4, 8, 12, 16, 24, 32, 40, 48, 64px`
-- Card vertical padding: `8px`
-- Card horizontal padding: `8px`
-- Gap between cards: `8px`
-- Gap between lists: `8px`
-- Board padding: `8px 8px 0`
-
-### Board Layout
-- Header bar: 40px height, sticky
-- Board horizontal scroll: lists in flex row, horizontal overflow scroll
-- List width: `272px` (fixed, non-responsive)
-- Add List button: same width `272px` as list
-
-### Border Radius Scale
-- `2px` — color labels, member avatars (square variant)
-- `3px` — cards, lists, buttons, input fields
-- `50%` — member avatar circles
-- `100px` — pills for tags/badges
-
-## 6. Depth & Elevation
-
-### Shadow Scale
-- **Card Default** — `0 1px 0 rgba(9,30,66,0.25)`
-- **Card Hover** — `0 4px 8px -2px rgba(9,30,66,0.25), 0 0 0 1px rgba(9,30,66,0.08)`
-- **Card Dragging** — `0 8px 16px -4px rgba(9,30,66,0.45)`
-- **Modal** — `0 8px 16px -4px rgba(9,30,66,0.25), 0 0 0 1px rgba(9,30,66,0.08)`
-- **Dropdown** — `0 4px 8px -2px rgba(9,30,66,0.25), 0 0 0 1px rgba(9,30,66,0.08)`
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Keep list width at exactly `272px` — deviation breaks the board's spatial familiarity
@@ -182,7 +198,7 @@ Background customization is a unique Trello brand element — users can set full
 - Don't use font weights outside 400/700 for Lato — the system is binary
 - Don't use shadows for decorative depth — only for interactive states
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `375px` — mobile: single-column view, swipe between lists, full-screen card
@@ -196,7 +212,7 @@ Background customization is a unique Trello brand element — users can set full
 - Board switcher: bottom sheet on mobile, left sidebar on desktop
 - Drag-and-drop: touch events on mobile, mouse events on desktop
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Primary Blue: `#0052CC`

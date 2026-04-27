@@ -1,6 +1,16 @@
-# Design System Inspired by Tidal
+---
+name: Tidal
+colors:
+  neutral: "#000000"
+  tertiary: "#1F4FFF"
+  primary: "#000000"
+rounded:
+  sm: 4px
+  md: 8px
+  lg: 12px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Tidal's design language is rooted in the philosophy that premium audio deserves a premium visual stage. The interface is built on a pure black canvas (`#000000`) that functions as a darkroom for music — allowing album artwork and artist photography to emerge with full luminous impact. Nothing competes with the music. Every surface, every element, every typographic decision exists to serve the listening experience and signal quality.
 
@@ -18,7 +28,7 @@ Typography is clean and geometric — primarily a humanist sans-serif rendered a
 - Subtle separators at `rgba(255,255,255,0.08)` — barely visible
 - HiFi badge and lossless quality indicators in monochrome
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Pure Black** (`#000000`): Primary background — all screens
@@ -43,7 +53,7 @@ Typography is clean and geometric — primarily a humanist sans-serif rendered a
 - **Error Red** (`#FF3B30`): Error states, failed playback
 - **Quality Gold** (`#F0A500`): HiFi/Master quality badge
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Primary UI**: `"Inter", "Helvetica Neue", -apple-system, sans-serif` — all UI elements, navigation, labels
@@ -63,7 +73,43 @@ Typography is clean and geometric — primarily a humanist sans-serif rendered a
 | Timestamp | JetBrains Mono | 11px | 400 | 14px | Track progress, time codes |
 | Quality Badge | Inter | 10px | 700 | 12px | "HIFI", "MASTER" — all caps |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: `8px`
+- Scale: `4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96px`
+- Component internal padding: `16px` or `24px`
+- Section vertical spacing: `40px` between major sections
+- Page horizontal padding: `24px` (mobile), `48px` (tablet), `80px` (desktop)
+
+### Grid System
+- Mobile: 1-column, 2-column album grid
+- Tablet: 3–4 column album grid
+- Desktop: 4–6 column album grid, max-width `1280px`, centered
+- Card gap: `16px`
+
+### Border Radius Scale
+- `0px` — artist photography, full-bleed images
+- `4px` — album art thumbnails
+- `8px` — small UI elements, tags
+- `12px` — modals, sheets
+- `100px` — pill buttons, input fields
+- `50%` — circular play button, avatar
+
+## Elevation & Depth
+
+### Shadow Scale
+- **Level 0** — No shadow (base surfaces, track rows)
+- **Level 1** — `0 2px 8px rgba(0,0,0,0.40)` — hovered cards
+- **Level 2** — `0 8px 24px rgba(0,0,0,0.60)` — floating UI, dropdowns
+- **Level 3** — `0 16px 48px rgba(0,0,0,0.80)` — modals, overlays
+- **Playbar Lift** — `0 -4px 20px rgba(0,0,0,0.50)` — persistent playback bar
+
+### Overlay Treatments
+- Image overlay for text legibility: `linear-gradient(to top, rgba(0,0,0,0.80) 0%, transparent 60%)`
+- Section fade: `linear-gradient(to right, #000000 0%, transparent 30%)` — for scrollable rows
+
+## Components
 
 ### Buttons
 
@@ -126,43 +172,7 @@ Typography is clean and geometric — primarily a humanist sans-serif rendered a
 - Padding: `24px`
 - Shadow: `0 -8px 40px rgba(0,0,0,0.60)`
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: `8px`
-- Scale: `4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96px`
-- Component internal padding: `16px` or `24px`
-- Section vertical spacing: `40px` between major sections
-- Page horizontal padding: `24px` (mobile), `48px` (tablet), `80px` (desktop)
-
-### Grid System
-- Mobile: 1-column, 2-column album grid
-- Tablet: 3–4 column album grid
-- Desktop: 4–6 column album grid, max-width `1280px`, centered
-- Card gap: `16px`
-
-### Border Radius Scale
-- `0px` — artist photography, full-bleed images
-- `4px` — album art thumbnails
-- `8px` — small UI elements, tags
-- `12px` — modals, sheets
-- `100px` — pill buttons, input fields
-- `50%` — circular play button, avatar
-
-## 6. Depth & Elevation
-
-### Shadow Scale
-- **Level 0** — No shadow (base surfaces, track rows)
-- **Level 1** — `0 2px 8px rgba(0,0,0,0.40)` — hovered cards
-- **Level 2** — `0 8px 24px rgba(0,0,0,0.60)` — floating UI, dropdowns
-- **Level 3** — `0 16px 48px rgba(0,0,0,0.80)` — modals, overlays
-- **Playbar Lift** — `0 -4px 20px rgba(0,0,0,0.50)` — persistent playback bar
-
-### Overlay Treatments
-- Image overlay for text legibility: `linear-gradient(to top, rgba(0,0,0,0.80) 0%, transparent 60%)`
-- Section fade: `linear-gradient(to right, #000000 0%, transparent 30%)` — for scrollable rows
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use pure `#000000` — never a near-black substitute like `#111` for page backgrounds
@@ -179,7 +189,7 @@ Typography is clean and geometric — primarily a humanist sans-serif rendered a
 - Don't use card borders as separators — use spacing and subtle background
 - Don't round album art beyond 4px — editorial sharpness is intentional
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `sm`: 375px — single-column mobile; full-screen album view
@@ -193,7 +203,7 @@ Typography is clean and geometric — primarily a humanist sans-serif rendered a
 - Album grid shifts from 2-col to 3-col at md, 4-col at lg
 - Search bar replaces hero banner on sm breakpoint
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Background: `#000000`

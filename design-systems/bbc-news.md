@@ -1,6 +1,39 @@
-# Design System Inspired by BBC News
+---
+name: BBC News
+colors:
+  neutral: "#FFFFFF"
+  secondary: "#63676A"
+  primary: "#BB1919"
+  tertiary: "#BB1919"
+typography:
+  h1:
+    fontSize: 40px
+    fontWeight: 700
+    lineHeight: 48
+  h2:
+    fontSize: 24px
+    fontWeight: 700
+    lineHeight: 30
+  h3:
+    fontSize: 20px
+    fontWeight: 700
+    lineHeight: 26
+  body-md:
+    fontSize: 18px
+    fontWeight: 400
+    lineHeight: 30
+  caption:
+    fontSize: 13px
+    fontWeight: 400
+    lineHeight: 18
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 BBC News carries the visual authority of a global public broadcaster: structured, trustworthy, and deliberately un-designed in the decorative sense. The palette is anchored by BBC Red (`#BB1919`) — the same red used on the BBC logo for decades — paired with pure white content surfaces and near-black text (`#1A1A1A`). The result is a newspaper-in-digital-form aesthetic that signals editorial credibility without relying on visual flourish.
 
@@ -18,7 +51,7 @@ Layout is grid-heavy and editorial: a classic 12-column system with sections del
 - Navigation: `#1A1A1A` on white (top bar) and `#FFFFFF` on `#1A1A1A` (sticky scroll)
 - Font: Reith Serif (articles), Reith Sans (UI)
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **BBC Red** (`#BB1919`): Logo, breaking news banners, section divider rules, primary action states, hover link color
@@ -37,7 +70,7 @@ Layout is grid-heavy and editorial: a classic 12-column system with sections del
 - **Dark Nav** (`#1A1A1A`): Sticky header background on scroll
 - **Overlay** (`rgba(0,0,0,0.7)`): Video and image overlays
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Reith Serif**: `"BBC Reith Serif", Georgia, "Times New Roman", serif` — article body, long-form headlines
@@ -60,7 +93,49 @@ Layout is grid-heavy and editorial: a classic 12-column system with sections del
 | Tags / Labels | Reith Sans | 12px | 700 | 16px | Story topic tags, uppercase |
 | Legal | Reith Sans | 12px | 400 | 16px | Footer copyright |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4, 8, 12, 16, 24, 32, 48px
+- Column gutter: 16px
+- Article max-width: 640px (centered, left margin at desktop)
+- Grid: 12-column, editorial
+
+### Border Radius Scale
+- BBC News uses **0px** throughout all editorial surfaces — strict right-angle grid
+- Exception: Video play button circle: 50%
+- Exception: Avatar/profile: 50%
+
+## Elevation & Depth
+
+BBC News has no elevation system in the traditional sense — the editorial grid provides hierarchy:
+
+**All story cards:**
+```
+/* No shadow — flat editorial grid */
+border: none;
+background: #FFFFFF;
+```
+
+**Video player hover overlay:**
+```
+background: rgba(0,0,0,0.7);
+```
+
+**Navigation dropdown:**
+```
+box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+background: #1A1A1A;
+```
+
+**Breaking news bar:**
+```
+background: #BB1919;
+/* No shadow — authority through color, not depth */
+```
+
+## Components
 
 ### Buttons
 **Primary (Subscribe / Video Play):**
@@ -97,49 +172,7 @@ Layout is grid-heavy and editorial: a classic 12-column system with sections del
 - Padding-top: 12px
 - Background: `#FFFFFF`
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4, 8, 12, 16, 24, 32, 48px
-- Column gutter: 16px
-- Article max-width: 640px (centered, left margin at desktop)
-- Grid: 12-column, editorial
-
-### Border Radius Scale
-- BBC News uses **0px** throughout all editorial surfaces — strict right-angle grid
-- Exception: Video play button circle: 50%
-- Exception: Avatar/profile: 50%
-
-## 6. Depth & Elevation
-
-BBC News has no elevation system in the traditional sense — the editorial grid provides hierarchy:
-
-**All story cards:**
-```
-/* No shadow — flat editorial grid */
-border: none;
-background: #FFFFFF;
-```
-
-**Video player hover overlay:**
-```
-background: rgba(0,0,0,0.7);
-```
-
-**Navigation dropdown:**
-```
-box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-background: #1A1A1A;
-```
-
-**Breaking news bar:**
-```
-background: #BB1919;
-/* No shadow — authority through color, not depth */
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use the 3px red horizontal rule (`#BB1919`) to divide every editorial section
@@ -154,7 +187,7 @@ background: #BB1919;
 - Don't replace Reith Serif in article bodies — it's an accessibility and brand requirement
 - Don't use red for body text or metadata — it's reserved for brand markers and interaction
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints:
 - Mobile: 0–600px — single column, headline-first, image below
@@ -162,7 +195,7 @@ Breakpoints:
 - Desktop: 1008px+ — 12-column editorial grid; main story left, sidebar right
 - Wide: 1280px+ — content area capped at 1280px; outer margins increase
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - BBC Red: `#BB1919`

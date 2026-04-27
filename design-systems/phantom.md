@@ -1,6 +1,31 @@
-# Design System Inspired by Phantom
+---
+name: Phantom
+colors:
+  neutral: "#1A1F2E"
+  tertiary: "#AB9FF2"
+  primary: "#1A1F2E"
+  secondary: "#6B7280"
+typography:
+  label:
+    fontSize: 15px
+    fontWeight: 600
+    lineHeight: 20
+  caption:
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 16
+rounded:
+  sm: 8px
+  md: 16px
+  lg: 20px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Phantom's design language is the gold standard of Web3 premium — a dark, deep-space aesthetic where purple glass morphism floats above void-black backgrounds to create an interface that feels simultaneously futuristic and trustworthy. The deep dark base (`#1A1F2E`) and near-black (`#0E1118`) create a layered spatial depth, while the signature purple spectrum — from soft lavender (`#AB9FF2`) to deep violet (`#512DA8`) — anchors the crypto-native identity without resorting to the neon excess of lesser Web3 interfaces.
 
@@ -18,7 +43,7 @@ The typography follows a clean Inter-led hierarchy with monospace (`SF Mono` / `
 - Solana green `#9945FF` / `#14F195` teal for SOL-specific contexts
 - Micro-animations: 250ms spring on balance updates, token list loads with stagger
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Deep Dark** (`#1A1F2E`): Primary app background and card surfaces
@@ -55,7 +80,7 @@ The typography follows a clean Inter-led hierarchy with monospace (`SF Mono` / `
 - **Glass Elevated** (`rgba(171, 159, 242, 0.14)`): Elevated modal, sheet glass
 - **Glass Border** (`rgba(171, 159, 242, 0.20)`): Glass card border/outline
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Inter**: `'Inter', -apple-system, sans-serif` — All UI labels, body text, amounts
@@ -79,7 +104,41 @@ The typography follows a clean Inter-led hierarchy with monospace (`SF Mono` / `
 | Button Label | Inter | 15px | 600 | 20px | White or black per bg |
 | Caption | Inter | 12px | 400 | 16px | Gray `#9CA3AF` |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px
+- Card padding: 24px (wallet card), 16px (token/tx rows)
+- Section gaps: 24px between wallet sections
+- NFT grid gap: 12px
+- Page margins: 20px mobile, 24px max
+
+### Border Radius Scale
+- `8px` — Small chips, status badges
+- `12px` — Token rows, buttons, smaller cards
+- `16px` — NFT cards, confirmation modals
+- `20px` — Wallet balance card, primary panels
+- `50%` — Token icons, avatar circles
+
+### Grid
+- Mobile: Single column, 20px margins
+- NFT Grid: 2-column mobile, 3-column tablet
+- Token list: single column list
+- Desktop: 360px app-width centered (mobile-first web app)
+
+## Elevation & Depth
+
+```
+Level 0 - Base:       #0E1118 (deepest background)
+Level 1 - App BG:     #1A1F2E (app background)
+Level 2 - Glass Card: rgba(171,159,242,0.08) + blur(20px)
+Level 3 - Modal:      rgba(171,159,242,0.14) + blur(40px) + 0 8px 40px rgba(0,0,0,0.5)
+Level 4 - Alert:      #1A1F2E + 0 16px 60px rgba(0,0,0,0.6)
+Glow accent:          0 0 40px rgba(171,159,242,0.20) on wallet card
+```
+
+## Components
 
 ### Buttons
 
@@ -168,41 +227,7 @@ amount color: green (+) / gray (-)
 status: small pill badge
 ```
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px
-- Card padding: 24px (wallet card), 16px (token/tx rows)
-- Section gaps: 24px between wallet sections
-- NFT grid gap: 12px
-- Page margins: 20px mobile, 24px max
-
-### Border Radius Scale
-- `8px` — Small chips, status badges
-- `12px` — Token rows, buttons, smaller cards
-- `16px` — NFT cards, confirmation modals
-- `20px` — Wallet balance card, primary panels
-- `50%` — Token icons, avatar circles
-
-### Grid
-- Mobile: Single column, 20px margins
-- NFT Grid: 2-column mobile, 3-column tablet
-- Token list: single column list
-- Desktop: 360px app-width centered (mobile-first web app)
-
-## 6. Depth & Elevation
-
-```
-Level 0 - Base:       #0E1118 (deepest background)
-Level 1 - App BG:     #1A1F2E (app background)
-Level 2 - Glass Card: rgba(171,159,242,0.08) + blur(20px)
-Level 3 - Modal:      rgba(171,159,242,0.14) + blur(40px) + 0 8px 40px rgba(0,0,0,0.5)
-Level 4 - Alert:      #1A1F2E + 0 16px 60px rgba(0,0,0,0.6)
-Glow accent:          0 0 40px rgba(171,159,242,0.20) on wallet card
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use `backdrop-filter: blur(20px)` on glass cards — it's the Phantom signature
@@ -218,7 +243,7 @@ Glow accent:          0 0 40px rgba(171,159,242,0.20) on wallet card
 - Don't display full wallet addresses without middle truncation (0x1234...5678)
 - Don't use harsh fully-saturated colors — the muted purple system is the aesthetic
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `390px` — Primary mobile (iPhone wallet experience)
@@ -233,7 +258,7 @@ Glow accent:          0 0 40px rgba(171,159,242,0.20) on wallet card
 - Navigation: bottom tab bar mobile → left sidebar desktop
 - Wallet address: middle-truncated at all sizes
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 ```

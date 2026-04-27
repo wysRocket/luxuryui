@@ -1,6 +1,44 @@
-# Design System Inspired by Coinbase
+---
+name: Coinbase
+colors:
+  neutral: "#0052ff"
+  primary: "#0052ff"
+  tertiary: "#0667d0"
+  secondary: "#5b616e"
+typography:
+  display-hero:
+    fontSize: 80px
+    fontWeight: 400
+    lineHeight: 1
+  h1:
+    fontSize: 36px
+    fontWeight: 400
+    lineHeight: 1.11
+  body-md:
+    fontSize: 16px
+    fontWeight: 700
+    lineHeight: 1.5
+  label:
+    fontSize: 16px
+    fontWeight: 600
+    lineHeight: 1.2
+    letterSpacing: 0.16px
+  caption:
+    fontSize: 14px
+    fontWeight: 600
+    lineHeight: 1.5
+rounded:
+  sm: 4px
+  md: 16px
+  lg: 32px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Coinbase's website is a clean, trustworthy crypto platform that communicates financial reliability through a blue-and-white binary palette. The design uses Coinbase Blue (`#0052ff`) — a deep, saturated blue — as the singular brand accent against white and near-black surfaces. The proprietary font family includes CoinbaseDisplay for hero headlines, CoinbaseSans for UI text, CoinbaseText for body reading, and CoinbaseIcons for iconography — a comprehensive four-font system.
 
@@ -15,7 +53,7 @@ The button system uses a distinctive 56px radius for pill-shaped CTAs with hover
 - Cool gray secondary surface (`#eef0f3`) with blue tint
 - `text-transform: lowercase` on some button labels — unusual
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Coinbase Blue** (`#0052ff`): Primary brand, links, CTA borders
@@ -32,7 +70,7 @@ The button system uses a distinctive 56px radius for pill-shaped CTAs with hover
 - **Dark Card** (`#282b31`): Dark button/card backgrounds
 - **Light Surface** (`rgba(247,247,247,0.88)`): Subtle surface
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Display**: `CoinbaseDisplay` — hero headlines
@@ -58,7 +96,25 @@ The button system uses a distinctive 56px radius for pill-shaped CTAs with hover
 | Caption | CoinbaseSans | 14px | 600–700 | 1.50 | Metadata |
 | Small | CoinbaseSans | 13px | 600 | 1.23 | Tags |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 1px, 3px, 4px, 5px, 6px, 8px, 10px, 12px, 15px, 16px, 20px, 24px, 25px, 32px, 48px
+
+### Border Radius Scale
+- Small (4px–8px): Article links, small cards
+- Standard (12px–16px): Cards, menus
+- Large (24px–32px): Feature containers
+- XL (40px): Large buttons/containers
+- Pill (56px): Primary CTAs
+- Full (100000px): Maximum pill
+
+## Elevation & Depth
+
+Minimal shadow system — depth from color contrast between dark/light sections.
+
+## Components
 
 ### Buttons
 
@@ -80,25 +136,7 @@ The button system uses a distinctive 56px radius for pill-shaped CTAs with hover
 - Radius: 8px–40px range
 - Borders: `1px solid rgba(91,97,110,0.2)`
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 1px, 3px, 4px, 5px, 6px, 8px, 10px, 12px, 15px, 16px, 20px, 24px, 25px, 32px, 48px
-
-### Border Radius Scale
-- Small (4px–8px): Article links, small cards
-- Standard (12px–16px): Cards, menus
-- Large (24px–32px): Feature containers
-- XL (40px): Large buttons/containers
-- Pill (56px): Primary CTAs
-- Full (100000px): Maximum pill
-
-## 6. Depth & Elevation
-
-Minimal shadow system — depth from color contrast between dark/light sections.
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use Coinbase Blue (#0052ff) for primary interactive elements
@@ -110,11 +148,11 @@ Minimal shadow system — depth from color contrast between dark/light sections.
 - Don't use the blue decoratively — it's functional only
 - Don't use sharp corners on CTAs — 56px minimum
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints: 400px, 576px, 640px, 768px, 896px, 1280px, 1440px, 1600px
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand: Coinbase Blue (`#0052ff`)

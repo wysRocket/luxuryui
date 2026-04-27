@@ -1,6 +1,25 @@
-# Design System Inspired by Sleep Cycle
+---
+name: Sleep Cycle
+colors:
+  neutral: "#1C1C3A"
+  tertiary: "#FFD700"
+  primary: "#FFFFFF"
+typography:
+  body-md:
+    fontSize: 17px
+    fontWeight: 400
+    lineHeight: 26
+  caption:
+    fontSize: 11px
+    fontWeight: 400
+    lineHeight: 16
+rounded:
+  sm: 8px
+  md: 20px
+  lg: 28px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Sleep Cycle's design is built around the intimacy of sleep data — a deeply personal, nightly ritual that demands calm, trust, and clarity. The dominant dark navy-purple canvas (`#1C1C3A`) evokes the night sky, creating an environment that feels at home on a bedside table at 11 PM. This is not a clinical health dashboard; it's a sleep companion — and the visual language reinforces that distinction through flowing gradients, warm gold data accents, and unhurried typography.
 
@@ -18,7 +37,7 @@ The type system prioritizes legibility in low-light conditions: large, high-cont
 - Border radius: 20px for cards; alarm circle is 240px circle
 - No hard borders — depth via gradient overlays and transparency
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Night Navy** (`#1C1C3A`): All page backgrounds, app canvas
@@ -50,7 +69,7 @@ The type system prioritizes legibility in low-light conditions: large, high-cont
 - **Fair** (`#7B68EE`): 40–60% range
 - **Poor** (`#FF6B6B`): Below 40% quality
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **SF Pro Display / Rubik**: `'Rubik', 'SF Pro Display', -apple-system, sans-serif` — Display sizes, scores, times, hero numerals
@@ -72,7 +91,42 @@ The type system prioritizes legibility in low-light conditions: large, high-cont
 | Stat Number | Rubik | 36px | 300 | 44px | Duration stats (7h 42m) |
 | Phase Tag | Rubik | 12px | 600 | 16px | "DEEP" "REM" "LIGHT" "AWAKE" |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base unit: **8px**
+- Scale: `4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px`
+- Card padding: `20px 20px`
+- Section gaps: `24px`
+- Safe area: respect iOS/Android status bar and home indicator (16px bottom, 48px top)
+
+### Grid
+- Mobile-first single column
+- Two-column stat grid at `≥480px`
+- Alarm interface: centered with circular layout
+- Chart: full-width, height 180px minimum
+
+### Border Radius Scale
+| Token | Value | Usage |
+|-------|-------|-------|
+| `--radius-sm` | 8px | Tags, small chips |
+| `--radius-md` | 12px | Settings rows, input fields |
+| `--radius-lg` | 20px | Cards, bottom sheets |
+| `--radius-xl` | 28px | Buttons, large pills |
+| `--radius-full` | 9999px | Alarm circle, presence dots |
+
+## Elevation & Depth
+
+A layered system on the dark canvas — no hard shadows, only glow and transparency:
+
+- **Base** (canvas): `#1C1C3A` — raw background
+- **Panel** (card): `rgba(255,255,255,0.06)` with backdrop blur — glass card
+- **Bottom Sheet**: `#252545`, slides up from bottom, rounded-top 24px
+- **Gold Glow** (alarm/score): `box-shadow: 0 0 40px rgba(255,215,0,0.25)` — warm halo around key data
+- **Teal Glow** (charts): `filter: drop-shadow(0 0 8px rgba(78,205,196,0.4))` — chart line glow
+- **Modal**: `#1A1A4E` at 95% opacity, blur backdrop
+
+## Components
 
 ### Buttons
 **Primary Button (Set Alarm)**
@@ -121,42 +175,7 @@ The type system prioritizes legibility in low-light conditions: large, high-cont
 - Grid lines: `rgba(255,255,255,0.05)`, dashed
 - Y-axis labels: Rubik 11px `rgba(255,255,255,0.35)`
 
-## 5. Layout Principles
-
-### Spacing System
-- Base unit: **8px**
-- Scale: `4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px`
-- Card padding: `20px 20px`
-- Section gaps: `24px`
-- Safe area: respect iOS/Android status bar and home indicator (16px bottom, 48px top)
-
-### Grid
-- Mobile-first single column
-- Two-column stat grid at `≥480px`
-- Alarm interface: centered with circular layout
-- Chart: full-width, height 180px minimum
-
-### Border Radius Scale
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--radius-sm` | 8px | Tags, small chips |
-| `--radius-md` | 12px | Settings rows, input fields |
-| `--radius-lg` | 20px | Cards, bottom sheets |
-| `--radius-xl` | 28px | Buttons, large pills |
-| `--radius-full` | 9999px | Alarm circle, presence dots |
-
-## 6. Depth & Elevation
-
-A layered system on the dark canvas — no hard shadows, only glow and transparency:
-
-- **Base** (canvas): `#1C1C3A` — raw background
-- **Panel** (card): `rgba(255,255,255,0.06)` with backdrop blur — glass card
-- **Bottom Sheet**: `#252545`, slides up from bottom, rounded-top 24px
-- **Gold Glow** (alarm/score): `box-shadow: 0 0 40px rgba(255,215,0,0.25)` — warm halo around key data
-- **Teal Glow** (charts): `filter: drop-shadow(0 0 8px rgba(78,205,196,0.4))` — chart line glow
-- **Modal**: `#1A1A4E` at 95% opacity, blur backdrop
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use gold (`#FFD700`) only for the most important data points — sleep score, alarm time, top stats
@@ -172,7 +191,7 @@ A layered system on the dark canvas — no hard shadows, only glow and transpare
 - Don't add more than 4 sleep phase colors — Deep, REM, Light, Awake is the complete set
 - Avoid vibration-heavy animations before/during alarm — build calm with fade and pulse
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints (mobile-first):**
 - `xs`: 320px–375px — compact single column, score centered, minimal labels
@@ -182,7 +201,7 @@ A layered system on the dark canvas — no hard shadows, only glow and transpare
 
 **Native behaviors:** Pull-to-refresh on history; swipe-up to expand alarm detail; haptic feedback on alarm dismiss
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Canvas: `#1C1C3A`

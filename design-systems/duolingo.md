@@ -1,6 +1,32 @@
-# Design System Inspired by Duolingo
+---
+name: Duolingo
+colors:
+  neutral: "#FFFFFF"
+  tertiary: "#00B7B7"
+  secondary: "#777777"
+typography:
+  body-md:
+    fontFamily: DinRound
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.5
+  caption:
+    fontFamily: DinRound
+    fontSize: 12px
+    fontWeight: 600
+    lineHeight: 1.3
+rounded:
+  sm: 8px
+  md: 16px
+  lg: 24px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Duolingo's design is relentlessly cheerful, gamified, and approachable — built to make language learning feel more like a game than homework. The signature Duolingo Green (`#58CC02`) dominates interactive elements, progress indicators, and the iconic feather-shaped logo. Below it, a complementary dark green (`#58A700`) provides shadow and depth for the classic button "push" effect — the 3D raised button that has become one of Duolingo's most recognizable design patterns.
 
@@ -18,7 +44,7 @@ Motion is central — correct answers trigger celebration animations, incorrect 
 - 16px border radius on most interactive elements; full pill on some CTAs
 - Progress bar in green with XP counter — always visible during lessons
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Duolingo Green** (`#58CC02`): CTAs, correct answers, progress, streak
@@ -42,7 +68,7 @@ Motion is central — correct answers trigger celebration animations, incorrect 
 - **Purple** (`#CE82FF`): Legendary league, special achievements
 - **Orange** (`#FF9600`): Streak shield, bonus items
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Primary**: `DinRound` / `Nunito` (rounded variant) — all UI text
@@ -63,7 +89,28 @@ Motion is central — correct answers trigger celebration animations, incorrect 
 | Navigation | DinRound | 13px | 700 | 1.00 | Tab bar labels |
 | Caption | DinRound | 12px | 600 | 1.30 | Badges, tags |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px
+
+### Border Radius Scale
+- Small (8px): Badges, chips
+- Medium (12px): Answer choice buttons
+- Large (16px): Primary buttons, skill cards
+- XL (24px): Feature cards, modals
+- Pill (999px): Tag pills, streak badges
+
+## Elevation & Depth
+
+- **3D Button**: `border-bottom: 4px solid #58A700` — signature elevation
+- **Cards**: `box-shadow: 0 2px 0px #E5E5E5` — subtle lift
+- **Modal**: `box-shadow: 0 8px 24px rgba(0,0,0,0.15)`
+- **Celebration overlay**: `box-shadow: 0 0 32px rgba(88,204,2,0.4)` — correct answer glow
+- **No dark shadows** — shadow system stays in border tones not rgba blacks
+
+## Components
 
 ### Buttons
 
@@ -93,28 +140,7 @@ Motion is central — correct answers trigger celebration animations, incorrect 
 - Completed skill: green tint `rgba(88,204,2,0.1)`, green border
 - Streak card: gold `#FFC800` accent, trophy icon
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px
-
-### Border Radius Scale
-- Small (8px): Badges, chips
-- Medium (12px): Answer choice buttons
-- Large (16px): Primary buttons, skill cards
-- XL (24px): Feature cards, modals
-- Pill (999px): Tag pills, streak badges
-
-## 6. Depth & Elevation
-
-- **3D Button**: `border-bottom: 4px solid #58A700` — signature elevation
-- **Cards**: `box-shadow: 0 2px 0px #E5E5E5` — subtle lift
-- **Modal**: `box-shadow: 0 8px 24px rgba(0,0,0,0.15)`
-- **Celebration overlay**: `box-shadow: 0 0 32px rgba(88,204,2,0.4)` — correct answer glow
-- **No dark shadows** — shadow system stays in border tones not rgba blacks
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Always use the 3D button effect (border-bottom shadow) on primary CTAs
@@ -129,14 +155,14 @@ Motion is central — correct answers trigger celebration animations, incorrect 
 - Don't use dark backgrounds — this is not a dark-mode product
 - Don't overcrowd: one lesson prompt per screen, one primary CTA per view
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints: 320px, 480px, 768px, 1024px, 1280px
 - Mobile: Single-column lesson flow, bottom navigation bar (5 icons)
 - Tablet: 2-column skill grid, persistent progress sidebar
 - Web: 3-column layout with left nav, center lesson, right streak panel
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Primary: `#58CC02` (green)

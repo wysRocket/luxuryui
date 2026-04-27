@@ -1,6 +1,21 @@
-# Design System Inspired by Strava
+---
+name: Strava
+colors:
+  neutral: "#FFFFFF"
+  primary: "#242428"
+  secondary: "#6D6D78"
+typography:
+  body-md:
+    fontSize: 15px
+    fontWeight: 400
+    lineHeight: 22
+rounded:
+  sm: 2px
+  md: 8px
+  lg: 12px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Strava's design language is built for athletes: energetic, data-rich, and achievement-oriented. The signature orange (`#FC4C02`) reads as effort, heat, and speed — it's the color of race bibs, safety vests, and finish line tape. Against a white canvas for the activity feed and dark segments for map-heavy views, this orange creates a dual personality: clean social network during browsing, intense athletic tool during activity tracking.
 
@@ -18,7 +33,7 @@ Typography is set in Roboto throughout — a clean, metric-friendly sans-serif t
 - Segment crown: KOM/QOM gold `#FFB800` icon
 - Border radius: 8px for cards, 4px for buttons, 2px for tags
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Strava Orange** (`#FC4C02`): Brand identity, primary CTAs, active states, segment lines on map
@@ -51,7 +66,7 @@ Typography is set in Roboto throughout — a clean, metric-friendly sans-serif t
 - **KOM Gold** (`#FFB800`): King/Queen of the Mountain
 - **Alert** (`#E8002D`): High HR, safety alerts
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Roboto**: `'Roboto', -apple-system, BlinkMacSystemFont, sans-serif` — All UI text, labels, stats
@@ -74,7 +89,40 @@ Typography is set in Roboto throughout — a clean, metric-friendly sans-serif t
 | Achievement | Roboto Condensed | 28px | 700 | 36px | "PR!" personal record display |
 | Body | Roboto | 15px | 400 | 22px | Activity description body text |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base unit: **4px**
+- Scale: `4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px`
+- Card padding: `16px`
+- Stat grid gap: `16px`
+- Feed vertical gap between cards: `12px`
+- Page padding: `16px` (mobile), `32px` (desktop)
+
+### Grid
+- Activity feed: single column, max-width `700px` centered
+- Dashboard: 2-column at `≥768px` (feed + leaderboard sidebar)
+- Map fullscreen at mobile; split at `≥1024px`
+
+### Border Radius Scale
+| Token | Value | Usage |
+|-------|-------|-------|
+| `--radius-xs` | 2px | Tags, achievement badges |
+| `--radius-sm` | 4px | Buttons, map thumbnails |
+| `--radius-md` | 8px | Cards |
+| `--radius-lg` | 12px | Modals, bottom sheets |
+| `--radius-full` | 9999px | Avatars, kudos button hover ring |
+
+## Elevation & Depth
+
+- **Page** (background): `#F7F7FA` — no shadow
+- **Feed Card**: `border: 1px solid #E8E8E8`, `border-radius: 8px` — low elevation via border
+- **Map Controls**: `box-shadow: 0 2px 8px rgba(0,0,0,0.2)` — buttons over map
+- **Segment Popup** (map tap): `box-shadow: 0 4px 16px rgba(0,0,0,0.15)`, bg `#FFFFFF`
+- **Bottom Sheet**: `box-shadow: 0 -4px 20px rgba(0,0,0,0.1)`, bg `#FFFFFF`
+- **Modal**: `box-shadow: 0 8px 32px rgba(0,0,0,0.2)`, backdrop 50%
+
+## Components
 
 ### Buttons
 **Primary Button (Follow / Subscribe)**
@@ -129,40 +177,7 @@ Typography is set in Roboto throughout — a clean, metric-friendly sans-serif t
 - Grid: `#E8E8E8` 1px horizontal
 - Axis labels: Roboto Mono 11px `#9E9EA8`
 
-## 5. Layout Principles
-
-### Spacing System
-- Base unit: **4px**
-- Scale: `4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px`
-- Card padding: `16px`
-- Stat grid gap: `16px`
-- Feed vertical gap between cards: `12px`
-- Page padding: `16px` (mobile), `32px` (desktop)
-
-### Grid
-- Activity feed: single column, max-width `700px` centered
-- Dashboard: 2-column at `≥768px` (feed + leaderboard sidebar)
-- Map fullscreen at mobile; split at `≥1024px`
-
-### Border Radius Scale
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--radius-xs` | 2px | Tags, achievement badges |
-| `--radius-sm` | 4px | Buttons, map thumbnails |
-| `--radius-md` | 8px | Cards |
-| `--radius-lg` | 12px | Modals, bottom sheets |
-| `--radius-full` | 9999px | Avatars, kudos button hover ring |
-
-## 6. Depth & Elevation
-
-- **Page** (background): `#F7F7FA` — no shadow
-- **Feed Card**: `border: 1px solid #E8E8E8`, `border-radius: 8px` — low elevation via border
-- **Map Controls**: `box-shadow: 0 2px 8px rgba(0,0,0,0.2)` — buttons over map
-- **Segment Popup** (map tap): `box-shadow: 0 4px 16px rgba(0,0,0,0.15)`, bg `#FFFFFF`
-- **Bottom Sheet**: `box-shadow: 0 -4px 20px rgba(0,0,0,0.1)`, bg `#FFFFFF`
-- **Modal**: `box-shadow: 0 8px 32px rgba(0,0,0,0.2)`, backdrop 50%
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Show GPS route trace in `#FC4C02` orange on the dark map — it's the emotional heart of the activity card
@@ -178,7 +193,7 @@ Typography is set in Roboto throughout — a clean, metric-friendly sans-serif t
 - Don't show the map without the orange route trace — a gray map with no trace is meaningless
 - Avoid loading elevation charts lazily on mobile — it's a primary data element
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `xs`: 0–480px — single-column feed, compact stat row (2 stats), map 180px height
@@ -190,7 +205,7 @@ Typography is set in Roboto throughout — a clean, metric-friendly sans-serif t
 
 **Bottom nav:** 5 tabs: Feed, Explore, Record (large orange circle), Groups, Profile
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Strava orange: `#FC4C02`

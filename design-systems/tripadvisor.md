@@ -1,6 +1,26 @@
-# Design System Inspired by TripAdvisor
+---
+name: TripAdvisor
+colors:
+  tertiary: "#00AA6C"
+  neutral: "#FFFFFF"
+  primary: "#00AA6C"
+  secondary: "#555555"
+typography:
+  body-md:
+    fontSize: 15px
+    fontWeight: 400
+    lineHeight: 24
+  label:
+    fontSize: 15px
+    fontWeight: 700
+    lineHeight: 20
+rounded:
+  sm: 4px
+  md: 8px
+  lg: 20px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 TripAdvisor's design system embodies the spirit of exploration: warm, trustworthy, and community-driven. The signature green — a bright, optimistic `#34E0A1` for highlights and the deeper, authoritative `#00AA6C` for primary interactive elements — is among the most recognizable brand colors in travel. Green signals freshness, nature, and the go-ahead to book with confidence. Against white backgrounds, these greens create an inviting, energetic interface that never feels corporate or intimidating.
 
@@ -18,7 +38,7 @@ Trip Sans — TripAdvisor's custom typeface — gives the brand a proprietary vo
 - Map integration with green pins matching brand color
 - Review snippet cards with user avatar + rating + date
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Green Primary** (`#00AA6C`): CTAs, active states, primary button, selected filter
@@ -48,7 +68,7 @@ Trip Sans — TripAdvisor's custom typeface — gives the brand a proprietary vo
 - **Price Tier** (`#555555`): $ $$ $$$ dollar signs
 - **Verified** (`#00AA6C`): Verified review badge
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Display**: `"Trip Sans", "Helvetica Neue", sans-serif` — hero headings, property names
@@ -70,7 +90,40 @@ Trip Sans — TripAdvisor's custom typeface — gives the brand a proprietary vo
 | Timestamp | Inter | 12px | 400 | 16px | Review dates, "3 months ago" |
 | Badge Label | Inter | 11px | 700 | 14px | "Travellers' Choice", badges |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: `8px`
+- Scale: `4, 8, 12, 16, 20, 24, 32, 40, 48, 64px`
+- Card padding: `16px` internal
+- Section vertical gaps: `32px`
+- Page horizontal padding: `16px` (mobile), `24px` (tablet), `48px` (desktop)
+
+### Grid System
+- Mobile: 1-column card stack
+- Tablet: 2-column card grid
+- Desktop: 3-column card grid, max-width `1200px`
+- Search/Map: split `420px` list + map fill remainder
+- Card gap: `16px`
+
+### Border Radius Scale
+- `0px` — map tiles
+- `4px` — buttons, badges
+- `8px` — cards, image thumbnails, tooltips
+- `20px` — filter chips, pills
+- `50%` — user avatars
+
+## Elevation & Depth
+
+### Shadow Scale
+- **Card Default** — `0 2px 8px rgba(0,0,0,0.08)`
+- **Card Hover** — `0 4px 16px rgba(0,0,0,0.12)`
+- **Sticky Header** — `0 2px 4px rgba(0,0,0,0.10)`
+- **Modal** — `0 8px 32px rgba(0,0,0,0.16)`
+- **Tooltip** — `0 2px 8px rgba(0,0,0,0.20)`
+- **Map Card** — `0 4px 12px rgba(0,0,0,0.20)`
+
+## Components
 
 ### Buttons
 
@@ -128,40 +181,7 @@ Trip Sans — TripAdvisor's custom typeface — gives the brand a proprietary vo
 - Shape: rounded pill `20px radius`
 - Selected: background `#151515`, size scales up 1.2×
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: `8px`
-- Scale: `4, 8, 12, 16, 20, 24, 32, 40, 48, 64px`
-- Card padding: `16px` internal
-- Section vertical gaps: `32px`
-- Page horizontal padding: `16px` (mobile), `24px` (tablet), `48px` (desktop)
-
-### Grid System
-- Mobile: 1-column card stack
-- Tablet: 2-column card grid
-- Desktop: 3-column card grid, max-width `1200px`
-- Search/Map: split `420px` list + map fill remainder
-- Card gap: `16px`
-
-### Border Radius Scale
-- `0px` — map tiles
-- `4px` — buttons, badges
-- `8px` — cards, image thumbnails, tooltips
-- `20px` — filter chips, pills
-- `50%` — user avatars
-
-## 6. Depth & Elevation
-
-### Shadow Scale
-- **Card Default** — `0 2px 8px rgba(0,0,0,0.08)`
-- **Card Hover** — `0 4px 16px rgba(0,0,0,0.12)`
-- **Sticky Header** — `0 2px 4px rgba(0,0,0,0.10)`
-- **Modal** — `0 8px 32px rgba(0,0,0,0.16)`
-- **Tooltip** — `0 2px 8px rgba(0,0,0,0.20)`
-- **Map Card** — `0 4px 12px rgba(0,0,0,0.20)`
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Show review count prominently alongside the rating — number of reviews is as important as the score
@@ -177,7 +197,7 @@ Trip Sans — TripAdvisor's custom typeface — gives the brand a proprietary vo
 - Don't use red for non-alert elements — in a travel context, red signals danger or problems
 - Don't mix Georgia serif and Trip Sans in the same text block
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `375px` — mobile; single column list, map as separate tab
@@ -191,7 +211,7 @@ Trip Sans — TripAdvisor's custom typeface — gives the brand a proprietary vo
 - Photos: swipeable carousel on mobile, hover-play on desktop
 - Review expansion: full page on mobile, inline expand on desktop
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand Green: `#00AA6C`

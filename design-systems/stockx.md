@@ -1,6 +1,17 @@
-# Design System Inspired by StockX
+---
+name: StockX
+colors:
+  neutral: "#FFFFFF"
+  secondary: "#666666"
+  primary: "#000000"
+  tertiary: "#6BC73A"
+rounded:
+  sm: 2px
+  md: 4px
+  lg: 8px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 StockX's design is the visual language of financial markets applied to sneaker culture — precise, data-driven, and built for high-stakes decision-making. The white and black palette is deliberately neutral and authoritative: StockX wants you to trust the data, not be seduced by branding. Every pixel serves the bidding interface: current ask, current bid, last sale, price history charts. The interface must communicate market authority.
 
@@ -18,7 +29,7 @@ Typography is bold and condensed — the typeface choices skew towards heavy wei
 - Border radius: near-zero (2–4px max) — market data tables use 0px radius
 - Bid/Ask spread displayed prominently — always show both sides
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Black** (`#000000`): Navigation bar, primary text, logo, dark CTA variant
@@ -46,7 +57,7 @@ Typography is bold and condensed — the typeface choices skew towards heavy wei
 - **Green Price** (`#85E04A`): Last sale up, bid price
 - **Red Price** (`#E84040`): Ask price, last sale down
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Helvetica Neue Condensed Bold**: `'Helvetica Neue Condensed', 'Arial Narrow', sans-serif` — Product names, price displays, key headers
@@ -69,7 +80,41 @@ Typography is bold and condensed — the typeface choices skew towards heavy wei
 | Size Selector | Helvetica Neue | 14px | 700 | 20px | Size buttons |
 | Badge | Helvetica Neue | 11px | 700 | 14px | "VERIFIED", "LOWEST ASK" — uppercase |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base unit: **4px**
+- Scale: `4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px`
+- Product grid gap: `16px`
+- Card padding: `16px`
+- Data table cell padding: `10px 12px`
+- Page horizontal margin: `16px` mobile, `40px` desktop
+
+### Grid
+- Product grid: 2-column (mobile) → 3 (sm) → 4 (md) → 5 (lg)
+- PDP: split layout — 60% image left, 40% bid/ask right on desktop
+- Max-width: `1440px`
+
+### Border Radius Scale
+| Token | Value | Usage |
+|-------|-------|-------|
+| `--radius-none` | 0px | Data tables, bid/ask grids |
+| `--radius-xs` | 2px | Tags, tiny chips |
+| `--radius-sm` | 4px | Buttons, cards, filters |
+| `--radius-md` | 8px | Modals |
+
+## Elevation & Depth
+
+StockX uses minimal elevation — the market data speaks for itself:
+
+- **Flat** (page): `#FFFFFF` — no shadow
+- **Card default**: `border: 1px solid #EEEEEE` — border-only elevation
+- **Card hover**: `box-shadow: 0 4px 16px rgba(0,0,0,0.12)` — mouse hover
+- **Sticky nav**: `box-shadow: 0 2px 8px rgba(0,0,0,0.1)` — top navigation when scrolled
+- **Modal**: `box-shadow: 0 8px 32px rgba(0,0,0,0.2)` + `rgba(0,0,0,0.5)` backdrop
+- **Tooltip**: `background: #000000`, `box-shadow: 0 4px 12px rgba(0,0,0,0.2)`
+
+## Components
 
 ### Buttons
 **Buy / Place Bid (Primary)**
@@ -129,41 +174,7 @@ Typography is bold and condensed — the typeface choices skew towards heavy wei
 - Down: `#E84040` bg light `rgba(232,64,64,0.1)`, text `#E84040`, "▼ $20 (2.8%)"
 - Border-radius: `4px`, padding `4px 8px`
 
-## 5. Layout Principles
-
-### Spacing System
-- Base unit: **4px**
-- Scale: `4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px`
-- Product grid gap: `16px`
-- Card padding: `16px`
-- Data table cell padding: `10px 12px`
-- Page horizontal margin: `16px` mobile, `40px` desktop
-
-### Grid
-- Product grid: 2-column (mobile) → 3 (sm) → 4 (md) → 5 (lg)
-- PDP: split layout — 60% image left, 40% bid/ask right on desktop
-- Max-width: `1440px`
-
-### Border Radius Scale
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--radius-none` | 0px | Data tables, bid/ask grids |
-| `--radius-xs` | 2px | Tags, tiny chips |
-| `--radius-sm` | 4px | Buttons, cards, filters |
-| `--radius-md` | 8px | Modals |
-
-## 6. Depth & Elevation
-
-StockX uses minimal elevation — the market data speaks for itself:
-
-- **Flat** (page): `#FFFFFF` — no shadow
-- **Card default**: `border: 1px solid #EEEEEE` — border-only elevation
-- **Card hover**: `box-shadow: 0 4px 16px rgba(0,0,0,0.12)` — mouse hover
-- **Sticky nav**: `box-shadow: 0 2px 8px rgba(0,0,0,0.1)` — top navigation when scrolled
-- **Modal**: `box-shadow: 0 8px 32px rgba(0,0,0,0.2)` + `rgba(0,0,0,0.5)` backdrop
-- **Tooltip**: `background: #000000`, `box-shadow: 0 4px 12px rgba(0,0,0,0.2)`
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Show both bid AND ask prices simultaneously — StockX is a two-sided market
@@ -179,7 +190,7 @@ StockX uses minimal elevation — the market data speaks for itself:
 - Don't truncate sneaker product names — full product title + colorway is always shown
 - Avoid loading charts lazily — price data must appear synchronously with the product page
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `xs`: 0–480px — 2-column product grid, stacked PDP (image above bid/ask)
@@ -190,7 +201,7 @@ StockX uses minimal elevation — the market data speaks for itself:
 
 **PDP layout:** Stacked on mobile; side-by-side 60/40 split at `≥768px`
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - White canvas: `#FFFFFF`

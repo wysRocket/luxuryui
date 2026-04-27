@@ -1,6 +1,23 @@
-# Design System Inspired by Twitter (X)
+---
+name: Twitter (X)
+colors:
+  tertiary: "#1D9BF0"
+  neutral: "#000000"
+  primary: "#000000"
+  secondary: "#71767B"
+typography:
+  body-md:
+    fontFamily: Chirp
+    fontSize: 15px
+    fontWeight: 400
+    lineHeight: 20
+rounded:
+  sm: 2px
+  md: 12px
+  lg: 16px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Twitter's (now X) design language is defined by radical typographic clarity and chromatic restraint. The interface operates on a strict binary of pure black (`#000000`) and pure white (`#FFFFFF`), with a single action color — Twitter Blue (`#1D9BF0`) — that handles all interactive states, links, and brand moments. This three-color discipline gives Twitter an almost newspaper-like quality: information-dense, undecorated, and focused entirely on the text content being communicated.
 
@@ -18,7 +35,7 @@ The tweet thread UI is the design's most distinctive contribution: sequential po
 - Media attachments: 2×1, 2×2, or 4-photo grid within tweet
 - Minimal chrome — max content, minimal navigation
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Twitter Blue** (`#1D9BF0`): Links, CTAs, follow button, active tab, mention text
@@ -50,7 +67,7 @@ The tweet thread UI is the design's most distinctive contribution: sequential po
 - **Bookmark Blue** (`#1D9BF0`): Bookmarked state
 - **Share** (`#1D9BF0`): Share icon, same as primary blue
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Primary**: `"Chirp", -apple-system, "Helvetica Neue", sans-serif` — all UI text
@@ -72,7 +89,43 @@ The tweet thread UI is the design's most distinctive contribution: sequential po
 | Trending Topic | Chirp | 15px | 700 | 20px | Hashtag trending |
 | Quote Tweet Label | Chirp | 13px | 400 | 18px | Quote tweet inner content |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: `8px`
+- Scale: `4, 8, 12, 16, 20, 24, 32px`
+- Tweet horizontal padding: `16px`
+- Tweet vertical padding: `12px`
+- Avatar: 48px, with `12px` gap to content
+- Desktop layout: 600px center column, 280px right sidebar, left nav min 60px
+
+### Grid System
+- Mobile: single-column full-width timeline
+- Desktop: 3-column layout — sidebar | timeline | trending
+- Timeline max-width: `600px`, centered
+- No card grid — content is a flat sequential list
+
+### Border Radius Scale
+- `0px` — tweet rows (full-width list)
+- `4px` — image attachments within tweets (2px on corners touching edge)
+- `12px` — quote tweet inner border
+- `16px` — dropdown menus, modals
+- `100px` — all buttons (pill)
+- `50%` — avatars
+
+## Elevation & Depth
+
+### Shadow Scale
+- **No decorative shadows** — Twitter uses zero box-shadow on content
+- **Dropdown** — `0 0 24px rgba(255,255,255,0.20)` (dark) / `0 0 24px rgba(0,0,0,0.16)` (light)
+- **Modal** — `0 8px 40px rgba(0,0,0,0.40)`
+- **Sticky Header** — `rgba(0,0,0,0.60)` backdrop-filter blur, no shadow
+
+### Overlay Treatments
+- Modal backdrop: `rgba(91,112,131,0.40)` — Twitter's signature tinted overlay, not pure black
+- Bottom sheet: slides up from 100vh, no shadow (dark bg suffices)
+
+## Components
 
 ### Buttons
 
@@ -129,43 +182,7 @@ The tweet thread UI is the design's most distinctive contribution: sequential po
 - Item padding: `16px`
 - Item hover: background tint
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: `8px`
-- Scale: `4, 8, 12, 16, 20, 24, 32px`
-- Tweet horizontal padding: `16px`
-- Tweet vertical padding: `12px`
-- Avatar: 48px, with `12px` gap to content
-- Desktop layout: 600px center column, 280px right sidebar, left nav min 60px
-
-### Grid System
-- Mobile: single-column full-width timeline
-- Desktop: 3-column layout — sidebar | timeline | trending
-- Timeline max-width: `600px`, centered
-- No card grid — content is a flat sequential list
-
-### Border Radius Scale
-- `0px` — tweet rows (full-width list)
-- `4px` — image attachments within tweets (2px on corners touching edge)
-- `12px` — quote tweet inner border
-- `16px` — dropdown menus, modals
-- `100px` — all buttons (pill)
-- `50%` — avatars
-
-## 6. Depth & Elevation
-
-### Shadow Scale
-- **No decorative shadows** — Twitter uses zero box-shadow on content
-- **Dropdown** — `0 0 24px rgba(255,255,255,0.20)` (dark) / `0 0 24px rgba(0,0,0,0.16)` (light)
-- **Modal** — `0 8px 40px rgba(0,0,0,0.40)`
-- **Sticky Header** — `rgba(0,0,0,0.60)` backdrop-filter blur, no shadow
-
-### Overlay Treatments
-- Modal backdrop: `rgba(91,112,131,0.40)` — Twitter's signature tinted overlay, not pure black
-- Bottom sheet: slides up from 100vh, no shadow (dark bg suffices)
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use Chirp at every text size — font consistency is a core brand signal
@@ -180,7 +197,7 @@ The tweet thread UI is the design's most distinctive contribution: sequential po
 - Don't break the timeline's uniform column width — tweet hierarchy is temporal, not visual
 - Don't use gradients — Twitter's design is resolutely flat and chromatic
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `375px` — mobile: bottom tab nav, full-width timeline
@@ -194,7 +211,7 @@ The tweet thread UI is the design's most distinctive contribution: sequential po
 - Compose: inline in timeline on desktop, full-screen modal on mobile
 - Notifications: unified tab on mobile, right sidebar widget on desktop
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Brand Blue: `#1D9BF0`

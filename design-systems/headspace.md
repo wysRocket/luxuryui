@@ -1,6 +1,32 @@
-# Design System Inspired by Headspace
+---
+name: Headspace
+colors:
+  neutral: "#FFF8F5"
+  tertiary: "#E05A2B"
+  secondary: "#9E9E9E"
+typography:
+  body-md:
+    fontFamily: GT Walsheim
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.65
+  caption:
+    fontFamily: GT Walsheim
+    fontSize: 13px
+    fontWeight: 400
+    lineHeight: 1.4
+rounded:
+  sm: 8px
+  md: 20px
+  lg: 24px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Headspace's design is warm, playful, and disarmingly friendly — the antithesis of sterile wellness apps. The brand orange (`#FF7043` / `#F47D31`) creates an immediate sense of warmth and approachability, while a carefully curated palette of muted secondary hues (dusty blues, warm yellows, sage greens) supports a diverse range of meditation moods and topics without creating visual noise. The design communicates "meditation is for everyone" through illustration-first content, rounded forms, and an intentionally low-pressure visual tone.
 
@@ -18,7 +44,7 @@ Motion is intentional and calming: transitions are slow and eased (400–600ms),
 - All corners rounded 12px–24px; no sharp edges anywhere
 - Dark mode available (`#1A1A2A`) for sleep/evening sessions
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Headspace Orange** (`#FF7043`): CTAs, active states, logo, progress
@@ -44,7 +70,7 @@ Motion is intentional and calming: transitions are slow and eased (400–600ms),
 - **Soft Purple** (`#9B8EC4`): Sleep, evening content
 - **Dusty Rose** (`#E89B8C`): Emotions, relationships content
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Primary**: `GT Walsheim` — all UI text, all weights
@@ -66,7 +92,29 @@ Motion is intentional and calming: transitions are slow and eased (400–600ms),
 | Onboarding | GT Walsheim | 28px | 700 | 1.25 | Question screens |
 | Caption | GT Walsheim | 13px | 400 | 1.40 | Contextual hints |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px
+
+### Border Radius Scale
+- Small (8px): Tags, small chips
+- Medium (16px): Input fields, secondary cards
+- Large (20px): Session cards, feature tiles
+- XL (24px): Bottom sheets, modals
+- Pill (50px): All CTA buttons
+- Circle (50%): Character illustrations, avatar, play button
+
+## Elevation & Depth
+
+- **Cards resting**: `box-shadow: 0 2px 12px rgba(0,0,0,0.08)`
+- **Cards hover**: `box-shadow: 0 6px 24px rgba(0,0,0,0.12)` + scale(1.02)
+- **Orange CTA**: `box-shadow: 0 4px 16px rgba(255,112,67,0.35)` — warm glow
+- **Player overlay**: `box-shadow: 0 24px 64px rgba(0,0,0,0.4)`
+- **Breathing animation**: pulsing `box-shadow: 0 0 0 Xpx rgba(255,112,67,0.2)` expanding ring
+
+## Components
 
 ### Buttons
 
@@ -96,29 +144,7 @@ Motion is intentional and calming: transitions are slow and eased (400–600ms),
 - Bottom metadata: duration + level in small type
 - Hover: subtle scale(1.02) + shadow increase
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4px, 8px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px
-
-### Border Radius Scale
-- Small (8px): Tags, small chips
-- Medium (16px): Input fields, secondary cards
-- Large (20px): Session cards, feature tiles
-- XL (24px): Bottom sheets, modals
-- Pill (50px): All CTA buttons
-- Circle (50%): Character illustrations, avatar, play button
-
-## 6. Depth & Elevation
-
-- **Cards resting**: `box-shadow: 0 2px 12px rgba(0,0,0,0.08)`
-- **Cards hover**: `box-shadow: 0 6px 24px rgba(0,0,0,0.12)` + scale(1.02)
-- **Orange CTA**: `box-shadow: 0 4px 16px rgba(255,112,67,0.35)` — warm glow
-- **Player overlay**: `box-shadow: 0 24px 64px rgba(0,0,0,0.4)`
-- **Breathing animation**: pulsing `box-shadow: 0 0 0 Xpx rgba(255,112,67,0.2)` expanding ring
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use the circular character illustrations generously — they carry the Headspace identity
@@ -133,14 +159,14 @@ Motion is intentional and calming: transitions are slow and eased (400–600ms),
 - Don't use pure white backgrounds — warm white (`#FFF8F5`) is the base
 - Don't crowd sessions — cards need visual breathing room between them
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 Breakpoints: 320px, 480px, 768px, 1024px, 1280px
 - Mobile: Single-column cards, bottom navigation (5 tabs), fixed player bar
 - Tablet: 2-column card grid, expanded player view
 - Web: 3-column grid, sidebar navigation, full-screen player mode
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 - Orange: `#FF7043`

@@ -1,6 +1,36 @@
-# Design System Inspired by Nike
+---
+name: Nike
+colors:
+  neutral: "#FFFFFF"
+  tertiary: "#757575"
+  primary: "#111111"
+  secondary: "#666666"
+typography:
+  body-md:
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 26
+  label:
+    fontSize: 14px
+    fontWeight: 700
+    lineHeight: 18
+    letterSpacing: 1px
+  caption:
+    fontSize: 12px
+    fontWeight: 400
+    lineHeight: 18
+rounded:
+  sm: 4px
+  md: 8px
+  lg: 30px
+spacing:
+  xs: 8px
+  sm: 16px
+  md: 32px
+  lg: 64px
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
 Nike's digital design language is a direct translation of the brand's physical identity: bold, uncompromising, athlete-first. The foundation is near-black (`#111111`) and pure white (`#FFFFFF`) — a palette that lets product photography and athlete imagery dominate without color competition. This is a brand that has nothing to prove through decoration; the products, the athletes, and the stories speak through full-bleed photography that extends edge-to-edge with no container constraints.
 
@@ -18,7 +48,7 @@ The interface is deliberately minimal — a gallery for products and stories. Sp
 - Member Gold `#C9A84C` for NikePlus tier indicators
 - Zero decorative borders or dividers — white space handles separation
 
-## 2. Color Palette & Roles
+## Colors
 
 ### Primary
 - **Jet Black** (`#111111`): Nav, primary buttons, text, footer, CTAs
@@ -47,7 +77,7 @@ The interface is deliberately minimal — a gallery for products and stories. Sp
 - **Nav Shadow** (`rgba(0,0,0,0.15)`): Sticky nav elevation
 - **Overlay Dark** (`rgba(0,0,0,0.6)`): Image overlay for text legibility
 
-## 3. Typography Rules
+## Typography
 
 ### Font Families
 - **Trade Gothic Bold Condensed**: `'Trade Gothic LT Std Bold Condensed', 'Impact', sans-serif` — Campaign headlines, product launch text, section heroes
@@ -70,7 +100,40 @@ The interface is deliberately minimal — a gallery for products and stories. Sp
 | Sale Tag | Helvetica Neue | 13px | 700 | 16px | Orange `#FA5400`, uppercase |
 | Legal/Fine | Helvetica Neue | 11px | 400 | 16px | Gray `#999999` |
 
-## 4. Component Stylings
+## Layout
+
+### Spacing System
+- Base: 8px
+- Scale: 4px, 8px, 12px, 16px, 24px, 32px, 40px, 48px, 64px, 80px, 96px, 120px
+- Section padding desktop: 80px vertical
+- Product grid gap: 16px mobile, 24px desktop
+- Page margins: 20px mobile, 40px tablet, 80px desktop (max-content 1440px)
+
+### Border Radius Scale
+- `0px` — Product cards, full-bleed editorial containers
+- `4px` — Input fields, notification banners
+- `8px` — Dropdown menus, tooltip bubbles
+- `30px` — All buttons (pill is the Nike signature)
+- `50%` — Avatar, circular icon elements
+
+### Grid
+- Mobile: 2-column product grid (flex), 20px margins
+- Tablet: 3-column product grid, 40px margins
+- Desktop: 4-column product grid, 80px margins, max-width 1440px
+- Editorial: Full-bleed (0 margin) for hero and campaign sections
+
+## Elevation & Depth
+
+```
+Level 0 - Flat:      no shadow (product cards, backgrounds)
+Level 1 - Nav:       0 1px 0 rgba(0,0,0,0.1) (sticky nav bottom border only)
+Level 2 - Drawer:    0 4px 20px rgba(0,0,0,0.15)
+Level 3 - Modal:     0 8px 40px rgba(0,0,0,0.25)
+Level 4 - Toast:     0 4px 12px rgba(0,0,0,0.20)
+Nike avoids heavy shadows — depth through photography, not elevation
+```
+
+## Components
 
 ### Buttons
 
@@ -145,40 +208,7 @@ font: Helvetica Neue 13px 500
 active: background #111111, color white, border transparent
 ```
 
-## 5. Layout Principles
-
-### Spacing System
-- Base: 8px
-- Scale: 4px, 8px, 12px, 16px, 24px, 32px, 40px, 48px, 64px, 80px, 96px, 120px
-- Section padding desktop: 80px vertical
-- Product grid gap: 16px mobile, 24px desktop
-- Page margins: 20px mobile, 40px tablet, 80px desktop (max-content 1440px)
-
-### Border Radius Scale
-- `0px` — Product cards, full-bleed editorial containers
-- `4px` — Input fields, notification banners
-- `8px` — Dropdown menus, tooltip bubbles
-- `30px` — All buttons (pill is the Nike signature)
-- `50%` — Avatar, circular icon elements
-
-### Grid
-- Mobile: 2-column product grid (flex), 20px margins
-- Tablet: 3-column product grid, 40px margins
-- Desktop: 4-column product grid, 80px margins, max-width 1440px
-- Editorial: Full-bleed (0 margin) for hero and campaign sections
-
-## 6. Depth & Elevation
-
-```
-Level 0 - Flat:      no shadow (product cards, backgrounds)
-Level 1 - Nav:       0 1px 0 rgba(0,0,0,0.1) (sticky nav bottom border only)
-Level 2 - Drawer:    0 4px 20px rgba(0,0,0,0.15)
-Level 3 - Modal:     0 8px 40px rgba(0,0,0,0.25)
-Level 4 - Toast:     0 4px 12px rgba(0,0,0,0.20)
-Nike avoids heavy shadows — depth through photography, not elevation
-```
-
-## 7. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do
 - Use full-bleed photography as primary UI element — images should touch screen edges
@@ -194,7 +224,7 @@ Nike avoids heavy shadows — depth through photography, not elevation
 - Don't use decorative borders or dividers — white space separates sections
 - Don't add color beyond black, white, and orange in standard product UI
 
-## 8. Responsive Behavior
+## Responsive Behavior
 
 **Breakpoints:**
 - `390px` — Mobile (iPhone): 2-column grid, stacked nav
@@ -210,7 +240,7 @@ Nike avoids heavy shadows — depth through photography, not elevation
 - Nav: full mega-menu → hamburger on mobile
 - CTA buttons: fixed-width desktop → 100% mobile
 
-## 9. Agent Prompt Guide
+## Agent Prompt Guide
 
 ### Quick Color Reference
 ```
