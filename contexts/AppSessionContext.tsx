@@ -33,7 +33,7 @@ import {
   ensureFirestoreUserRole,
   getFirestoreAdminStatus,
 } from "../services/firestoreAdminStore";
-import { isFirestorePermissionDeniedError } from "../services/firebaseErrorUtils";
+import { isFirestorePermissionDeniedError, isFirestoreUnauthenticatedError } from "../services/firebaseErrorUtils";
 import { getRuntimeWarnings, RUNTIME_CONFIG } from "../services/runtimeConfig";
 import {
   createSafepayPaymentSession,
@@ -161,7 +161,21 @@ export const AppSessionProvider: React.FC<{ children: React.ReactNode }> = ({
   }, []);
 
   const bindFirestoreCommerceState = useCallback(async (user: UserProfile) => {
-    await ensureFirestoreWalletForUser(user);
+    try {
+      await ensureFirestoreWalletForUser(user);
+    } catch (error) {
+      if (
+        isFirestoreUnauthenticatedError(error) ||
+        isFirestorePermissionDeniedError(error)
+      ) {
+        noteSessionWarning(
+          "Wallet sync requires authentication. Sign out and sign back in if this persists.",
+        );
+        return;
+      }
+      console.warn("Unable to initialize Firestore wallet.", error);
+      return;
+    }
 
     const syncResults = await Promise.allSettled([
       ensureFirestoreUserProfile(user),
@@ -173,7 +187,10 @@ export const AppSessionProvider: React.FC<{ children: React.ReactNode }> = ({
         return;
       }
 
-      if (isFirestorePermissionDeniedError(result.reason)) {
+      if (
+        isFirestorePermissionDeniedError(result.reason) ||
+        isFirestoreUnauthenticatedError(result.reason)
+      ) {
         noteSessionWarning(
           "Backoffice sync is unavailable until the latest Firestore rules are deployed. Buyer auth and wallet flows still work.",
         );
@@ -190,14 +207,31 @@ export const AppSessionProvider: React.FC<{ children: React.ReactNode }> = ({
       ...emptyCommerceState,
     }));
 
-    const unsubscribeWallet = subscribeToFirestoreWallet(user.uid, (wallet) => {
-      setSnapshot((currentSnapshot) => ({
-        ...currentSnapshot,
-        authStatus: "authenticated",
-        user,
-        wallet,
-      }));
-    });
+    const handleSubscriptionError = (error: Error) => {
+      if (
+        isFirestoreUnauthenticatedError(error) ||
+        isFirestorePermissionDeniedError(error)
+      ) {
+        noteSessionWarning(
+          "Live wallet sync lost connection. Refresh the page to reconnect.",
+        );
+      } else {
+        console.warn("Firestore subscription error.", error);
+      }
+    };
+
+    const unsubscribeWallet = subscribeToFirestoreWallet(
+      user.uid,
+      (wallet) => {
+        setSnapshot((currentSnapshot) => ({
+          ...currentSnapshot,
+          authStatus: "authenticated",
+          user,
+          wallet,
+        }));
+      },
+      handleSubscriptionError,
+    );
 
     const unsubscribeTransactions = subscribeToFirestoreTransactions(
       user.uid,
@@ -209,25 +243,34 @@ export const AppSessionProvider: React.FC<{ children: React.ReactNode }> = ({
           transactions,
         }));
       },
+      handleSubscriptionError,
     );
 
-    const unsubscribeTopUps = subscribeToFirestoreTopUps(user.uid, (topUps) => {
-      setSnapshot((currentSnapshot) => ({
-        ...currentSnapshot,
-        authStatus: "authenticated",
-        user,
-        topUps,
-      }));
-    });
+    const unsubscribeTopUps = subscribeToFirestoreTopUps(
+      user.uid,
+      (topUps) => {
+        setSnapshot((currentSnapshot) => ({
+          ...currentSnapshot,
+          authStatus: "authenticated",
+          user,
+          topUps,
+        }));
+      },
+      handleSubscriptionError,
+    );
 
-    const unsubscribeOrders = subscribeToFirestoreOrders(user.uid, (orders) => {
-      setSnapshot((currentSnapshot) => ({
-        ...currentSnapshot,
-        authStatus: "authenticated",
-        user,
-        orders,
-      }));
-    });
+    const unsubscribeOrders = subscribeToFirestoreOrders(
+      user.uid,
+      (orders) => {
+        setSnapshot((currentSnapshot) => ({
+          ...currentSnapshot,
+          authStatus: "authenticated",
+          user,
+          orders,
+        }));
+      },
+      handleSubscriptionError,
+    );
 
     const unsubscribeUnlocks = subscribeToFirestoreUnlocks(
       user.uid,
@@ -239,6 +282,7 @@ export const AppSessionProvider: React.FC<{ children: React.ReactNode }> = ({
           unlocks,
         }));
       },
+      handleSubscriptionError,
     );
 
     unsubscribeCommerceRef.current = () => {

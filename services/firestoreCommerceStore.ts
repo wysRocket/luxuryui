@@ -149,65 +149,89 @@ export const ensureFirestoreWalletForUser = async (user: UserProfile): Promise<C
 
 export const subscribeToFirestoreWallet = (
   userId: string,
-  listener: (wallet: CreditWallet | null) => void
+  listener: (wallet: CreditWallet | null) => void,
+  onError?: (error: Error) => void,
 ): (() => void) =>
-  onSnapshot(walletRef(userId), (snapshot) => {
-    listener(mapWallet(snapshot.data(), userId));
-  });
+  onSnapshot(
+    walletRef(userId),
+    (snapshot) => {
+      listener(mapWallet(snapshot.data(), userId));
+    },
+    (error) => {
+      onError?.(error);
+    },
+  );
 
 const subscribeToCollection = <T,>(
   collectionQuery: ReturnType<typeof query>,
   mapper: (id: string, data: DocumentData) => T,
   sorter: (items: T[]) => T[],
-  listener: (items: T[]) => void
+  listener: (items: T[]) => void,
+  onError?: (error: Error) => void,
 ): (() => void) =>
-  onSnapshot(collectionQuery, (snapshot) => {
-    const items = snapshot.docs.map((docSnapshot) => mapper(docSnapshot.id, docSnapshot.data()));
-    listener(sorter(items));
-  });
+  onSnapshot(
+    collectionQuery,
+    (snapshot) => {
+      const items = snapshot.docs.map((docSnapshot) =>
+        mapper(docSnapshot.id, docSnapshot.data()),
+      );
+      listener(sorter(items));
+    },
+    (error) => {
+      onError?.(error);
+    },
+  );
 
 export const subscribeToFirestoreTransactions = (
   userId: string,
-  listener: (transactions: CreditTransaction[]) => void
+  listener: (transactions: CreditTransaction[]) => void,
+  onError?: (error: Error) => void,
 ): (() => void) =>
   subscribeToCollection(
     query(transactionsCollection(userId), orderBy('createdAt', 'desc')),
     mapTransaction,
     (items) => items,
-    listener
+    listener,
+    onError,
   );
 
 export const subscribeToFirestoreTopUps = (
   userId: string,
-  listener: (topUps: CreditTopUp[]) => void
+  listener: (topUps: CreditTopUp[]) => void,
+  onError?: (error: Error) => void,
 ): (() => void) =>
   subscribeToCollection(
     query(topUpsCollection(userId), orderBy('createdAt', 'desc')),
     mapTopUp,
     (items) => items,
-    listener
+    listener,
+    onError,
   );
 
 export const subscribeToFirestoreOrders = (
   userId: string,
-  listener: (orders: KitOrder[]) => void
+  listener: (orders: KitOrder[]) => void,
+  onError?: (error: Error) => void,
 ): (() => void) =>
   subscribeToCollection(
     query(ordersCollection(userId), orderBy('fulfilledAt', 'desc')),
     mapOrder,
     (items) => sortDesc(items, 'fulfilledAt'),
-    listener
+    listener,
+    onError,
   );
 
 export const subscribeToFirestoreUnlocks = (
   userId: string,
-  listener: (unlocks: KitUnlock[]) => void
+  listener: (unlocks: KitUnlock[]) => void,
+  onError?: (error: Error) => void,
 ): (() => void) =>
   subscribeToCollection(
     query(unlocksCollection(userId), orderBy('unlockedAt', 'desc')),
     mapUnlock,
     (items) => items,
-    listener
+    listener,
+    onError,
   );
 
 export const topUpFirestoreWalletCredits = async (user: UserProfile, credits: number): Promise<CreditTopUp> => {

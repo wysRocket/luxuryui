@@ -26,6 +26,9 @@ const createFirebaseApp = (): FirebaseApp => {
     authDomain: RUNTIME_CONFIG.firebase.authDomain,
     projectId: RUNTIME_CONFIG.firebase.projectId,
     storageBucket: RUNTIME_CONFIG.firebase.storageBucket,
+    ...(RUNTIME_CONFIG.firebase.messagingSenderId && {
+      messagingSenderId: RUNTIME_CONFIG.firebase.messagingSenderId,
+    }),
     appId: RUNTIME_CONFIG.firebase.appId,
   });
 
