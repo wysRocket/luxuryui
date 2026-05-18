@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { motion, useScroll, useTransform, useSpring, useMotionValue } from 'framer-motion';
 import { AppItem } from '../types';
-import { Smartphone, Monitor, Maximize2, Bookmark } from 'lucide-react';
+import { Smartphone, Monitor, Maximize2, Bookmark, AlertTriangle, BadgeCheck, Sparkles } from 'lucide-react';
 import { getPublishedKitForAppSlug } from '../data/figmaKits';
 
 interface AppCardProps {
@@ -11,9 +11,20 @@ interface AppCardProps {
 
 const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
   const cardRef = useRef<HTMLDivElement>(null);
+  const [isHovered, setIsHovered] = useState(false);
   const sourceQuality = app?.sourceQuality ?? 'unknown';
   const assetOrigin = app?.assetOrigin ?? 'generated';
   const isVerified = sourceQuality === 'pass' && assetOrigin === 'real';
+  const isWarn = sourceQuality === 'warn';
+  const qualityLabel = isVerified
+    ? 'Verified set'
+    : isWarn
+      ? 'Mixed quality'
+      : assetOrigin === 'generated'
+        ? 'Generated preview'
+        : 'Preview set';
+  const qualityIcon = isVerified ? BadgeCheck : isWarn ? AlertTriangle : Sparkles;
+  const QualityIcon = qualityIcon;
   
   // 1. Interactive 3D Tilt Logic
   const x = useMotionValue(0);
@@ -49,7 +60,9 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
     y.set(yPct);
   };
 
+  const handleMouseEnter = () => setIsHovered(true);
   const handleMouseLeave = () => {
+    setIsHovered(false);
     x.set(0);
     y.set(0);
   };
@@ -63,6 +76,7 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5 }}
       onMouseMove={handleMouseMove}
+      onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onClick={() => onClick(app)}
       style={{ perspective: "1500px" }}
@@ -166,15 +180,50 @@ const AppCard: React.FC<AppCardProps> = ({ app, onClick }) => {
           {app.screenCount} screens
         </motion.div>
 
+        <div
+          className={`absolute right-5 ${hasKit ? 'bottom-[4.3rem]' : 'bottom-5'} rounded-full border px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.18em] z-40 ${
+            isVerified
+              ? 'border-emerald-300/20 bg-emerald-400/15 text-white'
+              : 'border-amber-200/15 bg-black/35 text-white/92'
+          }`}
+          style={{ transform: 'translateZ(74px)' }}
+        >
+          <span className="inline-flex items-center gap-1.5">
+            <QualityIcon size={11} />
+            {qualityLabel}
+          </span>
+        </div>
 
         {hasKit && (
           <div
-            className="absolute bottom-5 left-5 rounded-full border border-white/15 bg-emerald-400/15 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.18em] text-white z-40 transition-opacity duration-300 group-hover:opacity-0"
+            className="absolute bottom-5 left-5 rounded-full border border-white/15 bg-emerald-400/15 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.18em] text-white z-40"
             style={{ transform: "translateZ(70px)" }}
           >
             Figma kit
           </div>
         )}
+
+        {/* Source Quality Footer */}
+        <div className="absolute bottom-0 left-0 right-0 z-40" style={{ transform: "translateZ(100px)" }}>
+           <div className="px-5 pb-5">
+              <div className="flex justify-between items-end mb-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <span className="text-[10px] font-black text-white uppercase tracking-tighter">
+                  {isVerified ? 'Premium preview' : 'Reference preview'}
+                </span>
+                <span className="text-[10px] font-black text-white/85">
+                  {isVerified ? 'High-confidence source' : assetOrigin === 'generated' ? 'Generated fallback' : 'Use for research'}
+                </span>
+              </div>
+              <div className="h-[3px] w-full bg-white/20 rounded-full overflow-hidden backdrop-blur-sm">
+                <motion.div 
+                  className={`h-full shadow-[0_0_10px_rgba(255,255,255,0.45)] ${isVerified ? 'bg-white' : 'bg-amber-300'}`}
+                  initial={{ width: 0 }}
+                  animate={{ width: isHovered ? (isVerified ? '100%' : '62%') : "0%" }}
+                  transition={{ type: "spring", stiffness: 50, damping: 15, delay: 0.1 }}
+                />
+              </div>
+           </div>
+        </div>
       </motion.div>
 
       {/* Info Section */}
