@@ -187,6 +187,10 @@ const normalizeFirebaseError = (error: unknown, fallback: string): Error => {
       );
     case "auth/cancelled-popup-request":
       return new Error("Another sign-in popup is already open.");
+    case "auth/unauthorized-domain":
+      return new Error(
+        "This domain is not authorised for Google sign-in. Add it to Firebase Auth → Settings → Authorised domains.",
+      );
     case "auth/operation-not-allowed":
       return new Error(
         "Google sign-in is not enabled in your Firebase project.",

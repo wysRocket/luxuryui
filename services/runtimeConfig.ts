@@ -117,6 +117,14 @@ export const getRuntimeWarnings = (): string[] => {
     warnings.push(
       "Credit top-ups are completed instantly in-app until a live SafePay checkout is configured.",
     );
+
+    if (RUNTIME_CONFIG.backendMode === "firebase") {
+      warnings.push(
+        "MISCONFIGURATION: VITE_PAYMENT_MODE=local with VITE_BACKEND_MODE=firebase. " +
+        "Client-side top-ups are blocked by Firestore security rules. " +
+        "Set VITE_PAYMENT_MODE=safepay for production Firebase deployments.",
+      );
+    }
   }
 
   if (RUNTIME_CONFIG.paymentMode === "safepay") {
